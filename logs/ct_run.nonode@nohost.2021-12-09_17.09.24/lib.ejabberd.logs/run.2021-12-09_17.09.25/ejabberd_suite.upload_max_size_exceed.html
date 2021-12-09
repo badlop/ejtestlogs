@@ -1,0 +1,660 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test ejabberd_SUITE:upload_max_size_exceed result</title>
+<meta http-equiv="cache-control" content="no-cache"></meta>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+<link rel="stylesheet" href="../../ct_default.css" type="text/css"></link>
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="ejabberd_suite.src.html#upload_max_size_exceed-1">ejabberd_SUITE:upload_max_size_exceed/1</a> (click for source code)
+
+=== Config value:
+
+    [{event_relay,&lt;0.31815.0&gt;},
+     {watchdog,&lt;0.31814.0&gt;},
+     {persistent_room,false},
+     {server_port,5222},
+     {server_host,"localhost"},
+     {component_port,5270},
+     {s2s_port,5269},
+     {server,&lt;&lt;"localhost"&gt;&gt;},
+     {user,&lt;&lt;"test_single!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;},
+     {nick,&lt;&lt;"nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {master_nick,&lt;&lt;"master_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {slave_nick,&lt;&lt;"slave_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {room_subject,&lt;&lt;"hello, world!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {certfile,"/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/test/ejabberd_SUITE_data/cert.pem"},
+     {anonymous,false},
+     {type,client},
+     {xmlns,&lt;&lt;"jabber:client"&gt;&gt;},
+     {ns_stream,&lt;&lt;"http://etherx.jabber.org/streams"&gt;&gt;},
+     {stream_version,{1,0}},
+     {stream_id,&lt;&lt;&gt;&gt;},
+     {stream_from,&lt;&lt;&gt;&gt;},
+     {db_xmlns,&lt;&lt;&gt;&gt;},
+     {mechs,[]},
+     {rosterver,false},
+     {lang,&lt;&lt;"en"&gt;&gt;},
+     {base_dir,"/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd"},
+     {receiver,undefined},
+     {pubsub_node,&lt;&lt;"node!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {pubsub_node_title,&lt;&lt;"title!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {resource,&lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {master_resource,&lt;&lt;"master_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {slave_resource,&lt;&lt;"slave_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {password,&lt;&lt;"password!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {backends,[mnesia]},
+     {tc_logfile,"/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.09.24/lib.ejabberd.logs/run.2021-12-09_17.09.25/ejabberd_suite.upload_max_size_exceed.html"},
+     {tc_group_properties,[{name,upload_single},sequence]},
+     {tc_group_path,[[{name,no_db},sequence]]},
+     {data_dir,"/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/test/ejabberd_SUITE_data/"},
+     {priv_dir,"/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.09.24/lib.ejabberd.logs/run.2021-12-09_17.09.25/log_private/"}]
+
+=== Current directory is "/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.09.24"
+
+=== Started at 2021-12-09 17:09:52
+
+<br />
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:52.759 ***</b>
+SENT:
+<stream:stream version='1.0'
+               xml:lang='en'
+               xmlns:stream='http://etherx.jabber.org/streams'
+               to='localhost'
+               xmlns='jabber:client'/>
+
+#stream_start{from = undefined,
+              to = #jid{user = <<>>,server = <<"localhost">>,resource = <<>>,
+                        luser = <<>>,lserver = <<"localhost">>,
+                        lresource = <<>>},
+              id = <<>>,
+              version = {1,0},
+              xmlns = <<"jabber:client">>,
+              stream_xmlns = <<"http://etherx.jabber.org/streams">>,
+              db_xmlns = <<>>,lang = <<"en">>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:upload_max_size_exceed/1 in upload_single 2021-12-09 17:09:52.760 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:09:52.759788 ===
+(&lt;0.31880.0&gt;) Accepted connection 127.0.0.1:36424 -&gt; 127.0.0.1:5222
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:52.760 ***</b>
+RECV:
+<stream:stream xmlns:stream='http://etherx.jabber.org/streams'
+               xmlns='jabber:client'
+               id='6974410848886463979'
+               version='1.0'
+               xml:lang='en'
+               from='localhost'/>
+
+#stream_start{from = #jid{user = <<>>,server = <<"localhost">>,
+                          resource = <<>>,luser = <<>>,
+                          lserver = <<"localhost">>,lresource = <<>>},
+              to = undefined,id = <<"6974410848886463979">>,
+              version = {1,0},
+              xmlns = <<"jabber:client">>,
+              stream_xmlns = <<"http://etherx.jabber.org/streams">>,
+              db_xmlns = <<>>,lang = <<"en">>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:52.761 ***</b>
+RECV:
+<stream:features>
+  <mechanisms xmlns='urn:ietf:params:xml:ns:xmpp-sasl'>
+    <mechanism>ANONYMOUS</mechanism>
+    <mechanism>DIGEST-MD5</mechanism>
+    <mechanism>PLAIN</mechanism>
+    <mechanism>SCRAM-SHA-512</mechanism>
+    <mechanism>SCRAM-SHA-256</mechanism>
+    <mechanism>SCRAM-SHA-1</mechanism>
+    <mechanism>X-OAUTH2</mechanism>
+  </mechanisms>
+  <starttls xmlns='urn:ietf:params:xml:ns:xmpp-tls'/>
+  <register xmlns='http://jabber.org/features/iq-register'/>
+  <auth xmlns='http://jabber.org/features/iq-auth'/>
+</stream:features>
+
+#stream_features{
+    sub_els =
+        [#sasl_mechanisms{
+             list =
+                 [<<"ANONYMOUS">>,<<"DIGEST-MD5">>,<<"PLAIN">>,
+                  <<"SCRAM-SHA-512">>,<<"SCRAM-SHA-256">>,<<"SCRAM-SHA-1">>,
+                  <<"X-OAUTH2">>]},
+         #starttls{required = false},
+         #feature_register{},
+         #legacy_auth_feature{}]}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:52.761 ***</b>
+SENT:
+<auth mechanism='PLAIN'
+      xmlns='urn:ietf:params:xml:ns:xmpp-sasl'>dGVzdF9zaW5nbGUhIyQlXiooKWB+Ky07Xz1bXXt9fFxAbG9jYWxob3N0AHRlc3Rfc2luZ2xlISMkJV4qKClgfistO189W117fXxcAHBhc3N3b3JkIUAjJCVeJiooKSciYH48PistLzs6Xz1bXXt9fFw=</auth>
+
+#sasl_auth{mechanism = <<"PLAIN">>,
+           text = <<116,101,115,116,95,115,105,110,103,108,101,33,35,36,37,94,
+                    42,40,41,96,126,43,45,59,95,61,91,93,123,125,124,92,64,
+                    108,111,99,97,108,104,111,115,116,0,116,101,115,116,95,
+                    115,105,110,103,108,101,33,35,36,37,94,42,40,41,96,126,43,
+                    45,59,95,61,91,93,123,125,124,92,0,112,97,115,115,119,111,
+                    114,100,33,64,35,36,37,94,38,42,40,41,39,34,96,126,60,62,
+                    43,45,47,59,58,95,61,91,93,123,125,124,92>>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:upload_max_size_exceed/1 in upload_single 2021-12-09 17:09:52.761 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:09:52.761684 ===
+(tcp|&lt;0.31880.0&gt;) Accepted c2s PLAIN authentication for test_single!#$%^*()`~+-;_=[]{}|\@localhost by mnesia backend from 127.0.0.1
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:52.762 ***</b>
+RECV:
+<success xmlns='urn:ietf:params:xml:ns:xmpp-sasl'/>
+
+#sasl_success{text = <<>>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:52.762 ***</b>
+SENT:
+<stream:stream version='1.0'
+               xml:lang='en'
+               xmlns:stream='http://etherx.jabber.org/streams'
+               to='localhost'
+               xmlns='jabber:client'/>
+
+#stream_start{from = undefined,
+              to = #jid{user = <<>>,server = <<"localhost">>,resource = <<>>,
+                        luser = <<>>,lserver = <<"localhost">>,
+                        lresource = <<>>},
+              id = <<>>,
+              version = {1,0},
+              xmlns = <<"jabber:client">>,
+              stream_xmlns = <<"http://etherx.jabber.org/streams">>,
+              db_xmlns = <<>>,lang = <<"en">>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:52.762 ***</b>
+RECV:
+<stream:stream xmlns:stream='http://etherx.jabber.org/streams'
+               xmlns='jabber:client'
+               id='1329174145602472994'
+               version='1.0'
+               xml:lang='en'
+               from='localhost'/>
+
+#stream_start{from = #jid{user = <<>>,server = <<"localhost">>,
+                          resource = <<>>,luser = <<>>,
+                          lserver = <<"localhost">>,lresource = <<>>},
+              to = undefined,id = <<"1329174145602472994">>,
+              version = {1,0},
+              xmlns = <<"jabber:client">>,
+              stream_xmlns = <<"http://etherx.jabber.org/streams">>,
+              db_xmlns = <<>>,lang = <<"en">>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:52.762 ***</b>
+RECV:
+<stream:features>
+  <compression xmlns='http://jabber.org/features/compress'>
+    <method>zlib</method>
+  </compression>
+  <bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'/>
+  <session xmlns='urn:ietf:params:xml:ns:xmpp-session'>
+    <optional/>
+  </session>
+  <sm xmlns='urn:xmpp:sm:2'/>
+  <sm xmlns='urn:xmpp:sm:3'/>
+</stream:features>
+
+#stream_features{sub_els = [#compression{methods = [<<"zlib">>]},
+                            #bind{jid = undefined,resource = <<>>},
+                            #xmpp_session{optional = true},
+                            #feature_sm{xmlns = <<"urn:xmpp:sm:2">>},
+                            #feature_sm{xmlns = <<"urn:xmpp:sm:3">>}]}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:52.763 ***</b>
+SENT:
+<iq type='set'
+    id='7332188048124365378'
+    xmlns='jabber:client'>
+  <bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'>
+    <resource>resource!@#$%^&*()'"`~<>+-/;:_=[]{}|\</resource>
+  </bind>
+</iq>
+
+#iq{id = <<"7332188048124365378">>,type = set,lang = <<>>,from = undefined,
+    to = undefined,
+    sub_els = [#bind{jid = undefined,
+                     resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:upload_max_size_exceed/1 in upload_single 2021-12-09 17:09:52.763 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:09:52.763314 ===
+(tcp|&lt;0.31880.0&gt;) Opened c2s session for test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()'"`~&lt;&gt;+-/;:_=[]{}|\
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:52.763 ***</b>
+RECV:
+<iq type='result'
+    id='7332188048124365378'>
+  <bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'>
+    <jid>test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&*()'"`~<>+-/;:_=[]{}|\</jid>
+  </bind>
+</iq>
+
+#iq{id = <<"7332188048124365378">>,type = result,lang = <<>>,from = undefined,
+    to = undefined,
+    sub_els =
+        [#bind{
+             jid =
+                 #jid{
+                     user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                     server = <<"localhost">>,
+                     resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                     lserver = <<"localhost">>,
+                     lresource =
+                         <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+             resource = <<>>}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:52.764 ***</b>
+SENT:
+<iq to='upload.localhost'
+    type='get'
+    id='4897872735515048614'
+    xmlns='jabber:client'>
+  <request content-type='image/png'
+           size='1000000000'
+           filename='12368183526362289731.png'
+           xmlns='urn:xmpp:http:upload:0'/>
+</iq>
+
+#iq{id = <<"4897872735515048614">>,type = get,lang = <<>>,from = undefined,
+    to = #jid{user = <<>>,server = <<"upload.localhost">>,resource = <<>>,
+              luser = <<>>,lserver = <<"upload.localhost">>,lresource = <<>>},
+    sub_els = [#upload_request_0{filename = <<"12368183526362289731.png">>,
+                                 size = 1000000000,
+                                 'content-type' = <<"image/png">>,
+                                 xmlns = <<"urn:xmpp:http:upload:0">>}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:upload_max_size_exceed/1 in upload_single 2021-12-09 17:09:52.765 ***</b>
+=WARNING REPORT==== 9-Dec-2021::17:09:52.764987 ===
+Rejecting file 12368183526362289731.png from test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()'"`~&lt;&gt;+-/;:_=[]{}|\ (too large: 1000000000 bytes)
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:52.765 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='upload.localhost'
+    type='error'
+    id='4897872735515048614'>
+  <request xmlns='urn:xmpp:http:upload:0'
+           content-type='image/png'
+           size='1000000000'
+           filename='12368183526362289731.png'/>
+  <error type='modify'>
+    <file-too-large xmlns='urn:xmpp:http:upload:0'>
+      <max-file-size>10000</max-file-size>
+    </file-too-large>
+    <not-acceptable xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/>
+    <text xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'
+          xml:lang='en'>File larger than 10000 bytes</text>
+  </error>
+</iq>
+
+#iq{id = <<"4897872735515048614">>,type = error,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<>>,server = <<"upload.localhost">>,resource = <<>>,
+            luser = <<>>,lserver = <<"upload.localhost">>,lresource = <<>>},
+    to =
+        #jid{
+            user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els =
+        [#upload_request_0{
+             filename = <<"12368183526362289731.png">>,size = 1000000000,
+             'content-type' = <<"image/png">>,
+             xmlns = <<"urn:xmpp:http:upload:0">>},
+         #stanza_error{
+             type = modify,by = undefined,reason = 'not-acceptable',
+             text =
+                 [#text{
+                      lang = <<"en">>,
+                      data = <<"File larger than 10000 bytes">>}],
+             sub_els =
+                 [#upload_file_too_large{
+                      'max-file-size' = 10000,
+                      xmlns = <<"urn:xmpp:http:upload:0">>}]}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:52.766 ***</b>
+SENT:
+<iq to='upload.localhost'
+    type='get'
+    id='2310653433886145842'
+    xmlns='jabber:client'>
+  <request xmlns='urn:xmpp:http:upload'>
+    <filename>2629096548918021412.png</filename>
+    <size>1000000000</size>
+    <content-type>image/png</content-type>
+  </request>
+</iq>
+
+#iq{id = <<"2310653433886145842">>,type = get,lang = <<>>,from = undefined,
+    to = #jid{user = <<>>,server = <<"upload.localhost">>,resource = <<>>,
+              luser = <<>>,lserver = <<"upload.localhost">>,lresource = <<>>},
+    sub_els = [#upload_request{filename = <<"2629096548918021412.png">>,
+                               size = 1000000000,
+                               'content-type' = <<"image/png">>,
+                               xmlns = <<"urn:xmpp:http:upload">>}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:upload_max_size_exceed/1 in upload_single 2021-12-09 17:09:52.766 ***</b>
+=WARNING REPORT==== 9-Dec-2021::17:09:52.766478 ===
+Rejecting file 2629096548918021412.png from test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()'"`~&lt;&gt;+-/;:_=[]{}|\ (too large: 1000000000 bytes)
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:52.767 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='upload.localhost'
+    type='error'
+    id='2310653433886145842'>
+  <request xmlns='urn:xmpp:http:upload'>
+    <filename>2629096548918021412.png</filename>
+    <size>1000000000</size>
+    <content-type>image/png</content-type>
+  </request>
+  <error type='modify'>
+    <file-too-large xmlns='urn:xmpp:http:upload'>
+      <max-file-size>10000</max-file-size>
+    </file-too-large>
+    <not-acceptable xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/>
+    <text xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'
+          xml:lang='en'>File larger than 10000 bytes</text>
+  </error>
+</iq>
+
+#iq{id = <<"2310653433886145842">>,type = error,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<>>,server = <<"upload.localhost">>,resource = <<>>,
+            luser = <<>>,lserver = <<"upload.localhost">>,lresource = <<>>},
+    to =
+        #jid{
+            user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els =
+        [#upload_request{
+             filename = <<"2629096548918021412.png">>,size = 1000000000,
+             'content-type' = <<"image/png">>,
+             xmlns = <<"urn:xmpp:http:upload">>},
+         #stanza_error{
+             type = modify,by = undefined,reason = 'not-acceptable',
+             text =
+                 [#text{
+                      lang = <<"en">>,
+                      data = <<"File larger than 10000 bytes">>}],
+             sub_els =
+                 [#upload_file_too_large{
+                      'max-file-size' = 10000,
+                      xmlns = <<"urn:xmpp:http:upload">>}]}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:52.767 ***</b>
+SENT:
+<iq to='upload.localhost'
+    type='get'
+    id='3641030001276023679'
+    xmlns='jabber:client'>
+  <request xmlns='eu:siacs:conversations:http:upload'>
+    <filename>9842938046532747527.png</filename>
+    <size>1000000000</size>
+    <content-type>image/png</content-type>
+  </request>
+</iq>
+
+#iq{id = <<"3641030001276023679">>,type = get,lang = <<>>,from = undefined,
+    to = #jid{user = <<>>,server = <<"upload.localhost">>,resource = <<>>,
+              luser = <<>>,lserver = <<"upload.localhost">>,lresource = <<>>},
+    sub_els = [#upload_request{filename = <<"9842938046532747527.png">>,
+                               size = 1000000000,
+                               'content-type' = <<"image/png">>,
+                               xmlns = <<"eu:siacs:conversations:http:upload">>}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:upload_max_size_exceed/1 in upload_single 2021-12-09 17:09:52.768 ***</b>
+=WARNING REPORT==== 9-Dec-2021::17:09:52.768046 ===
+Rejecting file 9842938046532747527.png from test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()'"`~&lt;&gt;+-/;:_=[]{}|\ (too large: 1000000000 bytes)
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:52.768 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='upload.localhost'
+    type='error'
+    id='3641030001276023679'>
+  <request xmlns='eu:siacs:conversations:http:upload'>
+    <filename>9842938046532747527.png</filename>
+    <size>1000000000</size>
+    <content-type>image/png</content-type>
+  </request>
+  <error type='modify'>
+    <file-too-large xmlns='eu:siacs:conversations:http:upload'>
+      <max-file-size>10000</max-file-size>
+    </file-too-large>
+    <not-acceptable xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/>
+    <text xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'
+          xml:lang='en'>File larger than 10000 bytes</text>
+  </error>
+</iq>
+
+#iq{id = <<"3641030001276023679">>,type = error,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<>>,server = <<"upload.localhost">>,resource = <<>>,
+            luser = <<>>,lserver = <<"upload.localhost">>,lresource = <<>>},
+    to =
+        #jid{
+            user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els =
+        [#upload_request{
+             filename = <<"9842938046532747527.png">>,size = 1000000000,
+             'content-type' = <<"image/png">>,
+             xmlns = <<"eu:siacs:conversations:http:upload">>},
+         #stanza_error{
+             type = modify,by = undefined,reason = 'not-acceptable',
+             text =
+                 [#text{
+                      lang = <<"en">>,
+                      data = <<"File larger than 10000 bytes">>}],
+             sub_els =
+                 [#upload_file_too_large{
+                      'max-file-size' = 10000,
+                      xmlns = <<"eu:siacs:conversations:http:upload">>}]}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:upload_max_size_exceed/1 in upload_single 2021-12-09 17:09:52.769 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:09:52.769112 ===
+(tcp|&lt;0.31880.0&gt;) Closing c2s session for test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()'"`~&lt;&gt;+-/;:_=[]{}|\: Stream reset by peer
+
+</pre></div>
+<pre>
+<a name="end"></a>
+
+
+=== Ended at 2021-12-09 17:09:52
+=== successfully completed test case
+=== === Returned value: [{receiver,undefined},
+                     {sm,true},
+                     {compression,[&lt;&lt;"zlib"&gt;&gt;]},
+                     {stream_id,&lt;&lt;"1329174145602472994"&gt;&gt;},
+                     {sasl,#Fun&lt;suite.6.40689848&gt;},
+                     {legacy_auth,true},
+                     {register,true},
+                     {starttls,true},
+                     {mechs,
+                         [&lt;&lt;"ANONYMOUS"&gt;&gt;,&lt;&lt;"DIGEST-MD5"&gt;&gt;,&lt;&lt;"PLAIN"&gt;&gt;,
+                          &lt;&lt;"SCRAM-SHA-512"&gt;&gt;,&lt;&lt;"SCRAM-SHA-256"&gt;&gt;,
+                          &lt;&lt;"SCRAM-SHA-1"&gt;&gt;,&lt;&lt;"X-OAUTH2"&gt;&gt;]},
+                     {user,&lt;&lt;"test_single!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;},
+                     {slave,
+                         {jid,&lt;&lt;"test_slave!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"localhost"&gt;&gt;,
+                             &lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"test_slave!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"localhost"&gt;&gt;,
+                             &lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;}},
+                     {master,
+                         {jid,&lt;&lt;"test_master!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"localhost"&gt;&gt;,
+                             &lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"test_master!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"localhost"&gt;&gt;,
+                             &lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;}},
+                     {resource,&lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {nick,&lt;&lt;"nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {mode,single},
+                     {watchdog,&lt;0.31878.0&gt;},
+                     {event_relay,&lt;0.31815.0&gt;},
+                     {persistent_room,false},
+                     {server_port,5222},
+                     {server_host,"localhost"},
+                     {component_port,5270},
+                     {s2s_port,5269},
+                     {server,&lt;&lt;"localhost"&gt;&gt;},
+                     {master_nick,
+                         &lt;&lt;"master_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {slave_nick,
+                         &lt;&lt;"slave_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {room_subject,
+                         &lt;&lt;"hello, world!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {certfile,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/test/ejabberd_SUITE_data/cert.pem"},
+                     {anonymous,false},
+                     {type,client},
+                     {xmlns,&lt;&lt;"jabber:client"&gt;&gt;},
+                     {ns_stream,&lt;&lt;"http://etherx.jabber.org/streams"&gt;&gt;},
+                     {stream_version,{1,0}},
+                     {stream_from,&lt;&lt;&gt;&gt;},
+                     {db_xmlns,&lt;&lt;&gt;&gt;},
+                     {rosterver,false},
+                     {lang,&lt;&lt;"en"&gt;&gt;},
+                     {base_dir,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd"},
+                     {pubsub_node,&lt;&lt;"node!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {pubsub_node_title,
+                         &lt;&lt;"title!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {master_resource,
+                         &lt;&lt;"master_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {slave_resource,
+                         &lt;&lt;"slave_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {password,&lt;&lt;"password!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {backends,[mnesia]},
+                     {tc_logfile,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.09.24/lib.ejabberd.logs/run.2021-12-09_17.09.25/ejabberd_suite.upload_max_size_exceed.html"},
+                     {tc_group_properties,[{name,upload_single},sequence]},
+                     {tc_group_path,[[{name,no_db},sequence]]},
+                     {data_dir,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/test/ejabberd_SUITE_data/"},
+                     {priv_dir,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.09.24/lib.ejabberd.logs/run.2021-12-09_17.09.25/log_private/"}]
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>  |  <a href="../../../suite.log.latest.html">Latest test result</a>
+</p>
+<div class="copyright">Copyright &copy; 2021 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!--date-->Thu Dec 09 2021 17:09:52<!--/date--><br />
+</div>
+</center>
+</body>
+</html>

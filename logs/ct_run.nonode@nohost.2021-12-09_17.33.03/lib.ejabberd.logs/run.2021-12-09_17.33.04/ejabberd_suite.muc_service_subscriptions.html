@@ -1,0 +1,2920 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test ejabberd_SUITE:muc_service_subscriptions result</title>
+<meta http-equiv="cache-control" content="no-cache"></meta>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+<link rel="stylesheet" href="../../ct_default.css" type="text/css"></link>
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="ejabberd_suite.src.html#muc_service_subscriptions-1">ejabberd_SUITE:muc_service_subscriptions/1</a> (click for source code)
+
+=== Config value:
+
+    [{event_relay,&lt;0.30876.0&gt;},
+     {watchdog,&lt;0.30875.0&gt;},
+     {persistent_room,false},
+     {server_port,5222},
+     {server_host,"localhost"},
+     {component_port,5270},
+     {s2s_port,5269},
+     {server,&lt;&lt;"localhost"&gt;&gt;},
+     {user,&lt;&lt;"test_single!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;},
+     {nick,&lt;&lt;"nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {master_nick,&lt;&lt;"master_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {slave_nick,&lt;&lt;"slave_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {room_subject,&lt;&lt;"hello, world!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {certfile,"/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/test/ejabberd_SUITE_data/cert.pem"},
+     {anonymous,false},
+     {type,client},
+     {xmlns,&lt;&lt;"jabber:client"&gt;&gt;},
+     {ns_stream,&lt;&lt;"http://etherx.jabber.org/streams"&gt;&gt;},
+     {stream_version,{1,0}},
+     {stream_id,&lt;&lt;&gt;&gt;},
+     {stream_from,&lt;&lt;&gt;&gt;},
+     {db_xmlns,&lt;&lt;&gt;&gt;},
+     {mechs,[]},
+     {rosterver,false},
+     {lang,&lt;&lt;"en"&gt;&gt;},
+     {base_dir,"/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd"},
+     {receiver,undefined},
+     {pubsub_node,&lt;&lt;"node!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {pubsub_node_title,&lt;&lt;"title!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {resource,&lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {master_resource,&lt;&lt;"master_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {slave_resource,&lt;&lt;"slave_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {password,&lt;&lt;"password!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {backends,[mnesia]},
+     {tc_logfile,"/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.33.03/lib.ejabberd.logs/run.2021-12-09_17.33.04/ejabberd_suite.muc_service_subscriptions.html"},
+     {tc_group_properties,[{name,muc_single},sequence]},
+     {tc_group_path,[[{name,no_db},sequence]]},
+     {data_dir,"/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/test/ejabberd_SUITE_data/"},
+     {priv_dir,"/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.33.03/lib.ejabberd.logs/run.2021-12-09_17.33.04/log_private/"}]
+
+=== Current directory is "/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.33.03"
+
+=== Started at 2021-12-09 17:33:17
+
+<br />
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.064 ***</b>
+SENT:
+<stream:stream version='1.0'
+               xml:lang='en'
+               xmlns:stream='http://etherx.jabber.org/streams'
+               to='localhost'
+               xmlns='jabber:client'/>
+
+#stream_start{from = undefined,
+              to = #jid{user = <<>>,server = <<"localhost">>,resource = <<>>,
+                        luser = <<>>,lserver = <<"localhost">>,
+                        lresource = <<>>},
+              id = <<>>,
+              version = {1,0},
+              xmlns = <<"jabber:client">>,
+              stream_xmlns = <<"http://etherx.jabber.org/streams">>,
+              db_xmlns = <<>>,lang = <<"en">>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:33:17.065 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:33:17.064973 ===
+(&lt;0.31024.0&gt;) Accepted connection 127.0.0.1:34484 -&gt; 127.0.0.1:5222
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.065 ***</b>
+RECV:
+<stream:stream xmlns:stream='http://etherx.jabber.org/streams'
+               xmlns='jabber:client'
+               id='10567470540096846087'
+               version='1.0'
+               xml:lang='en'
+               from='localhost'/>
+
+#stream_start{from = #jid{user = <<>>,server = <<"localhost">>,
+                          resource = <<>>,luser = <<>>,
+                          lserver = <<"localhost">>,lresource = <<>>},
+              to = undefined,id = <<"10567470540096846087">>,
+              version = {1,0},
+              xmlns = <<"jabber:client">>,
+              stream_xmlns = <<"http://etherx.jabber.org/streams">>,
+              db_xmlns = <<>>,lang = <<"en">>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.066 ***</b>
+RECV:
+<stream:features>
+  <mechanisms xmlns='urn:ietf:params:xml:ns:xmpp-sasl'>
+    <mechanism>ANONYMOUS</mechanism>
+    <mechanism>DIGEST-MD5</mechanism>
+    <mechanism>PLAIN</mechanism>
+    <mechanism>SCRAM-SHA-512</mechanism>
+    <mechanism>SCRAM-SHA-256</mechanism>
+    <mechanism>SCRAM-SHA-1</mechanism>
+    <mechanism>X-OAUTH2</mechanism>
+  </mechanisms>
+  <starttls xmlns='urn:ietf:params:xml:ns:xmpp-tls'/>
+  <register xmlns='http://jabber.org/features/iq-register'/>
+  <auth xmlns='http://jabber.org/features/iq-auth'/>
+</stream:features>
+
+#stream_features{
+    sub_els =
+        [#sasl_mechanisms{
+             list =
+                 [<<"ANONYMOUS">>,<<"DIGEST-MD5">>,<<"PLAIN">>,
+                  <<"SCRAM-SHA-512">>,<<"SCRAM-SHA-256">>,<<"SCRAM-SHA-1">>,
+                  <<"X-OAUTH2">>]},
+         #starttls{required = false},
+         #feature_register{},
+         #legacy_auth_feature{}]}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.066 ***</b>
+SENT:
+<auth mechanism='PLAIN'
+      xmlns='urn:ietf:params:xml:ns:xmpp-sasl'>dGVzdF9zaW5nbGUhIyQlXiooKWB+Ky07Xz1bXXt9fFxAbG9jYWxob3N0AHRlc3Rfc2luZ2xlISMkJV4qKClgfistO189W117fXxcAHBhc3N3b3JkIUAjJCVeJiooKSciYH48PistLzs6Xz1bXXt9fFw=</auth>
+
+#sasl_auth{mechanism = <<"PLAIN">>,
+           text = <<116,101,115,116,95,115,105,110,103,108,101,33,35,36,37,94,
+                    42,40,41,96,126,43,45,59,95,61,91,93,123,125,124,92,64,
+                    108,111,99,97,108,104,111,115,116,0,116,101,115,116,95,
+                    115,105,110,103,108,101,33,35,36,37,94,42,40,41,96,126,43,
+                    45,59,95,61,91,93,123,125,124,92,0,112,97,115,115,119,111,
+                    114,100,33,64,35,36,37,94,38,42,40,41,39,34,96,126,60,62,
+                    43,45,47,59,58,95,61,91,93,123,125,124,92>>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:33:17.066 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:33:17.066735 ===
+(tcp|&lt;0.31024.0&gt;) Accepted c2s PLAIN authentication for test_single!#$%^*()`~+-;_=[]{}|\@localhost by mnesia backend from 127.0.0.1
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.067 ***</b>
+RECV:
+<success xmlns='urn:ietf:params:xml:ns:xmpp-sasl'/>
+
+#sasl_success{text = <<>>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.067 ***</b>
+SENT:
+<stream:stream version='1.0'
+               xml:lang='en'
+               xmlns:stream='http://etherx.jabber.org/streams'
+               to='localhost'
+               xmlns='jabber:client'/>
+
+#stream_start{from = undefined,
+              to = #jid{user = <<>>,server = <<"localhost">>,resource = <<>>,
+                        luser = <<>>,lserver = <<"localhost">>,
+                        lresource = <<>>},
+              id = <<>>,
+              version = {1,0},
+              xmlns = <<"jabber:client">>,
+              stream_xmlns = <<"http://etherx.jabber.org/streams">>,
+              db_xmlns = <<>>,lang = <<"en">>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.068 ***</b>
+RECV:
+<stream:stream xmlns:stream='http://etherx.jabber.org/streams'
+               xmlns='jabber:client'
+               id='382054947815766888'
+               version='1.0'
+               xml:lang='en'
+               from='localhost'/>
+
+#stream_start{from = #jid{user = <<>>,server = <<"localhost">>,
+                          resource = <<>>,luser = <<>>,
+                          lserver = <<"localhost">>,lresource = <<>>},
+              to = undefined,id = <<"382054947815766888">>,
+              version = {1,0},
+              xmlns = <<"jabber:client">>,
+              stream_xmlns = <<"http://etherx.jabber.org/streams">>,
+              db_xmlns = <<>>,lang = <<"en">>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.068 ***</b>
+RECV:
+<stream:features>
+  <compression xmlns='http://jabber.org/features/compress'>
+    <method>zlib</method>
+  </compression>
+  <bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'/>
+  <session xmlns='urn:ietf:params:xml:ns:xmpp-session'>
+    <optional/>
+  </session>
+  <sm xmlns='urn:xmpp:sm:2'/>
+  <sm xmlns='urn:xmpp:sm:3'/>
+</stream:features>
+
+#stream_features{sub_els = [#compression{methods = [<<"zlib">>]},
+                            #bind{jid = undefined,resource = <<>>},
+                            #xmpp_session{optional = true},
+                            #feature_sm{xmlns = <<"urn:xmpp:sm:2">>},
+                            #feature_sm{xmlns = <<"urn:xmpp:sm:3">>}]}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.068 ***</b>
+SENT:
+<iq type='set'
+    id='7288357105145566202'
+    xmlns='jabber:client'>
+  <bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'>
+    <resource>resource!@#$%^&*()'"`~<>+-/;:_=[]{}|\</resource>
+  </bind>
+</iq>
+
+#iq{id = <<"7288357105145566202">>,type = set,lang = <<>>,from = undefined,
+    to = undefined,
+    sub_els = [#bind{jid = undefined,
+                     resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:33:17.069 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:33:17.069194 ===
+(tcp|&lt;0.31024.0&gt;) Opened c2s session for test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()'"`~&lt;&gt;+-/;:_=[]{}|\
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.069 ***</b>
+RECV:
+<iq type='result'
+    id='7288357105145566202'>
+  <bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'>
+    <jid>test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&*()'"`~<>+-/;:_=[]{}|\</jid>
+  </bind>
+</iq>
+
+#iq{id = <<"7288357105145566202">>,type = result,lang = <<>>,from = undefined,
+    to = undefined,
+    sub_els =
+        [#bind{
+             jid =
+                 #jid{
+                     user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                     server = <<"localhost">>,
+                     resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                     lserver = <<"localhost">>,
+                     lresource =
+                         <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+             resource = <<>>}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.070 ***</b>
+SENT:
+<presence to='1@conference.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='7579799450025900339'
+          xmlns='jabber:client'>
+  <x xmlns='http://jabber.org/protocol/muc'/>
+</presence>
+
+#presence{id = <<"7579799450025900339">>,type = available,lang = <<>>,
+          from = undefined,
+          to = #jid{user = <<"1">>,server = <<"conference.localhost">>,
+                    resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"1">>,lserver = <<"conference.localhost">>,
+                    lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#muc{history = undefined,password = undefined}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:33:17.072 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:33:17.072053 ===
+Created MUC room 1@conference.localhost by test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()'"`~&lt;&gt;+-/;:_=[]{}|\
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.073 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='1@conference.localhost'
+          id='4700802793983943813'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='sBcxm+YVx0VXfn6k9QZimWgspjA='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"4700802793983943813">>,type = available,lang = <<>>,
+          from = #jid{user = <<"1">>,server = <<"conference.localhost">>,
+                      resource = <<>>,luser = <<"1">>,
+                      lserver = <<"conference.localhost">>,lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"sBcxm+YVx0VXfn6k9QZimWgspjA=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.073 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='1@conference.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='7579799450025900339'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <item jid='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          role='moderator'
+          affiliation='owner'/>
+    <status code='201'/>
+    <status code='110'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"7579799450025900339">>,type = available,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"1">>,server = <<"conference.localhost">>,
+            resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"1">>,lserver = <<"conference.localhost">>,
+            lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#muc_user{
+             decline = undefined,destroy = undefined,invites = [],
+             items =
+                 [#muc_item{
+                      actor = undefined,continue = undefined,reason = <<>>,
+                      affiliation = owner,role = moderator,
+                      jid =
+                          #jid{
+                              user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              server = <<"localhost">>,
+                              resource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              lserver = <<"localhost">>,
+                              lresource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+                      nick = <<>>}],
+             status_codes = "Én",password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.074 ***</b>
+RECV:
+<message to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='1@conference.localhost'
+         type='groupchat'>
+  <subject/>
+</message>
+
+#message{id = <<>>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"1">>,server = <<"conference.localhost">>,
+                     resource = <<>>,luser = <<"1">>,
+                     lserver = <<"conference.localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [#text{lang = <<>>,data = <<>>}],
+         body = [],thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.074 ***</b>
+SENT:
+<iq to='1@conference.localhost'
+    type='set'
+    id='12456965206363027670'
+    xmlns='jabber:client'>
+  <query xmlns='http://jabber.org/protocol/muc#owner'>
+    <x type='submit'
+       xmlns='jabber:x:data'>
+      <field var='FORM_TYPE'
+             type='hidden'>
+        <value>http://jabber.org/protocol/muc#roomconfig</value>
+      </field>
+      <field var='allow_subscription'
+             type='boolean'
+             label='Allow subscription'>
+        <value>1</value>
+      </field>
+    </x>
+  </query>
+</iq>
+
+#iq{id = <<"12456965206363027670">>,type = set,lang = <<>>,from = undefined,
+    to =
+        #jid{
+            user = <<"1">>,server = <<"conference.localhost">>,
+            resource = <<>>,luser = <<"1">>,
+            lserver = <<"conference.localhost">>,lresource = <<>>},
+    sub_els =
+        [#muc_owner{
+             destroy = undefined,
+             config =
+                 #xdata{
+                     type = submit,instructions = [],title = undefined,
+                     reported = undefined,items = [],
+                     fields =
+                         [#xdata_field{
+                              label = <<>>,type = hidden,
+                              var = <<"FORM_TYPE">>,required = false,
+                              desc = <<>>,
+                              values =
+                                  [<<"http://jabber.org/protocol/muc#roomconfig">>],
+                              options = [],sub_els = []},
+                          #xdata_field{
+                              label = <<"Allow subscription">>,type = boolean,
+                              var = <<"allow_subscription">>,required = false,
+                              desc = <<>>,
+                              values = [<<"1">>],
+                              options = [],sub_els = []}]},
+             items = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.076 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='1@conference.localhost'
+          id='5688777232478174870'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='FOnz9Mk9aWertt3mEGMIGctRwJ4='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"5688777232478174870">>,type = available,lang = <<>>,
+          from = #jid{user = <<"1">>,server = <<"conference.localhost">>,
+                      resource = <<>>,luser = <<"1">>,
+                      lserver = <<"conference.localhost">>,lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"FOnz9Mk9aWertt3mEGMIGctRwJ4=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.076 ***</b>
+RECV:
+<message to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='1@conference.localhost'
+         type='groupchat'
+         id='675561042344278256'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <status code='104'/>
+  </x>
+</message>
+
+#message{id = <<"675561042344278256">>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"1">>,server = <<"conference.localhost">>,
+                     resource = <<>>,luser = <<"1">>,
+                     lserver = <<"conference.localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#muc_user{decline = undefined,destroy = undefined,
+                              invites = [],items = [],status_codes = "h",
+                              password = undefined}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.076 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='1@conference.localhost'
+    type='result'
+    id='12456965206363027670'/>
+
+#iq{id = <<"12456965206363027670">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"1">>,server = <<"conference.localhost">>,
+                resource = <<>>,luser = <<"1">>,
+                lserver = <<"conference.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.077 ***</b>
+SENT:
+<iq to='1@conference.localhost'
+    type='set'
+    id='11118246525300569727'
+    xmlns='jabber:client'>
+  <subscribe nick='nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+             xmlns='urn:xmpp:mucsub:0'/>
+</iq>
+
+#iq{id = <<"11118246525300569727">>,type = set,lang = <<>>,from = undefined,
+    to = #jid{user = <<"1">>,server = <<"conference.localhost">>,
+              resource = <<>>,luser = <<"1">>,
+              lserver = <<"conference.localhost">>,lresource = <<>>},
+    sub_els = [#muc_subscribe{nick = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              password = <<>>,jid = undefined,events = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.078 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='1@conference.localhost'
+    type='result'
+    id='11118246525300569727'>
+  <subscribe xmlns='urn:xmpp:mucsub:0'
+             nick='nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'/>
+</iq>
+
+#iq{id = <<"11118246525300569727">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"1">>,server = <<"conference.localhost">>,
+                resource = <<>>,luser = <<"1">>,
+                lserver = <<"conference.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [#muc_subscribe{nick = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              password = <<>>,jid = undefined,events = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.078 ***</b>
+SENT:
+<presence to='2@conference.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='2017832483099612928'
+          xmlns='jabber:client'>
+  <x xmlns='http://jabber.org/protocol/muc'/>
+</presence>
+
+#presence{id = <<"2017832483099612928">>,type = available,lang = <<>>,
+          from = undefined,
+          to = #jid{user = <<"2">>,server = <<"conference.localhost">>,
+                    resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"2">>,lserver = <<"conference.localhost">>,
+                    lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#muc{history = undefined,password = undefined}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:33:17.079 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:33:17.079181 ===
+Created MUC room 2@conference.localhost by test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()'"`~&lt;&gt;+-/;:_=[]{}|\
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.080 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='2@conference.localhost'
+          id='1435403647959414826'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='sBcxm+YVx0VXfn6k9QZimWgspjA='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"1435403647959414826">>,type = available,lang = <<>>,
+          from = #jid{user = <<"2">>,server = <<"conference.localhost">>,
+                      resource = <<>>,luser = <<"2">>,
+                      lserver = <<"conference.localhost">>,lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"sBcxm+YVx0VXfn6k9QZimWgspjA=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.081 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='2@conference.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='2017832483099612928'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <item jid='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          role='moderator'
+          affiliation='owner'/>
+    <status code='201'/>
+    <status code='110'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"2017832483099612928">>,type = available,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"2">>,server = <<"conference.localhost">>,
+            resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"2">>,lserver = <<"conference.localhost">>,
+            lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#muc_user{
+             decline = undefined,destroy = undefined,invites = [],
+             items =
+                 [#muc_item{
+                      actor = undefined,continue = undefined,reason = <<>>,
+                      affiliation = owner,role = moderator,
+                      jid =
+                          #jid{
+                              user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              server = <<"localhost">>,
+                              resource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              lserver = <<"localhost">>,
+                              lresource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+                      nick = <<>>}],
+             status_codes = "Én",password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.081 ***</b>
+RECV:
+<message to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='2@conference.localhost'
+         type='groupchat'>
+  <subject/>
+</message>
+
+#message{id = <<>>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"2">>,server = <<"conference.localhost">>,
+                     resource = <<>>,luser = <<"2">>,
+                     lserver = <<"conference.localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [#text{lang = <<>>,data = <<>>}],
+         body = [],thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.082 ***</b>
+SENT:
+<iq to='2@conference.localhost'
+    type='set'
+    id='958314317438370701'
+    xmlns='jabber:client'>
+  <query xmlns='http://jabber.org/protocol/muc#owner'>
+    <x type='submit'
+       xmlns='jabber:x:data'>
+      <field var='FORM_TYPE'
+             type='hidden'>
+        <value>http://jabber.org/protocol/muc#roomconfig</value>
+      </field>
+      <field var='allow_subscription'
+             type='boolean'
+             label='Allow subscription'>
+        <value>1</value>
+      </field>
+    </x>
+  </query>
+</iq>
+
+#iq{id = <<"958314317438370701">>,type = set,lang = <<>>,from = undefined,
+    to =
+        #jid{
+            user = <<"2">>,server = <<"conference.localhost">>,
+            resource = <<>>,luser = <<"2">>,
+            lserver = <<"conference.localhost">>,lresource = <<>>},
+    sub_els =
+        [#muc_owner{
+             destroy = undefined,
+             config =
+                 #xdata{
+                     type = submit,instructions = [],title = undefined,
+                     reported = undefined,items = [],
+                     fields =
+                         [#xdata_field{
+                              label = <<>>,type = hidden,
+                              var = <<"FORM_TYPE">>,required = false,
+                              desc = <<>>,
+                              values =
+                                  [<<"http://jabber.org/protocol/muc#roomconfig">>],
+                              options = [],sub_els = []},
+                          #xdata_field{
+                              label = <<"Allow subscription">>,type = boolean,
+                              var = <<"allow_subscription">>,required = false,
+                              desc = <<>>,
+                              values = [<<"1">>],
+                              options = [],sub_els = []}]},
+             items = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.083 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='2@conference.localhost'
+          id='2278990930469098524'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='FOnz9Mk9aWertt3mEGMIGctRwJ4='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"2278990930469098524">>,type = available,lang = <<>>,
+          from = #jid{user = <<"2">>,server = <<"conference.localhost">>,
+                      resource = <<>>,luser = <<"2">>,
+                      lserver = <<"conference.localhost">>,lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"FOnz9Mk9aWertt3mEGMIGctRwJ4=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.083 ***</b>
+RECV:
+<message to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='2@conference.localhost'
+         type='groupchat'
+         id='1721692167009728433'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <status code='104'/>
+  </x>
+</message>
+
+#message{id = <<"1721692167009728433">>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"2">>,server = <<"conference.localhost">>,
+                     resource = <<>>,luser = <<"2">>,
+                     lserver = <<"conference.localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#muc_user{decline = undefined,destroy = undefined,
+                              invites = [],items = [],status_codes = "h",
+                              password = undefined}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.083 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='2@conference.localhost'
+    type='result'
+    id='958314317438370701'/>
+
+#iq{id = <<"958314317438370701">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"2">>,server = <<"conference.localhost">>,
+                resource = <<>>,luser = <<"2">>,
+                lserver = <<"conference.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.083 ***</b>
+SENT:
+<iq to='2@conference.localhost'
+    type='set'
+    id='549187695351905248'
+    xmlns='jabber:client'>
+  <subscribe nick='nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+             xmlns='urn:xmpp:mucsub:0'/>
+</iq>
+
+#iq{id = <<"549187695351905248">>,type = set,lang = <<>>,from = undefined,
+    to = #jid{user = <<"2">>,server = <<"conference.localhost">>,
+              resource = <<>>,luser = <<"2">>,
+              lserver = <<"conference.localhost">>,lresource = <<>>},
+    sub_els = [#muc_subscribe{nick = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              password = <<>>,jid = undefined,events = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.084 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='2@conference.localhost'
+    type='result'
+    id='549187695351905248'>
+  <subscribe xmlns='urn:xmpp:mucsub:0'
+             nick='nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'/>
+</iq>
+
+#iq{id = <<"549187695351905248">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"2">>,server = <<"conference.localhost">>,
+                resource = <<>>,luser = <<"2">>,
+                lserver = <<"conference.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [#muc_subscribe{nick = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              password = <<>>,jid = undefined,events = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.084 ***</b>
+SENT:
+<presence to='3@conference.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='1789272707444999841'
+          xmlns='jabber:client'>
+  <x xmlns='http://jabber.org/protocol/muc'/>
+</presence>
+
+#presence{id = <<"1789272707444999841">>,type = available,lang = <<>>,
+          from = undefined,
+          to = #jid{user = <<"3">>,server = <<"conference.localhost">>,
+                    resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"3">>,lserver = <<"conference.localhost">>,
+                    lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#muc{history = undefined,password = undefined}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:33:17.086 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:33:17.085865 ===
+Created MUC room 3@conference.localhost by test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()'"`~&lt;&gt;+-/;:_=[]{}|\
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.087 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='3@conference.localhost'
+          id='17067085524461058819'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='sBcxm+YVx0VXfn6k9QZimWgspjA='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"17067085524461058819">>,type = available,lang = <<>>,
+          from = #jid{user = <<"3">>,server = <<"conference.localhost">>,
+                      resource = <<>>,luser = <<"3">>,
+                      lserver = <<"conference.localhost">>,lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"sBcxm+YVx0VXfn6k9QZimWgspjA=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.088 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='3@conference.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='1789272707444999841'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <item jid='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          role='moderator'
+          affiliation='owner'/>
+    <status code='201'/>
+    <status code='110'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"1789272707444999841">>,type = available,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"3">>,server = <<"conference.localhost">>,
+            resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"3">>,lserver = <<"conference.localhost">>,
+            lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#muc_user{
+             decline = undefined,destroy = undefined,invites = [],
+             items =
+                 [#muc_item{
+                      actor = undefined,continue = undefined,reason = <<>>,
+                      affiliation = owner,role = moderator,
+                      jid =
+                          #jid{
+                              user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              server = <<"localhost">>,
+                              resource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              lserver = <<"localhost">>,
+                              lresource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+                      nick = <<>>}],
+             status_codes = "Én",password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.089 ***</b>
+RECV:
+<message to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='3@conference.localhost'
+         type='groupchat'>
+  <subject/>
+</message>
+
+#message{id = <<>>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"3">>,server = <<"conference.localhost">>,
+                     resource = <<>>,luser = <<"3">>,
+                     lserver = <<"conference.localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [#text{lang = <<>>,data = <<>>}],
+         body = [],thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.089 ***</b>
+SENT:
+<iq to='3@conference.localhost'
+    type='set'
+    id='6741077273832504635'
+    xmlns='jabber:client'>
+  <query xmlns='http://jabber.org/protocol/muc#owner'>
+    <x type='submit'
+       xmlns='jabber:x:data'>
+      <field var='FORM_TYPE'
+             type='hidden'>
+        <value>http://jabber.org/protocol/muc#roomconfig</value>
+      </field>
+      <field var='allow_subscription'
+             type='boolean'
+             label='Allow subscription'>
+        <value>1</value>
+      </field>
+    </x>
+  </query>
+</iq>
+
+#iq{id = <<"6741077273832504635">>,type = set,lang = <<>>,from = undefined,
+    to =
+        #jid{
+            user = <<"3">>,server = <<"conference.localhost">>,
+            resource = <<>>,luser = <<"3">>,
+            lserver = <<"conference.localhost">>,lresource = <<>>},
+    sub_els =
+        [#muc_owner{
+             destroy = undefined,
+             config =
+                 #xdata{
+                     type = submit,instructions = [],title = undefined,
+                     reported = undefined,items = [],
+                     fields =
+                         [#xdata_field{
+                              label = <<>>,type = hidden,
+                              var = <<"FORM_TYPE">>,required = false,
+                              desc = <<>>,
+                              values =
+                                  [<<"http://jabber.org/protocol/muc#roomconfig">>],
+                              options = [],sub_els = []},
+                          #xdata_field{
+                              label = <<"Allow subscription">>,type = boolean,
+                              var = <<"allow_subscription">>,required = false,
+                              desc = <<>>,
+                              values = [<<"1">>],
+                              options = [],sub_els = []}]},
+             items = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.091 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='3@conference.localhost'
+          id='13298655025050402601'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='FOnz9Mk9aWertt3mEGMIGctRwJ4='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"13298655025050402601">>,type = available,lang = <<>>,
+          from = #jid{user = <<"3">>,server = <<"conference.localhost">>,
+                      resource = <<>>,luser = <<"3">>,
+                      lserver = <<"conference.localhost">>,lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"FOnz9Mk9aWertt3mEGMIGctRwJ4=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.091 ***</b>
+RECV:
+<message to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='3@conference.localhost'
+         type='groupchat'
+         id='7781784497252236645'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <status code='104'/>
+  </x>
+</message>
+
+#message{id = <<"7781784497252236645">>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"3">>,server = <<"conference.localhost">>,
+                     resource = <<>>,luser = <<"3">>,
+                     lserver = <<"conference.localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#muc_user{decline = undefined,destroy = undefined,
+                              invites = [],items = [],status_codes = "h",
+                              password = undefined}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.091 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='3@conference.localhost'
+    type='result'
+    id='6741077273832504635'/>
+
+#iq{id = <<"6741077273832504635">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"3">>,server = <<"conference.localhost">>,
+                resource = <<>>,luser = <<"3">>,
+                lserver = <<"conference.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.091 ***</b>
+SENT:
+<iq to='3@conference.localhost'
+    type='set'
+    id='7137718340806327518'
+    xmlns='jabber:client'>
+  <subscribe nick='nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+             xmlns='urn:xmpp:mucsub:0'/>
+</iq>
+
+#iq{id = <<"7137718340806327518">>,type = set,lang = <<>>,from = undefined,
+    to = #jid{user = <<"3">>,server = <<"conference.localhost">>,
+              resource = <<>>,luser = <<"3">>,
+              lserver = <<"conference.localhost">>,lresource = <<>>},
+    sub_els = [#muc_subscribe{nick = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              password = <<>>,jid = undefined,events = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.092 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='3@conference.localhost'
+    type='result'
+    id='7137718340806327518'>
+  <subscribe xmlns='urn:xmpp:mucsub:0'
+             nick='nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'/>
+</iq>
+
+#iq{id = <<"7137718340806327518">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"3">>,server = <<"conference.localhost">>,
+                resource = <<>>,luser = <<"3">>,
+                lserver = <<"conference.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [#muc_subscribe{nick = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              password = <<>>,jid = undefined,events = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.092 ***</b>
+SENT:
+<presence to='4@conference.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='8957818113704800704'
+          xmlns='jabber:client'>
+  <x xmlns='http://jabber.org/protocol/muc'/>
+</presence>
+
+#presence{id = <<"8957818113704800704">>,type = available,lang = <<>>,
+          from = undefined,
+          to = #jid{user = <<"4">>,server = <<"conference.localhost">>,
+                    resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"4">>,lserver = <<"conference.localhost">>,
+                    lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#muc{history = undefined,password = undefined}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:33:17.093 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:33:17.093660 ===
+Created MUC room 4@conference.localhost by test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()'"`~&lt;&gt;+-/;:_=[]{}|\
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.095 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='4@conference.localhost'
+          id='15768661834714708948'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='sBcxm+YVx0VXfn6k9QZimWgspjA='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"15768661834714708948">>,type = available,lang = <<>>,
+          from = #jid{user = <<"4">>,server = <<"conference.localhost">>,
+                      resource = <<>>,luser = <<"4">>,
+                      lserver = <<"conference.localhost">>,lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"sBcxm+YVx0VXfn6k9QZimWgspjA=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.097 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='4@conference.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='8957818113704800704'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <item jid='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          role='moderator'
+          affiliation='owner'/>
+    <status code='201'/>
+    <status code='110'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"8957818113704800704">>,type = available,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"4">>,server = <<"conference.localhost">>,
+            resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"4">>,lserver = <<"conference.localhost">>,
+            lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#muc_user{
+             decline = undefined,destroy = undefined,invites = [],
+             items =
+                 [#muc_item{
+                      actor = undefined,continue = undefined,reason = <<>>,
+                      affiliation = owner,role = moderator,
+                      jid =
+                          #jid{
+                              user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              server = <<"localhost">>,
+                              resource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              lserver = <<"localhost">>,
+                              lresource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+                      nick = <<>>}],
+             status_codes = "Én",password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.097 ***</b>
+RECV:
+<message to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='4@conference.localhost'
+         type='groupchat'>
+  <subject/>
+</message>
+
+#message{id = <<>>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"4">>,server = <<"conference.localhost">>,
+                     resource = <<>>,luser = <<"4">>,
+                     lserver = <<"conference.localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [#text{lang = <<>>,data = <<>>}],
+         body = [],thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.097 ***</b>
+SENT:
+<iq to='4@conference.localhost'
+    type='set'
+    id='11539364420681232192'
+    xmlns='jabber:client'>
+  <query xmlns='http://jabber.org/protocol/muc#owner'>
+    <x type='submit'
+       xmlns='jabber:x:data'>
+      <field var='FORM_TYPE'
+             type='hidden'>
+        <value>http://jabber.org/protocol/muc#roomconfig</value>
+      </field>
+      <field var='allow_subscription'
+             type='boolean'
+             label='Allow subscription'>
+        <value>1</value>
+      </field>
+    </x>
+  </query>
+</iq>
+
+#iq{id = <<"11539364420681232192">>,type = set,lang = <<>>,from = undefined,
+    to =
+        #jid{
+            user = <<"4">>,server = <<"conference.localhost">>,
+            resource = <<>>,luser = <<"4">>,
+            lserver = <<"conference.localhost">>,lresource = <<>>},
+    sub_els =
+        [#muc_owner{
+             destroy = undefined,
+             config =
+                 #xdata{
+                     type = submit,instructions = [],title = undefined,
+                     reported = undefined,items = [],
+                     fields =
+                         [#xdata_field{
+                              label = <<>>,type = hidden,
+                              var = <<"FORM_TYPE">>,required = false,
+                              desc = <<>>,
+                              values =
+                                  [<<"http://jabber.org/protocol/muc#roomconfig">>],
+                              options = [],sub_els = []},
+                          #xdata_field{
+                              label = <<"Allow subscription">>,type = boolean,
+                              var = <<"allow_subscription">>,required = false,
+                              desc = <<>>,
+                              values = [<<"1">>],
+                              options = [],sub_els = []}]},
+             items = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.098 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='4@conference.localhost'
+          id='1891291189177416445'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='FOnz9Mk9aWertt3mEGMIGctRwJ4='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"1891291189177416445">>,type = available,lang = <<>>,
+          from = #jid{user = <<"4">>,server = <<"conference.localhost">>,
+                      resource = <<>>,luser = <<"4">>,
+                      lserver = <<"conference.localhost">>,lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"FOnz9Mk9aWertt3mEGMIGctRwJ4=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.099 ***</b>
+RECV:
+<message to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='4@conference.localhost'
+         type='groupchat'
+         id='14902365356449080369'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <status code='104'/>
+  </x>
+</message>
+
+#message{id = <<"14902365356449080369">>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"4">>,server = <<"conference.localhost">>,
+                     resource = <<>>,luser = <<"4">>,
+                     lserver = <<"conference.localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#muc_user{decline = undefined,destroy = undefined,
+                              invites = [],items = [],status_codes = "h",
+                              password = undefined}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.099 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='4@conference.localhost'
+    type='result'
+    id='11539364420681232192'/>
+
+#iq{id = <<"11539364420681232192">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"4">>,server = <<"conference.localhost">>,
+                resource = <<>>,luser = <<"4">>,
+                lserver = <<"conference.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.099 ***</b>
+SENT:
+<iq to='4@conference.localhost'
+    type='set'
+    id='1332755916500337115'
+    xmlns='jabber:client'>
+  <subscribe nick='nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+             xmlns='urn:xmpp:mucsub:0'/>
+</iq>
+
+#iq{id = <<"1332755916500337115">>,type = set,lang = <<>>,from = undefined,
+    to = #jid{user = <<"4">>,server = <<"conference.localhost">>,
+              resource = <<>>,luser = <<"4">>,
+              lserver = <<"conference.localhost">>,lresource = <<>>},
+    sub_els = [#muc_subscribe{nick = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              password = <<>>,jid = undefined,events = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.100 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='4@conference.localhost'
+    type='result'
+    id='1332755916500337115'>
+  <subscribe xmlns='urn:xmpp:mucsub:0'
+             nick='nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'/>
+</iq>
+
+#iq{id = <<"1332755916500337115">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"4">>,server = <<"conference.localhost">>,
+                resource = <<>>,luser = <<"4">>,
+                lserver = <<"conference.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [#muc_subscribe{nick = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              password = <<>>,jid = undefined,events = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.101 ***</b>
+SENT:
+<presence to='5@conference.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='4597839610882190540'
+          xmlns='jabber:client'>
+  <x xmlns='http://jabber.org/protocol/muc'/>
+</presence>
+
+#presence{id = <<"4597839610882190540">>,type = available,lang = <<>>,
+          from = undefined,
+          to = #jid{user = <<"5">>,server = <<"conference.localhost">>,
+                    resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"5">>,lserver = <<"conference.localhost">>,
+                    lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#muc{history = undefined,password = undefined}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:33:17.101 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:33:17.101798 ===
+Created MUC room 5@conference.localhost by test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()'"`~&lt;&gt;+-/;:_=[]{}|\
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.103 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='5@conference.localhost'
+          id='9072716425500975686'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='sBcxm+YVx0VXfn6k9QZimWgspjA='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"9072716425500975686">>,type = available,lang = <<>>,
+          from = #jid{user = <<"5">>,server = <<"conference.localhost">>,
+                      resource = <<>>,luser = <<"5">>,
+                      lserver = <<"conference.localhost">>,lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"sBcxm+YVx0VXfn6k9QZimWgspjA=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.103 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='5@conference.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='4597839610882190540'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <item jid='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          role='moderator'
+          affiliation='owner'/>
+    <status code='201'/>
+    <status code='110'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"4597839610882190540">>,type = available,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"5">>,server = <<"conference.localhost">>,
+            resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"5">>,lserver = <<"conference.localhost">>,
+            lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#muc_user{
+             decline = undefined,destroy = undefined,invites = [],
+             items =
+                 [#muc_item{
+                      actor = undefined,continue = undefined,reason = <<>>,
+                      affiliation = owner,role = moderator,
+                      jid =
+                          #jid{
+                              user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              server = <<"localhost">>,
+                              resource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              lserver = <<"localhost">>,
+                              lresource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+                      nick = <<>>}],
+             status_codes = "Én",password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.103 ***</b>
+RECV:
+<message to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='5@conference.localhost'
+         type='groupchat'>
+  <subject/>
+</message>
+
+#message{id = <<>>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"5">>,server = <<"conference.localhost">>,
+                     resource = <<>>,luser = <<"5">>,
+                     lserver = <<"conference.localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [#text{lang = <<>>,data = <<>>}],
+         body = [],thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.104 ***</b>
+SENT:
+<iq to='5@conference.localhost'
+    type='set'
+    id='9376291658073172049'
+    xmlns='jabber:client'>
+  <query xmlns='http://jabber.org/protocol/muc#owner'>
+    <x type='submit'
+       xmlns='jabber:x:data'>
+      <field var='FORM_TYPE'
+             type='hidden'>
+        <value>http://jabber.org/protocol/muc#roomconfig</value>
+      </field>
+      <field var='allow_subscription'
+             type='boolean'
+             label='Allow subscription'>
+        <value>1</value>
+      </field>
+    </x>
+  </query>
+</iq>
+
+#iq{id = <<"9376291658073172049">>,type = set,lang = <<>>,from = undefined,
+    to =
+        #jid{
+            user = <<"5">>,server = <<"conference.localhost">>,
+            resource = <<>>,luser = <<"5">>,
+            lserver = <<"conference.localhost">>,lresource = <<>>},
+    sub_els =
+        [#muc_owner{
+             destroy = undefined,
+             config =
+                 #xdata{
+                     type = submit,instructions = [],title = undefined,
+                     reported = undefined,items = [],
+                     fields =
+                         [#xdata_field{
+                              label = <<>>,type = hidden,
+                              var = <<"FORM_TYPE">>,required = false,
+                              desc = <<>>,
+                              values =
+                                  [<<"http://jabber.org/protocol/muc#roomconfig">>],
+                              options = [],sub_els = []},
+                          #xdata_field{
+                              label = <<"Allow subscription">>,type = boolean,
+                              var = <<"allow_subscription">>,required = false,
+                              desc = <<>>,
+                              values = [<<"1">>],
+                              options = [],sub_els = []}]},
+             items = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.105 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='5@conference.localhost'
+          id='10324568348211267389'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='FOnz9Mk9aWertt3mEGMIGctRwJ4='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"10324568348211267389">>,type = available,lang = <<>>,
+          from = #jid{user = <<"5">>,server = <<"conference.localhost">>,
+                      resource = <<>>,luser = <<"5">>,
+                      lserver = <<"conference.localhost">>,lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"FOnz9Mk9aWertt3mEGMIGctRwJ4=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.106 ***</b>
+RECV:
+<message to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='5@conference.localhost'
+         type='groupchat'
+         id='7353010577048253686'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <status code='104'/>
+  </x>
+</message>
+
+#message{id = <<"7353010577048253686">>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"5">>,server = <<"conference.localhost">>,
+                     resource = <<>>,luser = <<"5">>,
+                     lserver = <<"conference.localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#muc_user{decline = undefined,destroy = undefined,
+                              invites = [],items = [],status_codes = "h",
+                              password = undefined}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.106 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='5@conference.localhost'
+    type='result'
+    id='9376291658073172049'/>
+
+#iq{id = <<"9376291658073172049">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"5">>,server = <<"conference.localhost">>,
+                resource = <<>>,luser = <<"5">>,
+                lserver = <<"conference.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.106 ***</b>
+SENT:
+<iq to='5@conference.localhost'
+    type='set'
+    id='15160407848292221836'
+    xmlns='jabber:client'>
+  <subscribe nick='nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+             xmlns='urn:xmpp:mucsub:0'/>
+</iq>
+
+#iq{id = <<"15160407848292221836">>,type = set,lang = <<>>,from = undefined,
+    to = #jid{user = <<"5">>,server = <<"conference.localhost">>,
+              resource = <<>>,luser = <<"5">>,
+              lserver = <<"conference.localhost">>,lresource = <<>>},
+    sub_els = [#muc_subscribe{nick = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              password = <<>>,jid = undefined,events = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.107 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='5@conference.localhost'
+    type='result'
+    id='15160407848292221836'>
+  <subscribe xmlns='urn:xmpp:mucsub:0'
+             nick='nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'/>
+</iq>
+
+#iq{id = <<"15160407848292221836">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"5">>,server = <<"conference.localhost">>,
+                resource = <<>>,luser = <<"5">>,
+                lserver = <<"conference.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [#muc_subscribe{nick = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              password = <<>>,jid = undefined,events = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.107 ***</b>
+SENT:
+<iq to='conference.localhost'
+    type='get'
+    id='5833914321347055605'
+    xmlns='jabber:client'>
+  <subscriptions xmlns='urn:xmpp:mucsub:0'/>
+</iq>
+
+#iq{id = <<"5833914321347055605">>,type = get,lang = <<>>,from = undefined,
+    to = #jid{user = <<>>,server = <<"conference.localhost">>,resource = <<>>,
+              luser = <<>>,lserver = <<"conference.localhost">>,
+              lresource = <<>>},
+    sub_els = [#muc_subscriptions{list = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.108 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='conference.localhost'
+    type='result'
+    id='5833914321347055605'>
+  <subscriptions xmlns='urn:xmpp:mucsub:0'>
+    <subscription nick='nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+                  jid='1@conference.localhost'/>
+    <subscription nick='nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+                  jid='2@conference.localhost'/>
+    <subscription nick='nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+                  jid='3@conference.localhost'/>
+    <subscription nick='nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+                  jid='4@conference.localhost'/>
+    <subscription nick='nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+                  jid='5@conference.localhost'/>
+  </subscriptions>
+</iq>
+
+#iq{id = <<"5833914321347055605">>,type = result,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<>>,server = <<"conference.localhost">>,resource = <<>>,
+            luser = <<>>,lserver = <<"conference.localhost">>,
+            lresource = <<>>},
+    to =
+        #jid{
+            user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els =
+        [#muc_subscriptions{
+             list =
+                 [#muc_subscription{
+                      jid =
+                          #jid{
+                              user = <<"1">>,
+                              server = <<"conference.localhost">>,
+                              resource = <<>>,luser = <<"1">>,
+                              lserver = <<"conference.localhost">>,
+                              lresource = <<>>},
+                      nick = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                      events = []},
+                  #muc_subscription{
+                      jid =
+                          #jid{
+                              user = <<"2">>,
+                              server = <<"conference.localhost">>,
+                              resource = <<>>,luser = <<"2">>,
+                              lserver = <<"conference.localhost">>,
+                              lresource = <<>>},
+                      nick = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                      events = []},
+                  #muc_subscription{
+                      jid =
+                          #jid{
+                              user = <<"3">>,
+                              server = <<"conference.localhost">>,
+                              resource = <<>>,luser = <<"3">>,
+                              lserver = <<"conference.localhost">>,
+                              lresource = <<>>},
+                      nick = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                      events = []},
+                  #muc_subscription{
+                      jid =
+                          #jid{
+                              user = <<"4">>,
+                              server = <<"conference.localhost">>,
+                              resource = <<>>,luser = <<"4">>,
+                              lserver = <<"conference.localhost">>,
+                              lresource = <<>>},
+                      nick = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                      events = []},
+                  #muc_subscription{
+                      jid =
+                          #jid{
+                              user = <<"5">>,
+                              server = <<"conference.localhost">>,
+                              resource = <<>>,luser = <<"5">>,
+                              lserver = <<"conference.localhost">>,
+                              lresource = <<>>},
+                      nick = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                      events = []}]}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.108 ***</b>
+SENT:
+<iq to='1@conference.localhost'
+    type='set'
+    id='2036542292152515997'
+    xmlns='jabber:client'>
+  <unsubscribe xmlns='urn:xmpp:mucsub:0'/>
+</iq>
+
+#iq{id = <<"2036542292152515997">>,type = set,lang = <<>>,from = undefined,
+    to = #jid{user = <<"1">>,server = <<"conference.localhost">>,
+              resource = <<>>,luser = <<"1">>,
+              lserver = <<"conference.localhost">>,lresource = <<>>},
+    sub_els = [#muc_unsubscribe{nick = <<>>,jid = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.109 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='1@conference.localhost'
+    type='result'
+    id='2036542292152515997'/>
+
+#iq{id = <<"2036542292152515997">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"1">>,server = <<"conference.localhost">>,
+                resource = <<>>,luser = <<"1">>,
+                lserver = <<"conference.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.109 ***</b>
+SENT:
+<presence to='1@conference.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          type='unavailable'
+          id='8329748296567696202'
+          xmlns='jabber:client'/>
+
+#presence{id = <<"8329748296567696202">>,type = unavailable,lang = <<>>,
+          from = undefined,
+          to = #jid{user = <<"1">>,server = <<"conference.localhost">>,
+                    resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"1">>,lserver = <<"conference.localhost">>,
+                    lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,sub_els = [],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:33:17.110 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:33:17.110114 ===
+Destroyed MUC room 1@conference.localhost because it's temporary and empty
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.110 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='1@conference.localhost'
+          type='unavailable'
+          id='16401060168341850668'/>
+
+#presence{id = <<"16401060168341850668">>,type = unavailable,lang = <<>>,
+          from = #jid{user = <<"1">>,server = <<"conference.localhost">>,
+                      resource = <<>>,luser = <<"1">>,
+                      lserver = <<"conference.localhost">>,lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,sub_els = [],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.111 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='1@conference.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          type='unavailable'
+          id='8329748296567696202'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <item jid='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          role='none'
+          affiliation='owner'/>
+    <status code='110'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"8329748296567696202">>,type = unavailable,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"1">>,server = <<"conference.localhost">>,
+            resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"1">>,lserver = <<"conference.localhost">>,
+            lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#muc_user{
+             decline = undefined,destroy = undefined,invites = [],
+             items =
+                 [#muc_item{
+                      actor = undefined,continue = undefined,reason = <<>>,
+                      affiliation = owner,role = none,
+                      jid =
+                          #jid{
+                              user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              server = <<"localhost">>,
+                              resource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              lserver = <<"localhost">>,
+                              lresource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+                      nick = <<>>}],
+             status_codes = "n",password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:33:17.111 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:33:17.111005 ===
+Stopping MUC room 1@conference.localhost
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.111 ***</b>
+SENT:
+<iq to='2@conference.localhost'
+    type='set'
+    id='16532254427762283788'
+    xmlns='jabber:client'>
+  <unsubscribe xmlns='urn:xmpp:mucsub:0'/>
+</iq>
+
+#iq{id = <<"16532254427762283788">>,type = set,lang = <<>>,from = undefined,
+    to = #jid{user = <<"2">>,server = <<"conference.localhost">>,
+              resource = <<>>,luser = <<"2">>,
+              lserver = <<"conference.localhost">>,lresource = <<>>},
+    sub_els = [#muc_unsubscribe{nick = <<>>,jid = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.112 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='2@conference.localhost'
+    type='result'
+    id='16532254427762283788'/>
+
+#iq{id = <<"16532254427762283788">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"2">>,server = <<"conference.localhost">>,
+                resource = <<>>,luser = <<"2">>,
+                lserver = <<"conference.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.112 ***</b>
+SENT:
+<presence to='2@conference.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          type='unavailable'
+          id='6217964158709128147'
+          xmlns='jabber:client'/>
+
+#presence{id = <<"6217964158709128147">>,type = unavailable,lang = <<>>,
+          from = undefined,
+          to = #jid{user = <<"2">>,server = <<"conference.localhost">>,
+                    resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"2">>,lserver = <<"conference.localhost">>,
+                    lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,sub_els = [],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:33:17.113 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:33:17.113172 ===
+Destroyed MUC room 2@conference.localhost because it's temporary and empty
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.113 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='2@conference.localhost'
+          type='unavailable'
+          id='13558922342244861018'/>
+
+#presence{id = <<"13558922342244861018">>,type = unavailable,lang = <<>>,
+          from = #jid{user = <<"2">>,server = <<"conference.localhost">>,
+                      resource = <<>>,luser = <<"2">>,
+                      lserver = <<"conference.localhost">>,lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,sub_els = [],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.114 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='2@conference.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          type='unavailable'
+          id='6217964158709128147'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <item jid='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          role='none'
+          affiliation='owner'/>
+    <status code='110'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"6217964158709128147">>,type = unavailable,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"2">>,server = <<"conference.localhost">>,
+            resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"2">>,lserver = <<"conference.localhost">>,
+            lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#muc_user{
+             decline = undefined,destroy = undefined,invites = [],
+             items =
+                 [#muc_item{
+                      actor = undefined,continue = undefined,reason = <<>>,
+                      affiliation = owner,role = none,
+                      jid =
+                          #jid{
+                              user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              server = <<"localhost">>,
+                              resource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              lserver = <<"localhost">>,
+                              lresource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+                      nick = <<>>}],
+             status_codes = "n",password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.114 ***</b>
+SENT:
+<iq to='3@conference.localhost'
+    type='set'
+    id='15943649000971335155'
+    xmlns='jabber:client'>
+  <unsubscribe xmlns='urn:xmpp:mucsub:0'/>
+</iq>
+
+#iq{id = <<"15943649000971335155">>,type = set,lang = <<>>,from = undefined,
+    to = #jid{user = <<"3">>,server = <<"conference.localhost">>,
+              resource = <<>>,luser = <<"3">>,
+              lserver = <<"conference.localhost">>,lresource = <<>>},
+    sub_els = [#muc_unsubscribe{nick = <<>>,jid = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:33:17.114 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:33:17.114158 ===
+Stopping MUC room 2@conference.localhost
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.115 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='3@conference.localhost'
+    type='result'
+    id='15943649000971335155'/>
+
+#iq{id = <<"15943649000971335155">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"3">>,server = <<"conference.localhost">>,
+                resource = <<>>,luser = <<"3">>,
+                lserver = <<"conference.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.115 ***</b>
+SENT:
+<presence to='3@conference.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          type='unavailable'
+          id='16038086671846356359'
+          xmlns='jabber:client'/>
+
+#presence{id = <<"16038086671846356359">>,type = unavailable,lang = <<>>,
+          from = undefined,
+          to = #jid{user = <<"3">>,server = <<"conference.localhost">>,
+                    resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"3">>,lserver = <<"conference.localhost">>,
+                    lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,sub_els = [],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:33:17.116 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:33:17.116385 ===
+Destroyed MUC room 3@conference.localhost because it's temporary and empty
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:33:17.117 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:33:17.116959 ===
+Stopping MUC room 3@conference.localhost
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.117 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='3@conference.localhost'
+          type='unavailable'
+          id='6738308970882055460'/>
+
+#presence{id = <<"6738308970882055460">>,type = unavailable,lang = <<>>,
+          from = #jid{user = <<"3">>,server = <<"conference.localhost">>,
+                      resource = <<>>,luser = <<"3">>,
+                      lserver = <<"conference.localhost">>,lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,sub_els = [],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.118 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='3@conference.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          type='unavailable'
+          id='16038086671846356359'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <item jid='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          role='none'
+          affiliation='owner'/>
+    <status code='110'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"16038086671846356359">>,type = unavailable,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"3">>,server = <<"conference.localhost">>,
+            resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"3">>,lserver = <<"conference.localhost">>,
+            lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#muc_user{
+             decline = undefined,destroy = undefined,invites = [],
+             items =
+                 [#muc_item{
+                      actor = undefined,continue = undefined,reason = <<>>,
+                      affiliation = owner,role = none,
+                      jid =
+                          #jid{
+                              user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              server = <<"localhost">>,
+                              resource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              lserver = <<"localhost">>,
+                              lresource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+                      nick = <<>>}],
+             status_codes = "n",password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.118 ***</b>
+SENT:
+<iq to='4@conference.localhost'
+    type='set'
+    id='11721771897175007595'
+    xmlns='jabber:client'>
+  <unsubscribe xmlns='urn:xmpp:mucsub:0'/>
+</iq>
+
+#iq{id = <<"11721771897175007595">>,type = set,lang = <<>>,from = undefined,
+    to = #jid{user = <<"4">>,server = <<"conference.localhost">>,
+              resource = <<>>,luser = <<"4">>,
+              lserver = <<"conference.localhost">>,lresource = <<>>},
+    sub_els = [#muc_unsubscribe{nick = <<>>,jid = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.119 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='4@conference.localhost'
+    type='result'
+    id='11721771897175007595'/>
+
+#iq{id = <<"11721771897175007595">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"4">>,server = <<"conference.localhost">>,
+                resource = <<>>,luser = <<"4">>,
+                lserver = <<"conference.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.119 ***</b>
+SENT:
+<presence to='4@conference.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          type='unavailable'
+          id='11912943109358909909'
+          xmlns='jabber:client'/>
+
+#presence{id = <<"11912943109358909909">>,type = unavailable,lang = <<>>,
+          from = undefined,
+          to = #jid{user = <<"4">>,server = <<"conference.localhost">>,
+                    resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"4">>,lserver = <<"conference.localhost">>,
+                    lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,sub_els = [],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.120 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='4@conference.localhost'
+          type='unavailable'
+          id='10529818784398894529'/>
+
+#presence{id = <<"10529818784398894529">>,type = unavailable,lang = <<>>,
+          from = #jid{user = <<"4">>,server = <<"conference.localhost">>,
+                      resource = <<>>,luser = <<"4">>,
+                      lserver = <<"conference.localhost">>,lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,sub_els = [],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:33:17.120 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:33:17.120068 ===
+Destroyed MUC room 4@conference.localhost because it's temporary and empty
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.121 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='4@conference.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          type='unavailable'
+          id='11912943109358909909'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <item jid='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          role='none'
+          affiliation='owner'/>
+    <status code='110'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"11912943109358909909">>,type = unavailable,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"4">>,server = <<"conference.localhost">>,
+            resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"4">>,lserver = <<"conference.localhost">>,
+            lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#muc_user{
+             decline = undefined,destroy = undefined,invites = [],
+             items =
+                 [#muc_item{
+                      actor = undefined,continue = undefined,reason = <<>>,
+                      affiliation = owner,role = none,
+                      jid =
+                          #jid{
+                              user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              server = <<"localhost">>,
+                              resource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              lserver = <<"localhost">>,
+                              lresource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+                      nick = <<>>}],
+             status_codes = "n",password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.121 ***</b>
+SENT:
+<iq to='5@conference.localhost'
+    type='set'
+    id='15776110133322075024'
+    xmlns='jabber:client'>
+  <unsubscribe xmlns='urn:xmpp:mucsub:0'/>
+</iq>
+
+#iq{id = <<"15776110133322075024">>,type = set,lang = <<>>,from = undefined,
+    to = #jid{user = <<"5">>,server = <<"conference.localhost">>,
+              resource = <<>>,luser = <<"5">>,
+              lserver = <<"conference.localhost">>,lresource = <<>>},
+    sub_els = [#muc_unsubscribe{nick = <<>>,jid = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.121 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='5@conference.localhost'
+    type='result'
+    id='15776110133322075024'/>
+
+#iq{id = <<"15776110133322075024">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"5">>,server = <<"conference.localhost">>,
+                resource = <<>>,luser = <<"5">>,
+                lserver = <<"conference.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.121 ***</b>
+SENT:
+<presence to='5@conference.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          type='unavailable'
+          id='5799855311328502824'
+          xmlns='jabber:client'/>
+
+#presence{id = <<"5799855311328502824">>,type = unavailable,lang = <<>>,
+          from = undefined,
+          to = #jid{user = <<"5">>,server = <<"conference.localhost">>,
+                    resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"5">>,lserver = <<"conference.localhost">>,
+                    lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,sub_els = [],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.123 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='5@conference.localhost'
+          type='unavailable'
+          id='6302767320045839346'/>
+
+#presence{id = <<"6302767320045839346">>,type = unavailable,lang = <<>>,
+          from = #jid{user = <<"5">>,server = <<"conference.localhost">>,
+                      resource = <<>>,luser = <<"5">>,
+                      lserver = <<"conference.localhost">>,lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,sub_els = [],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:17.125 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='5@conference.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          type='unavailable'
+          id='5799855311328502824'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <item jid='test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          role='none'
+          affiliation='owner'/>
+    <status code='110'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"5799855311328502824">>,type = unavailable,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"5">>,server = <<"conference.localhost">>,
+            resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"5">>,lserver = <<"conference.localhost">>,
+            lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#muc_user{
+             decline = undefined,destroy = undefined,invites = [],
+             items =
+                 [#muc_item{
+                      actor = undefined,continue = undefined,reason = <<>>,
+                      affiliation = owner,role = none,
+                      jid =
+                          #jid{
+                              user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              server = <<"localhost">>,
+                              resource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              lserver = <<"localhost">>,
+                              lresource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+                      nick = <<>>}],
+             status_codes = "n",password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:33:17.122 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:33:17.122348 ===
+Destroyed MUC room 5@conference.localhost because it's temporary and empty
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:33:17.123 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:33:17.123799 ===
+Stopping MUC room 4@conference.localhost
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:33:17.124 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:33:17.123888 ===
+Stopping MUC room 5@conference.localhost
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:33:17.126 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:33:17.125921 ===
+(tcp|&lt;0.31024.0&gt;) Closing c2s session for test_single!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()'"`~&lt;&gt;+-/;:_=[]{}|\: Stream reset by peer
+
+</pre></div>
+<pre>
+<a name="end"></a>
+
+
+=== Ended at 2021-12-09 17:33:17
+=== successfully completed test case
+=== === Returned value: [{receiver,undefined},
+                     {sm,true},
+                     {compression,[&lt;&lt;"zlib"&gt;&gt;]},
+                     {stream_id,&lt;&lt;"382054947815766888"&gt;&gt;},
+                     {sasl,#Fun&lt;suite.6.40689848&gt;},
+                     {legacy_auth,true},
+                     {register,true},
+                     {starttls,true},
+                     {mechs,
+                         [&lt;&lt;"ANONYMOUS"&gt;&gt;,&lt;&lt;"DIGEST-MD5"&gt;&gt;,&lt;&lt;"PLAIN"&gt;&gt;,
+                          &lt;&lt;"SCRAM-SHA-512"&gt;&gt;,&lt;&lt;"SCRAM-SHA-256"&gt;&gt;,
+                          &lt;&lt;"SCRAM-SHA-1"&gt;&gt;,&lt;&lt;"X-OAUTH2"&gt;&gt;]},
+                     {user,&lt;&lt;"test_single!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;},
+                     {slave,
+                         {jid,&lt;&lt;"test_slave!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"localhost"&gt;&gt;,
+                             &lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"test_slave!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"localhost"&gt;&gt;,
+                             &lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;}},
+                     {master,
+                         {jid,&lt;&lt;"test_master!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"localhost"&gt;&gt;,
+                             &lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"test_master!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"localhost"&gt;&gt;,
+                             &lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;}},
+                     {resource,&lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {nick,&lt;&lt;"nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {mode,single},
+                     {watchdog,&lt;0.31022.0&gt;},
+                     {event_relay,&lt;0.30876.0&gt;},
+                     {persistent_room,false},
+                     {server_port,5222},
+                     {server_host,"localhost"},
+                     {component_port,5270},
+                     {s2s_port,5269},
+                     {server,&lt;&lt;"localhost"&gt;&gt;},
+                     {master_nick,
+                         &lt;&lt;"master_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {slave_nick,
+                         &lt;&lt;"slave_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {room_subject,
+                         &lt;&lt;"hello, world!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {certfile,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/test/ejabberd_SUITE_data/cert.pem"},
+                     {anonymous,false},
+                     {type,client},
+                     {xmlns,&lt;&lt;"jabber:client"&gt;&gt;},
+                     {ns_stream,&lt;&lt;"http://etherx.jabber.org/streams"&gt;&gt;},
+                     {stream_version,{1,0}},
+                     {stream_from,&lt;&lt;&gt;&gt;},
+                     {db_xmlns,&lt;&lt;&gt;&gt;},
+                     {rosterver,false},
+                     {lang,&lt;&lt;"en"&gt;&gt;},
+                     {base_dir,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd"},
+                     {pubsub_node,&lt;&lt;"node!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {pubsub_node_title,
+                         &lt;&lt;"title!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {master_resource,
+                         &lt;&lt;"master_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {slave_resource,
+                         &lt;&lt;"slave_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {password,&lt;&lt;"password!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {backends,[mnesia]},
+                     {tc_logfile,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.33.03/lib.ejabberd.logs/run.2021-12-09_17.33.04/ejabberd_suite.muc_service_subscriptions.html"},
+                     {tc_group_properties,[{name,muc_single},sequence]},
+                     {tc_group_path,[[{name,no_db},sequence]]},
+                     {data_dir,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/test/ejabberd_SUITE_data/"},
+                     {priv_dir,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.33.03/lib.ejabberd.logs/run.2021-12-09_17.33.04/log_private/"}]
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>  |  <a href="../../../suite.log.latest.html">Latest test result</a>
+</p>
+<div class="copyright">Copyright &copy; 2021 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!--date-->Thu Dec 09 2021 17:33:17<!--/date--><br />
+</div>
+</center>
+</body>
+</html>
