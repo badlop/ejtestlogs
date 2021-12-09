@@ -1,0 +1,3003 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test ejabberd_SUITE:pubsub_affiliations_master result</title>
+<meta http-equiv="cache-control" content="no-cache"></meta>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+<link rel="stylesheet" href="../../ct_default.css" type="text/css"></link>
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="ejabberd_suite.src.html#pubsub_affiliations_master-1">ejabberd_SUITE:pubsub_affiliations_master/1</a> (click for source code)
+
+=== Config value:
+
+    [{event_relay,&lt;0.1258.1&gt;},
+     {watchdog,&lt;0.1257.1&gt;},
+     {server,&lt;&lt;"mnesia.localhost"&gt;&gt;},
+     {server_port,5222},
+     {server_host,"localhost"},
+     {component_port,5270},
+     {s2s_port,5269},
+     {user,&lt;&lt;"test_single!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;},
+     {nick,&lt;&lt;"nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {master_nick,&lt;&lt;"master_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {slave_nick,&lt;&lt;"slave_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {room_subject,&lt;&lt;"hello, world!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {certfile,"/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/test/ejabberd_SUITE_data/cert.pem"},
+     {persistent_room,true},
+     {anonymous,false},
+     {type,client},
+     {xmlns,&lt;&lt;"jabber:client"&gt;&gt;},
+     {ns_stream,&lt;&lt;"http://etherx.jabber.org/streams"&gt;&gt;},
+     {stream_version,{1,0}},
+     {stream_id,&lt;&lt;&gt;&gt;},
+     {stream_from,&lt;&lt;&gt;&gt;},
+     {db_xmlns,&lt;&lt;&gt;&gt;},
+     {mechs,[]},
+     {rosterver,false},
+     {lang,&lt;&lt;"en"&gt;&gt;},
+     {base_dir,"/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd"},
+     {receiver,undefined},
+     {pubsub_node,&lt;&lt;"node!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {pubsub_node_title,&lt;&lt;"title!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {resource,&lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {master_resource,&lt;&lt;"master_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {slave_resource,&lt;&lt;"slave_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {password,&lt;&lt;"password!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {backends,[mnesia]},
+     {tc_logfile,"/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.09.24/lib.ejabberd.logs/run.2021-12-09_17.09.25/ejabberd_suite.pubsub_affiliations_master.10626.html"},
+     {tc_group_properties,[{name,pubsub_affiliations},parallel]},
+     {tc_group_path,[[{name,pubsub_master_slave},sequence],
+                     [{name,mnesia},sequence]]},
+     {data_dir,"/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/test/ejabberd_SUITE_data/"},
+     {priv_dir,"/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.09.24/lib.ejabberd.logs/run.2021-12-09_17.09.25/log_private/"}]
+
+=== Current directory is "/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.09.24"
+
+=== Started at 2021-12-09 17:10:29
+
+<br />
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.727 ***</b>
+SENT:
+<stream:stream version='1.0'
+               xml:lang='en'
+               xmlns:stream='http://etherx.jabber.org/streams'
+               to='mnesia.localhost'
+               xmlns='jabber:client'/>
+
+#stream_start{from = undefined,
+              to = #jid{user = <<>>,server = <<"mnesia.localhost">>,
+                        resource = <<>>,luser = <<>>,
+                        lserver = <<"mnesia.localhost">>,lresource = <<>>},
+              id = <<>>,
+              version = {1,0},
+              xmlns = <<"jabber:client">>,
+              stream_xmlns = <<"http://etherx.jabber.org/streams">>,
+              db_xmlns = <<>>,lang = <<"en">>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.728 ***</b>
+RECV:
+<stream:stream xmlns:stream='http://etherx.jabber.org/streams'
+               xmlns='jabber:client'
+               id='15919564183163650251'
+               version='1.0'
+               xml:lang='en'
+               from='mnesia.localhost'/>
+
+#stream_start{from = #jid{user = <<>>,server = <<"mnesia.localhost">>,
+                          resource = <<>>,luser = <<>>,
+                          lserver = <<"mnesia.localhost">>,lresource = <<>>},
+              to = undefined,id = <<"15919564183163650251">>,
+              version = {1,0},
+              xmlns = <<"jabber:client">>,
+              stream_xmlns = <<"http://etherx.jabber.org/streams">>,
+              db_xmlns = <<>>,lang = <<"en">>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.729 ***</b>
+RECV:
+<stream:features>
+  <mechanisms xmlns='urn:ietf:params:xml:ns:xmpp-sasl'>
+    <mechanism>DIGEST-MD5</mechanism>
+    <mechanism>PLAIN</mechanism>
+    <mechanism>SCRAM-SHA-512</mechanism>
+    <mechanism>SCRAM-SHA-256</mechanism>
+    <mechanism>SCRAM-SHA-1</mechanism>
+    <mechanism>X-OAUTH2</mechanism>
+  </mechanisms>
+  <starttls xmlns='urn:ietf:params:xml:ns:xmpp-tls'/>
+  <register xmlns='http://jabber.org/features/iq-register'/>
+  <auth xmlns='http://jabber.org/features/iq-auth'/>
+</stream:features>
+
+#stream_features{
+    sub_els =
+        [#sasl_mechanisms{
+             list =
+                 [<<"DIGEST-MD5">>,<<"PLAIN">>,<<"SCRAM-SHA-512">>,
+                  <<"SCRAM-SHA-256">>,<<"SCRAM-SHA-1">>,<<"X-OAUTH2">>]},
+         #starttls{required = false},
+         #feature_register{},
+         #legacy_auth_feature{}]}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.729 ***</b>
+SENT:
+<auth mechanism='PLAIN'
+      xmlns='urn:ietf:params:xml:ns:xmpp-sasl'>dGVzdF9tYXN0ZXIhIyQlXiooKWB+Ky07Xz1bXXt9fFxAbW5lc2lhLmxvY2FsaG9zdAB0ZXN0X21hc3RlciEjJCVeKigpYH4rLTtfPVtde318XABwYXNzd29yZCFAIyQlXiYqKCknImB+PD4rLS87Ol89W117fXxc</auth>
+
+#sasl_auth{mechanism = <<"PLAIN">>,
+           text = <<116,101,115,116,95,109,97,115,116,101,114,33,35,36,37,94,
+                    42,40,41,96,126,43,45,59,95,61,91,93,123,125,124,92,64,
+                    109,110,101,115,105,97,46,108,111,99,97,108,104,111,115,
+                    116,0,116,101,115,116,95,109,97,115,116,101,114,33,35,36,
+                    37,94,42,40,41,96,126,43,45,59,95,61,91,93,123,125,124,92,
+                    0,112,97,115,115,119,111,114,100,33,64,35,36,37,94,38,42,
+                    40,41,39,34,96,126,60,62,43,45,47,59,58,95,61,91,93,123,
+                    125,124,92>>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.731 ***</b>
+RECV:
+<success xmlns='urn:ietf:params:xml:ns:xmpp-sasl'/>
+
+#sasl_success{text = <<>>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.731 ***</b>
+SENT:
+<stream:stream version='1.0'
+               xml:lang='en'
+               xmlns:stream='http://etherx.jabber.org/streams'
+               to='mnesia.localhost'
+               xmlns='jabber:client'/>
+
+#stream_start{from = undefined,
+              to = #jid{user = <<>>,server = <<"mnesia.localhost">>,
+                        resource = <<>>,luser = <<>>,
+                        lserver = <<"mnesia.localhost">>,lresource = <<>>},
+              id = <<>>,
+              version = {1,0},
+              xmlns = <<"jabber:client">>,
+              stream_xmlns = <<"http://etherx.jabber.org/streams">>,
+              db_xmlns = <<>>,lang = <<"en">>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.732 ***</b>
+RECV:
+<stream:stream xmlns:stream='http://etherx.jabber.org/streams'
+               xmlns='jabber:client'
+               id='18262388956943004141'
+               version='1.0'
+               xml:lang='en'
+               from='mnesia.localhost'/>
+
+#stream_start{from = #jid{user = <<>>,server = <<"mnesia.localhost">>,
+                          resource = <<>>,luser = <<>>,
+                          lserver = <<"mnesia.localhost">>,lresource = <<>>},
+              to = undefined,id = <<"18262388956943004141">>,
+              version = {1,0},
+              xmlns = <<"jabber:client">>,
+              stream_xmlns = <<"http://etherx.jabber.org/streams">>,
+              db_xmlns = <<>>,lang = <<"en">>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.732 ***</b>
+RECV:
+<stream:features>
+  <compression xmlns='http://jabber.org/features/compress'>
+    <method>zlib</method>
+  </compression>
+  <bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'/>
+  <session xmlns='urn:ietf:params:xml:ns:xmpp-session'>
+    <optional/>
+  </session>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='9dw1fKaE0crSfkc9KTtBadLPkJA='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+  <sm xmlns='urn:xmpp:sm:2'/>
+  <sm xmlns='urn:xmpp:sm:3'/>
+  <ver xmlns='urn:xmpp:features:rosterver'/>
+  <csi xmlns='urn:xmpp:csi:0'/>
+</stream:features>
+
+#stream_features{
+    sub_els =
+        [#compression{methods = [<<"zlib">>]},
+         #bind{jid = undefined,resource = <<>>},
+         #xmpp_session{optional = true},
+         #caps{
+             node = <<"http://www.process-one.net/en/ejabberd/">>,
+             version = <<"9dw1fKaE0crSfkc9KTtBadLPkJA=">>,hash = <<"sha-1">>,
+             exts = []},
+         #feature_sm{xmlns = <<"urn:xmpp:sm:2">>},
+         #feature_sm{xmlns = <<"urn:xmpp:sm:3">>},
+         #rosterver_feature{},
+         #feature_csi{}]}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.733 ***</b>
+SENT:
+<iq type='set'
+    id='5272135957836331629'
+    xmlns='jabber:client'>
+  <bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'>
+    <resource>resource!@#$%^&*()'"`~<>+-/;:_=[]{}|\</resource>
+  </bind>
+</iq>
+
+#iq{id = <<"5272135957836331629">>,type = set,lang = <<>>,from = undefined,
+    to = undefined,
+    sub_els = [#bind{jid = undefined,
+                     resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.733 ***</b>
+RECV:
+<iq type='result'
+    id='5272135957836331629'>
+  <bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'>
+    <jid>test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&*()'"`~<>+-/;:_=[]{}|\</jid>
+  </bind>
+</iq>
+
+#iq{id = <<"5272135957836331629">>,type = result,lang = <<>>,from = undefined,
+    to = undefined,
+    sub_els =
+        [#bind{
+             jid =
+                 #jid{
+                     user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                     server = <<"mnesia.localhost">>,
+                     resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                     lserver = <<"mnesia.localhost">>,
+                     lresource =
+                         <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+             resource = <<>>}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.736 ***</b>
+SENT:
+<iq to='pubsub.mnesia.localhost'
+    type='set'
+    id='7706042099968707270'
+    xmlns='jabber:client'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub'>
+    <create node='outcast-8090464215245784146'/>
+    <configure>
+      <x type='submit'
+         xmlns='jabber:x:data'>
+        <field var='FORM_TYPE'
+               type='hidden'>
+          <value>http://jabber.org/protocol/pubsub#node_config</value>
+        </field>
+        <field var='pubsub#title'
+               type='text-single'
+               label='A friendly name for the node'>
+          <value>title!@#$%^&*()'"`~<>+-/;:_=[]{}|\</value>
+        </field>
+        <field var='pubsub#notify_delete'
+               type='boolean'
+               label='Notify subscribers when the node is deleted'>
+          <value>0</value>
+        </field>
+        <field var='pubsub#send_last_published_item'
+               type='list-single'
+               label='When to send the last published item'>
+          <value>never</value>
+          <option label='Never'>
+            <value>never</value>
+          </option>
+          <option label='When a new subscription is processed'>
+            <value>on_sub</value>
+          </option>
+          <option label='When a new subscription is processed and whenever a subscriber comes online'>
+            <value>on_sub_and_presence</value>
+          </option>
+        </field>
+      </x>
+    </configure>
+  </pubsub>
+</iq>
+
+#iq{
+ id = <<"7706042099968707270">>,type = set,lang = <<>>,from = undefined,
+ to =
+  #jid{
+   user = <<>>,server = <<"pubsub.mnesia.localhost">>,resource = <<>>,
+   luser = <<>>,lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+ sub_els =
+  [#pubsub{
+    subscriptions = undefined,subscription = undefined,
+    affiliations = undefined,publish = undefined,publish_options = undefined,
+    subscribe = undefined,unsubscribe = undefined,options = undefined,
+    items = undefined,retract = undefined,
+    create = <<"outcast-8090464215245784146">>,
+    configure =
+     {<<>>,
+      #xdata{
+       type = submit,instructions = [],title = undefined,reported = undefined,
+       items = [],
+       fields =
+        [#xdata_field{
+          label = <<>>,type = hidden,var = <<"FORM_TYPE">>,required = false,
+          desc = <<>>,
+          values = [<<"http://jabber.org/protocol/pubsub#node_config">>],
+          options = [],sub_els = []},
+         #xdata_field{
+          label = <<"A friendly name for the node">>,type = 'text-single',
+          var = <<"pubsub#title">>,required = false,desc = <<>>,
+          values = [<<"title!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>],
+          options = [],sub_els = []},
+         #xdata_field{
+          label = <<"Notify subscribers when the node is deleted">>,
+          type = boolean,var = <<"pubsub#notify_delete">>,required = false,
+          desc = <<>>,
+          values = [<<"0">>],
+          options = [],sub_els = []},
+         #xdata_field{
+          label = <<"When to send the last published item">>,
+          type = 'list-single',var = <<"pubsub#send_last_published_item">>,
+          required = false,desc = <<>>,
+          values = [<<"never">>],
+          options =
+           [#xdata_option{label = <<"Never">>,value = <<"never">>},
+            #xdata_option{
+             label = <<"When a new subscription is processed">>,
+             value = <<"on_sub">>},
+            #xdata_option{
+             label =
+              <<"When a new subscription is processed and whenever a subscriber comes online">>,
+             value = <<"on_sub_and_presence">>}],
+          sub_els = []}]}},
+    default = undefined,delete = undefined,purge = undefined,rsm = undefined}],
+ meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.738 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='pubsub.mnesia.localhost'
+    type='result'
+    id='7706042099968707270'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub'>
+    <create node='outcast-8090464215245784146'/>
+  </pubsub>
+</iq>
+
+#iq{id = <<"7706042099968707270">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+                resource = <<>>,luser = <<>>,
+                lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [#pubsub{subscriptions = undefined,subscription = undefined,
+                       affiliations = undefined,publish = undefined,
+                       publish_options = undefined,subscribe = undefined,
+                       unsubscribe = undefined,options = undefined,
+                       items = undefined,retract = undefined,
+                       create = <<"outcast-8090464215245784146">>,
+                       configure = undefined,default = undefined,
+                       delete = undefined,purge = undefined,rsm = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.739 ***</b>
+SENT:
+<iq to='pubsub.mnesia.localhost'
+    type='set'
+    id='1647721473933104722'
+    xmlns='jabber:client'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub'>
+    <publish node='outcast-8090464215245784146'>
+      <item id='15860780446505575103'>
+        <presence id='15860780446505575103'
+                  xmlns='jabber:client'/>
+      </item>
+    </publish>
+  </pubsub>
+</iq>
+
+#iq{
+ id = <<"1647721473933104722">>,type = set,lang = <<>>,from = undefined,
+ to =
+  #jid{
+   user = <<>>,server = <<"pubsub.mnesia.localhost">>,resource = <<>>,
+   luser = <<>>,lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+ sub_els =
+  [#pubsub{
+    subscriptions = undefined,subscription = undefined,
+    affiliations = undefined,
+    publish =
+     #ps_publish{
+      node = <<"outcast-8090464215245784146">>,
+      items =
+       [#ps_item{
+         xmlns = <<>>,id = <<"15860780446505575103">>,
+         sub_els =
+          [#xmlel{
+            name = <<"presence">>,
+            attrs =
+             [{<<"id">>,<<"15860780446505575103">>},
+              {<<"xmlns">>,<<"jabber:client">>}],
+            children = []}],
+         node = <<>>,publisher = <<>>}]},
+    publish_options = undefined,subscribe = undefined,unsubscribe = undefined,
+    options = undefined,items = undefined,retract = undefined,
+    create = undefined,configure = undefined,default = undefined,
+    delete = undefined,purge = undefined,rsm = undefined}],
+ meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.740 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='pubsub.mnesia.localhost'
+    type='result'
+    id='1647721473933104722'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub'>
+    <publish node='outcast-8090464215245784146'>
+      <item id='15860780446505575103'/>
+    </publish>
+  </pubsub>
+</iq>
+
+#iq{id = <<"1647721473933104722">>,type = result,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+            resource = <<>>,luser = <<>>,
+            lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    to =
+        #jid{
+            user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els =
+        [#pubsub{
+             subscriptions = undefined,subscription = undefined,
+             affiliations = undefined,
+             publish =
+                 #ps_publish{
+                     node = <<"outcast-8090464215245784146">>,
+                     items =
+                         [#ps_item{
+                              xmlns = <<>>,id = <<"15860780446505575103">>,
+                              sub_els = [],node = <<>>,publisher = <<>>}]},
+             publish_options = undefined,subscribe = undefined,
+             unsubscribe = undefined,options = undefined,items = undefined,
+             retract = undefined,create = undefined,configure = undefined,
+             default = undefined,delete = undefined,purge = undefined,
+             rsm = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.740 ***</b>
+SENT:
+<iq to='pubsub.mnesia.localhost'
+    type='set'
+    id='3319105103839720046'
+    xmlns='jabber:client'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub#owner'>
+    <affiliations node='outcast-8090464215245784146'>
+      <affiliation affiliation='outcast'
+                   jid='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'/>
+    </affiliations>
+  </pubsub>
+</iq>
+
+#iq{id = <<"3319105103839720046">>,type = set,lang = <<>>,from = undefined,
+    to =
+        #jid{
+            user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+            resource = <<>>,luser = <<>>,
+            lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    sub_els =
+        [#pubsub_owner{
+             affiliations =
+                 {<<"outcast-8090464215245784146">>,
+                  [#ps_affiliation{
+                       xmlns = <<>>,node = <<>>,type = outcast,
+                       jid =
+                           #jid{
+                               user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                               server = <<"mnesia.localhost">>,
+                               resource =
+                                   <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                               luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                               lserver = <<"mnesia.localhost">>,
+                               lresource =
+                                   <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>}}]},
+             configure = undefined,default = undefined,delete = undefined,
+             purge = undefined,subscriptions = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.741 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='pubsub.mnesia.localhost'
+    type='result'
+    id='3319105103839720046'/>
+
+#iq{id = <<"3319105103839720046">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+                resource = <<>>,luser = <<>>,
+                lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.742 ***</b>
+SENT:
+<iq to='pubsub.mnesia.localhost'
+    type='get'
+    id='2369796901113852390'
+    xmlns='jabber:client'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub#owner'>
+    <affiliations node='outcast-8090464215245784146'/>
+  </pubsub>
+</iq>
+
+#iq{id = <<"2369796901113852390">>,type = get,lang = <<>>,from = undefined,
+    to =
+        #jid{
+            user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+            resource = <<>>,luser = <<>>,
+            lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    sub_els =
+        [#pubsub_owner{
+             affiliations = {<<"outcast-8090464215245784146">>,[]},
+             configure = undefined,default = undefined,delete = undefined,
+             purge = undefined,subscriptions = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.742 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='pubsub.mnesia.localhost'
+    type='result'
+    id='2369796901113852390'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub#owner'>
+    <affiliations node='outcast-8090464215245784146'>
+      <affiliation affiliation='owner'
+                   jid='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'/>
+      <affiliation affiliation='outcast'
+                   jid='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'/>
+    </affiliations>
+  </pubsub>
+</iq>
+
+#iq{id = <<"2369796901113852390">>,type = result,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+            resource = <<>>,luser = <<>>,
+            lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    to =
+        #jid{
+            user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els =
+        [#pubsub_owner{
+             affiliations =
+                 {<<"outcast-8090464215245784146">>,
+                  [#ps_affiliation{
+                       xmlns = <<>>,node = <<>>,type = owner,
+                       jid =
+                           #jid{
+                               user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                               server = <<"mnesia.localhost">>,
+                               resource = <<>>,
+                               luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                               lserver = <<"mnesia.localhost">>,
+                               lresource = <<>>}},
+                   #ps_affiliation{
+                       xmlns = <<>>,node = <<>>,type = outcast,
+                       jid =
+                           #jid{
+                               user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                               server = <<"mnesia.localhost">>,
+                               resource = <<>>,
+                               luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                               lserver = <<"mnesia.localhost">>,
+                               lresource = <<>>}}]},
+             configure = undefined,default = undefined,delete = undefined,
+             purge = undefined,subscriptions = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.758 ***</b>
+SENT:
+<iq to='pubsub.mnesia.localhost'
+    type='set'
+    id='1778616409661345970'
+    xmlns='jabber:client'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub#owner'>
+    <delete node='outcast-8090464215245784146'/>
+  </pubsub>
+</iq>
+
+#iq{id = <<"1778616409661345970">>,type = set,lang = <<>>,from = undefined,
+    to = #jid{user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+              resource = <<>>,luser = <<>>,
+              lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    sub_els = [#pubsub_owner{affiliations = undefined,configure = undefined,
+                             default = undefined,
+                             delete = {<<"outcast-8090464215245784146">>,<<>>},
+                             purge = undefined,subscriptions = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.759 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='pubsub.mnesia.localhost'
+    type='result'
+    id='1778616409661345970'/>
+
+#iq{id = <<"1778616409661345970">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+                resource = <<>>,luser = <<>>,
+                lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.760 ***</b>
+SENT:
+<iq to='pubsub.mnesia.localhost'
+    type='set'
+    id='9650972808232289070'
+    xmlns='jabber:client'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub'>
+    <create node='none-8370749598748455836'/>
+    <configure>
+      <x type='submit'
+         xmlns='jabber:x:data'>
+        <field var='FORM_TYPE'
+               type='hidden'>
+          <value>http://jabber.org/protocol/pubsub#node_config</value>
+        </field>
+        <field var='pubsub#title'
+               type='text-single'
+               label='A friendly name for the node'>
+          <value>title!@#$%^&*()'"`~<>+-/;:_=[]{}|\</value>
+        </field>
+        <field var='pubsub#notify_delete'
+               type='boolean'
+               label='Notify subscribers when the node is deleted'>
+          <value>0</value>
+        </field>
+        <field var='pubsub#send_last_published_item'
+               type='list-single'
+               label='When to send the last published item'>
+          <value>never</value>
+          <option label='Never'>
+            <value>never</value>
+          </option>
+          <option label='When a new subscription is processed'>
+            <value>on_sub</value>
+          </option>
+          <option label='When a new subscription is processed and whenever a subscriber comes online'>
+            <value>on_sub_and_presence</value>
+          </option>
+        </field>
+      </x>
+    </configure>
+  </pubsub>
+</iq>
+
+#iq{
+ id = <<"9650972808232289070">>,type = set,lang = <<>>,from = undefined,
+ to =
+  #jid{
+   user = <<>>,server = <<"pubsub.mnesia.localhost">>,resource = <<>>,
+   luser = <<>>,lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+ sub_els =
+  [#pubsub{
+    subscriptions = undefined,subscription = undefined,
+    affiliations = undefined,publish = undefined,publish_options = undefined,
+    subscribe = undefined,unsubscribe = undefined,options = undefined,
+    items = undefined,retract = undefined,
+    create = <<"none-8370749598748455836">>,
+    configure =
+     {<<>>,
+      #xdata{
+       type = submit,instructions = [],title = undefined,reported = undefined,
+       items = [],
+       fields =
+        [#xdata_field{
+          label = <<>>,type = hidden,var = <<"FORM_TYPE">>,required = false,
+          desc = <<>>,
+          values = [<<"http://jabber.org/protocol/pubsub#node_config">>],
+          options = [],sub_els = []},
+         #xdata_field{
+          label = <<"A friendly name for the node">>,type = 'text-single',
+          var = <<"pubsub#title">>,required = false,desc = <<>>,
+          values = [<<"title!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>],
+          options = [],sub_els = []},
+         #xdata_field{
+          label = <<"Notify subscribers when the node is deleted">>,
+          type = boolean,var = <<"pubsub#notify_delete">>,required = false,
+          desc = <<>>,
+          values = [<<"0">>],
+          options = [],sub_els = []},
+         #xdata_field{
+          label = <<"When to send the last published item">>,
+          type = 'list-single',var = <<"pubsub#send_last_published_item">>,
+          required = false,desc = <<>>,
+          values = [<<"never">>],
+          options =
+           [#xdata_option{label = <<"Never">>,value = <<"never">>},
+            #xdata_option{
+             label = <<"When a new subscription is processed">>,
+             value = <<"on_sub">>},
+            #xdata_option{
+             label =
+              <<"When a new subscription is processed and whenever a subscriber comes online">>,
+             value = <<"on_sub_and_presence">>}],
+          sub_els = []}]}},
+    default = undefined,delete = undefined,purge = undefined,rsm = undefined}],
+ meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.761 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='pubsub.mnesia.localhost'
+    type='result'
+    id='9650972808232289070'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub'>
+    <create node='none-8370749598748455836'/>
+  </pubsub>
+</iq>
+
+#iq{id = <<"9650972808232289070">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+                resource = <<>>,luser = <<>>,
+                lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [#pubsub{subscriptions = undefined,subscription = undefined,
+                       affiliations = undefined,publish = undefined,
+                       publish_options = undefined,subscribe = undefined,
+                       unsubscribe = undefined,options = undefined,
+                       items = undefined,retract = undefined,
+                       create = <<"none-8370749598748455836">>,
+                       configure = undefined,default = undefined,
+                       delete = undefined,purge = undefined,rsm = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.762 ***</b>
+SENT:
+<iq to='pubsub.mnesia.localhost'
+    type='set'
+    id='10658086192019743285'
+    xmlns='jabber:client'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub'>
+    <publish node='none-8370749598748455836'>
+      <item id='13126784187200002528'>
+        <presence id='13126784187200002528'
+                  xmlns='jabber:client'/>
+      </item>
+    </publish>
+  </pubsub>
+</iq>
+
+#iq{
+ id = <<"10658086192019743285">>,type = set,lang = <<>>,from = undefined,
+ to =
+  #jid{
+   user = <<>>,server = <<"pubsub.mnesia.localhost">>,resource = <<>>,
+   luser = <<>>,lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+ sub_els =
+  [#pubsub{
+    subscriptions = undefined,subscription = undefined,
+    affiliations = undefined,
+    publish =
+     #ps_publish{
+      node = <<"none-8370749598748455836">>,
+      items =
+       [#ps_item{
+         xmlns = <<>>,id = <<"13126784187200002528">>,
+         sub_els =
+          [#xmlel{
+            name = <<"presence">>,
+            attrs =
+             [{<<"id">>,<<"13126784187200002528">>},
+              {<<"xmlns">>,<<"jabber:client">>}],
+            children = []}],
+         node = <<>>,publisher = <<>>}]},
+    publish_options = undefined,subscribe = undefined,unsubscribe = undefined,
+    options = undefined,items = undefined,retract = undefined,
+    create = undefined,configure = undefined,default = undefined,
+    delete = undefined,purge = undefined,rsm = undefined}],
+ meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.763 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='pubsub.mnesia.localhost'
+    type='result'
+    id='10658086192019743285'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub'>
+    <publish node='none-8370749598748455836'>
+      <item id='13126784187200002528'/>
+    </publish>
+  </pubsub>
+</iq>
+
+#iq{id = <<"10658086192019743285">>,type = result,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+            resource = <<>>,luser = <<>>,
+            lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    to =
+        #jid{
+            user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els =
+        [#pubsub{
+             subscriptions = undefined,subscription = undefined,
+             affiliations = undefined,
+             publish =
+                 #ps_publish{
+                     node = <<"none-8370749598748455836">>,
+                     items =
+                         [#ps_item{
+                              xmlns = <<>>,id = <<"13126784187200002528">>,
+                              sub_els = [],node = <<>>,publisher = <<>>}]},
+             publish_options = undefined,subscribe = undefined,
+             unsubscribe = undefined,options = undefined,items = undefined,
+             retract = undefined,create = undefined,configure = undefined,
+             default = undefined,delete = undefined,purge = undefined,
+             rsm = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.763 ***</b>
+SENT:
+<iq to='pubsub.mnesia.localhost'
+    type='set'
+    id='13437725232146674546'
+    xmlns='jabber:client'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub#owner'>
+    <affiliations node='none-8370749598748455836'>
+      <affiliation affiliation='none'
+                   jid='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'/>
+    </affiliations>
+  </pubsub>
+</iq>
+
+#iq{id = <<"13437725232146674546">>,type = set,lang = <<>>,from = undefined,
+    to =
+        #jid{
+            user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+            resource = <<>>,luser = <<>>,
+            lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    sub_els =
+        [#pubsub_owner{
+             affiliations =
+                 {<<"none-8370749598748455836">>,
+                  [#ps_affiliation{
+                       xmlns = <<>>,node = <<>>,type = none,
+                       jid =
+                           #jid{
+                               user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                               server = <<"mnesia.localhost">>,
+                               resource =
+                                   <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                               luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                               lserver = <<"mnesia.localhost">>,
+                               lresource =
+                                   <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>}}]},
+             configure = undefined,default = undefined,delete = undefined,
+             purge = undefined,subscriptions = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.763 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='pubsub.mnesia.localhost'
+    type='result'
+    id='13437725232146674546'/>
+
+#iq{id = <<"13437725232146674546">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+                resource = <<>>,luser = <<>>,
+                lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.763 ***</b>
+SENT:
+<iq to='pubsub.mnesia.localhost'
+    type='get'
+    id='15128552421432080557'
+    xmlns='jabber:client'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub#owner'>
+    <affiliations node='none-8370749598748455836'/>
+  </pubsub>
+</iq>
+
+#iq{id = <<"15128552421432080557">>,type = get,lang = <<>>,from = undefined,
+    to =
+        #jid{
+            user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+            resource = <<>>,luser = <<>>,
+            lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    sub_els =
+        [#pubsub_owner{
+             affiliations = {<<"none-8370749598748455836">>,[]},
+             configure = undefined,default = undefined,delete = undefined,
+             purge = undefined,subscriptions = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.764 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='pubsub.mnesia.localhost'
+    type='result'
+    id='15128552421432080557'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub#owner'>
+    <affiliations node='none-8370749598748455836'>
+      <affiliation affiliation='owner'
+                   jid='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'/>
+    </affiliations>
+  </pubsub>
+</iq>
+
+#iq{id = <<"15128552421432080557">>,type = result,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+            resource = <<>>,luser = <<>>,
+            lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    to =
+        #jid{
+            user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els =
+        [#pubsub_owner{
+             affiliations =
+                 {<<"none-8370749598748455836">>,
+                  [#ps_affiliation{
+                       xmlns = <<>>,node = <<>>,type = owner,
+                       jid =
+                           #jid{
+                               user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                               server = <<"mnesia.localhost">>,
+                               resource = <<>>,
+                               luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                               lserver = <<"mnesia.localhost">>,
+                               lresource = <<>>}}]},
+             configure = undefined,default = undefined,delete = undefined,
+             purge = undefined,subscriptions = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.777 ***</b>
+SENT:
+<iq to='pubsub.mnesia.localhost'
+    type='set'
+    id='5341881302716636131'
+    xmlns='jabber:client'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub#owner'>
+    <delete node='none-8370749598748455836'/>
+  </pubsub>
+</iq>
+
+#iq{id = <<"5341881302716636131">>,type = set,lang = <<>>,from = undefined,
+    to = #jid{user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+              resource = <<>>,luser = <<>>,
+              lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    sub_els = [#pubsub_owner{affiliations = undefined,configure = undefined,
+                             default = undefined,
+                             delete = {<<"none-8370749598748455836">>,<<>>},
+                             purge = undefined,subscriptions = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.778 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='pubsub.mnesia.localhost'
+    type='result'
+    id='5341881302716636131'/>
+
+#iq{id = <<"5341881302716636131">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+                resource = <<>>,luser = <<>>,
+                lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.779 ***</b>
+SENT:
+<iq to='pubsub.mnesia.localhost'
+    type='set'
+    id='8558370813462030090'
+    xmlns='jabber:client'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub'>
+    <create node='member-13075524886241833129'/>
+    <configure>
+      <x type='submit'
+         xmlns='jabber:x:data'>
+        <field var='FORM_TYPE'
+               type='hidden'>
+          <value>http://jabber.org/protocol/pubsub#node_config</value>
+        </field>
+        <field var='pubsub#title'
+               type='text-single'
+               label='A friendly name for the node'>
+          <value>title!@#$%^&*()'"`~<>+-/;:_=[]{}|\</value>
+        </field>
+        <field var='pubsub#notify_delete'
+               type='boolean'
+               label='Notify subscribers when the node is deleted'>
+          <value>0</value>
+        </field>
+        <field var='pubsub#send_last_published_item'
+               type='list-single'
+               label='When to send the last published item'>
+          <value>never</value>
+          <option label='Never'>
+            <value>never</value>
+          </option>
+          <option label='When a new subscription is processed'>
+            <value>on_sub</value>
+          </option>
+          <option label='When a new subscription is processed and whenever a subscriber comes online'>
+            <value>on_sub_and_presence</value>
+          </option>
+        </field>
+      </x>
+    </configure>
+  </pubsub>
+</iq>
+
+#iq{
+ id = <<"8558370813462030090">>,type = set,lang = <<>>,from = undefined,
+ to =
+  #jid{
+   user = <<>>,server = <<"pubsub.mnesia.localhost">>,resource = <<>>,
+   luser = <<>>,lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+ sub_els =
+  [#pubsub{
+    subscriptions = undefined,subscription = undefined,
+    affiliations = undefined,publish = undefined,publish_options = undefined,
+    subscribe = undefined,unsubscribe = undefined,options = undefined,
+    items = undefined,retract = undefined,
+    create = <<"member-13075524886241833129">>,
+    configure =
+     {<<>>,
+      #xdata{
+       type = submit,instructions = [],title = undefined,reported = undefined,
+       items = [],
+       fields =
+        [#xdata_field{
+          label = <<>>,type = hidden,var = <<"FORM_TYPE">>,required = false,
+          desc = <<>>,
+          values = [<<"http://jabber.org/protocol/pubsub#node_config">>],
+          options = [],sub_els = []},
+         #xdata_field{
+          label = <<"A friendly name for the node">>,type = 'text-single',
+          var = <<"pubsub#title">>,required = false,desc = <<>>,
+          values = [<<"title!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>],
+          options = [],sub_els = []},
+         #xdata_field{
+          label = <<"Notify subscribers when the node is deleted">>,
+          type = boolean,var = <<"pubsub#notify_delete">>,required = false,
+          desc = <<>>,
+          values = [<<"0">>],
+          options = [],sub_els = []},
+         #xdata_field{
+          label = <<"When to send the last published item">>,
+          type = 'list-single',var = <<"pubsub#send_last_published_item">>,
+          required = false,desc = <<>>,
+          values = [<<"never">>],
+          options =
+           [#xdata_option{label = <<"Never">>,value = <<"never">>},
+            #xdata_option{
+             label = <<"When a new subscription is processed">>,
+             value = <<"on_sub">>},
+            #xdata_option{
+             label =
+              <<"When a new subscription is processed and whenever a subscriber comes online">>,
+             value = <<"on_sub_and_presence">>}],
+          sub_els = []}]}},
+    default = undefined,delete = undefined,purge = undefined,rsm = undefined}],
+ meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.780 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='pubsub.mnesia.localhost'
+    type='result'
+    id='8558370813462030090'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub'>
+    <create node='member-13075524886241833129'/>
+  </pubsub>
+</iq>
+
+#iq{id = <<"8558370813462030090">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+                resource = <<>>,luser = <<>>,
+                lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [#pubsub{subscriptions = undefined,subscription = undefined,
+                       affiliations = undefined,publish = undefined,
+                       publish_options = undefined,subscribe = undefined,
+                       unsubscribe = undefined,options = undefined,
+                       items = undefined,retract = undefined,
+                       create = <<"member-13075524886241833129">>,
+                       configure = undefined,default = undefined,
+                       delete = undefined,purge = undefined,rsm = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.780 ***</b>
+SENT:
+<iq to='pubsub.mnesia.localhost'
+    type='set'
+    id='1146122522155414390'
+    xmlns='jabber:client'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub'>
+    <publish node='member-13075524886241833129'>
+      <item id='690253792766040359'>
+        <presence id='690253792766040359'
+                  xmlns='jabber:client'/>
+      </item>
+    </publish>
+  </pubsub>
+</iq>
+
+#iq{
+ id = <<"1146122522155414390">>,type = set,lang = <<>>,from = undefined,
+ to =
+  #jid{
+   user = <<>>,server = <<"pubsub.mnesia.localhost">>,resource = <<>>,
+   luser = <<>>,lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+ sub_els =
+  [#pubsub{
+    subscriptions = undefined,subscription = undefined,
+    affiliations = undefined,
+    publish =
+     #ps_publish{
+      node = <<"member-13075524886241833129">>,
+      items =
+       [#ps_item{
+         xmlns = <<>>,id = <<"690253792766040359">>,
+         sub_els =
+          [#xmlel{
+            name = <<"presence">>,
+            attrs =
+             [{<<"id">>,<<"690253792766040359">>},
+              {<<"xmlns">>,<<"jabber:client">>}],
+            children = []}],
+         node = <<>>,publisher = <<>>}]},
+    publish_options = undefined,subscribe = undefined,unsubscribe = undefined,
+    options = undefined,items = undefined,retract = undefined,
+    create = undefined,configure = undefined,default = undefined,
+    delete = undefined,purge = undefined,rsm = undefined}],
+ meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.781 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='pubsub.mnesia.localhost'
+    type='result'
+    id='1146122522155414390'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub'>
+    <publish node='member-13075524886241833129'>
+      <item id='690253792766040359'/>
+    </publish>
+  </pubsub>
+</iq>
+
+#iq{id = <<"1146122522155414390">>,type = result,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+            resource = <<>>,luser = <<>>,
+            lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    to =
+        #jid{
+            user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els =
+        [#pubsub{
+             subscriptions = undefined,subscription = undefined,
+             affiliations = undefined,
+             publish =
+                 #ps_publish{
+                     node = <<"member-13075524886241833129">>,
+                     items =
+                         [#ps_item{
+                              xmlns = <<>>,id = <<"690253792766040359">>,
+                              sub_els = [],node = <<>>,publisher = <<>>}]},
+             publish_options = undefined,subscribe = undefined,
+             unsubscribe = undefined,options = undefined,items = undefined,
+             retract = undefined,create = undefined,configure = undefined,
+             default = undefined,delete = undefined,purge = undefined,
+             rsm = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.782 ***</b>
+SENT:
+<iq to='pubsub.mnesia.localhost'
+    type='set'
+    id='10780433127066438025'
+    xmlns='jabber:client'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub#owner'>
+    <affiliations node='member-13075524886241833129'>
+      <affiliation affiliation='member'
+                   jid='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'/>
+    </affiliations>
+  </pubsub>
+</iq>
+
+#iq{id = <<"10780433127066438025">>,type = set,lang = <<>>,from = undefined,
+    to =
+        #jid{
+            user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+            resource = <<>>,luser = <<>>,
+            lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    sub_els =
+        [#pubsub_owner{
+             affiliations =
+                 {<<"member-13075524886241833129">>,
+                  [#ps_affiliation{
+                       xmlns = <<>>,node = <<>>,type = member,
+                       jid =
+                           #jid{
+                               user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                               server = <<"mnesia.localhost">>,
+                               resource =
+                                   <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                               luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                               lserver = <<"mnesia.localhost">>,
+                               lresource =
+                                   <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>}}]},
+             configure = undefined,default = undefined,delete = undefined,
+             purge = undefined,subscriptions = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.782 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='pubsub.mnesia.localhost'
+    type='result'
+    id='10780433127066438025'/>
+
+#iq{id = <<"10780433127066438025">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+                resource = <<>>,luser = <<>>,
+                lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.782 ***</b>
+SENT:
+<iq to='pubsub.mnesia.localhost'
+    type='get'
+    id='7175067249524849008'
+    xmlns='jabber:client'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub#owner'>
+    <affiliations node='member-13075524886241833129'/>
+  </pubsub>
+</iq>
+
+#iq{id = <<"7175067249524849008">>,type = get,lang = <<>>,from = undefined,
+    to =
+        #jid{
+            user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+            resource = <<>>,luser = <<>>,
+            lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    sub_els =
+        [#pubsub_owner{
+             affiliations = {<<"member-13075524886241833129">>,[]},
+             configure = undefined,default = undefined,delete = undefined,
+             purge = undefined,subscriptions = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:29.783 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='pubsub.mnesia.localhost'
+    type='result'
+    id='7175067249524849008'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub#owner'>
+    <affiliations node='member-13075524886241833129'>
+      <affiliation affiliation='owner'
+                   jid='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'/>
+      <affiliation affiliation='member'
+                   jid='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'/>
+    </affiliations>
+  </pubsub>
+</iq>
+
+#iq{id = <<"7175067249524849008">>,type = result,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+            resource = <<>>,luser = <<>>,
+            lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    to =
+        #jid{
+            user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els =
+        [#pubsub_owner{
+             affiliations =
+                 {<<"member-13075524886241833129">>,
+                  [#ps_affiliation{
+                       xmlns = <<>>,node = <<>>,type = owner,
+                       jid =
+                           #jid{
+                               user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                               server = <<"mnesia.localhost">>,
+                               resource = <<>>,
+                               luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                               lserver = <<"mnesia.localhost">>,
+                               lresource = <<>>}},
+                   #ps_affiliation{
+                       xmlns = <<>>,node = <<>>,type = member,
+                       jid =
+                           #jid{
+                               user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                               server = <<"mnesia.localhost">>,
+                               resource = <<>>,
+                               luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                               lserver = <<"mnesia.localhost">>,
+                               lresource = <<>>}}]},
+             configure = undefined,default = undefined,delete = undefined,
+             purge = undefined,subscriptions = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:30.024 ***</b>
+SENT:
+<iq to='pubsub.mnesia.localhost'
+    type='set'
+    id='11548226782282036295'
+    xmlns='jabber:client'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub#owner'>
+    <delete node='member-13075524886241833129'/>
+  </pubsub>
+</iq>
+
+#iq{id = <<"11548226782282036295">>,type = set,lang = <<>>,from = undefined,
+    to = #jid{user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+              resource = <<>>,luser = <<>>,
+              lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    sub_els = [#pubsub_owner{affiliations = undefined,configure = undefined,
+                             default = undefined,
+                             delete = {<<"member-13075524886241833129">>,<<>>},
+                             purge = undefined,subscriptions = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:30.026 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='pubsub.mnesia.localhost'
+    type='result'
+    id='11548226782282036295'/>
+
+#iq{id = <<"11548226782282036295">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+                resource = <<>>,luser = <<>>,
+                lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:30.027 ***</b>
+SENT:
+<iq to='pubsub.mnesia.localhost'
+    type='set'
+    id='8337840156550491319'
+    xmlns='jabber:client'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub'>
+    <create node='publish_only-11941257163261377329'/>
+    <configure>
+      <x type='submit'
+         xmlns='jabber:x:data'>
+        <field var='FORM_TYPE'
+               type='hidden'>
+          <value>http://jabber.org/protocol/pubsub#node_config</value>
+        </field>
+        <field var='pubsub#title'
+               type='text-single'
+               label='A friendly name for the node'>
+          <value>title!@#$%^&*()'"`~<>+-/;:_=[]{}|\</value>
+        </field>
+        <field var='pubsub#notify_delete'
+               type='boolean'
+               label='Notify subscribers when the node is deleted'>
+          <value>0</value>
+        </field>
+        <field var='pubsub#send_last_published_item'
+               type='list-single'
+               label='When to send the last published item'>
+          <value>never</value>
+          <option label='Never'>
+            <value>never</value>
+          </option>
+          <option label='When a new subscription is processed'>
+            <value>on_sub</value>
+          </option>
+          <option label='When a new subscription is processed and whenever a subscriber comes online'>
+            <value>on_sub_and_presence</value>
+          </option>
+        </field>
+      </x>
+    </configure>
+  </pubsub>
+</iq>
+
+#iq{
+ id = <<"8337840156550491319">>,type = set,lang = <<>>,from = undefined,
+ to =
+  #jid{
+   user = <<>>,server = <<"pubsub.mnesia.localhost">>,resource = <<>>,
+   luser = <<>>,lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+ sub_els =
+  [#pubsub{
+    subscriptions = undefined,subscription = undefined,
+    affiliations = undefined,publish = undefined,publish_options = undefined,
+    subscribe = undefined,unsubscribe = undefined,options = undefined,
+    items = undefined,retract = undefined,
+    create = <<"publish_only-11941257163261377329">>,
+    configure =
+     {<<>>,
+      #xdata{
+       type = submit,instructions = [],title = undefined,reported = undefined,
+       items = [],
+       fields =
+        [#xdata_field{
+          label = <<>>,type = hidden,var = <<"FORM_TYPE">>,required = false,
+          desc = <<>>,
+          values = [<<"http://jabber.org/protocol/pubsub#node_config">>],
+          options = [],sub_els = []},
+         #xdata_field{
+          label = <<"A friendly name for the node">>,type = 'text-single',
+          var = <<"pubsub#title">>,required = false,desc = <<>>,
+          values = [<<"title!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>],
+          options = [],sub_els = []},
+         #xdata_field{
+          label = <<"Notify subscribers when the node is deleted">>,
+          type = boolean,var = <<"pubsub#notify_delete">>,required = false,
+          desc = <<>>,
+          values = [<<"0">>],
+          options = [],sub_els = []},
+         #xdata_field{
+          label = <<"When to send the last published item">>,
+          type = 'list-single',var = <<"pubsub#send_last_published_item">>,
+          required = false,desc = <<>>,
+          values = [<<"never">>],
+          options =
+           [#xdata_option{label = <<"Never">>,value = <<"never">>},
+            #xdata_option{
+             label = <<"When a new subscription is processed">>,
+             value = <<"on_sub">>},
+            #xdata_option{
+             label =
+              <<"When a new subscription is processed and whenever a subscriber comes online">>,
+             value = <<"on_sub_and_presence">>}],
+          sub_els = []}]}},
+    default = undefined,delete = undefined,purge = undefined,rsm = undefined}],
+ meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:30.033 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='pubsub.mnesia.localhost'
+    type='result'
+    id='8337840156550491319'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub'>
+    <create node='publish_only-11941257163261377329'/>
+  </pubsub>
+</iq>
+
+#iq{id = <<"8337840156550491319">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+                resource = <<>>,luser = <<>>,
+                lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [#pubsub{subscriptions = undefined,subscription = undefined,
+                       affiliations = undefined,publish = undefined,
+                       publish_options = undefined,subscribe = undefined,
+                       unsubscribe = undefined,options = undefined,
+                       items = undefined,retract = undefined,
+                       create = <<"publish_only-11941257163261377329">>,
+                       configure = undefined,default = undefined,
+                       delete = undefined,purge = undefined,rsm = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:30.033 ***</b>
+SENT:
+<iq to='pubsub.mnesia.localhost'
+    type='set'
+    id='10193441686900506415'
+    xmlns='jabber:client'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub'>
+    <publish node='publish_only-11941257163261377329'>
+      <item id='6806968457533233937'>
+        <presence id='6806968457533233937'
+                  xmlns='jabber:client'/>
+      </item>
+    </publish>
+  </pubsub>
+</iq>
+
+#iq{
+ id = <<"10193441686900506415">>,type = set,lang = <<>>,from = undefined,
+ to =
+  #jid{
+   user = <<>>,server = <<"pubsub.mnesia.localhost">>,resource = <<>>,
+   luser = <<>>,lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+ sub_els =
+  [#pubsub{
+    subscriptions = undefined,subscription = undefined,
+    affiliations = undefined,
+    publish =
+     #ps_publish{
+      node = <<"publish_only-11941257163261377329">>,
+      items =
+       [#ps_item{
+         xmlns = <<>>,id = <<"6806968457533233937">>,
+         sub_els =
+          [#xmlel{
+            name = <<"presence">>,
+            attrs =
+             [{<<"id">>,<<"6806968457533233937">>},
+              {<<"xmlns">>,<<"jabber:client">>}],
+            children = []}],
+         node = <<>>,publisher = <<>>}]},
+    publish_options = undefined,subscribe = undefined,unsubscribe = undefined,
+    options = undefined,items = undefined,retract = undefined,
+    create = undefined,configure = undefined,default = undefined,
+    delete = undefined,purge = undefined,rsm = undefined}],
+ meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:30.034 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='pubsub.mnesia.localhost'
+    type='result'
+    id='10193441686900506415'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub'>
+    <publish node='publish_only-11941257163261377329'>
+      <item id='6806968457533233937'/>
+    </publish>
+  </pubsub>
+</iq>
+
+#iq{id = <<"10193441686900506415">>,type = result,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+            resource = <<>>,luser = <<>>,
+            lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    to =
+        #jid{
+            user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els =
+        [#pubsub{
+             subscriptions = undefined,subscription = undefined,
+             affiliations = undefined,
+             publish =
+                 #ps_publish{
+                     node = <<"publish_only-11941257163261377329">>,
+                     items =
+                         [#ps_item{
+                              xmlns = <<>>,id = <<"6806968457533233937">>,
+                              sub_els = [],node = <<>>,publisher = <<>>}]},
+             publish_options = undefined,subscribe = undefined,
+             unsubscribe = undefined,options = undefined,items = undefined,
+             retract = undefined,create = undefined,configure = undefined,
+             default = undefined,delete = undefined,purge = undefined,
+             rsm = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:30.035 ***</b>
+SENT:
+<iq to='pubsub.mnesia.localhost'
+    type='set'
+    id='16069964117690773596'
+    xmlns='jabber:client'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub#owner'>
+    <affiliations node='publish_only-11941257163261377329'>
+      <affiliation affiliation='publish-only'
+                   jid='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'/>
+    </affiliations>
+  </pubsub>
+</iq>
+
+#iq{id = <<"16069964117690773596">>,type = set,lang = <<>>,from = undefined,
+    to =
+        #jid{
+            user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+            resource = <<>>,luser = <<>>,
+            lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    sub_els =
+        [#pubsub_owner{
+             affiliations =
+                 {<<"publish_only-11941257163261377329">>,
+                  [#ps_affiliation{
+                       xmlns = <<>>,node = <<>>,type = publish_only,
+                       jid =
+                           #jid{
+                               user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                               server = <<"mnesia.localhost">>,
+                               resource =
+                                   <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                               luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                               lserver = <<"mnesia.localhost">>,
+                               lresource =
+                                   <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>}}]},
+             configure = undefined,default = undefined,delete = undefined,
+             purge = undefined,subscriptions = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:30.035 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='pubsub.mnesia.localhost'
+    type='result'
+    id='16069964117690773596'/>
+
+#iq{id = <<"16069964117690773596">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+                resource = <<>>,luser = <<>>,
+                lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:30.036 ***</b>
+SENT:
+<iq to='pubsub.mnesia.localhost'
+    type='get'
+    id='4334635437870574291'
+    xmlns='jabber:client'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub#owner'>
+    <affiliations node='publish_only-11941257163261377329'/>
+  </pubsub>
+</iq>
+
+#iq{id = <<"4334635437870574291">>,type = get,lang = <<>>,from = undefined,
+    to =
+        #jid{
+            user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+            resource = <<>>,luser = <<>>,
+            lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    sub_els =
+        [#pubsub_owner{
+             affiliations = {<<"publish_only-11941257163261377329">>,[]},
+             configure = undefined,default = undefined,delete = undefined,
+             purge = undefined,subscriptions = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:30.037 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='pubsub.mnesia.localhost'
+    type='result'
+    id='4334635437870574291'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub#owner'>
+    <affiliations node='publish_only-11941257163261377329'>
+      <affiliation affiliation='owner'
+                   jid='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'/>
+      <affiliation affiliation='publish-only'
+                   jid='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'/>
+    </affiliations>
+  </pubsub>
+</iq>
+
+#iq{id = <<"4334635437870574291">>,type = result,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+            resource = <<>>,luser = <<>>,
+            lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    to =
+        #jid{
+            user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els =
+        [#pubsub_owner{
+             affiliations =
+                 {<<"publish_only-11941257163261377329">>,
+                  [#ps_affiliation{
+                       xmlns = <<>>,node = <<>>,type = owner,
+                       jid =
+                           #jid{
+                               user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                               server = <<"mnesia.localhost">>,
+                               resource = <<>>,
+                               luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                               lserver = <<"mnesia.localhost">>,
+                               lresource = <<>>}},
+                   #ps_affiliation{
+                       xmlns = <<>>,node = <<>>,type = publish_only,
+                       jid =
+                           #jid{
+                               user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                               server = <<"mnesia.localhost">>,
+                               resource = <<>>,
+                               luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                               lserver = <<"mnesia.localhost">>,
+                               lresource = <<>>}}]},
+             configure = undefined,default = undefined,delete = undefined,
+             purge = undefined,subscriptions = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:30.468 ***</b>
+SENT:
+<iq to='pubsub.mnesia.localhost'
+    type='set'
+    id='7239956774280996196'
+    xmlns='jabber:client'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub#owner'>
+    <delete node='publish_only-11941257163261377329'/>
+  </pubsub>
+</iq>
+
+#iq{id = <<"7239956774280996196">>,type = set,lang = <<>>,from = undefined,
+    to = #jid{user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+              resource = <<>>,luser = <<>>,
+              lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    sub_els = [#pubsub_owner{affiliations = undefined,configure = undefined,
+                             default = undefined,
+                             delete = {<<"publish_only-11941257163261377329">>,
+                                       <<>>},
+                             purge = undefined,subscriptions = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:30.470 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='pubsub.mnesia.localhost'
+    type='result'
+    id='7239956774280996196'/>
+
+#iq{id = <<"7239956774280996196">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+                resource = <<>>,luser = <<>>,
+                lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:30.472 ***</b>
+SENT:
+<iq to='pubsub.mnesia.localhost'
+    type='set'
+    id='563975309110825755'
+    xmlns='jabber:client'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub'>
+    <create node='publisher-2047769043329842130'/>
+    <configure>
+      <x type='submit'
+         xmlns='jabber:x:data'>
+        <field var='FORM_TYPE'
+               type='hidden'>
+          <value>http://jabber.org/protocol/pubsub#node_config</value>
+        </field>
+        <field var='pubsub#title'
+               type='text-single'
+               label='A friendly name for the node'>
+          <value>title!@#$%^&*()'"`~<>+-/;:_=[]{}|\</value>
+        </field>
+        <field var='pubsub#notify_delete'
+               type='boolean'
+               label='Notify subscribers when the node is deleted'>
+          <value>0</value>
+        </field>
+        <field var='pubsub#send_last_published_item'
+               type='list-single'
+               label='When to send the last published item'>
+          <value>never</value>
+          <option label='Never'>
+            <value>never</value>
+          </option>
+          <option label='When a new subscription is processed'>
+            <value>on_sub</value>
+          </option>
+          <option label='When a new subscription is processed and whenever a subscriber comes online'>
+            <value>on_sub_and_presence</value>
+          </option>
+        </field>
+      </x>
+    </configure>
+  </pubsub>
+</iq>
+
+#iq{
+ id = <<"563975309110825755">>,type = set,lang = <<>>,from = undefined,
+ to =
+  #jid{
+   user = <<>>,server = <<"pubsub.mnesia.localhost">>,resource = <<>>,
+   luser = <<>>,lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+ sub_els =
+  [#pubsub{
+    subscriptions = undefined,subscription = undefined,
+    affiliations = undefined,publish = undefined,publish_options = undefined,
+    subscribe = undefined,unsubscribe = undefined,options = undefined,
+    items = undefined,retract = undefined,
+    create = <<"publisher-2047769043329842130">>,
+    configure =
+     {<<>>,
+      #xdata{
+       type = submit,instructions = [],title = undefined,reported = undefined,
+       items = [],
+       fields =
+        [#xdata_field{
+          label = <<>>,type = hidden,var = <<"FORM_TYPE">>,required = false,
+          desc = <<>>,
+          values = [<<"http://jabber.org/protocol/pubsub#node_config">>],
+          options = [],sub_els = []},
+         #xdata_field{
+          label = <<"A friendly name for the node">>,type = 'text-single',
+          var = <<"pubsub#title">>,required = false,desc = <<>>,
+          values = [<<"title!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>],
+          options = [],sub_els = []},
+         #xdata_field{
+          label = <<"Notify subscribers when the node is deleted">>,
+          type = boolean,var = <<"pubsub#notify_delete">>,required = false,
+          desc = <<>>,
+          values = [<<"0">>],
+          options = [],sub_els = []},
+         #xdata_field{
+          label = <<"When to send the last published item">>,
+          type = 'list-single',var = <<"pubsub#send_last_published_item">>,
+          required = false,desc = <<>>,
+          values = [<<"never">>],
+          options =
+           [#xdata_option{label = <<"Never">>,value = <<"never">>},
+            #xdata_option{
+             label = <<"When a new subscription is processed">>,
+             value = <<"on_sub">>},
+            #xdata_option{
+             label =
+              <<"When a new subscription is processed and whenever a subscriber comes online">>,
+             value = <<"on_sub_and_presence">>}],
+          sub_els = []}]}},
+    default = undefined,delete = undefined,purge = undefined,rsm = undefined}],
+ meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:30.474 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='pubsub.mnesia.localhost'
+    type='result'
+    id='563975309110825755'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub'>
+    <create node='publisher-2047769043329842130'/>
+  </pubsub>
+</iq>
+
+#iq{id = <<"563975309110825755">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+                resource = <<>>,luser = <<>>,
+                lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [#pubsub{subscriptions = undefined,subscription = undefined,
+                       affiliations = undefined,publish = undefined,
+                       publish_options = undefined,subscribe = undefined,
+                       unsubscribe = undefined,options = undefined,
+                       items = undefined,retract = undefined,
+                       create = <<"publisher-2047769043329842130">>,
+                       configure = undefined,default = undefined,
+                       delete = undefined,purge = undefined,rsm = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:30.475 ***</b>
+SENT:
+<iq to='pubsub.mnesia.localhost'
+    type='set'
+    id='6095876422757572973'
+    xmlns='jabber:client'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub'>
+    <publish node='publisher-2047769043329842130'>
+      <item id='5039085388084611028'>
+        <presence id='5039085388084611028'
+                  xmlns='jabber:client'/>
+      </item>
+    </publish>
+  </pubsub>
+</iq>
+
+#iq{
+ id = <<"6095876422757572973">>,type = set,lang = <<>>,from = undefined,
+ to =
+  #jid{
+   user = <<>>,server = <<"pubsub.mnesia.localhost">>,resource = <<>>,
+   luser = <<>>,lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+ sub_els =
+  [#pubsub{
+    subscriptions = undefined,subscription = undefined,
+    affiliations = undefined,
+    publish =
+     #ps_publish{
+      node = <<"publisher-2047769043329842130">>,
+      items =
+       [#ps_item{
+         xmlns = <<>>,id = <<"5039085388084611028">>,
+         sub_els =
+          [#xmlel{
+            name = <<"presence">>,
+            attrs =
+             [{<<"id">>,<<"5039085388084611028">>},
+              {<<"xmlns">>,<<"jabber:client">>}],
+            children = []}],
+         node = <<>>,publisher = <<>>}]},
+    publish_options = undefined,subscribe = undefined,unsubscribe = undefined,
+    options = undefined,items = undefined,retract = undefined,
+    create = undefined,configure = undefined,default = undefined,
+    delete = undefined,purge = undefined,rsm = undefined}],
+ meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:30.476 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='pubsub.mnesia.localhost'
+    type='result'
+    id='6095876422757572973'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub'>
+    <publish node='publisher-2047769043329842130'>
+      <item id='5039085388084611028'/>
+    </publish>
+  </pubsub>
+</iq>
+
+#iq{id = <<"6095876422757572973">>,type = result,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+            resource = <<>>,luser = <<>>,
+            lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    to =
+        #jid{
+            user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els =
+        [#pubsub{
+             subscriptions = undefined,subscription = undefined,
+             affiliations = undefined,
+             publish =
+                 #ps_publish{
+                     node = <<"publisher-2047769043329842130">>,
+                     items =
+                         [#ps_item{
+                              xmlns = <<>>,id = <<"5039085388084611028">>,
+                              sub_els = [],node = <<>>,publisher = <<>>}]},
+             publish_options = undefined,subscribe = undefined,
+             unsubscribe = undefined,options = undefined,items = undefined,
+             retract = undefined,create = undefined,configure = undefined,
+             default = undefined,delete = undefined,purge = undefined,
+             rsm = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:30.477 ***</b>
+SENT:
+<iq to='pubsub.mnesia.localhost'
+    type='set'
+    id='1937395239708228195'
+    xmlns='jabber:client'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub#owner'>
+    <affiliations node='publisher-2047769043329842130'>
+      <affiliation affiliation='publisher'
+                   jid='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'/>
+    </affiliations>
+  </pubsub>
+</iq>
+
+#iq{id = <<"1937395239708228195">>,type = set,lang = <<>>,from = undefined,
+    to =
+        #jid{
+            user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+            resource = <<>>,luser = <<>>,
+            lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    sub_els =
+        [#pubsub_owner{
+             affiliations =
+                 {<<"publisher-2047769043329842130">>,
+                  [#ps_affiliation{
+                       xmlns = <<>>,node = <<>>,type = publisher,
+                       jid =
+                           #jid{
+                               user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                               server = <<"mnesia.localhost">>,
+                               resource =
+                                   <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                               luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                               lserver = <<"mnesia.localhost">>,
+                               lresource =
+                                   <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>}}]},
+             configure = undefined,default = undefined,delete = undefined,
+             purge = undefined,subscriptions = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:30.478 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='pubsub.mnesia.localhost'
+    type='result'
+    id='1937395239708228195'/>
+
+#iq{id = <<"1937395239708228195">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+                resource = <<>>,luser = <<>>,
+                lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:30.478 ***</b>
+SENT:
+<iq to='pubsub.mnesia.localhost'
+    type='get'
+    id='12021231569122191945'
+    xmlns='jabber:client'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub#owner'>
+    <affiliations node='publisher-2047769043329842130'/>
+  </pubsub>
+</iq>
+
+#iq{id = <<"12021231569122191945">>,type = get,lang = <<>>,from = undefined,
+    to =
+        #jid{
+            user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+            resource = <<>>,luser = <<>>,
+            lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    sub_els =
+        [#pubsub_owner{
+             affiliations = {<<"publisher-2047769043329842130">>,[]},
+             configure = undefined,default = undefined,delete = undefined,
+             purge = undefined,subscriptions = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:30.479 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='pubsub.mnesia.localhost'
+    type='result'
+    id='12021231569122191945'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub#owner'>
+    <affiliations node='publisher-2047769043329842130'>
+      <affiliation affiliation='owner'
+                   jid='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'/>
+      <affiliation affiliation='publisher'
+                   jid='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'/>
+    </affiliations>
+  </pubsub>
+</iq>
+
+#iq{id = <<"12021231569122191945">>,type = result,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+            resource = <<>>,luser = <<>>,
+            lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    to =
+        #jid{
+            user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els =
+        [#pubsub_owner{
+             affiliations =
+                 {<<"publisher-2047769043329842130">>,
+                  [#ps_affiliation{
+                       xmlns = <<>>,node = <<>>,type = owner,
+                       jid =
+                           #jid{
+                               user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                               server = <<"mnesia.localhost">>,
+                               resource = <<>>,
+                               luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                               lserver = <<"mnesia.localhost">>,
+                               lresource = <<>>}},
+                   #ps_affiliation{
+                       xmlns = <<>>,node = <<>>,type = publisher,
+                       jid =
+                           #jid{
+                               user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                               server = <<"mnesia.localhost">>,
+                               resource = <<>>,
+                               luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                               lserver = <<"mnesia.localhost">>,
+                               lresource = <<>>}}]},
+             configure = undefined,default = undefined,delete = undefined,
+             purge = undefined,subscriptions = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:30.909 ***</b>
+SENT:
+<iq to='pubsub.mnesia.localhost'
+    type='set'
+    id='5145266862490987235'
+    xmlns='jabber:client'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub#owner'>
+    <delete node='publisher-2047769043329842130'/>
+  </pubsub>
+</iq>
+
+#iq{id = <<"5145266862490987235">>,type = set,lang = <<>>,from = undefined,
+    to = #jid{user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+              resource = <<>>,luser = <<>>,
+              lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    sub_els = [#pubsub_owner{affiliations = undefined,configure = undefined,
+                             default = undefined,
+                             delete = {<<"publisher-2047769043329842130">>,
+                                       <<>>},
+                             purge = undefined,subscriptions = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:30.912 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='pubsub.mnesia.localhost'
+    type='result'
+    id='5145266862490987235'/>
+
+#iq{id = <<"5145266862490987235">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+                resource = <<>>,luser = <<>>,
+                lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:30.912 ***</b>
+SENT:
+<iq to='pubsub.mnesia.localhost'
+    type='set'
+    id='14153231521744785240'
+    xmlns='jabber:client'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub'>
+    <create node='owner-6409344468021027779'/>
+    <configure>
+      <x type='submit'
+         xmlns='jabber:x:data'>
+        <field var='FORM_TYPE'
+               type='hidden'>
+          <value>http://jabber.org/protocol/pubsub#node_config</value>
+        </field>
+        <field var='pubsub#title'
+               type='text-single'
+               label='A friendly name for the node'>
+          <value>title!@#$%^&*()'"`~<>+-/;:_=[]{}|\</value>
+        </field>
+        <field var='pubsub#notify_delete'
+               type='boolean'
+               label='Notify subscribers when the node is deleted'>
+          <value>0</value>
+        </field>
+        <field var='pubsub#send_last_published_item'
+               type='list-single'
+               label='When to send the last published item'>
+          <value>never</value>
+          <option label='Never'>
+            <value>never</value>
+          </option>
+          <option label='When a new subscription is processed'>
+            <value>on_sub</value>
+          </option>
+          <option label='When a new subscription is processed and whenever a subscriber comes online'>
+            <value>on_sub_and_presence</value>
+          </option>
+        </field>
+      </x>
+    </configure>
+  </pubsub>
+</iq>
+
+#iq{
+ id = <<"14153231521744785240">>,type = set,lang = <<>>,from = undefined,
+ to =
+  #jid{
+   user = <<>>,server = <<"pubsub.mnesia.localhost">>,resource = <<>>,
+   luser = <<>>,lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+ sub_els =
+  [#pubsub{
+    subscriptions = undefined,subscription = undefined,
+    affiliations = undefined,publish = undefined,publish_options = undefined,
+    subscribe = undefined,unsubscribe = undefined,options = undefined,
+    items = undefined,retract = undefined,
+    create = <<"owner-6409344468021027779">>,
+    configure =
+     {<<>>,
+      #xdata{
+       type = submit,instructions = [],title = undefined,reported = undefined,
+       items = [],
+       fields =
+        [#xdata_field{
+          label = <<>>,type = hidden,var = <<"FORM_TYPE">>,required = false,
+          desc = <<>>,
+          values = [<<"http://jabber.org/protocol/pubsub#node_config">>],
+          options = [],sub_els = []},
+         #xdata_field{
+          label = <<"A friendly name for the node">>,type = 'text-single',
+          var = <<"pubsub#title">>,required = false,desc = <<>>,
+          values = [<<"title!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>],
+          options = [],sub_els = []},
+         #xdata_field{
+          label = <<"Notify subscribers when the node is deleted">>,
+          type = boolean,var = <<"pubsub#notify_delete">>,required = false,
+          desc = <<>>,
+          values = [<<"0">>],
+          options = [],sub_els = []},
+         #xdata_field{
+          label = <<"When to send the last published item">>,
+          type = 'list-single',var = <<"pubsub#send_last_published_item">>,
+          required = false,desc = <<>>,
+          values = [<<"never">>],
+          options =
+           [#xdata_option{label = <<"Never">>,value = <<"never">>},
+            #xdata_option{
+             label = <<"When a new subscription is processed">>,
+             value = <<"on_sub">>},
+            #xdata_option{
+             label =
+              <<"When a new subscription is processed and whenever a subscriber comes online">>,
+             value = <<"on_sub_and_presence">>}],
+          sub_els = []}]}},
+    default = undefined,delete = undefined,purge = undefined,rsm = undefined}],
+ meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:30.914 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='pubsub.mnesia.localhost'
+    type='result'
+    id='14153231521744785240'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub'>
+    <create node='owner-6409344468021027779'/>
+  </pubsub>
+</iq>
+
+#iq{id = <<"14153231521744785240">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+                resource = <<>>,luser = <<>>,
+                lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [#pubsub{subscriptions = undefined,subscription = undefined,
+                       affiliations = undefined,publish = undefined,
+                       publish_options = undefined,subscribe = undefined,
+                       unsubscribe = undefined,options = undefined,
+                       items = undefined,retract = undefined,
+                       create = <<"owner-6409344468021027779">>,
+                       configure = undefined,default = undefined,
+                       delete = undefined,purge = undefined,rsm = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:30.914 ***</b>
+SENT:
+<iq to='pubsub.mnesia.localhost'
+    type='set'
+    id='11104506120124876759'
+    xmlns='jabber:client'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub'>
+    <publish node='owner-6409344468021027779'>
+      <item id='1088465763922863810'>
+        <presence id='1088465763922863810'
+                  xmlns='jabber:client'/>
+      </item>
+    </publish>
+  </pubsub>
+</iq>
+
+#iq{
+ id = <<"11104506120124876759">>,type = set,lang = <<>>,from = undefined,
+ to =
+  #jid{
+   user = <<>>,server = <<"pubsub.mnesia.localhost">>,resource = <<>>,
+   luser = <<>>,lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+ sub_els =
+  [#pubsub{
+    subscriptions = undefined,subscription = undefined,
+    affiliations = undefined,
+    publish =
+     #ps_publish{
+      node = <<"owner-6409344468021027779">>,
+      items =
+       [#ps_item{
+         xmlns = <<>>,id = <<"1088465763922863810">>,
+         sub_els =
+          [#xmlel{
+            name = <<"presence">>,
+            attrs =
+             [{<<"id">>,<<"1088465763922863810">>},
+              {<<"xmlns">>,<<"jabber:client">>}],
+            children = []}],
+         node = <<>>,publisher = <<>>}]},
+    publish_options = undefined,subscribe = undefined,unsubscribe = undefined,
+    options = undefined,items = undefined,retract = undefined,
+    create = undefined,configure = undefined,default = undefined,
+    delete = undefined,purge = undefined,rsm = undefined}],
+ meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:30.916 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='pubsub.mnesia.localhost'
+    type='result'
+    id='11104506120124876759'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub'>
+    <publish node='owner-6409344468021027779'>
+      <item id='1088465763922863810'/>
+    </publish>
+  </pubsub>
+</iq>
+
+#iq{id = <<"11104506120124876759">>,type = result,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+            resource = <<>>,luser = <<>>,
+            lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    to =
+        #jid{
+            user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els =
+        [#pubsub{
+             subscriptions = undefined,subscription = undefined,
+             affiliations = undefined,
+             publish =
+                 #ps_publish{
+                     node = <<"owner-6409344468021027779">>,
+                     items =
+                         [#ps_item{
+                              xmlns = <<>>,id = <<"1088465763922863810">>,
+                              sub_els = [],node = <<>>,publisher = <<>>}]},
+             publish_options = undefined,subscribe = undefined,
+             unsubscribe = undefined,options = undefined,items = undefined,
+             retract = undefined,create = undefined,configure = undefined,
+             default = undefined,delete = undefined,purge = undefined,
+             rsm = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:30.916 ***</b>
+SENT:
+<iq to='pubsub.mnesia.localhost'
+    type='set'
+    id='12673037262423082406'
+    xmlns='jabber:client'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub#owner'>
+    <affiliations node='owner-6409344468021027779'>
+      <affiliation affiliation='owner'
+                   jid='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'/>
+    </affiliations>
+  </pubsub>
+</iq>
+
+#iq{id = <<"12673037262423082406">>,type = set,lang = <<>>,from = undefined,
+    to =
+        #jid{
+            user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+            resource = <<>>,luser = <<>>,
+            lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    sub_els =
+        [#pubsub_owner{
+             affiliations =
+                 {<<"owner-6409344468021027779">>,
+                  [#ps_affiliation{
+                       xmlns = <<>>,node = <<>>,type = owner,
+                       jid =
+                           #jid{
+                               user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                               server = <<"mnesia.localhost">>,
+                               resource =
+                                   <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                               luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                               lserver = <<"mnesia.localhost">>,
+                               lresource =
+                                   <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>}}]},
+             configure = undefined,default = undefined,delete = undefined,
+             purge = undefined,subscriptions = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:30.917 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='pubsub.mnesia.localhost'
+    type='result'
+    id='12673037262423082406'/>
+
+#iq{id = <<"12673037262423082406">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+                resource = <<>>,luser = <<>>,
+                lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:30.917 ***</b>
+SENT:
+<iq to='pubsub.mnesia.localhost'
+    type='get'
+    id='13812420775038625206'
+    xmlns='jabber:client'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub#owner'>
+    <affiliations node='owner-6409344468021027779'/>
+  </pubsub>
+</iq>
+
+#iq{id = <<"13812420775038625206">>,type = get,lang = <<>>,from = undefined,
+    to =
+        #jid{
+            user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+            resource = <<>>,luser = <<>>,
+            lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    sub_els =
+        [#pubsub_owner{
+             affiliations = {<<"owner-6409344468021027779">>,[]},
+             configure = undefined,default = undefined,delete = undefined,
+             purge = undefined,subscriptions = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:30.918 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='pubsub.mnesia.localhost'
+    type='result'
+    id='13812420775038625206'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub#owner'>
+    <affiliations node='owner-6409344468021027779'>
+      <affiliation affiliation='owner'
+                   jid='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'/>
+      <affiliation affiliation='owner'
+                   jid='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'/>
+    </affiliations>
+  </pubsub>
+</iq>
+
+#iq{id = <<"13812420775038625206">>,type = result,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+            resource = <<>>,luser = <<>>,
+            lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    to =
+        #jid{
+            user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els =
+        [#pubsub_owner{
+             affiliations =
+                 {<<"owner-6409344468021027779">>,
+                  [#ps_affiliation{
+                       xmlns = <<>>,node = <<>>,type = owner,
+                       jid =
+                           #jid{
+                               user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                               server = <<"mnesia.localhost">>,
+                               resource = <<>>,
+                               luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                               lserver = <<"mnesia.localhost">>,
+                               lresource = <<>>}},
+                   #ps_affiliation{
+                       xmlns = <<>>,node = <<>>,type = owner,
+                       jid =
+                           #jid{
+                               user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                               server = <<"mnesia.localhost">>,
+                               resource = <<>>,
+                               luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                               lserver = <<"mnesia.localhost">>,
+                               lresource = <<>>}}]},
+             configure = undefined,default = undefined,delete = undefined,
+             purge = undefined,subscriptions = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:31.351 ***</b>
+SENT:
+<iq to='pubsub.mnesia.localhost'
+    type='set'
+    id='10686306071457465362'
+    xmlns='jabber:client'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub#owner'>
+    <delete node='owner-6409344468021027779'/>
+  </pubsub>
+</iq>
+
+#iq{id = <<"10686306071457465362">>,type = set,lang = <<>>,from = undefined,
+    to = #jid{user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+              resource = <<>>,luser = <<>>,
+              lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    sub_els = [#pubsub_owner{affiliations = undefined,configure = undefined,
+                             default = undefined,
+                             delete = {<<"owner-6409344468021027779">>,<<>>},
+                             purge = undefined,subscriptions = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:31.361 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='pubsub.mnesia.localhost'
+    type='error'
+    id='10686306071457465362'>
+  <pubsub xmlns='http://jabber.org/protocol/pubsub#owner'>
+    <delete node='owner-6409344468021027779'/>
+  </pubsub>
+  <error type='cancel'>
+    <item-not-found xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/>
+    <text xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'
+          xml:lang='en'>Node not found</text>
+  </error>
+</iq>
+
+#iq{id = <<"10686306071457465362">>,type = error,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<>>,server = <<"pubsub.mnesia.localhost">>,
+            resource = <<>>,luser = <<>>,
+            lserver = <<"pubsub.mnesia.localhost">>,lresource = <<>>},
+    to =
+        #jid{
+            user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els =
+        [#pubsub_owner{
+             affiliations = undefined,configure = undefined,
+             default = undefined,
+             delete = {<<"owner-6409344468021027779">>,<<>>},
+             purge = undefined,subscriptions = undefined},
+         #stanza_error{
+             type = cancel,by = undefined,reason = 'item-not-found',
+             text = [#text{lang = <<"en">>,data = <<"Node not found">>}],
+             sub_els = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+<a name="end"></a>
+
+
+=== Ended at 2021-12-09 17:10:31
+=== successfully completed test case
+=== === Returned value: [{receiver,undefined},
+                     {csi,true},
+                     {rosterver,true},
+                     {sm,true},
+                     {compression,[&lt;&lt;"zlib"&gt;&gt;]},
+                     {stream_id,&lt;&lt;"18262388956943004141"&gt;&gt;},
+                     {sasl,#Fun&lt;suite.6.40689848&gt;},
+                     {legacy_auth,true},
+                     {register,true},
+                     {starttls,true},
+                     {mechs,
+                         [&lt;&lt;"DIGEST-MD5"&gt;&gt;,&lt;&lt;"PLAIN"&gt;&gt;,&lt;&lt;"SCRAM-SHA-512"&gt;&gt;,
+                          &lt;&lt;"SCRAM-SHA-256"&gt;&gt;,&lt;&lt;"SCRAM-SHA-1"&gt;&gt;,
+                          &lt;&lt;"X-OAUTH2"&gt;&gt;]},
+                     {peer,
+                         {jid,&lt;&lt;"test_slave!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"mnesia.localhost"&gt;&gt;,
+                             &lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"test_slave!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"mnesia.localhost"&gt;&gt;,
+                             &lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;}},
+                     {peer_nick,
+                         &lt;&lt;"slave_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {user,&lt;&lt;"test_master!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;},
+                     {slave,
+                         {jid,&lt;&lt;"test_slave!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"mnesia.localhost"&gt;&gt;,
+                             &lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"test_slave!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"mnesia.localhost"&gt;&gt;,
+                             &lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;}},
+                     {master,
+                         {jid,&lt;&lt;"test_master!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"mnesia.localhost"&gt;&gt;,
+                             &lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"test_master!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"mnesia.localhost"&gt;&gt;,
+                             &lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;}},
+                     {resource,&lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {nick,&lt;&lt;"master_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {mode,master},
+                     {watchdog,&lt;0.1267.1&gt;},
+                     {event_relay,&lt;0.1258.1&gt;},
+                     {server,&lt;&lt;"mnesia.localhost"&gt;&gt;},
+                     {server_port,5222},
+                     {server_host,"localhost"},
+                     {component_port,5270},
+                     {s2s_port,5269},
+                     {master_nick,
+                         &lt;&lt;"master_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {slave_nick,
+                         &lt;&lt;"slave_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {room_subject,
+                         &lt;&lt;"hello, world!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {certfile,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/test/ejabberd_SUITE_data/cert.pem"},
+                     {persistent_room,true},
+                     {anonymous,false},
+                     {type,client},
+                     {xmlns,&lt;&lt;"jabber:client"&gt;&gt;},
+                     {ns_stream,&lt;&lt;"http://etherx.jabber.org/streams"&gt;&gt;},
+                     {stream_version,{1,0}},
+                     {stream_from,&lt;&lt;&gt;&gt;},
+                     {db_xmlns,&lt;&lt;&gt;&gt;},
+                     {lang,&lt;&lt;"en"&gt;&gt;},
+                     {base_dir,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd"},
+                     {pubsub_node,&lt;&lt;"node!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {pubsub_node_title,
+                         &lt;&lt;"title!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {master_resource,
+                         &lt;&lt;"master_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {slave_resource,
+                         &lt;&lt;"slave_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {password,&lt;&lt;"password!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {backends,[mnesia]},
+                     {tc_logfile,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.09.24/lib.ejabberd.logs/run.2021-12-09_17.09.25/ejabberd_suite.pubsub_affiliations_master.10626.html"},
+                     {tc_group_properties,
+                         [{name,pubsub_affiliations},parallel]},
+                     {tc_group_path,
+                         [[{name,pubsub_master_slave},sequence],
+                          [{name,mnesia},sequence]]},
+                     {data_dir,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/test/ejabberd_SUITE_data/"},
+                     {priv_dir,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.09.24/lib.ejabberd.logs/run.2021-12-09_17.09.25/log_private/"}]

@@ -1,0 +1,1524 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test ejabberd_SUITE:offline_flex_slave result</title>
+<meta http-equiv="cache-control" content="no-cache"></meta>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+<link rel="stylesheet" href="../../ct_default.css" type="text/css"></link>
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="ejabberd_suite.src.html#offline_flex_slave-1">ejabberd_SUITE:offline_flex_slave/1</a> (click for source code)
+
+=== Config value:
+
+    [{event_relay,&lt;0.1359.1&gt;},
+     {watchdog,&lt;0.1358.1&gt;},
+     {server,&lt;&lt;"mnesia.localhost"&gt;&gt;},
+     {server_port,5222},
+     {server_host,"localhost"},
+     {component_port,5270},
+     {s2s_port,5269},
+     {user,&lt;&lt;"test_single!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;},
+     {nick,&lt;&lt;"nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {master_nick,&lt;&lt;"master_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {slave_nick,&lt;&lt;"slave_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {room_subject,&lt;&lt;"hello, world!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {certfile,"/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/test/ejabberd_SUITE_data/cert.pem"},
+     {persistent_room,true},
+     {anonymous,false},
+     {type,client},
+     {xmlns,&lt;&lt;"jabber:client"&gt;&gt;},
+     {ns_stream,&lt;&lt;"http://etherx.jabber.org/streams"&gt;&gt;},
+     {stream_version,{1,0}},
+     {stream_id,&lt;&lt;&gt;&gt;},
+     {stream_from,&lt;&lt;&gt;&gt;},
+     {db_xmlns,&lt;&lt;&gt;&gt;},
+     {mechs,[]},
+     {rosterver,false},
+     {lang,&lt;&lt;"en"&gt;&gt;},
+     {base_dir,"/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd"},
+     {receiver,undefined},
+     {pubsub_node,&lt;&lt;"node!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {pubsub_node_title,&lt;&lt;"title!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {resource,&lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {master_resource,&lt;&lt;"master_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {slave_resource,&lt;&lt;"slave_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {password,&lt;&lt;"password!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {backends,[mnesia]},
+     {tc_logfile,"/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.09.24/lib.ejabberd.logs/run.2021-12-09_17.09.25/ejabberd_suite.offline_flex_slave.12226.html"},
+     {tc_group_properties,[{name,offline_flex},parallel]},
+     {tc_group_path,[[{name,offline_master_slave},sequence],
+                     [{name,mnesia},sequence]]},
+     {data_dir,"/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/test/ejabberd_SUITE_data/"},
+     {priv_dir,"/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.09.24/lib.ejabberd.logs/run.2021-12-09_17.09.25/log_private/"}]
+
+=== Current directory is "/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.09.24"
+
+=== Started at 2021-12-09 17:10:41
+
+<br />
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.051 ***</b>
+SENT:
+<stream:stream version='1.0'
+               xml:lang='en'
+               xmlns:stream='http://etherx.jabber.org/streams'
+               to='mnesia.localhost'
+               xmlns='jabber:client'/>
+
+#stream_start{from = undefined,
+              to = #jid{user = <<>>,server = <<"mnesia.localhost">>,
+                        resource = <<>>,luser = <<>>,
+                        lserver = <<"mnesia.localhost">>,lresource = <<>>},
+              id = <<>>,
+              version = {1,0},
+              xmlns = <<"jabber:client">>,
+              stream_xmlns = <<"http://etherx.jabber.org/streams">>,
+              db_xmlns = <<>>,lang = <<"en">>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.052 ***</b>
+RECV:
+<stream:stream xmlns:stream='http://etherx.jabber.org/streams'
+               xmlns='jabber:client'
+               id='3776955089420592067'
+               version='1.0'
+               xml:lang='en'
+               from='mnesia.localhost'/>
+
+#stream_start{from = #jid{user = <<>>,server = <<"mnesia.localhost">>,
+                          resource = <<>>,luser = <<>>,
+                          lserver = <<"mnesia.localhost">>,lresource = <<>>},
+              to = undefined,id = <<"3776955089420592067">>,
+              version = {1,0},
+              xmlns = <<"jabber:client">>,
+              stream_xmlns = <<"http://etherx.jabber.org/streams">>,
+              db_xmlns = <<>>,lang = <<"en">>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.053 ***</b>
+RECV:
+<stream:features>
+  <mechanisms xmlns='urn:ietf:params:xml:ns:xmpp-sasl'>
+    <mechanism>DIGEST-MD5</mechanism>
+    <mechanism>PLAIN</mechanism>
+    <mechanism>SCRAM-SHA-512</mechanism>
+    <mechanism>SCRAM-SHA-256</mechanism>
+    <mechanism>SCRAM-SHA-1</mechanism>
+    <mechanism>X-OAUTH2</mechanism>
+  </mechanisms>
+  <starttls xmlns='urn:ietf:params:xml:ns:xmpp-tls'/>
+  <register xmlns='http://jabber.org/features/iq-register'/>
+  <auth xmlns='http://jabber.org/features/iq-auth'/>
+</stream:features>
+
+#stream_features{
+    sub_els =
+        [#sasl_mechanisms{
+             list =
+                 [<<"DIGEST-MD5">>,<<"PLAIN">>,<<"SCRAM-SHA-512">>,
+                  <<"SCRAM-SHA-256">>,<<"SCRAM-SHA-1">>,<<"X-OAUTH2">>]},
+         #starttls{required = false},
+         #feature_register{},
+         #legacy_auth_feature{}]}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.054 ***</b>
+SENT:
+<auth mechanism='PLAIN'
+      xmlns='urn:ietf:params:xml:ns:xmpp-sasl'>dGVzdF9zbGF2ZSEjJCVeKigpYH4rLTtfPVtde318XEBtbmVzaWEubG9jYWxob3N0AHRlc3Rfc2xhdmUhIyQlXiooKWB+Ky07Xz1bXXt9fFwAcGFzc3dvcmQhQCMkJV4mKigpJyJgfjw+Ky0vOzpfPVtde318XA==</auth>
+
+#sasl_auth{mechanism = <<"PLAIN">>,
+           text = <<116,101,115,116,95,115,108,97,118,101,33,35,36,37,94,42,
+                    40,41,96,126,43,45,59,95,61,91,93,123,125,124,92,64,109,
+                    110,101,115,105,97,46,108,111,99,97,108,104,111,115,116,0,
+                    116,101,115,116,95,115,108,97,118,101,33,35,36,37,94,42,
+                    40,41,96,126,43,45,59,95,61,91,93,123,125,124,92,0,112,97,
+                    115,115,119,111,114,100,33,64,35,36,37,94,38,42,40,41,39,
+                    34,96,126,60,62,43,45,47,59,58,95,61,91,93,123,125,124,92>>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.054 ***</b>
+RECV:
+<success xmlns='urn:ietf:params:xml:ns:xmpp-sasl'/>
+
+#sasl_success{text = <<>>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.054 ***</b>
+SENT:
+<stream:stream version='1.0'
+               xml:lang='en'
+               xmlns:stream='http://etherx.jabber.org/streams'
+               to='mnesia.localhost'
+               xmlns='jabber:client'/>
+
+#stream_start{from = undefined,
+              to = #jid{user = <<>>,server = <<"mnesia.localhost">>,
+                        resource = <<>>,luser = <<>>,
+                        lserver = <<"mnesia.localhost">>,lresource = <<>>},
+              id = <<>>,
+              version = {1,0},
+              xmlns = <<"jabber:client">>,
+              stream_xmlns = <<"http://etherx.jabber.org/streams">>,
+              db_xmlns = <<>>,lang = <<"en">>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.055 ***</b>
+RECV:
+<stream:stream xmlns:stream='http://etherx.jabber.org/streams'
+               xmlns='jabber:client'
+               id='15845055616079479324'
+               version='1.0'
+               xml:lang='en'
+               from='mnesia.localhost'/>
+
+#stream_start{from = #jid{user = <<>>,server = <<"mnesia.localhost">>,
+                          resource = <<>>,luser = <<>>,
+                          lserver = <<"mnesia.localhost">>,lresource = <<>>},
+              to = undefined,id = <<"15845055616079479324">>,
+              version = {1,0},
+              xmlns = <<"jabber:client">>,
+              stream_xmlns = <<"http://etherx.jabber.org/streams">>,
+              db_xmlns = <<>>,lang = <<"en">>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.056 ***</b>
+RECV:
+<stream:features>
+  <compression xmlns='http://jabber.org/features/compress'>
+    <method>zlib</method>
+  </compression>
+  <bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'/>
+  <session xmlns='urn:ietf:params:xml:ns:xmpp-session'>
+    <optional/>
+  </session>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='9dw1fKaE0crSfkc9KTtBadLPkJA='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+  <sm xmlns='urn:xmpp:sm:2'/>
+  <sm xmlns='urn:xmpp:sm:3'/>
+  <ver xmlns='urn:xmpp:features:rosterver'/>
+  <csi xmlns='urn:xmpp:csi:0'/>
+</stream:features>
+
+#stream_features{
+    sub_els =
+        [#compression{methods = [<<"zlib">>]},
+         #bind{jid = undefined,resource = <<>>},
+         #xmpp_session{optional = true},
+         #caps{
+             node = <<"http://www.process-one.net/en/ejabberd/">>,
+             version = <<"9dw1fKaE0crSfkc9KTtBadLPkJA=">>,hash = <<"sha-1">>,
+             exts = []},
+         #feature_sm{xmlns = <<"urn:xmpp:sm:2">>},
+         #feature_sm{xmlns = <<"urn:xmpp:sm:3">>},
+         #rosterver_feature{},
+         #feature_csi{}]}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.056 ***</b>
+SENT:
+<iq type='set'
+    id='7937747172514041540'
+    xmlns='jabber:client'>
+  <bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'>
+    <resource>resource!@#$%^&*()'"`~<>+-/;:_=[]{}|\</resource>
+  </bind>
+</iq>
+
+#iq{id = <<"7937747172514041540">>,type = set,lang = <<>>,from = undefined,
+    to = undefined,
+    sub_els = [#bind{jid = undefined,
+                     resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.058 ***</b>
+RECV:
+<iq type='result'
+    id='7937747172514041540'>
+  <bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'>
+    <jid>test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&*()'"`~<>+-/;:_=[]{}|\</jid>
+  </bind>
+</iq>
+
+#iq{id = <<"7937747172514041540">>,type = result,lang = <<>>,from = undefined,
+    to = undefined,
+    sub_els =
+        [#bind{
+             jid =
+                 #jid{
+                     user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                     server = <<"mnesia.localhost">>,
+                     resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                     lserver = <<"mnesia.localhost">>,
+                     lresource =
+                         <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+             resource = <<>>}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.270 ***</b>
+SENT:
+<iq type='get'
+    id='16943143445048978373'
+    xmlns='jabber:client'>
+  <query node='http://jabber.org/protocol/offline'
+         xmlns='http://jabber.org/protocol/disco#info'/>
+</iq>
+
+#iq{id = <<"16943143445048978373">>,type = get,lang = <<>>,from = undefined,
+    to = undefined,
+    sub_els = [#disco_info{node = <<"http://jabber.org/protocol/offline">>,
+                           identities = [],features = [],xdata = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.272 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'
+    type='result'
+    id='16943143445048978373'>
+  <query xmlns='http://jabber.org/protocol/disco#info'
+         node='http://jabber.org/protocol/offline'>
+    <identity type='message-list'
+              category='automation'/>
+    <identity type='registered'
+              category='account'/>
+    <feature var='http://jabber.org/protocol/offline'/>
+    <x xmlns='jabber:x:data'
+       type='result'>
+      <field var='FORM_TYPE'
+             type='hidden'>
+        <value>http://jabber.org/protocol/offline</value>
+      </field>
+      <field var='number_of_messages'
+             type='text-single'
+             label='Number of Offline Messages'>
+        <value>5</value>
+      </field>
+    </x>
+  </query>
+</iq>
+
+#iq{id = <<"16943143445048978373">>,type = result,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,resource = <<>>,
+            luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,lresource = <<>>},
+    to =
+        #jid{
+            user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els =
+        [#disco_info{
+             node = <<"http://jabber.org/protocol/offline">>,
+             identities =
+                 [#identity{
+                      category = <<"automation">>,type = <<"message-list">>,
+                      lang = <<>>,name = <<>>},
+                  #identity{
+                      category = <<"account">>,type = <<"registered">>,
+                      lang = <<>>,name = <<>>}],
+             features = [<<"http://jabber.org/protocol/offline">>],
+             xdata =
+                 [#xdata{
+                      type = result,instructions = [],title = undefined,
+                      reported = undefined,items = [],
+                      fields =
+                          [#xdata_field{
+                               label = <<>>,type = hidden,
+                               var = <<"FORM_TYPE">>,required = false,
+                               desc = <<>>,
+                               values =
+                                   [<<"http://jabber.org/protocol/offline">>],
+                               options = [],sub_els = []},
+                           #xdata_field{
+                               label = <<"Number of Offline Messages">>,
+                               type = 'text-single',
+                               var = <<"number_of_messages">>,
+                               required = false,desc = <<>>,
+                               values = [<<"5">>],
+                               options = [],sub_els = []}]}]}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.272 ***</b>
+SENT:
+<iq type='get'
+    id='6352326880731322219'
+    xmlns='jabber:client'>
+  <query node='http://jabber.org/protocol/offline'
+         xmlns='http://jabber.org/protocol/disco#items'/>
+</iq>
+
+#iq{id = <<"6352326880731322219">>,type = get,lang = <<>>,from = undefined,
+    to = undefined,
+    sub_els = [#disco_items{node = <<"http://jabber.org/protocol/offline">>,
+                            items = [],rsm = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.274 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'
+    type='result'
+    id='6352326880731322219'>
+  <query xmlns='http://jabber.org/protocol/disco#items'
+         node='http://jabber.org/protocol/offline'>
+    <item node='1639069841060882'
+          name='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          jid='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'/>
+    <item node='1639069841061493'
+          name='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          jid='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'/>
+    <item node='1639069841061911'
+          name='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          jid='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'/>
+    <item node='1639069841062203'
+          name='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          jid='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'/>
+    <item node='1639069841062620'
+          name='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          jid='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'/>
+  </query>
+</iq>
+
+#iq{id = <<"6352326880731322219">>,type = result,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,resource = <<>>,
+            luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,lresource = <<>>},
+    to =
+        #jid{
+            user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els =
+        [#disco_items{
+             node = <<"http://jabber.org/protocol/offline">>,
+             items =
+                 [#disco_item{
+                      jid =
+                          #jid{
+                              user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                              server = <<"mnesia.localhost">>,resource = <<>>,
+                              luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                              lserver = <<"mnesia.localhost">>,
+                              lresource = <<>>},
+                      name =
+                          <<"test_master!#$%^*()`~+-;_=[]{}|\\@mnesia.localhost/resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                      node = <<"1639069841060882">>},
+                  #disco_item{
+                      jid =
+                          #jid{
+                              user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                              server = <<"mnesia.localhost">>,resource = <<>>,
+                              luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                              lserver = <<"mnesia.localhost">>,
+                              lresource = <<>>},
+                      name =
+                          <<"test_master!#$%^*()`~+-;_=[]{}|\\@mnesia.localhost/resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                      node = <<"1639069841061493">>},
+                  #disco_item{
+                      jid =
+                          #jid{
+                              user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                              server = <<"mnesia.localhost">>,resource = <<>>,
+                              luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                              lserver = <<"mnesia.localhost">>,
+                              lresource = <<>>},
+                      name =
+                          <<"test_master!#$%^*()`~+-;_=[]{}|\\@mnesia.localhost/resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                      node = <<"1639069841061911">>},
+                  #disco_item{
+                      jid =
+                          #jid{
+                              user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                              server = <<"mnesia.localhost">>,resource = <<>>,
+                              luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                              lserver = <<"mnesia.localhost">>,
+                              lresource = <<>>},
+                      name =
+                          <<"test_master!#$%^*()`~+-;_=[]{}|\\@mnesia.localhost/resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                      node = <<"1639069841062203">>},
+                  #disco_item{
+                      jid =
+                          #jid{
+                              user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                              server = <<"mnesia.localhost">>,resource = <<>>,
+                              luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                              lserver = <<"mnesia.localhost">>,
+                              lresource = <<>>},
+                      name =
+                          <<"test_master!#$%^*()`~+-;_=[]{}|\\@mnesia.localhost/resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                      node = <<"1639069841062620">>}],
+             rsm = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.275 ***</b>
+SENT:
+<presence id='13329205950198933698'
+          xmlns='jabber:client'/>
+
+#presence{id = <<"13329205950198933698">>,type = available,lang = <<>>,
+          from = undefined,to = undefined,show = undefined,status = [],
+          priority = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.276 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='13329205950198933698'>
+  <x xmlns='vcard-temp:x:update'/>
+</presence>
+
+#presence{id = <<"13329205950198933698">>,type = available,lang = <<"en">>,
+          from = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                      server = <<"mnesia.localhost">>,
+                      resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                      luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                      lserver = <<"mnesia.localhost">>,
+                      lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"mnesia.localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"mnesia.localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#vcard_xupdate{hash = undefined}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.276 ***</b>
+SENT:
+<iq type='get'
+    id='17033400068555740491'
+    xmlns='jabber:client'>
+  <offline xmlns='http://jabber.org/protocol/offline'>
+    <fetch/>
+  </offline>
+</iq>
+
+#iq{id = <<"17033400068555740491">>,type = get,lang = <<>>,from = undefined,
+    to = undefined,
+    sub_els = [#offline{items = [],purge = false,fetch = true}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.277 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'
+         from='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         id='2848164833383146440'>
+  <delay xmlns='urn:xmpp:delay'
+         from='mnesia.localhost'
+         stamp='2021-12-09T17:10:41.060882Z'>Offline storage</delay>
+  <offline xmlns='http://jabber.org/protocol/offline'>
+    <item node='1639069841060882'/>
+  </offline>
+  <body>1</body>
+  <subject>subject</subject>
+</message>
+
+#message{
+    id = <<"2848164833383146440">>,type = normal,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,resource = <<>>,
+            luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,lresource = <<>>},
+    subject = [#text{lang = <<>>,data = <<"subject">>}],
+    body = [#text{lang = <<>>,data = <<"1">>}],
+    thread = undefined,
+    sub_els =
+        [#delay{
+             stamp = {1639,69841,60882},
+             from =
+                 #jid{
+                     user = <<>>,server = <<"mnesia.localhost">>,
+                     resource = <<>>,luser = <<>>,
+                     lserver = <<"mnesia.localhost">>,lresource = <<>>},
+             desc = <<"Offline storage">>},
+         #offline{
+             items =
+                 [#offline_item{
+                      node = <<"1639069841060882">>,action = undefined}],
+             purge = false,fetch = false}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.278 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'
+         from='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         id='10921459153287117477'>
+  <delay xmlns='urn:xmpp:delay'
+         from='mnesia.localhost'
+         stamp='2021-12-09T17:10:41.061493Z'>Offline storage</delay>
+  <offline xmlns='http://jabber.org/protocol/offline'>
+    <item node='1639069841061493'/>
+  </offline>
+  <body>2</body>
+  <subject>subject</subject>
+</message>
+
+#message{
+    id = <<"10921459153287117477">>,type = normal,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,resource = <<>>,
+            luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,lresource = <<>>},
+    subject = [#text{lang = <<>>,data = <<"subject">>}],
+    body = [#text{lang = <<>>,data = <<"2">>}],
+    thread = undefined,
+    sub_els =
+        [#delay{
+             stamp = {1639,69841,61493},
+             from =
+                 #jid{
+                     user = <<>>,server = <<"mnesia.localhost">>,
+                     resource = <<>>,luser = <<>>,
+                     lserver = <<"mnesia.localhost">>,lresource = <<>>},
+             desc = <<"Offline storage">>},
+         #offline{
+             items =
+                 [#offline_item{
+                      node = <<"1639069841061493">>,action = undefined}],
+             purge = false,fetch = false}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.279 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'
+         from='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         id='9717340707678044667'>
+  <delay xmlns='urn:xmpp:delay'
+         from='mnesia.localhost'
+         stamp='2021-12-09T17:10:41.061911Z'>Offline storage</delay>
+  <offline xmlns='http://jabber.org/protocol/offline'>
+    <item node='1639069841061911'/>
+  </offline>
+  <body>3</body>
+  <subject>subject</subject>
+</message>
+
+#message{
+    id = <<"9717340707678044667">>,type = normal,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,resource = <<>>,
+            luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,lresource = <<>>},
+    subject = [#text{lang = <<>>,data = <<"subject">>}],
+    body = [#text{lang = <<>>,data = <<"3">>}],
+    thread = undefined,
+    sub_els =
+        [#delay{
+             stamp = {1639,69841,61911},
+             from =
+                 #jid{
+                     user = <<>>,server = <<"mnesia.localhost">>,
+                     resource = <<>>,luser = <<>>,
+                     lserver = <<"mnesia.localhost">>,lresource = <<>>},
+             desc = <<"Offline storage">>},
+         #offline{
+             items =
+                 [#offline_item{
+                      node = <<"1639069841061911">>,action = undefined}],
+             purge = false,fetch = false}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.279 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'
+         from='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         id='5811568804003756263'>
+  <delay xmlns='urn:xmpp:delay'
+         from='mnesia.localhost'
+         stamp='2021-12-09T17:10:41.062203Z'>Offline storage</delay>
+  <offline xmlns='http://jabber.org/protocol/offline'>
+    <item node='1639069841062203'/>
+  </offline>
+  <body>4</body>
+  <subject>subject</subject>
+</message>
+
+#message{
+    id = <<"5811568804003756263">>,type = normal,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,resource = <<>>,
+            luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,lresource = <<>>},
+    subject = [#text{lang = <<>>,data = <<"subject">>}],
+    body = [#text{lang = <<>>,data = <<"4">>}],
+    thread = undefined,
+    sub_els =
+        [#delay{
+             stamp = {1639,69841,62203},
+             from =
+                 #jid{
+                     user = <<>>,server = <<"mnesia.localhost">>,
+                     resource = <<>>,luser = <<>>,
+                     lserver = <<"mnesia.localhost">>,lresource = <<>>},
+             desc = <<"Offline storage">>},
+         #offline{
+             items =
+                 [#offline_item{
+                      node = <<"1639069841062203">>,action = undefined}],
+             purge = false,fetch = false}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.279 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'
+         from='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         id='6147198069248423473'>
+  <delay xmlns='urn:xmpp:delay'
+         from='mnesia.localhost'
+         stamp='2021-12-09T17:10:41.062620Z'>Offline storage</delay>
+  <offline xmlns='http://jabber.org/protocol/offline'>
+    <item node='1639069841062620'/>
+  </offline>
+  <body>5</body>
+  <subject>subject</subject>
+</message>
+
+#message{
+    id = <<"6147198069248423473">>,type = normal,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,resource = <<>>,
+            luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,lresource = <<>>},
+    subject = [#text{lang = <<>>,data = <<"subject">>}],
+    body = [#text{lang = <<>>,data = <<"5">>}],
+    thread = undefined,
+    sub_els =
+        [#delay{
+             stamp = {1639,69841,62620},
+             from =
+                 #jid{
+                     user = <<>>,server = <<"mnesia.localhost">>,
+                     resource = <<>>,luser = <<>>,
+                     lserver = <<"mnesia.localhost">>,lresource = <<>>},
+             desc = <<"Offline storage">>},
+         #offline{
+             items =
+                 [#offline_item{
+                      node = <<"1639069841062620">>,action = undefined}],
+             purge = false,fetch = false}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.279 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'
+    type='result'
+    id='17033400068555740491'/>
+
+#iq{id = <<"17033400068555740491">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                server = <<"mnesia.localhost">>,resource = <<>>,
+                luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                lserver = <<"mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.280 ***</b>
+SENT:
+<iq type='get'
+    id='17966242969395742634'
+    xmlns='jabber:client'>
+  <offline xmlns='http://jabber.org/protocol/offline'>
+    <item action='view'
+          node='1639069841061493'/>
+    <item action='view'
+          node='1639069841062203'/>
+  </offline>
+</iq>
+
+#iq{id = <<"17966242969395742634">>,type = get,lang = <<>>,from = undefined,
+    to = undefined,
+    sub_els =
+        [#offline{
+             items =
+                 [#offline_item{node = <<"1639069841061493">>,action = view},
+                  #offline_item{node = <<"1639069841062203">>,action = view}],
+             purge = false,fetch = false}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.281 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'
+         from='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         id='10921459153287117477'>
+  <delay xmlns='urn:xmpp:delay'
+         from='mnesia.localhost'
+         stamp='2021-12-09T17:10:41.061493Z'>Offline storage</delay>
+  <offline xmlns='http://jabber.org/protocol/offline'>
+    <item node='1639069841061493'/>
+  </offline>
+  <body>2</body>
+  <subject>subject</subject>
+</message>
+
+#message{
+    id = <<"10921459153287117477">>,type = normal,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,resource = <<>>,
+            luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,lresource = <<>>},
+    subject = [#text{lang = <<>>,data = <<"subject">>}],
+    body = [#text{lang = <<>>,data = <<"2">>}],
+    thread = undefined,
+    sub_els =
+        [#delay{
+             stamp = {1639,69841,61493},
+             from =
+                 #jid{
+                     user = <<>>,server = <<"mnesia.localhost">>,
+                     resource = <<>>,luser = <<>>,
+                     lserver = <<"mnesia.localhost">>,lresource = <<>>},
+             desc = <<"Offline storage">>},
+         #offline{
+             items =
+                 [#offline_item{
+                      node = <<"1639069841061493">>,action = undefined}],
+             purge = false,fetch = false}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.282 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'
+         from='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         id='5811568804003756263'>
+  <delay xmlns='urn:xmpp:delay'
+         from='mnesia.localhost'
+         stamp='2021-12-09T17:10:41.062203Z'>Offline storage</delay>
+  <offline xmlns='http://jabber.org/protocol/offline'>
+    <item node='1639069841062203'/>
+  </offline>
+  <body>4</body>
+  <subject>subject</subject>
+</message>
+
+#message{
+    id = <<"5811568804003756263">>,type = normal,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,resource = <<>>,
+            luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,lresource = <<>>},
+    subject = [#text{lang = <<>>,data = <<"subject">>}],
+    body = [#text{lang = <<>>,data = <<"4">>}],
+    thread = undefined,
+    sub_els =
+        [#delay{
+             stamp = {1639,69841,62203},
+             from =
+                 #jid{
+                     user = <<>>,server = <<"mnesia.localhost">>,
+                     resource = <<>>,luser = <<>>,
+                     lserver = <<"mnesia.localhost">>,lresource = <<>>},
+             desc = <<"Offline storage">>},
+         #offline{
+             items =
+                 [#offline_item{
+                      node = <<"1639069841062203">>,action = undefined}],
+             purge = false,fetch = false}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.282 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'
+    type='result'
+    id='17966242969395742634'/>
+
+#iq{id = <<"17966242969395742634">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                server = <<"mnesia.localhost">>,resource = <<>>,
+                luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                lserver = <<"mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.282 ***</b>
+SENT:
+<iq type='set'
+    id='13309358046311432451'
+    xmlns='jabber:client'>
+  <offline xmlns='http://jabber.org/protocol/offline'>
+    <item action='remove'
+          node='1639069841061493'/>
+    <item action='remove'
+          node='1639069841062203'/>
+  </offline>
+</iq>
+
+#iq{id = <<"13309358046311432451">>,type = set,lang = <<>>,from = undefined,
+    to = undefined,
+    sub_els =
+        [#offline{
+             items =
+                 [#offline_item{node = <<"1639069841061493">>,action = remove},
+                  #offline_item{
+                      node = <<"1639069841062203">>,action = remove}],
+             purge = false,fetch = false}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.283 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'
+    type='result'
+    id='13309358046311432451'/>
+
+#iq{id = <<"13309358046311432451">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                server = <<"mnesia.localhost">>,resource = <<>>,
+                luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                lserver = <<"mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.283 ***</b>
+SENT:
+<iq type='get'
+    id='9258292623346619193'
+    xmlns='jabber:client'>
+  <offline xmlns='http://jabber.org/protocol/offline'>
+    <item action='view'
+          node='1639069841060882'/>
+    <item action='view'
+          node='1639069841061911'/>
+    <item action='view'
+          node='1639069841062620'/>
+  </offline>
+</iq>
+
+#iq{id = <<"9258292623346619193">>,type = get,lang = <<>>,from = undefined,
+    to = undefined,
+    sub_els =
+        [#offline{
+             items =
+                 [#offline_item{node = <<"1639069841060882">>,action = view},
+                  #offline_item{node = <<"1639069841061911">>,action = view},
+                  #offline_item{node = <<"1639069841062620">>,action = view}],
+             purge = false,fetch = false}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.285 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'
+         from='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         id='2848164833383146440'>
+  <delay xmlns='urn:xmpp:delay'
+         from='mnesia.localhost'
+         stamp='2021-12-09T17:10:41.060882Z'>Offline storage</delay>
+  <offline xmlns='http://jabber.org/protocol/offline'>
+    <item node='1639069841060882'/>
+  </offline>
+  <body>1</body>
+  <subject>subject</subject>
+</message>
+
+#message{
+    id = <<"2848164833383146440">>,type = normal,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,resource = <<>>,
+            luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,lresource = <<>>},
+    subject = [#text{lang = <<>>,data = <<"subject">>}],
+    body = [#text{lang = <<>>,data = <<"1">>}],
+    thread = undefined,
+    sub_els =
+        [#delay{
+             stamp = {1639,69841,60882},
+             from =
+                 #jid{
+                     user = <<>>,server = <<"mnesia.localhost">>,
+                     resource = <<>>,luser = <<>>,
+                     lserver = <<"mnesia.localhost">>,lresource = <<>>},
+             desc = <<"Offline storage">>},
+         #offline{
+             items =
+                 [#offline_item{
+                      node = <<"1639069841060882">>,action = undefined}],
+             purge = false,fetch = false}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.285 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'
+         from='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         id='9717340707678044667'>
+  <delay xmlns='urn:xmpp:delay'
+         from='mnesia.localhost'
+         stamp='2021-12-09T17:10:41.061911Z'>Offline storage</delay>
+  <offline xmlns='http://jabber.org/protocol/offline'>
+    <item node='1639069841061911'/>
+  </offline>
+  <body>3</body>
+  <subject>subject</subject>
+</message>
+
+#message{
+    id = <<"9717340707678044667">>,type = normal,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,resource = <<>>,
+            luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,lresource = <<>>},
+    subject = [#text{lang = <<>>,data = <<"subject">>}],
+    body = [#text{lang = <<>>,data = <<"3">>}],
+    thread = undefined,
+    sub_els =
+        [#delay{
+             stamp = {1639,69841,61911},
+             from =
+                 #jid{
+                     user = <<>>,server = <<"mnesia.localhost">>,
+                     resource = <<>>,luser = <<>>,
+                     lserver = <<"mnesia.localhost">>,lresource = <<>>},
+             desc = <<"Offline storage">>},
+         #offline{
+             items =
+                 [#offline_item{
+                      node = <<"1639069841061911">>,action = undefined}],
+             purge = false,fetch = false}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.286 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'
+         from='test_master!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         id='6147198069248423473'>
+  <delay xmlns='urn:xmpp:delay'
+         from='mnesia.localhost'
+         stamp='2021-12-09T17:10:41.062620Z'>Offline storage</delay>
+  <offline xmlns='http://jabber.org/protocol/offline'>
+    <item node='1639069841062620'/>
+  </offline>
+  <body>5</body>
+  <subject>subject</subject>
+</message>
+
+#message{
+    id = <<"6147198069248423473">>,type = normal,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,resource = <<>>,
+            luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,lresource = <<>>},
+    subject = [#text{lang = <<>>,data = <<"subject">>}],
+    body = [#text{lang = <<>>,data = <<"5">>}],
+    thread = undefined,
+    sub_els =
+        [#delay{
+             stamp = {1639,69841,62620},
+             from =
+                 #jid{
+                     user = <<>>,server = <<"mnesia.localhost">>,
+                     resource = <<>>,luser = <<>>,
+                     lserver = <<"mnesia.localhost">>,lresource = <<>>},
+             desc = <<"Offline storage">>},
+         #offline{
+             items =
+                 [#offline_item{
+                      node = <<"1639069841062620">>,action = undefined}],
+             purge = false,fetch = false}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.286 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'
+    type='result'
+    id='9258292623346619193'/>
+
+#iq{id = <<"9258292623346619193">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                server = <<"mnesia.localhost">>,resource = <<>>,
+                luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                lserver = <<"mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.287 ***</b>
+SENT:
+<iq type='set'
+    id='6420850394829682497'
+    xmlns='jabber:client'>
+  <offline xmlns='http://jabber.org/protocol/offline'>
+    <purge/>
+  </offline>
+</iq>
+
+#iq{id = <<"6420850394829682497">>,type = set,lang = <<>>,from = undefined,
+    to = undefined,
+    sub_els = [#offline{items = [],purge = true,fetch = false}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.288 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'
+    type='result'
+    id='6420850394829682497'/>
+
+#iq{id = <<"6420850394829682497">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                server = <<"mnesia.localhost">>,resource = <<>>,
+                luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                lserver = <<"mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.288 ***</b>
+SENT:
+<iq type='get'
+    id='10008391617648504260'
+    xmlns='jabber:client'>
+  <query node='http://jabber.org/protocol/offline'
+         xmlns='http://jabber.org/protocol/disco#info'/>
+</iq>
+
+#iq{id = <<"10008391617648504260">>,type = get,lang = <<>>,from = undefined,
+    to = undefined,
+    sub_els = [#disco_info{node = <<"http://jabber.org/protocol/offline">>,
+                           identities = [],features = [],xdata = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:41.289 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost'
+    type='result'
+    id='10008391617648504260'>
+  <query xmlns='http://jabber.org/protocol/disco#info'
+         node='http://jabber.org/protocol/offline'>
+    <identity type='message-list'
+              category='automation'/>
+    <identity type='registered'
+              category='account'/>
+    <feature var='http://jabber.org/protocol/offline'/>
+    <x xmlns='jabber:x:data'
+       type='result'>
+      <field var='FORM_TYPE'
+             type='hidden'>
+        <value>http://jabber.org/protocol/offline</value>
+      </field>
+      <field var='number_of_messages'
+             type='text-single'
+             label='Number of Offline Messages'>
+        <value>0</value>
+      </field>
+    </x>
+  </query>
+</iq>
+
+#iq{id = <<"10008391617648504260">>,type = result,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,resource = <<>>,
+            luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,lresource = <<>>},
+    to =
+        #jid{
+            user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els =
+        [#disco_info{
+             node = <<"http://jabber.org/protocol/offline">>,
+             identities =
+                 [#identity{
+                      category = <<"automation">>,type = <<"message-list">>,
+                      lang = <<>>,name = <<>>},
+                  #identity{
+                      category = <<"account">>,type = <<"registered">>,
+                      lang = <<>>,name = <<>>}],
+             features = [<<"http://jabber.org/protocol/offline">>],
+             xdata =
+                 [#xdata{
+                      type = result,instructions = [],title = undefined,
+                      reported = undefined,items = [],
+                      fields =
+                          [#xdata_field{
+                               label = <<>>,type = hidden,
+                               var = <<"FORM_TYPE">>,required = false,
+                               desc = <<>>,
+                               values =
+                                   [<<"http://jabber.org/protocol/offline">>],
+                               options = [],sub_els = []},
+                           #xdata_field{
+                               label = <<"Number of Offline Messages">>,
+                               type = 'text-single',
+                               var = <<"number_of_messages">>,
+                               required = false,desc = <<>>,
+                               values = [<<"0">>],
+                               options = [],sub_els = []}]}]}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="error_logger"><pre><b>*** System report during offline_flex in ejabberd_SUITE 2021-12-09 17:10:41.290 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:10:41.290065 ===
+(tcp|<0.1373.1>) Closing c2s session for test_slave!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&*()'"`~<>+-/;:_=[]{}|\: Stream reset by peer
+
+</pre></div>
+<pre>
+<a name="end"></a>
+
+
+=== Ended at 2021-12-09 17:10:41
+=== successfully completed test case
+=== === Returned value: [{receiver,undefined},
+                     {csi,true},
+                     {rosterver,true},
+                     {sm,true},
+                     {compression,[&lt;&lt;"zlib"&gt;&gt;]},
+                     {stream_id,&lt;&lt;"15845055616079479324"&gt;&gt;},
+                     {sasl,#Fun&lt;suite.6.40689848&gt;},
+                     {legacy_auth,true},
+                     {register,true},
+                     {starttls,true},
+                     {mechs,
+                         [&lt;&lt;"DIGEST-MD5"&gt;&gt;,&lt;&lt;"PLAIN"&gt;&gt;,&lt;&lt;"SCRAM-SHA-512"&gt;&gt;,
+                          &lt;&lt;"SCRAM-SHA-256"&gt;&gt;,&lt;&lt;"SCRAM-SHA-1"&gt;&gt;,
+                          &lt;&lt;"X-OAUTH2"&gt;&gt;]},
+                     {peer,
+                         {jid,&lt;&lt;"test_master!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"mnesia.localhost"&gt;&gt;,
+                             &lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"test_master!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"mnesia.localhost"&gt;&gt;,
+                             &lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;}},
+                     {peer_nick,
+                         &lt;&lt;"master_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {user,&lt;&lt;"test_slave!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;},
+                     {slave,
+                         {jid,&lt;&lt;"test_slave!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"mnesia.localhost"&gt;&gt;,
+                             &lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"test_slave!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"mnesia.localhost"&gt;&gt;,
+                             &lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;}},
+                     {master,
+                         {jid,&lt;&lt;"test_master!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"mnesia.localhost"&gt;&gt;,
+                             &lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"test_master!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"mnesia.localhost"&gt;&gt;,
+                             &lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;}},
+                     {resource,&lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {nick,&lt;&lt;"slave_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {mode,slave},
+                     {watchdog,&lt;0.1371.1&gt;},
+                     {event_relay,&lt;0.1359.1&gt;},
+                     {server,&lt;&lt;"mnesia.localhost"&gt;&gt;},
+                     {server_port,5222},
+                     {server_host,"localhost"},
+                     {component_port,5270},
+                     {s2s_port,5269},
+                     {master_nick,
+                         &lt;&lt;"master_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {slave_nick,
+                         &lt;&lt;"slave_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {room_subject,
+                         &lt;&lt;"hello, world!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {certfile,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/test/ejabberd_SUITE_data/cert.pem"},
+                     {persistent_room,true},
+                     {anonymous,false},
+                     {type,client},
+                     {xmlns,&lt;&lt;"jabber:client"&gt;&gt;},
+                     {ns_stream,&lt;&lt;"http://etherx.jabber.org/streams"&gt;&gt;},
+                     {stream_version,{1,0}},
+                     {stream_from,&lt;&lt;&gt;&gt;},
+                     {db_xmlns,&lt;&lt;&gt;&gt;},
+                     {lang,&lt;&lt;"en"&gt;&gt;},
+                     {base_dir,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd"},
+                     {pubsub_node,&lt;&lt;"node!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {pubsub_node_title,
+                         &lt;&lt;"title!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {master_resource,
+                         &lt;&lt;"master_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {slave_resource,
+                         &lt;&lt;"slave_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {password,&lt;&lt;"password!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {backends,[mnesia]},
+                     {tc_logfile,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.09.24/lib.ejabberd.logs/run.2021-12-09_17.09.25/ejabberd_suite.offline_flex_slave.12226.html"},
+                     {tc_group_properties,[{name,offline_flex},parallel]},
+                     {tc_group_path,
+                         [[{name,offline_master_slave},sequence],
+                          [{name,mnesia},sequence]]},
+                     {data_dir,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/test/ejabberd_SUITE_data/"},
+                     {priv_dir,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.09.24/lib.ejabberd.logs/run.2021-12-09_17.09.25/log_private/"}]
