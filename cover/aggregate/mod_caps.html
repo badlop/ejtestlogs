@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/mod_caps.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_caps.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:02</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_caps.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:30</p></footer>
 <table>
 <tbody>
 <tr>
@@ -493,7 +493,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L78"><a href="#L78">78</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    gen_mod:start_child(?MODULE, Host, Opts).</code></td>
 </tr>
 <tr>
@@ -508,7 +508,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L81"><a href="#L81">81</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    gen_mod:stop_child(?MODULE, Host).</code></td>
 </tr>
 <tr>
@@ -538,17 +538,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L87"><a href="#L87">87</a></td>
-<td class="hits">3</td>
+<td class="hits">15</td>
 <td class="source"><code>    SubNodes = [Version | Exts],</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L88"><a href="#L88">88</a></td>
-<td class="hits">3</td>
+<td class="hits">15</td>
 <td class="source"><code>    Mod = gen_mod:db_mod(Host, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L89"><a href="#L89">89</a></td>
-<td class="hits">3</td>
+<td class="hits">15</td>
 <td class="source"><code>    lists:foldl(</code></td>
 </tr>
 <tr>
@@ -558,12 +558,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L91"><a href="#L91">91</a></td>
-<td class="hits">3</td>
+<td class="hits">15</td>
 <td class="source"><code>	      NodePair = {Node, SubNode},</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L92"><a href="#L92">92</a></td>
-<td class="hits">3</td>
+<td class="hits">15</td>
 <td class="source"><code>	      Res = case use_cache(Mod, Host) of</code></td>
 </tr>
 <tr>
@@ -573,7 +573,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L94"><a href="#L94">94</a></td>
-<td class="hits">3</td>
+<td class="hits">15</td>
 <td class="source"><code>			    ets_cache:lookup(caps_features_cache, NodePair,</code></td>
 </tr>
 <tr>
@@ -598,7 +598,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L99"><a href="#L99">99</a></td>
-<td class="hits">3</td>
+<td class="hits">15</td>
 <td class="source"><code>	      case Res of</code></td>
 </tr>
 <tr>
@@ -608,12 +608,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L101"><a href="#L101">101</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>		      Features ++ Acc;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L102"><a href="#L102">102</a></td>
-<td class="hits">2</td>
+<td class="hits">10</td>
 <td class="source"><code>		  _ -&gt; Acc</code></td>
 </tr>
 <tr>
@@ -643,12 +643,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L108"><a href="#L108">108</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    Rs = maps:get(caps_resources, C2SState, gb_trees:empty()),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L109"><a href="#L109">109</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    gb_trees:to_list(Rs).</code></td>
 </tr>
 <tr>
@@ -723,17 +723,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L124"><a href="#L124">124</a></td>
-<td class="hits">1009</td>
+<td class="hits">5039</td>
 <td class="source"><code>    case xmpp:get_subtag(Presence, #caps{}) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L125"><a href="#L125">125</a></td>
-<td class="hits">794</td>
+<td class="hits">3964</td>
 <td class="source"><code>	false -&gt; nothing;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L126"><a href="#L126">126</a></td>
-<td class="hits">215</td>
+<td class="hits">1075</td>
 <td class="source"><code>	Caps -&gt; Caps</code></td>
 </tr>
 <tr>
@@ -778,12 +778,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L135"><a href="#L135">135</a></td>
-<td class="hits">29</td>
+<td class="hits">145</td>
 <td class="source"><code>    case read_caps(Pkt) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L136"><a href="#L136">136</a></td>
-<td class="hits">28</td>
+<td class="hits">140</td>
 <td class="source"><code>	nothing -&gt; ok;</code></td>
 </tr>
 <tr>
@@ -793,7 +793,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L138"><a href="#L138">138</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    feature_request(LServer, From, To, Caps, [Version | Exts])</code></td>
 </tr>
 <tr>
@@ -803,7 +803,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L140"><a href="#L140">140</a></td>
-<td class="hits">29</td>
+<td class="hits">145</td>
 <td class="source"><code>    {Pkt, State};</code></td>
 </tr>
 <tr>
@@ -813,7 +813,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L142"><a href="#L142">142</a></td>
-<td class="hits">5195</td>
+<td class="hits">25939</td>
 <td class="source"><code>    Acc.</code></td>
 </tr>
 <tr>
@@ -838,7 +838,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L147"><a href="#L147">147</a></td>
-<td class="hits">447</td>
+<td class="hits">2232</td>
 <td class="source"><code>    IsRemote = case From#jid.lresource of</code></td>
 </tr>
 <tr>
@@ -853,7 +853,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L150"><a href="#L150">150</a></td>
-<td class="hits">213</td>
+<td class="hits">1065</td>
 <td class="source"><code>		       try ejabberd_router:host_of_route(From#jid.lserver) of</code></td>
 </tr>
 <tr>
@@ -863,7 +863,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L152"><a href="#L152">152</a></td>
-<td class="hits">213</td>
+<td class="hits">1065</td>
 <td class="source"><code>			       not lists:member(From#jid.lserver,</code></td>
 </tr>
 <tr>
@@ -893,7 +893,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L158"><a href="#L158">158</a></td>
-<td class="hits">234</td>
+<td class="hits">1167</td>
 <td class="source"><code>		       not ejabberd_router:is_my_host(From#jid.lserver)</code></td>
 </tr>
 <tr>
@@ -903,17 +903,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L160"><a href="#L160">160</a></td>
-<td class="hits">447</td>
+<td class="hits">2232</td>
 <td class="source"><code>    if IsRemote -&gt;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L161"><a href="#L161">161</a></td>
-<td class="hits">164</td>
+<td class="hits">820</td>
 <td class="source"><code>	   case read_caps(Pkt) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L162"><a href="#L162">162</a></td>
-<td class="hits">164</td>
+<td class="hits">820</td>
 <td class="source"><code>	     nothing -&gt; ok;</code></td>
 </tr>
 <tr>
@@ -933,7 +933,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L166"><a href="#L166">166</a></td>
-<td class="hits">283</td>
+<td class="hits">1412</td>
 <td class="source"><code>       true -&gt; ok</code></td>
 </tr>
 <tr>
@@ -943,7 +943,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L168"><a href="#L168">168</a></td>
-<td class="hits">447</td>
+<td class="hits">2232</td>
 <td class="source"><code>    {Pkt, State};</code></td>
 </tr>
 <tr>
@@ -953,7 +953,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L170"><a href="#L170">170</a></td>
-<td class="hits">5294</td>
+<td class="hits">26437</td>
 <td class="source"><code>    Acc.</code></td>
 </tr>
 <tr>
@@ -973,7 +973,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L174"><a href="#L174">174</a></td>
-<td class="hits">224</td>
+<td class="hits">1107</td>
 <td class="source"><code>    case gen_mod:is_loaded(MyHost, ?MODULE) of</code></td>
 </tr>
 <tr>
@@ -983,7 +983,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L176"><a href="#L176">176</a></td>
-<td class="hits">224</td>
+<td class="hits">1107</td>
 <td class="source"><code>	    case make_my_disco_hash(MyHost) of</code></td>
 </tr>
 <tr>
@@ -1003,7 +1003,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L180"><a href="#L180">180</a></td>
-<td class="hits">224</td>
+<td class="hits">1107</td>
 <td class="source"><code>		    [#caps{hash = &lt;&lt;"sha-1"&gt;&gt;, node = ejabberd_config:get_uri(),</code></td>
 </tr>
 <tr>
@@ -1063,7 +1063,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L192"><a href="#L192">192</a></td>
-<td class="hits">230</td>
+<td class="hits">1137</td>
 <td class="source"><code>    case is_valid_node(Node) of</code></td>
 </tr>
 <tr>
@@ -1093,7 +1093,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L198"><a href="#L198">198</a></td>
-<td class="hits">230</td>
+<td class="hits">1137</td>
 <td class="source"><code>            Acc</code></td>
 </tr>
 <tr>
@@ -1128,7 +1128,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L205"><a href="#L205">205</a></td>
-<td class="hits">230</td>
+<td class="hits">1137</td>
 <td class="source"><code>    case is_valid_node(Node) of</code></td>
 </tr>
 <tr>
@@ -1158,7 +1158,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L211"><a href="#L211">211</a></td>
-<td class="hits">230</td>
+<td class="hits">1137</td>
 <td class="source"><code>            Acc</code></td>
 </tr>
 <tr>
@@ -1188,7 +1188,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L217"><a href="#L217">217</a></td>
-<td class="hits">233</td>
+<td class="hits">1152</td>
 <td class="source"><code>    case is_valid_node(Node) of</code></td>
 </tr>
 <tr>
@@ -1213,7 +1213,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L222"><a href="#L222">222</a></td>
-<td class="hits">233</td>
+<td class="hits">1152</td>
 <td class="source"><code>            Acc</code></td>
 </tr>
 <tr>
@@ -1228,7 +1228,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L225"><a href="#L225">225</a></td>
-<td class="hits">7</td>
+<td class="hits">35</td>
 <td class="source"><code>    Acc.</code></td>
 </tr>
 <tr>
@@ -1253,22 +1253,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L230"><a href="#L230">230</a></td>
-<td class="hits">816</td>
+<td class="hits">4074</td>
 <td class="source"><code>    ToSelf = (From#jid.luser == To#jid.luser)</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L231"><a href="#L231">231</a></td>
-<td class="hits">58</td>
+<td class="hits">290</td>
 <td class="source"><code>	       andalso (From#jid.lserver == To#jid.lserver),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L232"><a href="#L232">232</a></td>
-<td class="hits">816</td>
+<td class="hits">4074</td>
 <td class="source"><code>    Caps = read_caps(Presence),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L233"><a href="#L233">233</a></td>
-<td class="hits">816</td>
+<td class="hits">4074</td>
 <td class="source"><code>    Operation =</code></td>
 </tr>
 <tr>
@@ -1278,22 +1278,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L235"><a href="#L235">235</a></td>
-<td class="hits">251</td>
+<td class="hits">1252</td>
 <td class="source"><code>	{unavailable, _, _} -&gt; delete;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L236"><a href="#L236">236</a></td>
-<td class="hits">13</td>
+<td class="hits">65</td>
 <td class="source"><code>	{error, _, _} -&gt; delete;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L237"><a href="#L237">237</a></td>
-<td class="hits">264</td>
+<td class="hits">1317</td>
 <td class="source"><code>	{available, _, nothing} -&gt; skip;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L238"><a href="#L238">238</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	{available, true, _} -&gt; insert;</code></td>
 </tr>
 <tr>
@@ -1303,7 +1303,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L240"><a href="#L240">240</a></td>
-<td class="hits">213</td>
+<td class="hits">1065</td>
 <td class="source"><code>	    {Subscription, _, _} = ejabberd_hooks:run_fold(</code></td>
 </tr>
 <tr>
@@ -1323,7 +1323,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L244"><a href="#L244">244</a></td>
-<td class="hits">213</td>
+<td class="hits">1065</td>
 <td class="source"><code>	    case Subscription of</code></td>
 </tr>
 <tr class="miss">
@@ -1338,7 +1338,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L247"><a href="#L247">247</a></td>
-<td class="hits">213</td>
+<td class="hits">1065</td>
 <td class="source"><code>		_ -&gt; skip</code></td>
 </tr>
 <tr>
@@ -1353,7 +1353,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L250"><a href="#L250">250</a></td>
-<td class="hits">74</td>
+<td class="hits">370</td>
 <td class="source"><code>	    skip</code></td>
 </tr>
 <tr>
@@ -1363,7 +1363,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L252"><a href="#L252">252</a></td>
-<td class="hits">816</td>
+<td class="hits">4074</td>
 <td class="source"><code>    case Operation of</code></td>
 </tr>
 <tr>
@@ -1373,7 +1373,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L254"><a href="#L254">254</a></td>
-<td class="hits">551</td>
+<td class="hits">2752</td>
 <td class="source"><code>	    C2SState;</code></td>
 </tr>
 <tr>
@@ -1383,17 +1383,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L256"><a href="#L256">256</a></td>
-<td class="hits">264</td>
+<td class="hits">1317</td>
 <td class="source"><code>	    LFrom = jid:tolower(From),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L257"><a href="#L257">257</a></td>
-<td class="hits">264</td>
+<td class="hits">1317</td>
 <td class="source"><code>	    Rs = maps:get(caps_resources, C2SState, gb_trees:empty()),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L258"><a href="#L258">258</a></td>
-<td class="hits">264</td>
+<td class="hits">1317</td>
 <td class="source"><code>	    C2SState#{caps_resources =&gt; gb_trees:delete_any(LFrom, Rs)};</code></td>
 </tr>
 <tr>
@@ -1403,17 +1403,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L260"><a href="#L260">260</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    LFrom = jid:tolower(From),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L261"><a href="#L261">261</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    Rs = maps:get(caps_resources, C2SState, gb_trees:empty()),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L262"><a href="#L262">262</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    NewRs = case gb_trees:lookup(LFrom, Rs) of</code></td>
 </tr>
 <tr class="miss">
@@ -1428,7 +1428,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L265"><a href="#L265">265</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>			    ejabberd_hooks:run(caps_add, To#jid.lserver,</code></td>
 </tr>
 <tr>
@@ -1443,7 +1443,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L268"><a href="#L268">268</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>			    gb_trees:insert(LFrom, Caps, Rs);</code></td>
 </tr>
 <tr>
@@ -1478,7 +1478,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L275"><a href="#L275">275</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    C2SState#{caps_resources =&gt; NewRs}</code></td>
 </tr>
 <tr>
@@ -1538,7 +1538,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L287"><a href="#L287">287</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    [].</code></td>
 </tr>
 <tr>
@@ -1603,32 +1603,32 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L300"><a href="#L300">300</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    process_flag(trap_exit, true),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L301"><a href="#L301">301</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    Opts = gen_mod:get_module_opts(Host, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L302"><a href="#L302">302</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    Mod = gen_mod:db_mod(Opts, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L303"><a href="#L303">303</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    init_cache(Mod, Host, Opts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L304"><a href="#L304">304</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    Mod:init(Host, Opts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L305"><a href="#L305">305</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    ejabberd_hooks:add(c2s_presence_in, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -1638,7 +1638,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L307"><a href="#L307">307</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    ejabberd_hooks:add(user_send_packet, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -1648,7 +1648,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L309"><a href="#L309">309</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    ejabberd_hooks:add(user_receive_packet, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -1658,7 +1658,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L311"><a href="#L311">311</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    ejabberd_hooks:add(c2s_post_auth_features, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -1668,7 +1668,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L313"><a href="#L313">313</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    ejabberd_hooks:add(s2s_in_post_auth_features, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -1678,7 +1678,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L315"><a href="#L315">315</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    ejabberd_hooks:add(c2s_copy_session, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -1688,7 +1688,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L317"><a href="#L317">317</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    ejabberd_hooks:add(disco_local_features, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -1698,7 +1698,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L319"><a href="#L319">319</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    ejabberd_hooks:add(disco_local_identity, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -1708,7 +1708,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L321"><a href="#L321">321</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    ejabberd_hooks:add(disco_info, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -1718,7 +1718,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L323"><a href="#L323">323</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    {ok, #state{host = Host}}.</code></td>
 </tr>
 <tr>
@@ -1783,12 +1783,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L336"><a href="#L336">336</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    feature_response(IQReply, Host, From, To, Caps, SubNodes),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L337"><a href="#L337">337</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    {noreply, State};</code></td>
 </tr>
 <tr>
@@ -1818,12 +1818,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L343"><a href="#L343">343</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    Host = State#state.host,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L344"><a href="#L344">344</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    ejabberd_hooks:delete(c2s_presence_in, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -1833,7 +1833,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L346"><a href="#L346">346</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    ejabberd_hooks:delete(user_send_packet, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -1843,7 +1843,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L348"><a href="#L348">348</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    ejabberd_hooks:delete(user_receive_packet, Host,</code></td>
 </tr>
 <tr>
@@ -1853,7 +1853,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L350"><a href="#L350">350</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    ejabberd_hooks:delete(c2s_post_auth_features, Host,</code></td>
 </tr>
 <tr>
@@ -1863,7 +1863,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L352"><a href="#L352">352</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    ejabberd_hooks:delete(s2s_in_post_auth_features, Host,</code></td>
 </tr>
 <tr>
@@ -1873,7 +1873,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L354"><a href="#L354">354</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    ejabberd_hooks:delete(c2s_copy_session, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -1883,7 +1883,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L356"><a href="#L356">356</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    ejabberd_hooks:delete(disco_local_features, Host,</code></td>
 </tr>
 <tr>
@@ -1893,7 +1893,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L358"><a href="#L358">358</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    ejabberd_hooks:delete(disco_local_identity, Host,</code></td>
 </tr>
 <tr>
@@ -1903,7 +1903,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L360"><a href="#L360">360</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    ejabberd_hooks:delete(disco_info, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -1913,7 +1913,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L362"><a href="#L362">362</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    ok.</code></td>
 </tr>
 <tr>
@@ -1948,22 +1948,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L369"><a href="#L369">369</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    Node = Caps#caps.node,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L370"><a href="#L370">370</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    NodePair = {Node, SubNode},</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L371"><a href="#L371">371</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    Mod = gen_mod:db_mod(Host, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L372"><a href="#L372">372</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    Res = case use_cache(Mod, Host) of</code></td>
 </tr>
 <tr>
@@ -1973,7 +1973,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L374"><a href="#L374">374</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>		  ets_cache:lookup(caps_features_cache, NodePair,</code></td>
 </tr>
 <tr>
@@ -1998,7 +1998,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L379"><a href="#L379">379</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    case Res of</code></td>
 </tr>
 <tr>
@@ -2018,12 +2018,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L383"><a href="#L383">383</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    LTo = jid:tolower(To),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L384"><a href="#L384">384</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    case ets_cache:insert_new(caps_requests_cache, {LTo, NodePair}, ok) of</code></td>
 </tr>
 <tr>
@@ -2033,7 +2033,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L386"><a href="#L386">386</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>		    IQ = #iq{type = get,</code></td>
 </tr>
 <tr>
@@ -2058,7 +2058,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L391"><a href="#L391">391</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>		    ejabberd_router:route_iq(</code></td>
 </tr>
 <tr>
@@ -2088,7 +2088,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L397"><a href="#L397">397</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    feature_request(Host, From, To, Caps, Tail)</code></td>
 </tr>
 <tr>
@@ -2098,7 +2098,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L399"><a href="#L399">399</a></td>
-<td class="hits">2</td>
+<td class="hits">10</td>
 <td class="source"><code>feature_request(_Host, _From, _To, _Caps, []) -&gt; ok.</code></td>
 </tr>
 <tr>
@@ -2123,22 +2123,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L404"><a href="#L404">404</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    NodePair = {Caps#caps.node, SubNode},</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L405"><a href="#L405">405</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    try</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L406"><a href="#L406">406</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	DiscoInfo = xmpp:decode(El),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L407"><a href="#L407">407</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	case check_hash(Caps, DiscoInfo) of</code></td>
 </tr>
 <tr>
@@ -2148,22 +2148,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L409"><a href="#L409">409</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>		Features = DiscoInfo#disco_info.features,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L410"><a href="#L410">410</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>		LServer = jid:nameprep(Host),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L411"><a href="#L411">411</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>		Mod = gen_mod:db_mod(LServer, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L412"><a href="#L412">412</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>		case Mod:caps_write(LServer, NodePair, Features) of</code></td>
 </tr>
 <tr>
@@ -2173,7 +2173,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L414"><a href="#L414">414</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>			case use_cache(Mod, LServer) of</code></td>
 </tr>
 <tr>
@@ -2183,7 +2183,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L416"><a href="#L416">416</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>				ets_cache:delete(caps_features_cache, NodePair);</code></td>
 </tr>
 <tr>
@@ -2243,7 +2243,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L428"><a href="#L428">428</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    feature_request(Host, From, To, Caps, SubNodes);</code></td>
 </tr>
 <tr>
@@ -2283,17 +2283,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L436"><a href="#L436">436</a></td>
-<td class="hits">4</td>
+<td class="hits">20</td>
 <td class="source"><code>    LServer = jid:nameprep(Host),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L437"><a href="#L437">437</a></td>
-<td class="hits">4</td>
+<td class="hits">20</td>
 <td class="source"><code>    Mod = gen_mod:db_mod(LServer, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L438"><a href="#L438">438</a></td>
-<td class="hits">4</td>
+<td class="hits">20</td>
 <td class="source"><code>    fun() -&gt; Mod:caps_read(LServer, Node) end.</code></td>
 </tr>
 <tr>
@@ -2313,12 +2313,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L442"><a href="#L442">442</a></td>
-<td class="hits">224</td>
+<td class="hits">1107</td>
 <td class="source"><code>    JID = jid:make(Host),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L443"><a href="#L443">443</a></td>
-<td class="hits">224</td>
+<td class="hits">1107</td>
 <td class="source"><code>    case {ejabberd_hooks:run_fold(disco_local_features,</code></td>
 </tr>
 <tr>
@@ -2358,12 +2358,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L451"><a href="#L451">451</a></td>
-<td class="hits">224</td>
+<td class="hits">1107</td>
 <td class="source"><code>	  Feats = lists:map(fun ({{Feat, _Host}}) -&gt; Feat;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L452"><a href="#L452">452</a></td>
-<td class="hits">13440</td>
+<td class="hits">67080</td>
 <td class="source"><code>				(Feat) -&gt; Feat</code></td>
 </tr>
 <tr>
@@ -2378,7 +2378,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L455"><a href="#L455">455</a></td>
-<td class="hits">224</td>
+<td class="hits">1107</td>
 <td class="source"><code>	  DiscoInfo = #disco_info{identities = Identities,</code></td>
 </tr>
 <tr>
@@ -2393,7 +2393,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L458"><a href="#L458">458</a></td>
-<td class="hits">224</td>
+<td class="hits">1107</td>
 <td class="source"><code>	  compute_disco_hash(DiscoInfo, sha);</code></td>
 </tr>
 <tr class="miss">
@@ -2423,7 +2423,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L464"><a href="#L464">464</a></td>
-<td class="hits">556</td>
+<td class="hits">2295</td>
 <td class="source"><code>    Concat = list_to_binary([concat_identities(DiscoInfo),</code></td>
 </tr>
 <tr>
@@ -2433,7 +2433,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L466"><a href="#L466">466</a></td>
-<td class="hits">556</td>
+<td class="hits">2295</td>
 <td class="source"><code>    base64:encode(case Algo of</code></td>
 </tr>
 <tr class="miss">
@@ -2443,7 +2443,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L468"><a href="#L468">468</a></td>
-<td class="hits">556</td>
+<td class="hits">2295</td>
 <td class="source"><code>		      sha -&gt; crypto:hash(sha, Concat);</code></td>
 </tr>
 <tr class="miss">
@@ -2488,7 +2488,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L477"><a href="#L477">477</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    case Caps#caps.hash of</code></td>
 </tr>
 <tr>
@@ -2508,7 +2508,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L481"><a href="#L481">481</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	  Caps#caps.version == compute_disco_hash(DiscoInfo, sha);</code></td>
 </tr>
 <tr>
@@ -2578,7 +2578,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L495"><a href="#L495">495</a></td>
-<td class="hits">556</td>
+<td class="hits">2295</td>
 <td class="source"><code>    lists:usort([[Feat, $&lt;] || Feat &lt;- Features]).</code></td>
 </tr>
 <tr>
@@ -2598,12 +2598,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L499"><a href="#L499">499</a></td>
-<td class="hits">556</td>
+<td class="hits">2295</td>
 <td class="source"><code>    lists:sort(</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L500"><a href="#L500">500</a></td>
-<td class="hits">780</td>
+<td class="hits">3402</td>
 <td class="source"><code>      [[Cat, $/, T, $/, Lang, $/, Name, $&lt;] ||</code></td>
 </tr>
 <tr>
@@ -2613,7 +2613,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L502"><a href="#L502">502</a></td>
-<td class="hits">556</td>
+<td class="hits">2295</td>
 <td class="source"><code>		    lang = Lang, name = Name} &lt;- Identities]).</code></td>
 </tr>
 <tr>
@@ -2633,12 +2633,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L506"><a href="#L506">506</a></td>
-<td class="hits">556</td>
+<td class="hits">2295</td>
 <td class="source"><code>    lists:sort(</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L507"><a href="#L507">507</a></td>
-<td class="hits">555</td>
+<td class="hits">2290</td>
 <td class="source"><code>      [concat_xdata_fields(X) || #xdata{type = result} = X &lt;- Xs]).</code></td>
 </tr>
 <tr>
@@ -2658,27 +2658,27 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L511"><a href="#L511">511</a></td>
-<td class="hits">555</td>
+<td class="hits">2290</td>
 <td class="source"><code>    Form = xmpp_util:get_xdata_values(&lt;&lt;"FORM_TYPE"&gt;&gt;, X),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L512"><a href="#L512">512</a></td>
-<td class="hits">555</td>
+<td class="hits">2290</td>
 <td class="source"><code>    Res = [[Var, $&lt;, lists:sort([[Val, $&lt;] || Val &lt;- Values])]</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L513"><a href="#L513">513</a></td>
-<td class="hits">555</td>
+<td class="hits">2290</td>
 <td class="source"><code>	   || #xdata_field{var = Var, values = Values} &lt;- Fields,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L514"><a href="#L514">514</a></td>
-<td class="hits">2541</td>
+<td class="hits">9388</td>
 <td class="source"><code>	      is_binary(Var), Var /= &lt;&lt;"FORM_TYPE"&gt;&gt;],</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L515"><a href="#L515">515</a></td>
-<td class="hits">555</td>
+<td class="hits">2290</td>
 <td class="source"><code>    [Form, $&lt;, lists:sort(Res)].</code></td>
 </tr>
 <tr>
@@ -2698,7 +2698,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L519"><a href="#L519">519</a></td>
-<td class="hits">693</td>
+<td class="hits">3426</td>
 <td class="source"><code>    case str:tokens(Node, &lt;&lt;"#"&gt;&gt;) of</code></td>
 </tr>
 <tr>
@@ -2718,7 +2718,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L523"><a href="#L523">523</a></td>
-<td class="hits">693</td>
+<td class="hits">3426</td>
 <td class="source"><code>            false</code></td>
 </tr>
 <tr>
@@ -2738,12 +2738,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L527"><a href="#L527">527</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    CacheOpts = cache_opts(Opts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L528"><a href="#L528">528</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    case use_cache(Mod, Host) of</code></td>
 </tr>
 <tr>
@@ -2753,7 +2753,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L530"><a href="#L530">530</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    ets_cache:new(caps_features_cache, CacheOpts);</code></td>
 </tr>
 <tr>
@@ -2773,12 +2773,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L534"><a href="#L534">534</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    CacheSize = proplists:get_value(max_size, CacheOpts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L535"><a href="#L535">535</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    ets_cache:new(caps_requests_cache,</code></td>
 </tr>
 <tr>
@@ -2803,7 +2803,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L540"><a href="#L540">540</a></td>
-<td class="hits">6</td>
+<td class="hits">30</td>
 <td class="source"><code>    case erlang:function_exported(Mod, use_cache, 1) of</code></td>
 </tr>
 <tr class="miss">
@@ -2813,7 +2813,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L542"><a href="#L542">542</a></td>
-<td class="hits">6</td>
+<td class="hits">30</td>
 <td class="source"><code>	false -&gt; mod_caps_opt:use_cache(Host)</code></td>
 </tr>
 <tr>
@@ -2833,22 +2833,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L546"><a href="#L546">546</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    MaxSize = mod_caps_opt:cache_size(Opts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L547"><a href="#L547">547</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    CacheMissed = mod_caps_opt:cache_missed(Opts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L548"><a href="#L548">548</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    LifeTime = mod_caps_opt:cache_life_time(Opts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L549"><a href="#L549">549</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    [{max_size, MaxSize}, {cache_missed, CacheMissed}, {life_time, LifeTime}].</code></td>
 </tr>
 <tr>
@@ -3038,7 +3038,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L587"><a href="#L587">587</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    econf:db_type(?MODULE);</code></td>
 </tr>
 <tr>
@@ -3048,7 +3048,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L589"><a href="#L589">589</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    econf:bool();</code></td>
 </tr>
 <tr>
@@ -3058,7 +3058,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L591"><a href="#L591">591</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    econf:pos_int(infinity);</code></td>
 </tr>
 <tr>
@@ -3068,7 +3068,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L593"><a href="#L593">593</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    econf:bool();</code></td>
 </tr>
 <tr>
@@ -3078,7 +3078,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L595"><a href="#L595">595</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    econf:timeout(second, infinity).</code></td>
 </tr>
 <tr>
@@ -3093,7 +3093,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L598"><a href="#L598">598</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    [{db_type, ejabberd_config:default_db(Host, ?MODULE)},</code></td>
 </tr>
 <tr>

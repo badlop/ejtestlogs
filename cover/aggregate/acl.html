@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/acl.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/acl.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:04</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/acl.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:32</p></footer>
 <table>
 <tbody>
 <tr>
@@ -448,7 +448,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L69"><a href="#L69">69</a></td>
-<td class="hits">1576</td>
+<td class="hits">6065</td>
 <td class="source"><code>    allow;</code></td>
 </tr>
 <tr>
@@ -458,7 +458,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L71"><a href="#L71">71</a></td>
-<td class="hits">1707</td>
+<td class="hits">5828</td>
 <td class="source"><code>    deny;</code></td>
 </tr>
 <tr>
@@ -468,7 +468,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L73"><a href="#L73">73</a></td>
-<td class="hits">927</td>
+<td class="hits">3955</td>
 <td class="source"><code>    Rules = if is_atom(Access) -&gt; read_access(Access, Host);</code></td>
 </tr>
 <tr class="miss">
@@ -483,7 +483,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L76"><a href="#L76">76</a></td>
-<td class="hits">927</td>
+<td class="hits">3955</td>
 <td class="source"><code>    match_rules(Host, Rules, Match, deny);</code></td>
 </tr>
 <tr>
@@ -503,7 +503,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L80"><a href="#L80">80</a></td>
-<td class="hits">581</td>
+<td class="hits">2711</td>
 <td class="source"><code>    match_rule(Host, Access, #{usr =&gt; jid:tolower(JID)}).</code></td>
 </tr>
 <tr>
@@ -523,7 +523,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L84"><a href="#L84">84</a></td>
-<td class="hits">1894</td>
+<td class="hits">6898</td>
 <td class="source"><code>    true;</code></td>
 </tr>
 <tr>
@@ -543,7 +543,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L88"><a href="#L88">88</a></td>
-<td class="hits">1998</td>
+<td class="hits">7718</td>
 <td class="source"><code>    lists:any(</code></td>
 </tr>
 <tr>
@@ -553,7 +553,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L90"><a href="#L90">90</a></td>
-<td class="hits">1652</td>
+<td class="hits">6474</td>
 <td class="source"><code>	      match_acl(Host, ACL, Match)</code></td>
 </tr>
 <tr>
@@ -598,7 +598,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L99"><a href="#L99">99</a></td>
-<td class="hits">42</td>
+<td class="hits">198</td>
 <td class="source"><code>    ejabberd_router:is_my_host(S);</code></td>
 </tr>
 <tr>
@@ -673,7 +673,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L114"><a href="#L114">114</a></td>
-<td class="hits">292</td>
+<td class="hits">1325</td>
 <td class="source"><code>    ejabberd_router:is_my_host(S) andalso match_regexp(U, UR);</code></td>
 </tr>
 <tr>
@@ -763,7 +763,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L132"><a href="#L132">132</a></td>
-<td class="hits">1318</td>
+<td class="hits">4951</td>
 <td class="source"><code>    false.</code></td>
 </tr>
 <tr>
@@ -783,7 +783,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L136"><a href="#L136">136</a></td>
-<td class="hits">3890</td>
+<td class="hits">14610</td>
 <td class="source"><code>    case match_acls(Host, Rules, Match) of</code></td>
 </tr>
 <tr>
@@ -793,7 +793,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L138"><a href="#L138">138</a></td>
-<td class="hits">1664</td>
+<td class="hits">6195</td>
 <td class="source"><code>	    match_rules(Host, Rest, Match, Default);</code></td>
 </tr>
 <tr>
@@ -803,7 +803,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L140"><a href="#L140">140</a></td>
-<td class="hits">2226</td>
+<td class="hits">8415</td>
 <td class="source"><code>	    Return</code></td>
 </tr>
 <tr>
@@ -818,7 +818,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L143"><a href="#L143">143</a></td>
-<td class="hits">253</td>
+<td class="hits">1194</td>
 <td class="source"><code>    Default.</code></td>
 </tr>
 <tr>
@@ -848,7 +848,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L149"><a href="#L149">149</a></td>
-<td class="hits">3890</td>
+<td class="hits">14610</td>
 <td class="source"><code>    lists:all(</code></td>
 </tr>
 <tr>
@@ -858,7 +858,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L151"><a href="#L151">151</a></td>
-<td class="hits">3890</td>
+<td class="hits">14610</td>
 <td class="source"><code>	      match_acl(Host, Rule, Match)</code></td>
 </tr>
 <tr>
@@ -1318,12 +1318,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L243"><a href="#L243">243</a></td>
-<td class="hits">927</td>
+<td class="hits">3955</td>
 <td class="source"><code>    case ets:lookup(access, {Name, Host}) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L244"><a href="#L244">244</a></td>
-<td class="hits">927</td>
+<td class="hits">3955</td>
 <td class="source"><code>	[{_, Access}] -&gt; Access;</code></td>
 </tr>
 <tr class="miss">
@@ -1353,17 +1353,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L250"><a href="#L250">250</a></td>
-<td class="hits">1998</td>
+<td class="hits">7718</td>
 <td class="source"><code>    case ets:lookup(acl, {Name, Host}) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L251"><a href="#L251">251</a></td>
-<td class="hits">1652</td>
+<td class="hits">6474</td>
 <td class="source"><code>        [{_, ACL}] -&gt; ACL;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L252"><a href="#L252">252</a></td>
-<td class="hits">346</td>
+<td class="hits">1244</td>
 <td class="source"><code>        [] -&gt; []</code></td>
 </tr>
 <tr>
@@ -1398,7 +1398,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L259"><a href="#L259">259</a></td>
-<td class="hits">340</td>
+<td class="hits">310</td>
 <td class="source"><code>    #{ip =&gt; econf:list_or_single(econf:ip_mask()),</code></td>
 </tr>
 <tr>
@@ -1478,7 +1478,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L275"><a href="#L275">275</a></td>
-<td class="hits">335</td>
+<td class="hits">305</td>
 <td class="source"><code>    rule_validator(validators()).</code></td>
 </tr>
 <tr>
@@ -1493,7 +1493,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L278"><a href="#L278">278</a></td>
-<td class="hits">338</td>
+<td class="hits">308</td>
 <td class="source"><code>    econf:and_then(</code></td>
 </tr>
 <tr>
@@ -1553,7 +1553,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L290"><a href="#L290">290</a></td>
-<td class="hits">335</td>
+<td class="hits">305</td>
 <td class="source"><code>    econf:and_then(</code></td>
 </tr>
 <tr>
@@ -1613,7 +1613,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L302"><a href="#L302">302</a></td>
-<td class="hits">165</td>
+<td class="hits">150</td>
 <td class="source"><code>    econf:and_then(</code></td>
 </tr>
 <tr>
@@ -1728,7 +1728,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L325"><a href="#L325">325</a></td>
-<td class="hits">1360</td>
+<td class="hits">1240</td>
 <td class="source"><code>    econf:and_then(</code></td>
 </tr>
 <tr>
@@ -1813,7 +1813,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L342"><a href="#L342">342</a></td>
-<td class="hits">680</td>
+<td class="hits">620</td>
 <td class="source"><code>    econf:and_then(</code></td>
 </tr>
 <tr>
@@ -1868,7 +1868,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L353"><a href="#L353">353</a></td>
-<td class="hits">292</td>
+<td class="hits">1325</td>
 <td class="source"><code>    re:run(Data, RegExp) /= nomatch.</code></td>
 </tr>
 <tr>

@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/eldap_pool.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/eldap_pool.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:03</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/eldap_pool.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:31</p></footer>
 <table>
 <tbody>
 <tr>
@@ -306,14 +306,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>-else.</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L41"><a href="#L41">41</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>pg_create(_) -&gt; pg:start_link().</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L42"><a href="#L42">42</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>pg_join(PoolName, Pid) -&gt; pg:join(PoolName, Pid).</code></td>
 </tr>
 <tr>
@@ -321,9 +321,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>pg_get_closest_pid(Group) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L44"><a href="#L44">44</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8</td>
 <td class="source"><code>    case pg:get_local_members(Group) of</code></td>
 </tr>
 <tr>
@@ -351,9 +351,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>            end;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L50"><a href="#L50">50</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8</td>
 <td class="source"><code>        [Pid | _] -&gt; Pid</code></td>
 </tr>
 <tr>
@@ -391,9 +391,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>bind(PoolName, DN, Passwd) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L58"><a href="#L58">58</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    do_request(PoolName, {bind, [DN, Passwd]}).</code></td>
 </tr>
 <tr>
@@ -406,9 +406,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>search(PoolName, Opts) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L61"><a href="#L61">61</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>    do_request(PoolName, {search, [Opts]}).</code></td>
 </tr>
 <tr>
@@ -441,29 +441,29 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	   Opts) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L68"><a href="#L68">68</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    PoolName = make_id(Name),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L69"><a href="#L69">69</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    pg_create(PoolName),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L70"><a href="#L70">70</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    lists:foreach(fun (Host) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L71"><a href="#L71">71</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>			  ID = list_to_binary(erlang:ref_to_list(make_ref())),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L72"><a href="#L72">72</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>			  case catch eldap:start_link(ID, [Host | Backups],</code></td>
 </tr>
 <tr>
@@ -481,9 +481,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>			      of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L76"><a href="#L76">76</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>			    {ok, Pid} -&gt; pg_join(PoolName, Pid);</code></td>
 </tr>
 <tr>
@@ -541,9 +541,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>do_request(Name, {F, Args}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L88"><a href="#L88">88</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8</td>
 <td class="source"><code>    case pg_get_closest_pid(make_id(Name)) of</code></td>
 </tr>
 <tr>
@@ -551,9 +551,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      Pid when is_pid(Pid) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L90"><a href="#L90">90</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8</td>
 <td class="source"><code>	  case catch apply(eldap, F, [Pid | Args]) of</code></td>
 </tr>
 <tr>
@@ -586,9 +586,9 @@ td.source {
 <td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>		{error, Reason};</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L97"><a href="#L97">97</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8</td>
 <td class="source"><code>	    Reply -&gt; Reply</code></td>
 </tr>
 <tr>
@@ -616,9 +616,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>make_id(Name) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L103"><a href="#L103">103</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>    misc:binary_to_atom(&lt;&lt;"eldap_pool_", Name/binary&gt;&gt;).</code></td>
 </tr>
 </tbody>

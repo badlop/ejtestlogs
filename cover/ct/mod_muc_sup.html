@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/ct/mod_muc_sup.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_muc_sup.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:08</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_muc_sup.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:36</p></footer>
 <table>
 <tbody>
 <tr>
@@ -273,7 +273,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L34"><a href="#L34">34</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    Spec = #{id =&gt; procname(Host),</code></td>
 </tr>
 <tr>
@@ -303,7 +303,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L40"><a href="#L40">40</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    supervisor:start_child(ejabberd_gen_mod_sup, Spec).</code></td>
 </tr>
 <tr>
@@ -318,12 +318,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L43"><a href="#L43">43</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    Proc = procname(Host),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L44"><a href="#L44">44</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    supervisor:start_link({local, Proc}, ?MODULE, [Host]).</code></td>
 </tr>
 <tr>
@@ -343,7 +343,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L48"><a href="#L48">48</a></td>
-<td class="hits">27</td>
+<td class="hits">24</td>
 <td class="source"><code>    gen_mod:get_module_proc(Host, ?MODULE).</code></td>
 </tr>
 <tr>
@@ -373,12 +373,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L54"><a href="#L54">54</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    Cores = erlang:system_info(logical_processors),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L55"><a href="#L55">55</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    Specs = lists:foldl(</code></td>
 </tr>
 <tr>
@@ -388,7 +388,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L57"><a href="#L57">57</a></td>
-<td class="hits">18</td>
+<td class="hits">16</td>
 <td class="source"><code>		      [#{id =&gt; mod_muc:procname(Host, I),</code></td>
 </tr>
 <tr>
@@ -423,7 +423,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L64"><a href="#L64">64</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    {ok, {{one_for_one, 10*Cores, 1}, Specs}}.</code></td>
 </tr>
 <tr>
@@ -458,12 +458,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L71"><a href="#L71">71</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    Name = mod_muc_room:supervisor(Host),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L72"><a href="#L72">72</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    #{id =&gt; Name,</code></td>
 </tr>
 <tr>

@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/ct/mod_private_mnesia.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_private_mnesia.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:08</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_private_mnesia.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:36</p></footer>
 <table>
 <tbody>
 <tr>
@@ -313,7 +313,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L42"><a href="#L42">42</a></td>
-<td class="hits">1</td>
+<td class="hits">2</td>
 <td class="source"><code>    ejabberd_mnesia:create(?MODULE, private_storage,</code></td>
 </tr>
 <tr>
@@ -338,7 +338,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L47"><a href="#L47">47</a></td>
-<td class="hits">8</td>
+<td class="hits">16</td>
 <td class="source"><code>    case mnesia:table_info(private_storage, storage_type) of</code></td>
 </tr>
 <tr>
@@ -348,7 +348,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L49"><a href="#L49">49</a></td>
-<td class="hits">8</td>
+<td class="hits">16</td>
 <td class="source"><code>	    mod_private_opt:use_cache(Host);</code></td>
 </tr>
 <tr>
@@ -378,12 +378,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L55"><a href="#L55">55</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>    F = fun () -&gt;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L56"><a href="#L56">56</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>		lists:foreach(</code></td>
 </tr>
 <tr>
@@ -393,7 +393,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L58"><a href="#L58">58</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>			  mnesia:write(</code></td>
 </tr>
 <tr>
@@ -423,7 +423,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L64"><a href="#L64">64</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>    transaction(F).</code></td>
 </tr>
 <tr>
@@ -438,7 +438,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L67"><a href="#L67">67</a></td>
-<td class="hits">1</td>
+<td class="hits">2</td>
 <td class="source"><code>    case mnesia:dirty_read(private_storage, {LUser, LServer, XmlNS}) of</code></td>
 </tr>
 <tr>
@@ -448,7 +448,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L69"><a href="#L69">69</a></td>
-<td class="hits">1</td>
+<td class="hits">2</td>
 <td class="source"><code>	    {ok, Storage_Xmlel};</code></td>
 </tr>
 <tr>
@@ -478,7 +478,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L75"><a href="#L75">75</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>    case lists:flatten(</code></td>
 </tr>
 <tr>
@@ -508,7 +508,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L81"><a href="#L81">81</a></td>
-<td class="hits">1</td>
+<td class="hits">2</td>
 <td class="source"><code>	    error;</code></td>
 </tr>
 <tr>
@@ -518,7 +518,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L83"><a href="#L83">83</a></td>
-<td class="hits">1</td>
+<td class="hits">2</td>
 <td class="source"><code>	    {ok, Res}</code></td>
 </tr>
 <tr>
@@ -538,12 +538,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L87"><a href="#L87">87</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>    F = fun () -&gt;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L88"><a href="#L88">88</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>		Namespaces = mnesia:select(private_storage,</code></td>
 </tr>
 <tr>
@@ -578,12 +578,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L95"><a href="#L95">95</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>		lists:foreach(fun ([Namespace]) -&gt;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L96"><a href="#L96">96</a></td>
-<td class="hits">1</td>
+<td class="hits">2</td>
 <td class="source"><code>				      mnesia:delete({private_storage,</code></td>
 </tr>
 <tr>
@@ -613,7 +613,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L102"><a href="#L102">102</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>    transaction(F).</code></td>
 </tr>
 <tr>
@@ -738,7 +738,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L127"><a href="#L127">127</a></td>
-<td class="hits">4</td>
+<td class="hits">8</td>
 <td class="source"><code>    case mnesia:transaction(F) of</code></td>
 </tr>
 <tr>
@@ -748,7 +748,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L129"><a href="#L129">129</a></td>
-<td class="hits">4</td>
+<td class="hits">8</td>
 <td class="source"><code>	    Res;</code></td>
 </tr>
 <tr>

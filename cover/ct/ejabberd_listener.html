@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/ct/ejabberd_listener.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_listener.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:06</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_listener.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:34</p></footer>
 <table>
 <tbody>
 <tr>
@@ -1283,12 +1283,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L236"><a href="#L236">236</a></td>
-<td class="hits">419</td>
+<td class="hits">1337</td>
 <td class="source"><code>    NewInterval = apply_rate_limit(Interval),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L237"><a href="#L237">237</a></td>
-<td class="hits">419</td>
+<td class="hits">1337</td>
 <td class="source"><code>    case gen_tcp:accept(ListenSocket) of</code></td>
 </tr>
 <tr>
@@ -1423,7 +1423,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L264"><a href="#L264">264</a></td>
-<td class="hits">414</td>
+<td class="hits">1332</td>
 <td class="source"><code>	    case {inet:sockname(Socket), inet:peername(Socket)} of</code></td>
 </tr>
 <tr>
@@ -1433,7 +1433,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L266"><a href="#L266">266</a></td>
-<td class="hits">414</td>
+<td class="hits">1332</td>
 <td class="source"><code>		    Receiver = case start_connection(Module, Arity, Socket, State, Sup) of</code></td>
 </tr>
 <tr>
@@ -1443,7 +1443,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L268"><a href="#L268">268</a></td>
-<td class="hits">414</td>
+<td class="hits">1332</td>
 <td class="source"><code>				       RecvPid;</code></td>
 </tr>
 <tr>
@@ -1468,7 +1468,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L273"><a href="#L273">273</a></td>
-<td class="hits">414</td>
+<td class="hits">1332</td>
 <td class="source"><code>		    ?INFO_MSG("(~p) Accepted connection ~ts -&gt; ~ts",</code></td>
 </tr>
 <tr>
@@ -1488,7 +1488,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L277"><a href="#L277">277</a></td>
-<td class="hits">414</td>
+<td class="hits">1332</td>
 <td class="source"><code>			       format_endpoint({Port, Addr, tcp})]);</code></td>
 </tr>
 <tr>
@@ -1508,7 +1508,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L281"><a href="#L281">281</a></td>
-<td class="hits">414</td>
+<td class="hits">1332</td>
 <td class="source"><code>	    accept(ListenSocket, Module, State, Sup, NewInterval, Proxy, Arity);</code></td>
 </tr>
 <tr>
@@ -1653,7 +1653,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L310"><a href="#L310">310</a></td>
-<td class="hits">414</td>
+<td class="hits">1332</td>
 <td class="source"><code>    Res = case Sup of</code></td>
 </tr>
 <tr>
@@ -1683,7 +1683,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L316"><a href="#L316">316</a></td>
-<td class="hits">414</td>
+<td class="hits">1332</td>
 <td class="source"><code>		  supervisor:start_child(Sup, [gen_tcp, Socket, State]);</code></td>
 </tr>
 <tr>
@@ -1703,7 +1703,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L320"><a href="#L320">320</a></td>
-<td class="hits">414</td>
+<td class="hits">1332</td>
 <td class="source"><code>    case Res of</code></td>
 </tr>
 <tr>
@@ -1713,7 +1713,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L322"><a href="#L322">322</a></td>
-<td class="hits">414</td>
+<td class="hits">1332</td>
 <td class="source"><code>	    case gen_tcp:controlling_process(Socket, Pid) of</code></td>
 </tr>
 <tr>
@@ -1723,12 +1723,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L324"><a href="#L324">324</a></td>
-<td class="hits">414</td>
+<td class="hits">1332</td>
 <td class="source"><code>		    Module:accept(Pid),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L325"><a href="#L325">325</a></td>
-<td class="hits">414</td>
+<td class="hits">1332</td>
 <td class="source"><code>		    {ok, Pid};</code></td>
 </tr>
 <tr>
@@ -2523,7 +2523,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L484"><a href="#L484">484</a></td>
-<td class="hits">839</td>
+<td class="hits">2675</td>
 <td class="source"><code>    case Port of</code></td>
 </tr>
 <tr>
@@ -2543,12 +2543,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L488"><a href="#L488">488</a></td>
-<td class="hits">839</td>
+<td class="hits">2675</td>
 <td class="source"><code>	    IPStr = case tuple_size(IP) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L489"><a href="#L489">489</a></td>
-<td class="hits">839</td>
+<td class="hits">2675</td>
 <td class="source"><code>			4 -&gt; inet:ntoa(IP);</code></td>
 </tr>
 <tr class="miss">
@@ -2563,7 +2563,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L492"><a href="#L492">492</a></td>
-<td class="hits">839</td>
+<td class="hits">2675</td>
 <td class="source"><code>	    IPStr ++ ":" ++ integer_to_list(Port)</code></td>
 </tr>
 <tr>
@@ -2633,7 +2633,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L506"><a href="#L506">506</a></td>
-<td class="hits">419</td>
+<td class="hits">1337</td>
 <td class="source"><code>    NewInterval = receive</code></td>
 </tr>
 <tr>
@@ -2653,7 +2653,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L510"><a href="#L510">510</a></td>
-<td class="hits">419</td>
+<td class="hits">1337</td>
 <td class="source"><code>			  Interval</code></td>
 </tr>
 <tr>
@@ -2663,12 +2663,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L512"><a href="#L512">512</a></td>
-<td class="hits">419</td>
+<td class="hits">1337</td>
 <td class="source"><code>    case NewInterval of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L513"><a href="#L513">513</a></td>
-<td class="hits">419</td>
+<td class="hits">1337</td>
 <td class="source"><code>	0  -&gt; ok;</code></td>
 </tr>
 <tr>
@@ -2743,7 +2743,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L528"><a href="#L528">528</a></td>
-<td class="hits">419</td>
+<td class="hits">1337</td>
 <td class="source"><code>    NewInterval.</code></td>
 </tr>
 <tr>

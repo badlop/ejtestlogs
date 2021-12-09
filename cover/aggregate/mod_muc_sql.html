@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/mod_muc_sql.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_muc_sql.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:01</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_muc_sql.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:29</p></footer>
 <table>
 <tbody>
 <tr>
@@ -371,9 +371,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>init(Host, Opts) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L54"><a href="#L54">54</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    case gen_mod:ram_db_mod(Opts, mod_muc) of</code></td>
 </tr>
 <tr>
@@ -381,9 +381,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	?MODULE -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L56"><a href="#L56">56</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>	    clean_tables(Host);</code></td>
 </tr>
 <tr>
@@ -411,14 +411,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>store_room(LServer, Host, Name, Opts, ChangesHints) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L62"><a href="#L62">62</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">291</td>
 <td class="source"><code>    {Subs, Opts2} = case lists:keytake(subscribers, 1, Opts) of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L63"><a href="#L63">63</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">291</td>
 <td class="source"><code>			{value, {subscribers, S}, OptN} -&gt; {S, OptN};</code></td>
 </tr>
 <tr class="miss">
@@ -431,19 +431,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		    end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L66"><a href="#L66">66</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">291</td>
 <td class="source"><code>    SOpts = misc:term_to_expr(Opts2),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L67"><a href="#L67">67</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">291</td>
 <td class="source"><code>    F = fun () -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L68"><a href="#L68">68</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">291</td>
 <td class="source"><code>		?SQL_UPSERT_T(</code></td>
 </tr>
 <tr>
@@ -471,9 +471,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                    "opts=%(SOpts)s"]),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L74"><a href="#L74">74</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">291</td>
 <td class="source"><code>                case ChangesHints of</code></td>
 </tr>
 <tr>
@@ -481,9 +481,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                    Changes when is_list(Changes) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L76"><a href="#L76">76</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">291</td>
 <td class="source"><code>                        [change_room(Host, Name, Change) || Change &lt;- Changes];</code></td>
 </tr>
 <tr>
@@ -526,9 +526,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L85"><a href="#L85">85</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">291</td>
 <td class="source"><code>    ejabberd_sql:sql_transaction(LServer, F).</code></td>
 </tr>
 <tr>
@@ -541,14 +541,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>store_changes(LServer, Host, Name, Changes) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L88"><a href="#L88">88</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">54</td>
 <td class="source"><code>    F = fun () -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L89"><a href="#L89">89</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">54</td>
 <td class="source"><code>                [change_room(Host, Name, Change) || Change &lt;- Changes]</code></td>
 </tr>
 <tr>
@@ -556,9 +556,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L91"><a href="#L91">91</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">54</td>
 <td class="source"><code>    ejabberd_sql:sql_transaction(LServer, F).</code></td>
 </tr>
 <tr>
@@ -571,19 +571,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>change_room(Host, Room, {add_subscription, JID, Nick, Nodes}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L94"><a href="#L94">94</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">27</td>
 <td class="source"><code>    SJID = jid:encode(JID),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L95"><a href="#L95">95</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">27</td>
 <td class="source"><code>    SNodes = misc:term_to_expr(Nodes),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L96"><a href="#L96">96</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">27</td>
 <td class="source"><code>    ?SQL_UPSERT_T(</code></td>
 </tr>
 <tr>
@@ -621,14 +621,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>change_room(Host, Room, {del_subscription, JID}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L104"><a href="#L104">104</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">27</td>
 <td class="source"><code>    SJID = jid:encode(JID),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L105"><a href="#L105">105</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">27</td>
 <td class="source"><code>    ejabberd_sql:sql_query_t(?SQL("delete from muc_room_subscribers where "</code></td>
 </tr>
 <tr>
@@ -656,9 +656,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>restore_room(LServer, Host, Name) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L111"><a href="#L111">111</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">138</td>
 <td class="source"><code>    case catch ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -666,9 +666,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                 LServer,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L113"><a href="#L113">113</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">139</td>
 <td class="source"><code>                 ?SQL("select @(opts)s from muc_room where name=%(Name)s"</code></td>
 </tr>
 <tr>
@@ -806,9 +806,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	_ -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L141"><a href="#L141">141</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">138</td>
 <td class="source"><code>	    error</code></td>
 </tr>
 <tr>
@@ -826,19 +826,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>forget_room(LServer, Host, Name) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L145"><a href="#L145">145</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">264</td>
 <td class="source"><code>    F = fun () -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L146"><a href="#L146">146</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">264</td>
 <td class="source"><code>		ejabberd_sql:sql_query_t(</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L147"><a href="#L147">147</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">265</td>
 <td class="source"><code>                  ?SQL("delete from muc_room where name=%(Name)s"</code></td>
 </tr>
 <tr>
@@ -846,14 +846,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                       " and host=%(Host)s")),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L149"><a href="#L149">149</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">264</td>
 <td class="source"><code>		ejabberd_sql:sql_query_t(</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L150"><a href="#L150">150</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">265</td>
 <td class="source"><code>		    ?SQL("delete from muc_room_subscribers where room=%(Name)s"</code></td>
 </tr>
 <tr>
@@ -866,9 +866,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L153"><a href="#L153">153</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">264</td>
 <td class="source"><code>    ejabberd_sql:sql_transaction(LServer, F).</code></td>
 </tr>
 <tr>
@@ -881,14 +881,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>can_use_nick(LServer, Host, JID, Nick) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L156"><a href="#L156">156</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">267</td>
 <td class="source"><code>    SJID = jid:encode(jid:tolower(jid:remove_resource(JID))),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L157"><a href="#L157">157</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">267</td>
 <td class="source"><code>    case catch ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -896,9 +896,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                 LServer,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L159"><a href="#L159">159</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">268</td>
 <td class="source"><code>                 ?SQL("select @(jid)s from muc_registered "</code></td>
 </tr>
 <tr>
@@ -916,9 +916,9 @@ td.source {
 <td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>	{selected, [{SJID1}]} -&gt; SJID == SJID1;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L163"><a href="#L163">163</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">267</td>
 <td class="source"><code>	_ -&gt; true</code></td>
 </tr>
 <tr>
@@ -1016,9 +1016,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_rooms(LServer, Host) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L183"><a href="#L183">183</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    case catch ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -1026,9 +1026,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                 LServer,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L185"><a href="#L185">185</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>                 ?SQL("select @(name)s, @(opts)s from muc_room"</code></td>
 </tr>
 <tr>
@@ -1041,9 +1041,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{selected, RoomOpts} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L188"><a href="#L188">188</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>	    case catch ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -1051,9 +1051,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		LServer,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L190"><a href="#L190">190</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>		?SQL("select @(room)s, @(jid)s, @(nick)s, @(nodes)s from muc_room_subscribers"</code></td>
 </tr>
 <tr>
@@ -1066,9 +1066,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		{selected, Subs} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L193"><a href="#L193">193</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>		    SubsD = lists:foldl(</code></td>
 </tr>
 <tr>
@@ -1126,9 +1126,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>			end, maps:new(), Subs),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L205"><a href="#L205">205</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>	    lists:map(</code></td>
 </tr>
 <tr>
@@ -1241,14 +1241,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_nick(LServer, Host, From) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L228"><a href="#L228">228</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">24</td>
 <td class="source"><code>    SJID = jid:encode(jid:tolower(jid:remove_resource(From))),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L229"><a href="#L229">229</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">24</td>
 <td class="source"><code>    case catch ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -1256,9 +1256,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                 LServer,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L231"><a href="#L231">231</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">25</td>
 <td class="source"><code>                 ?SQL("select @(nick)s from muc_registered where"</code></td>
 </tr>
 <tr>
@@ -1266,14 +1266,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                      " jid=%(SJID)s and host=%(Host)s")) of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L233"><a href="#L233">233</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">15</td>
 <td class="source"><code>	{selected, [{Nick}]} -&gt; Nick;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L234"><a href="#L234">234</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>	_ -&gt; error</code></td>
 </tr>
 <tr>
@@ -1291,19 +1291,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>set_nick(LServer, Host, From, Nick) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L238"><a href="#L238">238</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">18</td>
 <td class="source"><code>    JID = jid:encode(jid:tolower(jid:remove_resource(From))),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L239"><a href="#L239">239</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">18</td>
 <td class="source"><code>    F = fun () -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L240"><a href="#L240">240</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">18</td>
 <td class="source"><code>		case Nick of</code></td>
 </tr>
 <tr>
@@ -1311,14 +1311,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		    &lt;&lt;""&gt;&gt; -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L242"><a href="#L242">242</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>			ejabberd_sql:sql_query_t(</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L243"><a href="#L243">243</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>			  ?SQL("delete from muc_registered where"</code></td>
 </tr>
 <tr>
@@ -1326,9 +1326,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                               " jid=%(JID)s and host=%(Host)s")),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L245"><a href="#L245">245</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>			ok;</code></td>
 </tr>
 <tr>
@@ -1336,14 +1336,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		    _ -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L247"><a href="#L247">247</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>			Allow = case ejabberd_sql:sql_query_t(</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L248"><a href="#L248">248</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>				       ?SQL("select @(jid)s from muc_registered"</code></td>
 </tr>
 <tr>
@@ -1356,14 +1356,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                                            " and host=%(Host)s")) of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L251"><a href="#L251">251</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>				    {selected, [{J}]} -&gt; J == JID;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L252"><a href="#L252">252</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>				    _ -&gt; true</code></td>
 </tr>
 <tr>
@@ -1371,14 +1371,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>				end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L254"><a href="#L254">254</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>			if Allow -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L255"><a href="#L255">255</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>				?SQL_UPSERT_T(</code></td>
 </tr>
 <tr>
@@ -1406,9 +1406,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                                   "nick=%(Nick)s"]),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L261"><a href="#L261">261</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>				ok;</code></td>
 </tr>
 <tr>
@@ -1416,9 +1416,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>			   true -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L263"><a href="#L263">263</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>				false</code></td>
 </tr>
 <tr>
@@ -1436,9 +1436,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L267"><a href="#L267">267</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">18</td>
 <td class="source"><code>    ejabberd_sql:sql_transaction(LServer, F).</code></td>
 </tr>
 <tr>
@@ -1451,9 +1451,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>set_affiliation(_ServerHost, _Room, _Host, _JID, _Affiliation, _Reason) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L270"><a href="#L270">270</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">27</td>
 <td class="source"><code>    {error, not_implemented}.</code></td>
 </tr>
 <tr>
@@ -1466,9 +1466,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>set_affiliations(_ServerHost, _Room, _Host, _Affiliations) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L273"><a href="#L273">273</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">129</td>
 <td class="source"><code>    {error, not_implemented}.</code></td>
 </tr>
 <tr>
@@ -1481,9 +1481,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_affiliation(_ServerHost, _Room, _Host, _LUser, _LServer) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L276"><a href="#L276">276</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1152</td>
 <td class="source"><code>    {error, not_implemented}.</code></td>
 </tr>
 <tr>
@@ -1496,9 +1496,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_affiliations(_ServerHost, _Room, _Host) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L279"><a href="#L279">279</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">126</td>
 <td class="source"><code>    {error, not_implemented}.</code></td>
 </tr>
 <tr>
@@ -1511,9 +1511,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>search_affiliation(_ServerHost, _Room, _Host, _Affiliation) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L282"><a href="#L282">282</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>    {error, not_implemented}.</code></td>
 </tr>
 <tr>
@@ -1526,19 +1526,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>register_online_room(ServerHost, Room, Host, Pid) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L285"><a href="#L285">285</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">138</td>
 <td class="source"><code>    PidS = misc:encode_pid(Pid),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L286"><a href="#L286">286</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">138</td>
 <td class="source"><code>    NodeS = erlang:atom_to_binary(node(Pid), latin1),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L287"><a href="#L287">287</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">138</td>
 <td class="source"><code>    case ?SQL_UPSERT(ServerHost,</code></td>
 </tr>
 <tr>
@@ -1576,9 +1576,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	ok -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L295"><a href="#L295">295</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">138</td>
 <td class="source"><code>	    ok;</code></td>
 </tr>
 <tr>
@@ -1611,19 +1611,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>    %% TODO: report errors</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L302"><a href="#L302">302</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">138</td>
 <td class="source"><code>    PidS = misc:encode_pid(Pid),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L303"><a href="#L303">303</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">138</td>
 <td class="source"><code>    NodeS = erlang:atom_to_binary(node(Pid), latin1),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L304"><a href="#L304">304</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">138</td>
 <td class="source"><code>    ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -1631,9 +1631,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      ServerHost,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L306"><a href="#L306">306</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">139</td>
 <td class="source"><code>      ?SQL("delete from muc_online_room where name=%(Room)s and "</code></td>
 </tr>
 <tr>
@@ -1651,9 +1651,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>find_online_room(ServerHost, Room, Host) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L310"><a href="#L310">310</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1563</td>
 <td class="source"><code>    case ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -1661,9 +1661,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	   ServerHost,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L312"><a href="#L312">312</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1564</td>
 <td class="source"><code>	   ?SQL("select @(pid)s, @(node)s from muc_online_room where "</code></td>
 </tr>
 <tr>
@@ -1676,9 +1676,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{selected, [{PidS, NodeS}]} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L315"><a href="#L315">315</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1281</td>
 <td class="source"><code>	    try {ok, misc:decode_pid(PidS, NodeS)}</code></td>
 </tr>
 <tr class="miss">
@@ -1696,9 +1696,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{selected, []} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L319"><a href="#L319">319</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">282</td>
 <td class="source"><code>	    error;</code></td>
 </tr>
 <tr>
@@ -1726,19 +1726,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>find_online_room_by_pid(ServerHost, Pid) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L325"><a href="#L325">325</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">138</td>
 <td class="source"><code>    PidS = misc:encode_pid(Pid),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L326"><a href="#L326">326</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">138</td>
 <td class="source"><code>    NodeS = erlang:atom_to_binary(node(Pid), latin1),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L327"><a href="#L327">327</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">138</td>
 <td class="source"><code>    case ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -1746,9 +1746,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	ServerHost,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L329"><a href="#L329">329</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">139</td>
 <td class="source"><code>	?SQL("select @(name)s, @(host)s from muc_online_room where "</code></td>
 </tr>
 <tr>
@@ -1761,9 +1761,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{selected, [{Room, Host}]} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L332"><a href="#L332">332</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">138</td>
 <td class="source"><code>	    {ok, Room, Host};</code></td>
 </tr>
 <tr>
@@ -1801,9 +1801,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>count_online_rooms(ServerHost, Host) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L340"><a href="#L340">340</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>    case ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -1811,9 +1811,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	   ServerHost,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L342"><a href="#L342">342</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">13</td>
 <td class="source"><code>	   ?SQL("select @(count(*))d from muc_online_room "</code></td>
 </tr>
 <tr>
@@ -1826,9 +1826,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{selected, [{Num}]} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L345"><a href="#L345">345</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>	    Num;</code></td>
 </tr>
 <tr>
@@ -1856,9 +1856,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_online_rooms(ServerHost, Host, _RSM) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L351"><a href="#L351">351</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">15</td>
 <td class="source"><code>    case ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -1866,9 +1866,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	   ServerHost,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L353"><a href="#L353">353</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">16</td>
 <td class="source"><code>	   ?SQL("select @(name)s, @(pid)s, @(node)s from muc_online_room "</code></td>
 </tr>
 <tr>
@@ -1881,9 +1881,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{selected, Rows} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L356"><a href="#L356">356</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">15</td>
 <td class="source"><code>	    lists:flatmap(</code></td>
 </tr>
 <tr>
@@ -1891,9 +1891,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	      fun({Room, PidS, NodeS}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L358"><a href="#L358">358</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">24</td>
 <td class="source"><code>		      try [{Room, Host, misc:decode_pid(PidS, NodeS)}]</code></td>
 </tr>
 <tr class="miss">
@@ -1936,9 +1936,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>rsm_supported() -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L367"><a href="#L367">367</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    false.</code></td>
 </tr>
 <tr>
@@ -1951,14 +1951,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>register_online_user(ServerHost, {U, S, R}, Room, Host) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L370"><a href="#L370">370</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">222</td>
 <td class="source"><code>    NodeS = erlang:atom_to_binary(node(), latin1),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L371"><a href="#L371">371</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">222</td>
 <td class="source"><code>    case ?SQL_UPSERT(ServerHost, "muc_online_users",</code></td>
 </tr>
 <tr>
@@ -2001,9 +2001,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	ok -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L380"><a href="#L380">380</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">222</td>
 <td class="source"><code>	    ok;</code></td>
 </tr>
 <tr>
@@ -2036,9 +2036,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>    %% TODO: report errors</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L387"><a href="#L387">387</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">222</td>
 <td class="source"><code>    ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -2046,9 +2046,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      ServerHost,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L389"><a href="#L389">389</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">223</td>
 <td class="source"><code>      ?SQL("delete from muc_online_users where username=%(U)s and "</code></td>
 </tr>
 <tr>
@@ -2071,9 +2071,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>count_online_rooms_by_user(ServerHost, U, S) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L394"><a href="#L394">394</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">261</td>
 <td class="source"><code>    case ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -2081,9 +2081,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	   ServerHost,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L396"><a href="#L396">396</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">262</td>
 <td class="source"><code>	   ?SQL("select @(count(*))d from muc_online_users where "</code></td>
 </tr>
 <tr>
@@ -2096,9 +2096,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{selected, [{Num}]} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L399"><a href="#L399">399</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">261</td>
 <td class="source"><code>	    Num;</code></td>
 </tr>
 <tr>
@@ -2381,14 +2381,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_subscribed_rooms(LServer, Host, Jid) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L456"><a href="#L456">456</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    JidS = jid:encode(Jid),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L457"><a href="#L457">457</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    case ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -2396,9 +2396,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	   LServer,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L459"><a href="#L459">459</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>	   ?SQL("select @(room)s, @(nick)s, @(nodes)s from muc_room_subscribers "</code></td>
 </tr>
 <tr>
@@ -2411,14 +2411,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{selected, Subs} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L462"><a href="#L462">462</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>	    {ok, [{jid:make(Room, Host), Nick, ejabberd_sql:decode_term(Nodes)}</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L463"><a href="#L463">463</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>		  || {Room, Nick, Nodes} &lt;- Subs]};</code></td>
 </tr>
 <tr>
@@ -2461,19 +2461,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>clean_tables(ServerHost) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L472"><a href="#L472">472</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    NodeS = erlang:atom_to_binary(node(), latin1),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L473"><a href="#L473">473</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    ?DEBUG("Cleaning SQL muc_online_room table...", []),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L474"><a href="#L474">474</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    case ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -2481,9 +2481,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	   ServerHost,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L476"><a href="#L476">476</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>	   ?SQL("delete from muc_online_room where node=%(NodeS)s")) of</code></td>
 </tr>
 <tr>
@@ -2491,9 +2491,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{updated, _} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L478"><a href="#L478">478</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>	    ok;</code></td>
 </tr>
 <tr>
@@ -2516,14 +2516,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>    end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L483"><a href="#L483">483</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    ?DEBUG("Cleaning SQL muc_online_users table...", []),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L484"><a href="#L484">484</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    case ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -2531,9 +2531,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	   ServerHost,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L486"><a href="#L486">486</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>	   ?SQL("delete from muc_online_users where node=%(NodeS)s")) of</code></td>
 </tr>
 <tr>
@@ -2541,9 +2541,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{updated, _} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L488"><a href="#L488">488</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>	    ok;</code></td>
 </tr>
 <tr>

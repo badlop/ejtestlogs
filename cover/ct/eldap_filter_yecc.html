@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/ct/eldap_filter_yecc.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/eldap_filter_yecc.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:06</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/eldap_filter_yecc.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:34</p></footer>
 <table>
 <tbody>
 <tr>
@@ -126,9 +126,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L5"><a href="#L5">5</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>'and'(Value)                -&gt; eldap:'and'(Value).</code></td>
 </tr>
 <tr class="miss">
@@ -141,9 +141,9 @@ td.source {
 <td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>'not'(Value)                -&gt; eldap:'not'(Value).</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L8"><a href="#L8">8</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code>equal(Desc, Value)          -&gt; eldap:equalityMatch(Desc, Value).</code></td>
 </tr>
 <tr class="miss">
@@ -161,9 +161,9 @@ td.source {
 <td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>less(Desc, Value)           -&gt; eldap:lessOrEqual(Desc, Value).</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L12"><a href="#L12">12</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>present(Value)              -&gt; eldap:present(Value).</code></td>
 </tr>
 <tr class="miss">
@@ -201,14 +201,14 @@ td.source {
 <td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>matchingrule(Value)         -&gt; {matchingRule, Value}.</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L20"><a href="#L20">20</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">24</td>
 <td class="source"><code>value_of(Token)             -&gt; iolist_to_binary(element(3, Token)).</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L21"><a href="#L21">21</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>flatten(List)               -&gt; lists:flatten(List).</code></td>
 </tr>
 <tr>
@@ -356,9 +356,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>parse(Tokens) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L51"><a href="#L51">51</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code>    yeccpars0(Tokens, {no_func, no_location}, 0, [], []).</code></td>
 </tr>
 <tr>
@@ -501,9 +501,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars0(Tokens, Tzr, State, States, Vstack) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L80"><a href="#L80">80</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code>    try yeccpars1(Tokens, Tzr, State, States, Vstack)</code></td>
 </tr>
 <tr>
@@ -631,9 +631,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars1([Token | Tokens], Tzr, State, States, Vstack) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L106"><a href="#L106">106</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code>    yeccpars2(State, element(1, Token), States, Vstack, Token, Tokens, Tzr);</code></td>
 </tr>
 <tr>
@@ -756,9 +756,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars1(State1, State, States, Vstack, Token0, [Token | Tokens], Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L131"><a href="#L131">131</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">58</td>
 <td class="source"><code>    yeccpars2(State, element(1, Token), [State1 | States],</code></td>
 </tr>
 <tr>
@@ -781,14 +781,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars1(State1, State, States, Vstack, Token0, [], {no_func, no_location}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L136"><a href="#L136">136</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code>    Location = yecctoken_end_location(Token0),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L137"><a href="#L137">137</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code>    yeccpars2(State, '$end', [State1 | States], [Token0 | Vstack],</code></td>
 </tr>
 <tr>
@@ -826,9 +826,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yecc_end(Location) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L145"><a href="#L145">145</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code>    {'$end', Location}.</code></td>
 </tr>
 <tr>
@@ -841,14 +841,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yecctoken_end_location(Token) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L148"><a href="#L148">148</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code>    try erl_anno:end_location(element(2, Token)) of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L149"><a href="#L149">149</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code>        undefined -&gt; yecctoken_location(Token);</code></td>
 </tr>
 <tr class="miss">
@@ -946,9 +946,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yecctoken_location(Token) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L169"><a href="#L169">169</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code>    try erl_scan:location(Token)</code></td>
 </tr>
 <tr class="miss">
@@ -1091,9 +1091,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2(0=S, Cat, Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L198"><a href="#L198">198</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code> yeccpars2_0(S, Cat, Ss, Stack, T, Ts, Tzr);</code></td>
 </tr>
 <tr>
@@ -1111,9 +1111,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2(2=S, Cat, Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L202"><a href="#L202">202</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">15</td>
 <td class="source"><code> yeccpars2_2(S, Cat, Ss, Stack, T, Ts, Tzr);</code></td>
 </tr>
 <tr>
@@ -1221,9 +1221,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2(13=S, Cat, Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L224"><a href="#L224">224</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code> yeccpars2_0(S, Cat, Ss, Stack, T, Ts, Tzr);</code></td>
 </tr>
 <tr>
@@ -1251,9 +1251,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2(16=S, Cat, Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L230"><a href="#L230">230</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">13</td>
 <td class="source"><code> yeccpars2_16(S, Cat, Ss, Stack, T, Ts, Tzr);</code></td>
 </tr>
 <tr>
@@ -1331,9 +1331,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2(24=S, Cat, Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L246"><a href="#L246">246</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code> yeccpars2_24(S, Cat, Ss, Stack, T, Ts, Tzr);</code></td>
 </tr>
 <tr>
@@ -1421,9 +1421,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2(33=S, Cat, Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L264"><a href="#L264">264</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code> yeccpars2_33(S, Cat, Ss, Stack, T, Ts, Tzr);</code></td>
 </tr>
 <tr>
@@ -1431,9 +1431,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2(34=S, Cat, Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L266"><a href="#L266">266</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code> yeccpars2_34(S, Cat, Ss, Stack, T, Ts, Tzr);</code></td>
 </tr>
 <tr>
@@ -1591,9 +1591,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2(50=S, Cat, Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L298"><a href="#L298">298</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">15</td>
 <td class="source"><code> yeccpars2_50(S, Cat, Ss, Stack, T, Ts, Tzr);</code></td>
 </tr>
 <tr>
@@ -1756,9 +1756,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2_0(S, '(', Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L331"><a href="#L331">331</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">13</td>
 <td class="source"><code> yeccpars1(S, 2, Ss, Stack, T, Ts, Tzr);</code></td>
 </tr>
 <tr>
@@ -1791,9 +1791,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2_1(_S, '$end', _Ss, Stack, _T, _Ts, _Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L338"><a href="#L338">338</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code> {ok, hd(Stack)};</code></td>
 </tr>
 <tr>
@@ -1836,9 +1836,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2_2(S, '&amp;', Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L347"><a href="#L347">347</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code> yeccpars1(S, 13, Ss, Stack, T, Ts, Tzr);</code></td>
 </tr>
 <tr>
@@ -1866,9 +1866,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2_2(S, str, Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L353"><a href="#L353">353</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">13</td>
 <td class="source"><code> yeccpars1(S, 16, Ss, Stack, T, Ts, Tzr);</code></td>
 </tr>
 <tr>
@@ -2026,14 +2026,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2_6(_S, Cat, Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L385"><a href="#L385">385</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code> NewStack = yeccpars2_6_(Stack),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L386"><a href="#L386">386</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code> yeccgoto_item(hd(Ss), Cat, Ss, NewStack, T, Ts, Tzr).</code></td>
 </tr>
 <tr>
@@ -2056,14 +2056,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2_7(_S, Cat, Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L391"><a href="#L391">391</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code> NewStack = yeccpars2_7_(Stack),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L392"><a href="#L392">392</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code> yeccgoto_item(hd(Ss), Cat, Ss, NewStack, T, Ts, Tzr).</code></td>
 </tr>
 <tr>
@@ -2086,14 +2086,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2_8(_S, Cat, Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L397"><a href="#L397">397</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">13</td>
 <td class="source"><code> NewStack = yeccpars2_8_(Stack),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L398"><a href="#L398">398</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">13</td>
 <td class="source"><code> yeccgoto_filtercomp(hd(Ss), Cat, Ss, NewStack, T, Ts, Tzr).</code></td>
 </tr>
 <tr>
@@ -2116,9 +2116,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2_9(S, ')', Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L403"><a href="#L403">403</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">15</td>
 <td class="source"><code> yeccpars1(S, 50, Ss, Stack, T, Ts, Tzr);</code></td>
 </tr>
 <tr>
@@ -2191,9 +2191,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2_11(S, '=', Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L418"><a href="#L418">418</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code> yeccpars1(S, 33, Ss, Stack, T, Ts, Tzr);</code></td>
 </tr>
 <tr>
@@ -2201,9 +2201,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2_11(S, '=*', Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L420"><a href="#L420">420</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code> yeccpars1(S, 34, Ss, Stack, T, Ts, Tzr);</code></td>
 </tr>
 <tr>
@@ -2391,14 +2391,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2_16(_S, Cat, Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L458"><a href="#L458">458</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">13</td>
 <td class="source"><code> NewStack = yeccpars2_16_(Stack),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L459"><a href="#L459">459</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">13</td>
 <td class="source"><code> yeccgoto_attr(hd(Ss), Cat, Ss, NewStack, T, Ts, Tzr).</code></td>
 </tr>
 <tr>
@@ -2466,9 +2466,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2_19(S, '(', Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L473"><a href="#L473">473</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code> yeccpars1(S, 2, Ss, Stack, T, Ts, Tzr);</code></td>
 </tr>
 <tr>
@@ -2476,14 +2476,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2_19(_S, Cat, Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L475"><a href="#L475">475</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code> NewStack = yeccpars2_19_(Stack),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L476"><a href="#L476">476</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code> yeccgoto_filterlist(hd(Ss), Cat, Ss, NewStack, T, Ts, Tzr).</code></td>
 </tr>
 <tr>
@@ -2506,19 +2506,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2_20(_S, Cat, Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L481"><a href="#L481">481</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code> [_|Nss] = Ss,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L482"><a href="#L482">482</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code> NewStack = yeccpars2_20_(Stack),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L483"><a href="#L483">483</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code> yeccgoto_filterlist(hd(Nss), Cat, Nss, NewStack, T, Ts, Tzr).</code></td>
 </tr>
 <tr>
@@ -2616,14 +2616,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2_24(_S, Cat, Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L503"><a href="#L503">503</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code> NewStack = yeccpars2_24_(Stack),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L504"><a href="#L504">504</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code> yeccgoto_value(hd(Ss), Cat, Ss, NewStack, T, Ts, Tzr).</code></td>
 </tr>
 <tr>
@@ -2771,19 +2771,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2_30(_S, Cat, Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L534"><a href="#L534">534</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code> [_|Nss] = Ss,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L535"><a href="#L535">535</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code> NewStack = yeccpars2_30_(Stack),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L536"><a href="#L536">536</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code> yeccgoto_filtercomp(hd(Nss), Cat, Nss, NewStack, T, Ts, Tzr).</code></td>
 </tr>
 <tr>
@@ -2861,9 +2861,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2_33(S, str, Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L552"><a href="#L552">552</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code> yeccpars1(S, 24, Ss, Stack, T, Ts, Tzr);</code></td>
 </tr>
 <tr>
@@ -2896,19 +2896,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2_34(_S, Cat, Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L559"><a href="#L559">559</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code> [_|Nss] = Ss,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L560"><a href="#L560">560</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code> NewStack = yeccpars2_34_(Stack),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L561"><a href="#L561">561</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code> yeccgoto_present(hd(Nss), Cat, Nss, NewStack, T, Ts, Tzr).</code></td>
 </tr>
 <tr>
@@ -3021,19 +3021,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2_39(_S, ')', Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L584"><a href="#L584">584</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code> [_,_|Nss] = Ss,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L585"><a href="#L585">585</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code> NewStack = 'yeccpars2_39_\')\''(Stack),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L586"><a href="#L586">586</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code> yeccgoto_simple(hd(Nss), ')', Nss, NewStack, T, Ts, Tzr);</code></td>
 </tr>
 <tr>
@@ -3436,19 +3436,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2_50(_S, Cat, Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L667"><a href="#L667">667</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">15</td>
 <td class="source"><code> [_,_|Nss] = Ss,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L668"><a href="#L668">668</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">15</td>
 <td class="source"><code> NewStack = yeccpars2_50_(Stack),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L669"><a href="#L669">669</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">15</td>
 <td class="source"><code> yeccgoto_filter(hd(Nss), Cat, Nss, NewStack, T, Ts, Tzr).</code></td>
 </tr>
 <tr>
@@ -3821,9 +3821,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccgoto_attr(2, Cat, Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L744"><a href="#L744">744</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">13</td>
 <td class="source"><code> yeccpars2_11(11, Cat, Ss, Stack, T, Ts, Tzr).</code></td>
 </tr>
 <tr>
@@ -3871,9 +3871,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccgoto_filter(0, Cat, Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L754"><a href="#L754">754</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code> yeccpars2_1(1, Cat, Ss, Stack, T, Ts, Tzr);</code></td>
 </tr>
 <tr>
@@ -3891,9 +3891,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccgoto_filter(13, Cat, Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L758"><a href="#L758">758</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code> yeccpars2_19(19, Cat, Ss, Stack, T, Ts, Tzr);</code></td>
 </tr>
 <tr>
@@ -3911,9 +3911,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccgoto_filter(19, Cat, Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L762"><a href="#L762">762</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code> yeccpars2_19(19, Cat, Ss, Stack, T, Ts, Tzr).</code></td>
 </tr>
 <tr>
@@ -3936,9 +3936,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccgoto_filtercomp(2, Cat, Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L767"><a href="#L767">767</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">15</td>
 <td class="source"><code> yeccpars2_9(9, Cat, Ss, Stack, T, Ts, Tzr).</code></td>
 </tr>
 <tr>
@@ -3961,9 +3961,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccgoto_filterlist(13=_S, Cat, Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L772"><a href="#L772">772</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code> yeccpars2_30(_S, Cat, Ss, Stack, T, Ts, Tzr);</code></td>
 </tr>
 <tr>
@@ -3981,9 +3981,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccgoto_filterlist(19=_S, Cat, Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L776"><a href="#L776">776</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code> yeccpars2_20(_S, Cat, Ss, Stack, T, Ts, Tzr).</code></td>
 </tr>
 <tr>
@@ -4066,9 +4066,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccgoto_item(2=_S, Cat, Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L793"><a href="#L793">793</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">13</td>
 <td class="source"><code> yeccpars2_8(_S, Cat, Ss, Stack, T, Ts, Tzr).</code></td>
 </tr>
 <tr>
@@ -4146,9 +4146,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccgoto_present(2=_S, Cat, Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L809"><a href="#L809">809</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code> yeccpars2_7(_S, Cat, Ss, Stack, T, Ts, Tzr).</code></td>
 </tr>
 <tr>
@@ -4171,9 +4171,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccgoto_simple(2=_S, Cat, Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L814"><a href="#L814">814</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code> yeccpars2_6(_S, Cat, Ss, Stack, T, Ts, Tzr).</code></td>
 </tr>
 <tr>
@@ -4281,9 +4281,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccgoto_value(33=_S, Cat, Ss, Stack, T, Ts, Tzr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L836"><a href="#L836">836</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code> yeccpars2_39(_S, Cat, Ss, Stack, T, Ts, Tzr);</code></td>
 </tr>
 <tr>
@@ -4541,19 +4541,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2_6_(__Stack0) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L888"><a href="#L888">888</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code> [___1 | __Stack] = __Stack0,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L889"><a href="#L889">889</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code> [begin</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L890"><a href="#L890">890</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code>                ___1</code></td>
 </tr>
 <tr>
@@ -4591,19 +4591,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2_7_(__Stack0) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L898"><a href="#L898">898</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code> [___1 | __Stack] = __Stack0,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L899"><a href="#L899">899</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code> [begin</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L900"><a href="#L900">900</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>                 ___1</code></td>
 </tr>
 <tr>
@@ -4641,19 +4641,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2_8_(__Stack0) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L908"><a href="#L908">908</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">13</td>
 <td class="source"><code> [___1 | __Stack] = __Stack0,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L909"><a href="#L909">909</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">13</td>
 <td class="source"><code> [begin</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L910"><a href="#L910">910</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">13</td>
 <td class="source"><code>                    ___1</code></td>
 </tr>
 <tr>
@@ -4891,19 +4891,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2_16_(__Stack0) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L958"><a href="#L958">958</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">13</td>
 <td class="source"><code> [___1 | __Stack] = __Stack0,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L959"><a href="#L959">959</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">13</td>
 <td class="source"><code> [begin</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L960"><a href="#L960">960</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">13</td>
 <td class="source"><code>             value_of(___1)</code></td>
 </tr>
 <tr>
@@ -4991,19 +4991,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2_19_(__Stack0) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L978"><a href="#L978">978</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code> [___1 | __Stack] = __Stack0,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L979"><a href="#L979">979</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code> [begin</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L980"><a href="#L980">980</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>                      ___1</code></td>
 </tr>
 <tr>
@@ -5041,19 +5041,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2_20_(__Stack0) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L988"><a href="#L988">988</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code> [___2,___1 | __Stack] = __Stack0,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L989"><a href="#L989">989</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code> [begin</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L990"><a href="#L990">990</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>                                 flatten([___1, ___2])</code></td>
 </tr>
 <tr>
@@ -5141,19 +5141,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2_24_(__Stack0) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1008"><a href="#L1008">1008</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code> [___1 | __Stack] = __Stack0,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1009"><a href="#L1009">1009</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code> [begin</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1010"><a href="#L1010">1010</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code>              value_of(___1)</code></td>
 </tr>
 <tr>
@@ -5291,19 +5291,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2_30_(__Stack0) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1038"><a href="#L1038">1038</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code> [___2,___1 | __Stack] = __Stack0,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1039"><a href="#L1039">1039</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code> [begin</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1040"><a href="#L1040">1040</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>                              'and'(___2)</code></td>
 </tr>
 <tr>
@@ -5391,19 +5391,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2_34_(__Stack0) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1058"><a href="#L1058">1058</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code> [___2,___1 | __Stack] = __Stack0,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1059"><a href="#L1059">1059</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code> [begin</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1060"><a href="#L1060">1060</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>                      present(___1)</code></td>
 </tr>
 <tr>
@@ -5541,19 +5541,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>'yeccpars2_39_\')\''(__Stack0) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1088"><a href="#L1088">1088</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code> [___3,___2,___1 | __Stack] = __Stack0,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1089"><a href="#L1089">1089</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code> [begin</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1090"><a href="#L1090">1090</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code>                          equal(___1, ___3)</code></td>
 </tr>
 <tr>
@@ -6081,19 +6081,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>yeccpars2_50_(__Stack0) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1196"><a href="#L1196">1196</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">15</td>
 <td class="source"><code> [___3,___2,___1 | __Stack] = __Stack0,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1197"><a href="#L1197">1197</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">15</td>
 <td class="source"><code> [begin</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1198"><a href="#L1198">1198</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">15</td>
 <td class="source"><code>                              ___2</code></td>
 </tr>
 <tr>

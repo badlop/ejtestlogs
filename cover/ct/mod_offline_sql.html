@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/ct/mod_offline_sql.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_offline_sql.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:08</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_offline_sql.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:36</p></footer>
 <table>
 <tbody>
 <tr>
@@ -321,9 +321,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>init(_Host, _Opts) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L44"><a href="#L44">44</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    ok.</code></td>
 </tr>
 <tr>
@@ -336,24 +336,24 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>store_message(#offline_msg{us = {LUser, LServer}} = M) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L47"><a href="#L47">47</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">387</td>
 <td class="source"><code>    From = M#offline_msg.from,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L48"><a href="#L48">48</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">387</td>
 <td class="source"><code>    To = M#offline_msg.to,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L49"><a href="#L49">49</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">387</td>
 <td class="source"><code>    Packet = xmpp:set_from_to(M#offline_msg.packet, From, To),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L50"><a href="#L50">50</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">387</td>
 <td class="source"><code>    NewPacket = misc:add_delay_info(</code></td>
 </tr>
 <tr>
@@ -371,9 +371,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		  &lt;&lt;"Offline Storage"&gt;&gt;),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L54"><a href="#L54">54</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">387</td>
 <td class="source"><code>    XML = fxml:element_to_binary(</code></td>
 </tr>
 <tr>
@@ -381,9 +381,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	    xmpp:encode(NewPacket)),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L56"><a href="#L56">56</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">387</td>
 <td class="source"><code>    case ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -391,9 +391,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	   LServer,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L58"><a href="#L58">58</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">387</td>
 <td class="source"><code>           ?SQL_INSERT(</code></td>
 </tr>
 <tr>
@@ -421,9 +421,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{updated, _} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L64"><a href="#L64">64</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">387</td>
 <td class="source"><code>	    ok;</code></td>
 </tr>
 <tr>
@@ -451,9 +451,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>pop_messages(LUser, LServer) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L70"><a href="#L70">70</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">84</td>
 <td class="source"><code>    case get_and_del_spool_msg_t(LServer, LUser) of</code></td>
 </tr>
 <tr>
@@ -461,9 +461,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{atomic, {selected, Rs}} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L72"><a href="#L72">72</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">84</td>
 <td class="source"><code>	    {ok, lists:flatmap(</code></td>
 </tr>
 <tr>
@@ -471,9 +471,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		   fun({_, XML}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L74"><a href="#L74">74</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">372</td>
 <td class="source"><code>			   case xml_to_offline_msg(XML) of</code></td>
 </tr>
 <tr>
@@ -481,9 +481,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>			       {ok, Msg} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L76"><a href="#L76">76</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">372</td>
 <td class="source"><code>				   [Msg];</code></td>
 </tr>
 <tr>
@@ -681,9 +681,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>remove_user(LUser, LServer) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L116"><a href="#L116">116</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">18</td>
 <td class="source"><code>    ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -691,9 +691,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      LServer,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L118"><a href="#L118">118</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">18</td>
 <td class="source"><code>      ?SQL("delete from spool where username=%(LUser)s and %(LServer)H")).</code></td>
 </tr>
 <tr>
@@ -706,9 +706,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>read_message_headers(LUser, LServer) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L121"><a href="#L121">121</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>    case ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -716,9 +716,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	   LServer,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L123"><a href="#L123">123</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>	   ?SQL("select @(xml)s, @(seq)d from spool"</code></td>
 </tr>
 <tr>
@@ -731,9 +731,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{selected, Rows} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L126"><a href="#L126">126</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>	    lists:flatmap(</code></td>
 </tr>
 <tr>
@@ -741,9 +741,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	      fun({XML, Seq}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L128"><a href="#L128">128</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">30</td>
 <td class="source"><code>		      case xml_to_offline_msg(XML) of</code></td>
 </tr>
 <tr>
@@ -766,9 +766,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>					    packet = El}} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L133"><a href="#L133">133</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">30</td>
 <td class="source"><code>			      [{Seq, From, To, TS, El}];</code></td>
 </tr>
 <tr>
@@ -816,9 +816,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>read_message(LUser, LServer, Seq) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L143"><a href="#L143">143</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">18</td>
 <td class="source"><code>    case ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -826,9 +826,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	   LServer,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L145"><a href="#L145">145</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">18</td>
 <td class="source"><code>	   ?SQL("select @(xml)s from spool where username=%(LUser)s"</code></td>
 </tr>
 <tr>
@@ -846,9 +846,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{selected, [{RawXML}|_]} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L149"><a href="#L149">149</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">15</td>
 <td class="source"><code>	    case xml_to_offline_msg(RawXML) of</code></td>
 </tr>
 <tr>
@@ -856,9 +856,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		{ok, Msg} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L151"><a href="#L151">151</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">15</td>
 <td class="source"><code>		    {ok, Msg};</code></td>
 </tr>
 <tr>
@@ -881,9 +881,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	_ -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L156"><a href="#L156">156</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>	    error</code></td>
 </tr>
 <tr>
@@ -901,9 +901,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>remove_message(LUser, LServer, Seq) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L160"><a href="#L160">160</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>    ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -911,9 +911,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      LServer,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L162"><a href="#L162">162</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>      ?SQL("delete from spool where username=%(LUser)s and %(LServer)H"</code></td>
 </tr>
 <tr>
@@ -921,9 +921,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>           " and seq=%(Seq)d")),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L164"><a href="#L164">164</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>    ok.</code></td>
 </tr>
 <tr>
@@ -1021,14 +1021,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>remove_all_messages(LUser, LServer) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L184"><a href="#L184">184</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    remove_user(LUser, LServer),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L185"><a href="#L185">185</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    {atomic, ok}.</code></td>
 </tr>
 <tr>
@@ -1041,9 +1041,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>count_messages(LUser, LServer) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L188"><a href="#L188">188</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">24</td>
 <td class="source"><code>    case catch ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -1051,9 +1051,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                 LServer,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L190"><a href="#L190">190</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">24</td>
 <td class="source"><code>                 ?SQL("select @(count(*))d from spool "</code></td>
 </tr>
 <tr>
@@ -1066,9 +1066,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>        {selected, [{Res}]} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L193"><a href="#L193">193</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">24</td>
 <td class="source"><code>            {cache, Res};</code></td>
 </tr>
 <tr>
@@ -1311,9 +1311,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>xml_to_offline_msg(XML) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L242"><a href="#L242">242</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">417</td>
 <td class="source"><code>    case fxml_stream:parse_element(XML) of</code></td>
 </tr>
 <tr>
@@ -1321,9 +1321,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	#xmlel{} = El -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L244"><a href="#L244">244</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">417</td>
 <td class="source"><code>	    el_to_offline_msg(El);</code></td>
 </tr>
 <tr>
@@ -1361,34 +1361,34 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>el_to_offline_msg(El) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L252"><a href="#L252">252</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">417</td>
 <td class="source"><code>    To_s = fxml:get_tag_attr_s(&lt;&lt;"to"&gt;&gt;, El),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L253"><a href="#L253">253</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">417</td>
 <td class="source"><code>    From_s = fxml:get_tag_attr_s(&lt;&lt;"from"&gt;&gt;, El),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L254"><a href="#L254">254</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">417</td>
 <td class="source"><code>    try</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L255"><a href="#L255">255</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">417</td>
 <td class="source"><code>	To = jid:decode(To_s),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L256"><a href="#L256">256</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">417</td>
 <td class="source"><code>	From = jid:decode(From_s),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L257"><a href="#L257">257</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">417</td>
 <td class="source"><code>	{ok, #offline_msg{us = {To#jid.luser, To#jid.lserver},</code></td>
 </tr>
 <tr>
@@ -1451,14 +1451,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_and_del_spool_msg_t(LServer, LUser) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L270"><a href="#L270">270</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">84</td>
 <td class="source"><code>    F = fun () -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L271"><a href="#L271">271</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">84</td>
 <td class="source"><code>		Result =</code></td>
 </tr>
 <tr>
@@ -1466,9 +1466,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		    ejabberd_sql:sql_query_t(</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L273"><a href="#L273">273</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">84</td>
 <td class="source"><code>                      ?SQL("select @(username)s, @(xml)s from spool where "</code></td>
 </tr>
 <tr>
@@ -1476,9 +1476,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                           "username=%(LUser)s and %(LServer)H order by seq;")),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L275"><a href="#L275">275</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">84</td>
 <td class="source"><code>		DResult =</code></td>
 </tr>
 <tr>
@@ -1486,9 +1486,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		    ejabberd_sql:sql_query_t(</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L277"><a href="#L277">277</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">84</td>
 <td class="source"><code>                      ?SQL("delete from spool where"</code></td>
 </tr>
 <tr>
@@ -1496,9 +1496,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                           " username=%(LUser)s and %(LServer)H;")),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L279"><a href="#L279">279</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">84</td>
 <td class="source"><code>		case {Result, DResult} of</code></td>
 </tr>
 <tr>
@@ -1516,9 +1516,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		    _ -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L283"><a href="#L283">283</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">84</td>
 <td class="source"><code>			Result</code></td>
 </tr>
 <tr>
@@ -1531,9 +1531,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L286"><a href="#L286">286</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">84</td>
 <td class="source"><code>    ejabberd_sql:sql_transaction(LServer, F).</code></td>
 </tr>
 </tbody>

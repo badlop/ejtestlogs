@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/mod_caps_sql.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_caps_sql.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:04</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_caps_sql.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:31</p></footer>
 <table>
 <tbody>
 <tr>
@@ -306,9 +306,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>init(_Host, _Opts) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L41"><a href="#L41">41</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    ok.</code></td>
 </tr>
 <tr>
@@ -321,9 +321,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>caps_read(LServer, {Node, SubNode}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L44"><a href="#L44">44</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    case ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -331,9 +331,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>           LServer,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L46"><a href="#L46">46</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>           ?SQL("select @(feature)s from caps_features where"</code></td>
 </tr>
 <tr>
@@ -346,9 +346,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>        {selected, [{H}|_] = Fs} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L49"><a href="#L49">49</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>            case catch binary_to_integer(H) of</code></td>
 </tr>
 <tr>
@@ -366,9 +366,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                _ -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L53"><a href="#L53">53</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>                    {ok, [F || {F} &lt;- Fs]}</code></td>
 </tr>
 <tr>
@@ -381,9 +381,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>        _ -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L56"><a href="#L56">56</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>            error</code></td>
 </tr>
 <tr>
@@ -401,9 +401,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>caps_write(LServer, NodePair, Features) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L60"><a href="#L60">60</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    case ejabberd_sql:sql_transaction(</code></td>
 </tr>
 <tr>
@@ -421,9 +421,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{atomic, _} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L64"><a href="#L64">64</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>	    ok;</code></td>
 </tr>
 <tr>
@@ -526,9 +526,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>sql_write_features_t({Node, SubNode}, Features) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L85"><a href="#L85">85</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    NewFeatures = if is_integer(Features) -&gt;</code></td>
 </tr>
 <tr class="miss">
@@ -541,9 +541,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                     true -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L88"><a href="#L88">88</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>                          Features</code></td>
 </tr>
 <tr>
@@ -551,9 +551,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                  end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L90"><a href="#L90">90</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    [?SQL("delete from caps_features where node=%(Node)s"</code></td>
 </tr>
 <tr>
@@ -561,14 +561,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>          " and subnode=%(SubNode)s;") |</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L92"><a href="#L92">92</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>     [?SQL("insert into caps_features(node, subnode, feature)"</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L93"><a href="#L93">93</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>           " values (%(Node)s, %(SubNode)s, %(F)s);") || F &lt;- NewFeatures]].</code></td>
 </tr>
 <tr>

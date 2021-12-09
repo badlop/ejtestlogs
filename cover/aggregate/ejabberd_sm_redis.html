@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/ejabberd_sm_redis.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_sm_redis.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:03</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_sm_redis.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:31</p></footer>
 <table>
 <tbody>
 <tr>
@@ -356,9 +356,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>init() -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L51"><a href="#L51">51</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    Spec = {?MODULE, {?MODULE, start_link, []},</code></td>
 </tr>
 <tr>
@@ -366,14 +366,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	    transient, 5000, worker, [?MODULE]},</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L53"><a href="#L53">53</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    case supervisor:start_child(ejabberd_backend_sup, Spec) of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L54"><a href="#L54">54</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>	{ok, _Pid} -&gt; ok;</code></td>
 </tr>
 <tr class="miss">
@@ -401,9 +401,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>start_link() -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L60"><a href="#L60">60</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    ?GEN_SERVER:start_link({local, ?MODULE}, ?MODULE, [], []).</code></td>
 </tr>
 <tr>
@@ -421,9 +421,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>cache_nodes(_LServer) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L64"><a href="#L64">64</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">478</td>
 <td class="source"><code>    [node()].</code></td>
 </tr>
 <tr>
@@ -441,39 +441,39 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>set_session(Session) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L68"><a href="#L68">68</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">255</td>
 <td class="source"><code>    T = term_to_binary(Session),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L69"><a href="#L69">69</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">255</td>
 <td class="source"><code>    USKey = us_to_key(Session#session.us),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L70"><a href="#L70">70</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">255</td>
 <td class="source"><code>    SIDKey = sid_to_key(Session#session.sid),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L71"><a href="#L71">71</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">255</td>
 <td class="source"><code>    ServKey = server_to_key(element(2, Session#session.us)),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L72"><a href="#L72">72</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">255</td>
 <td class="source"><code>    USSIDKey = us_sid_to_key(Session#session.us, Session#session.sid),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L73"><a href="#L73">73</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">255</td>
 <td class="source"><code>    NodeHostKey = node_host_to_key(node(), element(2, Session#session.us)),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L74"><a href="#L74">74</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">255</td>
 <td class="source"><code>    case ejabberd_redis:multi(</code></td>
 </tr>
 <tr>
@@ -481,19 +481,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	   fun() -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L76"><a href="#L76">76</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">255</td>
 <td class="source"><code>		   ejabberd_redis:hset(USKey, SIDKey, T),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L77"><a href="#L77">77</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">255</td>
 <td class="source"><code>		   ejabberd_redis:hset(ServKey, USSIDKey, T),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L78"><a href="#L78">78</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">255</td>
 <td class="source"><code>		   ejabberd_redis:hset(NodeHostKey,</code></td>
 </tr>
 <tr>
@@ -506,9 +506,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>				       USSIDKey),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L81"><a href="#L81">81</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">255</td>
 <td class="source"><code>		   ejabberd_redis:publish(</code></td>
 </tr>
 <tr>
@@ -526,9 +526,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{ok, _} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L85"><a href="#L85">85</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">255</td>
 <td class="source"><code>	    ok;</code></td>
 </tr>
 <tr>
@@ -561,34 +561,34 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>delete_session(#session{sid = SID} = Session) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L92"><a href="#L92">92</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">223</td>
 <td class="source"><code>    USKey = us_to_key(Session#session.us),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L93"><a href="#L93">93</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">223</td>
 <td class="source"><code>    SIDKey = sid_to_key(SID),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L94"><a href="#L94">94</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">223</td>
 <td class="source"><code>    ServKey = server_to_key(element(2, Session#session.us)),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L95"><a href="#L95">95</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">223</td>
 <td class="source"><code>    USSIDKey = us_sid_to_key(Session#session.us, SID),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L96"><a href="#L96">96</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">223</td>
 <td class="source"><code>    NodeHostKey = node_host_to_key(node(), element(2, Session#session.us)),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L97"><a href="#L97">97</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">223</td>
 <td class="source"><code>    case ejabberd_redis:multi(</code></td>
 </tr>
 <tr>
@@ -596,19 +596,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	   fun() -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L99"><a href="#L99">99</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">223</td>
 <td class="source"><code>		   ejabberd_redis:hdel(USKey, [SIDKey]),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L100"><a href="#L100">100</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">223</td>
 <td class="source"><code>		   ejabberd_redis:hdel(ServKey, [USSIDKey]),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L101"><a href="#L101">101</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">223</td>
 <td class="source"><code>		   ejabberd_redis:hdel(NodeHostKey,</code></td>
 </tr>
 <tr>
@@ -616,9 +616,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>				       [&lt;&lt;USKey/binary, "||", SIDKey/binary&gt;&gt;]),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L103"><a href="#L103">103</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">223</td>
 <td class="source"><code>		   ejabberd_redis:publish(</code></td>
 </tr>
 <tr>
@@ -641,9 +641,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{ok, _} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L108"><a href="#L108">108</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">223</td>
 <td class="source"><code>	    ok;</code></td>
 </tr>
 <tr>
@@ -676,9 +676,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_sessions() -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L115"><a href="#L115">115</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    lists:flatmap(</code></td>
 </tr>
 <tr>
@@ -686,9 +686,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      fun(LServer) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L117"><a href="#L117">117</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>	      get_sessions(LServer)</code></td>
 </tr>
 <tr>
@@ -711,14 +711,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_sessions(LServer) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L122"><a href="#L122">122</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    ServKey = server_to_key(LServer),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L123"><a href="#L123">123</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    case ejabberd_redis:hgetall(ServKey) of</code></td>
 </tr>
 <tr>
@@ -726,9 +726,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{ok, Vals} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L125"><a href="#L125">125</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>	    decode_session_list(Vals);</code></td>
 </tr>
 <tr>
@@ -766,14 +766,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_sessions(LUser, LServer) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L133"><a href="#L133">133</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">576</td>
 <td class="source"><code>    USKey = us_to_key({LUser, LServer}),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L134"><a href="#L134">134</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">576</td>
 <td class="source"><code>    case ejabberd_redis:hgetall(USKey) of</code></td>
 </tr>
 <tr>
@@ -781,9 +781,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{ok, Vals} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L136"><a href="#L136">136</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">576</td>
 <td class="source"><code>	    {ok, decode_session_list(Vals)};</code></td>
 </tr>
 <tr>
@@ -826,19 +826,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>init([]) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L145"><a href="#L145">145</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    ejabberd_redis:subscribe([?SM_KEY]),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L146"><a href="#L146">146</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    case clean_table() of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L147"><a href="#L147">147</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>	ok -&gt; {ok, #state{}};</code></td>
 </tr>
 <tr class="miss">
@@ -901,9 +901,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>handle_info({redis_message, ?SM_KEY, Data}, State) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L160"><a href="#L160">160</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">478</td>
 <td class="source"><code>    case binary_to_term(Data) of</code></td>
 </tr>
 <tr>
@@ -911,9 +911,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{delete, Key} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L162"><a href="#L162">162</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">478</td>
 <td class="source"><code>	    ets_cache:delete(?SM_CACHE, Key);</code></td>
 </tr>
 <tr>
@@ -931,9 +931,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>    end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L166"><a href="#L166">166</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">478</td>
 <td class="source"><code>    {noreply, State};</code></td>
 </tr>
 <tr>
@@ -1006,9 +1006,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>us_to_key({LUser, LServer}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L181"><a href="#L181">181</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1054</td>
 <td class="source"><code>    &lt;&lt;(?SM_KEY)/binary, ":", LUser/binary, "@", LServer/binary&gt;&gt;.</code></td>
 </tr>
 <tr>
@@ -1021,9 +1021,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>server_to_key(LServer) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L184"><a href="#L184">184</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">962</td>
 <td class="source"><code>    &lt;&lt;(?SM_KEY)/binary, ":", LServer/binary&gt;&gt;.</code></td>
 </tr>
 <tr>
@@ -1036,9 +1036,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>us_sid_to_key(US, SID) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L187"><a href="#L187">187</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">478</td>
 <td class="source"><code>    term_to_binary({US, SID}).</code></td>
 </tr>
 <tr>
@@ -1051,9 +1051,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>sid_to_key(SID) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L190"><a href="#L190">190</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">478</td>
 <td class="source"><code>    term_to_binary(SID).</code></td>
 </tr>
 <tr>
@@ -1066,14 +1066,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>node_session_deletion_cursor(Node, Host) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L193"><a href="#L193">193</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    NodeName = node_host_to_key(Node, Host),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L194"><a href="#L194">194</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    &lt;&lt;NodeName/binary, ":deletioncursor"&gt;&gt;.</code></td>
 </tr>
 <tr>
@@ -1086,14 +1086,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>node_host_to_key(Node, Host) when is_atom(Node) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L197"><a href="#L197">197</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">478</td>
 <td class="source"><code>    NodeBin = atom_to_binary(node(), utf8),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L198"><a href="#L198">198</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">478</td>
 <td class="source"><code>    node_host_to_key(NodeBin, Host);</code></td>
 </tr>
 <tr>
@@ -1101,14 +1101,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>node_host_to_key(NodeBin, Host) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L200"><a href="#L200">200</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">480</td>
 <td class="source"><code>    HostKey = server_to_key(Host),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L201"><a href="#L201">201</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">480</td>
 <td class="source"><code>    &lt;&lt;HostKey/binary, ":node:", NodeBin/binary&gt;&gt;.</code></td>
 </tr>
 <tr>
@@ -1121,9 +1121,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>decode_session_list(Vals) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L204"><a href="#L204">204</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">579</td>
 <td class="source"><code>  [binary_to_term(Val) || {_, Val} &lt;- Vals].</code></td>
 </tr>
 <tr>
@@ -1136,9 +1136,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>clean_table() -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L207"><a href="#L207">207</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    clean_table(node()).</code></td>
 </tr>
 <tr>
@@ -1151,9 +1151,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>clean_table(Node) when is_atom(Node) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L210"><a href="#L210">210</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    clean_table(atom_to_binary(Node, utf8));</code></td>
 </tr>
 <tr>
@@ -1161,19 +1161,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>clean_table(Node) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L212"><a href="#L212">212</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    ?DEBUG("Cleaning Redis SM table... ", []),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L213"><a href="#L213">213</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    try</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L214"><a href="#L214">214</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>	lists:foreach(</code></td>
 </tr>
 <tr>
@@ -1181,9 +1181,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	  fun(Host) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L216"><a href="#L216">216</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>		  ok = clean_node_sessions(Node, Host)</code></td>
 </tr>
 <tr>
@@ -1221,9 +1221,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>clean_node_sessions(Node, Host) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L224"><a href="#L224">224</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    case load_script() of</code></td>
 </tr>
 <tr>
@@ -1231,9 +1231,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>        {ok, SHA} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L226"><a href="#L226">226</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>            clean_node_sessions(Node, Host, SHA);</code></td>
 </tr>
 <tr>
@@ -1261,9 +1261,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>clean_node_sessions(Node, Host, SHA) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L232"><a href="#L232">232</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    Keys = [node_host_to_key(Node, Host),</code></td>
 </tr>
 <tr>
@@ -1276,9 +1276,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	    node_session_deletion_cursor(Node, Host)],</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L235"><a href="#L235">235</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    case ejabberd_redis:evalsha(SHA, Keys, [1000]) of</code></td>
 </tr>
 <tr>
@@ -1286,9 +1286,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{ok, &lt;&lt;"0"&gt;&gt;} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L237"><a href="#L237">237</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>	    ok;</code></td>
 </tr>
 <tr>
@@ -1326,9 +1326,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>load_script() -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L245"><a href="#L245">245</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    case misc:read_lua("redis_sm.lua") of</code></td>
 </tr>
 <tr>
@@ -1336,9 +1336,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{ok, Data} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L247"><a href="#L247">247</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>	    case ejabberd_redis:info(server) of</code></td>
 </tr>
 <tr>
@@ -1346,9 +1346,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		{ok, Info} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L249"><a href="#L249">249</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>		    case proplists:get_value(redis_version, Info) of</code></td>
 </tr>
 <tr>
@@ -1356,9 +1356,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>			V when V &gt;= ?MIN_REDIS_VERSION -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L251"><a href="#L251">251</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>			    ejabberd_redis:script_load(Data);</code></td>
 </tr>
 <tr>

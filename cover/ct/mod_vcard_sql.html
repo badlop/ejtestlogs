@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/ct/mod_vcard_sql.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_vcard_sql.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:08</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_vcard_sql.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:36</p></footer>
 <table>
 <tbody>
 <tr>
@@ -326,9 +326,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>init(_Host, _Opts) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L45"><a href="#L45">45</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    ok.</code></td>
 </tr>
 <tr>
@@ -341,9 +341,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>stop(_Host) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L48"><a href="#L48">48</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    ok.</code></td>
 </tr>
 <tr>
@@ -371,9 +371,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_vcard(LUser, LServer) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L54"><a href="#L54">54</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>    case ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -381,9 +381,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	   LServer,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L56"><a href="#L56">56</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>	   ?SQL("select @(vcard)s from vcard"</code></td>
 </tr>
 <tr>
@@ -396,9 +396,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{selected, [{SVCARD}]} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L59"><a href="#L59">59</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>	    case fxml_stream:parse_element(SVCARD) of</code></td>
 </tr>
 <tr class="miss">
@@ -406,9 +406,9 @@ td.source {
 <td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>		{error, _Reason} -&gt; error;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L61"><a href="#L61">61</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>		VCARD -&gt; {ok, [VCARD]}</code></td>
 </tr>
 <tr>
@@ -416,9 +416,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	    end;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L63"><a href="#L63">63</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>	{selected, []} -&gt; {ok, []};</code></td>
 </tr>
 <tr class="miss">
@@ -556,14 +556,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>			lorgunit = LOrgUnit}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L91"><a href="#L91">91</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    SVCARD = fxml:element_to_binary(VCARD),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L92"><a href="#L92">92</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    ejabberd_sql:sql_transaction(</code></td>
 </tr>
 <tr>
@@ -576,9 +576,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      fun() -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L95"><a href="#L95">95</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>              ?SQL_UPSERT(LServer, "vcard",</code></td>
 </tr>
 <tr>
@@ -596,9 +596,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                           "vcard=%(SVCARD)s"]),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L99"><a href="#L99">99</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>              ?SQL_UPSERT(LServer, "vcard_search",</code></td>
 </tr>
 <tr>
@@ -1021,9 +1021,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>remove_user(LUser, LServer) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L184"><a href="#L184">184</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    ejabberd_sql:sql_transaction(</code></td>
 </tr>
 <tr>
@@ -1036,14 +1036,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      fun() -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L187"><a href="#L187">187</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>              ejabberd_sql:sql_query_t(</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L188"><a href="#L188">188</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>                ?SQL("delete from vcard"</code></td>
 </tr>
 <tr>
@@ -1051,14 +1051,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                     " where username=%(LUser)s and %(LServer)H")),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L190"><a href="#L190">190</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>              ejabberd_sql:sql_query_t(</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L191"><a href="#L191">191</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>                ?SQL("delete from vcard_search"</code></td>
 </tr>
 <tr>

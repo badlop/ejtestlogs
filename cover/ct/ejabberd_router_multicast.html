@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/ct/ejabberd_router_multicast.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_router_multicast.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:07</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_router_multicast.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:35</p></footer>
 <table>
 <tbody>
 <tr>
@@ -418,7 +418,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L63"><a href="#L63">63</a></td>
-<td class="hits">697</td>
+<td class="hits">2687</td>
 <td class="source"><code>    {From, Domain, Destinations, Packet, Wrapped} =</code></td>
 </tr>
 <tr>
@@ -428,7 +428,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L65"><a href="#L65">65</a></td>
-<td class="hits">697</td>
+<td class="hits">2687</td>
 <td class="source"><code>    case catch do_route(Domain, Destinations, xmpp:set_from(Packet, From), Wrapped) of</code></td>
 </tr>
 <tr>
@@ -453,7 +453,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L70"><a href="#L70">70</a></td>
-<td class="hits">697</td>
+<td class="hits">2687</td>
 <td class="source"><code>	    ok</code></td>
 </tr>
 <tr>
@@ -1158,7 +1158,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L211"><a href="#L211">211</a></td>
-<td class="hits">18</td>
+<td class="hits">90</td>
 <td class="source"><code>    case Packet of</code></td>
 </tr>
 <tr>
@@ -1198,27 +1198,27 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L219"><a href="#L219">219</a></td>
-<td class="hits">18</td>
+<td class="hits">90</td>
 <td class="source"><code>	    Internal2 = xmpp:set_to(Internal, To),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L220"><a href="#L220">220</a></td>
-<td class="hits">18</td>
+<td class="hits">90</td>
 <td class="source"><code>	    PSItem2 = PSItem#ps_item{sub_els = [Internal2]},</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L221"><a href="#L221">221</a></td>
-<td class="hits">18</td>
+<td class="hits">90</td>
 <td class="source"><code>	    PSItems2 = PSItems#ps_items{items = [PSItem2]},</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L222"><a href="#L222">222</a></td>
-<td class="hits">18</td>
+<td class="hits">90</td>
 <td class="source"><code>	    PSEvent2 = PSEvent#ps_event{items = PSItems2},</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L223"><a href="#L223">223</a></td>
-<td class="hits">18</td>
+<td class="hits">90</td>
 <td class="source"><code>	    xmpp:set_to(Packet#message{sub_els = [PSEvent2]}, To);</code></td>
 </tr>
 <tr>
@@ -1278,7 +1278,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L235"><a href="#L235">235</a></td>
-<td class="hits">18</td>
+<td class="hits">90</td>
 <td class="source"><code>    ?DEBUG("Route multicast:~n~ts~nDomain: ~ts~nDestinations: ~ts~n",</code></td>
 </tr>
 <tr>
@@ -1288,12 +1288,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L237"><a href="#L237">237</a></td>
-<td class="hits">18</td>
+<td class="hits">90</td>
 <td class="source"><code>	    str:join([jid:encode(To) || To &lt;- Destinations], &lt;&lt;", "&gt;&gt;)]),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L238"><a href="#L238">238</a></td>
-<td class="hits">18</td>
+<td class="hits">90</td>
 <td class="source"><code>    lists:foreach(</code></td>
 </tr>
 <tr>
@@ -1303,12 +1303,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L240"><a href="#L240">240</a></td>
-<td class="hits">18</td>
+<td class="hits">90</td>
 <td class="source"><code>	    Packet2 = update_to_in_wrapped(Packet, To),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L241"><a href="#L241">241</a></td>
-<td class="hits">18</td>
+<td class="hits">90</td>
 <td class="source"><code>	    ejabberd_router:route(Packet2)</code></td>
 </tr>
 <tr>
@@ -1323,7 +1323,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L244"><a href="#L244">244</a></td>
-<td class="hits">679</td>
+<td class="hits">2597</td>
 <td class="source"><code>    ?DEBUG("Route multicast:~n~ts~nDomain: ~ts~nDestinations: ~ts~n",</code></td>
 </tr>
 <tr>
@@ -1333,7 +1333,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L246"><a href="#L246">246</a></td>
-<td class="hits">679</td>
+<td class="hits">2597</td>
 <td class="source"><code>	    str:join([jid:encode(To) || To &lt;- Destinations], &lt;&lt;", "&gt;&gt;)]),</code></td>
 </tr>
 <tr>
@@ -1343,7 +1343,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L248"><a href="#L248">248</a></td>
-<td class="hits">679</td>
+<td class="hits">2597</td>
 <td class="source"><code>    case mnesia:dirty_read(route_multicast, Domain) of</code></td>
 </tr>
 <tr>
@@ -1358,7 +1358,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L251"><a href="#L251">251</a></td>
-<td class="hits">679</td>
+<td class="hits">2597</td>
 <td class="source"><code>	[] -&gt; do_route_normal(Destinations, Packet);</code></td>
 </tr>
 <tr>
@@ -1448,7 +1448,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L269"><a href="#L269">269</a></td>
-<td class="hits">679</td>
+<td class="hits">2597</td>
 <td class="source"><code>    lists:foreach(</code></td>
 </tr>
 <tr>
@@ -1458,7 +1458,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L271"><a href="#L271">271</a></td>
-<td class="hits">747</td>
+<td class="hits">2801</td>
 <td class="source"><code>	    ejabberd_router:route(xmpp:set_to(Packet, To))</code></td>
 </tr>
 <tr>

@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/node_pep.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/node_pep.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:02</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/node_pep.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:30</p></footer>
 <table>
 <tbody>
 <tr>
@@ -358,7 +358,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L51"><a href="#L51">51</a></td>
-<td class="hits">1</td>
+<td class="hits">2</td>
 <td class="source"><code>    [{mod_caps, hard}].</code></td>
 </tr>
 <tr>
@@ -373,12 +373,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L54"><a href="#L54">54</a></td>
-<td class="hits">1</td>
+<td class="hits">2</td>
 <td class="source"><code>    node_flat:init(Host, ServerHost, Opts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L55"><a href="#L55">55</a></td>
-<td class="hits">1</td>
+<td class="hits">2</td>
 <td class="source"><code>    ok.</code></td>
 </tr>
 <tr>
@@ -393,12 +393,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L58"><a href="#L58">58</a></td>
-<td class="hits">1</td>
+<td class="hits">2</td>
 <td class="source"><code>    node_flat:terminate(Host, ServerHost),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L59"><a href="#L59">59</a></td>
-<td class="hits">1</td>
+<td class="hits">2</td>
 <td class="source"><code>    ok.</code></td>
 </tr>
 <tr>
@@ -413,7 +413,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L62"><a href="#L62">62</a></td>
-<td class="hits">1</td>
+<td class="hits">29</td>
 <td class="source"><code>    [{deliver_payloads, true},</code></td>
 </tr>
 <tr>
@@ -508,7 +508,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L81"><a href="#L81">81</a></td>
-<td class="hits">693</td>
+<td class="hits">3434</td>
 <td class="source"><code>    [&lt;&lt;"create-nodes"&gt;&gt;,</code></td>
 </tr>
 <tr>
@@ -603,17 +603,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L100"><a href="#L100">100</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    LOwner = jid:tolower(Owner),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L101"><a href="#L101">101</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    {User, Server, _Resource} = LOwner,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L102"><a href="#L102">102</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    Allowed = case LOwner of</code></td>
 </tr>
 <tr>
@@ -633,7 +633,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L106"><a href="#L106">106</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    case acl:match_rule(ServerHost, Access, LOwner) of</code></td>
 </tr>
 <tr>
@@ -643,12 +643,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L108"><a href="#L108">108</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>		    case Host of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L109"><a href="#L109">109</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>			{User, Server, _} -&gt; true;</code></td>
 </tr>
 <tr class="miss">
@@ -683,7 +683,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L116"><a href="#L116">116</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    {result, Allowed}.</code></td>
 </tr>
 <tr>
@@ -698,7 +698,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L119"><a href="#L119">119</a></td>
-<td class="hits">1</td>
+<td class="hits">2</td>
 <td class="source"><code>    node_flat:create_node(Nidx, Owner).</code></td>
 </tr>
 <tr>
@@ -713,7 +713,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L122"><a href="#L122">122</a></td>
-<td class="hits">1</td>
+<td class="hits">2</td>
 <td class="source"><code>    node_flat:delete_node(Nodes).</code></td>
 </tr>
 <tr>
@@ -783,7 +783,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L136"><a href="#L136">136</a></td>
-<td class="hits">1</td>
+<td class="hits">2</td>
 <td class="source"><code>    node_flat:publish_item(Nidx, Publisher, Model, MaxItems, ItemId,</code></td>
 </tr>
 <tr>
@@ -878,47 +878,47 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L155"><a href="#L155">155</a></td>
-<td class="hits">226</td>
+<td class="hits">452</td>
 <td class="source"><code>    {_, D, _} = SubKey = jid:tolower(Owner),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L156"><a href="#L156">156</a></td>
-<td class="hits">226</td>
+<td class="hits">452</td>
 <td class="source"><code>    SubKey = jid:tolower(Owner),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L157"><a href="#L157">157</a></td>
-<td class="hits">226</td>
+<td class="hits">452</td>
 <td class="source"><code>    GenKey = jid:remove_resource(SubKey),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L158"><a href="#L158">158</a></td>
-<td class="hits">226</td>
+<td class="hits">452</td>
 <td class="source"><code>    States = mnesia:match_object(#pubsub_state{stateid = {GenKey, '_'}, _ = '_'}),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L159"><a href="#L159">159</a></td>
-<td class="hits">226</td>
+<td class="hits">452</td>
 <td class="source"><code>    NodeTree = mod_pubsub:tree(Host),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L160"><a href="#L160">160</a></td>
-<td class="hits">226</td>
+<td class="hits">452</td>
 <td class="source"><code>    Reply = lists:foldl(fun (#pubsub_state{stateid = {_, N}, affiliation = A}, Acc) -&gt;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L161"><a href="#L161">161</a></td>
-<td class="hits">8</td>
+<td class="hits">16</td>
 <td class="source"><code>		    case NodeTree:get_node(N) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L162"><a href="#L162">162</a></td>
-<td class="hits">1</td>
+<td class="hits">2</td>
 <td class="source"><code>			#pubsub_node{nodeid = {{_, D, _}, _}} = Node -&gt; [{Node, A} | Acc];</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L163"><a href="#L163">163</a></td>
-<td class="hits">7</td>
+<td class="hits">14</td>
 <td class="source"><code>			_ -&gt; Acc</code></td>
 </tr>
 <tr>
@@ -938,7 +938,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L167"><a href="#L167">167</a></td>
-<td class="hits">226</td>
+<td class="hits">452</td>
 <td class="source"><code>    {result, Reply}.</code></td>
 </tr>
 <tr>
@@ -973,7 +973,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L174"><a href="#L174">174</a></td>
-<td class="hits">1</td>
+<td class="hits">2</td>
 <td class="source"><code>    node_flat:get_affiliation(Nidx, Owner).</code></td>
 </tr>
 <tr>
@@ -1003,17 +1003,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L180"><a href="#L180">180</a></td>
-<td class="hits">97</td>
+<td class="hits">194</td>
 <td class="source"><code>    {U, D, _} = SubKey = jid:tolower(Owner),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L181"><a href="#L181">181</a></td>
-<td class="hits">97</td>
+<td class="hits">194</td>
 <td class="source"><code>    GenKey = jid:remove_resource(SubKey),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L182"><a href="#L182">182</a></td>
-<td class="hits">97</td>
+<td class="hits">194</td>
 <td class="source"><code>    States = case SubKey of</code></td>
 </tr>
 <tr>
@@ -1023,7 +1023,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L184"><a href="#L184">184</a></td>
-<td class="hits">68</td>
+<td class="hits">136</td>
 <td class="source"><code>	    mnesia:match_object(#pubsub_state{stateid = {{U, D, '_'}, '_'}, _ = '_'});</code></td>
 </tr>
 <tr>
@@ -1038,7 +1038,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L187"><a href="#L187">187</a></td>
-<td class="hits">29</td>
+<td class="hits">58</td>
 <td class="source"><code>	    ++</code></td>
 </tr>
 <tr>
@@ -1053,17 +1053,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L190"><a href="#L190">190</a></td>
-<td class="hits">97</td>
+<td class="hits">194</td>
 <td class="source"><code>    NodeTree = mod_pubsub:tree(Host),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L191"><a href="#L191">191</a></td>
-<td class="hits">97</td>
+<td class="hits">194</td>
 <td class="source"><code>    Reply = lists:foldl(fun (#pubsub_state{stateid = {J, N}, subscriptions = Ss}, Acc) -&gt;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L192"><a href="#L192">192</a></td>
-<td class="hits">17</td>
+<td class="hits">34</td>
 <td class="source"><code>		    case NodeTree:get_node(N) of</code></td>
 </tr>
 <tr>
@@ -1123,7 +1123,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L204"><a href="#L204">204</a></td>
-<td class="hits">17</td>
+<td class="hits">34</td>
 <td class="source"><code>			    Acc</code></td>
 </tr>
 <tr>
@@ -1143,7 +1143,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L208"><a href="#L208">208</a></td>
-<td class="hits">97</td>
+<td class="hits">194</td>
 <td class="source"><code>    {result, Reply}.</code></td>
 </tr>
 <tr>
@@ -1158,7 +1158,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L211"><a href="#L211">211</a></td>
-<td class="hits">3</td>
+<td class="hits">6</td>
 <td class="source"><code>    node_flat:get_node_subscriptions(Nidx).</code></td>
 </tr>
 <tr>
@@ -1278,7 +1278,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L235"><a href="#L235">235</a></td>
-<td class="hits">1</td>
+<td class="hits">2</td>
 <td class="source"><code>    node_flat:get_items(Nidx, JID, AccessModel,</code></td>
 </tr>
 <tr>
@@ -1393,7 +1393,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L258"><a href="#L258">258</a></td>
-<td class="hits">3</td>
+<td class="hits">6</td>
 <td class="source"><code>    node_flat:node_to_path(Node).</code></td>
 </tr>
 <tr>

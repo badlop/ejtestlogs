@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/ejabberd_local.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_local.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:02</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_local.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:30</p></footer>
 <table>
 <tbody>
 <tr>
@@ -473,27 +473,27 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L74"><a href="#L74">74</a></td>
-<td class="hits">10309</td>
+<td class="hits">46281</td>
 <td class="source"><code>    ?DEBUG("Local route:~n~ts", [xmpp:pp(Packet)]),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L75"><a href="#L75">75</a></td>
-<td class="hits">10309</td>
+<td class="hits">46281</td>
 <td class="source"><code>    Type = xmpp:get_type(Packet),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L76"><a href="#L76">76</a></td>
-<td class="hits">10309</td>
+<td class="hits">46281</td>
 <td class="source"><code>    To = xmpp:get_to(Packet),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L77"><a href="#L77">77</a></td>
-<td class="hits">10309</td>
+<td class="hits">46281</td>
 <td class="source"><code>    if To#jid.luser /= &lt;&lt;""&gt;&gt; -&gt;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L78"><a href="#L78">78</a></td>
-<td class="hits">10149</td>
+<td class="hits">45621</td>
 <td class="source"><code>	    ejabberd_sm:route(Packet);</code></td>
 </tr>
 <tr>
@@ -503,7 +503,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L80"><a href="#L80">80</a></td>
-<td class="hits">139</td>
+<td class="hits">571</td>
 <td class="source"><code>	    gen_iq_handler:handle(?MODULE, Packet);</code></td>
 </tr>
 <tr>
@@ -523,7 +523,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L84"><a href="#L84">84</a></td>
-<td class="hits">21</td>
+<td class="hits">89</td>
 <td class="source"><code>	    ejabberd_hooks:run(local_send_to_resource_hook,</code></td>
 </tr>
 <tr>
@@ -553,7 +553,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L90"><a href="#L90">90</a></td>
-<td class="hits">4</td>
+<td class="hits">20</td>
 <td class="source"><code>    route_iq(IQ, Fun, undefined).</code></td>
 </tr>
 <tr>
@@ -573,7 +573,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L94"><a href="#L94">94</a></td>
-<td class="hits">4</td>
+<td class="hits">20</td>
 <td class="source"><code>    ejabberd_router:route_iq(IQ, Fun, undefined, Timeout).</code></td>
 </tr>
 <tr>
@@ -613,27 +613,27 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L102"><a href="#L102">102</a></td>
-<td class="hits">16</td>
+<td class="hits">80</td>
 <td class="source"><code>    Lang = xmpp:get_lang(Packet),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L103"><a href="#L103">103</a></td>
-<td class="hits">16</td>
+<td class="hits">80</td>
 <td class="source"><code>    Txt = ?T("No available resource found"),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L104"><a href="#L104">104</a></td>
-<td class="hits">16</td>
+<td class="hits">80</td>
 <td class="source"><code>    Err = xmpp:err_item_not_found(Txt, Lang),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L105"><a href="#L105">105</a></td>
-<td class="hits">16</td>
+<td class="hits">80</td>
 <td class="source"><code>    ejabberd_router:route_error(Packet, Err),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L106"><a href="#L106">106</a></td>
-<td class="hits">16</td>
+<td class="hits">80</td>
 <td class="source"><code>    stop.</code></td>
 </tr>
 <tr>
@@ -653,7 +653,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L110"><a href="#L110">110</a></td>
-<td class="hits">238</td>
+<td class="hits">1147</td>
 <td class="source"><code>    gen_iq_handler:get_features(?MODULE, Host).</code></td>
 </tr>
 <tr>

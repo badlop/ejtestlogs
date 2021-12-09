@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/ejabberd_config.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_config.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:04</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_config.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:32</p></footer>
 <table>
 <tbody>
 <tr>
@@ -883,7 +883,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L156"><a href="#L156">156</a></td>
-<td class="hits">4252</td>
+<td class="hits">15954</td>
 <td class="source"><code>    get_option({Opt, global});</code></td>
 </tr>
 <tr>
@@ -893,17 +893,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L158"><a href="#L158">158</a></td>
-<td class="hits">46290</td>
+<td class="hits">316125</td>
 <td class="source"><code>    Tab = case get_tmp_config() of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L159"><a href="#L159">159</a></td>
-<td class="hits">45945</td>
+<td class="hits">315618</td>
 <td class="source"><code>	      undefined -&gt; ejabberd_options;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L160"><a href="#L160">160</a></td>
-<td class="hits">345</td>
+<td class="hits">507</td>
 <td class="source"><code>	      T -&gt; T</code></td>
 </tr>
 <tr>
@@ -913,7 +913,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L162"><a href="#L162">162</a></td>
-<td class="hits">46290</td>
+<td class="hits">316125</td>
 <td class="source"><code>    try ets:lookup_element(Tab, Opt, 2)</code></td>
 </tr>
 <tr>
@@ -1073,7 +1073,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L194"><a href="#L194">194</a></td>
-<td class="hits">1091</td>
+<td class="hits">3835</td>
 <td class="source"><code>    get_option(host).</code></td>
 </tr>
 <tr>
@@ -1133,7 +1133,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L206"><a href="#L206">206</a></td>
-<td class="hits">555</td>
+<td class="hits">2290</td>
 <td class="source"><code>    &lt;&lt;"http://www.process-one.net/en/ejabberd/"&gt;&gt;.</code></td>
 </tr>
 <tr>
@@ -1173,7 +1173,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L214"><a href="#L214">214</a></td>
-<td class="hits">24</td>
+<td class="hits">96</td>
 <td class="source"><code>    get_option(shared_key).</code></td>
 </tr>
 <tr>
@@ -1193,7 +1193,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L218"><a href="#L218">218</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    get_option(node_start).</code></td>
 </tr>
 <tr>
@@ -1213,7 +1213,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L222"><a href="#L222">222</a></td>
-<td class="hits">475</td>
+<td class="hits">1411</td>
 <td class="source"><code>    case lists:keyfind(max_fsm_queue, 1, Opts) of</code></td>
 </tr>
 <tr>
@@ -1233,7 +1233,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L226"><a href="#L226">226</a></td>
-<td class="hits">475</td>
+<td class="hits">1411</td>
 <td class="source"><code>	    case get_option(max_fsm_queue) of</code></td>
 </tr>
 <tr class="miss">
@@ -1243,7 +1243,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L228"><a href="#L228">228</a></td>
-<td class="hits">475</td>
+<td class="hits">1411</td>
 <td class="source"><code>		N -&gt; [{max_queue, N}]</code></td>
 </tr>
 <tr>
@@ -1273,7 +1273,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L234"><a href="#L234">234</a></td>
-<td class="hits">1837</td>
+<td class="hits">7915</td>
 <td class="source"><code>    case get_option(validate_stream) of</code></td>
 </tr>
 <tr class="miss">
@@ -1283,7 +1283,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L236"><a href="#L236">236</a></td>
-<td class="hits">1837</td>
+<td class="hits">7915</td>
 <td class="source"><code>	false -&gt; [ignore_els]</code></td>
 </tr>
 <tr>
@@ -1393,7 +1393,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L258"><a href="#L258">258</a></td>
-<td class="hits">53</td>
+<td class="hits">77</td>
 <td class="source"><code>    default_db(default_db, Host, Module, mnesia).</code></td>
 </tr>
 <tr>
@@ -1433,7 +1433,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L266"><a href="#L266">266</a></td>
-<td class="hits">29</td>
+<td class="hits">24</td>
 <td class="source"><code>    default_db(default_ram_db, Host, Module, mnesia).</code></td>
 </tr>
 <tr>
@@ -1473,22 +1473,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L274"><a href="#L274">274</a></td>
-<td class="hits">82</td>
+<td class="hits">101</td>
 <td class="source"><code>    Type = get_option({Opt, Host}),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L275"><a href="#L275">275</a></td>
-<td class="hits">82</td>
+<td class="hits">101</td>
 <td class="source"><code>    DBMod = list_to_atom(atom_to_list(Mod) ++ "_" ++ atom_to_list(Type)),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L276"><a href="#L276">276</a></td>
-<td class="hits">82</td>
+<td class="hits">101</td>
 <td class="source"><code>    case code:ensure_loaded(DBMod) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L277"><a href="#L277">277</a></td>
-<td class="hits">82</td>
+<td class="hits">101</td>
 <td class="source"><code>	{module, _} -&gt; Type;</code></td>
 </tr>
 <tr>
@@ -1688,12 +1688,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L317"><a href="#L317">317</a></td>
-<td class="hits">810</td>
+<td class="hits">2638</td>
 <td class="source"><code>    case get_option(hide_sensitive_log_data) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L318"><a href="#L318">318</a></td>
-<td class="hits">810</td>
+<td class="hits">2638</td>
 <td class="source"><code>        false -&gt; Data;</code></td>
 </tr>
 <tr class="miss">
@@ -2293,7 +2293,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L438"><a href="#L438">438</a></td>
-<td class="hits">46330</td>
+<td class="hits">316165</td>
 <td class="source"><code>    get(ejabberd_options).</code></td>
 </tr>
 <tr>
@@ -3238,7 +3238,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L627"><a href="#L627">627</a></td>
-<td class="hits">2</td>
+<td class="hits">8</td>
 <td class="source"><code>		     lists:foldl(</code></td>
 </tr>
 <tr>
@@ -3248,7 +3248,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L629"><a href="#L629">629</a></td>
-<td class="hits">4</td>
+<td class="hits">44</td>
 <td class="source"><code>			       maps:put({Opt, Host}, Val, M2)</code></td>
 </tr>
 <tr>
@@ -3473,7 +3473,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L674"><a href="#L674">674</a></td>
-<td class="hits">22</td>
+<td class="hits">62</td>
 <td class="source"><code>		      ets:insert(Tab, {{Opt, Host}, Val})</code></td>
 </tr>
 <tr>
@@ -3498,12 +3498,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L679"><a href="#L679">679</a></td>
-<td class="hits">860</td>
+<td class="hits">820</td>
 <td class="source"><code>		      try maps:get({Opt, global}, Map) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L680"><a href="#L680">680</a></td>
-<td class="hits">88</td>
+<td class="hits">80</td>
 <td class="source"><code>			  V -&gt; ets:insert(Tab, {{Opt, Host}, V})</code></td>
 </tr>
 <tr>
@@ -3513,12 +3513,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L682"><a href="#L682">682</a></td>
-<td class="hits">772</td>
+<td class="hits">740</td>
 <td class="source"><code>			      Default1 = compute_default(Default, Host),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L683"><a href="#L683">683</a></td>
-<td class="hits">772</td>
+<td class="hits">740</td>
 <td class="source"><code>			      ets:insert(Tab, {{Opt, Host}, Default1})</code></td>
 </tr>
 <tr>
@@ -3833,7 +3833,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L746"><a href="#L746">746</a></td>
-<td class="hits">106</td>
+<td class="hits">90</td>
 <td class="source"><code>    F(Host);</code></td>
 </tr>
 <tr>
@@ -3843,7 +3843,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L748"><a href="#L748">748</a></td>
-<td class="hits">806</td>
+<td class="hits">790</td>
 <td class="source"><code>    Val.</code></td>
 </tr>
 <tr>

@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/ct/eldap.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/eldap.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:06</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/eldap.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:34</p></footer>
 <table>
 <tbody>
 <tr>
@@ -886,9 +886,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>start_link(Name, Hosts, Port, Rootdn, Passwd, Opts) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L157"><a href="#L157">157</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    Reg_name = misc:binary_to_atom(&lt;&lt;"eldap_",</code></td>
 </tr>
 <tr>
@@ -896,9 +896,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>				       Name/binary&gt;&gt;),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L159"><a href="#L159">159</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    p1_fsm:start_link({local, Reg_name}, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -1601,14 +1601,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>bind(Handle, RootDN, Passwd) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L300"><a href="#L300">300</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    Handle1 = get_handle(Handle),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L301"><a href="#L301">301</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    p1_fsm:sync_send_event(Handle1, {bind, RootDN, Passwd},</code></td>
 </tr>
 <tr>
@@ -1851,9 +1851,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>search(Handle, L) when is_list(L) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L350"><a href="#L350">350</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>    case catch parse_search_args(L) of</code></td>
 </tr>
 <tr class="miss">
@@ -1871,9 +1871,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      A when is_record(A, eldap_search) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L354"><a href="#L354">354</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>	  call_search(Handle, A)</code></td>
 </tr>
 <tr>
@@ -1891,14 +1891,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>call_search(Handle, A) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L358"><a href="#L358">358</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>    Handle1 = get_handle(Handle),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L359"><a href="#L359">359</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>    p1_fsm:sync_send_event(Handle1, {search, A},</code></td>
 </tr>
 <tr>
@@ -1926,9 +1926,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>parse_search_args(Args) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L365"><a href="#L365">365</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>    parse_search_args(Args,</code></td>
 </tr>
 <tr>
@@ -1946,9 +1946,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>parse_search_args([{base, Base} | T], A) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L369"><a href="#L369">369</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>    parse_search_args(T, A#eldap_search{base = Base});</code></td>
 </tr>
 <tr>
@@ -1956,9 +1956,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>parse_search_args([{filter, Filter} | T], A) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L371"><a href="#L371">371</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>    parse_search_args(T, A#eldap_search{filter = Filter});</code></td>
 </tr>
 <tr>
@@ -1976,9 +1976,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>parse_search_args([{attributes, Attrs} | T], A) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L375"><a href="#L375">375</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>    parse_search_args(T,</code></td>
 </tr>
 <tr>
@@ -2011,9 +2011,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>    when is_integer(Timeout) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L382"><a href="#L382">382</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    parse_search_args(T, A#eldap_search{timeout = Timeout});</code></td>
 </tr>
 <tr>
@@ -2036,9 +2036,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>parse_search_args([{deref_aliases, never} | T], A) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L387"><a href="#L387">387</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>    parse_search_args(T,</code></td>
 </tr>
 <tr>
@@ -2106,9 +2106,9 @@ td.source {
 <td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>    throw({error, {unknown_arg, H}});</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L401"><a href="#L401">401</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>parse_search_args([], A) -&gt; A.</code></td>
 </tr>
 <tr>
@@ -2236,9 +2236,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>'and'(ListOfFilters) when is_list(ListOfFilters) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L427"><a href="#L427">427</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>    {'and', ListOfFilters}.</code></td>
 </tr>
 <tr>
@@ -2321,9 +2321,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>equalityMatch(Desc, Value) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L444"><a href="#L444">444</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code>    {equalityMatch, av_assert(Desc, Value)}.</code></td>
 </tr>
 <tr>
@@ -2456,9 +2456,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>av_assert(Desc, Value) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L471"><a href="#L471">471</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code>    #'AttributeValueAssertion'{attributeDesc = Desc,</code></td>
 </tr>
 <tr>
@@ -2581,9 +2581,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>present(Attribute) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L496"><a href="#L496">496</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>    {present, Attribute}.</code></td>
 </tr>
 <tr>
@@ -2846,9 +2846,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L549"><a href="#L549">549</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8</td>
 <td class="source"><code>get_handle(Pid) when is_pid(Pid) -&gt; Pid;</code></td>
 </tr>
 <tr class="miss">
@@ -2946,9 +2946,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>init([Hosts, Port, Rootdn, Passwd, Opts]) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L569"><a href="#L569">569</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    Encrypt = case proplists:get_value(encrypt, Opts) of</code></td>
 </tr>
 <tr class="miss">
@@ -2956,9 +2956,9 @@ td.source {
 <td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>                  tls -&gt; tls;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L571"><a href="#L571">571</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>                  _ -&gt; none</code></td>
 </tr>
 <tr>
@@ -2966,9 +2966,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	      end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L573"><a href="#L573">573</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    PortTemp = case Port of</code></td>
 </tr>
 <tr>
@@ -2996,9 +2996,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		     end;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L579"><a href="#L579">579</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>		 PT -&gt; PT</code></td>
 </tr>
 <tr>
@@ -3006,9 +3006,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	       end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L581"><a href="#L581">581</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    CertOpts = case proplists:get_value(tls_certfile, Opts) of</code></td>
 </tr>
 <tr>
@@ -3016,9 +3016,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		   undefined -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L583"><a href="#L583">583</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>		       [];</code></td>
 </tr>
 <tr>
@@ -3036,9 +3036,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	       end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L587"><a href="#L587">587</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    CacertOpts = case proplists:get_value(tls_cacertfile, Opts) of</code></td>
 </tr>
 <tr>
@@ -3046,9 +3046,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                     undefined -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L589"><a href="#L589">589</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>                         [];</code></td>
 </tr>
 <tr>
@@ -3066,9 +3066,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                 end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L593"><a href="#L593">593</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    DepthOpts = case proplists:get_value(tls_depth, Opts) of</code></td>
 </tr>
 <tr>
@@ -3076,9 +3076,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                    undefined -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L595"><a href="#L595">595</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>                        [];</code></td>
 </tr>
 <tr>
@@ -3096,14 +3096,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L599"><a href="#L599">599</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    Verify = proplists:get_value(tls_verify, Opts, false),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L600"><a href="#L600">600</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    TLSOpts = if (Verify == hard orelse Verify == soft)</code></td>
 </tr>
 <tr>
@@ -3156,9 +3156,9 @@ td.source {
 <td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>		     [{verify, verify_peer}, {fail_if_no_peer_cert, true}] ++ CertOpts ++ CacertOpts ++ DepthOpts;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L611"><a href="#L611">611</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>		 true -&gt; []</code></td>
 </tr>
 <tr>
@@ -3166,9 +3166,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	      end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L613"><a href="#L613">613</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    {ok, connecting,</code></td>
 </tr>
 <tr>
@@ -3201,14 +3201,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>connecting(timeout, S) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L620"><a href="#L620">620</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    {ok, NextState, NewS} = connect_bind(S),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L621"><a href="#L621">621</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    {next_state, NextState, NewS}.</code></td>
 </tr>
 <tr>
@@ -3281,9 +3281,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>active(Event, From, S) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L636"><a href="#L636">636</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8</td>
 <td class="source"><code>    process_command(S, Event, From).</code></td>
 </tr>
 <tr>
@@ -3416,19 +3416,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>    when Tag == tcp; Tag == ssl -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L663"><a href="#L663">663</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    misc:cancel_timer(S#eldap.bind_timer),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L664"><a href="#L664">664</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    case catch recvd_wait_bind_response(Data, S) of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L665"><a href="#L665">665</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>      bound -&gt; dequeue_commands(S);</code></td>
 </tr>
 <tr>
@@ -3501,9 +3501,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	   andalso (Tag == tcp orelse Tag == ssl) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L680"><a href="#L680">680</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">17</td>
 <td class="source"><code>    case catch recvd_packet(Data, S) of</code></td>
 </tr>
 <tr>
@@ -3511,19 +3511,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      {response, Response, RequestType} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L682"><a href="#L682">682</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">17</td>
 <td class="source"><code>	  NewS = case Response of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L683"><a href="#L683">683</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8</td>
 <td class="source"><code>		   {reply, Reply, To, S1} -&gt; p1_fsm:reply(To, Reply), S1;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L684"><a href="#L684">684</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>		   {ok, S1} -&gt; S1</code></td>
 </tr>
 <tr>
@@ -3531,9 +3531,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		 end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L686"><a href="#L686">686</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">17</td>
 <td class="source"><code>	  if StateName == active_bind andalso</code></td>
 </tr>
 <tr>
@@ -3546,9 +3546,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	       orelse StateName == active -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L689"><a href="#L689">689</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">17</td>
 <td class="source"><code>		 dequeue_commands(NewS);</code></td>
 </tr>
 <tr class="miss">
@@ -3846,9 +3846,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>dequeue_commands(S) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L749"><a href="#L749">749</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">21</td>
 <td class="source"><code>    case queue:out(S#eldap.req_q) of</code></td>
 </tr>
 <tr>
@@ -3876,9 +3876,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	  end;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L755"><a href="#L755">755</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">21</td>
 <td class="source"><code>      {empty, _} -&gt; {next_state, active, S}</code></td>
 </tr>
 <tr>
@@ -3896,9 +3896,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>process_command(S, Event, From) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L759"><a href="#L759">759</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8</td>
 <td class="source"><code>    case send_command(Event, From, S) of</code></td>
 </tr>
 <tr>
@@ -3906,19 +3906,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      {ok, NewS} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L761"><a href="#L761">761</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8</td>
 <td class="source"><code>	  case Event of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L762"><a href="#L762">762</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>	    {bind, _, _} -&gt; {next_state, active_bind, NewS};</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L763"><a href="#L763">763</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>	    _ -&gt; {next_state, active, NewS}</code></td>
 </tr>
 <tr>
@@ -3961,19 +3961,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>send_command(Command, From, S) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L772"><a href="#L772">772</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8</td>
 <td class="source"><code>    Id = bump_id(S),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L773"><a href="#L773">773</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8</td>
 <td class="source"><code>    {Name, Request} = gen_req(Command),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L774"><a href="#L774">774</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8</td>
 <td class="source"><code>    Message = #'LDAPMessage'{messageID = Id,</code></td>
 </tr>
 <tr>
@@ -3981,19 +3981,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>			     protocolOp = {Name, Request}},</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L776"><a href="#L776">776</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8</td>
 <td class="source"><code>    ?DEBUG("~p~n", [{Name, ejabberd_config:may_hide_data(Request)}]),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L777"><a href="#L777">777</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8</td>
 <td class="source"><code>    {ok, Bytes} = 'ELDAPv3':encode('LDAPMessage', Message),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L778"><a href="#L778">778</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8</td>
 <td class="source"><code>    case (S#eldap.sockmod):send(S#eldap.fd, Bytes) of</code></td>
 </tr>
 <tr>
@@ -4001,19 +4001,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      ok -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L780"><a href="#L780">780</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8</td>
 <td class="source"><code>	Timer = erlang:start_timer(?CMD_TIMEOUT, self(), {cmd_timeout, Id}),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L781"><a href="#L781">781</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8</td>
 <td class="source"><code>	New_dict = dict:store(Id, [{Timer, Command, From, Name}], S#eldap.dict),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L782"><a href="#L782">782</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8</td>
 <td class="source"><code>	{ok, S#eldap{id = Id, dict = New_dict}};</code></td>
 </tr>
 <tr>
@@ -4041,9 +4041,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>gen_req({search, A}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L788"><a href="#L788">788</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>    {searchRequest,</code></td>
 </tr>
 <tr>
@@ -4191,9 +4191,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>gen_req({bind, RootDN, Passwd}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L818"><a href="#L818">818</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    {bindRequest,</code></td>
 </tr>
 <tr>
@@ -4266,9 +4266,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>recvd_packet(Pkt, S) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L833"><a href="#L833">833</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">17</td>
 <td class="source"><code>    case 'ELDAPv3':decode('LDAPMessage', Pkt) of</code></td>
 </tr>
 <tr>
@@ -4276,29 +4276,29 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      {ok, Msg} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L835"><a href="#L835">835</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">17</td>
 <td class="source"><code>	  Op = Msg#'LDAPMessage'.protocolOp,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L836"><a href="#L836">836</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">17</td>
 <td class="source"><code>	  ?DEBUG("~p", [Op]),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L837"><a href="#L837">837</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">17</td>
 <td class="source"><code>	  Dict = S#eldap.dict,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L838"><a href="#L838">838</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">17</td>
 <td class="source"><code>	  Id = Msg#'LDAPMessage'.messageID,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L839"><a href="#L839">839</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">17</td>
 <td class="source"><code>	  {Timer, From, Name, Result_so_far} = get_op_rec(Id,</code></td>
 </tr>
 <tr>
@@ -4306,9 +4306,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>							  Dict),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L841"><a href="#L841">841</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">17</td>
 <td class="source"><code>	  Answer = case {Name, Op} of</code></td>
 </tr>
 <tr>
@@ -4321,14 +4321,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>			 when is_record(R, 'SearchResultEntry') -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L844"><a href="#L844">844</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>			 New_dict = dict:append(Id, R, Dict),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L845"><a href="#L845">845</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>			 {ok, S#eldap{dict = New_dict}};</code></td>
 </tr>
 <tr>
@@ -4336,34 +4336,34 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		     {searchRequest, {searchResDone, Result}} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L847"><a href="#L847">847</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>			 Reason = Result#'LDAPResult'.resultCode,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L848"><a href="#L848">848</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>			 if Reason == success; Reason == sizeLimitExceeded -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L849"><a href="#L849">849</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>				{Res, Ref} = polish(Result_so_far),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L850"><a href="#L850">850</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>				New_dict = dict:erase(Id, Dict),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L851"><a href="#L851">851</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>				misc:cancel_timer(Timer),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L852"><a href="#L852">852</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>				{reply,</code></td>
 </tr>
 <tr>
@@ -4531,24 +4531,24 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		     {bindRequest, {bindResponse, Result}} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L886"><a href="#L886">886</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>			 New_dict = dict:erase(Id, Dict),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L887"><a href="#L887">887</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>			 misc:cancel_timer(Timer),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L888"><a href="#L888">888</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>			 Reply = check_bind_reply(Result, From),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L889"><a href="#L889">889</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>			 {reply, Reply, From, S#eldap{dict = New_dict}};</code></td>
 </tr>
 <tr>
@@ -4611,9 +4611,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		   end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L902"><a href="#L902">902</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">17</td>
 <td class="source"><code>	  {response, Answer, Name};</code></td>
 </tr>
 <tr class="miss">
@@ -4681,9 +4681,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		 _From) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L916"><a href="#L916">916</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    ok;</code></td>
 </tr>
 <tr>
@@ -4776,9 +4776,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_op_rec(Id, Dict) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L935"><a href="#L935">935</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">17</td>
 <td class="source"><code>    case dict:find(Id, Dict) of</code></td>
 </tr>
 <tr>
@@ -4786,9 +4786,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      {ok, [{Timer, _Command, From, Name} | Res]} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L937"><a href="#L937">937</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">17</td>
 <td class="source"><code>	  {Timer, From, Name, Res};</code></td>
 </tr>
 <tr class="miss">
@@ -4856,9 +4856,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>recvd_wait_bind_response(Pkt, S) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L951"><a href="#L951">951</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    case 'ELDAPv3':decode('LDAPMessage', Pkt) of</code></td>
 </tr>
 <tr>
@@ -4866,19 +4866,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      {ok, Msg} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L953"><a href="#L953">953</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>	  ?DEBUG("~p", [Msg]),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L954"><a href="#L954">954</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>	  check_id(S#eldap.id, Msg#'LDAPMessage'.messageID),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L955"><a href="#L955">955</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>	  case Msg#'LDAPMessage'.protocolOp of</code></td>
 </tr>
 <tr>
@@ -4886,14 +4886,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	    {bindResponse, Result} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L957"><a href="#L957">957</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>		case Result#'BindResponse'.resultCode of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L958"><a href="#L958">958</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>		  success -&gt; bound;</code></td>
 </tr>
 <tr class="miss">
@@ -4926,9 +4926,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L965"><a href="#L965">965</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>check_id(Id, Id) -&gt; ok;</code></td>
 </tr>
 <tr class="miss">
@@ -5211,9 +5211,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1022"><a href="#L1022">1022</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>polish(Entries) -&gt; polish(Entries, [], []).</code></td>
 </tr>
 <tr>
@@ -5231,24 +5231,24 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>    when is_record(H, 'SearchResultEntry') -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1026"><a href="#L1026">1026</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>    ObjectName = H#'SearchResultEntry'.objectName,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1027"><a href="#L1027">1027</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>    F = fun ({_, A, V}) -&gt; {A, V} end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1028"><a href="#L1028">1028</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>    Attrs = lists:map(F, H#'SearchResultEntry'.attributes),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1029"><a href="#L1029">1029</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>    polish(T,</code></td>
 </tr>
 <tr>
@@ -5286,9 +5286,9 @@ td.source {
 <td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>    polish(T, Res, [H | Ref]);</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1037"><a href="#L1037">1037</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>polish([], Res, Ref) -&gt; {Res, Ref}.</code></td>
 </tr>
 <tr>
@@ -5406,19 +5406,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>connect_bind(S) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1061"><a href="#L1061">1061</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    Host = next_host(S#eldap.host, S#eldap.hosts),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1062"><a href="#L1062">1062</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    HostS = binary_to_list(Host),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1063"><a href="#L1063">1063</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    Opts = if S#eldap.tls == tls -&gt;</code></td>
 </tr>
 <tr class="miss">
@@ -5441,9 +5441,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	      true -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1068"><a href="#L1068">1068</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>		  [{packet, asn1}, {active, true}, {keepalive, true},</code></td>
 </tr>
 <tr>
@@ -5456,19 +5456,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	   end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1071"><a href="#L1071">1071</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    ?DEBUG("Connecting to LDAP server at ~ts:~p with options ~p",</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1072"><a href="#L1072">1072</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>	   [Host, S#eldap.port, Opts]),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1073"><a href="#L1073">1073</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    SockMod = case S#eldap.tls of</code></td>
 </tr>
 <tr class="miss">
@@ -5476,9 +5476,9 @@ td.source {
 <td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>		  tls -&gt; ssl;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1075"><a href="#L1075">1075</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>		  _ -&gt; gen_tcp</code></td>
 </tr>
 <tr>
@@ -5486,9 +5486,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	      end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1077"><a href="#L1077">1077</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    case connect(HostS, S#eldap.port, SockMod, Opts) of</code></td>
 </tr>
 <tr>
@@ -5496,9 +5496,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      {ok, Socket} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1079"><a href="#L1079">1079</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>	  case bind_request(Socket, S#eldap{sockmod = SockMod}) of</code></td>
 </tr>
 <tr>
@@ -5506,9 +5506,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	    {ok, NewS} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1081"><a href="#L1081">1081</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>		Timer = erlang:start_timer(?BIND_TIMEOUT, self(),</code></td>
 </tr>
 <tr>
@@ -5516,9 +5516,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>					   {timeout, bind_timeout}),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1083"><a href="#L1083">1083</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>		{ok, wait_bind_response,</code></td>
 </tr>
 <tr>
@@ -5596,14 +5596,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>bind_request(Socket, S) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1099"><a href="#L1099">1099</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    Id = bump_id(S),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1100"><a href="#L1100">1100</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    Req = #'BindRequest'{version = S#eldap.version,</code></td>
 </tr>
 <tr>
@@ -5616,9 +5616,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>			 authentication = {simple, S#eldap.passwd}},</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1103"><a href="#L1103">1103</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    Message = #'LDAPMessage'{messageID = Id,</code></td>
 </tr>
 <tr>
@@ -5626,24 +5626,24 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>			     protocolOp = {bindRequest, Req}},</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1105"><a href="#L1105">1105</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    ?DEBUG("Bind Request Message:~p~n", [ejabberd_config:may_hide_data(Message)]),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1106"><a href="#L1106">1106</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    {ok, Bytes} = 'ELDAPv3':encode('LDAPMessage', Message),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1107"><a href="#L1107">1107</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    case (S#eldap.sockmod):send(Socket, Bytes) of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1108"><a href="#L1108">1108</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>      ok -&gt; {ok, S#eldap{id = Id}};</code></td>
 </tr>
 <tr class="miss">
@@ -5671,9 +5671,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>next_host(undefined, [H | _]) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1114"><a href="#L1114">1114</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    H;                    % First time, take first</code></td>
 </tr>
 <tr>
@@ -5756,9 +5756,9 @@ td.source {
 <td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>    ?MIN_TRANSACTION_ID;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1131"><a href="#L1131">1131</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>bump_id(#eldap{id = Id}) -&gt; Id + 1.</code></td>
 </tr>
 <tr>
@@ -5861,9 +5861,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>connect(Host, Port, Mod, Opts) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1152"><a href="#L1152">1152</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    case lookup(Host) of</code></td>
 </tr>
 <tr>
@@ -5871,9 +5871,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{ok, AddrsFamilies} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1154"><a href="#L1154">1154</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>	    do_connect(AddrsFamilies, Port, Mod, Opts, {error, nxdomain});</code></td>
 </tr>
 <tr>
@@ -5901,9 +5901,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>do_connect([{IP, Family}|AddrsFamilies], Port, Mod, Opts, _Err) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1160"><a href="#L1160">1160</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8</td>
 <td class="source"><code>    case Mod:connect(IP, Port, [Family|Opts], ?CONNECT_TIMEOUT) of</code></td>
 </tr>
 <tr>
@@ -5911,9 +5911,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{ok, Sock} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1162"><a href="#L1162">1162</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>	    {ok, Sock};</code></td>
 </tr>
 <tr>
@@ -5921,9 +5921,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{error, _} = Err -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1164"><a href="#L1164">1164</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>	    do_connect(AddrsFamilies, Port, Mod, Opts, Err)</code></td>
 </tr>
 <tr>
@@ -5951,9 +5951,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>lookup(Host) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1170"><a href="#L1170">1170</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    case inet:parse_address(Host) of</code></td>
 </tr>
 <tr>
@@ -5971,9 +5971,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{error, _} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1174"><a href="#L1174">1174</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>	    do_lookup([{Host, Family} || Family &lt;- [inet6, inet]],</code></td>
 </tr>
 <tr>
@@ -5996,9 +5996,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>do_lookup([{Host, Family}|HostFamilies], AddrFamilies, Err) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1179"><a href="#L1179">1179</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8</td>
 <td class="source"><code>    case inet:gethostbyname(Host, Family, ?DNS_TIMEOUT) of</code></td>
 </tr>
 <tr>
@@ -6006,19 +6006,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{ok, HostEntry} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1181"><a href="#L1181">1181</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8</td>
 <td class="source"><code>	    Addrs = host_entry_to_addrs(HostEntry),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1182"><a href="#L1182">1182</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8</td>
 <td class="source"><code>	    AddrFamilies1 = [{Addr, Family} || Addr &lt;- Addrs],</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1183"><a href="#L1183">1183</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8</td>
 <td class="source"><code>	    do_lookup(HostFamilies,</code></td>
 </tr>
 <tr>
@@ -6061,9 +6061,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>do_lookup([], AddrFamilies, _Err) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1192"><a href="#L1192">1192</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    {ok, AddrFamilies}.</code></td>
 </tr>
 <tr>
@@ -6076,9 +6076,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>host_entry_to_addrs(#hostent{h_addr_list = AddrList}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1195"><a href="#L1195">1195</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8</td>
 <td class="source"><code>    lists:filter(</code></td>
 </tr>
 <tr>
@@ -6086,14 +6086,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      fun(Addr) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1197"><a href="#L1197">1197</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8</td>
 <td class="source"><code>	      try get_addr_type(Addr) of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1198"><a href="#L1198">1198</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8</td>
 <td class="source"><code>		  _ -&gt; true</code></td>
 </tr>
 <tr>
@@ -6121,14 +6121,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1204"><a href="#L1204">1204</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>get_addr_type({_, _, _, _}) -&gt; inet;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1205"><a href="#L1205">1205</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>get_addr_type({_, _, _, _, _, _, _, _}) -&gt; inet6;</code></td>
 </tr>
 <tr class="miss">

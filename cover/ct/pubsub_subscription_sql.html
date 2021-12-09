@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/ct/pubsub_subscription_sql.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/pubsub_subscription_sql.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:07</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/pubsub_subscription_sql.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:35</p></footer>
 <table>
 <tbody>
 <tr>
@@ -736,14 +736,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>parse_options_xform(XFields) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L127"><a href="#L127">127</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">51</td>
 <td class="source"><code>    Opts = set_xoption(XFields, []),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L128"><a href="#L128">128</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">51</td>
 <td class="source"><code>    {result, Opts}.</code></td>
 </tr>
 <tr>
@@ -786,14 +786,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>make_subid() -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L137"><a href="#L137">137</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">48</td>
 <td class="source"><code>    {T1, T2, T3} = erlang:timestamp(),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L138"><a href="#L138">138</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">48</td>
 <td class="source"><code>    (str:format("~.16B~.16B~.16B", [T1, T2, T3])).</code></td>
 </tr>
 <tr>
@@ -831,9 +831,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%% Opts as defaults.</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L146"><a href="#L146">146</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">51</td>
 <td class="source"><code>set_xoption([], Opts) -&gt; Opts;</code></td>
 </tr>
 <tr>

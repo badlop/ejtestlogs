@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/ct/ejabberd_c2s.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_c2s.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:08</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_c2s.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:35</p></footer>
 <table>
 <tbody>
 <tr>
@@ -443,7 +443,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L68"><a href="#L68">68</a></td>
-<td class="hits">375</td>
+<td class="hits">1293</td>
 <td class="source"><code>    xmpp_stream_in:start_link(?MODULE, [{SockMod, Socket}, Opts],</code></td>
 </tr>
 <tr>
@@ -463,7 +463,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L72"><a href="#L72">72</a></td>
-<td class="hits">375</td>
+<td class="hits">1293</td>
 <td class="source"><code>    xmpp_stream_in:accept(Ref).</code></td>
 </tr>
 <tr>
@@ -518,7 +518,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L83"><a href="#L83">83</a></td>
-<td class="hits">3</td>
+<td class="hits">15</td>
 <td class="source"><code>    xmpp_stream_in:cast(Ref, Msg).</code></td>
 </tr>
 <tr>
@@ -593,7 +593,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L98"><a href="#L98">98</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    resend_presence(Pid, undefined).</code></td>
 </tr>
 <tr>
@@ -613,7 +613,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L102"><a href="#L102">102</a></td>
-<td class="hits">10</td>
+<td class="hits">50</td>
 <td class="source"><code>    route(Pid, {resend_presence, To}).</code></td>
 </tr>
 <tr>
@@ -678,7 +678,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L115"><a href="#L115">115</a></td>
-<td class="hits">376</td>
+<td class="hits">1293</td>
 <td class="source"><code>    xmpp_stream_in:stop_async(Pid).</code></td>
 </tr>
 <tr>
@@ -713,22 +713,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L122"><a href="#L122">122</a></td>
-<td class="hits">6854</td>
+<td class="hits">29848</td>
 <td class="source"><code>    Pkt1 = fix_from_to(Pkt, State),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L123"><a href="#L123">123</a></td>
-<td class="hits">6854</td>
+<td class="hits">29848</td>
 <td class="source"><code>    case ejabberd_hooks:run_fold(c2s_filter_send, LServer, {Pkt1, State}, []) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L124"><a href="#L124">124</a></td>
-<td class="hits">8</td>
+<td class="hits">16</td>
 <td class="source"><code>	{drop, State1} -&gt; State1;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L125"><a href="#L125">125</a></td>
-<td class="hits">6846</td>
+<td class="hits">29832</td>
 <td class="source"><code>	{Pkt2, State1} -&gt; xmpp_stream_in:send(State1, Pkt2)</code></td>
 </tr>
 <tr>
@@ -753,7 +753,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L130"><a href="#L130">130</a></td>
-<td class="hits">188</td>
+<td class="hits">940</td>
 <td class="source"><code>    case ejabberd_hooks:run_fold(c2s_filter_send, LServer, {Pkt, State}, []) of</code></td>
 </tr>
 <tr class="miss">
@@ -763,7 +763,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L132"><a href="#L132">132</a></td>
-<td class="hits">188</td>
+<td class="hits">940</td>
 <td class="source"><code>	{Pkt1, State1} -&gt; xmpp_stream_in:send_error(State1, Pkt1, Err)</code></td>
 </tr>
 <tr>
@@ -813,7 +813,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L142"><a href="#L142">142</a></td>
-<td class="hits">7153</td>
+<td class="hits">31387</td>
 <td class="source"><code>    ejabberd_cluster:send(Pid, Term).</code></td>
 </tr>
 <tr>
@@ -1113,32 +1113,32 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L202"><a href="#L202">202</a></td>
-<td class="hits">344</td>
+<td class="hits">1230</td>
 <td class="source"><code>    JID = jid:make(U, S, R),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L203"><a href="#L203">203</a></td>
-<td class="hits">344</td>
+<td class="hits">1230</td>
 <td class="source"><code>    State1 = change_shaper(State),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L204"><a href="#L204">204</a></td>
-<td class="hits">344</td>
+<td class="hits">1230</td>
 <td class="source"><code>    Conn = get_conn_type(State1),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L205"><a href="#L205">205</a></td>
-<td class="hits">344</td>
+<td class="hits">1230</td>
 <td class="source"><code>    State2 = State1#{conn =&gt; Conn, resource =&gt; R, jid =&gt; JID},</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L206"><a href="#L206">206</a></td>
-<td class="hits">344</td>
+<td class="hits">1230</td>
 <td class="source"><code>    Prio = case maps:get(pres_last, State, undefined) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L207"><a href="#L207">207</a></td>
-<td class="hits">344</td>
+<td class="hits">1230</td>
 <td class="source"><code>	       undefined -&gt; undefined;</code></td>
 </tr>
 <tr class="miss">
@@ -1153,17 +1153,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L210"><a href="#L210">210</a></td>
-<td class="hits">344</td>
+<td class="hits">1230</td>
 <td class="source"><code>    Info = [{ip, IP}, {conn, Conn}, {auth_module, AuthModule}],</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L211"><a href="#L211">211</a></td>
-<td class="hits">344</td>
+<td class="hits">1230</td>
 <td class="source"><code>    ejabberd_sm:open_session(SID, U, S, R, Prio, Info),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L212"><a href="#L212">212</a></td>
-<td class="hits">344</td>
+<td class="hits">1230</td>
 <td class="source"><code>    xmpp_stream_in:establish(State2).</code></td>
 </tr>
 <tr>
@@ -1193,7 +1193,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L218"><a href="#L218">218</a></td>
-<td class="hits">7134</td>
+<td class="hits">31299</td>
 <td class="source"><code>    {Pass, State1} = case Packet of</code></td>
 </tr>
 <tr>
@@ -1203,7 +1203,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L220"><a href="#L220">220</a></td>
-<td class="hits">1295</td>
+<td class="hits">4553</td>
 <td class="source"><code>			     process_presence_in(State, Packet);</code></td>
 </tr>
 <tr>
@@ -1213,7 +1213,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L222"><a href="#L222">222</a></td>
-<td class="hits">2877</td>
+<td class="hits">12757</td>
 <td class="source"><code>			     process_message_in(State, Packet);</code></td>
 </tr>
 <tr>
@@ -1223,7 +1223,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L224"><a href="#L224">224</a></td>
-<td class="hits">2962</td>
+<td class="hits">13989</td>
 <td class="source"><code>			     process_iq_in(State, Packet)</code></td>
 </tr>
 <tr>
@@ -1233,12 +1233,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L226"><a href="#L226">226</a></td>
-<td class="hits">7134</td>
+<td class="hits">31299</td>
 <td class="source"><code>    if Pass -&gt;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L227"><a href="#L227">227</a></td>
-<td class="hits">6816</td>
+<td class="hits">29749</td>
 <td class="source"><code>	    {Packet1, State2} = ejabberd_hooks:run_fold(</code></td>
 </tr>
 <tr>
@@ -1253,7 +1253,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L230"><a href="#L230">230</a></td>
-<td class="hits">6816</td>
+<td class="hits">29749</td>
 <td class="source"><code>	    case Packet1 of</code></td>
 </tr>
 <tr class="miss">
@@ -1263,7 +1263,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L232"><a href="#L232">232</a></td>
-<td class="hits">6816</td>
+<td class="hits">29749</td>
 <td class="source"><code>		_ -&gt; send(State2, Packet1)</code></td>
 </tr>
 <tr>
@@ -1278,7 +1278,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L235"><a href="#L235">235</a></td>
-<td class="hits">318</td>
+<td class="hits">1550</td>
 <td class="source"><code>	    State1</code></td>
 </tr>
 <tr>
@@ -1293,12 +1293,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L238"><a href="#L238">238</a></td>
-<td class="hits">10</td>
+<td class="hits">50</td>
 <td class="source"><code>    case maps:get(pres_last, State, error) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L239"><a href="#L239">239</a></td>
-<td class="hits">2</td>
+<td class="hits">10</td>
 <td class="source"><code>	error -&gt; State;</code></td>
 </tr>
 <tr>
@@ -1338,7 +1338,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L247"><a href="#L247">247</a></td>
-<td class="hits">8</td>
+<td class="hits">40</td>
 <td class="source"><code>	    process_presence_out(State, xmpp:set_to(Pres, To))</code></td>
 </tr>
 <tr>
@@ -1443,7 +1443,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L268"><a href="#L268">268</a></td>
-<td class="hits">352</td>
+<td class="hits">1248</td>
 <td class="source"><code>    ?INFO_MSG("(~ts) Accepted c2s ~ts authentication for ~ts@~ts by ~ts backend from ~ts",</code></td>
 </tr>
 <tr>
@@ -1458,12 +1458,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L271"><a href="#L271">271</a></td>
-<td class="hits">352</td>
+<td class="hits">1248</td>
 <td class="source"><code>               ejabberd_config:may_hide_data(misc:ip_to_list(IP))]),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L272"><a href="#L272">272</a></td>
-<td class="hits">352</td>
+<td class="hits">1248</td>
 <td class="source"><code>    State;</code></td>
 </tr>
 <tr>
@@ -1483,7 +1483,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L276"><a href="#L276">276</a></td>
-<td class="hits">7</td>
+<td class="hits">17</td>
 <td class="source"><code>    ?WARNING_MSG("(~ts) Failed c2s ~ts authentication ~tsfrom ~ts: ~ts",</code></td>
 </tr>
 <tr>
@@ -1493,7 +1493,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L278"><a href="#L278">278</a></td>
-<td class="hits">6</td>
+<td class="hits">16</td>
 <td class="source"><code>                  if User /= &lt;&lt;""&gt;&gt; -&gt; ["for ", User, "@", LServer, " "];</code></td>
 </tr>
 <tr class="hit">
@@ -1508,12 +1508,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L281"><a href="#L281">281</a></td>
-<td class="hits">7</td>
+<td class="hits">17</td>
 <td class="source"><code>                  ejabberd_config:may_hide_data(misc:ip_to_list(IP)), Reason]),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L282"><a href="#L282">282</a></td>
-<td class="hits">7</td>
+<td class="hits">17</td>
 <td class="source"><code>    State.</code></td>
 </tr>
 <tr>
@@ -1528,12 +1528,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L285"><a href="#L285">285</a></td>
-<td class="hits">371</td>
+<td class="hits">1284</td>
 <td class="source"><code>    stop_async(self()),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L286"><a href="#L286">286</a></td>
-<td class="hits">371</td>
+<td class="hits">1284</td>
 <td class="source"><code>    State#{stop_reason =&gt; Reason}.</code></td>
 </tr>
 <tr>
@@ -1558,22 +1558,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L291"><a href="#L291">291</a></td>
-<td class="hits">340</td>
+<td class="hits">1222</td>
 <td class="source"><code>    Status = format_reason(State, Reason),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L292"><a href="#L292">292</a></td>
-<td class="hits">340</td>
+<td class="hits">1222</td>
 <td class="source"><code>    ?INFO_MSG("(~ts) Closing c2s session for ~ts: ~ts",</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L293"><a href="#L293">293</a></td>
-<td class="hits">340</td>
+<td class="hits">1222</td>
 <td class="source"><code>	      [xmpp_socket:pp(Socket), jid:encode(JID), Status]),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L294"><a href="#L294">294</a></td>
-<td class="hits">340</td>
+<td class="hits">1222</td>
 <td class="source"><code>    Pres = #presence{type = unavailable,</code></td>
 </tr>
 <tr>
@@ -1588,7 +1588,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L297"><a href="#L297">297</a></td>
-<td class="hits">340</td>
+<td class="hits">1222</td>
 <td class="source"><code>    State1 = case maps:is_key(pres_last, State) of</code></td>
 </tr>
 <tr>
@@ -1598,7 +1598,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L299"><a href="#L299">299</a></td>
-<td class="hits">33</td>
+<td class="hits">137</td>
 <td class="source"><code>		     ejabberd_sm:close_session_unset_presence(SID, U, S, R,</code></td>
 </tr>
 <tr>
@@ -1608,7 +1608,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L301"><a href="#L301">301</a></td>
-<td class="hits">33</td>
+<td class="hits">137</td>
 <td class="source"><code>		     broadcast_presence_unavailable(State, Pres, true);</code></td>
 </tr>
 <tr>
@@ -1618,12 +1618,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L303"><a href="#L303">303</a></td>
-<td class="hits">307</td>
+<td class="hits">1085</td>
 <td class="source"><code>		     ejabberd_sm:close_session(SID, U, S, R),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L304"><a href="#L304">304</a></td>
-<td class="hits">307</td>
+<td class="hits">1085</td>
 <td class="source"><code>		     broadcast_presence_unavailable(State, Pres, false)</code></td>
 </tr>
 <tr>
@@ -1633,12 +1633,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L306"><a href="#L306">306</a></td>
-<td class="hits">340</td>
+<td class="hits">1222</td>
 <td class="source"><code>    bounce_message_queue(SID, JID),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L307"><a href="#L307">307</a></td>
-<td class="hits">339</td>
+<td class="hits">1221</td>
 <td class="source"><code>    State1;</code></td>
 </tr>
 <tr>
@@ -1673,7 +1673,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L314"><a href="#L314">314</a></td>
-<td class="hits">34</td>
+<td class="hits">70</td>
 <td class="source"><code>    State.</code></td>
 </tr>
 <tr>
@@ -1893,7 +1893,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L358"><a href="#L358">358</a></td>
-<td class="hits">2182</td>
+<td class="hits">7570</td>
 <td class="source"><code>    TLSRequired.</code></td>
 </tr>
 <tr>
@@ -1918,7 +1918,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L363"><a href="#L363">363</a></td>
-<td class="hits">371</td>
+<td class="hits">1269</td>
 <td class="source"><code>    TLSEnabled or TLSRequired or TLSVerify.</code></td>
 </tr>
 <tr>
@@ -1933,7 +1933,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L366"><a href="#L366">366</a></td>
-<td class="hits">351</td>
+<td class="hits">1239</td>
 <td class="source"><code>    [&lt;&lt;"zlib"&gt;&gt;];</code></td>
 </tr>
 <tr>
@@ -1958,7 +1958,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L371"><a href="#L371">371</a></td>
-<td class="hits">371</td>
+<td class="hits">1269</td>
 <td class="source"><code>    ejabberd_hooks:run_fold(c2s_pre_auth_features, LServer, [], [LServer]).</code></td>
 </tr>
 <tr>
@@ -1973,7 +1973,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L374"><a href="#L374">374</a></td>
-<td class="hits">351</td>
+<td class="hits">1239</td>
 <td class="source"><code>    ejabberd_hooks:run_fold(c2s_post_auth_features, LServer, [], [LServer]).</code></td>
 </tr>
 <tr>
@@ -1988,12 +1988,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L377"><a href="#L377">377</a></td>
-<td class="hits">726</td>
+<td class="hits">2514</td>
 <td class="source"><code>    Type = ejabberd_auth:store_type(LServer),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L378"><a href="#L378">378</a></td>
-<td class="hits">726</td>
+<td class="hits">2514</td>
 <td class="source"><code>    Mechs1 = ejabberd_option:disable_sasl_mechanisms(LServer),</code></td>
 </tr>
 <tr>
@@ -2003,22 +2003,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L380"><a href="#L380">380</a></td>
-<td class="hits">726</td>
+<td class="hits">2514</td>
 <td class="source"><code>    ScramHash = ejabberd_option:auth_scram_hash(LServer),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L381"><a href="#L381">381</a></td>
-<td class="hits">726</td>
+<td class="hits">2514</td>
 <td class="source"><code>    ShaAv = Type == plain orelse (Type == scram andalso ScramHash == sha),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L382"><a href="#L382">382</a></td>
-<td class="hits">726</td>
+<td class="hits">2514</td>
 <td class="source"><code>    Sha256Av = Type == plain orelse (Type == scram andalso ScramHash == sha256),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L383"><a href="#L383">383</a></td>
-<td class="hits">726</td>
+<td class="hits">2514</td>
 <td class="source"><code>    Sha512Av = Type == plain orelse (Type == scram andalso ScramHash == sha512),</code></td>
 </tr>
 <tr>
@@ -2033,7 +2033,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L386"><a href="#L386">386</a></td>
-<td class="hits">726</td>
+<td class="hits">2514</td>
 <td class="source"><code>    lists:filter(</code></td>
 </tr>
 <tr>
@@ -2043,52 +2043,52 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L388"><a href="#L388">388</a></td>
-<td class="hits">726</td>
+<td class="hits">2514</td>
 <td class="source"><code>	      ejabberd_auth_anonymous:is_sasl_anonymous_enabled(LServer);</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L389"><a href="#L389">389</a></td>
-<td class="hits">726</td>
+<td class="hits">2514</td>
 <td class="source"><code>	 (&lt;&lt;"DIGEST-MD5"&gt;&gt;) -&gt; Type == plain;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L390"><a href="#L390">390</a></td>
-<td class="hits">726</td>
+<td class="hits">2514</td>
 <td class="source"><code>	 (&lt;&lt;"SCRAM-SHA-1"&gt;&gt;) -&gt; ShaAv;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L391"><a href="#L391">391</a></td>
-<td class="hits">726</td>
+<td class="hits">2514</td>
 <td class="source"><code>	 (&lt;&lt;"SCRAM-SHA-1-PLUS"&gt;&gt;) -&gt; ShaAv andalso Encrypted;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L392"><a href="#L392">392</a></td>
-<td class="hits">726</td>
+<td class="hits">2514</td>
 <td class="source"><code>	 (&lt;&lt;"SCRAM-SHA-256"&gt;&gt;) -&gt; Sha256Av;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L393"><a href="#L393">393</a></td>
-<td class="hits">726</td>
+<td class="hits">2514</td>
 <td class="source"><code>	 (&lt;&lt;"SCRAM-SHA-256-PLUS"&gt;&gt;) -&gt; Sha256Av andalso Encrypted;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L394"><a href="#L394">394</a></td>
-<td class="hits">726</td>
+<td class="hits">2514</td>
 <td class="source"><code>	 (&lt;&lt;"SCRAM-SHA-512"&gt;&gt;) -&gt; Sha512Av;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L395"><a href="#L395">395</a></td>
-<td class="hits">726</td>
+<td class="hits">2514</td>
 <td class="source"><code>	 (&lt;&lt;"SCRAM-SHA-512-PLUS"&gt;&gt;) -&gt; Sha512Av andalso Encrypted;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L396"><a href="#L396">396</a></td>
-<td class="hits">726</td>
+<td class="hits">2514</td>
 <td class="source"><code>	 (&lt;&lt;"PLAIN"&gt;&gt;) -&gt; true;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L397"><a href="#L397">397</a></td>
-<td class="hits">726</td>
+<td class="hits">2514</td>
 <td class="source"><code>	 (&lt;&lt;"X-OAUTH2"&gt;&gt;) -&gt; [ejabberd_auth_anonymous] /= ejabberd_auth:auth_modules(LServer);</code></td>
 </tr>
 <tr class="hit">
@@ -2118,12 +2118,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L403"><a href="#L403">403</a></td>
-<td class="hits">348</td>
+<td class="hits">1238</td>
 <td class="source"><code>    fun(U) -&gt;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L404"><a href="#L404">404</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    ejabberd_auth:get_password_with_authmodule(U, LServer)</code></td>
 </tr>
 <tr>
@@ -2183,12 +2183,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L416"><a href="#L416">416</a></td>
-<td class="hits">348</td>
+<td class="hits">1238</td>
 <td class="source"><code>    fun(U, AuthzId, P) -&gt;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L417"><a href="#L417">417</a></td>
-<td class="hits">333</td>
+<td class="hits">1219</td>
 <td class="source"><code>	    ejabberd_auth:check_password_with_authmodule(U, AuthzId, LServer, P)</code></td>
 </tr>
 <tr>
@@ -2208,12 +2208,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L421"><a href="#L421">421</a></td>
-<td class="hits">348</td>
+<td class="hits">1238</td>
 <td class="source"><code>    fun(U, AuthzId, P, D, DG) -&gt;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L422"><a href="#L422">422</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    ejabberd_auth:check_password_with_authmodule(U, AuthzId, LServer, P, D, DG)</code></td>
 </tr>
 <tr>
@@ -2253,7 +2253,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L430"><a href="#L430">430</a></td>
-<td class="hits">343</td>
+<td class="hits">1229</td>
 <td class="source"><code>    case resource_conflict_action(U, S, R) of</code></td>
 </tr>
 <tr>
@@ -2273,12 +2273,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L434"><a href="#L434">434</a></td>
-<td class="hits">343</td>
+<td class="hits">1229</td>
 <td class="source"><code>	    JID = jid:make(U, S, Resource),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L435"><a href="#L435">435</a></td>
-<td class="hits">343</td>
+<td class="hits">1229</td>
 <td class="source"><code>	    case acl:match_rule(LServer, Access,</code></td>
 </tr>
 <tr>
@@ -2293,7 +2293,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L438"><a href="#L438">438</a></td>
-<td class="hits">343</td>
+<td class="hits">1229</td>
 <td class="source"><code>		    State1 = open_session(State#{resource =&gt; Resource,</code></td>
 </tr>
 <tr>
@@ -2303,7 +2303,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L440"><a href="#L440">440</a></td>
-<td class="hits">343</td>
+<td class="hits">1229</td>
 <td class="source"><code>		    State2 = ejabberd_hooks:run_fold(</code></td>
 </tr>
 <tr>
@@ -2313,17 +2313,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L442"><a href="#L442">442</a></td>
-<td class="hits">343</td>
+<td class="hits">1229</td>
 <td class="source"><code>		    ?INFO_MSG("(~ts) Opened c2s session for ~ts",</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L443"><a href="#L443">443</a></td>
-<td class="hits">343</td>
+<td class="hits">1229</td>
 <td class="source"><code>			      [xmpp_socket:pp(Socket), jid:encode(JID)]),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L444"><a href="#L444">444</a></td>
-<td class="hits">343</td>
+<td class="hits">1229</td>
 <td class="source"><code>		    {ok, State2};</code></td>
 </tr>
 <tr>
@@ -2378,7 +2378,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L455"><a href="#L455">455</a></td>
-<td class="hits">728</td>
+<td class="hits">2534</td>
 <td class="source"><code>    case ejabberd_router:is_my_host(LServer) of</code></td>
 </tr>
 <tr>
@@ -2398,22 +2398,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L459"><a href="#L459">459</a></td>
-<td class="hits">727</td>
+<td class="hits">2533</td>
 <td class="source"><code>	    State1 = change_shaper(State),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L460"><a href="#L460">460</a></td>
-<td class="hits">727</td>
+<td class="hits">2533</td>
 <td class="source"><code>	    Opts = ejabberd_config:codec_options(),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L461"><a href="#L461">461</a></td>
-<td class="hits">727</td>
+<td class="hits">2533</td>
 <td class="source"><code>	    State2 = State1#{codec_options =&gt; Opts},</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L462"><a href="#L462">462</a></td>
-<td class="hits">727</td>
+<td class="hits">2533</td>
 <td class="source"><code>	    ejabberd_hooks:run_fold(</code></td>
 </tr>
 <tr>
@@ -2438,12 +2438,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L467"><a href="#L467">467</a></td>
-<td class="hits">375</td>
+<td class="hits">1293</td>
 <td class="source"><code>    State1 = State#{stop_reason =&gt; Reason},</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L468"><a href="#L468">468</a></td>
-<td class="hits">375</td>
+<td class="hits">1293</td>
 <td class="source"><code>    ejabberd_hooks:run_fold(c2s_closed, LServer, State1, [Reason]).</code></td>
 </tr>
 <tr>
@@ -2463,12 +2463,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L472"><a href="#L472">472</a></td>
-<td class="hits">352</td>
+<td class="hits">1248</td>
 <td class="source"><code>    State1 = State#{auth_module =&gt; AuthModule},</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L473"><a href="#L473">473</a></td>
-<td class="hits">352</td>
+<td class="hits">1248</td>
 <td class="source"><code>    ejabberd_hooks:run_fold(c2s_auth_result, LServer, State1, [true, User]).</code></td>
 </tr>
 <tr>
@@ -2488,7 +2488,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L477"><a href="#L477">477</a></td>
-<td class="hits">7</td>
+<td class="hits">17</td>
 <td class="source"><code>    ejabberd_hooks:run_fold(c2s_auth_result, LServer, State, [{false, Reason}, User]).</code></td>
 </tr>
 <tr>
@@ -2518,7 +2518,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L483"><a href="#L483">483</a></td>
-<td class="hits">15</td>
+<td class="hits">63</td>
 <td class="source"><code>    ejabberd_hooks:run_fold(c2s_unauthenticated_packet, LServer, State, [Pkt]).</code></td>
 </tr>
 <tr>
@@ -2533,7 +2533,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L486"><a href="#L486">486</a></td>
-<td class="hits">11</td>
+<td class="hits">17</td>
 <td class="source"><code>    ejabberd_hooks:run_fold(c2s_authenticated_packet,</code></td>
 </tr>
 <tr>
@@ -2553,12 +2553,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L490"><a href="#L490">490</a></td>
-<td class="hits">5749</td>
+<td class="hits">26614</td>
 <td class="source"><code>    Pkt1 = xmpp:put_meta(Pkt, ip, IP),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L491"><a href="#L491">491</a></td>
-<td class="hits">5749</td>
+<td class="hits">26614</td>
 <td class="source"><code>    State1 = ejabberd_hooks:run_fold(c2s_authenticated_packet,</code></td>
 </tr>
 <tr>
@@ -2568,12 +2568,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L493"><a href="#L493">493</a></td>
-<td class="hits">5749</td>
+<td class="hits">26614</td>
 <td class="source"><code>    #jid{luser = LUser} = JID,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L494"><a href="#L494">494</a></td>
-<td class="hits">5749</td>
+<td class="hits">26614</td>
 <td class="source"><code>    {Pkt2, State2} = ejabberd_hooks:run_fold(</code></td>
 </tr>
 <tr>
@@ -2583,7 +2583,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L496"><a href="#L496">496</a></td>
-<td class="hits">5749</td>
+<td class="hits">26614</td>
 <td class="source"><code>    case Pkt2 of</code></td>
 </tr>
 <tr>
@@ -2603,7 +2603,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L500"><a href="#L500">500</a></td>
-<td class="hits">1002</td>
+<td class="hits">4667</td>
 <td class="source"><code>	    try xmpp:try_subtag(Pkt2, #xmpp_session{}) of</code></td>
 </tr>
 <tr>
@@ -2643,7 +2643,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L508"><a href="#L508">508</a></td>
-<td class="hits">1001</td>
+<td class="hits">4666</td>
 <td class="source"><code>		    check_privacy_then_route(State2, Pkt2)</code></td>
 </tr>
 <tr>
@@ -2688,7 +2688,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L517"><a href="#L517">517</a></td>
-<td class="hits">40</td>
+<td class="hits">168</td>
 <td class="source"><code>	    process_self_presence(State2, Pkt2);</code></td>
 </tr>
 <tr>
@@ -2698,7 +2698,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L519"><a href="#L519">519</a></td>
-<td class="hits">708</td>
+<td class="hits">2942</td>
 <td class="source"><code>	    process_presence_out(State2, Pkt2);</code></td>
 </tr>
 <tr>
@@ -2708,7 +2708,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L521"><a href="#L521">521</a></td>
-<td class="hits">3999</td>
+<td class="hits">18837</td>
 <td class="source"><code>	    check_privacy_then_route(State2, Pkt2)</code></td>
 </tr>
 <tr>
@@ -2748,7 +2748,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L529"><a href="#L529">529</a></td>
-<td class="hits">6488</td>
+<td class="hits">29183</td>
 <td class="source"><code>    ejabberd_hooks:run_fold(c2s_handle_recv, LServer, State, [El, Pkt]).</code></td>
 </tr>
 <tr>
@@ -2763,7 +2763,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L532"><a href="#L532">532</a></td>
-<td class="hits">8430</td>
+<td class="hits">35554</td>
 <td class="source"><code>    ejabberd_hooks:run_fold(c2s_handle_send, LServer, State, [Pkt, Result]).</code></td>
 </tr>
 <tr>
@@ -2778,17 +2778,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L535"><a href="#L535">535</a></td>
-<td class="hits">375</td>
+<td class="hits">1293</td>
 <td class="source"><code>    Access = proplists:get_value(access, Opts, all),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L536"><a href="#L536">536</a></td>
-<td class="hits">375</td>
+<td class="hits">1293</td>
 <td class="source"><code>    Shaper = proplists:get_value(shaper, Opts, none),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L537"><a href="#L537">537</a></td>
-<td class="hits">375</td>
+<td class="hits">1293</td>
 <td class="source"><code>    TLSOpts1 = lists:filter(</code></td>
 </tr>
 <tr class="miss">
@@ -2818,7 +2818,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L543"><a href="#L543">543</a></td>
-<td class="hits">2250</td>
+<td class="hits">7758</td>
 <td class="source"><code>		    (_) -&gt; false</code></td>
 </tr>
 <tr>
@@ -2828,12 +2828,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L545"><a href="#L545">545</a></td>
-<td class="hits">375</td>
+<td class="hits">1293</td>
 <td class="source"><code>    TLSOpts2 = case proplists:get_bool(tls_compression, Opts) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L546"><a href="#L546">546</a></td>
-<td class="hits">375</td>
+<td class="hits">1293</td>
 <td class="source"><code>                   false -&gt; [compression_none | TLSOpts1];</code></td>
 </tr>
 <tr class="miss">
@@ -2848,32 +2848,32 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L549"><a href="#L549">549</a></td>
-<td class="hits">375</td>
+<td class="hits">1293</td>
 <td class="source"><code>    TLSEnabled = proplists:get_bool(starttls, Opts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L550"><a href="#L550">550</a></td>
-<td class="hits">375</td>
+<td class="hits">1293</td>
 <td class="source"><code>    TLSRequired = proplists:get_bool(starttls_required, Opts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L551"><a href="#L551">551</a></td>
-<td class="hits">375</td>
+<td class="hits">1293</td>
 <td class="source"><code>    TLSVerify = proplists:get_bool(tls_verify, Opts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L552"><a href="#L552">552</a></td>
-<td class="hits">375</td>
+<td class="hits">1293</td>
 <td class="source"><code>    Zlib = proplists:get_bool(zlib, Opts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L553"><a href="#L553">553</a></td>
-<td class="hits">375</td>
+<td class="hits">1293</td>
 <td class="source"><code>    Timeout = ejabberd_option:negotiation_timeout(),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L554"><a href="#L554">554</a></td>
-<td class="hits">375</td>
+<td class="hits">1293</td>
 <td class="source"><code>    State1 = State#{tls_options =&gt; TLSOpts2,</code></td>
 </tr>
 <tr>
@@ -2928,12 +2928,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L565"><a href="#L565">565</a></td>
-<td class="hits">375</td>
+<td class="hits">1293</td>
 <td class="source"><code>    State2 = xmpp_stream_in:set_timeout(State1, Timeout),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L566"><a href="#L566">566</a></td>
-<td class="hits">375</td>
+<td class="hits">1293</td>
 <td class="source"><code>    ejabberd_hooks:run_fold(c2s_init, {ok, State2}, [Opts]).</code></td>
 </tr>
 <tr>
@@ -3028,7 +3028,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L585"><a href="#L585">585</a></td>
-<td class="hits">3</td>
+<td class="hits">15</td>
 <td class="source"><code>    ejabberd_hooks:run_fold(c2s_handle_cast, LServer, State, [Msg]).</code></td>
 </tr>
 <tr>
@@ -3043,7 +3043,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L588"><a href="#L588">588</a></td>
-<td class="hits">7155</td>
+<td class="hits">31393</td>
 <td class="source"><code>    ejabberd_hooks:run_fold(c2s_handle_info, LServer, State, [Info]).</code></td>
 </tr>
 <tr>
@@ -3058,7 +3058,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L591"><a href="#L591">591</a></td>
-<td class="hits">375</td>
+<td class="hits">1293</td>
 <td class="source"><code>    ejabberd_hooks:run_fold(c2s_terminated, LServer, State, [Reason]).</code></td>
 </tr>
 <tr>
@@ -3108,7 +3108,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L601"><a href="#L601">601</a></td>
-<td class="hits">2962</td>
+<td class="hits">13989</td>
 <td class="source"><code>    case privacy_check_packet(State, IQ, in) of</code></td>
 </tr>
 <tr>
@@ -3118,7 +3118,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L603"><a href="#L603">603</a></td>
-<td class="hits">2838</td>
+<td class="hits">13369</td>
 <td class="source"><code>	    {true, State};</code></td>
 </tr>
 <tr>
@@ -3128,12 +3128,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L605"><a href="#L605">605</a></td>
-<td class="hits">124</td>
+<td class="hits">620</td>
 <td class="source"><code>	    ejabberd_router:route_error(IQ, xmpp:err_service_unavailable()),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L606"><a href="#L606">606</a></td>
-<td class="hits">124</td>
+<td class="hits">620</td>
 <td class="source"><code>	    {false, State}</code></td>
 </tr>
 <tr>
@@ -3183,7 +3183,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L616"><a href="#L616">616</a></td>
-<td class="hits">2877</td>
+<td class="hits">12757</td>
 <td class="source"><code>    case privacy_check_packet(State, Msg, in) of</code></td>
 </tr>
 <tr>
@@ -3193,7 +3193,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L618"><a href="#L618">618</a></td>
-<td class="hits">2784</td>
+<td class="hits">12292</td>
 <td class="source"><code>	    {true, State};</code></td>
 </tr>
 <tr>
@@ -3213,7 +3213,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L622"><a href="#L622">622</a></td>
-<td class="hits">93</td>
+<td class="hits">465</td>
 <td class="source"><code>	    case xmpp:has_subtag(Msg, #muc_user{}) of</code></td>
 </tr>
 <tr>
@@ -3233,7 +3233,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L626"><a href="#L626">626</a></td>
-<td class="hits">93</td>
+<td class="hits">465</td>
 <td class="source"><code>		    ejabberd_router:route_error(</code></td>
 </tr>
 <tr>
@@ -3248,7 +3248,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L629"><a href="#L629">629</a></td>
-<td class="hits">93</td>
+<td class="hits">465</td>
 <td class="source"><code>	    {false, State}</code></td>
 </tr>
 <tr>
@@ -3278,12 +3278,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L635"><a href="#L635">635</a></td>
-<td class="hits">1295</td>
+<td class="hits">4553</td>
 <td class="source"><code>    State = ejabberd_hooks:run_fold(c2s_presence_in, LServer, State0, [Pres]),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L636"><a href="#L636">636</a></td>
-<td class="hits">1295</td>
+<td class="hits">4553</td>
 <td class="source"><code>    case T of</code></td>
 </tr>
 <tr>
@@ -3293,12 +3293,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L638"><a href="#L638">638</a></td>
-<td class="hits">39</td>
+<td class="hits">155</td>
 <td class="source"><code>	    route_probe_reply(From, State),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L639"><a href="#L639">639</a></td>
-<td class="hits">39</td>
+<td class="hits">155</td>
 <td class="source"><code>	    {false, State};</code></td>
 </tr>
 <tr>
@@ -3308,12 +3308,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L641"><a href="#L641">641</a></td>
-<td class="hits">22</td>
+<td class="hits">74</td>
 <td class="source"><code>	    A = ?SETS:del_element(jid:tolower(From), PresA),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L642"><a href="#L642">642</a></td>
-<td class="hits">22</td>
+<td class="hits">74</td>
 <td class="source"><code>	    {true, State#{pres_a =&gt; A}};</code></td>
 </tr>
 <tr>
@@ -3323,7 +3323,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L644"><a href="#L644">644</a></td>
-<td class="hits">1234</td>
+<td class="hits">4324</td>
 <td class="source"><code>	    case privacy_check_packet(State, Pres, in) of</code></td>
 </tr>
 <tr>
@@ -3333,7 +3333,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L646"><a href="#L646">646</a></td>
-<td class="hits">1172</td>
+<td class="hits">4014</td>
 <td class="source"><code>		    {true, State};</code></td>
 </tr>
 <tr>
@@ -3343,7 +3343,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L648"><a href="#L648">648</a></td>
-<td class="hits">62</td>
+<td class="hits">310</td>
 <td class="source"><code>		    {false, State}</code></td>
 </tr>
 <tr>
@@ -3383,12 +3383,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L656"><a href="#L656">656</a></td>
-<td class="hits">39</td>
+<td class="hits">155</td>
 <td class="source"><code>    {LUser, LServer, LResource} = jid:tolower(To),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L657"><a href="#L657">657</a></td>
-<td class="hits">39</td>
+<td class="hits">155</td>
 <td class="source"><code>    IsAnotherResource = case jid:tolower(From) of</code></td>
 </tr>
 <tr class="hit">
@@ -3398,7 +3398,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L659"><a href="#L659">659</a></td>
-<td class="hits">37</td>
+<td class="hits">153</td>
 <td class="source"><code>			    _ -&gt; false</code></td>
 </tr>
 <tr>
@@ -3408,12 +3408,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L661"><a href="#L661">661</a></td>
-<td class="hits">39</td>
+<td class="hits">155</td>
 <td class="source"><code>    Subscription = get_subscription(To, From),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L662"><a href="#L662">662</a></td>
-<td class="hits">39</td>
+<td class="hits">155</td>
 <td class="source"><code>    if IsAnotherResource orelse</code></td>
 </tr>
 <tr>
@@ -3483,7 +3483,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L676"><a href="#L676">676</a></td>
-<td class="hits">37</td>
+<td class="hits">153</td>
 <td class="source"><code>	    ok</code></td>
 </tr>
 <tr>
@@ -3528,7 +3528,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L685"><a href="#L685">685</a></td>
-<td class="hits">716</td>
+<td class="hits">2982</td>
 <td class="source"><code>    State1 =</code></td>
 </tr>
 <tr>
@@ -3543,17 +3543,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L688"><a href="#L688">688</a></td>
-<td class="hits">196</td>
+<td class="hits">980</td>
 <td class="source"><code>		Access = mod_roster_opt:access(LServer),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L689"><a href="#L689">689</a></td>
-<td class="hits">196</td>
+<td class="hits">980</td>
 <td class="source"><code>		MyBareJID = jid:remove_resource(JID),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L690"><a href="#L690">690</a></td>
-<td class="hits">196</td>
+<td class="hits">980</td>
 <td class="source"><code>		case acl:match_rule(LServer, Access, MyBareJID) of</code></td>
 </tr>
 <tr>
@@ -3583,12 +3583,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L696"><a href="#L696">696</a></td>
-<td class="hits">196</td>
+<td class="hits">980</td>
 <td class="source"><code>			ejabberd_hooks:run(roster_out_subscription, LServer, [Pres]),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L697"><a href="#L697">697</a></td>
-<td class="hits">196</td>
+<td class="hits">980</td>
 <td class="source"><code>			State0</code></td>
 </tr>
 <tr>
@@ -3603,7 +3603,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L700"><a href="#L700">700</a></td>
-<td class="hits">520</td>
+<td class="hits">2002</td>
 <td class="source"><code>		State0</code></td>
 </tr>
 <tr>
@@ -3613,7 +3613,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L702"><a href="#L702">702</a></td>
-<td class="hits">716</td>
+<td class="hits">2982</td>
 <td class="source"><code>    case privacy_check_packet(State1, Pres, out) of</code></td>
 </tr>
 <tr>
@@ -3623,7 +3623,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L704"><a href="#L704">704</a></td>
-<td class="hits">111</td>
+<td class="hits">555</td>
 <td class="source"><code>	    PrivErrTxt = ?T("Your active privacy list has denied "</code></td>
 </tr>
 <tr>
@@ -3633,12 +3633,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L706"><a href="#L706">706</a></td>
-<td class="hits">111</td>
+<td class="hits">555</td>
 <td class="source"><code>	    PrivErr = xmpp:err_not_acceptable(PrivErrTxt, Lang),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L707"><a href="#L707">707</a></td>
-<td class="hits">111</td>
+<td class="hits">555</td>
 <td class="source"><code>	    send_error(State1, Pres, PrivErr);</code></td>
 </tr>
 <tr>
@@ -3653,17 +3653,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L710"><a href="#L710">710</a></td>
-<td class="hits">158</td>
+<td class="hits">790</td>
 <td class="source"><code>	    BareFrom = jid:remove_resource(From),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L711"><a href="#L711">711</a></td>
-<td class="hits">158</td>
+<td class="hits">790</td>
 <td class="source"><code>	    ejabberd_router:route(xmpp:set_from_to(Pres, BareFrom, To)),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L712"><a href="#L712">712</a></td>
-<td class="hits">158</td>
+<td class="hits">790</td>
 <td class="source"><code>	    State1;</code></td>
 </tr>
 <tr>
@@ -3673,12 +3673,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L714"><a href="#L714">714</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>	    ejabberd_router:route(Pres),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L715"><a href="#L715">715</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>	    State1;</code></td>
 </tr>
 <tr>
@@ -3688,52 +3688,52 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L717"><a href="#L717">717</a></td>
-<td class="hits">443</td>
+<td class="hits">1625</td>
 <td class="source"><code>	    ejabberd_router:route(Pres),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L718"><a href="#L718">718</a></td>
-<td class="hits">443</td>
+<td class="hits">1625</td>
 <td class="source"><code>	    LTo = jid:tolower(To),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L719"><a href="#L719">719</a></td>
-<td class="hits">443</td>
+<td class="hits">1625</td>
 <td class="source"><code>	    LBareTo = jid:remove_resource(LTo),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L720"><a href="#L720">720</a></td>
-<td class="hits">443</td>
+<td class="hits">1625</td>
 <td class="source"><code>	    LBareFrom = jid:remove_resource(jid:tolower(From)),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L721"><a href="#L721">721</a></td>
-<td class="hits">443</td>
+<td class="hits">1625</td>
 <td class="source"><code>	    if LBareTo /= LBareFrom -&gt;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L722"><a href="#L722">722</a></td>
-<td class="hits">443</td>
+<td class="hits">1625</td>
 <td class="source"><code>		    Subscription = get_subscription(From, To),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L723"><a href="#L723">723</a></td>
-<td class="hits">443</td>
+<td class="hits">1625</td>
 <td class="source"><code>		    if Subscription /= both andalso Subscription /= from -&gt;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L724"><a href="#L724">724</a></td>
-<td class="hits">307</td>
+<td class="hits">945</td>
 <td class="source"><code>			    A = case Type of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L725"><a href="#L725">725</a></td>
-<td class="hits">169</td>
+<td class="hits">518</td>
 <td class="source"><code>				    available -&gt; ?SETS:add_element(LTo, PresA);</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L726"><a href="#L726">726</a></td>
-<td class="hits">138</td>
+<td class="hits">427</td>
 <td class="source"><code>				    unavailable -&gt; ?SETS:del_element(LTo, PresA)</code></td>
 </tr>
 <tr>
@@ -3743,7 +3743,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L728"><a href="#L728">728</a></td>
-<td class="hits">307</td>
+<td class="hits">945</td>
 <td class="source"><code>			    State1#{pres_a =&gt; A};</code></td>
 </tr>
 <tr>
@@ -3753,7 +3753,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L730"><a href="#L730">730</a></td>
-<td class="hits">136</td>
+<td class="hits">680</td>
 <td class="source"><code>			    State1</code></td>
 </tr>
 <tr>
@@ -3808,17 +3808,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L741"><a href="#L741">741</a></td>
-<td class="hits">3</td>
+<td class="hits">15</td>
 <td class="source"><code>    Status = xmpp:get_text(Pres#presence.status),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L742"><a href="#L742">742</a></td>
-<td class="hits">3</td>
+<td class="hits">15</td>
 <td class="source"><code>    _ = ejabberd_sm:unset_presence(SID, U, S, R, Status),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L743"><a href="#L743">743</a></td>
-<td class="hits">3</td>
+<td class="hits">15</td>
 <td class="source"><code>    {Pres1, State1} = ejabberd_hooks:run_fold(</code></td>
 </tr>
 <tr>
@@ -3828,12 +3828,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L745"><a href="#L745">745</a></td>
-<td class="hits">3</td>
+<td class="hits">15</td>
 <td class="source"><code>    State2 = broadcast_presence_unavailable(State1, Pres1, true),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L746"><a href="#L746">746</a></td>
-<td class="hits">3</td>
+<td class="hits">15</td>
 <td class="source"><code>    maps:remove(pres_last, maps:remove(pres_timestamp, State2));</code></td>
 </tr>
 <tr>
@@ -3848,17 +3848,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L749"><a href="#L749">749</a></td>
-<td class="hits">37</td>
+<td class="hits">153</td>
 <td class="source"><code>    PreviousPres = maps:get(pres_last, State, undefined),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L750"><a href="#L750">750</a></td>
-<td class="hits">37</td>
+<td class="hits">153</td>
 <td class="source"><code>    _ = update_priority(State, Pres),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L751"><a href="#L751">751</a></td>
-<td class="hits">37</td>
+<td class="hits">153</td>
 <td class="source"><code>    {Pres1, State1} = ejabberd_hooks:run_fold(</code></td>
 </tr>
 <tr>
@@ -3868,7 +3868,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L753"><a href="#L753">753</a></td>
-<td class="hits">37</td>
+<td class="hits">153</td>
 <td class="source"><code>    State2 = State1#{pres_last =&gt; Pres1,</code></td>
 </tr>
 <tr>
@@ -3878,12 +3878,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L755"><a href="#L755">755</a></td>
-<td class="hits">37</td>
+<td class="hits">153</td>
 <td class="source"><code>    FromUnavailable = PreviousPres == undefined,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L756"><a href="#L756">756</a></td>
-<td class="hits">37</td>
+<td class="hits">153</td>
 <td class="source"><code>    broadcast_presence_available(State2, Pres1, FromUnavailable);</code></td>
 </tr>
 <tr>
@@ -3918,12 +3918,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L763"><a href="#L763">763</a></td>
-<td class="hits">37</td>
+<td class="hits">153</td>
 <td class="source"><code>    Priority = get_priority_from_presence(Pres),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L764"><a href="#L764">764</a></td>
-<td class="hits">37</td>
+<td class="hits">153</td>
 <td class="source"><code>    ejabberd_sm:set_presence(SID, U, S, R, Priority, Pres).</code></td>
 </tr>
 <tr>
@@ -3948,17 +3948,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L769"><a href="#L769">769</a></td>
-<td class="hits">343</td>
+<td class="hits">1237</td>
 <td class="source"><code>    #jid{luser = LUser, lserver = LServer} = JID,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L770"><a href="#L770">770</a></td>
-<td class="hits">343</td>
+<td class="hits">1237</td>
 <td class="source"><code>    BareJID = jid:tolower(jid:remove_resource(JID)),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L771"><a href="#L771">771</a></td>
-<td class="hits">343</td>
+<td class="hits">1237</td>
 <td class="source"><code>    Items1 = case BroadcastToRoster of</code></td>
 </tr>
 <tr>
@@ -3968,7 +3968,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L773"><a href="#L773">773</a></td>
-<td class="hits">36</td>
+<td class="hits">152</td>
 <td class="source"><code>		    Roster = ejabberd_hooks:run_fold(roster_get, LServer,</code></td>
 </tr>
 <tr>
@@ -3978,7 +3978,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L775"><a href="#L775">775</a></td>
-<td class="hits">36</td>
+<td class="hits">152</td>
 <td class="source"><code>		    lists:foldl(</code></td>
 </tr>
 <tr>
@@ -4018,7 +4018,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L783"><a href="#L783">783</a></td>
-<td class="hits">307</td>
+<td class="hits">1085</td>
 <td class="source"><code>		    #{BareJID =&gt; 1}</code></td>
 </tr>
 <tr>
@@ -4028,7 +4028,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L785"><a href="#L785">785</a></td>
-<td class="hits">343</td>
+<td class="hits">1237</td>
 <td class="source"><code>    Items2 = ?SETS:fold(</code></td>
 </tr>
 <tr>
@@ -4038,7 +4038,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L787"><a href="#L787">787</a></td>
-<td class="hits">16</td>
+<td class="hits">48</td>
 <td class="source"><code>	    maps:put(LJID, 1, Acc)</code></td>
 </tr>
 <tr>
@@ -4053,7 +4053,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L790"><a href="#L790">790</a></td>
-<td class="hits">343</td>
+<td class="hits">1237</td>
 <td class="source"><code>    JIDs = lists:filtermap(</code></td>
 </tr>
 <tr>
@@ -4063,22 +4063,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L792"><a href="#L792">792</a></td>
-<td class="hits">359</td>
+<td class="hits">1285</td>
 <td class="source"><code>	    To = jid:make(LJid),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L793"><a href="#L793">793</a></td>
-<td class="hits">359</td>
+<td class="hits">1285</td>
 <td class="source"><code>	    P = xmpp:set_to(Pres, To),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L794"><a href="#L794">794</a></td>
-<td class="hits">359</td>
+<td class="hits">1285</td>
 <td class="source"><code>	    case privacy_check_packet(State, P, out) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L795"><a href="#L795">795</a></td>
-<td class="hits">359</td>
+<td class="hits">1285</td>
 <td class="source"><code>		allow -&gt; {true, To};</code></td>
 </tr>
 <tr class="miss">
@@ -4098,12 +4098,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L799"><a href="#L799">799</a></td>
-<td class="hits">343</td>
+<td class="hits">1237</td>
 <td class="source"><code>    route_multiple(State, JIDs, Pres),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L800"><a href="#L800">800</a></td>
-<td class="hits">343</td>
+<td class="hits">1237</td>
 <td class="source"><code>    State#{pres_a =&gt; ?SETS:new()}.</code></td>
 </tr>
 <tr>
@@ -4128,22 +4128,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L805"><a href="#L805">805</a></td>
-<td class="hits">37</td>
+<td class="hits">153</td>
 <td class="source"><code>    Probe = #presence{from = JID, type = probe},</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L806"><a href="#L806">806</a></td>
-<td class="hits">37</td>
+<td class="hits">153</td>
 <td class="source"><code>    #jid{luser = LUser, lserver = LServer} = JID,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L807"><a href="#L807">807</a></td>
-<td class="hits">37</td>
+<td class="hits">153</td>
 <td class="source"><code>    BareJID = jid:remove_resource(JID),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L808"><a href="#L808">808</a></td>
-<td class="hits">37</td>
+<td class="hits">153</td>
 <td class="source"><code>    Items = ejabberd_hooks:run_fold(roster_get, LServer,</code></td>
 </tr>
 <tr>
@@ -4153,7 +4153,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L810"><a href="#L810">810</a></td>
-<td class="hits">37</td>
+<td class="hits">153</td>
 <td class="source"><code>    {FJIDs, TJIDs} =</code></td>
 </tr>
 <tr>
@@ -4263,17 +4263,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L832"><a href="#L832">832</a></td>
-<td class="hits">37</td>
+<td class="hits">153</td>
 <td class="source"><code>    route_multiple(State, TJIDs, Probe),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L833"><a href="#L833">833</a></td>
-<td class="hits">37</td>
+<td class="hits">153</td>
 <td class="source"><code>    route_multiple(State, FJIDs, Pres),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L834"><a href="#L834">834</a></td>
-<td class="hits">37</td>
+<td class="hits">153</td>
 <td class="source"><code>    State;</code></td>
 </tr>
 <tr>
@@ -4393,7 +4393,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L858"><a href="#L858">858</a></td>
-<td class="hits">5000</td>
+<td class="hits">23503</td>
 <td class="source"><code>    case privacy_check_packet(State, Pkt, out) of</code></td>
 </tr>
 <tr>
@@ -4403,7 +4403,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L860"><a href="#L860">860</a></td>
-<td class="hits">77</td>
+<td class="hits">385</td>
 <td class="source"><code>            ErrText = ?T("Your active privacy list has denied "</code></td>
 </tr>
 <tr>
@@ -4413,12 +4413,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L862"><a href="#L862">862</a></td>
-<td class="hits">77</td>
+<td class="hits">385</td>
 <td class="source"><code>	    Err = xmpp:err_not_acceptable(ErrText, Lang),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L863"><a href="#L863">863</a></td>
-<td class="hits">77</td>
+<td class="hits">385</td>
 <td class="source"><code>	    send_error(State, Pkt, Err);</code></td>
 </tr>
 <tr>
@@ -4428,12 +4428,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L865"><a href="#L865">865</a></td>
-<td class="hits">4923</td>
+<td class="hits">23118</td>
 <td class="source"><code>	    ejabberd_router:route(Pkt),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L866"><a href="#L866">866</a></td>
-<td class="hits">4923</td>
+<td class="hits">23118</td>
 <td class="source"><code>	    State</code></td>
 </tr>
 <tr>
@@ -4458,7 +4458,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L871"><a href="#L871">871</a></td>
-<td class="hits">13150</td>
+<td class="hits">58842</td>
 <td class="source"><code>    ejabberd_hooks:run_fold(privacy_check_packet, LServer, allow, [State, Pkt, Dir]).</code></td>
 </tr>
 <tr>
@@ -4478,12 +4478,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L875"><a href="#L875">875</a></td>
-<td class="hits">37</td>
+<td class="hits">153</td>
 <td class="source"><code>    case Prio of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L876"><a href="#L876">876</a></td>
-<td class="hits">33</td>
+<td class="hits">149</td>
 <td class="source"><code>	undefined -&gt; 0;</code></td>
 </tr>
 <tr class="hit">
@@ -4513,12 +4513,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L882"><a href="#L882">882</a></td>
-<td class="hits">417</td>
+<td class="hits">1543</td>
 <td class="source"><code>    From = xmpp:get_from(Pkt),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L883"><a href="#L883">883</a></td>
-<td class="hits">417</td>
+<td class="hits">1543</td>
 <td class="source"><code>    ejabberd_router_multicast:route_multicast(From, LServer, JIDs, Pkt, false).</code></td>
 </tr>
 <tr>
@@ -4533,7 +4533,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L886"><a href="#L886">886</a></td>
-<td class="hits">482</td>
+<td class="hits">1780</td>
 <td class="source"><code>    {Subscription, _, _} = ejabberd_hooks:run_fold(</code></td>
 </tr>
 <tr>
@@ -4548,7 +4548,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L889"><a href="#L889">889</a></td>
-<td class="hits">482</td>
+<td class="hits">1780</td>
 <td class="source"><code>    Subscription.</code></td>
 </tr>
 <tr>
@@ -4573,7 +4573,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L894"><a href="#L894">894</a></td>
-<td class="hits">343</td>
+<td class="hits">1229</td>
 <td class="source"><code>    OptionRaw = case ejabberd_sm:is_existing_resource(U, S, R) of</code></td>
 </tr>
 <tr>
@@ -4593,7 +4593,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L898"><a href="#L898">898</a></td>
-<td class="hits">342</td>
+<td class="hits">1228</td>
 <td class="source"><code>			acceptnew</code></td>
 </tr>
 <tr>
@@ -4603,7 +4603,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L900"><a href="#L900">900</a></td>
-<td class="hits">343</td>
+<td class="hits">1229</td>
 <td class="source"><code>    Option = case OptionRaw of</code></td>
 </tr>
 <tr class="miss">
@@ -4623,7 +4623,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L904"><a href="#L904">904</a></td>
-<td class="hits">343</td>
+<td class="hits">1229</td>
 <td class="source"><code>		 acceptnew -&gt; acceptnew</code></td>
 </tr>
 <tr>
@@ -4633,12 +4633,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L906"><a href="#L906">906</a></td>
-<td class="hits">343</td>
+<td class="hits">1229</td>
 <td class="source"><code>    case Option of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L907"><a href="#L907">907</a></td>
-<td class="hits">343</td>
+<td class="hits">1229</td>
 <td class="source"><code>	acceptnew -&gt; {accept_resource, R};</code></td>
 </tr>
 <tr class="miss">
@@ -4683,17 +4683,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L916"><a href="#L916">916</a></td>
-<td class="hits">341</td>
+<td class="hits">1223</td>
 <td class="source"><code>    {U, S, R} = jid:tolower(JID),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L917"><a href="#L917">917</a></td>
-<td class="hits">341</td>
+<td class="hits">1223</td>
 <td class="source"><code>    SIDs = ejabberd_sm:get_session_sids(U, S, R),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L918"><a href="#L918">918</a></td>
-<td class="hits">341</td>
+<td class="hits">1223</td>
 <td class="source"><code>    case lists:member(SID, SIDs) of</code></td>
 </tr>
 <tr>
@@ -4728,7 +4728,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L925"><a href="#L925">925</a></td>
-<td class="hits">341</td>
+<td class="hits">1223</td>
 <td class="source"><code>	    receive {route, Pkt} -&gt;</code></td>
 </tr>
 <tr class="miss">
@@ -4748,7 +4748,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L929"><a href="#L929">929</a></td>
-<td class="hits">340</td>
+<td class="hits">1222</td>
 <td class="source"><code>		    ok</code></td>
 </tr>
 <tr>
@@ -4813,12 +4813,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L942"><a href="#L942">942</a></td>
-<td class="hits">345</td>
+<td class="hits">1231</td>
 <td class="source"><code>    case xmpp_stream_in:get_transport(State) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L943"><a href="#L943">943</a></td>
-<td class="hits">345</td>
+<td class="hits">1231</td>
 <td class="source"><code>	tcp -&gt; c2s;</code></td>
 </tr>
 <tr class="miss">
@@ -4868,12 +4868,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L953"><a href="#L953">953</a></td>
-<td class="hits">6824</td>
+<td class="hits">29769</td>
 <td class="source"><code>    #jid{luser = U, lserver = S, lresource = R} = JID,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L954"><a href="#L954">954</a></td>
-<td class="hits">6824</td>
+<td class="hits">29769</td>
 <td class="source"><code>    case xmpp:get_from(Pkt) of</code></td>
 </tr>
 <tr>
@@ -4893,22 +4893,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L958"><a href="#L958">958</a></td>
-<td class="hits">6824</td>
+<td class="hits">29769</td>
 <td class="source"><code>	    From1 = case jid:tolower(From) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L959"><a href="#L959">959</a></td>
-<td class="hits">40</td>
+<td class="hits">169</td>
 <td class="source"><code>			{U, S, R} -&gt; JID;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L960"><a href="#L960">960</a></td>
-<td class="hits">1850</td>
+<td class="hits">9152</td>
 <td class="source"><code>			{U, S, _} -&gt; jid:replace_resource(JID, From#jid.resource);</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L961"><a href="#L961">961</a></td>
-<td class="hits">4934</td>
+<td class="hits">20448</td>
 <td class="source"><code>			_ -&gt; From</code></td>
 </tr>
 <tr>
@@ -4918,17 +4918,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L963"><a href="#L963">963</a></td>
-<td class="hits">6824</td>
+<td class="hits">29769</td>
 <td class="source"><code>	    To1 = case xmpp:get_to(Pkt) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L964"><a href="#L964">964</a></td>
-<td class="hits">330</td>
+<td class="hits">1650</td>
 <td class="source"><code>			#jid{lresource = &lt;&lt;&gt;&gt;} = To2 -&gt; To2;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L965"><a href="#L965">965</a></td>
-<td class="hits">6494</td>
+<td class="hits">28119</td>
 <td class="source"><code>			_ -&gt; JID</code></td>
 </tr>
 <tr>
@@ -4938,7 +4938,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L967"><a href="#L967">967</a></td>
-<td class="hits">6824</td>
+<td class="hits">29769</td>
 <td class="source"><code>	    xmpp:set_from_to(Pkt, From1, To1)</code></td>
 </tr>
 <tr>
@@ -4953,7 +4953,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L970"><a href="#L970">970</a></td>
-<td class="hits">30</td>
+<td class="hits">79</td>
 <td class="source"><code>    Pkt.</code></td>
 </tr>
 <tr>
@@ -4978,12 +4978,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L975"><a href="#L975">975</a></td>
-<td class="hits">1071</td>
+<td class="hits">3763</td>
 <td class="source"><code>    JID = jid:make(U, S, R),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L976"><a href="#L976">976</a></td>
-<td class="hits">1071</td>
+<td class="hits">3763</td>
 <td class="source"><code>    Shaper = ejabberd_shaper:match(LServer, ShaperName,</code></td>
 </tr>
 <tr>
@@ -4993,7 +4993,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L978"><a href="#L978">978</a></td>
-<td class="hits">1071</td>
+<td class="hits">3763</td>
 <td class="source"><code>    xmpp_stream_in:change_shaper(State, ejabberd_shaper:new(Shaper)).</code></td>
 </tr>
 <tr>
@@ -5013,7 +5013,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L982"><a href="#L982">982</a></td>
-<td class="hits">344</td>
+<td class="hits">1230</td>
 <td class="source"><code>    xmpp_stream_in:format_error(Reason);</code></td>
 </tr>
 <tr>

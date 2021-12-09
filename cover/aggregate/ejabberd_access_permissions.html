@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/ejabberd_access_permissions.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_access_permissions.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:04</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_access_permissions.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:31</p></footer>
 <table>
 <tbody>
 <tr>
@@ -478,32 +478,32 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L75"><a href="#L75">75</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    Defs0 = show_current_definitions(),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L76"><a href="#L76">76</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    CallerModule = maps:get(caller_module, CallerInfo, none),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L77"><a href="#L77">77</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    Host = maps:get(caller_host, CallerInfo, global),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L78"><a href="#L78">78</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    Tag = maps:get(tag, CallerInfo, none),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L79"><a href="#L79">79</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    Defs = maps:get(extra_permissions, CallerInfo, []) ++ Defs0,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L80"><a href="#L80">80</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    Res = lists:foldl(</code></td>
 </tr>
 <tr>
@@ -513,7 +513,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L82"><a href="#L82">82</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>	    case matches_definition(Def, Cmd, CallerModule, Tag, Host, CallerInfo) of</code></td>
 </tr>
 <tr>
@@ -523,17 +523,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L84"><a href="#L84">84</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>		    ?DEBUG("Command '~p' execution allowed by rule "</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L85"><a href="#L85">85</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>			   "'~ts' (CallerInfo=~p)", [Cmd, Name, CallerInfo]),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L86"><a href="#L86">86</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>		    allow;</code></td>
 </tr>
 <tr>
@@ -543,7 +543,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L88"><a href="#L88">88</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>		    none</code></td>
 </tr>
 <tr>
@@ -568,12 +568,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L93"><a href="#L93">93</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    case Res of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L94"><a href="#L94">94</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>	allow -&gt; allow;</code></td>
 </tr>
 <tr>
@@ -618,12 +618,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L103"><a href="#L103">103</a></td>
-<td class="hits">36</td>
+<td class="hits">42</td>
 <td class="source"><code>    gen_server:cast(?MODULE, invalidate),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L104"><a href="#L104">104</a></td>
-<td class="hits">36</td>
+<td class="hits">42</td>
 <td class="source"><code>    ets_cache:delete(?CACHE_TAB, definitions).</code></td>
 </tr>
 <tr>
@@ -643,7 +643,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L108"><a href="#L108">108</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    ets_cache:lookup(?CACHE_TAB, definitions,</code></td>
 </tr>
 <tr>
@@ -783,7 +783,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L136"><a href="#L136">136</a></td>
-<td class="hits">36</td>
+<td class="hits">42</td>
 <td class="source"><code>    {noreply, State#state{definitions = none}};</code></td>
 </tr>
 <tr>
@@ -998,7 +998,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L179"><a href="#L179">179</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>    case What == all orelse lists:member(Cmd, What) of</code></td>
 </tr>
 <tr>
@@ -1008,17 +1008,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L181"><a href="#L181">181</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>	    {Tags, Modules} = lists:partition(fun({tag, _}) -&gt; true; (_) -&gt; false end, From),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L182"><a href="#L182">182</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>	    case (Modules == [] orelse lists:member(Module, Modules)) andalso</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L183"><a href="#L183">183</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>		 (Tags == [] orelse lists:member({tag, Tag}, Tags)) of</code></td>
 </tr>
 <tr>
@@ -1028,12 +1028,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L185"><a href="#L185">185</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>		    Scope = maps:get(oauth_scope, CallerInfo, none),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L186"><a href="#L186">186</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>		    lists:any(</code></td>
 </tr>
 <tr>
@@ -1053,7 +1053,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L190"><a href="#L190">190</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>			      acl:match_acl(Host, Acl, CallerInfo);</code></td>
 </tr>
 <tr>
@@ -1158,7 +1158,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L211"><a href="#L211">211</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>		    false</code></td>
 </tr>
 <tr>

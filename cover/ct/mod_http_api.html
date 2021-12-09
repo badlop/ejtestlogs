@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/ct/mod_http_api.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_http_api.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:06</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_http_api.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:34</p></footer>
 <table>
 <tbody>
 <tr>
@@ -573,7 +573,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L94"><a href="#L94">94</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    Info = case HTTPAuth of</code></td>
 </tr>
 <tr>
@@ -688,7 +688,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L117"><a href="#L117">117</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>		   #{}</code></td>
 </tr>
 <tr>
@@ -698,7 +698,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L119"><a href="#L119">119</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    case Info of</code></td>
 </tr>
 <tr>
@@ -708,12 +708,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L121"><a href="#L121">121</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>	    Tag = proplists:get_value(tag, Opts, &lt;&lt;&gt;&gt;),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L122"><a href="#L122">122</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>	    Map#{caller_module =&gt; ?MODULE, ip =&gt; IP, tag =&gt; Tag};</code></td>
 </tr>
 <tr>
@@ -793,27 +793,27 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L138"><a href="#L138">138</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    Version = get_api_version(Req),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L139"><a href="#L139">139</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    try</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L140"><a href="#L140">140</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>        Args = extract_args(Data),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L141"><a href="#L141">141</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>        log(Call, Args, IPPort),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L142"><a href="#L142">142</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>	perform_call(Call, Args, Req, Version)</code></td>
 </tr>
 <tr>
@@ -1013,7 +1013,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L182"><a href="#L182">182</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    case catch binary_to_existing_atom(Command, utf8) of</code></td>
 </tr>
 <tr>
@@ -1023,7 +1023,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L184"><a href="#L184">184</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>	    case extract_auth(Req) of</code></td>
 </tr>
 <tr class="miss">
@@ -1048,12 +1048,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L189"><a href="#L189">189</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>		    Result = handle(Call, Auth, Args, Version),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L190"><a href="#L190">190</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>		    json_format(Result)</code></td>
 </tr>
 <tr>
@@ -1098,7 +1098,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L199"><a href="#L199">199</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    case jiffy:decode(Data) of</code></td>
 </tr>
 <tr class="miss">
@@ -1108,7 +1108,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L201"><a href="#L201">201</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>        {List} when is_list(List) -&gt; List;</code></td>
 </tr>
 <tr class="miss">
@@ -1138,7 +1138,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L207"><a href="#L207">207</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    get_api_version(lists:reverse(Path));</code></td>
 </tr>
 <tr>
@@ -1183,7 +1183,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L216"><a href="#L216">216</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>    get_api_version(Tail);</code></td>
 </tr>
 <tr>
@@ -1193,7 +1193,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L218"><a href="#L218">218</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    ?DEFAULT_API_VERSION.</code></td>
 </tr>
 <tr>
@@ -1243,12 +1243,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L228"><a href="#L228">228</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    Args2 = [{misc:binary_to_atom(Key), Value} || {Key, Value} &lt;- Args],</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L229"><a href="#L229">229</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    try handle2(Call, Auth, Args2, Version)</code></td>
 </tr>
 <tr>
@@ -1433,17 +1433,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L266"><a href="#L266">266</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    {ArgsF, ArgsR, _ResultF} = ejabberd_commands:get_command_format(Call, Auth, Version),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L267"><a href="#L267">267</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    ArgsFormatted = format_args(Call, rename_old_args(Args, ArgsR), ArgsF),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L268"><a href="#L268">268</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    case ejabberd_commands:execute_command2(Call, ArgsFormatted, Auth, Version) of</code></td>
 </tr>
 <tr>
@@ -1463,7 +1463,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L272"><a href="#L272">272</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>	    format_command_result(Call, Auth, Res, Version)</code></td>
 </tr>
 <tr>
@@ -1483,7 +1483,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L276"><a href="#L276">276</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    Args;</code></td>
 </tr>
 <tr>
@@ -1538,12 +1538,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L287"><a href="#L287">287</a></td>
-<td class="hits">8</td>
+<td class="hits">24</td>
 <td class="source"><code>    case proplists:get_all_values(A, L) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L288"><a href="#L288">288</a></td>
-<td class="hits">8</td>
+<td class="hits">24</td>
 <td class="source"><code>      [Value] -&gt; {Value, proplists:delete(A, L)};</code></td>
 </tr>
 <tr>
@@ -1638,7 +1638,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L307"><a href="#L307">307</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    {ArgsRemaining, R} = lists:foldl(fun ({ArgName,</code></td>
 </tr>
 <tr>
@@ -1653,7 +1653,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L310"><a href="#L310">310</a></td>
-<td class="hits">8</td>
+<td class="hits">24</td>
 <td class="source"><code>					     {ArgValue, Args2} =</code></td>
 </tr>
 <tr>
@@ -1668,7 +1668,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L313"><a href="#L313">313</a></td>
-<td class="hits">8</td>
+<td class="hits">24</td>
 <td class="source"><code>					     Formatted = format_arg(ArgValue,</code></td>
 </tr>
 <tr>
@@ -1678,7 +1678,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L315"><a href="#L315">315</a></td>
-<td class="hits">8</td>
+<td class="hits">24</td>
 <td class="source"><code>					     {Args2, Res ++ [Formatted]}</code></td>
 </tr>
 <tr>
@@ -1693,12 +1693,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L318"><a href="#L318">318</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    case ArgsRemaining of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L319"><a href="#L319">319</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>      [] -&gt; R;</code></td>
 </tr>
 <tr>
@@ -1973,7 +1973,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L374"><a href="#L374">374</a></td>
-<td class="hits">8</td>
+<td class="hits">24</td>
 <td class="source"><code>format_arg(Arg, binary) when is_binary(Arg) -&gt; Arg;</code></td>
 </tr>
 <tr class="miss">
@@ -2078,12 +2078,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L395"><a href="#L395">395</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    {_, _, ResultFormat} = ejabberd_commands:get_command_format(Cmd, Auth, Version),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L396"><a href="#L396">396</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    case {ResultFormat, Result} of</code></td>
 </tr>
 <tr>
@@ -2093,7 +2093,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L398"><a href="#L398">398</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>	    {200, 0};</code></td>
 </tr>
 <tr>
@@ -2563,7 +2563,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L492"><a href="#L492">492</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    json_response(Code, jiffy:encode(Result));</code></td>
 </tr>
 <tr>
@@ -2588,7 +2588,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L497"><a href="#L497">497</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    {Code, ?HEADER(?CT_JSON), Body}.</code></td>
 </tr>
 <tr>
@@ -2648,12 +2648,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L509"><a href="#L509">509</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    AddrS = misc:ip_to_list({Addr, Port}),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L510"><a href="#L510">510</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    ?INFO_MSG("API call ~ts ~p from ~ts:~p", [Call, hide_sensitive_args(Args), AddrS, Port]);</code></td>
 </tr>
 <tr>
@@ -2678,7 +2678,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L515"><a href="#L515">515</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    lists:map( fun({&lt;&lt;"password"&gt;&gt;, Password}) -&gt; {&lt;&lt;"password"&gt;&gt;, ejabberd_config:may_hide_data(Password)};</code></td>
 </tr>
 <tr class="miss">
@@ -2688,7 +2688,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L517"><a href="#L517">517</a></td>
-<td class="hits">8</td>
+<td class="hits">24</td>
 <td class="source"><code>         (E) -&gt; E end,</code></td>
 </tr>
 <tr>

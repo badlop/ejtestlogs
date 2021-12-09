@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/mod_roster_sql.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_roster_sql.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:03</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_roster_sql.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:31</p></footer>
 <table>
 <tbody>
 <tr>
@@ -336,9 +336,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>init(_Host, _Opts) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L47"><a href="#L47">47</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    ok.</code></td>
 </tr>
 <tr>
@@ -351,9 +351,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>read_roster_version(LUser, LServer) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L50"><a href="#L50">50</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1191</td>
 <td class="source"><code>    case ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -361,9 +361,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	   LServer,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L52"><a href="#L52">52</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1191</td>
 <td class="source"><code>	   ?SQL("select @(version)s from roster_version"</code></td>
 </tr>
 <tr>
@@ -371,9 +371,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		" where username = %(LUser)s and %(LServer)H")) of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L54"><a href="#L54">54</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1191</td>
 <td class="source"><code>	{selected, [{Version}]} -&gt; {ok, Version};</code></td>
 </tr>
 <tr class="miss">
@@ -401,14 +401,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>write_roster_version(LUser, LServer, InTransaction, Ver) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L60"><a href="#L60">60</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">537</td>
 <td class="source"><code>    if InTransaction -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L61"><a href="#L61">61</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">537</td>
 <td class="source"><code>	    set_roster_version(LUser, LServer, Ver);</code></td>
 </tr>
 <tr>
@@ -446,9 +446,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_roster(LUser, LServer) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L69"><a href="#L69">69</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1209</td>
 <td class="source"><code>    case ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -456,9 +456,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	   LServer,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L71"><a href="#L71">71</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1209</td>
 <td class="source"><code>	   ?SQL("select @(username)s, @(jid)s, @(nick)s, @(subscription)s, "</code></td>
 </tr>
 <tr>
@@ -481,9 +481,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>        {selected, Items} when is_list(Items) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L76"><a href="#L76">76</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1209</td>
 <td class="source"><code>            JIDGroups = case get_roster_jid_groups(LServer, LUser) of</code></td>
 </tr>
 <tr>
@@ -491,9 +491,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                            {selected, JGrps} when is_list(JGrps) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L78"><a href="#L78">78</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1209</td>
 <td class="source"><code>                                JGrps;</code></td>
 </tr>
 <tr>
@@ -511,19 +511,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                        end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L82"><a href="#L82">82</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1209</td>
 <td class="source"><code>            GroupsDict = lists:foldl(fun({J, G}, Acc) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L83"><a href="#L83">83</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">21</td>
 <td class="source"><code>                                             Gs = maps:get(J, Acc, []),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L84"><a href="#L84">84</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">21</td>
 <td class="source"><code>                                             maps:put(J, [G | Gs], Acc)</code></td>
 </tr>
 <tr>
@@ -536,9 +536,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                                     maps:new(), JIDGroups),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L87"><a href="#L87">87</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1209</td>
 <td class="source"><code>	    {ok, lists:flatmap(</code></td>
 </tr>
 <tr>
@@ -546,9 +546,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		   fun(I) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L89"><a href="#L89">89</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">795</td>
 <td class="source"><code>			   case raw_to_record(LServer, I) of</code></td>
 </tr>
 <tr>
@@ -566,19 +566,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>			       R -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L93"><a href="#L93">93</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">795</td>
 <td class="source"><code>				   SJID = jid:encode(R#roster.jid),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L94"><a href="#L94">94</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">795</td>
 <td class="source"><code>                                   Groups = maps:get(SJID, GroupsDict, []),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L95"><a href="#L95">95</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">795</td>
 <td class="source"><code>				   [R#roster{groups = Groups}]</code></td>
 </tr>
 <tr>
@@ -616,14 +616,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>roster_subscribe(_LUser, _LServer, _LJID, Item) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L103"><a href="#L103">103</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">402</td>
 <td class="source"><code>    ItemVals = record_to_row(Item),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L104"><a href="#L104">104</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">402</td>
 <td class="source"><code>    roster_subscribe(ItemVals).</code></td>
 </tr>
 <tr>
@@ -636,9 +636,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>transaction(LServer, F) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L107"><a href="#L107">107</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1461</td>
 <td class="source"><code>    ejabberd_sql:sql_transaction(LServer, F).</code></td>
 </tr>
 <tr>
@@ -651,14 +651,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_roster_item(LUser, LServer, LJID) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L110"><a href="#L110">110</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1275</td>
 <td class="source"><code>    SJID = jid:encode(LJID),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L111"><a href="#L111">111</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1275</td>
 <td class="source"><code>    case get_roster_by_jid(LServer, LUser, SJID) of</code></td>
 </tr>
 <tr>
@@ -666,9 +666,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{selected, [I]} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L113"><a href="#L113">113</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">882</td>
 <td class="source"><code>            case raw_to_record(LServer, I) of</code></td>
 </tr>
 <tr>
@@ -686,9 +686,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		R -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L117"><a href="#L117">117</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">882</td>
 <td class="source"><code>		    Groups = case get_roster_groups(LServer, LUser, SJID) of</code></td>
 </tr>
 <tr>
@@ -696,9 +696,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>				 {selected, JGrps} when is_list(JGrps) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L119"><a href="#L119">119</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">882</td>
 <td class="source"><code>				     [JGrp || {JGrp} &lt;- JGrps];</code></td>
 </tr>
 <tr class="miss">
@@ -711,9 +711,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>			     end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L122"><a href="#L122">122</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">882</td>
 <td class="source"><code>		    {ok, R#roster{groups = Groups}}</code></td>
 </tr>
 <tr>
@@ -726,9 +726,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{selected, []} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L125"><a href="#L125">125</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">393</td>
 <td class="source"><code>	    error</code></td>
 </tr>
 <tr>
@@ -746,9 +746,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>remove_user(LUser, LServer) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L129"><a href="#L129">129</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    transaction(</code></td>
 </tr>
 <tr>
@@ -761,14 +761,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      fun () -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L132"><a href="#L132">132</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>              ejabberd_sql:sql_query_t(</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L133"><a href="#L133">133</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>                ?SQL("delete from rosterusers"</code></td>
 </tr>
 <tr>
@@ -776,14 +776,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                     " where username=%(LUser)s and %(LServer)H")),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L135"><a href="#L135">135</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>              ejabberd_sql:sql_query_t(</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L136"><a href="#L136">136</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>                ?SQL("delete from rostergroups"</code></td>
 </tr>
 <tr>
@@ -796,9 +796,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      end),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L139"><a href="#L139">139</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    ok.</code></td>
 </tr>
 <tr>
@@ -811,34 +811,34 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>update_roster(LUser, LServer, LJID, Item) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L142"><a href="#L142">142</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">99</td>
 <td class="source"><code>    SJID = jid:encode(LJID),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L143"><a href="#L143">143</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">99</td>
 <td class="source"><code>    ItemVals = record_to_row(Item),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L144"><a href="#L144">144</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">99</td>
 <td class="source"><code>    ItemGroups = Item#roster.groups,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L145"><a href="#L145">145</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">99</td>
 <td class="source"><code>    roster_subscribe(ItemVals),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L146"><a href="#L146">146</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">99</td>
 <td class="source"><code>    ejabberd_sql:sql_query_t(</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L147"><a href="#L147">147</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">99</td>
 <td class="source"><code>      ?SQL("delete from rostergroups"</code></td>
 </tr>
 <tr>
@@ -846,9 +846,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>           " where username=%(LUser)s and %(LServer)H and jid=%(SJID)s")),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L149"><a href="#L149">149</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">99</td>
 <td class="source"><code>    lists:foreach(</code></td>
 </tr>
 <tr>
@@ -856,14 +856,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      fun(ItemGroup) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L151"><a href="#L151">151</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>              ejabberd_sql:sql_query_t(</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L152"><a href="#L152">152</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>                ?SQL_INSERT(</code></td>
 </tr>
 <tr>
@@ -911,19 +911,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>del_roster(LUser, LServer, LJID) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L162"><a href="#L162">162</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">258</td>
 <td class="source"><code>    SJID = jid:encode(LJID),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L163"><a href="#L163">163</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">258</td>
 <td class="source"><code>    ejabberd_sql:sql_query_t(</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L164"><a href="#L164">164</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">258</td>
 <td class="source"><code>      ?SQL("delete from rosterusers"</code></td>
 </tr>
 <tr>
@@ -931,14 +931,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>           " where username=%(LUser)s and %(LServer)H and jid=%(SJID)s")),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L166"><a href="#L166">166</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">258</td>
 <td class="source"><code>    ejabberd_sql:sql_query_t(</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L167"><a href="#L167">167</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">258</td>
 <td class="source"><code>      ?SQL("delete from rostergroups"</code></td>
 </tr>
 <tr>
@@ -1186,9 +1186,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>set_roster_version(LUser, LServer, Version) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L217"><a href="#L217">217</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">537</td>
 <td class="source"><code>    ?SQL_UPSERT_T(</code></td>
 </tr>
 <tr>
@@ -1221,9 +1221,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_roster_jid_groups(LServer, LUser) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L224"><a href="#L224">224</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1209</td>
 <td class="source"><code>    ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -1231,9 +1231,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      LServer,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L226"><a href="#L226">226</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1209</td>
 <td class="source"><code>      ?SQL("select @(jid)s, @(grp)s from rostergroups where "</code></td>
 </tr>
 <tr>
@@ -1251,14 +1251,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_roster_groups(LServer, LUser, SJID) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L230"><a href="#L230">230</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">882</td>
 <td class="source"><code>    ejabberd_sql:sql_query_t(</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L231"><a href="#L231">231</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">882</td>
 <td class="source"><code>      ?SQL("select @(grp)s from rostergroups"</code></td>
 </tr>
 <tr>
@@ -1276,9 +1276,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>roster_subscribe({LUser, LServer, SJID, Name, SSubscription, SAsk, AskMessage}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L235"><a href="#L235">235</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">501</td>
 <td class="source"><code>    ?SQL_UPSERT_T(</code></td>
 </tr>
 <tr>
@@ -1346,14 +1346,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_roster_by_jid(LServer, LUser, SJID) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L249"><a href="#L249">249</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1275</td>
 <td class="source"><code>    ejabberd_sql:sql_query_t(</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L250"><a href="#L250">250</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1275</td>
 <td class="source"><code>      ?SQL("select @(username)s, @(jid)s, @(nick)s, @(subscription)s,"</code></td>
 </tr>
 <tr>
@@ -1616,9 +1616,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	       _SServer, _SSubscribe, _SType}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L303"><a href="#L303">303</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1677</td>
 <td class="source"><code>    raw_to_record(LServer,</code></td>
 </tr>
 <tr>
@@ -1646,9 +1646,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	       _SServer, _SSubscribe, _SType}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L309"><a href="#L309">309</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1677</td>
 <td class="source"><code>    try jid:decode(SJID) of</code></td>
 </tr>
 <tr>
@@ -1656,24 +1656,24 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      JID -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L311"><a href="#L311">311</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1677</td>
 <td class="source"><code>	  LJID = jid:tolower(JID),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L312"><a href="#L312">312</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1677</td>
 <td class="source"><code>	  Subscription = decode_subscription(User, LServer, SSubscription),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L313"><a href="#L313">313</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1677</td>
 <td class="source"><code>	  Ask = decode_ask(User, LServer, SAsk),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L314"><a href="#L314">314</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1677</td>
 <td class="source"><code>	  #roster{usj = {User, LServer, LJID},</code></td>
 </tr>
 <tr>
@@ -1736,34 +1736,34 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>          ask = Ask, askmessage = AskMessage}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L327"><a href="#L327">327</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">501</td>
 <td class="source"><code>    SJID = jid:encode(jid:tolower(JID)),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L328"><a href="#L328">328</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">501</td>
 <td class="source"><code>    SSubscription = case Subscription of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L329"><a href="#L329">329</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">102</td>
 <td class="source"><code>		      both -&gt; &lt;&lt;"B"&gt;&gt;;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L330"><a href="#L330">330</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">39</td>
 <td class="source"><code>		      to -&gt; &lt;&lt;"T"&gt;&gt;;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L331"><a href="#L331">331</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">69</td>
 <td class="source"><code>		      from -&gt; &lt;&lt;"F"&gt;&gt;;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L332"><a href="#L332">332</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">291</td>
 <td class="source"><code>		      none -&gt; &lt;&lt;"N"&gt;&gt;</code></td>
 </tr>
 <tr>
@@ -1771,9 +1771,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		    end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L334"><a href="#L334">334</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">501</td>
 <td class="source"><code>    SAsk = case Ask of</code></td>
 </tr>
 <tr class="miss">
@@ -1786,24 +1786,24 @@ td.source {
 <td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>	     unsubscribe -&gt; &lt;&lt;"U"&gt;&gt;;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L337"><a href="#L337">337</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">15</td>
 <td class="source"><code>	     both -&gt; &lt;&lt;"B"&gt;&gt;;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L338"><a href="#L338">338</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">99</td>
 <td class="source"><code>	     out -&gt; &lt;&lt;"O"&gt;&gt;;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L339"><a href="#L339">339</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">78</td>
 <td class="source"><code>	     in -&gt; &lt;&lt;"I"&gt;&gt;;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L340"><a href="#L340">340</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">309</td>
 <td class="source"><code>	     none -&gt; &lt;&lt;"N"&gt;&gt;</code></td>
 </tr>
 <tr>
@@ -1811,9 +1811,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	   end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L342"><a href="#L342">342</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">501</td>
 <td class="source"><code>    {LUser, LServer, SJID, Name, SSubscription, SAsk, AskMessage}.</code></td>
 </tr>
 <tr>
@@ -1826,29 +1826,29 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>decode_subscription(User, Server, S) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L345"><a href="#L345">345</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1677</td>
 <td class="source"><code>    case S of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L346"><a href="#L346">346</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">222</td>
 <td class="source"><code>	&lt;&lt;"B"&gt;&gt; -&gt; both;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L347"><a href="#L347">347</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">126</td>
 <td class="source"><code>	&lt;&lt;"T"&gt;&gt; -&gt; to;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L348"><a href="#L348">348</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">174</td>
 <td class="source"><code>	&lt;&lt;"F"&gt;&gt; -&gt; from;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L349"><a href="#L349">349</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1155</td>
 <td class="source"><code>	&lt;&lt;"N"&gt;&gt; -&gt; none;</code></td>
 </tr>
 <tr class="miss">
@@ -1886,9 +1886,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>decode_ask(User, Server, A) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L357"><a href="#L357">357</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1677</td>
 <td class="source"><code>    case A of</code></td>
 </tr>
 <tr class="miss">
@@ -1901,24 +1901,24 @@ td.source {
 <td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>	&lt;&lt;"U"&gt;&gt; -&gt; unsubscribe;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L360"><a href="#L360">360</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">54</td>
 <td class="source"><code>	&lt;&lt;"B"&gt;&gt; -&gt; both;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L361"><a href="#L361">361</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">360</td>
 <td class="source"><code>	&lt;&lt;"O"&gt;&gt; -&gt; out;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L362"><a href="#L362">362</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">354</td>
 <td class="source"><code>	&lt;&lt;"I"&gt;&gt; -&gt; in;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L363"><a href="#L363">363</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">909</td>
 <td class="source"><code>	&lt;&lt;"N"&gt;&gt; -&gt; none;</code></td>
 </tr>
 <tr class="miss">

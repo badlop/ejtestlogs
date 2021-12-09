@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/ejabberd_sql.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_sql.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:01</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_sql.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:30</p></footer>
 <table>
 <tbody>
 <tr>
@@ -651,14 +651,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>start_link(Host, I) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L110"><a href="#L110">110</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    Proc = binary_to_atom(get_worker_name(Host, I), utf8),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L111"><a href="#L111">111</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    p1_fsm:start_link({local, Proc}, ?MODULE, [Host],</code></td>
 </tr>
 <tr>
@@ -681,9 +681,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>sql_query(Host, Query) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L116"><a href="#L116">116</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">15055</td>
 <td class="source"><code>    sql_call(Host, {sql_query, Query}).</code></td>
 </tr>
 <tr>
@@ -726,14 +726,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>    when is_list(Queries) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L125"><a href="#L125">125</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>    F = fun () -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L126"><a href="#L126">126</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>		lists:foreach(fun (Query) -&gt; sql_query_t(Query) end,</code></td>
 </tr>
 <tr>
@@ -746,9 +746,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L129"><a href="#L129">129</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>    sql_transaction(Host, F);</code></td>
 </tr>
 <tr>
@@ -761,14 +761,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>sql_transaction(Host, F) when is_function(F) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L132"><a href="#L132">132</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2717</td>
 <td class="source"><code>    case sql_call(Host, {sql_transaction, F}) of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L133"><a href="#L133">133</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2717</td>
 <td class="source"><code>	{atomic, _} = Ret -&gt; Ret;</code></td>
 </tr>
 <tr class="miss">
@@ -796,9 +796,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%% SQL bloc, based on a erlang anonymous function (F = fun)</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L139"><a href="#L139">139</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2628</td>
 <td class="source"><code>sql_bloc(Host, F) -&gt; sql_call(Host, {sql_bloc, F}).</code></td>
 </tr>
 <tr>
@@ -811,14 +811,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>sql_call(Host, Msg) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L142"><a href="#L142">142</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">20400</td>
 <td class="source"><code>    Timeout = query_timeout(Host),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L143"><a href="#L143">143</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">20400</td>
 <td class="source"><code>    case get(?STATE_KEY) of</code></td>
 </tr>
 <tr>
@@ -826,9 +826,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	undefined -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L145"><a href="#L145">145</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">20394</td>
 <td class="source"><code>	    sync_send_event(Host,</code></td>
 </tr>
 <tr>
@@ -846,9 +846,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	_State -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L149"><a href="#L149">149</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>	    nested_op(Msg)</code></td>
 </tr>
 <tr>
@@ -931,9 +931,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>sync_send_event(Host, Msg, Timeout) when is_binary(Host) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L166"><a href="#L166">166</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">20394</td>
 <td class="source"><code>    case ejabberd_sql_sup:start(Host) of</code></td>
 </tr>
 <tr>
@@ -941,14 +941,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	ok -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L168"><a href="#L168">168</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">20394</td>
 <td class="source"><code>	    Proc = get_worker(Host),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L169"><a href="#L169">169</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">20394</td>
 <td class="source"><code>	    sync_send_event(Proc, Msg, Timeout);</code></td>
 </tr>
 <tr>
@@ -971,9 +971,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>sync_send_event(Proc, Msg, Timeout) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L174"><a href="#L174">174</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">20394</td>
 <td class="source"><code>    try p1_fsm:sync_send_event(Proc, Msg, Timeout)</code></td>
 </tr>
 <tr>
@@ -1011,14 +1011,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>sql_query_t(Query) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L182"><a href="#L182">182</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">18594</td>
 <td class="source"><code>    QRes = sql_query_internal(Query),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L183"><a href="#L183">183</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">18594</td>
 <td class="source"><code>    case QRes of</code></td>
 </tr>
 <tr class="miss">
@@ -1051,9 +1051,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	  end;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L190"><a href="#L190">190</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">18594</td>
 <td class="source"><code>      _ -&gt; QRes</code></td>
 </tr>
 <tr>
@@ -1126,24 +1126,24 @@ td.source {
 <td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>escape_char($\r) -&gt; &lt;&lt;"\\r"&gt;&gt;;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L205"><a href="#L205">205</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8596</td>
 <td class="source"><code>escape_char($') -&gt; &lt;&lt;"''"&gt;&gt;;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L206"><a href="#L206">206</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1991</td>
 <td class="source"><code>escape_char($") -&gt; &lt;&lt;"\\\""&gt;&gt;;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L207"><a href="#L207">207</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12265</td>
 <td class="source"><code>escape_char($\\) -&gt; &lt;&lt;"\\\\"&gt;&gt;;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L208"><a href="#L208">208</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">746307</td>
 <td class="source"><code>escape_char(C) -&gt; &lt;&lt;C&gt;&gt;.</code></td>
 </tr>
 <tr>
@@ -1161,9 +1161,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>escape(S) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L212"><a href="#L212">212</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">20391</td>
 <td class="source"><code>	&lt;&lt;  &lt;&lt;(escape_char(Char))/binary&gt;&gt; || &lt;&lt;Char&gt;&gt; &lt;= S &gt;&gt;.</code></td>
 </tr>
 <tr>
@@ -1226,39 +1226,39 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>escape_like_arg(S) when is_binary(S) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L225"><a href="#L225">225</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">918</td>
 <td class="source"><code>    &lt;&lt; &lt;&lt;(escape_like_arg(C))/binary&gt;&gt; || &lt;&lt;C&gt;&gt; &lt;= S &gt;&gt;;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L226"><a href="#L226">226</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">543</td>
 <td class="source"><code>escape_like_arg($%) -&gt; &lt;&lt;"\\%"&gt;&gt;;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L227"><a href="#L227">227</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1080</td>
 <td class="source"><code>escape_like_arg($_) -&gt; &lt;&lt;"\\_"&gt;&gt;;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L228"><a href="#L228">228</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">543</td>
 <td class="source"><code>escape_like_arg($\\) -&gt; &lt;&lt;"\\\\"&gt;&gt;;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L229"><a href="#L229">229</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">543</td>
 <td class="source"><code>escape_like_arg($[) -&gt; &lt;&lt;"\\["&gt;&gt;;     % For MSSQL</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L230"><a href="#L230">230</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">543</td>
 <td class="source"><code>escape_like_arg($]) -&gt; &lt;&lt;"\\]"&gt;&gt;;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L231"><a href="#L231">231</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">28938</td>
 <td class="source"><code>escape_like_arg(C) when is_integer(C), C &gt;= 0, C =&lt; 255 -&gt; &lt;&lt;C&gt;&gt;.</code></td>
 </tr>
 <tr>
@@ -1321,9 +1321,9 @@ td.source {
 <td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>to_bool(&lt;&lt;"true"&gt;&gt;) -&gt; true;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L244"><a href="#L244">244</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">675</td>
 <td class="source"><code>to_bool(&lt;&lt;"1"&gt;&gt;) -&gt; true;</code></td>
 </tr>
 <tr class="miss">
@@ -1336,9 +1336,9 @@ td.source {
 <td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>to_bool(1) -&gt; true;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L247"><a href="#L247">247</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1680</td>
 <td class="source"><code>to_bool(_) -&gt; false.</code></td>
 </tr>
 <tr>
@@ -1401,9 +1401,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>to_string_literal(mysql, S) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L260"><a href="#L260">260</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">394</td>
 <td class="source"><code>    &lt;&lt;"'", (escape(S))/binary, "'"&gt;&gt;;</code></td>
 </tr>
 <tr>
@@ -1421,9 +1421,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>to_string_literal(sqlite, S) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L264"><a href="#L264">264</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">394</td>
 <td class="source"><code>    &lt;&lt;"'", (standard_escape(S))/binary, "'"&gt;&gt;;</code></td>
 </tr>
 <tr>
@@ -1431,9 +1431,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>to_string_literal(pgsql, S) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L266"><a href="#L266">266</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">394</td>
 <td class="source"><code>    &lt;&lt;"E'", (escape(S))/binary, "'"&gt;&gt;.</code></td>
 </tr>
 <tr>
@@ -1446,14 +1446,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>to_string_literal_t(S) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L269"><a href="#L269">269</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">15</td>
 <td class="source"><code>    State = get(?STATE_KEY),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L270"><a href="#L270">270</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">15</td>
 <td class="source"><code>    to_string_literal(State#state.db_type, S).</code></td>
 </tr>
 <tr>
@@ -1491,29 +1491,29 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>decode_term(Bin) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L278"><a href="#L278">278</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1563</td>
 <td class="source"><code>    Str = binary_to_list(&lt;&lt;Bin/binary, "."&gt;&gt;),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L279"><a href="#L279">279</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1563</td>
 <td class="source"><code>    try</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L280"><a href="#L280">280</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1563</td>
 <td class="source"><code>	{ok, Tokens, _} = erl_scan:string(Str),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L281"><a href="#L281">281</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1563</td>
 <td class="source"><code>	{ok, Term} = erl_parse:parse_term(Tokens),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L282"><a href="#L282">282</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1563</td>
 <td class="source"><code>	Term</code></td>
 </tr>
 <tr>
@@ -1596,9 +1596,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>sqlite_db(Host) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L299"><a href="#L299">299</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">18209</td>
 <td class="source"><code>    list_to_atom("ejabberd_sqlite_" ++ binary_to_list(Host)).</code></td>
 </tr>
 <tr>
@@ -1616,9 +1616,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>sqlite_file(Host) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L303"><a href="#L303">303</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>    case ejabberd_option:sql_database(Host) of</code></td>
 </tr>
 <tr>
@@ -1626,9 +1626,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	undefined -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L305"><a href="#L305">305</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>	    Path = ["sqlite", atom_to_list(node()),</code></td>
 </tr>
 <tr>
@@ -1636,9 +1636,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		    binary_to_list(Host), "ejabberd.db"],</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L307"><a href="#L307">307</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>	    case file:get_cwd() of</code></td>
 </tr>
 <tr>
@@ -1646,9 +1646,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		{ok, Cwd} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L309"><a href="#L309">309</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>		    filename:join([Cwd|Path]);</code></td>
 </tr>
 <tr>
@@ -1701,9 +1701,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>use_new_schema() -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L320"><a href="#L320">320</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">16111</td>
 <td class="source"><code>    ejabberd_option:new_sql_schema().</code></td>
 </tr>
 <tr>
@@ -1721,19 +1721,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_worker(Host) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L324"><a href="#L324">324</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">20394</td>
 <td class="source"><code>    PoolSize = ejabberd_option:sql_pool_size(Host),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L325"><a href="#L325">325</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">20394</td>
 <td class="source"><code>    I = p1_rand:round_robin(PoolSize) + 1,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L326"><a href="#L326">326</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">20394</td>
 <td class="source"><code>    binary_to_existing_atom(get_worker_name(Host, I), utf8).</code></td>
 </tr>
 <tr>
@@ -1751,9 +1751,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_worker_name(Host, I) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L330"><a href="#L330">330</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">20397</td>
 <td class="source"><code>    &lt;&lt;"ejabberd_sql_", Host/binary, $_, (integer_to_binary(I))/binary&gt;&gt;.</code></td>
 </tr>
 <tr>
@@ -1781,14 +1781,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>init([Host]) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L336"><a href="#L336">336</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    process_flag(trap_exit, true),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L337"><a href="#L337">337</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    case ejabberd_option:sql_keepalive_interval(Host) of</code></td>
 </tr>
 <tr>
@@ -1796,9 +1796,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>        undefined -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L339"><a href="#L339">339</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>            ok;</code></td>
 </tr>
 <tr>
@@ -1821,24 +1821,24 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>    end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L344"><a href="#L344">344</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    [DBType | _] = db_opts(Host),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L345"><a href="#L345">345</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    p1_fsm:send_event(self(), connect),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L346"><a href="#L346">346</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    QueueType = ejabberd_option:sql_queue_type(Host),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L347"><a href="#L347">347</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    {ok, connecting,</code></td>
 </tr>
 <tr>
@@ -1861,24 +1861,24 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>connecting(connect, #state{host = Host} = State) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L352"><a href="#L352">352</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    ConnectRes = case db_opts(Host) of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L353"><a href="#L353">353</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>		     [mysql | Args] -&gt; apply(fun mysql_connect/8, Args);</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L354"><a href="#L354">354</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>		     [pgsql | Args] -&gt; apply(fun pgsql_connect/8, Args);</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L355"><a href="#L355">355</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>		     [sqlite | Args] -&gt; apply(fun sqlite_connect/1, Args);</code></td>
 </tr>
 <tr class="miss">
@@ -1896,9 +1896,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		 end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L359"><a href="#L359">359</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    case ConnectRes of</code></td>
 </tr>
 <tr>
@@ -1906,9 +1906,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>        {ok, Ref} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L361"><a href="#L361">361</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>	    try link(Ref) of</code></td>
 </tr>
 <tr>
@@ -1916,9 +1916,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		_ -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L363"><a href="#L363">363</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>		    lists:foreach(</code></td>
 </tr>
 <tr>
@@ -1936,9 +1936,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>			 (_) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L367"><a href="#L367">367</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>			      ok</code></td>
 </tr>
 <tr>
@@ -1946,9 +1946,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		      end, get()),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L369"><a href="#L369">369</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>		    PendingRequests =</code></td>
 </tr>
 <tr>
@@ -1976,9 +1976,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>			  end, State#state.pending_requests),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L375"><a href="#L375">375</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>		    State1 = State#state{db_ref = Ref,</code></td>
 </tr>
 <tr>
@@ -1986,14 +1986,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>					 pending_requests = PendingRequests},</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L377"><a href="#L377">377</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>		    State2 = get_db_version(State1),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L378"><a href="#L378">378</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>		    {next_state, session_established, State2}</code></td>
 </tr>
 <tr>
@@ -2201,9 +2201,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		    State) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L420"><a href="#L420">420</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">20394</td>
 <td class="source"><code>    run_sql_cmd(Command, From, State, Timestamp);</code></td>
 </tr>
 <tr>
@@ -2366,24 +2366,24 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>terminate(_Reason, _StateName, State) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L453"><a href="#L453">453</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    case State#state.db_type of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L454"><a href="#L454">454</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>        mysql -&gt; catch p1_mysql_conn:stop(State#state.db_ref);</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L455"><a href="#L455">455</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>        sqlite -&gt; catch sqlite3:close(sqlite_db(State#state.host));</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L456"><a href="#L456">456</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>        _ -&gt; ok</code></td>
 </tr>
 <tr>
@@ -2391,9 +2391,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>    end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L458"><a href="#L458">458</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    ok.</code></td>
 </tr>
 <tr>
@@ -2506,9 +2506,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>run_sql_cmd(Command, From, State, Timestamp) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L481"><a href="#L481">481</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">20394</td>
 <td class="source"><code>    case current_time() &gt;= Timestamp of</code></td>
 </tr>
 <tr>
@@ -2531,19 +2531,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	false -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L486"><a href="#L486">486</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">20394</td>
 <td class="source"><code>	    put(?NESTING_KEY, ?TOP_LEVEL_TXN),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L487"><a href="#L487">487</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">20394</td>
 <td class="source"><code>	    put(?STATE_KEY, State),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L488"><a href="#L488">488</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">20394</td>
 <td class="source"><code>	    abort_on_driver_error(outer_op(Command), From, Timestamp)</code></td>
 </tr>
 <tr>
@@ -2571,9 +2571,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>outer_op({sql_query, Query}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L494"><a href="#L494">494</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">15049</td>
 <td class="source"><code>    sql_query_internal(Query);</code></td>
 </tr>
 <tr>
@@ -2581,14 +2581,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>outer_op({sql_transaction, F}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L496"><a href="#L496">496</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2717</td>
 <td class="source"><code>    outer_transaction(F, ?MAX_TRANSACTION_RESTARTS, &lt;&lt;""&gt;&gt;);</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L497"><a href="#L497">497</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2628</td>
 <td class="source"><code>outer_op({sql_bloc, F}) -&gt; execute_bloc(F).</code></td>
 </tr>
 <tr>
@@ -2611,9 +2611,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>nested_op({sql_query, Query}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L502"><a href="#L502">502</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    sql_query_internal(Query);</code></td>
 </tr>
 <tr>
@@ -2771,19 +2771,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>outer_transaction(F, NRestarts, _Reason) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L534"><a href="#L534">534</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2717</td>
 <td class="source"><code>    PreviousNestingLevel = get(?NESTING_KEY),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L535"><a href="#L535">535</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2717</td>
 <td class="source"><code>    case get(?NESTING_KEY) of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L536"><a href="#L536">536</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2717</td>
 <td class="source"><code>      ?TOP_LEVEL_TXN -&gt; ok;</code></td>
 </tr>
 <tr>
@@ -2821,19 +2821,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>    end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L544"><a href="#L544">544</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2717</td>
 <td class="source"><code>    sql_begin(),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L545"><a href="#L545">545</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2717</td>
 <td class="source"><code>    put(?NESTING_KEY, PreviousNestingLevel + 1),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L546"><a href="#L546">546</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2717</td>
 <td class="source"><code>    try F() of</code></td>
 </tr>
 <tr>
@@ -2841,14 +2841,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	Res -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L548"><a href="#L548">548</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2717</td>
 <td class="source"><code>	    sql_commit(),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L549"><a href="#L549">549</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2717</td>
 <td class="source"><code>	    {atomic, Res}</code></td>
 </tr>
 <tr>
@@ -2956,9 +2956,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>execute_bloc(F) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L571"><a href="#L571">571</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2628</td>
 <td class="source"><code>    case catch F() of</code></td>
 </tr>
 <tr class="miss">
@@ -2971,9 +2971,9 @@ td.source {
 <td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>      {'EXIT', Reason} -&gt; {aborted, Reason};</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L574"><a href="#L574">574</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2628</td>
 <td class="source"><code>      Res -&gt; {atomic, Res}</code></td>
 </tr>
 <tr>
@@ -3001,14 +3001,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>execute_fun(F) when is_function(F, 2) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L580"><a href="#L580">580</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3429</td>
 <td class="source"><code>    State = get(?STATE_KEY),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L581"><a href="#L581">581</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3429</td>
 <td class="source"><code>    F(State#state.db_type, State#state.db_version).</code></td>
 </tr>
 <tr>
@@ -3021,14 +3021,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>sql_query_internal([{_, _} | _] = Queries) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L584"><a href="#L584">584</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5434</td>
 <td class="source"><code>    State = get(?STATE_KEY),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L585"><a href="#L585">585</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5434</td>
 <td class="source"><code>    case select_sql_query(Queries, State) of</code></td>
 </tr>
 <tr>
@@ -3046,9 +3046,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>        Query -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L589"><a href="#L589">589</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5434</td>
 <td class="source"><code>            sql_query_internal(Query)</code></td>
 </tr>
 <tr>
@@ -3061,14 +3061,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>sql_query_internal(#sql_query{} = Query) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L592"><a href="#L592">592</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">28971</td>
 <td class="source"><code>    State = get(?STATE_KEY),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L593"><a href="#L593">593</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">28971</td>
 <td class="source"><code>    Res =</code></td>
 </tr>
 <tr>
@@ -3076,9 +3076,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>        try</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L595"><a href="#L595">595</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">28971</td>
 <td class="source"><code>            case State#state.db_type of</code></td>
 </tr>
 <tr>
@@ -3106,14 +3106,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                pgsql -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L601"><a href="#L601">601</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9440</td>
 <td class="source"><code>                    Key = {?PREPARE_KEY, Query#sql_query.hash},</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L602"><a href="#L602">602</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9440</td>
 <td class="source"><code>                    case get(Key) of</code></td>
 </tr>
 <tr>
@@ -3121,14 +3121,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                        undefined -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L604"><a href="#L604">604</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">127</td>
 <td class="source"><code>                            Host = State#state.host,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L605"><a href="#L605">605</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">127</td>
 <td class="source"><code>                            PreparedStatements =</code></td>
 </tr>
 <tr>
@@ -3136,9 +3136,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                                ejabberd_option:sql_prepared_statements(Host),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L607"><a href="#L607">607</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">127</td>
 <td class="source"><code>                            case PreparedStatements of</code></td>
 </tr>
 <tr>
@@ -3156,9 +3156,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                                true -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L611"><a href="#L611">611</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">127</td>
 <td class="source"><code>                                    case pgsql_prepare(Query, State) of</code></td>
 </tr>
 <tr>
@@ -3166,9 +3166,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                                        {ok, _, _, _} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L613"><a href="#L613">613</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">127</td>
 <td class="source"><code>                                            put(Key, prepared);</code></td>
 </tr>
 <tr>
@@ -3216,9 +3216,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                        _ -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L623"><a href="#L623">623</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9313</td>
 <td class="source"><code>                            ok</code></td>
 </tr>
 <tr>
@@ -3226,9 +3226,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                    end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L625"><a href="#L625">625</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9440</td>
 <td class="source"><code>                    case get(Key) of</code></td>
 </tr>
 <tr>
@@ -3236,9 +3236,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                        prepared -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L627"><a href="#L627">627</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9440</td>
 <td class="source"><code>                            pgsql_execute_sql_query(Query, State);</code></td>
 </tr>
 <tr>
@@ -3261,9 +3261,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                mysql -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L632"><a href="#L632">632</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9504</td>
 <td class="source"><code>                    generic_sql_query(Query);</code></td>
 </tr>
 <tr>
@@ -3271,9 +3271,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                sqlite -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L634"><a href="#L634">634</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">10027</td>
 <td class="source"><code>                    sqlite_sql_query(Query)</code></td>
 </tr>
 <tr>
@@ -3351,9 +3351,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>        end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L650"><a href="#L650">650</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">28971</td>
 <td class="source"><code>    check_error(Res, Query);</code></td>
 </tr>
 <tr>
@@ -3361,9 +3361,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>sql_query_internal(F) when is_function(F) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L652"><a href="#L652">652</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3429</td>
 <td class="source"><code>    case catch execute_fun(F) of</code></td>
 </tr>
 <tr class="miss">
@@ -3376,9 +3376,9 @@ td.source {
 <td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>        {'EXIT', Reason} -&gt; {error, Reason};</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L655"><a href="#L655">655</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3429</td>
 <td class="source"><code>        Res -&gt; Res</code></td>
 </tr>
 <tr>
@@ -3391,24 +3391,24 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>sql_query_internal(Query) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L658"><a href="#L658">658</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">26214</td>
 <td class="source"><code>    State = get(?STATE_KEY),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L659"><a href="#L659">659</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">26214</td>
 <td class="source"><code>    ?DEBUG("SQL: \"~ts\"", [Query]),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L660"><a href="#L660">660</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">26214</td>
 <td class="source"><code>    QueryTimeout = query_timeout(State#state.host),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L661"><a href="#L661">661</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">26214</td>
 <td class="source"><code>    Res = case State#state.db_type of</code></td>
 </tr>
 <tr>
@@ -3446,9 +3446,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	    pgsql -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L669"><a href="#L669">669</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2242</td>
 <td class="source"><code>		pgsql_to_odbc(pgsql:squery(State#state.db_ref, Query,</code></td>
 </tr>
 <tr>
@@ -3461,9 +3461,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	    mysql -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L672"><a href="#L672">672</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11746</td>
 <td class="source"><code>		R = mysql_to_odbc(p1_mysql_conn:squery(State#state.db_ref,</code></td>
 </tr>
 <tr>
@@ -3481,9 +3481,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>						    {result_type, binary}])),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L676"><a href="#L676">676</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11746</td>
 <td class="source"><code>		  R;</code></td>
 </tr>
 <tr>
@@ -3491,14 +3491,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	      sqlite -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L678"><a href="#L678">678</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12226</td>
 <td class="source"><code>		  Host = State#state.host,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L679"><a href="#L679">679</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12226</td>
 <td class="source"><code>		  sqlite_to_odbc(Host, sqlite3:sql_exec(sqlite_db(Host), Query))</code></td>
 </tr>
 <tr>
@@ -3506,9 +3506,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	  end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L681"><a href="#L681">681</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">26214</td>
 <td class="source"><code>    check_error(Res, Query).</code></td>
 </tr>
 <tr>
@@ -3521,9 +3521,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>select_sql_query(Queries, State) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L684"><a href="#L684">684</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5434</td>
 <td class="source"><code>    select_sql_query(</code></td>
 </tr>
 <tr>
@@ -3561,9 +3561,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>select_sql_query([{any, Query} | _], _Type, _Version, _) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L692"><a href="#L692">692</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5434</td>
 <td class="source"><code>    Query;</code></td>
 </tr>
 <tr>
@@ -3626,9 +3626,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>select_sql_query([{_, _} | Rest], Type, Version, Query) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L705"><a href="#L705">705</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5434</td>
 <td class="source"><code>    select_sql_query(Rest, Type, Version, Query).</code></td>
 </tr>
 <tr>
@@ -3641,9 +3641,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>generic_sql_query(SQLQuery) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L708"><a href="#L708">708</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9504</td>
 <td class="source"><code>    sql_query_format_res(</code></td>
 </tr>
 <tr>
@@ -3666,14 +3666,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>generic_sql_query_format(SQLQuery) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L713"><a href="#L713">713</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9504</td>
 <td class="source"><code>    Args = (SQLQuery#sql_query.args)(generic_escape()),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L714"><a href="#L714">714</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9504</td>
 <td class="source"><code>    (SQLQuery#sql_query.format_query)(Args).</code></td>
 </tr>
 <tr>
@@ -3686,24 +3686,24 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>generic_escape() -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L717"><a href="#L717">717</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9504</td>
 <td class="source"><code>    #sql_escape{string = fun(X) -&gt; &lt;&lt;"'", (escape(X))/binary, "'"&gt;&gt; end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L718"><a href="#L718">718</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2624</td>
 <td class="source"><code>		integer = fun(X) -&gt; misc:i2l(X) end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L719"><a href="#L719">719</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">115</td>
 <td class="source"><code>		boolean = fun(true) -&gt; &lt;&lt;"1"&gt;&gt;;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L720"><a href="#L720">720</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">290</td>
 <td class="source"><code>                             (false) -&gt; &lt;&lt;"0"&gt;&gt;</code></td>
 </tr>
 <tr>
@@ -3716,9 +3716,9 @@ td.source {
 <td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>		in_array_string = fun(X) -&gt; &lt;&lt;"'", (escape(X))/binary, "'"&gt;&gt; end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L723"><a href="#L723">723</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">306</td>
 <td class="source"><code>                like_escape = fun() -&gt; &lt;&lt;""&gt;&gt; end</code></td>
 </tr>
 <tr>
@@ -3831,9 +3831,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>sqlite_sql_query(SQLQuery) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L746"><a href="#L746">746</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">10027</td>
 <td class="source"><code>    sql_query_format_res(</code></td>
 </tr>
 <tr>
@@ -3856,14 +3856,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>sqlite_sql_query_format(SQLQuery) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L751"><a href="#L751">751</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">10027</td>
 <td class="source"><code>    Args = (SQLQuery#sql_query.args)(sqlite_escape()),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L752"><a href="#L752">752</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">10027</td>
 <td class="source"><code>    (SQLQuery#sql_query.format_query)(Args).</code></td>
 </tr>
 <tr>
@@ -3876,24 +3876,24 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>sqlite_escape() -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L755"><a href="#L755">755</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">10027</td>
 <td class="source"><code>    #sql_escape{string = fun(X) -&gt; &lt;&lt;"'", (standard_escape(X))/binary, "'"&gt;&gt; end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L756"><a href="#L756">756</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2847</td>
 <td class="source"><code>		integer = fun(X) -&gt; misc:i2l(X) end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L757"><a href="#L757">757</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">115</td>
 <td class="source"><code>		boolean = fun(true) -&gt; &lt;&lt;"1"&gt;&gt;;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L758"><a href="#L758">758</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">290</td>
 <td class="source"><code>                             (false) -&gt; &lt;&lt;"0"&gt;&gt;</code></td>
 </tr>
 <tr>
@@ -3906,9 +3906,9 @@ td.source {
 <td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>		in_array_string = fun(X) -&gt; &lt;&lt;"'", (standard_escape(X))/binary, "'"&gt;&gt; end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L761"><a href="#L761">761</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">306</td>
 <td class="source"><code>                like_escape = fun() -&gt; &lt;&lt;"ESCAPE '\\'"&gt;&gt; end</code></td>
 </tr>
 <tr>
@@ -3926,24 +3926,24 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>standard_escape(S) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L765"><a href="#L765">765</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">22695</td>
 <td class="source"><code>    &lt;&lt; &lt;&lt;(case Char of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L766"><a href="#L766">766</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8931</td>
 <td class="source"><code>              $' -&gt; &lt;&lt; "''" &gt;&gt;;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L767"><a href="#L767">767</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">857134</td>
 <td class="source"><code>              _ -&gt; &lt;&lt; Char &gt;&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L768"><a href="#L768">768</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">22695</td>
 <td class="source"><code>          end)/binary&gt;&gt; || &lt;&lt;Char&gt;&gt; &lt;= S &gt;&gt;.</code></td>
 </tr>
 <tr>
@@ -3971,19 +3971,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>pgsql_prepare(SQLQuery, State) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L774"><a href="#L774">774</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">127</td>
 <td class="source"><code>    Escape = #sql_escape{_ = fun(_) -&gt; arg end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L775"><a href="#L775">775</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>                         like_escape = fun() -&gt; escape end},</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L776"><a href="#L776">776</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">127</td>
 <td class="source"><code>    {RArgs, _} =</code></td>
 </tr>
 <tr>
@@ -3996,9 +3996,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	    fun(arg, {Acc, I}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L779"><a href="#L779">779</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">353</td>
 <td class="source"><code>		{[&lt;&lt;$$, (integer_to_binary(I))/binary&gt;&gt; | Acc], I + 1};</code></td>
 </tr>
 <tr>
@@ -4006,9 +4006,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	       (escape, {Acc, I}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L781"><a href="#L781">781</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>		   {[&lt;&lt;"ESCAPE E'\\\\'"&gt;&gt; | Acc], I};</code></td>
 </tr>
 <tr>
@@ -4026,9 +4026,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	    end, {[], 1}, (SQLQuery#sql_query.args)(Escape)),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L785"><a href="#L785">785</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">127</td>
 <td class="source"><code>    Args = lists:reverse(RArgs),</code></td>
 </tr>
 <tr>
@@ -4041,14 +4041,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>    %Args = [&lt;&lt;$$, (integer_to_binary(I))/binary&gt;&gt; || I &lt;- lists:seq(1, N)],</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L788"><a href="#L788">788</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">127</td>
 <td class="source"><code>    Query = (SQLQuery#sql_query.format_query)(Args),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L789"><a href="#L789">789</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">127</td>
 <td class="source"><code>    pgsql:prepare(State#state.db_ref, SQLQuery#sql_query.hash, Query).</code></td>
 </tr>
 <tr>
@@ -4061,24 +4061,24 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>pgsql_execute_escape() -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L792"><a href="#L792">792</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9440</td>
 <td class="source"><code>    #sql_escape{string = fun(X) -&gt; X end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L793"><a href="#L793">793</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2578</td>
 <td class="source"><code>		integer = fun(X) -&gt; [misc:i2l(X)] end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L794"><a href="#L794">794</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">115</td>
 <td class="source"><code>		boolean = fun(true) -&gt; "1";</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L795"><a href="#L795">795</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">290</td>
 <td class="source"><code>                             (false) -&gt; "0"</code></td>
 </tr>
 <tr>
@@ -4091,9 +4091,9 @@ td.source {
 <td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>		in_array_string = fun(X) -&gt; &lt;&lt;"\"", (escape(X))/binary, "\""&gt;&gt; end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L798"><a href="#L798">798</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">306</td>
 <td class="source"><code>                like_escape = fun() -&gt; ignore end</code></td>
 </tr>
 <tr>
@@ -4111,19 +4111,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>pgsql_execute_sql_query(SQLQuery, State) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L802"><a href="#L802">802</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9440</td>
 <td class="source"><code>    Args = (SQLQuery#sql_query.args)(pgsql_execute_escape()),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L803"><a href="#L803">803</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9440</td>
 <td class="source"><code>    Args2 = lists:filter(fun(ignore) -&gt; false; (_) -&gt; true end, Args),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L804"><a href="#L804">804</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9440</td>
 <td class="source"><code>    ExecuteRes =</code></td>
 </tr>
 <tr>
@@ -4146,14 +4146,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%    io:format("T ~ts ~p~n", [SQLQuery#sql_query.hash, T]),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L809"><a href="#L809">809</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9440</td>
 <td class="source"><code>    Res = pgsql_execute_to_odbc(ExecuteRes),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L810"><a href="#L810">810</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9440</td>
 <td class="source"><code>    sql_query_format_res(Res, SQLQuery).</code></td>
 </tr>
 <tr>
@@ -4171,9 +4171,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>sql_query_format_res({selected, _, Rows}, SQLQuery) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L814"><a href="#L814">814</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">17521</td>
 <td class="source"><code>    Res =</code></td>
 </tr>
 <tr>
@@ -4186,14 +4186,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>          fun(Row) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L817"><a href="#L817">817</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">29124</td>
 <td class="source"><code>                  try</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L818"><a href="#L818">818</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">29124</td>
 <td class="source"><code>                      [(SQLQuery#sql_query.format_res)(Row)]</code></td>
 </tr>
 <tr>
@@ -4246,9 +4246,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>          end, Rows),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L829"><a href="#L829">829</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">17521</td>
 <td class="source"><code>    {selected, Res};</code></td>
 </tr>
 <tr>
@@ -4256,9 +4256,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>sql_query_format_res(Res, _SQLQuery) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L831"><a href="#L831">831</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11450</td>
 <td class="source"><code>    Res.</code></td>
 </tr>
 <tr>
@@ -4311,9 +4311,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>sql_begin() -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L842"><a href="#L842">842</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2717</td>
 <td class="source"><code>    sql_query_internal(</code></td>
 </tr>
 <tr>
@@ -4336,9 +4336,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>sql_commit() -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L847"><a href="#L847">847</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2717</td>
 <td class="source"><code>    sql_query_internal(</code></td>
 </tr>
 <tr>
@@ -4461,14 +4461,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>abort_on_driver_error(Reply, From, Timestamp) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L872"><a href="#L872">872</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">20394</td>
 <td class="source"><code>    reply(From, Reply, Timestamp),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L873"><a href="#L873">873</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">20394</td>
 <td class="source"><code>    {next_state, session_established, get(?STATE_KEY)}.</code></td>
 </tr>
 <tr>
@@ -4546,9 +4546,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>reply(From, Reply, Timestamp) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L889"><a href="#L889">889</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">20394</td>
 <td class="source"><code>    case current_time() &gt;= Timestamp of</code></td>
 </tr>
 <tr class="miss">
@@ -4556,9 +4556,9 @@ td.source {
 <td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>	true -&gt; ok;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L891"><a href="#L891">891</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">20394</td>
 <td class="source"><code>	false -&gt; p1_fsm:reply(From, Reply)</code></td>
 </tr>
 <tr>
@@ -4666,14 +4666,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>sqlite_connect(Host) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L913"><a href="#L913">913</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    File = sqlite_file(Host),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L914"><a href="#L914">914</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    case filelib:ensure_dir(File) of</code></td>
 </tr>
 <tr>
@@ -4681,9 +4681,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	ok -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L916"><a href="#L916">916</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>	    case sqlite3:open(sqlite_db(Host), [{file, File}]) of</code></td>
 </tr>
 <tr>
@@ -4691,9 +4691,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		{ok, Ref} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L918"><a href="#L918">918</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>		    sqlite3:sql_exec(</code></td>
 </tr>
 <tr>
@@ -4701,9 +4701,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		      sqlite_db(Host), "pragma foreign_keys = on"),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L920"><a href="#L920">920</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>		    {ok, Ref};</code></td>
 </tr>
 <tr>
@@ -4761,9 +4761,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>sqlite_to_odbc(Host, ok) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L932"><a href="#L932">932</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4133</td>
 <td class="source"><code>    {updated, sqlite3:changes(sqlite_db(Host))};</code></td>
 </tr>
 <tr>
@@ -4771,9 +4771,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>sqlite_to_odbc(Host, {rowid, _}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L934"><a href="#L934">934</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1846</td>
 <td class="source"><code>    {updated, sqlite3:changes(sqlite_db(Host))};</code></td>
 </tr>
 <tr>
@@ -4781,9 +4781,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>sqlite_to_odbc(_Host, [{columns, Columns}, {rows, TRows}]) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L936"><a href="#L936">936</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6247</td>
 <td class="source"><code>    Rows = [lists:map(</code></td>
 </tr>
 <tr>
@@ -4791,9 +4791,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	      fun(I) when is_integer(I) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L938"><a href="#L938">938</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2769</td>
 <td class="source"><code>		      integer_to_binary(I);</code></td>
 </tr>
 <tr>
@@ -4801,19 +4801,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		 (B) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L940"><a href="#L940">940</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">27418</td>
 <td class="source"><code>		      B</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L941"><a href="#L941">941</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6247</td>
 <td class="source"><code>	      end, tuple_to_list(Row)) || Row &lt;- TRows],</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L942"><a href="#L942">942</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6247</td>
 <td class="source"><code>    {selected, [list_to_binary(C) || C &lt;- Columns], Rows};</code></td>
 </tr>
 <tr>
@@ -4871,9 +4871,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	      Transport, SSLOpts) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L954"><a href="#L954">954</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    case pgsql:connect([{host, Server},</code></td>
 </tr>
 <tr>
@@ -4916,9 +4916,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>        {ok, Ref} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L963"><a href="#L963">963</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>            pgsql:squery(Ref, [&lt;&lt;"alter database \""&gt;&gt;, DB, &lt;&lt;"\" set "&gt;&gt;,</code></td>
 </tr>
 <tr>
@@ -4926,14 +4926,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                               &lt;&lt;"standard_conforming_strings='off';"&gt;&gt;]),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L965"><a href="#L965">965</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>            pgsql:squery(Ref, [&lt;&lt;"set standard_conforming_strings to 'off';"&gt;&gt;]),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L966"><a href="#L966">966</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>            {ok, Ref};</code></td>
 </tr>
 <tr>
@@ -4966,14 +4966,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>pgsql_to_odbc({ok, PGSQLResult}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L973"><a href="#L973">973</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2242</td>
 <td class="source"><code>    case PGSQLResult of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L974"><a href="#L974">974</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2242</td>
 <td class="source"><code>      [Item] -&gt; pgsql_item_to_odbc(Item);</code></td>
 </tr>
 <tr class="miss">
@@ -5001,9 +5001,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		    Recs}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L980"><a href="#L980">980</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">388</td>
 <td class="source"><code>    {selected, [element(1, Row) || Row &lt;- Rows], Recs};</code></td>
 </tr>
 <tr>
@@ -5041,9 +5041,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>pgsql_item_to_odbc(&lt;&lt;"DELETE ", N/binary&gt;&gt;) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L988"><a href="#L988">988</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">42</td>
 <td class="source"><code>    {updated, binary_to_integer(N)};</code></td>
 </tr>
 <tr>
@@ -5061,9 +5061,9 @@ td.source {
 <td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>pgsql_item_to_odbc({error, Error}) -&gt; {error, Error};</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L992"><a href="#L992">992</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1812</td>
 <td class="source"><code>pgsql_item_to_odbc(_) -&gt; {updated, undefined}.</code></td>
 </tr>
 <tr>
@@ -5076,9 +5076,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>pgsql_execute_to_odbc({ok, {&lt;&lt;"SELECT", _/binary&gt;&gt;, Rows}}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L995"><a href="#L995">995</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5822</td>
 <td class="source"><code>    {selected, [], [[Field || {_, Field} &lt;- Row] || Row &lt;- Rows]};</code></td>
 </tr>
 <tr>
@@ -5086,9 +5086,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>pgsql_execute_to_odbc({ok, {'INSERT', N}}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L997"><a href="#L997">997</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2379</td>
 <td class="source"><code>    {updated, N};</code></td>
 </tr>
 <tr>
@@ -5096,9 +5096,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>pgsql_execute_to_odbc({ok, {'DELETE', N}}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L999"><a href="#L999">999</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1235</td>
 <td class="source"><code>    {updated, N};</code></td>
 </tr>
 <tr>
@@ -5106,9 +5106,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>pgsql_execute_to_odbc({ok, {'UPDATE', N}}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1001"><a href="#L1001">1001</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    {updated, N};</code></td>
 </tr>
 <tr class="miss">
@@ -5156,9 +5156,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>mysql_connect(Server, Port, DB, Username, Password, ConnectTimeout, Transport, _) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1011"><a href="#L1011">1011</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    SSLOpts = case Transport of</code></td>
 </tr>
 <tr>
@@ -5176,9 +5176,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		  _ -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1015"><a href="#L1015">1015</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>		      []</code></td>
 </tr>
 <tr>
@@ -5186,9 +5186,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	      end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1017"><a href="#L1017">1017</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    case p1_mysql_conn:start(binary_to_list(Server), Port,</code></td>
 </tr>
 <tr>
@@ -5221,9 +5221,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{ok, Ref} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1024"><a href="#L1024">1024</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>	    p1_mysql_conn:fetch(</code></td>
 </tr>
 <tr>
@@ -5231,9 +5231,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		Ref, [&lt;&lt;"set names 'utf8mb4' collate 'utf8mb4_bin';"&gt;&gt;], self()),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1026"><a href="#L1026">1026</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>	    {ok, Ref};</code></td>
 </tr>
 <tr class="miss">
@@ -5261,9 +5261,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>mysql_to_odbc({updated, MySQLRes}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1032"><a href="#L1032">1032</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5518</td>
 <td class="source"><code>    {updated, p1_mysql:get_result_affected_rows(MySQLRes)};</code></td>
 </tr>
 <tr>
@@ -5271,9 +5271,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>mysql_to_odbc({data, MySQLRes}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1034"><a href="#L1034">1034</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6228</td>
 <td class="source"><code>    mysql_item_to_odbc(p1_mysql:get_result_field_info(MySQLRes),</code></td>
 </tr>
 <tr>
@@ -5351,9 +5351,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>mysql_item_to_odbc(Columns, Recs) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1050"><a href="#L1050">1050</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6228</td>
 <td class="source"><code>    {selected, [element(2, Column) || Column &lt;- Columns], Recs}.</code></td>
 </tr>
 <tr>
@@ -5431,9 +5431,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_db_version(#state{db_type = pgsql} = State) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1066"><a href="#L1066">1066</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    case pgsql:squery(State#state.db_ref,</code></td>
 </tr>
 <tr>
@@ -5446,9 +5446,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>        {ok, [{_, _, [[SVersion]]}]} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1069"><a href="#L1069">1069</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>            case catch binary_to_integer(SVersion) of</code></td>
 </tr>
 <tr>
@@ -5456,9 +5456,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                Version when is_integer(Version) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1071"><a href="#L1071">1071</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>                    State#state{db_version = Version};</code></td>
 </tr>
 <tr>
@@ -5506,9 +5506,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_db_version(State) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1081"><a href="#L1081">1081</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>    State.</code></td>
 </tr>
 <tr>
@@ -5521,14 +5521,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>log(Level, Format, Args) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1084"><a href="#L1084">1084</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    case Level of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1085"><a href="#L1085">1085</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>      debug -&gt; ?DEBUG(Format, Args);</code></td>
 </tr>
 <tr class="miss">
@@ -5561,29 +5561,29 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>db_opts(Host) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1092"><a href="#L1092">1092</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    Type = ejabberd_option:sql_type(Host),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1093"><a href="#L1093">1093</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    Server = ejabberd_option:sql_server(Host),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1094"><a href="#L1094">1094</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    Timeout = ejabberd_option:sql_connect_timeout(Host),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1095"><a href="#L1095">1095</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    Transport = case ejabberd_option:sql_ssl(Host) of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1096"><a href="#L1096">1096</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>		    false -&gt; tcp;</code></td>
 </tr>
 <tr class="miss">
@@ -5596,14 +5596,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1099"><a href="#L1099">1099</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    warn_if_ssl_unsupported(Transport, Type),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1100"><a href="#L1100">1100</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    case Type of</code></td>
 </tr>
 <tr>
@@ -5621,9 +5621,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>        sqlite -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1104"><a href="#L1104">1104</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>            [sqlite, Host];</code></td>
 </tr>
 <tr>
@@ -5631,14 +5631,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>        _ -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1106"><a href="#L1106">1106</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>            Port = ejabberd_option:sql_port(Host),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1107"><a href="#L1107">1107</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>            DB = case ejabberd_option:sql_database(Host) of</code></td>
 </tr>
 <tr class="miss">
@@ -5646,9 +5646,9 @@ td.source {
 <td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>		     undefined -&gt; &lt;&lt;"ejabberd"&gt;&gt;;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1109"><a href="#L1109">1109</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>		     D -&gt; D</code></td>
 </tr>
 <tr>
@@ -5656,24 +5656,24 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		 end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1111"><a href="#L1111">1111</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>            User = ejabberd_option:sql_username(Host),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1112"><a href="#L1112">1112</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>            Pass = ejabberd_option:sql_password(Host),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1113"><a href="#L1113">1113</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>	    SSLOpts = get_ssl_opts(Transport, Host),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1114"><a href="#L1114">1114</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>	    case Type of</code></td>
 </tr>
 <tr>
@@ -5701,9 +5701,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		_ -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1120"><a href="#L1120">1120</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>		    [Type, Server, Port, DB, User, Pass, Timeout, Transport, SSLOpts]</code></td>
 </tr>
 <tr>
@@ -5726,9 +5726,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>warn_if_ssl_unsupported(tcp, _) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1125"><a href="#L1125">1125</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    ok;</code></td>
 </tr>
 <tr>
@@ -5891,9 +5891,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_ssl_opts(tcp, _) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1158"><a href="#L1158">1158</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    [].</code></td>
 </tr>
 <tr>
@@ -6091,9 +6091,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>max_fsm_queue() -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1198"><a href="#L1198">1198</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    proplists:get_value(max_queue, fsm_limit_opts(), unlimited).</code></td>
 </tr>
 <tr>
@@ -6106,9 +6106,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>fsm_limit_opts() -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1201"><a href="#L1201">1201</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    ejabberd_config:fsm_limit_opts([]).</code></td>
 </tr>
 <tr>
@@ -6121,9 +6121,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>query_timeout(LServer) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1204"><a href="#L1204">1204</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">46614</td>
 <td class="source"><code>    ejabberd_option:sql_query_timeout(LServer).</code></td>
 </tr>
 <tr>
@@ -6136,9 +6136,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>current_time() -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1207"><a href="#L1207">1207</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">61182</td>
 <td class="source"><code>    erlang:monotonic_time(millisecond).</code></td>
 </tr>
 <tr>
@@ -6346,9 +6346,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>check_error(Result, _Query) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1249"><a href="#L1249">1249</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">55185</td>
 <td class="source"><code>    Result.</code></td>
 </tr>
 </tbody>

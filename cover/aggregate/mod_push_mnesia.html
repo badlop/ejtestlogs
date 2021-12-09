@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/mod_push_mnesia.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_push_mnesia.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:02</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_push_mnesia.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:30</p></footer>
 <table>
 <tbody>
 <tr>
@@ -328,7 +328,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L45"><a href="#L45">45</a></td>
-<td class="hits">1</td>
+<td class="hits">2</td>
 <td class="source"><code>    ejabberd_mnesia:create(?MODULE, push_session,</code></td>
 </tr>
 <tr>
@@ -358,32 +358,32 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L51"><a href="#L51">51</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>    US = {LUser, LServer},</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L52"><a href="#L52">52</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>    PushLJID = jid:tolower(PushJID),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L53"><a href="#L53">53</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>    MaxSessions = ejabberd_sm:get_max_user_sessions(LUser, LServer),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L54"><a href="#L54">54</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>    F = fun() -&gt;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L55"><a href="#L55">55</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>		enforce_max_sessions(US, MaxSessions),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L56"><a href="#L56">56</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>		mnesia:write(#push_session{us = US,</code></td>
 </tr>
 <tr>
@@ -413,7 +413,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L62"><a href="#L62">62</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>    case mnesia:transaction(F) of</code></td>
 </tr>
 <tr>
@@ -423,7 +423,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L64"><a href="#L64">64</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>	    {ok, {TS, PushLJID, Node, XData}};</code></td>
 </tr>
 <tr>
@@ -463,12 +463,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L72"><a href="#L72">72</a></td>
-<td class="hits">3</td>
+<td class="hits">6</td>
 <td class="source"><code>    PushLJID = jid:tolower(PushJID),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L73"><a href="#L73">73</a></td>
-<td class="hits">3</td>
+<td class="hits">6</td>
 <td class="source"><code>    MatchSpec = ets:fun2ms(</code></td>
 </tr>
 <tr>
@@ -508,7 +508,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L81"><a href="#L81">81</a></td>
-<td class="hits">3</td>
+<td class="hits">6</td>
 <td class="source"><code>    case mnesia:dirty_select(push_session, MatchSpec) of</code></td>
 </tr>
 <tr>
@@ -518,7 +518,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L83"><a href="#L83">83</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>	    {ok, {TS, PushLJID, Node, decode_xdata(El)}};</code></td>
 </tr>
 <tr>
@@ -528,17 +528,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L85"><a href="#L85">85</a></td>
-<td class="hits">1</td>
+<td class="hits">2</td>
 <td class="source"><code>	    ?DEBUG("No push session found for ~ts@~ts (~p, ~ts)",</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L86"><a href="#L86">86</a></td>
-<td class="hits">1</td>
+<td class="hits">2</td>
 <td class="source"><code>		   [LUser, LServer, PushJID, Node]),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L87"><a href="#L87">87</a></td>
-<td class="hits">1</td>
+<td class="hits">2</td>
 <td class="source"><code>	    {error, notfound}</code></td>
 </tr>
 <tr>
@@ -703,12 +703,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L120"><a href="#L120">120</a></td>
-<td class="hits">7</td>
+<td class="hits">14</td>
 <td class="source"><code>    Records = mnesia:dirty_read(push_session, {LUser, LServer}),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L121"><a href="#L121">121</a></td>
-<td class="hits">7</td>
+<td class="hits">14</td>
 <td class="source"><code>    {ok, records_to_sessions(Records)}.</code></td>
 </tr>
 <tr>
@@ -768,7 +768,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L133"><a href="#L133">133</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>    MatchSpec = ets:fun2ms(</code></td>
 </tr>
 <tr>
@@ -803,17 +803,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L140"><a href="#L140">140</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>    F = fun() -&gt;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L141"><a href="#L141">141</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>		Recs = mnesia:select(push_session, MatchSpec),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L142"><a href="#L142">142</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>		lists:foreach(fun mnesia:delete_object/1, Recs)</code></td>
 </tr>
 <tr>
@@ -823,7 +823,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L144"><a href="#L144">144</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>    case mnesia:transaction(F) of</code></td>
 </tr>
 <tr>
@@ -833,7 +833,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L146"><a href="#L146">146</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>	    ok;</code></td>
 </tr>
 <tr>
@@ -1018,7 +1018,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L183"><a href="#L183">183</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>    case mnesia:wread({push_session, US}) of</code></td>
 </tr>
 <tr>
@@ -1068,7 +1068,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L193"><a href="#L193">193</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>	    ok</code></td>
 </tr>
 <tr>
@@ -1098,7 +1098,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L199"><a href="#L199">199</a></td>
-<td class="hits">3</td>
+<td class="hits">6</td>
 <td class="source"><code>    xmpp:decode(El).</code></td>
 </tr>
 <tr>
@@ -1123,7 +1123,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L204"><a href="#L204">204</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>    xmpp:encode(XData).</code></td>
 </tr>
 <tr>
@@ -1138,7 +1138,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L207"><a href="#L207">207</a></td>
-<td class="hits">7</td>
+<td class="hits">14</td>
 <td class="source"><code>    [{TS, PushLJID, Node, decode_xdata(El)}</code></td>
 </tr>
 <tr>
@@ -1158,7 +1158,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L211"><a href="#L211">211</a></td>
-<td class="hits">7</td>
+<td class="hits">14</td>
 <td class="source"><code>		      xml = El} &lt;- Records].</code></td>
 </tr>
 </tbody>

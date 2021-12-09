@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/gen_iq_handler.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/gen_iq_handler.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:04</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/gen_iq_handler.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:31</p></footer>
 <table>
 <tbody>
 <tr>
@@ -383,12 +383,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L56"><a href="#L56">56</a></td>
-<td class="hits">337</td>
+<td class="hits">373</td>
 <td class="source"><code>    ets:insert(Component, {{Host, NS}, Module, Function}),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L57"><a href="#L57">57</a></td>
-<td class="hits">337</td>
+<td class="hits">373</td>
 <td class="source"><code>    ok.</code></td>
 </tr>
 <tr>
@@ -408,12 +408,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L61"><a href="#L61">61</a></td>
-<td class="hits">341</td>
+<td class="hits">397</td>
 <td class="source"><code>    ets:delete(Component, {Host, NS}),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L62"><a href="#L62">62</a></td>
-<td class="hits">341</td>
+<td class="hits">397</td>
 <td class="source"><code>    ok.</code></td>
 </tr>
 <tr>
@@ -433,12 +433,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L66"><a href="#L66">66</a></td>
-<td class="hits">323</td>
+<td class="hits">1395</td>
 <td class="source"><code>    Component = case To#jid.luser of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L67"><a href="#L67">67</a></td>
-<td class="hits">323</td>
+<td class="hits">1395</td>
 <td class="source"><code>		    &lt;&lt;""&gt;&gt; -&gt; ejabberd_local;</code></td>
 </tr>
 <tr class="miss">
@@ -453,7 +453,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L70"><a href="#L70">70</a></td>
-<td class="hits">323</td>
+<td class="hits">1395</td>
 <td class="source"><code>    handle(Component, IQ).</code></td>
 </tr>
 <tr>
@@ -483,17 +483,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L76"><a href="#L76">76</a></td>
-<td class="hits">1474</td>
+<td class="hits">7029</td>
 <td class="source"><code>    XMLNS = xmpp:get_ns(El),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L77"><a href="#L77">77</a></td>
-<td class="hits">1474</td>
+<td class="hits">7029</td>
 <td class="source"><code>    Host = To#jid.lserver,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L78"><a href="#L78">78</a></td>
-<td class="hits">1474</td>
+<td class="hits">7029</td>
 <td class="source"><code>    case ets:lookup(Component, {Host, XMLNS}) of</code></td>
 </tr>
 <tr>
@@ -503,7 +503,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L80"><a href="#L80">80</a></td>
-<td class="hits">1469</td>
+<td class="hits">7016</td>
 <td class="source"><code>	    process_iq(Host, Module, Function, Packet);</code></td>
 </tr>
 <tr>
@@ -513,17 +513,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L82"><a href="#L82">82</a></td>
-<td class="hits">5</td>
+<td class="hits">13</td>
 <td class="source"><code>	    Txt = ?T("No module is handling this query"),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L83"><a href="#L83">83</a></td>
-<td class="hits">5</td>
+<td class="hits">13</td>
 <td class="source"><code>	    Err = xmpp:err_service_unavailable(Txt, Lang),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L84"><a href="#L84">84</a></td>
-<td class="hits">5</td>
+<td class="hits">13</td>
 <td class="source"><code>	    ejabberd_router:route_error(Packet, Err)</code></td>
 </tr>
 <tr>
@@ -578,7 +578,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L95"><a href="#L95">95</a></td>
-<td class="hits">22</td>
+<td class="hits">66</td>
 <td class="source"><code>    ok.</code></td>
 </tr>
 <tr>
@@ -598,7 +598,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L99"><a href="#L99">99</a></td>
-<td class="hits">238</td>
+<td class="hits">1147</td>
 <td class="source"><code>    get_features(Component, ets:next(Component, {Host, &lt;&lt;""&gt;&gt;}), Host, []).</code></td>
 </tr>
 <tr>
@@ -613,7 +613,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L102"><a href="#L102">102</a></td>
-<td class="hits">3340</td>
+<td class="hits">16062</td>
 <td class="source"><code>    get_features(Component,</code></td>
 </tr>
 <tr>
@@ -628,7 +628,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L105"><a href="#L105">105</a></td>
-<td class="hits">238</td>
+<td class="hits">1147</td>
 <td class="source"><code>    XMLNSs.</code></td>
 </tr>
 <tr>
@@ -648,7 +648,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L109"><a href="#L109">109</a></td>
-<td class="hits">1469</td>
+<td class="hits">7016</td>
 <td class="source"><code>    try process_iq(Module, Function, IQ) of</code></td>
 </tr>
 <tr>
@@ -658,7 +658,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L111"><a href="#L111">111</a></td>
-<td class="hits">1424</td>
+<td class="hits">6790</td>
 <td class="source"><code>	    ejabberd_router:route(ResIQ);</code></td>
 </tr>
 <tr>
@@ -668,7 +668,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L113"><a href="#L113">113</a></td>
-<td class="hits">45</td>
+<td class="hits">226</td>
 <td class="source"><code>	    ok</code></td>
 </tr>
 <tr>
@@ -733,12 +733,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L126"><a href="#L126">126</a></td>
-<td class="hits">1469</td>
+<td class="hits">7016</td>
 <td class="source"><code>    try</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L127"><a href="#L127">127</a></td>
-<td class="hits">1469</td>
+<td class="hits">7016</td>
 <td class="source"><code>	Pkt = case erlang:function_exported(Module, decode_iq_subel, 1) of</code></td>
 </tr>
 <tr class="miss">
@@ -748,7 +748,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L129"><a href="#L129">129</a></td>
-<td class="hits">1469</td>
+<td class="hits">7016</td>
 <td class="source"><code>		  false -&gt; xmpp:decode(El)</code></td>
 </tr>
 <tr>
@@ -758,7 +758,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L131"><a href="#L131">131</a></td>
-<td class="hits">1469</td>
+<td class="hits">7016</td>
 <td class="source"><code>	Module:Function(IQ#iq{sub_els = [Pkt]})</code></td>
 </tr>
 <tr>

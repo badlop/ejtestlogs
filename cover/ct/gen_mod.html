@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/ct/gen_mod.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/gen_mod.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:08</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/gen_mod.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:35</p></footer>
 <table>
 <tbody>
 <tr>
@@ -643,7 +643,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L108"><a href="#L108">108</a></td>
-<td class="hits">21</td>
+<td class="hits">34</td>
 <td class="source"><code>    start_child(Mod, Host, Opts, get_module_proc(Host, Mod)).</code></td>
 </tr>
 <tr>
@@ -663,7 +663,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L112"><a href="#L112">112</a></td>
-<td class="hits">37</td>
+<td class="hits">40</td>
 <td class="source"><code>    Spec = {Proc, {?GEN_SERVER, start_link,</code></td>
 </tr>
 <tr>
@@ -683,7 +683,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L116"><a href="#L116">116</a></td>
-<td class="hits">37</td>
+<td class="hits">40</td>
 <td class="source"><code>    supervisor:start_child(ejabberd_gen_mod_sup, Spec).</code></td>
 </tr>
 <tr>
@@ -703,7 +703,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L120"><a href="#L120">120</a></td>
-<td class="hits">21</td>
+<td class="hits">34</td>
 <td class="source"><code>    stop_child(get_module_proc(Host, Mod)).</code></td>
 </tr>
 <tr>
@@ -723,12 +723,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L124"><a href="#L124">124</a></td>
-<td class="hits">37</td>
+<td class="hits">40</td>
 <td class="source"><code>    supervisor:terminate_child(ejabberd_gen_mod_sup, Proc),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L125"><a href="#L125">125</a></td>
-<td class="hits">37</td>
+<td class="hits">40</td>
 <td class="source"><code>    supervisor:delete_child(ejabberd_gen_mod_sup, Proc).</code></td>
 </tr>
 <tr>
@@ -793,7 +793,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L138"><a href="#L138">138</a></td>
-<td class="hits">196</td>
+<td class="hits">212</td>
 <td class="source"><code>	    start_module(Host, Module, Opts, Order)</code></td>
 </tr>
 <tr>
@@ -868,27 +868,27 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L153"><a href="#L153">153</a></td>
-<td class="hits">196</td>
+<td class="hits">212</td>
 <td class="source"><code>    ?DEBUG("Loading ~ts at ~ts", [Module, Host]),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L154"><a href="#L154">154</a></td>
-<td class="hits">196</td>
+<td class="hits">212</td>
 <td class="source"><code>    store_options(Host, Module, Opts, Order),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L155"><a href="#L155">155</a></td>
-<td class="hits">196</td>
+<td class="hits">212</td>
 <td class="source"><code>    try case Module:start(Host, Opts) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L156"><a href="#L156">156</a></td>
-<td class="hits">150</td>
+<td class="hits">163</td>
 <td class="source"><code>	    ok -&gt; ok;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L157"><a href="#L157">157</a></td>
-<td class="hits">46</td>
+<td class="hits">49</td>
 <td class="source"><code>	    {ok, Pid} when is_pid(Pid) -&gt; {ok, Pid};</code></td>
 </tr>
 <tr>
@@ -1163,7 +1163,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L212"><a href="#L212">212</a></td>
-<td class="hits">10</td>
+<td class="hits">50</td>
 <td class="source"><code>    case erlang:function_exported(Module, reload, 3) of</code></td>
 </tr>
 <tr>
@@ -1173,22 +1173,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L214"><a href="#L214">214</a></td>
-<td class="hits">10</td>
+<td class="hits">50</td>
 <td class="source"><code>	    ?DEBUG("Reloading ~ts at ~ts", [Module, Host]),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L215"><a href="#L215">215</a></td>
-<td class="hits">10</td>
+<td class="hits">50</td>
 <td class="source"><code>	    store_options(Host, Module, NewOpts, Order),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L216"><a href="#L216">216</a></td>
-<td class="hits">10</td>
+<td class="hits">50</td>
 <td class="source"><code>	    try case Module:reload(Host, NewOpts, OldOpts) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L217"><a href="#L217">217</a></td>
-<td class="hits">10</td>
+<td class="hits">50</td>
 <td class="source"><code>		    ok -&gt; ok;</code></td>
 </tr>
 <tr class="miss">
@@ -1298,7 +1298,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L239"><a href="#L239">239</a></td>
-<td class="hits">10</td>
+<td class="hits">50</td>
 <td class="source"><code>    case ets:lookup(ejabberd_modules, {Module, Host}) of</code></td>
 </tr>
 <tr>
@@ -1308,12 +1308,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L241"><a href="#L241">241</a></td>
-<td class="hits">10</td>
+<td class="hits">50</td>
 <td class="source"><code>	    NewOpts = maps:merge(OldOpts, Opts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L242"><a href="#L242">242</a></td>
-<td class="hits">10</td>
+<td class="hits">50</td>
 <td class="source"><code>	    reload_module(Host, Module, NewOpts, OldOpts, Order);</code></td>
 </tr>
 <tr>
@@ -1348,7 +1348,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L249"><a href="#L249">249</a></td>
-<td class="hits">206</td>
+<td class="hits">262</td>
 <td class="source"><code>    ets:insert(ejabberd_modules,</code></td>
 </tr>
 <tr>
@@ -1508,7 +1508,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L281"><a href="#L281">281</a></td>
-<td class="hits">194</td>
+<td class="hits">210</td>
 <td class="source"><code>		stop_module_keep_config(Host, Module)</code></td>
 </tr>
 <tr>
@@ -1568,12 +1568,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L293"><a href="#L293">293</a></td>
-<td class="hits">196</td>
+<td class="hits">212</td>
 <td class="source"><code>    ?DEBUG("Stopping ~ts at ~ts", [Module, Host]),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L294"><a href="#L294">294</a></td>
-<td class="hits">196</td>
+<td class="hits">212</td>
 <td class="source"><code>    try Module:stop(Host) of</code></td>
 </tr>
 <tr>
@@ -1583,12 +1583,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L296"><a href="#L296">296</a></td>
-<td class="hits">196</td>
+<td class="hits">212</td>
 <td class="source"><code>	    ets:delete(ejabberd_modules, {Module, Host}),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L297"><a href="#L297">297</a></td>
-<td class="hits">196</td>
+<td class="hits">212</td>
 <td class="source"><code>	    ok</code></td>
 </tr>
 <tr>
@@ -1643,7 +1643,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L308"><a href="#L308">308</a></td>
-<td class="hits">64125</td>
+<td class="hits">291458</td>
 <td class="source"><code>    maps:get(Opt, Opts).</code></td>
 </tr>
 <tr>
@@ -1663,7 +1663,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L312"><a href="#L312">312</a></td>
-<td class="hits">36</td>
+<td class="hits">34</td>
 <td class="source"><code>    maps:put(Opt, Val, Opts).</code></td>
 </tr>
 <tr>
@@ -1683,7 +1683,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L316"><a href="#L316">316</a></td>
-<td class="hits">253</td>
+<td class="hits">1161</td>
 <td class="source"><code>    get_module_opt(ejabberd_config:get_myname(), Module, Opt);</code></td>
 </tr>
 <tr>
@@ -1693,12 +1693,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L318"><a href="#L318">318</a></td>
-<td class="hits">62776</td>
+<td class="hits">287822</td>
 <td class="source"><code>    Opts = get_module_opts(Host, Module),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L319"><a href="#L319">319</a></td>
-<td class="hits">62776</td>
+<td class="hits">287822</td>
 <td class="source"><code>    get_opt(Opt, Opts).</code></td>
 </tr>
 <tr>
@@ -1718,12 +1718,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L323"><a href="#L323">323</a></td>
-<td class="hits">385</td>
+<td class="hits">1343</td>
 <td class="source"><code>    Opts = get_module_opts(Host, Module),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L324"><a href="#L324">324</a></td>
-<td class="hits">385</td>
+<td class="hits">1343</td>
 <td class="source"><code>    get_opt_hosts(Opts).</code></td>
 </tr>
 <tr>
@@ -1743,7 +1743,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L328"><a href="#L328">328</a></td>
-<td class="hits">432</td>
+<td class="hits">1396</td>
 <td class="source"><code>    case get_opt(hosts, Opts) of</code></td>
 </tr>
 <tr>
@@ -1753,7 +1753,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L330"><a href="#L330">330</a></td>
-<td class="hits">432</td>
+<td class="hits">1396</td>
 <td class="source"><code>	    [get_opt(host, Opts)];</code></td>
 </tr>
 <tr>
@@ -1788,7 +1788,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L337"><a href="#L337">337</a></td>
-<td class="hits">63217</td>
+<td class="hits">289227</td>
 <td class="source"><code>    try ets:lookup_element(ejabberd_modules, {Module, Host}, 3)</code></td>
 </tr>
 <tr class="miss">
@@ -1818,7 +1818,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L343"><a href="#L343">343</a></td>
-<td class="hits">20517</td>
+<td class="hits">100735</td>
 <td class="source"><code>    db_mod(db_type, T, M).</code></td>
 </tr>
 <tr>
@@ -1838,7 +1838,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L347"><a href="#L347">347</a></td>
-<td class="hits">1547</td>
+<td class="hits">4994</td>
 <td class="source"><code>    db_mod(ram_db_type, T, M).</code></td>
 </tr>
 <tr>
@@ -1863,7 +1863,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L352"><a href="#L352">352</a></td>
-<td class="hits">21989</td>
+<td class="hits">105539</td>
 <td class="source"><code>    db_mod(Opt, get_module_opt(Host, Module, Opt), Module);</code></td>
 </tr>
 <tr>
@@ -1873,7 +1873,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L354"><a href="#L354">354</a></td>
-<td class="hits">75</td>
+<td class="hits">190</td>
 <td class="source"><code>    db_mod(Opt, get_opt(Opt, Opts), Module);</code></td>
 </tr>
 <tr>
@@ -1883,7 +1883,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L356"><a href="#L356">356</a></td>
-<td class="hits">22064</td>
+<td class="hits">105729</td>
 <td class="source"><code>    list_to_existing_atom(atom_to_list(Module) ++ "_" ++ atom_to_list(Type)).</code></td>
 </tr>
 <tr>
@@ -2093,7 +2093,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L398"><a href="#L398">398</a></td>
-<td class="hits">3249</td>
+<td class="hits">33840</td>
 <td class="source"><code>    binary_to_atom(</code></td>
 </tr>
 <tr>
@@ -2123,7 +2123,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L404"><a href="#L404">404</a></td>
-<td class="hits">2388</td>
+<td class="hits">9507</td>
 <td class="source"><code>    ets:member(ejabberd_modules, {Module, Host}).</code></td>
 </tr>
 <tr>
@@ -2168,7 +2168,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L413"><a href="#L413">413</a></td>
-<td class="hits">37</td>
+<td class="hits">38</td>
 <td class="source"><code>	end)) /= 0.</code></td>
 </tr>
 <tr>
@@ -2473,7 +2473,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L474"><a href="#L474">474</a></td>
-<td class="hits">196</td>
+<td class="hits">212</td>
 <td class="source"><code>					       {Mod, validator(Host, Mod, Opts)}</code></td>
 </tr>
 <tr>
@@ -2513,7 +2513,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L482"><a href="#L482">482</a></td>
-<td class="hits">196</td>
+<td class="hits">212</td>
 <td class="source"><code>    {Required, {DefaultOpts1, Validators}} =</code></td>
 </tr>
 <tr>
@@ -2528,7 +2528,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L485"><a href="#L485">485</a></td>
-<td class="hits">197</td>
+<td class="hits">215</td>
 <td class="source"><code>		  lists:mapfoldl(</code></td>
 </tr>
 <tr>
@@ -2538,7 +2538,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L487"><a href="#L487">487</a></td>
-<td class="hits">1153</td>
+<td class="hits">1339</td>
 <td class="source"><code>			    {[], {DAcc1#{Opt =&gt; Def},</code></td>
 </tr>
 <tr>
@@ -2573,7 +2573,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L494"><a href="#L494">494</a></td>
-<td class="hits">196</td>
+<td class="hits">212</td>
 <td class="source"><code>    econf:and_then(</code></td>
 </tr>
 <tr>
@@ -2603,7 +2603,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L500"><a href="#L500">500</a></td>
-<td class="hits">196</td>
+<td class="hits">212</td>
 <td class="source"><code>	      maps:merge(DefaultOpts1, Opts1)</code></td>
 </tr>
 <tr>
@@ -2703,12 +2703,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L520"><a href="#L520">520</a></td>
-<td class="hits">196</td>
+<td class="hits">212</td>
 <td class="source"><code>    DefaultOpts = Module:mod_options(Host),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L521"><a href="#L521">521</a></td>
-<td class="hits">196</td>
+<td class="hits">212</td>
 <td class="source"><code>    [{Module, DefaultOpts}|</code></td>
 </tr>
 <tr>
@@ -2723,17 +2723,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L524"><a href="#L524">524</a></td>
-<td class="hits">62</td>
+<td class="hits">91</td>
 <td class="source"><code>	       T2 = proplists:get_value(Opt, Opts, T1),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L525"><a href="#L525">525</a></td>
-<td class="hits">62</td>
+<td class="hits">91</td>
 <td class="source"><code>	       DBMod = list_to_atom(atom_to_list(Module) ++ "_" ++ atom_to_list(T2)),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L526"><a href="#L526">526</a></td>
-<td class="hits">62</td>
+<td class="hits">91</td>
 <td class="source"><code>	       case code:ensure_loaded(DBMod) of</code></td>
 </tr>
 <tr>
@@ -2743,7 +2743,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L528"><a href="#L528">528</a></td>
-<td class="hits">62</td>
+<td class="hits">91</td>
 <td class="source"><code>		       case erlang:function_exported(DBMod, mod_options, 1) of</code></td>
 </tr>
 <tr>
@@ -2753,7 +2753,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L530"><a href="#L530">530</a></td>
-<td class="hits">1</td>
+<td class="hits">3</td>
 <td class="source"><code>			       {true, {DBMod, DBMod:mod_options(Host)}};</code></td>
 </tr>
 <tr>
@@ -2763,7 +2763,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L532"><a href="#L532">532</a></td>
-<td class="hits">61</td>
+<td class="hits">88</td>
 <td class="source"><code>			       false</code></td>
 </tr>
 <tr>
@@ -2793,7 +2793,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L538"><a href="#L538">538</a></td>
-<td class="hits">1090</td>
+<td class="hits">1229</td>
 <td class="source"><code>	       false</code></td>
 </tr>
 <tr>
@@ -2818,7 +2818,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L543"><a href="#L543">543</a></td>
-<td class="hits">1153</td>
+<td class="hits">1339</td>
 <td class="source"><code>    try SubMod:mod_opt_type(Opt)</code></td>
 </tr>
 <tr class="miss">
@@ -2863,17 +2863,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L552"><a href="#L552">552</a></td>
-<td class="hits">196</td>
+<td class="hits">212</td>
 <td class="source"><code>	      digraph:add_vertex(G, Mod, Opts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L553"><a href="#L553">553</a></td>
-<td class="hits">196</td>
+<td class="hits">212</td>
 <td class="source"><code>	      Deps = Mod:depends(Host, Opts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L554"><a href="#L554">554</a></td>
-<td class="hits">196</td>
+<td class="hits">212</td>
 <td class="source"><code>	      lists:foreach(</code></td>
 </tr>
 <tr>
@@ -2883,7 +2883,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L556"><a href="#L556">556</a></td>
-<td class="hits">51</td>
+<td class="hits">73</td>
 <td class="source"><code>			case lists:keyfind(DepMod, 1, ModOpts) of</code></td>
 </tr>
 <tr>
@@ -2901,9 +2901,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>			    false when Type == soft -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L560"><a href="#L560">560</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>				warn_soft_dep_fail(DepMod, Mod);</code></td>
 </tr>
 <tr>
@@ -2913,12 +2913,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L562"><a href="#L562">562</a></td>
-<td class="hits">51</td>
+<td class="hits">69</td>
 <td class="source"><code>				digraph:add_vertex(G, DepMod, DepOpts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L563"><a href="#L563">563</a></td>
-<td class="hits">51</td>
+<td class="hits">69</td>
 <td class="source"><code>				case digraph:add_edge(G, DepMod, Mod) of</code></td>
 </tr>
 <tr>
@@ -2938,7 +2938,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L567"><a href="#L567">567</a></td>
-<td class="hits">51</td>
+<td class="hits">69</td>
 <td class="source"><code>					ok</code></td>
 </tr>
 <tr>
@@ -2973,12 +2973,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L574"><a href="#L574">574</a></td>
-<td class="hits">196</td>
+<td class="hits">212</td>
 <td class="source"><code>			    {M, O} = digraph:vertex(G, V),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L575"><a href="#L575">575</a></td>
-<td class="hits">196</td>
+<td class="hits">212</td>
 <td class="source"><code>			    {{M, O, Order}, Order+1}</code></td>
 </tr>
 <tr>
@@ -3011,9 +3011,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>warn_soft_dep_fail(DepMod, Mod) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L582"><a href="#L582">582</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    ?WARNING_MSG("Module ~ts is recommended for module "</code></td>
 </tr>
 <tr>
@@ -3021,9 +3021,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		 "~ts but is not found in the config",</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L584"><a href="#L584">584</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>		 [DepMod, Mod]).</code></td>
 </tr>
 <tr>

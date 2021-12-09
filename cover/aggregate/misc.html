@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/misc.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/misc.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:03</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/misc.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:31</p></footer>
 <table>
 <tbody>
 <tr>
@@ -433,7 +433,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L66"><a href="#L66">66</a></td>
-<td class="hits">16</td>
+<td class="hits">6</td>
 <td class="source"><code>    uri_parse(binary_to_list(URL));</code></td>
 </tr>
 <tr>
@@ -443,7 +443,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L68"><a href="#L68">68</a></td>
-<td class="hits">16</td>
+<td class="hits">6</td>
 <td class="source"><code>    case uri_string:parse(URL) of</code></td>
 </tr>
 <tr>
@@ -453,7 +453,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L70"><a href="#L70">70</a></td>
-<td class="hits">16</td>
+<td class="hits">6</td>
 <td class="source"><code>	    {ok, Scheme, Host, Port, Path};</code></td>
 </tr>
 <tr>
@@ -558,7 +558,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L91"><a href="#L91">91</a></td>
-<td class="hits">98</td>
+<td class="hits">378</td>
 <td class="source"><code>    add_delay_info(Stz, From, Time, &lt;&lt;""&gt;&gt;).</code></td>
 </tr>
 <tr>
@@ -578,12 +578,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L95"><a href="#L95">95</a></td>
-<td class="hits">599</td>
+<td class="hits">3254</td>
 <td class="source"><code>    Delays = xmpp:get_subtags(Stz, #delay{stamp = {0,0,0}}),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L96"><a href="#L96">96</a></td>
-<td class="hits">599</td>
+<td class="hits">3254</td>
 <td class="source"><code>    Matching = lists:any(</code></td>
 </tr>
 <tr>
@@ -593,7 +593,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L98"><a href="#L98">98</a></td>
-<td class="hits">236</td>
+<td class="hits">1582</td>
 <td class="source"><code>	       jid:tolower(From) == jid:tolower(OldFrom);</code></td>
 </tr>
 <tr>
@@ -613,7 +613,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L102"><a href="#L102">102</a></td>
-<td class="hits">599</td>
+<td class="hits">3254</td>
 <td class="source"><code>    case Matching of</code></td>
 </tr>
 <tr>
@@ -623,7 +623,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L104"><a href="#L104">104</a></td>
-<td class="hits">236</td>
+<td class="hits">1582</td>
 <td class="source"><code>	    Stz;</code></td>
 </tr>
 <tr>
@@ -633,12 +633,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L106"><a href="#L106">106</a></td>
-<td class="hits">363</td>
+<td class="hits">1672</td>
 <td class="source"><code>	    NewDelay = #delay{stamp = Time, from = From, desc = Desc},</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L107"><a href="#L107">107</a></td>
-<td class="hits">363</td>
+<td class="hits">1672</td>
 <td class="source"><code>	    xmpp:append_subtags(Stz, [NewDelay])</code></td>
 </tr>
 <tr>
@@ -663,12 +663,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L112"><a href="#L112">112</a></td>
-<td class="hits">256</td>
+<td class="hits">1259</td>
 <td class="source"><code>    try</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L113"><a href="#L113">113</a></td>
-<td class="hits">256</td>
+<td class="hits">1259</td>
 <td class="source"><code>	case xmpp:get_subtag(Msg, #carbons_sent{forwarded = #forwarded{}}) of</code></td>
 </tr>
 <tr>
@@ -688,7 +688,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L117"><a href="#L117">117</a></td>
-<td class="hits">256</td>
+<td class="hits">1259</td>
 <td class="source"><code>		case xmpp:get_subtag(Msg, #carbons_received{</code></td>
 </tr>
 <tr>
@@ -713,7 +713,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L122"><a href="#L122">122</a></td>
-<td class="hits">256</td>
+<td class="hits">1259</td>
 <td class="source"><code>			Msg</code></td>
 </tr>
 <tr>
@@ -763,7 +763,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L132"><a href="#L132">132</a></td>
-<td class="hits">1966</td>
+<td class="hits">9528</td>
 <td class="source"><code>    case xmpp:get_subtag(OuterMsg, #ps_event{}) of</code></td>
 </tr>
 <tr>
@@ -808,7 +808,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L141"><a href="#L141">141</a></td>
-<td class="hits">21</td>
+<td class="hits">105</td>
 <td class="source"><code>	    InnerMsg;</code></td>
 </tr>
 <tr>
@@ -818,7 +818,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L143"><a href="#L143">143</a></td>
-<td class="hits">1945</td>
+<td class="hits">9423</td>
 <td class="source"><code>	    false</code></td>
 </tr>
 <tr>
@@ -953,7 +953,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L170"><a href="#L170">170</a></td>
-<td class="hits">256</td>
+<td class="hits">1259</td>
 <td class="source"><code>    case unwrap_carbon(Stanza) of</code></td>
 </tr>
 <tr>
@@ -963,22 +963,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L172"><a href="#L172">172</a></td>
-<td class="hits">66</td>
+<td class="hits">312</td>
 <td class="source"><code>	    IgnoreNS = [?NS_CHATSTATES, ?NS_DELAY, ?NS_EVENT],</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L173"><a href="#L173">173</a></td>
-<td class="hits">66</td>
+<td class="hits">312</td>
 <td class="source"><code>	    Stripped = [El || El &lt;- Els,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L174"><a href="#L174">174</a></td>
-<td class="hits">94</td>
+<td class="hits">452</td>
 <td class="source"><code>			      not lists:member(xmpp:get_ns(El), IgnoreNS)],</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L175"><a href="#L175">175</a></td>
-<td class="hits">66</td>
+<td class="hits">312</td>
 <td class="source"><code>	    Stripped == [];</code></td>
 </tr>
 <tr>
@@ -988,7 +988,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L177"><a href="#L177">177</a></td>
-<td class="hits">190</td>
+<td class="hits">947</td>
 <td class="source"><code>	    false</code></td>
 </tr>
 <tr>
@@ -1013,7 +1013,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L182"><a href="#L182">182</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>    iolist_to_binary(tolower_s(binary_to_list(B))).</code></td>
 </tr>
 <tr>
@@ -1028,12 +1028,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L185"><a href="#L185">185</a></td>
-<td class="hits">140</td>
+<td class="hits">420</td>
 <td class="source"><code>    if C &gt;= $A, C =&lt; $Z -&gt; [C + 32 | tolower_s(Cs)];</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L186"><a href="#L186">186</a></td>
-<td class="hits">140</td>
+<td class="hits">420</td>
 <td class="source"><code>       true -&gt; [C | tolower_s(Cs)]</code></td>
 </tr>
 <tr>
@@ -1043,7 +1043,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L188"><a href="#L188">188</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>tolower_s([]) -&gt; [].</code></td>
 </tr>
 <tr>
@@ -1063,7 +1063,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L192"><a href="#L192">192</a></td>
-<td class="hits">3</td>
+<td class="hits">7</td>
 <td class="source"><code>    encode_base64(term_to_binary(Term)).</code></td>
 </tr>
 <tr>
@@ -1153,7 +1153,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L210"><a href="#L210">210</a></td>
-<td class="hits">3</td>
+<td class="hits">7</td>
 <td class="source"><code>    base64:encode(Data).</code></td>
 </tr>
 <tr>
@@ -1193,7 +1193,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L218"><a href="#L218">218</a></td>
-<td class="hits">397</td>
+<td class="hits">1307</td>
 <td class="source"><code>    ip_to_list(IP);</code></td>
 </tr>
 <tr>
@@ -1218,7 +1218,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L223"><a href="#L223">223</a></td>
-<td class="hits">399</td>
+<td class="hits">1313</td>
 <td class="source"><code>    list_to_binary(inet_parse:ntoa(IP)).</code></td>
 </tr>
 <tr>
@@ -1313,7 +1313,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L242"><a href="#L242">242</a></td>
-<td class="hits">20</td>
+<td class="hits">52</td>
 <td class="source"><code>    url_encode(A, &lt;&lt;&gt;&gt;).</code></td>
 </tr>
 <tr>
@@ -1333,7 +1333,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L246"><a href="#L246">246</a></td>
-<td class="hits">48</td>
+<td class="hits">20</td>
 <td class="source"><code>    re:replace(Input, Keyword, Replacement,</code></td>
 </tr>
 <tr>
@@ -1353,7 +1353,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L250"><a href="#L250">250</a></td>
-<td class="hits">7598</td>
+<td class="hits">53089</td>
 <td class="source"><code>    erlang:binary_to_atom(Bin, utf8).</code></td>
 </tr>
 <tr>
@@ -1383,7 +1383,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L256"><a href="#L256">256</a></td>
-<td class="hits">4799</td>
+<td class="hits">24456</td>
 <td class="source"><code>    erlang:atom_to_binary(A, utf8).</code></td>
 </tr>
 <tr>
@@ -1426,9 +1426,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>term_to_expr(Term) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L265"><a href="#L265">265</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4071</td>
 <td class="source"><code>    list_to_binary(io_lib:print(Term, 1, 999999, -1)).</code></td>
 </tr>
 <tr>
@@ -1448,7 +1448,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L269"><a href="#L269">269</a></td>
-<td class="hits">20</td>
+<td class="hits">118</td>
 <td class="source"><code>    (MSec*1000000 + Sec)*1000000 + USec.</code></td>
 </tr>
 <tr>
@@ -1468,27 +1468,27 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L273"><a href="#L273">273</a></td>
-<td class="hits">263</td>
+<td class="hits">2740</td>
 <td class="source"><code>    Secs = Int div 1000000,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L274"><a href="#L274">274</a></td>
-<td class="hits">263</td>
+<td class="hits">2740</td>
 <td class="source"><code>    USec = Int rem 1000000,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L275"><a href="#L275">275</a></td>
-<td class="hits">263</td>
+<td class="hits">2740</td>
 <td class="source"><code>    MSec = Secs div 1000000,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L276"><a href="#L276">276</a></td>
-<td class="hits">263</td>
+<td class="hits">2740</td>
 <td class="source"><code>    Sec = Secs rem 1000000,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L277"><a href="#L277">277</a></td>
-<td class="hits">263</td>
+<td class="hits">2740</td>
 <td class="source"><code>    {MSec, Sec, USec}.</code></td>
 </tr>
 <tr>
@@ -1511,9 +1511,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L282"><a href="#L282">282</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8613</td>
 <td class="source"><code>i2l(I) when is_integer(I) -&gt; integer_to_binary(I);</code></td>
 </tr>
 <tr class="miss">
@@ -1526,9 +1526,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L285"><a href="#L285">285</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">504</td>
 <td class="source"><code>i2l(I, N) when is_integer(I) -&gt; i2l(i2l(I), N);</code></td>
 </tr>
 <tr>
@@ -1536,14 +1536,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>i2l(L, N) when is_binary(L) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L287"><a href="#L287">287</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1036</td>
 <td class="source"><code>    case str:len(L) of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L288"><a href="#L288">288</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">504</td>
 <td class="source"><code>      N -&gt; L;</code></td>
 </tr>
 <tr class="miss">
@@ -1551,9 +1551,9 @@ td.source {
 <td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>      C when C &gt; N -&gt; L;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L290"><a href="#L290">290</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">532</td>
 <td class="source"><code>      _ -&gt; i2l(&lt;&lt;$0, L/binary&gt;&gt;, N)</code></td>
 </tr>
 <tr>
@@ -1576,9 +1576,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>encode_pid(Pid) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L295"><a href="#L295">295</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1170</td>
 <td class="source"><code>    list_to_binary(erlang:pid_to_list(Pid)).</code></td>
 </tr>
 <tr>
@@ -1596,19 +1596,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>decode_pid(PidBin, NodeBin) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L299"><a href="#L299">299</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2175</td>
 <td class="source"><code>    PidStr = binary_to_list(PidBin),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L300"><a href="#L300">300</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2175</td>
 <td class="source"><code>    Pid = erlang:list_to_pid(PidStr),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L301"><a href="#L301">301</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2175</td>
 <td class="source"><code>    case erlang:binary_to_atom(NodeBin, latin1) of</code></td>
 </tr>
 <tr>
@@ -1616,9 +1616,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	Node when Node == node() -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L303"><a href="#L303">303</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2175</td>
 <td class="source"><code>	    Pid;</code></td>
 </tr>
 <tr>
@@ -1956,9 +1956,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>sql_dir() -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L371"><a href="#L371">371</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    get_dir("sql").</code></td>
 </tr>
 <tr>
@@ -1976,9 +1976,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>lua_dir() -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L375"><a href="#L375">375</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    get_dir("lua").</code></td>
 </tr>
 <tr>
@@ -2056,9 +2056,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>read_lua(File) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L391"><a href="#L391">391</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    read_file(filename:join(lua_dir(), File)).</code></td>
 </tr>
 <tr>
@@ -2118,7 +2118,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L403"><a href="#L403">403</a></td>
-<td class="hits">1</td>
+<td class="hits">9</td>
 <td class="source"><code>              lists:member(E, L2)</code></td>
 </tr>
 <tr>
@@ -2248,7 +2248,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L429"><a href="#L429">429</a></td>
-<td class="hits">11</td>
+<td class="hits">31</td>
 <td class="source"><code>    case erlang:cancel_timer(TRef) of</code></td>
 </tr>
 <tr>
@@ -2278,7 +2278,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L435"><a href="#L435">435</a></td>
-<td class="hits">11</td>
+<td class="hits">31</td>
 <td class="source"><code>	    ok</code></td>
 </tr>
 <tr>
@@ -2533,7 +2533,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L486"><a href="#L486">486</a></td>
-<td class="hits">28</td>
+<td class="hits">32</td>
 <td class="source"><code>		      receive</code></td>
 </tr>
 <tr>
@@ -2543,7 +2543,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L488"><a href="#L488">488</a></td>
-<td class="hits">28</td>
+<td class="hits">32</td>
 <td class="source"><code>			      receive</code></td>
 </tr>
 <tr>
@@ -2553,7 +2553,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L490"><a href="#L490">490</a></td>
-<td class="hits">28</td>
+<td class="hits">32</td>
 <td class="source"><code>				      ok</code></td>
 </tr>
 <tr>
@@ -2578,12 +2578,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L495"><a href="#L495">495</a></td>
-<td class="hits">28</td>
+<td class="hits">32</td>
 <td class="source"><code>	      end, [spawn_monitor(</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L496"><a href="#L496">496</a></td>
-<td class="hits">28</td>
+<td class="hits">32</td>
 <td class="source"><code>		      fun() -&gt; Fun(X), Self ! self() end)</code></td>
 </tr>
 <tr class="hit">
@@ -3066,14 +3066,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>delete_dir(Dir) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L593"><a href="#L593">593</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    try</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L594"><a href="#L594">594</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>	{ok, Entries} = file:list_dir(Dir),</code></td>
 </tr>
 <tr class="miss">
@@ -3131,9 +3131,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	_:{badmatch, {error, Error}} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L606"><a href="#L606">606</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>	    {error, Error}</code></td>
 </tr>
 <tr>
@@ -3213,7 +3213,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L622"><a href="#L622">622</a></td>
-<td class="hits">1858</td>
+<td class="hits">2488</td>
 <td class="source"><code>    url_encode(T, &lt;&lt;Acc/binary, H&gt;&gt;);</code></td>
 </tr>
 <tr>
@@ -3223,12 +3223,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L624"><a href="#L624">624</a></td>
-<td class="hits">145</td>
+<td class="hits">725</td>
 <td class="source"><code>    case integer_to_list(H, 16) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L625"><a href="#L625">625</a></td>
-<td class="hits">145</td>
+<td class="hits">725</td>
 <td class="source"><code>	[X, Y] -&gt; url_encode(T, &lt;&lt;Acc/binary, $%, X, Y&gt;&gt;);</code></td>
 </tr>
 <tr class="miss">
@@ -3248,7 +3248,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L629"><a href="#L629">629</a></td>
-<td class="hits">20</td>
+<td class="hits">52</td>
 <td class="source"><code>    Acc.</code></td>
 </tr>
 <tr>
@@ -3311,9 +3311,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>read_file(Path) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L642"><a href="#L642">642</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    case file:read_file(Path) of</code></td>
 </tr>
 <tr>
@@ -3321,9 +3321,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{ok, Data} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L644"><a href="#L644">644</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>	    {ok, Data};</code></td>
 </tr>
 <tr>
@@ -3368,12 +3368,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L653"><a href="#L653">653</a></td>
-<td class="hits">1</td>
+<td class="hits">3</td>
 <td class="source"><code>    Env = "EJABBERD_" ++ string:to_upper(Type) ++ "_PATH",</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L654"><a href="#L654">654</a></td>
-<td class="hits">1</td>
+<td class="hits">3</td>
 <td class="source"><code>    case os:getenv(Env) of</code></td>
 </tr>
 <tr>
@@ -3383,7 +3383,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L656"><a href="#L656">656</a></td>
-<td class="hits">1</td>
+<td class="hits">3</td>
 <td class="source"><code>	    case code:priv_dir(ejabberd) of</code></td>
 </tr>
 <tr class="miss">
@@ -3393,7 +3393,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L658"><a href="#L658">658</a></td>
-<td class="hits">1</td>
+<td class="hits">3</td>
 <td class="source"><code>		Path -&gt; filename:join([Path, Type])</code></td>
 </tr>
 <tr>
@@ -3438,12 +3438,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L667"><a href="#L667">667</a></td>
-<td class="hits">344</td>
+<td class="hits">1230</td>
 <td class="source"><code>    {MS, S, _} = erlang:timestamp(),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L668"><a href="#L668">668</a></td>
-<td class="hits">344</td>
+<td class="hits">1230</td>
 <td class="source"><code>    {MS, S, erlang:unique_integer([positive, monotonic]) rem 1000000}.</code></td>
 </tr>
 <tr>

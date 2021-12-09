@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/ct/ELDAPv3.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ELDAPv3.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:07</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ELDAPv3.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:35</p></footer>
 <table>
 <tbody>
 <tr>
@@ -761,9 +761,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>encode(Type,Data) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L132"><a href="#L132">132</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>case catch encode_disp(Type,Data) of</code></td>
 </tr>
 <tr>
@@ -791,9 +791,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>  {Bytes,_Len} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L138"><a href="#L138">138</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>    {ok,iolist_to_binary(Bytes)};</code></td>
 </tr>
 <tr>
@@ -821,9 +821,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>decode(Type,Data) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L144"><a href="#L144">144</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>case catch decode_disp(Type,element(1, ber_decode_nif(Data))) of</code></td>
 </tr>
 <tr>
@@ -851,9 +851,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>  Result -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L150"><a href="#L150">150</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>    {ok,Result}</code></td>
 </tr>
 <tr>
@@ -866,9 +866,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L153"><a href="#L153">153</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>encode_disp('LDAPMessage',Data) -&gt; 'enc_LDAPMessage'(Data);</code></td>
 </tr>
 <tr class="miss">
@@ -1126,9 +1126,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L205"><a href="#L205">205</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>decode_disp('LDAPMessage',Data) -&gt; 'dec_LDAPMessage'(Data);</code></td>
 </tr>
 <tr class="miss">
@@ -1491,9 +1491,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>'enc_LDAPMessage'(Val) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L278"><a href="#L278">278</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>    'enc_LDAPMessage'(Val, [&lt;&lt;48&gt;&gt;]).</code></td>
 </tr>
 <tr>
@@ -1506,9 +1506,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>'enc_LDAPMessage'(Val, TagIn) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L281"><a href="#L281">281</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>{_,Cindex1, Cindex2, Cindex3} = Val,</code></td>
 </tr>
 <tr>
@@ -1531,9 +1531,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L286"><a href="#L286">286</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>   {EncBytes1,EncLen1} = encode_integer(Cindex1, [&lt;&lt;2&gt;&gt;]),</code></td>
 </tr>
 <tr>
@@ -1556,9 +1556,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L291"><a href="#L291">291</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>   {EncBytes2,EncLen2} = 'enc_LDAPMessage_protocolOp'(Cindex2, []),</code></td>
 </tr>
 <tr>
@@ -1581,14 +1581,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L296"><a href="#L296">296</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>   {EncBytes3,EncLen3} =  case Cindex3 of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L297"><a href="#L297">297</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>         asn1_NOVALUE -&gt; {&lt;&lt;&gt;&gt;,0};</code></td>
 </tr>
 <tr>
@@ -1611,19 +1611,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L302"><a href="#L302">302</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>   BytesSoFar = [EncBytes1, EncBytes2, EncBytes3],</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L303"><a href="#L303">303</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>LenSoFar = EncLen1 + EncLen2 + EncLen3,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L304"><a href="#L304">304</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>encode_tags(TagIn, BytesSoFar, LenSoFar).</code></td>
 </tr>
 <tr>
@@ -1661,9 +1661,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>'enc_LDAPMessage_protocolOp'(Val, TagIn) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L312"><a href="#L312">312</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>      {EncBytes,EncLen} = case element(1,Val) of</code></td>
 </tr>
 <tr>
@@ -1671,9 +1671,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      bindRequest -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L314"><a href="#L314">314</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>         'enc_BindRequest'(element(2,Val), [&lt;&lt;96&gt;&gt;]);</code></td>
 </tr>
 <tr>
@@ -1681,9 +1681,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      bindResponse -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L316"><a href="#L316">316</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>         'enc_BindResponse'(element(2,Val), [&lt;&lt;97&gt;&gt;]);</code></td>
 </tr>
 <tr>
@@ -1701,9 +1701,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      searchRequest -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L320"><a href="#L320">320</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>         'enc_SearchRequest'(element(2,Val), [&lt;&lt;99&gt;&gt;]);</code></td>
 </tr>
 <tr>
@@ -1711,9 +1711,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      searchResEntry -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L322"><a href="#L322">322</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>         'enc_SearchResultEntry'(element(2,Val), [&lt;&lt;100&gt;&gt;]);</code></td>
 </tr>
 <tr>
@@ -1721,9 +1721,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      searchResDone -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L324"><a href="#L324">324</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>         'enc_SearchResultDone'(element(2,Val), [&lt;&lt;101&gt;&gt;]);</code></td>
 </tr>
 <tr>
@@ -1886,9 +1886,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L357"><a href="#L357">357</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>encode_tags(TagIn, EncBytes, EncLen).</code></td>
 </tr>
 <tr>
@@ -1906,14 +1906,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>'dec_LDAPMessage_protocolOp'(Tlv, TagIn) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L361"><a href="#L361">361</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>Tlv1 = match_tags(Tlv, TagIn),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L362"><a href="#L362">362</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>case (case Tlv1 of [CtempTlv1] -&gt; CtempTlv1; _ -&gt; Tlv1 end) of</code></td>
 </tr>
 <tr>
@@ -1931,9 +1931,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>    {65536, V1} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L366"><a href="#L366">366</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>        {bindRequest, 'dec_BindRequest'(V1, [])};</code></td>
 </tr>
 <tr>
@@ -1956,9 +1956,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>    {65537, V1} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L371"><a href="#L371">371</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>        {bindResponse, 'dec_BindResponse'(V1, [])};</code></td>
 </tr>
 <tr>
@@ -2006,9 +2006,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>    {65539, V1} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L381"><a href="#L381">381</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>        {searchRequest, 'dec_SearchRequest'(V1, [])};</code></td>
 </tr>
 <tr>
@@ -2031,9 +2031,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>    {65540, V1} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L386"><a href="#L386">386</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>        {searchResEntry, 'dec_SearchResultEntry'(V1, [])};</code></td>
 </tr>
 <tr>
@@ -2056,9 +2056,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>    {65541, V1} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L391"><a href="#L391">391</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>        {searchResDone, 'dec_SearchResultDone'(V1, [])};</code></td>
 </tr>
 <tr>
@@ -2451,9 +2451,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>'dec_LDAPMessage'(Tlv) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L470"><a href="#L470">470</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>   'dec_LDAPMessage'(Tlv, [16]).</code></td>
 </tr>
 <tr>
@@ -2481,9 +2481,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>   %%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L476"><a href="#L476">476</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>Tlv1 = match_tags(Tlv, TagIn),</code></td>
 </tr>
 <tr>
@@ -2506,14 +2506,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L481"><a href="#L481">481</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>[V1|Tlv2] = Tlv1,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L482"><a href="#L482">482</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>Term1 = decode_integer(V1,{0,2147483647},[2]),</code></td>
 </tr>
 <tr>
@@ -2536,14 +2536,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L487"><a href="#L487">487</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>[V2|Tlv3] = Tlv2,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L488"><a href="#L488">488</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>Term2 = 'dec_LDAPMessage_protocolOp'(V2, []),</code></td>
 </tr>
 <tr>
@@ -2566,9 +2566,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L493"><a href="#L493">493</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>{Term3,Tlv4} = case Tlv3 of</code></td>
 </tr>
 <tr>
@@ -2586,9 +2586,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>    _ -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L497"><a href="#L497">497</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>        { asn1_NOVALUE, Tlv3}</code></td>
 </tr>
 <tr>
@@ -2601,14 +2601,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L500"><a href="#L500">500</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>case Tlv4 of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L501"><a href="#L501">501</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>[] -&gt; true;_ -&gt; exit({error,{asn1, {unexpected,Tlv4}}}) % extra fields not allowed</code></td>
 </tr>
 <tr>
@@ -2616,9 +2616,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L503"><a href="#L503">503</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>   {'LDAPMessage', Term1, Term2, Term3}.</code></td>
 </tr>
 <tr>
@@ -3301,14 +3301,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>'enc_AttributeDescriptionList'(Val, TagIn) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L640"><a href="#L640">640</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>   {EncBytes,EncLen} = 'enc_AttributeDescriptionList_components'(Val,[],0),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L641"><a href="#L641">641</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>   encode_tags(TagIn, EncBytes, EncLen).</code></td>
 </tr>
 <tr>
@@ -3321,9 +3321,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>'enc_AttributeDescriptionList_components'([], AccBytes, AccLen) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L644"><a href="#L644">644</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>   {lists:reverse(AccBytes),AccLen};</code></td>
 </tr>
 <tr>
@@ -3336,14 +3336,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>'enc_AttributeDescriptionList_components'([H|T],AccBytes, AccLen) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L647"><a href="#L647">647</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">29</td>
 <td class="source"><code>   {EncBytes,EncLen} = encode_restricted_string(H, [&lt;&lt;4&gt;&gt;]),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L648"><a href="#L648">648</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">29</td>
 <td class="source"><code>   'enc_AttributeDescriptionList_components'(T,[EncBytes|AccBytes], AccLen + EncLen).</code></td>
 </tr>
 <tr>
@@ -3396,14 +3396,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>   %%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L659"><a href="#L659">659</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>Tlv1 = match_tags(Tlv, TagIn),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L660"><a href="#L660">660</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>[decode_restricted_string(V1,[4]) || V1 &lt;- Tlv1].</code></td>
 </tr>
 <tr>
@@ -3551,9 +3551,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>'enc_AttributeValueAssertion'(Val, TagIn) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L690"><a href="#L690">690</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>{_,Cindex1, Cindex2} = Val,</code></td>
 </tr>
 <tr>
@@ -3576,9 +3576,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L695"><a href="#L695">695</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>   {EncBytes1,EncLen1} = encode_restricted_string(Cindex1, [&lt;&lt;4&gt;&gt;]),</code></td>
 </tr>
 <tr>
@@ -3601,9 +3601,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L700"><a href="#L700">700</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>   {EncBytes2,EncLen2} = encode_restricted_string(Cindex2, [&lt;&lt;4&gt;&gt;]),</code></td>
 </tr>
 <tr>
@@ -3611,19 +3611,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L702"><a href="#L702">702</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>   BytesSoFar = [EncBytes1, EncBytes2],</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L703"><a href="#L703">703</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>LenSoFar = EncLen1 + EncLen2,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L704"><a href="#L704">704</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>encode_tags(TagIn, BytesSoFar, LenSoFar).</code></td>
 </tr>
 <tr>
@@ -3671,9 +3671,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>   %%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L714"><a href="#L714">714</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>Tlv1 = match_tags(Tlv, TagIn),</code></td>
 </tr>
 <tr>
@@ -3696,14 +3696,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L719"><a href="#L719">719</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>[V1|Tlv2] = Tlv1,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L720"><a href="#L720">720</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>Term1 = decode_restricted_string(V1,[4]),</code></td>
 </tr>
 <tr>
@@ -3726,14 +3726,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L725"><a href="#L725">725</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>[V2|Tlv3] = Tlv2,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L726"><a href="#L726">726</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>Term2 = decode_restricted_string(V2,[4]),</code></td>
 </tr>
 <tr>
@@ -3741,14 +3741,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L728"><a href="#L728">728</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>case Tlv3 of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L729"><a href="#L729">729</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>[] -&gt; true;_ -&gt; exit({error,{asn1, {unexpected,Tlv3}}}) % extra fields not allowed</code></td>
 </tr>
 <tr>
@@ -3756,9 +3756,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L731"><a href="#L731">731</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>   {'AttributeValueAssertion', Term1, Term2}.</code></td>
 </tr>
 <tr>
@@ -4376,9 +4376,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>'enc_LDAPResult'(Val, TagIn) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L855"><a href="#L855">855</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>{_,Cindex1, Cindex2, Cindex3, Cindex4} = Val,</code></td>
 </tr>
 <tr>
@@ -4401,14 +4401,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L860"><a href="#L860">860</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>   {EncBytes1,EncLen1} = case Cindex1 of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L861"><a href="#L861">861</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>success -&gt; encode_enumerated(0, [&lt;&lt;10&gt;&gt;]);</code></td>
 </tr>
 <tr class="miss">
@@ -4631,9 +4631,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L906"><a href="#L906">906</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>   {EncBytes2,EncLen2} = encode_restricted_string(Cindex2, [&lt;&lt;4&gt;&gt;]),</code></td>
 </tr>
 <tr>
@@ -4656,9 +4656,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L911"><a href="#L911">911</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>   {EncBytes3,EncLen3} = encode_restricted_string(Cindex3, [&lt;&lt;4&gt;&gt;]),</code></td>
 </tr>
 <tr>
@@ -4681,14 +4681,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L916"><a href="#L916">916</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>   {EncBytes4,EncLen4} =  case Cindex4 of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L917"><a href="#L917">917</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>         asn1_NOVALUE -&gt; {&lt;&lt;&gt;&gt;,0};</code></td>
 </tr>
 <tr>
@@ -4711,19 +4711,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L922"><a href="#L922">922</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>   BytesSoFar = [EncBytes1, EncBytes2, EncBytes3, EncBytes4],</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L923"><a href="#L923">923</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>LenSoFar = EncLen1 + EncLen2 + EncLen3 + EncLen4,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L924"><a href="#L924">924</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>encode_tags(TagIn, BytesSoFar, LenSoFar).</code></td>
 </tr>
 <tr>
@@ -4771,9 +4771,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>   %%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L934"><a href="#L934">934</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>Tlv1 = match_tags(Tlv, TagIn),</code></td>
 </tr>
 <tr>
@@ -4796,14 +4796,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L939"><a href="#L939">939</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>[V1|Tlv2] = Tlv1,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L940"><a href="#L940">940</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>Term1 = decode_enumerated(V1,[{success,0},{operationsError,1},{protocolError,2},{timeLimitExceeded,3},{sizeLimitExceeded,4},{compareFalse,5},{compareTrue,6},{authMethodNotSupported,7},{strongAuthRequired,8},{referral,10},{adminLimitExceeded,11},{unavailableCriticalExtension,12},{confidentialityRequired,13},{saslBindInProgress,14},{noSuchAttribute,16},{undefinedAttributeType,17},{inappropriateMatching,18},{constraintViolation,19},{attributeOrValueExists,20},{invalidAttributeSyntax,21},{noSuchObject,32},{aliasProblem,33},{invalidDNSyntax,34},{aliasDereferencingProblem,36},{inappropriateAuthentication,48},{invalidCredentials,49},{insufficientAccessRights,50},{busy,51},{unavailable,52},{unwillingToPerform,53},{loopDetect,54},{namingViolation,64},{objectClassViolation,65},{notAllowedOnNonLeaf,66},{notAllowedOnRDN,67},{entryAlreadyExists,68},{objectClassModsProhibited,69},{affectsMultipleDSAs,71},{other,80}],[10]),</code></td>
 </tr>
 <tr>
@@ -4826,14 +4826,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L945"><a href="#L945">945</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>[V2|Tlv3] = Tlv2,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L946"><a href="#L946">946</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>Term2 = decode_restricted_string(V2,[4]),</code></td>
 </tr>
 <tr>
@@ -4856,14 +4856,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L951"><a href="#L951">951</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>[V3|Tlv4] = Tlv3,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L952"><a href="#L952">952</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>Term3 = decode_restricted_string(V3,[4]),</code></td>
 </tr>
 <tr>
@@ -4886,9 +4886,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L957"><a href="#L957">957</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>{Term4,Tlv5} = case Tlv4 of</code></td>
 </tr>
 <tr>
@@ -4906,9 +4906,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>    _ -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L961"><a href="#L961">961</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>        { asn1_NOVALUE, Tlv4}</code></td>
 </tr>
 <tr>
@@ -4921,14 +4921,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L964"><a href="#L964">964</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>case Tlv5 of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L965"><a href="#L965">965</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>[] -&gt; true;_ -&gt; exit({error,{asn1, {unexpected,Tlv5}}}) % extra fields not allowed</code></td>
 </tr>
 <tr>
@@ -4936,9 +4936,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L967"><a href="#L967">967</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>   {'LDAPResult', Term1, Term2, Term3, Term4}.</code></td>
 </tr>
 <tr>
@@ -5801,9 +5801,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>'enc_BindRequest'(Val, TagIn) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1140"><a href="#L1140">1140</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>{_,Cindex1, Cindex2, Cindex3} = Val,</code></td>
 </tr>
 <tr>
@@ -5826,9 +5826,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1145"><a href="#L1145">1145</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>   {EncBytes1,EncLen1} = encode_integer(Cindex1, [&lt;&lt;2&gt;&gt;]),</code></td>
 </tr>
 <tr>
@@ -5851,9 +5851,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1150"><a href="#L1150">1150</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>   {EncBytes2,EncLen2} = encode_restricted_string(Cindex2, [&lt;&lt;4&gt;&gt;]),</code></td>
 </tr>
 <tr>
@@ -5876,9 +5876,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1155"><a href="#L1155">1155</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>   {EncBytes3,EncLen3} = 'enc_AuthenticationChoice'(Cindex3, []),</code></td>
 </tr>
 <tr>
@@ -5886,19 +5886,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1157"><a href="#L1157">1157</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>   BytesSoFar = [EncBytes1, EncBytes2, EncBytes3],</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1158"><a href="#L1158">1158</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>LenSoFar = EncLen1 + EncLen2 + EncLen3,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1159"><a href="#L1159">1159</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>encode_tags(TagIn, BytesSoFar, LenSoFar).</code></td>
 </tr>
 <tr>
@@ -5946,9 +5946,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>   %%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1169"><a href="#L1169">1169</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>Tlv1 = match_tags(Tlv, TagIn),</code></td>
 </tr>
 <tr>
@@ -5971,14 +5971,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1174"><a href="#L1174">1174</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>[V1|Tlv2] = Tlv1,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1175"><a href="#L1175">1175</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>Term1 = decode_integer(V1,{1,127},[2]),</code></td>
 </tr>
 <tr>
@@ -6001,14 +6001,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1180"><a href="#L1180">1180</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>[V2|Tlv3] = Tlv2,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1181"><a href="#L1181">1181</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>Term2 = decode_restricted_string(V2,[4]),</code></td>
 </tr>
 <tr>
@@ -6031,14 +6031,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1186"><a href="#L1186">1186</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>[V3|Tlv4] = Tlv3,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1187"><a href="#L1187">1187</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>Term3 = 'dec_AuthenticationChoice'(V3, []),</code></td>
 </tr>
 <tr>
@@ -6046,14 +6046,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1189"><a href="#L1189">1189</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>case Tlv4 of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1190"><a href="#L1190">1190</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>[] -&gt; true;_ -&gt; exit({error,{asn1, {unexpected,Tlv4}}}) % extra fields not allowed</code></td>
 </tr>
 <tr>
@@ -6061,9 +6061,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1192"><a href="#L1192">1192</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>   {'BindRequest', Term1, Term2, Term3}.</code></td>
 </tr>
 <tr>
@@ -6116,9 +6116,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>'enc_AuthenticationChoice'(Val, TagIn) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1203"><a href="#L1203">1203</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>   {EncBytes,EncLen} = case element(1,Val) of</code></td>
 </tr>
 <tr>
@@ -6126,9 +6126,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      simple -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1205"><a href="#L1205">1205</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>         encode_restricted_string(element(2,Val), [&lt;&lt;128&gt;&gt;]);</code></td>
 </tr>
 <tr>
@@ -6161,9 +6161,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1212"><a href="#L1212">1212</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>encode_tags(TagIn, EncBytes, EncLen).</code></td>
 </tr>
 <tr>
@@ -6206,14 +6206,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>'dec_AuthenticationChoice'(Tlv, TagIn) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1221"><a href="#L1221">1221</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>Tlv1 = match_tags(Tlv, TagIn),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1222"><a href="#L1222">1222</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>case (case Tlv1 of [CtempTlv1] -&gt; CtempTlv1; _ -&gt; Tlv1 end) of</code></td>
 </tr>
 <tr>
@@ -6231,9 +6231,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>    {131072, V1} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1226"><a href="#L1226">1226</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>        {simple, decode_restricted_string(V1,[])};</code></td>
 </tr>
 <tr>
@@ -6631,9 +6631,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>'enc_BindResponse'(Val, TagIn) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1306"><a href="#L1306">1306</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>{_,Cindex1, Cindex2, Cindex3, Cindex4, Cindex5} = Val,</code></td>
 </tr>
 <tr>
@@ -6656,14 +6656,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1311"><a href="#L1311">1311</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>   {EncBytes1,EncLen1} = case Cindex1 of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1312"><a href="#L1312">1312</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>success -&gt; encode_enumerated(0, [&lt;&lt;10&gt;&gt;]);</code></td>
 </tr>
 <tr class="miss">
@@ -6886,9 +6886,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1357"><a href="#L1357">1357</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>   {EncBytes2,EncLen2} = encode_restricted_string(Cindex2, [&lt;&lt;4&gt;&gt;]),</code></td>
 </tr>
 <tr>
@@ -6911,9 +6911,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1362"><a href="#L1362">1362</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>   {EncBytes3,EncLen3} = encode_restricted_string(Cindex3, [&lt;&lt;4&gt;&gt;]),</code></td>
 </tr>
 <tr>
@@ -6936,14 +6936,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1367"><a href="#L1367">1367</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>   {EncBytes4,EncLen4} =  case Cindex4 of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1368"><a href="#L1368">1368</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>         asn1_NOVALUE -&gt; {&lt;&lt;&gt;&gt;,0};</code></td>
 </tr>
 <tr>
@@ -6981,14 +6981,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1376"><a href="#L1376">1376</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>   {EncBytes5,EncLen5} =  case Cindex5 of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1377"><a href="#L1377">1377</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>         asn1_NOVALUE -&gt; {&lt;&lt;&gt;&gt;,0};</code></td>
 </tr>
 <tr>
@@ -7011,19 +7011,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1382"><a href="#L1382">1382</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>   BytesSoFar = [EncBytes1, EncBytes2, EncBytes3, EncBytes4, EncBytes5],</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1383"><a href="#L1383">1383</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>LenSoFar = EncLen1 + EncLen2 + EncLen3 + EncLen4 + EncLen5,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1384"><a href="#L1384">1384</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>encode_tags(TagIn, BytesSoFar, LenSoFar).</code></td>
 </tr>
 <tr>
@@ -7071,9 +7071,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>   %%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1394"><a href="#L1394">1394</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>Tlv1 = match_tags(Tlv, TagIn),</code></td>
 </tr>
 <tr>
@@ -7096,14 +7096,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1399"><a href="#L1399">1399</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>[V1|Tlv2] = Tlv1,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1400"><a href="#L1400">1400</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>Term1 = decode_enumerated(V1,[{success,0},{operationsError,1},{protocolError,2},{timeLimitExceeded,3},{sizeLimitExceeded,4},{compareFalse,5},{compareTrue,6},{authMethodNotSupported,7},{strongAuthRequired,8},{referral,10},{adminLimitExceeded,11},{unavailableCriticalExtension,12},{confidentialityRequired,13},{saslBindInProgress,14},{noSuchAttribute,16},{undefinedAttributeType,17},{inappropriateMatching,18},{constraintViolation,19},{attributeOrValueExists,20},{invalidAttributeSyntax,21},{noSuchObject,32},{aliasProblem,33},{invalidDNSyntax,34},{aliasDereferencingProblem,36},{inappropriateAuthentication,48},{invalidCredentials,49},{insufficientAccessRights,50},{busy,51},{unavailable,52},{unwillingToPerform,53},{loopDetect,54},{namingViolation,64},{objectClassViolation,65},{notAllowedOnNonLeaf,66},{notAllowedOnRDN,67},{entryAlreadyExists,68},{objectClassModsProhibited,69},{affectsMultipleDSAs,71},{other,80}],[10]),</code></td>
 </tr>
 <tr>
@@ -7126,14 +7126,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1405"><a href="#L1405">1405</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>[V2|Tlv3] = Tlv2,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1406"><a href="#L1406">1406</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>Term2 = decode_restricted_string(V2,[4]),</code></td>
 </tr>
 <tr>
@@ -7156,14 +7156,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1411"><a href="#L1411">1411</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>[V3|Tlv4] = Tlv3,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1412"><a href="#L1412">1412</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>Term3 = decode_restricted_string(V3,[4]),</code></td>
 </tr>
 <tr>
@@ -7186,9 +7186,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1417"><a href="#L1417">1417</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>{Term4,Tlv5} = case Tlv4 of</code></td>
 </tr>
 <tr>
@@ -7206,9 +7206,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>    _ -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1421"><a href="#L1421">1421</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>        { asn1_NOVALUE, Tlv4}</code></td>
 </tr>
 <tr>
@@ -7236,9 +7236,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1427"><a href="#L1427">1427</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>{Term5,Tlv6} = case Tlv5 of</code></td>
 </tr>
 <tr>
@@ -7256,9 +7256,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>    _ -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1431"><a href="#L1431">1431</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>        { asn1_NOVALUE, Tlv5}</code></td>
 </tr>
 <tr>
@@ -7271,14 +7271,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1434"><a href="#L1434">1434</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>case Tlv6 of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1435"><a href="#L1435">1435</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>[] -&gt; true;_ -&gt; exit({error,{asn1, {unexpected,Tlv6}}}) % extra fields not allowed</code></td>
 </tr>
 <tr>
@@ -7286,9 +7286,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1437"><a href="#L1437">1437</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>   {'BindResponse', Term1, Term2, Term3, Term4, Term5}.</code></td>
 </tr>
 <tr>
@@ -7431,9 +7431,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>'enc_SearchRequest'(Val, TagIn) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1466"><a href="#L1466">1466</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>{_,Cindex1, Cindex2, Cindex3, Cindex4, Cindex5, Cindex6, Cindex7, Cindex8} = Val,</code></td>
 </tr>
 <tr>
@@ -7456,9 +7456,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1471"><a href="#L1471">1471</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>   {EncBytes1,EncLen1} = encode_restricted_string(Cindex1, [&lt;&lt;4&gt;&gt;]),</code></td>
 </tr>
 <tr>
@@ -7481,9 +7481,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1476"><a href="#L1476">1476</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>   {EncBytes2,EncLen2} = case Cindex2 of</code></td>
 </tr>
 <tr class="miss">
@@ -7496,9 +7496,9 @@ td.source {
 <td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>singleLevel -&gt; encode_enumerated(1, [&lt;&lt;10&gt;&gt;]);</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1479"><a href="#L1479">1479</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>wholeSubtree -&gt; encode_enumerated(2, [&lt;&lt;10&gt;&gt;]);</code></td>
 </tr>
 <tr class="miss">
@@ -7531,14 +7531,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1486"><a href="#L1486">1486</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>   {EncBytes3,EncLen3} = case Cindex3 of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1487"><a href="#L1487">1487</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>neverDerefAliases -&gt; encode_enumerated(0, [&lt;&lt;10&gt;&gt;]);</code></td>
 </tr>
 <tr class="miss">
@@ -7586,9 +7586,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1497"><a href="#L1497">1497</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>   {EncBytes4,EncLen4} = encode_integer(Cindex4, [&lt;&lt;2&gt;&gt;]),</code></td>
 </tr>
 <tr>
@@ -7611,9 +7611,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1502"><a href="#L1502">1502</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>   {EncBytes5,EncLen5} = encode_integer(Cindex5, [&lt;&lt;2&gt;&gt;]),</code></td>
 </tr>
 <tr>
@@ -7636,9 +7636,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1507"><a href="#L1507">1507</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>   {EncBytes6,EncLen6} = encode_boolean(Cindex6, [&lt;&lt;1&gt;&gt;]),</code></td>
 </tr>
 <tr>
@@ -7661,9 +7661,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1512"><a href="#L1512">1512</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>   {EncBytes7,EncLen7} = 'enc_Filter'(Cindex7, []),</code></td>
 </tr>
 <tr>
@@ -7686,9 +7686,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1517"><a href="#L1517">1517</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>   {EncBytes8,EncLen8} = 'enc_AttributeDescriptionList'(Cindex8, [&lt;&lt;48&gt;&gt;]),</code></td>
 </tr>
 <tr>
@@ -7696,19 +7696,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1519"><a href="#L1519">1519</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>   BytesSoFar = [EncBytes1, EncBytes2, EncBytes3, EncBytes4, EncBytes5, EncBytes6, EncBytes7, EncBytes8],</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1520"><a href="#L1520">1520</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>LenSoFar = EncLen1 + EncLen2 + EncLen3 + EncLen4 + EncLen5 + EncLen6 + EncLen7 + EncLen8,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1521"><a href="#L1521">1521</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>encode_tags(TagIn, BytesSoFar, LenSoFar).</code></td>
 </tr>
 <tr>
@@ -7756,9 +7756,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>   %%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1531"><a href="#L1531">1531</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>Tlv1 = match_tags(Tlv, TagIn),</code></td>
 </tr>
 <tr>
@@ -7781,14 +7781,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1536"><a href="#L1536">1536</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>[V1|Tlv2] = Tlv1,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1537"><a href="#L1537">1537</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>Term1 = decode_restricted_string(V1,[4]),</code></td>
 </tr>
 <tr>
@@ -7811,14 +7811,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1542"><a href="#L1542">1542</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>[V2|Tlv3] = Tlv2,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1543"><a href="#L1543">1543</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>Term2 = decode_enumerated(V2,[{baseObject,0},{singleLevel,1},{wholeSubtree,2}],[10]),</code></td>
 </tr>
 <tr>
@@ -7841,14 +7841,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1548"><a href="#L1548">1548</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>[V3|Tlv4] = Tlv3,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1549"><a href="#L1549">1549</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>Term3 = decode_enumerated(V3,[{neverDerefAliases,0},{derefInSearching,1},{derefFindingBaseObj,2},{derefAlways,3}],[10]),</code></td>
 </tr>
 <tr>
@@ -7871,14 +7871,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1554"><a href="#L1554">1554</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>[V4|Tlv5] = Tlv4,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1555"><a href="#L1555">1555</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>Term4 = decode_integer(V4,{0,2147483647},[2]),</code></td>
 </tr>
 <tr>
@@ -7901,14 +7901,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1560"><a href="#L1560">1560</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>[V5|Tlv6] = Tlv5,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1561"><a href="#L1561">1561</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>Term5 = decode_integer(V5,{0,2147483647},[2]),</code></td>
 </tr>
 <tr>
@@ -7931,14 +7931,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1566"><a href="#L1566">1566</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>[V6|Tlv7] = Tlv6,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1567"><a href="#L1567">1567</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>Term6 = decode_boolean(V6,[1]),</code></td>
 </tr>
 <tr>
@@ -7961,14 +7961,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1572"><a href="#L1572">1572</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>[V7|Tlv8] = Tlv7,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1573"><a href="#L1573">1573</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>Term7 = 'dec_Filter'(V7, []),</code></td>
 </tr>
 <tr>
@@ -7991,14 +7991,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1578"><a href="#L1578">1578</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>[V8|Tlv9] = Tlv8,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1579"><a href="#L1579">1579</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>Term8 = 'dec_AttributeDescriptionList'(V8, [16]),</code></td>
 </tr>
 <tr>
@@ -8006,14 +8006,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1581"><a href="#L1581">1581</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>case Tlv9 of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1582"><a href="#L1582">1582</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>[] -&gt; true;_ -&gt; exit({error,{asn1, {unexpected,Tlv9}}}) % extra fields not allowed</code></td>
 </tr>
 <tr>
@@ -8021,9 +8021,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1584"><a href="#L1584">1584</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>   {'SearchRequest', Term1, Term2, Term3, Term4, Term5, Term6, Term7, Term8}.</code></td>
 </tr>
 <tr>
@@ -8076,9 +8076,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>'enc_Filter'(Val, TagIn) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1595"><a href="#L1595">1595</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>   {EncBytes,EncLen} = case element(1,Val) of</code></td>
 </tr>
 <tr>
@@ -8086,9 +8086,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      'and' -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1597"><a href="#L1597">1597</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>         'enc_Filter_and'(element(2,Val), [&lt;&lt;160&gt;&gt;]);</code></td>
 </tr>
 <tr>
@@ -8116,9 +8116,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      equalityMatch -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1603"><a href="#L1603">1603</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>         'enc_AttributeValueAssertion'(element(2,Val), [&lt;&lt;163&gt;&gt;]);</code></td>
 </tr>
 <tr>
@@ -8156,9 +8156,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      present -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1611"><a href="#L1611">1611</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>         encode_restricted_string(element(2,Val), [&lt;&lt;135&gt;&gt;]);</code></td>
 </tr>
 <tr>
@@ -8201,9 +8201,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1620"><a href="#L1620">1620</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>encode_tags(TagIn, EncBytes, EncLen).</code></td>
 </tr>
 <tr>
@@ -8251,14 +8251,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>'enc_Filter_and'(Val, TagIn) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1630"><a href="#L1630">1630</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>      {EncBytes,EncLen} = 'enc_Filter_and_components'(Val,[],0),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1631"><a href="#L1631">1631</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>   encode_tags(TagIn, EncBytes, EncLen).</code></td>
 </tr>
 <tr>
@@ -8271,9 +8271,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>'enc_Filter_and_components'([], AccBytes, AccLen) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1634"><a href="#L1634">1634</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>   {lists:reverse(AccBytes),AccLen};</code></td>
 </tr>
 <tr>
@@ -8286,14 +8286,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>'enc_Filter_and_components'([H|T],AccBytes, AccLen) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1637"><a href="#L1637">1637</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>   {EncBytes,EncLen} = 'enc_Filter'(H, []),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1638"><a href="#L1638">1638</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>   'enc_Filter_and_components'(T,[EncBytes|AccBytes], AccLen + EncLen).</code></td>
 </tr>
 <tr>
@@ -8321,14 +8321,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>   %%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1644"><a href="#L1644">1644</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>Tlv1 = match_tags(Tlv, TagIn),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1645"><a href="#L1645">1645</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>['dec_Filter'(V1, []) || V1 &lt;- Tlv1].</code></td>
 </tr>
 <tr>
@@ -8496,14 +8496,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>'dec_Filter'(Tlv, TagIn) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1679"><a href="#L1679">1679</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>Tlv1 = match_tags(Tlv, TagIn),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1680"><a href="#L1680">1680</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>case (case Tlv1 of [CtempTlv1] -&gt; CtempTlv1; _ -&gt; Tlv1 end) of</code></td>
 </tr>
 <tr>
@@ -8521,9 +8521,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>    {131072, V1} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1684"><a href="#L1684">1684</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>        {'and', 'dec_Filter_and'(V1, [])};</code></td>
 </tr>
 <tr>
@@ -8596,9 +8596,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>    {131075, V1} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1699"><a href="#L1699">1699</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>        {equalityMatch, 'dec_AttributeValueAssertion'(V1, [])};</code></td>
 </tr>
 <tr>
@@ -8696,9 +8696,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>    {131079, V1} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1719"><a href="#L1719">1719</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>        {present, decode_restricted_string(V1,[])};</code></td>
 </tr>
 <tr>
@@ -9916,9 +9916,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>'enc_SearchResultEntry'(Val, TagIn) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1963"><a href="#L1963">1963</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>{_,Cindex1, Cindex2} = Val,</code></td>
 </tr>
 <tr>
@@ -9941,9 +9941,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1968"><a href="#L1968">1968</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>   {EncBytes1,EncLen1} = encode_restricted_string(Cindex1, [&lt;&lt;4&gt;&gt;]),</code></td>
 </tr>
 <tr>
@@ -9966,9 +9966,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1973"><a href="#L1973">1973</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>   {EncBytes2,EncLen2} = 'enc_PartialAttributeList'(Cindex2, [&lt;&lt;48&gt;&gt;]),</code></td>
 </tr>
 <tr>
@@ -9976,19 +9976,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1975"><a href="#L1975">1975</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>   BytesSoFar = [EncBytes1, EncBytes2],</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1976"><a href="#L1976">1976</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>LenSoFar = EncLen1 + EncLen2,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1977"><a href="#L1977">1977</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>encode_tags(TagIn, BytesSoFar, LenSoFar).</code></td>
 </tr>
 <tr>
@@ -10036,9 +10036,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>   %%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1987"><a href="#L1987">1987</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>Tlv1 = match_tags(Tlv, TagIn),</code></td>
 </tr>
 <tr>
@@ -10061,14 +10061,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1992"><a href="#L1992">1992</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>[V1|Tlv2] = Tlv1,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1993"><a href="#L1993">1993</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>Term1 = decode_restricted_string(V1,[4]),</code></td>
 </tr>
 <tr>
@@ -10091,14 +10091,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1998"><a href="#L1998">1998</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>[V2|Tlv3] = Tlv2,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1999"><a href="#L1999">1999</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>Term2 = 'dec_PartialAttributeList'(V2, [16]),</code></td>
 </tr>
 <tr>
@@ -10106,14 +10106,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L2001"><a href="#L2001">2001</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>case Tlv3 of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L2002"><a href="#L2002">2002</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>[] -&gt; true;_ -&gt; exit({error,{asn1, {unexpected,Tlv3}}}) % extra fields not allowed</code></td>
 </tr>
 <tr>
@@ -10121,9 +10121,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L2004"><a href="#L2004">2004</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>   {'SearchResultEntry', Term1, Term2}.</code></td>
 </tr>
 <tr>
@@ -10176,14 +10176,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>'enc_PartialAttributeList'(Val, TagIn) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L2015"><a href="#L2015">2015</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>   {EncBytes,EncLen} = 'enc_PartialAttributeList_components'(Val,[],0),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L2016"><a href="#L2016">2016</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>   encode_tags(TagIn, EncBytes, EncLen).</code></td>
 </tr>
 <tr>
@@ -10196,9 +10196,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>'enc_PartialAttributeList_components'([], AccBytes, AccLen) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L2019"><a href="#L2019">2019</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>   {lists:reverse(AccBytes),AccLen};</code></td>
 </tr>
 <tr>
@@ -10211,14 +10211,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>'enc_PartialAttributeList_components'([H|T],AccBytes, AccLen) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L2022"><a href="#L2022">2022</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>   {EncBytes,EncLen} = 'enc_PartialAttributeList_SEQOF'(H, [&lt;&lt;48&gt;&gt;]),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L2023"><a href="#L2023">2023</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>   'enc_PartialAttributeList_components'(T,[EncBytes|AccBytes], AccLen + EncLen).</code></td>
 </tr>
 <tr>
@@ -10261,9 +10261,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>'enc_PartialAttributeList_SEQOF'(Val, TagIn) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L2032"><a href="#L2032">2032</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>   {_,Cindex1, Cindex2} = Val,</code></td>
 </tr>
 <tr>
@@ -10286,9 +10286,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L2037"><a href="#L2037">2037</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>   {EncBytes1,EncLen1} = encode_restricted_string(Cindex1, [&lt;&lt;4&gt;&gt;]),</code></td>
 </tr>
 <tr>
@@ -10311,9 +10311,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L2042"><a href="#L2042">2042</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>   {EncBytes2,EncLen2} = 'enc_PartialAttributeList_SEQOF_vals'(Cindex2, [&lt;&lt;49&gt;&gt;]),</code></td>
 </tr>
 <tr>
@@ -10321,19 +10321,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L2044"><a href="#L2044">2044</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>   BytesSoFar = [EncBytes1, EncBytes2],</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L2045"><a href="#L2045">2045</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>LenSoFar = EncLen1 + EncLen2,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L2046"><a href="#L2046">2046</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>encode_tags(TagIn, BytesSoFar, LenSoFar).</code></td>
 </tr>
 <tr>
@@ -10371,14 +10371,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>'enc_PartialAttributeList_SEQOF_vals'(Val, TagIn) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L2054"><a href="#L2054">2054</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>      {EncBytes,EncLen} = 'enc_PartialAttributeList_SEQOF_vals_components'(Val,[],0),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L2055"><a href="#L2055">2055</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>   encode_tags(TagIn, EncBytes, EncLen).</code></td>
 </tr>
 <tr>
@@ -10391,9 +10391,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>'enc_PartialAttributeList_SEQOF_vals_components'([], AccBytes, AccLen) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L2058"><a href="#L2058">2058</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>   {lists:reverse(AccBytes),AccLen};</code></td>
 </tr>
 <tr>
@@ -10406,14 +10406,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>'enc_PartialAttributeList_SEQOF_vals_components'([H|T],AccBytes, AccLen) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L2061"><a href="#L2061">2061</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">13</td>
 <td class="source"><code>   {EncBytes,EncLen} = encode_restricted_string(H, [&lt;&lt;4&gt;&gt;]),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L2062"><a href="#L2062">2062</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">13</td>
 <td class="source"><code>   'enc_PartialAttributeList_SEQOF_vals_components'(T,[EncBytes|AccBytes], AccLen + EncLen).</code></td>
 </tr>
 <tr>
@@ -10441,14 +10441,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>   %%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L2068"><a href="#L2068">2068</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>Tlv1 = match_tags(Tlv, TagIn),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L2069"><a href="#L2069">2069</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>[decode_restricted_string(V1,[4]) || V1 &lt;- Tlv1].</code></td>
 </tr>
 <tr>
@@ -10481,9 +10481,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>   %%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L2076"><a href="#L2076">2076</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>Tlv1 = match_tags(Tlv, TagIn),</code></td>
 </tr>
 <tr>
@@ -10506,14 +10506,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L2081"><a href="#L2081">2081</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>[V1|Tlv2] = Tlv1,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L2082"><a href="#L2082">2082</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>Term1 = decode_restricted_string(V1,[4]),</code></td>
 </tr>
 <tr>
@@ -10536,14 +10536,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L2087"><a href="#L2087">2087</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>[V2|Tlv3] = Tlv2,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L2088"><a href="#L2088">2088</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>Term2 = 'dec_PartialAttributeList_SEQOF_vals'(V2, [17]),</code></td>
 </tr>
 <tr>
@@ -10551,14 +10551,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L2090"><a href="#L2090">2090</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>case Tlv3 of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L2091"><a href="#L2091">2091</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>[] -&gt; true;_ -&gt; exit({error,{asn1, {unexpected,Tlv3}}}) % extra fields not allowed</code></td>
 </tr>
 <tr>
@@ -10566,9 +10566,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L2093"><a href="#L2093">2093</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>   {'PartialAttributeList_SEQOF', Term1, Term2}.</code></td>
 </tr>
 <tr>
@@ -10621,14 +10621,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>   %%-------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L2104"><a href="#L2104">2104</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>Tlv1 = match_tags(Tlv, TagIn),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L2105"><a href="#L2105">2105</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>['dec_PartialAttributeList_SEQOF'(V1, [16]) || V1 &lt;- Tlv1].</code></td>
 </tr>
 <tr>
@@ -10846,9 +10846,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>'enc_SearchResultDone'(Val, TagIn) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L2149"><a href="#L2149">2149</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>   'enc_LDAPResult'(Val, TagIn).</code></td>
 </tr>
 <tr>
@@ -10881,9 +10881,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>'dec_SearchResultDone'(Tlv, TagIn) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L2156"><a href="#L2156">2156</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>'dec_LDAPResult'(Tlv, TagIn).</code></td>
 </tr>
 <tr>
@@ -15826,9 +15826,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>ber_decode_nif(B) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3145"><a href="#L3145">3145</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>    asn1rt_nif:decode_ber_tlv(B).</code></td>
 </tr>
 <tr>
@@ -15926,14 +15926,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>decode_boolean(Tlv, TagIn) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3165"><a href="#L3165">3165</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>    Val = match_tags(Tlv, TagIn),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3166"><a href="#L3166">3166</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>    case Val of</code></td>
 </tr>
 <tr>
@@ -15941,9 +15941,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>        &lt;&lt;0:8&gt;&gt; -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3168"><a href="#L3168">3168</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>            false;</code></td>
 </tr>
 <tr>
@@ -15981,14 +15981,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>decode_enumerated(Tlv, NamedNumberList, Tags) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3176"><a href="#L3176">3176</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">26</td>
 <td class="source"><code>    Buffer = match_tags(Tlv, Tags),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3177"><a href="#L3177">3177</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">26</td>
 <td class="source"><code>    decode_enumerated_notag(Buffer, NamedNumberList, Tags).</code></td>
 </tr>
 <tr>
@@ -16001,9 +16001,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>decode_enumerated1(Val, NamedNumberList) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3180"><a href="#L3180">3180</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">26</td>
 <td class="source"><code>    case lists:keyfind(Val, 2, NamedNumberList) of</code></td>
 </tr>
 <tr>
@@ -16011,9 +16011,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>        {NamedVal,_} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3182"><a href="#L3182">3182</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">26</td>
 <td class="source"><code>            NamedVal;</code></td>
 </tr>
 <tr>
@@ -16081,14 +16081,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>decode_enumerated_notag(Buffer, NNList, _Tags) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3196"><a href="#L3196">3196</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">26</td>
 <td class="source"><code>    IVal = decode_integer(Buffer),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3197"><a href="#L3197">3197</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">26</td>
 <td class="source"><code>    case decode_enumerated1(IVal, NNList) of</code></td>
 </tr>
 <tr>
@@ -16106,9 +16106,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>        EVal -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3201"><a href="#L3201">3201</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">26</td>
 <td class="source"><code>            EVal</code></td>
 </tr>
 <tr>
@@ -16126,19 +16126,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>decode_integer(Bin) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3205"><a href="#L3205">3205</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">78</td>
 <td class="source"><code>    Len = byte_size(Bin),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3206"><a href="#L3206">3206</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">78</td>
 <td class="source"><code>    &lt;&lt;Int:Len/signed-unit:8&gt;&gt; = Bin,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3207"><a href="#L3207">3207</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">78</td>
 <td class="source"><code>    Int.</code></td>
 </tr>
 <tr>
@@ -16151,19 +16151,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>decode_integer(Tlv, Range, TagIn) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3210"><a href="#L3210">3210</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">52</td>
 <td class="source"><code>    V = match_tags(Tlv, TagIn),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3211"><a href="#L3211">3211</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">52</td>
 <td class="source"><code>    Int = decode_integer(V),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3212"><a href="#L3212">3212</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">52</td>
 <td class="source"><code>    range_check_integer(Int, Range).</code></td>
 </tr>
 <tr>
@@ -16221,14 +16221,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>decode_restricted_string(Tlv, TagsIn) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3224"><a href="#L3224">3224</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">119</td>
 <td class="source"><code>    Bin = match_and_collect(Tlv, TagsIn),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3225"><a href="#L3225">3225</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">119</td>
 <td class="source"><code>    Bin.</code></td>
 </tr>
 <tr>
@@ -16251,9 +16251,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>encode_boolean(false, TagIn) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3230"><a href="#L3230">3230</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">7</td>
 <td class="source"><code>    encode_tags(TagIn, [0], 1);</code></td>
 </tr>
 <tr>
@@ -16276,9 +16276,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>encode_enumerated(Val, TagIn) when is_integer(Val) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3235"><a href="#L3235">3235</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">26</td>
 <td class="source"><code>    encode_tags(TagIn, encode_integer(Val)).</code></td>
 </tr>
 <tr>
@@ -16291,9 +16291,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>encode_integer(Val) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3238"><a href="#L3238">3238</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">78</td>
 <td class="source"><code>    Bytes =</code></td>
 </tr>
 <tr>
@@ -16306,9 +16306,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>            Val &gt;= 0 -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3241"><a href="#L3241">3241</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">78</td>
 <td class="source"><code>                encode_integer_pos(Val, []);</code></td>
 </tr>
 <tr>
@@ -16326,9 +16326,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>        end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3245"><a href="#L3245">3245</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">78</td>
 <td class="source"><code>    {Bytes,length(Bytes)}.</code></td>
 </tr>
 <tr>
@@ -16341,9 +16341,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>encode_integer(Val, Tag) when is_integer(Val) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3248"><a href="#L3248">3248</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">52</td>
 <td class="source"><code>    encode_tags(Tag, encode_integer(Val));</code></td>
 </tr>
 <tr>
@@ -16391,9 +16391,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>encode_integer_pos(0, [B|_Acc] = L) when B &lt; 128 -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3258"><a href="#L3258">3258</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">78</td>
 <td class="source"><code>    L;</code></td>
 </tr>
 <tr>
@@ -16401,9 +16401,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>encode_integer_pos(N, Acc) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3260"><a href="#L3260">3260</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">78</td>
 <td class="source"><code>    encode_integer_pos(N bsr 8, [N band 255|Acc]).</code></td>
 </tr>
 <tr>
@@ -16416,9 +16416,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>encode_length(L) when L =&lt; 127 -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3263"><a href="#L3263">3263</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">313</td>
 <td class="source"><code>    {[L],1};</code></td>
 </tr>
 <tr>
@@ -16426,19 +16426,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>encode_length(L) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3265"><a href="#L3265">3265</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>    Oct = minimum_octets(L),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3266"><a href="#L3266">3266</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>    Len = length(Oct),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3267"><a href="#L3267">3267</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>    if</code></td>
 </tr>
 <tr>
@@ -16446,9 +16446,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>        Len =&lt; 126 -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3269"><a href="#L3269">3269</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>            {[128 bor Len|Oct],Len + 1};</code></td>
 </tr>
 <tr>
@@ -16491,9 +16491,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>encode_restricted_string(OctetList, TagIn) when is_binary(OctetList) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3278"><a href="#L3278">3278</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">119</td>
 <td class="source"><code>    encode_tags(TagIn, OctetList, byte_size(OctetList));</code></td>
 </tr>
 <tr>
@@ -16516,9 +16516,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>encode_tags(TagIn, {BytesSoFar,LenSoFar}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3283"><a href="#L3283">3283</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">78</td>
 <td class="source"><code>    encode_tags(TagIn, BytesSoFar, LenSoFar).</code></td>
 </tr>
 <tr>
@@ -16531,14 +16531,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>encode_tags([Tag|Trest], BytesSoFar, LenSoFar) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3286"><a href="#L3286">3286</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">318</td>
 <td class="source"><code>    {Bytes2,L2} = encode_length(LenSoFar),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3287"><a href="#L3287">3287</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">318</td>
 <td class="source"><code>    encode_tags(Trest,</code></td>
 </tr>
 <tr>
@@ -16556,9 +16556,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>encode_tags([], BytesSoFar, LenSoFar) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3291"><a href="#L3291">3291</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">365</td>
 <td class="source"><code>    {BytesSoFar,LenSoFar}.</code></td>
 </tr>
 <tr>
@@ -16571,14 +16571,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>match_and_collect(Tlv, TagsIn) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3294"><a href="#L3294">3294</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">119</td>
 <td class="source"><code>    Val = match_tags(Tlv, TagsIn),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3295"><a href="#L3295">3295</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">119</td>
 <td class="source"><code>    case Val of</code></td>
 </tr>
 <tr>
@@ -16596,9 +16596,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>        Bin when is_binary(Bin) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3299"><a href="#L3299">3299</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">119</td>
 <td class="source"><code>            Bin</code></td>
 </tr>
 <tr>
@@ -16616,9 +16616,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>match_tags({T,V}, [T]) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3303"><a href="#L3303">3303</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">271</td>
 <td class="source"><code>    V;</code></td>
 </tr>
 <tr>
@@ -16656,9 +16656,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>match_tags(Tlv, []) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3311"><a href="#L3311">3311</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">94</td>
 <td class="source"><code>    Tlv;</code></td>
 </tr>
 <tr>
@@ -16681,9 +16681,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>minimum_octets(0, Acc) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3316"><a href="#L3316">3316</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>    Acc;</code></td>
 </tr>
 <tr>
@@ -16691,9 +16691,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>minimum_octets(Val, Acc) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3318"><a href="#L3318">3318</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    minimum_octets(Val bsr 8, [Val band 255|Acc]).</code></td>
 </tr>
 <tr>
@@ -16706,9 +16706,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>minimum_octets(Val) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3321"><a href="#L3321">3321</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>    minimum_octets(Val, []).</code></td>
 </tr>
 <tr>
@@ -16721,9 +16721,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>range_check_integer(Int, Range) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3324"><a href="#L3324">3324</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">52</td>
 <td class="source"><code>    case Range of</code></td>
 </tr>
 <tr>
@@ -16741,9 +16741,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>        {Lb,Ub} when Int &gt;= Lb, Ub &gt;= Int -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L3328"><a href="#L3328">3328</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">52</td>
 <td class="source"><code>            Int;</code></td>
 </tr>
 <tr>

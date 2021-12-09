@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/ct/mod_disco.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_disco.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:07</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_disco.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:35</p></footer>
 <table>
 <tbody>
 <tr>
@@ -893,12 +893,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L158"><a href="#L158">158</a></td>
-<td class="hits">14</td>
+<td class="hits">40</td>
 <td class="source"><code>    Host = To#jid.lserver,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L159"><a href="#L159">159</a></td>
-<td class="hits">14</td>
+<td class="hits">40</td>
 <td class="source"><code>    Identity = ejabberd_hooks:run_fold(disco_local_identity,</code></td>
 </tr>
 <tr>
@@ -908,7 +908,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L161"><a href="#L161">161</a></td>
-<td class="hits">14</td>
+<td class="hits">40</td>
 <td class="source"><code>    Info = ejabberd_hooks:run_fold(disco_info, Host, [],</code></td>
 </tr>
 <tr>
@@ -918,7 +918,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L163"><a href="#L163">163</a></td>
-<td class="hits">14</td>
+<td class="hits">40</td>
 <td class="source"><code>    case ejabberd_hooks:run_fold(disco_local_features, Host,</code></td>
 </tr>
 <tr>
@@ -933,7 +933,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L166"><a href="#L166">166</a></td>
-<td class="hits">14</td>
+<td class="hits">40</td>
 <td class="source"><code>	    xmpp:make_iq_result(IQ, #disco_info{node = Node,</code></td>
 </tr>
 <tr>
@@ -988,17 +988,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L177"><a href="#L177">177</a></td>
-<td class="hits">238</td>
+<td class="hits">1147</td>
 <td class="source"><code>    Host = To#jid.lserver,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L178"><a href="#L178">178</a></td>
-<td class="hits">238</td>
+<td class="hits">1147</td>
 <td class="source"><code>    Name = mod_disco_opt:name(Host),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L179"><a href="#L179">179</a></td>
-<td class="hits">238</td>
+<td class="hits">1147</td>
 <td class="source"><code>    Acc ++ [#identity{category = &lt;&lt;"server"&gt;&gt;,</code></td>
 </tr>
 <tr>
@@ -1058,12 +1058,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L191"><a href="#L191">191</a></td>
-<td class="hits">238</td>
+<td class="hits">1147</td>
 <td class="source"><code>    Feats = case Acc of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L192"><a href="#L192">192</a></td>
-<td class="hits">238</td>
+<td class="hits">1147</td>
 <td class="source"><code>		{result, Features} -&gt; Features;</code></td>
 </tr>
 <tr class="miss">
@@ -1078,7 +1078,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L195"><a href="#L195">195</a></td>
-<td class="hits">238</td>
+<td class="hits">1147</td>
 <td class="source"><code>    {result, lists:usort(</code></td>
 </tr>
 <tr>
@@ -1308,12 +1308,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L241"><a href="#L241">241</a></td>
-<td class="hits">27</td>
+<td class="hits">25</td>
 <td class="source"><code>			 case lists:dropwhile(fun (VH) -&gt;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L242"><a href="#L242">242</a></td>
-<td class="hits">135</td>
+<td class="hits">119</td>
 <td class="source"><code>						      not</code></td>
 </tr>
 <tr>
@@ -1353,7 +1353,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L250"><a href="#L250">250</a></td>
-<td class="hits">27</td>
+<td class="hits">25</td>
 <td class="source"><code>			   [VH | _] -&gt; VH == Host</code></td>
 </tr>
 <tr>
@@ -1423,7 +1423,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L264"><a href="#L264">264</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    case mod_roster:is_subscribed(From, To) of</code></td>
 </tr>
 <tr>
@@ -1433,12 +1433,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L266"><a href="#L266">266</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    Host = To#jid.lserver,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L267"><a href="#L267">267</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    case ejabberd_hooks:run_fold(disco_sm_items, Host,</code></td>
 </tr>
 <tr>
@@ -1453,7 +1453,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L270"><a href="#L270">270</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>		    xmpp:make_iq_result(</code></td>
 </tr>
 <tr>
@@ -1593,7 +1593,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L298"><a href="#L298">298</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    Acc;</code></td>
 </tr>
 <tr>
@@ -1683,7 +1683,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L316"><a href="#L316">316</a></td>
-<td class="hits">7</td>
+<td class="hits">35</td>
 <td class="source"><code>    case mod_roster:is_subscribed(From, To) of</code></td>
 </tr>
 <tr>
@@ -1693,12 +1693,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L318"><a href="#L318">318</a></td>
-<td class="hits">7</td>
+<td class="hits">35</td>
 <td class="source"><code>	    Host = To#jid.lserver,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L319"><a href="#L319">319</a></td>
-<td class="hits">7</td>
+<td class="hits">35</td>
 <td class="source"><code>	    Identity = ejabberd_hooks:run_fold(disco_sm_identity,</code></td>
 </tr>
 <tr>
@@ -1713,7 +1713,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L322"><a href="#L322">322</a></td>
-<td class="hits">7</td>
+<td class="hits">35</td>
 <td class="source"><code>	    Info = ejabberd_hooks:run_fold(disco_info, Host, [],</code></td>
 </tr>
 <tr>
@@ -1723,7 +1723,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L324"><a href="#L324">324</a></td>
-<td class="hits">7</td>
+<td class="hits">35</td>
 <td class="source"><code>	    case ejabberd_hooks:run_fold(disco_sm_features, Host,</code></td>
 </tr>
 <tr>
@@ -1738,7 +1738,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L327"><a href="#L327">327</a></td>
-<td class="hits">7</td>
+<td class="hits">35</td>
 <td class="source"><code>		    xmpp:make_iq_result(IQ, #disco_info{node = Node,</code></td>
 </tr>
 <tr>
@@ -1818,7 +1818,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L343"><a href="#L343">343</a></td>
-<td class="hits">7</td>
+<td class="hits">35</td>
 <td class="source"><code>    Acc ++</code></td>
 </tr>
 <tr>
@@ -1833,7 +1833,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L346"><a href="#L346">346</a></td>
-<td class="hits">7</td>
+<td class="hits">35</td>
 <td class="source"><code>	    [#identity{category = &lt;&lt;"account"&gt;&gt;, type = &lt;&lt;"registered"&gt;&gt;}];</code></td>
 </tr>
 <tr class="miss">
@@ -1933,12 +1933,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L366"><a href="#L366">366</a></td>
-<td class="hits">4</td>
+<td class="hits">20</td>
 <td class="source"><code>    {result, [?NS_DISCO_INFO, ?NS_DISCO_ITEMS|Features]};</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L367"><a href="#L367">367</a></td>
-<td class="hits">3</td>
+<td class="hits">15</td>
 <td class="source"><code>get_sm_features(Acc, _From, _To, _Node, _Lang) -&gt; Acc.</code></td>
 </tr>
 <tr>
@@ -2013,17 +2013,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L382"><a href="#L382">382</a></td>
-<td class="hits">252</td>
+<td class="hits">1173</td>
 <td class="source"><code>    Module = case Mod of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L383"><a href="#L383">383</a></td>
-<td class="hits">224</td>
+<td class="hits">1107</td>
 <td class="source"><code>	       undefined -&gt; ?MODULE;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L384"><a href="#L384">384</a></td>
-<td class="hits">28</td>
+<td class="hits">66</td>
 <td class="source"><code>	       _ -&gt; Mod</code></td>
 </tr>
 <tr>
@@ -2033,7 +2033,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L386"><a href="#L386">386</a></td>
-<td class="hits">252</td>
+<td class="hits">1173</td>
 <td class="source"><code>    [#xdata{type = result,</code></td>
 </tr>
 <tr>
@@ -2058,7 +2058,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L391"><a href="#L391">391</a></td>
-<td class="hits">7</td>
+<td class="hits">35</td>
 <td class="source"><code>get_info(Acc, _, _, _Node, _) -&gt; Acc.</code></td>
 </tr>
 <tr>
@@ -2078,12 +2078,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L395"><a href="#L395">395</a></td>
-<td class="hits">252</td>
+<td class="hits">1173</td>
 <td class="source"><code>    Fields = mod_disco_opt:server_info(Host),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L396"><a href="#L396">396</a></td>
-<td class="hits">252</td>
+<td class="hits">1173</td>
 <td class="source"><code>    Fields1 = lists:filter(fun ({Modules, _, _}) -&gt;</code></td>
 </tr>
 <tr class="miss">
@@ -2123,7 +2123,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L404"><a href="#L404">404</a></td>
-<td class="hits">252</td>
+<td class="hits">1173</td>
 <td class="source"><code>    [#xdata_field{var = Var,</code></td>
 </tr>
 <tr>
@@ -2133,7 +2133,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L406"><a href="#L406">406</a></td>
-<td class="hits">252</td>
+<td class="hits">1173</td>
 <td class="source"><code>		  values = Values} || {_, Var, Values} &lt;- Fields1].</code></td>
 </tr>
 <tr>

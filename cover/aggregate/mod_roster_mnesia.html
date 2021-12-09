@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/mod_roster_mnesia.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_roster_mnesia.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:03</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_roster_mnesia.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:31</p></footer>
 <table>
 <tbody>
 <tr>
@@ -333,7 +333,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L46"><a href="#L46">46</a></td>
-<td class="hits">1</td>
+<td class="hits">3</td>
 <td class="source"><code>    ejabberd_mnesia:create(?MODULE, roster,</code></td>
 </tr>
 <tr>
@@ -353,7 +353,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L50"><a href="#L50">50</a></td>
-<td class="hits">1</td>
+<td class="hits">3</td>
 <td class="source"><code>    ejabberd_mnesia:create(?MODULE, roster_version,</code></td>
 </tr>
 <tr>
@@ -383,7 +383,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L56"><a href="#L56">56</a></td>
-<td class="hits">2665</td>
+<td class="hits">5333</td>
 <td class="source"><code>    case mnesia:table_info(Table, storage_type) of</code></td>
 </tr>
 <tr>
@@ -393,7 +393,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L58"><a href="#L58">58</a></td>
-<td class="hits">2665</td>
+<td class="hits">5333</td>
 <td class="source"><code>	    mod_roster_opt:use_cache(Host);</code></td>
 </tr>
 <tr>
@@ -423,17 +423,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L64"><a href="#L64">64</a></td>
-<td class="hits">397</td>
+<td class="hits">794</td>
 <td class="source"><code>    US = {LUser, LServer},</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L65"><a href="#L65">65</a></td>
-<td class="hits">397</td>
+<td class="hits">794</td>
 <td class="source"><code>    case mnesia:dirty_read(roster_version, US) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L66"><a href="#L66">66</a></td>
-<td class="hits">397</td>
+<td class="hits">794</td>
 <td class="source"><code>	[#roster_version{version = V}] -&gt; {ok, V};</code></td>
 </tr>
 <tr class="miss">
@@ -458,17 +458,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L71"><a href="#L71">71</a></td>
-<td class="hits">179</td>
+<td class="hits">358</td>
 <td class="source"><code>    US = {LUser, LServer},</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L72"><a href="#L72">72</a></td>
-<td class="hits">179</td>
+<td class="hits">358</td>
 <td class="source"><code>    if InTransaction -&gt;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L73"><a href="#L73">73</a></td>
-<td class="hits">179</td>
+<td class="hits">358</td>
 <td class="source"><code>	    mnesia:write(#roster_version{us = US, version = Ver});</code></td>
 </tr>
 <tr>
@@ -498,7 +498,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L79"><a href="#L79">79</a></td>
-<td class="hits">403</td>
+<td class="hits">807</td>
 <td class="source"><code>    {ok, mnesia:dirty_index_read(roster, {LUser, LServer}, #roster.us)}.</code></td>
 </tr>
 <tr>
@@ -513,17 +513,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L82"><a href="#L82">82</a></td>
-<td class="hits">425</td>
+<td class="hits">850</td>
 <td class="source"><code>    case mnesia:read({roster, {LUser, LServer, LJID}}) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L83"><a href="#L83">83</a></td>
-<td class="hits">294</td>
+<td class="hits">588</td>
 <td class="source"><code>	[I] -&gt; {ok, I};</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L84"><a href="#L84">84</a></td>
-<td class="hits">131</td>
+<td class="hits">262</td>
 <td class="source"><code>	[] -&gt; error</code></td>
 </tr>
 <tr>
@@ -543,7 +543,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L88"><a href="#L88">88</a></td>
-<td class="hits">134</td>
+<td class="hits">268</td>
 <td class="source"><code>    mnesia:write(Item).</code></td>
 </tr>
 <tr>
@@ -558,17 +558,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L91"><a href="#L91">91</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>    US = {LUser, LServer},</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L92"><a href="#L92">92</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>    F = fun () -&gt;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L93"><a href="#L93">93</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>		lists:foreach(</code></td>
 </tr>
 <tr class="miss">
@@ -588,7 +588,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L97"><a href="#L97">97</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>    mnesia:transaction(F).</code></td>
 </tr>
 <tr>
@@ -603,7 +603,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L100"><a href="#L100">100</a></td>
-<td class="hits">33</td>
+<td class="hits">66</td>
 <td class="source"><code>    mnesia:write(Item).</code></td>
 </tr>
 <tr>
@@ -618,7 +618,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L103"><a href="#L103">103</a></td>
-<td class="hits">86</td>
+<td class="hits">172</td>
 <td class="source"><code>    mnesia:delete({roster, {LUser, LServer, LJID}}).</code></td>
 </tr>
 <tr>
@@ -673,7 +673,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L114"><a href="#L114">114</a></td>
-<td class="hits">485</td>
+<td class="hits">970</td>
 <td class="source"><code>    mnesia:transaction(F).</code></td>
 </tr>
 <tr>

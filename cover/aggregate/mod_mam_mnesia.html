@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/mod_mam_mnesia.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_mam_mnesia.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:04</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_mam_mnesia.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:31</p></footer>
 <table>
 <tbody>
 <tr>
@@ -363,12 +363,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L52"><a href="#L52">52</a></td>
-<td class="hits">9</td>
+<td class="hits">5</td>
 <td class="source"><code>    try</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L53"><a href="#L53">53</a></td>
-<td class="hits">9</td>
+<td class="hits">5</td>
 <td class="source"><code>	{atomic, _} = ejabberd_mnesia:create(</code></td>
 </tr>
 <tr>
@@ -393,7 +393,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L58"><a href="#L58">58</a></td>
-<td class="hits">9</td>
+<td class="hits">5</td>
 <td class="source"><code>	{atomic, _} = ejabberd_mnesia:create(</code></td>
 </tr>
 <tr>
@@ -413,7 +413,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L62"><a href="#L62">62</a></td>
-<td class="hits">9</td>
+<td class="hits">5</td>
 <td class="source"><code>	ok</code></td>
 </tr>
 <tr>
@@ -443,22 +443,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L68"><a href="#L68">68</a></td>
-<td class="hits">159</td>
+<td class="hits">278</td>
 <td class="source"><code>    US = {LUser, LServer},</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L69"><a href="#L69">69</a></td>
-<td class="hits">159</td>
+<td class="hits">278</td>
 <td class="source"><code>    F = fun () -&gt;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L70"><a href="#L70">70</a></td>
-<td class="hits">159</td>
+<td class="hits">278</td>
 <td class="source"><code>		mnesia:delete({archive_msg, US}),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L71"><a href="#L71">71</a></td>
-<td class="hits">159</td>
+<td class="hits">278</td>
 <td class="source"><code>		mnesia:delete({archive_prefs, US})</code></td>
 </tr>
 <tr>
@@ -468,7 +468,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L73"><a href="#L73">73</a></td>
-<td class="hits">159</td>
+<td class="hits">278</td>
 <td class="source"><code>    mnesia:transaction(F).</code></td>
 </tr>
 <tr>
@@ -483,7 +483,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L76"><a href="#L76">76</a></td>
-<td class="hits">129</td>
+<td class="hits">217</td>
 <td class="source"><code>    remove_user(LName, LHost).</code></td>
 </tr>
 <tr>
@@ -778,7 +778,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L135"><a href="#L135">135</a></td>
-<td class="hits">6</td>
+<td class="hits">12</td>
 <td class="source"><code>    [].</code></td>
 </tr>
 <tr>
@@ -793,7 +793,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L138"><a href="#L138">138</a></td>
-<td class="hits">263</td>
+<td class="hits">526</td>
 <td class="source"><code>    case {mnesia:table_info(archive_msg, disc_only_copies),</code></td>
 </tr>
 <tr>
@@ -828,17 +828,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L145"><a href="#L145">145</a></td>
-<td class="hits">263</td>
+<td class="hits">526</td>
 <td class="source"><code>	    LPeer = {PUser, PServer, _} = jid:tolower(Peer),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L146"><a href="#L146">146</a></td>
-<td class="hits">263</td>
+<td class="hits">526</td>
 <td class="source"><code>	    F = fun() -&gt;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L147"><a href="#L147">147</a></td>
-<td class="hits">263</td>
+<td class="hits">526</td>
 <td class="source"><code>			mnesia:write(</code></td>
 </tr>
 <tr>
@@ -888,7 +888,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L157"><a href="#L157">157</a></td>
-<td class="hits">263</td>
+<td class="hits">526</td>
 <td class="source"><code>	    case mnesia:transaction(F) of</code></td>
 </tr>
 <tr>
@@ -898,7 +898,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L159"><a href="#L159">159</a></td>
-<td class="hits">263</td>
+<td class="hits">526</td>
 <td class="source"><code>		    ok;</code></td>
 </tr>
 <tr>
@@ -943,7 +943,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L168"><a href="#L168">168</a></td>
-<td class="hits">161</td>
+<td class="hits">322</td>
 <td class="source"><code>    mnesia:dirty_write(Prefs).</code></td>
 </tr>
 <tr>
@@ -958,7 +958,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L171"><a href="#L171">171</a></td>
-<td class="hits">123</td>
+<td class="hits">243</td>
 <td class="source"><code>    case mnesia:dirty_read(archive_prefs, {LUser, LServer}) of</code></td>
 </tr>
 <tr>
@@ -968,7 +968,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L173"><a href="#L173">173</a></td>
-<td class="hits">113</td>
+<td class="hits">226</td>
 <td class="source"><code>	    {ok, Prefs};</code></td>
 </tr>
 <tr>
@@ -978,7 +978,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L175"><a href="#L175">175</a></td>
-<td class="hits">10</td>
+<td class="hits">17</td>
 <td class="source"><code>	    error</code></td>
 </tr>
 <tr>
@@ -1008,27 +1008,27 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L181"><a href="#L181">181</a></td>
-<td class="hits">188</td>
+<td class="hits">376</td>
 <td class="source"><code>    Start = proplists:get_value(start, Query),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L182"><a href="#L182">182</a></td>
-<td class="hits">188</td>
+<td class="hits">376</td>
 <td class="source"><code>    End = proplists:get_value('end', Query),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L183"><a href="#L183">183</a></td>
-<td class="hits">188</td>
+<td class="hits">376</td>
 <td class="source"><code>    With = proplists:get_value(with, Query),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L184"><a href="#L184">184</a></td>
-<td class="hits">188</td>
+<td class="hits">376</td>
 <td class="source"><code>    LWith = if With /= undefined -&gt; jid:tolower(With);</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L185"><a href="#L185">185</a></td>
-<td class="hits">172</td>
+<td class="hits">344</td>
 <td class="source"><code>	       true -&gt; undefined</code></td>
 </tr>
 <tr>
@@ -1038,32 +1038,32 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L187"><a href="#L187">187</a></td>
-<td class="hits">188</td>
+<td class="hits">376</td>
 <td class="source"><code>    MS = make_matchspec(LUser, LServer, Start, End, LWith),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L188"><a href="#L188">188</a></td>
-<td class="hits">188</td>
+<td class="hits">376</td>
 <td class="source"><code>    Msgs = mnesia:dirty_select(archive_msg, MS),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L189"><a href="#L189">189</a></td>
-<td class="hits">188</td>
+<td class="hits">376</td>
 <td class="source"><code>    SortedMsgs = lists:keysort(#archive_msg.timestamp, Msgs),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L190"><a href="#L190">190</a></td>
-<td class="hits">188</td>
+<td class="hits">376</td>
 <td class="source"><code>    {FilteredMsgs, IsComplete} = filter_by_rsm(SortedMsgs, RSM),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L191"><a href="#L191">191</a></td>
-<td class="hits">188</td>
+<td class="hits">376</td>
 <td class="source"><code>    Count = length(Msgs),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L192"><a href="#L192">192</a></td>
-<td class="hits">188</td>
+<td class="hits">376</td>
 <td class="source"><code>    Result = {lists:flatmap(</code></td>
 </tr>
 <tr>
@@ -1073,7 +1073,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L194"><a href="#L194">194</a></td>
-<td class="hits">735</td>
+<td class="hits">1470</td>
 <td class="source"><code>			case mod_mam:msg_to_el(</code></td>
 </tr>
 <tr>
@@ -1088,7 +1088,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L197"><a href="#L197">197</a></td>
-<td class="hits">735</td>
+<td class="hits">1470</td>
 <td class="source"><code>				[{Msg#archive_msg.id,</code></td>
 </tr>
 <tr>
@@ -1123,12 +1123,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L204"><a href="#L204">204</a></td>
-<td class="hits">188</td>
+<td class="hits">376</td>
 <td class="source"><code>    erlang:garbage_collect(),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L205"><a href="#L205">205</a></td>
-<td class="hits">188</td>
+<td class="hits">376</td>
 <td class="source"><code>    Result.</code></td>
 </tr>
 <tr>
@@ -1193,7 +1193,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L218"><a href="#L218">218</a></td>
-<td class="hits">188</td>
+<td class="hits">376</td>
 <td class="source"><code>    make_matchspec(LUser, LServer, Start, [], With);</code></td>
 </tr>
 <tr>
@@ -1208,7 +1208,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L221"><a href="#L221">221</a></td>
-<td class="hits">8</td>
+<td class="hits">16</td>
 <td class="source"><code>      fun(#archive_msg{timestamp = TS,</code></td>
 </tr>
 <tr>
@@ -1258,7 +1258,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L231"><a href="#L231">231</a></td>
-<td class="hits">8</td>
+<td class="hits">16</td>
 <td class="source"><code>      fun(#archive_msg{timestamp = TS,</code></td>
 </tr>
 <tr>
@@ -1308,7 +1308,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L241"><a href="#L241">241</a></td>
-<td class="hits">172</td>
+<td class="hits">344</td>
 <td class="source"><code>      fun(#archive_msg{timestamp = TS,</code></td>
 </tr>
 <tr>
@@ -1353,7 +1353,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L250"><a href="#L250">250</a></td>
-<td class="hits">6</td>
+<td class="hits">12</td>
 <td class="source"><code>    {Msgs, true};</code></td>
 </tr>
 <tr>
@@ -1373,12 +1373,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L254"><a href="#L254">254</a></td>
-<td class="hits">182</td>
+<td class="hits">364</td>
 <td class="source"><code>    NewMsgs = if is_binary(After), After /= &lt;&lt;""&gt;&gt; -&gt;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L255"><a href="#L255">255</a></td>
-<td class="hits">40</td>
+<td class="hits">80</td>
 <td class="source"><code>		      lists:filter(</code></td>
 </tr>
 <tr>
@@ -1388,7 +1388,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L257"><a href="#L257">257</a></td>
-<td class="hits">200</td>
+<td class="hits">400</td>
 <td class="source"><code>				?BIN_GREATER_THAN(I, After)</code></td>
 </tr>
 <tr>
@@ -1403,7 +1403,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L260"><a href="#L260">260</a></td>
-<td class="hits">43</td>
+<td class="hits">86</td>
 <td class="source"><code>		      lists:foldl(</code></td>
 </tr>
 <tr>
@@ -1418,7 +1418,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L263"><a href="#L263">263</a></td>
-<td class="hits">260</td>
+<td class="hits">520</td>
 <td class="source"><code>				[Msg|Acc];</code></td>
 </tr>
 <tr>
@@ -1428,7 +1428,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L265"><a href="#L265">265</a></td>
-<td class="hits">120</td>
+<td class="hits">240</td>
 <td class="source"><code>				Acc</code></td>
 </tr>
 <tr>
@@ -1443,7 +1443,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L268"><a href="#L268">268</a></td>
-<td class="hits">8</td>
+<td class="hits">16</td>
 <td class="source"><code>		      lists:reverse(Msgs);</code></td>
 </tr>
 <tr>
@@ -1453,7 +1453,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L270"><a href="#L270">270</a></td>
-<td class="hits">91</td>
+<td class="hits">182</td>
 <td class="source"><code>		      Msgs</code></td>
 </tr>
 <tr>
@@ -1463,7 +1463,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L272"><a href="#L272">272</a></td>
-<td class="hits">182</td>
+<td class="hits">364</td>
 <td class="source"><code>    filter_by_max(NewMsgs, Max).</code></td>
 </tr>
 <tr>
@@ -1478,7 +1478,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L275"><a href="#L275">275</a></td>
-<td class="hits">27</td>
+<td class="hits">54</td>
 <td class="source"><code>    {Msgs, true};</code></td>
 </tr>
 <tr>
@@ -1488,7 +1488,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L277"><a href="#L277">277</a></td>
-<td class="hits">155</td>
+<td class="hits">310</td>
 <td class="source"><code>    {lists:sublist(Msgs, Len), length(Msgs) =&lt; Len};</code></td>
 </tr>
 <tr>

@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/mod_push_sql.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_push_sql.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:01</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_push_sql.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:30</p></footer>
 <table>
 <tbody>
 <tr>
@@ -316,9 +316,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>init(_Host, _Opts) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L43"><a href="#L43">43</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    ok.</code></td>
 </tr>
 <tr>
@@ -331,39 +331,39 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>store_session(LUser, LServer, NowTS, PushJID, Node, XData) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L46"><a href="#L46">46</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    XML = encode_xdata(XData),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L47"><a href="#L47">47</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    TS = misc:now_to_usec(NowTS),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L48"><a href="#L48">48</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    PushLJID = jid:tolower(PushJID),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L49"><a href="#L49">49</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    Service = jid:encode(PushLJID),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L50"><a href="#L50">50</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    MaxSessions = ejabberd_sm:get_max_user_sessions(LUser, LServer),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L51"><a href="#L51">51</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    enforce_max_sessions(LUser, LServer, MaxSessions),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L52"><a href="#L52">52</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    case ?SQL_UPSERT(LServer, "push_session",</code></td>
 </tr>
 <tr>
@@ -401,9 +401,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	ok -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L60"><a href="#L60">60</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>	    {ok, {NowTS, PushLJID, Node, XData}};</code></td>
 </tr>
 <tr>
@@ -431,19 +431,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>lookup_session(LUser, LServer, PushJID, Node) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L66"><a href="#L66">66</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>    PushLJID = jid:tolower(PushJID),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L67"><a href="#L67">67</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>    Service = jid:encode(PushLJID),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L68"><a href="#L68">68</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>    case ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -451,9 +451,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	   LServer,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L70"><a href="#L70">70</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>	   ?SQL("select @(timestamp)d, @(xml)s from push_session "</code></td>
 </tr>
 <tr>
@@ -476,19 +476,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{selected, [{TS, XML}]} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L75"><a href="#L75">75</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>	    NowTS = misc:usec_to_now(TS),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L76"><a href="#L76">76</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>	    XData = decode_xdata(XML, LUser, LServer),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L77"><a href="#L77">77</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>	    {ok, {NowTS, PushLJID, Node, XData}};</code></td>
 </tr>
 <tr>
@@ -496,9 +496,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{selected, []} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L79"><a href="#L79">79</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>	    {error, notfound};</code></td>
 </tr>
 <tr>
@@ -706,9 +706,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>lookup_sessions(LUser, LServer) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L121"><a href="#L121">121</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">27</td>
 <td class="source"><code>    case ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -716,9 +716,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	   LServer,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L123"><a href="#L123">123</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">27</td>
 <td class="source"><code>	   ?SQL("select @(timestamp)d, @(xml)s, @(node)s, @(service)s "</code></td>
 </tr>
 <tr>
@@ -736,9 +736,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{selected, Rows} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L127"><a href="#L127">127</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">27</td>
 <td class="source"><code>	    {ok, lists:map(</code></td>
 </tr>
 <tr>
@@ -746,24 +746,24 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		   fun({TS, XML, Node, Service}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L129"><a href="#L129">129</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>			   NowTS = misc:usec_to_now(TS),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L130"><a href="#L130">130</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>			   XData = decode_xdata(XML, LUser, LServer),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L131"><a href="#L131">131</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>			   PushLJID = jid:tolower(jid:decode(Service)),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L132"><a href="#L132">132</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>			   {NowTS, PushLJID,Node, XData}</code></td>
 </tr>
 <tr>
@@ -886,14 +886,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>delete_session(LUser, LServer, NowTS) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L157"><a href="#L157">157</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    TS = misc:now_to_usec(NowTS),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L158"><a href="#L158">158</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    case ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -901,9 +901,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	   LServer,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L160"><a href="#L160">160</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>	   ?SQL("delete from push_session where "</code></td>
 </tr>
 <tr>
@@ -916,9 +916,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{updated, _} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L163"><a href="#L163">163</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>	    ok;</code></td>
 </tr>
 <tr>
@@ -1171,9 +1171,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>enforce_max_sessions(LUser, LServer, MaxSessions) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L214"><a href="#L214">214</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    case lookup_sessions(LUser, LServer) of</code></td>
 </tr>
 <tr>
@@ -1231,9 +1231,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	_ -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L226"><a href="#L226">226</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>	    ok</code></td>
 </tr>
 <tr>
@@ -1261,9 +1261,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>decode_xdata(XML, LUser, LServer) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L232"><a href="#L232">232</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>    case fxml_stream:parse_element(XML) of</code></td>
 </tr>
 <tr>
@@ -1271,9 +1271,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	#xmlel{} = El -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L234"><a href="#L234">234</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>	    try xmpp:decode(El)</code></td>
 </tr>
 <tr>
@@ -1356,9 +1356,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>encode_xdata(XData) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L251"><a href="#L251">251</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    fxml:element_to_binary(xmpp:encode(XData)).</code></td>
 </tr>
 </tbody>

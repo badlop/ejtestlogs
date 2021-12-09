@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/ct/mod_mam.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_mam.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:07</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_mam.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:35</p></footer>
 <table>
 <tbody>
 <tr>
@@ -588,7 +588,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L97"><a href="#L97">97</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    case mod_mam_opt:db_type(Opts) of</code></td>
 </tr>
 <tr>
@@ -598,7 +598,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L99"><a href="#L99">99</a></td>
-<td class="hits">9</td>
+<td class="hits">5</td>
 <td class="source"><code>	    ?WARNING_MSG("Mnesia backend for ~ts is not recommended: "</code></td>
 </tr>
 <tr>
@@ -623,7 +623,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L104"><a href="#L104">104</a></td>
-<td class="hits">9</td>
+<td class="hits">5</td>
 <td class="source"><code>			 "to configure.", [?MODULE]);</code></td>
 </tr>
 <tr>
@@ -631,9 +631,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	_ -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L106"><a href="#L106">106</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>	    ok</code></td>
 </tr>
 <tr>
@@ -643,12 +643,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L108"><a href="#L108">108</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    Mod = gen_mod:db_mod(Opts, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L109"><a href="#L109">109</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    case Mod:init(Host, Opts) of</code></td>
 </tr>
 <tr>
@@ -658,17 +658,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L111"><a href="#L111">111</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	    init_cache(Mod, Host, Opts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L112"><a href="#L112">112</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	    register_iq_handlers(Host),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L113"><a href="#L113">113</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	    ejabberd_hooks:add(sm_receive_packet, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -678,7 +678,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L115"><a href="#L115">115</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	    ejabberd_hooks:add(user_receive_packet, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -688,7 +688,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L117"><a href="#L117">117</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	    ejabberd_hooks:add(user_send_packet, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -698,7 +698,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L119"><a href="#L119">119</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	    ejabberd_hooks:add(user_send_packet, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -708,7 +708,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L121"><a href="#L121">121</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	    ejabberd_hooks:add(offline_message_hook, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -718,7 +718,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L123"><a href="#L123">123</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	    ejabberd_hooks:add(muc_filter_message, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -728,7 +728,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L125"><a href="#L125">125</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	    ejabberd_hooks:add(muc_process_iq, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -738,7 +738,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L127"><a href="#L127">127</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	    ejabberd_hooks:add(disco_sm_features, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -748,7 +748,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L129"><a href="#L129">129</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	    ejabberd_hooks:add(remove_user, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -758,7 +758,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L131"><a href="#L131">131</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	    ejabberd_hooks:add(get_room_config, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -768,7 +768,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L133"><a href="#L133">133</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	    ejabberd_hooks:add(set_room_option, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -778,7 +778,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L135"><a href="#L135">135</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	    ejabberd_hooks:add(store_mam_message, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -788,7 +788,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L137"><a href="#L137">137</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	    case mod_mam_opt:assume_mam_usage(Opts) of</code></td>
 </tr>
 <tr>
@@ -813,7 +813,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L142"><a href="#L142">142</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>		    ok</code></td>
 </tr>
 <tr>
@@ -823,7 +823,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L144"><a href="#L144">144</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	    case mod_mam_opt:clear_archive_on_room_destroy(Opts) of</code></td>
 </tr>
 <tr>
@@ -833,7 +833,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L146"><a href="#L146">146</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>		    ejabberd_hooks:add(remove_room, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -863,12 +863,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L152"><a href="#L152">152</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	    ejabberd_commands:register_commands(?MODULE, get_commands_spec()),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L153"><a href="#L153">153</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	    ok;</code></td>
 </tr>
 <tr>
@@ -898,7 +898,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L159"><a href="#L159">159</a></td>
-<td class="hits">1224</td>
+<td class="hits">5742</td>
 <td class="source"><code>    case erlang:function_exported(Mod, use_cache, 2) of</code></td>
 </tr>
 <tr class="miss">
@@ -908,7 +908,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L161"><a href="#L161">161</a></td>
-<td class="hits">1224</td>
+<td class="hits">5742</td>
 <td class="source"><code>	false -&gt; mod_mam_opt:use_cache(Host)</code></td>
 </tr>
 <tr>
@@ -928,7 +928,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L165"><a href="#L165">165</a></td>
-<td class="hits">191</td>
+<td class="hits">956</td>
 <td class="source"><code>    case erlang:function_exported(Mod, cache_nodes, 1) of</code></td>
 </tr>
 <tr class="miss">
@@ -938,7 +938,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L167"><a href="#L167">167</a></td>
-<td class="hits">191</td>
+<td class="hits">956</td>
 <td class="source"><code>	false -&gt; ejabberd_cluster:get_nodes()</code></td>
 </tr>
 <tr>
@@ -958,7 +958,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L171"><a href="#L171">171</a></td>
-<td class="hits">15</td>
+<td class="hits">38</td>
 <td class="source"><code>    case use_cache(Mod, Host) of</code></td>
 </tr>
 <tr>
@@ -968,7 +968,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L173"><a href="#L173">173</a></td>
-<td class="hits">15</td>
+<td class="hits">38</td>
 <td class="source"><code>	    ets_cache:new(archive_prefs_cache, cache_opts(Opts));</code></td>
 </tr>
 <tr>
@@ -998,22 +998,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L179"><a href="#L179">179</a></td>
-<td class="hits">15</td>
+<td class="hits">38</td>
 <td class="source"><code>    MaxSize = mod_mam_opt:cache_size(Opts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L180"><a href="#L180">180</a></td>
-<td class="hits">15</td>
+<td class="hits">38</td>
 <td class="source"><code>    CacheMissed = mod_mam_opt:cache_missed(Opts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L181"><a href="#L181">181</a></td>
-<td class="hits">15</td>
+<td class="hits">38</td>
 <td class="source"><code>    LifeTime = mod_mam_opt:cache_life_time(Opts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L182"><a href="#L182">182</a></td>
-<td class="hits">15</td>
+<td class="hits">38</td>
 <td class="source"><code>    [{max_size, MaxSize}, {life_time, LifeTime}, {cache_missed, CacheMissed}].</code></td>
 </tr>
 <tr>
@@ -1028,12 +1028,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L185"><a href="#L185">185</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    unregister_iq_handlers(Host),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L186"><a href="#L186">186</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    ejabberd_hooks:delete(sm_receive_packet, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -1043,7 +1043,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L188"><a href="#L188">188</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    ejabberd_hooks:delete(user_receive_packet, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -1053,7 +1053,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L190"><a href="#L190">190</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    ejabberd_hooks:delete(user_send_packet, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -1063,7 +1063,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L192"><a href="#L192">192</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    ejabberd_hooks:delete(user_send_packet, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -1073,7 +1073,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L194"><a href="#L194">194</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    ejabberd_hooks:delete(offline_message_hook, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -1083,7 +1083,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L196"><a href="#L196">196</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    ejabberd_hooks:delete(muc_filter_message, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -1093,7 +1093,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L198"><a href="#L198">198</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    ejabberd_hooks:delete(muc_process_iq, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -1103,7 +1103,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L200"><a href="#L200">200</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    ejabberd_hooks:delete(disco_sm_features, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -1113,7 +1113,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L202"><a href="#L202">202</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    ejabberd_hooks:delete(remove_user, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -1123,7 +1123,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L204"><a href="#L204">204</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    ejabberd_hooks:delete(get_room_config, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -1133,7 +1133,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L206"><a href="#L206">206</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    ejabberd_hooks:delete(set_room_option, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -1143,7 +1143,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L208"><a href="#L208">208</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    ejabberd_hooks:delete(store_mam_message, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -1153,7 +1153,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L210"><a href="#L210">210</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    case mod_mam_opt:assume_mam_usage(Host) of</code></td>
 </tr>
 <tr>
@@ -1178,7 +1178,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L215"><a href="#L215">215</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	    ok</code></td>
 </tr>
 <tr>
@@ -1188,7 +1188,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L217"><a href="#L217">217</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    case mod_mam_opt:clear_archive_on_room_destroy(Host) of</code></td>
 </tr>
 <tr>
@@ -1198,7 +1198,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L219"><a href="#L219">219</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	    ejabberd_hooks:delete(remove_room, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -1228,7 +1228,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L225"><a href="#L225">225</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    case gen_mod:is_loaded_elsewhere(Host, ?MODULE) of</code></td>
 </tr>
 <tr>
@@ -1248,7 +1248,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L229"><a href="#L229">229</a></td>
-<td class="hits">8</td>
+<td class="hits">7</td>
 <td class="source"><code>            ok</code></td>
 </tr>
 <tr>
@@ -1268,17 +1268,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L233"><a href="#L233">233</a></td>
-<td class="hits">6</td>
+<td class="hits">30</td>
 <td class="source"><code>    NewMod = gen_mod:db_mod(NewOpts, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L234"><a href="#L234">234</a></td>
-<td class="hits">6</td>
+<td class="hits">30</td>
 <td class="source"><code>    OldMod = gen_mod:db_mod(OldOpts, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L235"><a href="#L235">235</a></td>
-<td class="hits">6</td>
+<td class="hits">30</td>
 <td class="source"><code>    if NewMod /= OldMod -&gt;</code></td>
 </tr>
 <tr class="miss">
@@ -1293,7 +1293,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L238"><a href="#L238">238</a></td>
-<td class="hits">6</td>
+<td class="hits">30</td>
 <td class="source"><code>	    ok</code></td>
 </tr>
 <tr>
@@ -1303,12 +1303,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L240"><a href="#L240">240</a></td>
-<td class="hits">6</td>
+<td class="hits">30</td>
 <td class="source"><code>    init_cache(NewMod, Host, NewOpts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L241"><a href="#L241">241</a></td>
-<td class="hits">6</td>
+<td class="hits">30</td>
 <td class="source"><code>    case {mod_mam_opt:assume_mam_usage(NewOpts),</code></td>
 </tr>
 <tr>
@@ -1353,7 +1353,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L250"><a href="#L250">250</a></td>
-<td class="hits">6</td>
+<td class="hits">30</td>
 <td class="source"><code>	    ok</code></td>
 </tr>
 <tr>
@@ -1373,7 +1373,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L254"><a href="#L254">254</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    [].</code></td>
 </tr>
 <tr>
@@ -1393,7 +1393,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L258"><a href="#L258">258</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    gen_iq_handler:add_iq_handler(ejabberd_local, Host, ?NS_MAM_TMP,</code></td>
 </tr>
 <tr>
@@ -1403,7 +1403,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L260"><a href="#L260">260</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    gen_iq_handler:add_iq_handler(ejabberd_sm, Host, ?NS_MAM_TMP,</code></td>
 </tr>
 <tr>
@@ -1413,7 +1413,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L262"><a href="#L262">262</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    gen_iq_handler:add_iq_handler(ejabberd_local, Host, ?NS_MAM_0,</code></td>
 </tr>
 <tr>
@@ -1423,7 +1423,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L264"><a href="#L264">264</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    gen_iq_handler:add_iq_handler(ejabberd_sm, Host, ?NS_MAM_0, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -1433,7 +1433,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L266"><a href="#L266">266</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    gen_iq_handler:add_iq_handler(ejabberd_local, Host, ?NS_MAM_1,</code></td>
 </tr>
 <tr>
@@ -1443,7 +1443,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L268"><a href="#L268">268</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    gen_iq_handler:add_iq_handler(ejabberd_sm, Host, ?NS_MAM_1,</code></td>
 </tr>
 <tr>
@@ -1453,7 +1453,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L270"><a href="#L270">270</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    gen_iq_handler:add_iq_handler(ejabberd_local, Host, ?NS_MAM_2,</code></td>
 </tr>
 <tr>
@@ -1463,7 +1463,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L272"><a href="#L272">272</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    gen_iq_handler:add_iq_handler(ejabberd_sm, Host, ?NS_MAM_2,</code></td>
 </tr>
 <tr>
@@ -1488,42 +1488,42 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L277"><a href="#L277">277</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    gen_iq_handler:remove_iq_handler(ejabberd_local, Host, ?NS_MAM_TMP),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L278"><a href="#L278">278</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    gen_iq_handler:remove_iq_handler(ejabberd_sm, Host, ?NS_MAM_TMP),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L279"><a href="#L279">279</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    gen_iq_handler:remove_iq_handler(ejabberd_local, Host, ?NS_MAM_0),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L280"><a href="#L280">280</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    gen_iq_handler:remove_iq_handler(ejabberd_sm, Host, ?NS_MAM_0),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L281"><a href="#L281">281</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    gen_iq_handler:remove_iq_handler(ejabberd_local, Host, ?NS_MAM_1),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L282"><a href="#L282">282</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    gen_iq_handler:remove_iq_handler(ejabberd_sm, Host, ?NS_MAM_1),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L283"><a href="#L283">283</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    gen_iq_handler:remove_iq_handler(ejabberd_local, Host, ?NS_MAM_2),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L284"><a href="#L284">284</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    gen_iq_handler:remove_iq_handler(ejabberd_sm, Host, ?NS_MAM_2).</code></td>
 </tr>
 <tr>
@@ -1543,27 +1543,27 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L288"><a href="#L288">288</a></td>
-<td class="hits">30</td>
+<td class="hits">151</td>
 <td class="source"><code>    LUser = jid:nodeprep(User),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L289"><a href="#L289">289</a></td>
-<td class="hits">30</td>
+<td class="hits">151</td>
 <td class="source"><code>    LServer = jid:nameprep(Server),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L290"><a href="#L290">290</a></td>
-<td class="hits">30</td>
+<td class="hits">151</td>
 <td class="source"><code>    Mod = gen_mod:db_mod(LServer, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L291"><a href="#L291">291</a></td>
-<td class="hits">30</td>
+<td class="hits">151</td>
 <td class="source"><code>    Mod:remove_user(LUser, LServer),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L292"><a href="#L292">292</a></td>
-<td class="hits">30</td>
+<td class="hits">151</td>
 <td class="source"><code>    case use_cache(Mod, LServer) of</code></td>
 </tr>
 <tr>
@@ -1573,7 +1573,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L294"><a href="#L294">294</a></td>
-<td class="hits">30</td>
+<td class="hits">151</td>
 <td class="source"><code>	    ets_cache:delete(archive_prefs_cache, {LUser, LServer},</code></td>
 </tr>
 <tr>
@@ -1613,27 +1613,27 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L302"><a href="#L302">302</a></td>
-<td class="hits">129</td>
+<td class="hits">481</td>
 <td class="source"><code>    LName = jid:nodeprep(Name),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L303"><a href="#L303">303</a></td>
-<td class="hits">129</td>
+<td class="hits">481</td>
 <td class="source"><code>    LHost = jid:nameprep(Host),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L304"><a href="#L304">304</a></td>
-<td class="hits">129</td>
+<td class="hits">481</td>
 <td class="source"><code>    Mod = gen_mod:db_mod(LServer, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L305"><a href="#L305">305</a></td>
-<td class="hits">129</td>
+<td class="hits">481</td>
 <td class="source"><code>    Mod:remove_room(LServer, LName, LHost),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L306"><a href="#L306">306</a></td>
-<td class="hits">129</td>
+<td class="hits">481</td>
 <td class="source"><code>    ok.</code></td>
 </tr>
 <tr>
@@ -1863,12 +1863,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L352"><a href="#L352">352</a></td>
-<td class="hits">9</td>
+<td class="hits">37</td>
 <td class="source"><code>    Config = RoomState#state.config,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L353"><a href="#L353">353</a></td>
-<td class="hits">9</td>
+<td class="hits">37</td>
 <td class="source"><code>    Fields ++ [{mam, Config#config.mam}].</code></td>
 </tr>
 <tr>
@@ -1893,7 +1893,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L358"><a href="#L358">358</a></td>
-<td class="hits">5</td>
+<td class="hits">25</td>
 <td class="source"><code>    {#config.mam, Val};</code></td>
 </tr>
 <tr>
@@ -1923,7 +1923,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L364"><a href="#L364">364</a></td>
-<td class="hits">4147</td>
+<td class="hits">18867</td>
 <td class="source"><code>    init_stanza_id(Pkt, LServer);</code></td>
 </tr>
 <tr>
@@ -1933,7 +1933,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L366"><a href="#L366">366</a></td>
-<td class="hits">6002</td>
+<td class="hits">26747</td>
 <td class="source"><code>    Acc.</code></td>
 </tr>
 <tr>
@@ -1953,17 +1953,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L370"><a href="#L370">370</a></td>
-<td class="hits">2784</td>
+<td class="hits">12292</td>
 <td class="source"><code>    LUser = JID#jid.luser,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L371"><a href="#L371">371</a></td>
-<td class="hits">2784</td>
+<td class="hits">12292</td>
 <td class="source"><code>    LServer = JID#jid.lserver,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L372"><a href="#L372">372</a></td>
-<td class="hits">2784</td>
+<td class="hits">12292</td>
 <td class="source"><code>    Pkt1 = case should_archive(Pkt, LServer) of</code></td>
 </tr>
 <tr>
@@ -1973,7 +1973,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L374"><a href="#L374">374</a></td>
-<td class="hits">107</td>
+<td class="hits">352</td>
 <td class="source"><code>		   case store_msg(Pkt, LUser, LServer, Peer, recv) of</code></td>
 </tr>
 <tr>
@@ -1983,7 +1983,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L376"><a href="#L376">376</a></td>
-<td class="hits">46</td>
+<td class="hits">230</td>
 <td class="source"><code>			   mark_stored_msg(Pkt, JID);</code></td>
 </tr>
 <tr>
@@ -1993,7 +1993,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L378"><a href="#L378">378</a></td>
-<td class="hits">61</td>
+<td class="hits">122</td>
 <td class="source"><code>			   Pkt</code></td>
 </tr>
 <tr>
@@ -2008,7 +2008,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L381"><a href="#L381">381</a></td>
-<td class="hits">2677</td>
+<td class="hits">11940</td>
 <td class="source"><code>		   Pkt</code></td>
 </tr>
 <tr>
@@ -2018,7 +2018,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L383"><a href="#L383">383</a></td>
-<td class="hits">2784</td>
+<td class="hits">12292</td>
 <td class="source"><code>    {Pkt1, C2SState};</code></td>
 </tr>
 <tr>
@@ -2028,7 +2028,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L385"><a href="#L385">385</a></td>
-<td class="hits">4032</td>
+<td class="hits">17454</td>
 <td class="source"><code>    Acc.</code></td>
 </tr>
 <tr>
@@ -2053,22 +2053,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L390"><a href="#L390">390</a></td>
-<td class="hits">2064</td>
+<td class="hits">9684</td>
 <td class="source"><code>    LUser = JID#jid.luser,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L391"><a href="#L391">391</a></td>
-<td class="hits">2064</td>
+<td class="hits">9684</td>
 <td class="source"><code>    LServer = JID#jid.lserver,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L392"><a href="#L392">392</a></td>
-<td class="hits">2064</td>
+<td class="hits">9684</td>
 <td class="source"><code>    Pkt1 = init_stanza_id(Pkt, LServer),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L393"><a href="#L393">393</a></td>
-<td class="hits">2064</td>
+<td class="hits">9684</td>
 <td class="source"><code>    Pkt2 = case should_archive(Pkt1, LServer) of</code></td>
 </tr>
 <tr>
@@ -2078,7 +2078,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L395"><a href="#L395">395</a></td>
-<td class="hits">446</td>
+<td class="hits">2071</td>
 <td class="source"><code>		   case store_msg(xmpp:set_from_to(Pkt1, JID, Peer),</code></td>
 </tr>
 <tr>
@@ -2093,7 +2093,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L398"><a href="#L398">398</a></td>
-<td class="hits">25</td>
+<td class="hits">125</td>
 <td class="source"><code>			   mark_stored_msg(Pkt1, JID);</code></td>
 </tr>
 <tr>
@@ -2103,7 +2103,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L400"><a href="#L400">400</a></td>
-<td class="hits">421</td>
+<td class="hits">1946</td>
 <td class="source"><code>			   Pkt1</code></td>
 </tr>
 <tr>
@@ -2118,7 +2118,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L403"><a href="#L403">403</a></td>
-<td class="hits">1618</td>
+<td class="hits">7613</td>
 <td class="source"><code>		   Pkt1</code></td>
 </tr>
 <tr>
@@ -2128,7 +2128,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L405"><a href="#L405">405</a></td>
-<td class="hits">2064</td>
+<td class="hits">9684</td>
 <td class="source"><code>    {Pkt2, C2SState};</code></td>
 </tr>
 <tr>
@@ -2138,7 +2138,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L407"><a href="#L407">407</a></td>
-<td class="hits">3685</td>
+<td class="hits">16927</td>
 <td class="source"><code>    Acc.</code></td>
 </tr>
 <tr>
@@ -2163,22 +2163,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L412"><a href="#L412">412</a></td>
-<td class="hits">2064</td>
+<td class="hits">9684</td>
 <td class="source"><code>    LServer = JID#jid.lserver,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L413"><a href="#L413">413</a></td>
-<td class="hits">2064</td>
+<td class="hits">9684</td>
 <td class="source"><code>    Pkt1 = xmpp:del_meta(Pkt, stanza_id),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L414"><a href="#L414">414</a></td>
-<td class="hits">2064</td>
+<td class="hits">9684</td>
 <td class="source"><code>    Pkt2 = strip_my_stanza_id(Pkt1, LServer),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L415"><a href="#L415">415</a></td>
-<td class="hits">2064</td>
+<td class="hits">9684</td>
 <td class="source"><code>    {Pkt2, C2SState};</code></td>
 </tr>
 <tr>
@@ -2188,7 +2188,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L417"><a href="#L417">417</a></td>
-<td class="hits">3685</td>
+<td class="hits">16927</td>
 <td class="source"><code>    Acc.</code></td>
 </tr>
 <tr>
@@ -2208,17 +2208,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L421"><a href="#L421">421</a></td>
-<td class="hits">731</td>
+<td class="hits">3655</td>
 <td class="source"><code>    LUser = To#jid.luser,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L422"><a href="#L422">422</a></td>
-<td class="hits">731</td>
+<td class="hits">3655</td>
 <td class="source"><code>    LServer = To#jid.lserver,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L423"><a href="#L423">423</a></td>
-<td class="hits">731</td>
+<td class="hits">3655</td>
 <td class="source"><code>    case should_archive(Pkt, LServer) of</code></td>
 </tr>
 <tr>
@@ -2228,7 +2228,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L425"><a href="#L425">425</a></td>
-<td class="hits">369</td>
+<td class="hits">1845</td>
 <td class="source"><code>	   case store_msg(Pkt, LUser, LServer, Peer, recv) of</code></td>
 </tr>
 <tr>
@@ -2238,7 +2238,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L427"><a href="#L427">427</a></td>
-<td class="hits">182</td>
+<td class="hits">910</td>
 <td class="source"><code>		   {archived, mark_stored_msg(Pkt, To)};</code></td>
 </tr>
 <tr>
@@ -2248,7 +2248,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L429"><a href="#L429">429</a></td>
-<td class="hits">187</td>
+<td class="hits">935</td>
 <td class="source"><code>		   Acc</code></td>
 </tr>
 <tr>
@@ -2263,7 +2263,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L432"><a href="#L432">432</a></td>
-<td class="hits">362</td>
+<td class="hits">1810</td>
 <td class="source"><code>	   Acc</code></td>
 </tr>
 <tr>
@@ -2303,27 +2303,27 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L440"><a href="#L440">440</a></td>
-<td class="hits">104</td>
+<td class="hits">400</td>
 <td class="source"><code>    LServer = RoomJID#jid.lserver,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L441"><a href="#L441">441</a></td>
-<td class="hits">104</td>
+<td class="hits">400</td>
 <td class="source"><code>    Pkt1 = init_stanza_id(Pkt, LServer),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L442"><a href="#L442">442</a></td>
-<td class="hits">104</td>
+<td class="hits">400</td>
 <td class="source"><code>    if Config#config.mam -&gt;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L443"><a href="#L443">443</a></td>
-<td class="hits">23</td>
+<td class="hits">115</td>
 <td class="source"><code>	    StorePkt = strip_x_jid_tags(Pkt1),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L444"><a href="#L444">444</a></td>
-<td class="hits">23</td>
+<td class="hits">115</td>
 <td class="source"><code>	    case store_muc(MUCState, StorePkt, RoomJID, From, FromNick) of</code></td>
 </tr>
 <tr>
@@ -2333,7 +2333,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L446"><a href="#L446">446</a></td>
-<td class="hits">22</td>
+<td class="hits">110</td>
 <td class="source"><code>		    mark_stored_msg(Pkt1, RoomJID);</code></td>
 </tr>
 <tr>
@@ -2343,7 +2343,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L448"><a href="#L448">448</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>		    Pkt1</code></td>
 </tr>
 <tr>
@@ -2358,7 +2358,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L451"><a href="#L451">451</a></td>
-<td class="hits">81</td>
+<td class="hits">285</td>
 <td class="source"><code>	    Pkt1</code></td>
 </tr>
 <tr>
@@ -2393,7 +2393,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L458"><a href="#L458">458</a></td>
-<td class="hits">5196</td>
+<td class="hits">23984</td>
 <td class="source"><code>    erlang:system_time(microsecond).</code></td>
 </tr>
 <tr>
@@ -2413,7 +2413,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L462"><a href="#L462">462</a></td>
-<td class="hits">263</td>
+<td class="hits">1315</td>
 <td class="source"><code>    ID.</code></td>
 </tr>
 <tr>
@@ -2433,7 +2433,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L466"><a href="#L466">466</a></td>
-<td class="hits">810</td>
+<td class="hits">3422</td>
 <td class="source"><code>    Pkt;</code></td>
 </tr>
 <tr>
@@ -2443,7 +2443,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L468"><a href="#L468">468</a></td>
-<td class="hits">309</td>
+<td class="hits">1545</td>
 <td class="source"><code>    Pkt;</code></td>
 </tr>
 <tr>
@@ -2453,17 +2453,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L470"><a href="#L470">470</a></td>
-<td class="hits">5196</td>
+<td class="hits">23984</td>
 <td class="source"><code>    ID = make_id(),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L471"><a href="#L471">471</a></td>
-<td class="hits">5196</td>
+<td class="hits">23984</td>
 <td class="source"><code>    Pkt1 = strip_my_stanza_id(Pkt, LServer),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L472"><a href="#L472">472</a></td>
-<td class="hits">5196</td>
+<td class="hits">23984</td>
 <td class="source"><code>    xmpp:put_meta(Pkt1, stanza_id, ID).</code></td>
 </tr>
 <tr>
@@ -2483,27 +2483,27 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L476"><a href="#L476">476</a></td>
-<td class="hits">1030</td>
+<td class="hits">5150</td>
 <td class="source"><code>    BareJID = jid:remove_resource(JID),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L477"><a href="#L477">477</a></td>
-<td class="hits">1030</td>
+<td class="hits">5150</td>
 <td class="source"><code>    Archived = #mam_archived{by = BareJID, id = ID},</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L478"><a href="#L478">478</a></td>
-<td class="hits">1030</td>
+<td class="hits">5150</td>
 <td class="source"><code>    StanzaID = #stanza_id{by = BareJID, id = ID},</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L479"><a href="#L479">479</a></td>
-<td class="hits">1030</td>
+<td class="hits">5150</td>
 <td class="source"><code>    NewEls = [Archived, StanzaID|xmpp:get_els(Pkt)],</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L480"><a href="#L480">480</a></td>
-<td class="hits">1030</td>
+<td class="hits">5150</td>
 <td class="source"><code>    xmpp:set_els(Pkt, NewEls).</code></td>
 </tr>
 <tr>
@@ -2523,12 +2523,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L484"><a href="#L484">484</a></td>
-<td class="hits">275</td>
+<td class="hits">1375</td>
 <td class="source"><code>    Pkt1 = set_stanza_id(Pkt, JID, integer_to_binary(ID)),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L485"><a href="#L485">485</a></td>
-<td class="hits">275</td>
+<td class="hits">1375</td>
 <td class="source"><code>    xmpp:put_meta(Pkt1, mam_archived, true).</code></td>
 </tr>
 <tr>
@@ -2558,7 +2558,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L491"><a href="#L491">491</a></td>
-<td class="hits">44</td>
+<td class="hits">220</td>
 <td class="source"><code>    process_iq(LServer, IQ, chat);</code></td>
 </tr>
 <tr>
@@ -2568,7 +2568,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L493"><a href="#L493">493</a></td>
-<td class="hits">64</td>
+<td class="hits">320</td>
 <td class="source"><code>    process_iq(IQ).</code></td>
 </tr>
 <tr>
@@ -2598,7 +2598,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L499"><a href="#L499">499</a></td>
-<td class="hits">135</td>
+<td class="hits">675</td>
 <td class="source"><code>    process_iq(LServer, IQ, chat);</code></td>
 </tr>
 <tr>
@@ -2618,7 +2618,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L503"><a href="#L503">503</a></td>
-<td class="hits">6</td>
+<td class="hits">30</td>
 <td class="source"><code>    process_iq(LServer, IQ);</code></td>
 </tr>
 <tr>
@@ -2628,7 +2628,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L505"><a href="#L505">505</a></td>
-<td class="hits">193</td>
+<td class="hits">965</td>
 <td class="source"><code>    process_iq(IQ).</code></td>
 </tr>
 <tr>
@@ -2673,7 +2673,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L514"><a href="#L514">514</a></td>
-<td class="hits">5</td>
+<td class="hits">25</td>
 <td class="source"><code>    case may_enter_room(From, MUCState) of</code></td>
 </tr>
 <tr>
@@ -2683,17 +2683,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L516"><a href="#L516">516</a></td>
-<td class="hits">5</td>
+<td class="hits">25</td>
 <td class="source"><code>	    LServer = MUCState#state.server_host,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L517"><a href="#L517">517</a></td>
-<td class="hits">5</td>
+<td class="hits">25</td>
 <td class="source"><code>	    Role = mod_muc_room:get_role(From, MUCState),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L518"><a href="#L518">518</a></td>
-<td class="hits">5</td>
+<td class="hits">25</td>
 <td class="source"><code>	    process_iq(LServer, IQ, {groupchat, Role, MUCState});</code></td>
 </tr>
 <tr>
@@ -2748,7 +2748,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L529"><a href="#L529">529</a></td>
-<td class="hits">297</td>
+<td class="hits">1105</td>
 <td class="source"><code>    IQ.</code></td>
 </tr>
 <tr>
@@ -2773,7 +2773,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L534"><a href="#L534">534</a></td>
-<td class="hits">44</td>
+<td class="hits">220</td>
 <td class="source"><code>    {ok, [{start, Start}, {'end', End},</code></td>
 </tr>
 <tr>
@@ -2788,7 +2788,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L537"><a href="#L537">537</a></td>
-<td class="hits">12</td>
+<td class="hits">60</td>
 <td class="source"><code>    X = xmpp_util:set_xdata_field(</code></td>
 </tr>
 <tr>
@@ -2808,12 +2808,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L541"><a href="#L541">541</a></td>
-<td class="hits">12</td>
+<td class="hits">60</td>
 <td class="source"><code>    try	mam_query:decode(X#xdata.fields) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L542"><a href="#L542">542</a></td>
-<td class="hits">12</td>
+<td class="hits">60</td>
 <td class="source"><code>	Form -&gt; {ok, Form}</code></td>
 </tr>
 <tr>
@@ -2843,7 +2843,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L548"><a href="#L548">548</a></td>
-<td class="hits">128</td>
+<td class="hits">640</td>
 <td class="source"><code>    {ok, []}.</code></td>
 </tr>
 <tr>
@@ -2858,7 +2858,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L551"><a href="#L551">551</a></td>
-<td class="hits">7</td>
+<td class="hits">35</td>
 <td class="source"><code>    disco_sm_features({result, []}, From, To, Node, Lang);</code></td>
 </tr>
 <tr>
@@ -2878,7 +2878,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L555"><a href="#L555">555</a></td>
-<td class="hits">4</td>
+<td class="hits">20</td>
 <td class="source"><code>    {result, [?NS_MAM_TMP, ?NS_MAM_0, ?NS_MAM_1, ?NS_MAM_2, ?NS_SID_0 |</code></td>
 </tr>
 <tr>
@@ -2893,7 +2893,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L558"><a href="#L558">558</a></td>
-<td class="hits">3</td>
+<td class="hits">15</td>
 <td class="source"><code>    Acc.</code></td>
 </tr>
 <tr>
@@ -3228,12 +3228,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L625"><a href="#L625">625</a></td>
-<td class="hits">6</td>
+<td class="hits">30</td>
 <td class="source"><code>    Mod = gen_mod:db_mod(LServer, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L626"><a href="#L626">626</a></td>
-<td class="hits">6</td>
+<td class="hits">30</td>
 <td class="source"><code>    CommonFields = [{with, undefined},</code></td>
 </tr>
 <tr>
@@ -3248,17 +3248,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L629"><a href="#L629">629</a></td>
-<td class="hits">6</td>
+<td class="hits">30</td>
 <td class="source"><code>    ExtendedFields = Mod:extended_fields(),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L630"><a href="#L630">630</a></td>
-<td class="hits">6</td>
+<td class="hits">30</td>
 <td class="source"><code>    Fields = mam_query:encode(CommonFields ++ ExtendedFields),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L631"><a href="#L631">631</a></td>
-<td class="hits">6</td>
+<td class="hits">30</td>
 <td class="source"><code>    X = xmpp_util:set_xdata_field(</code></td>
 </tr>
 <tr>
@@ -3273,7 +3273,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L634"><a href="#L634">634</a></td>
-<td class="hits">6</td>
+<td class="hits">30</td>
 <td class="source"><code>    xmpp:make_iq_result(IQ, #mam_query{xmlns = NS, xdata = X}).</code></td>
 </tr>
 <tr>
@@ -3348,12 +3348,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L649"><a href="#L649">649</a></td>
-<td class="hits">161</td>
+<td class="hits">805</td>
 <td class="source"><code>    Access = mod_mam_opt:access_preferences(LServer),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L650"><a href="#L650">650</a></td>
-<td class="hits">161</td>
+<td class="hits">805</td>
 <td class="source"><code>    case acl:match_rule(LServer, Access, jid:make(LUser, LServer)) of</code></td>
 </tr>
 <tr>
@@ -3363,17 +3363,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L652"><a href="#L652">652</a></td>
-<td class="hits">161</td>
+<td class="hits">805</td>
 <td class="source"><code>	    Always = lists:usort(get_jids(Always0)),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L653"><a href="#L653">653</a></td>
-<td class="hits">161</td>
+<td class="hits">805</td>
 <td class="source"><code>	    Never = lists:usort(get_jids(Never0)),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L654"><a href="#L654">654</a></td>
-<td class="hits">161</td>
+<td class="hits">805</td>
 <td class="source"><code>	    case write_prefs(LUser, LServer, LServer, Default, Always, Never) of</code></td>
 </tr>
 <tr>
@@ -3383,12 +3383,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L656"><a href="#L656">656</a></td>
-<td class="hits">161</td>
+<td class="hits">805</td>
 <td class="source"><code>		    NewPrefs = prefs_el(Default, Always, Never, NS),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L657"><a href="#L657">657</a></td>
-<td class="hits">161</td>
+<td class="hits">805</td>
 <td class="source"><code>		    xmpp:make_iq_result(IQ, NewPrefs);</code></td>
 </tr>
 <tr>
@@ -3448,7 +3448,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L669"><a href="#L669">669</a></td>
-<td class="hits">96</td>
+<td class="hits">480</td>
 <td class="source"><code>    case get_prefs(LUser, LServer) of</code></td>
 </tr>
 <tr>
@@ -3458,7 +3458,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L671"><a href="#L671">671</a></td>
-<td class="hits">96</td>
+<td class="hits">480</td>
 <td class="source"><code>	    PrefsEl = prefs_el(Prefs#archive_prefs.default,</code></td>
 </tr>
 <tr>
@@ -3478,7 +3478,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L675"><a href="#L675">675</a></td>
-<td class="hits">96</td>
+<td class="hits">480</td>
 <td class="source"><code>	    xmpp:make_iq_result(IQ, PrefsEl);</code></td>
 </tr>
 <tr>
@@ -3528,7 +3528,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L685"><a href="#L685">685</a></td>
-<td class="hits">184</td>
+<td class="hits">920</td>
 <td class="source"><code>    Ret = case MsgType of</code></td>
 </tr>
 <tr>
@@ -3538,7 +3538,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L687"><a href="#L687">687</a></td>
-<td class="hits">179</td>
+<td class="hits">895</td>
 <td class="source"><code>		  maybe_activate_mam(LUser, LServer);</code></td>
 </tr>
 <tr>
@@ -3548,7 +3548,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L689"><a href="#L689">689</a></td>
-<td class="hits">5</td>
+<td class="hits">25</td>
 <td class="source"><code>		  ok</code></td>
 </tr>
 <tr>
@@ -3558,7 +3558,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L691"><a href="#L691">691</a></td>
-<td class="hits">184</td>
+<td class="hits">920</td>
 <td class="source"><code>    case Ret of</code></td>
 </tr>
 <tr>
@@ -3568,7 +3568,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L693"><a href="#L693">693</a></td>
-<td class="hits">184</td>
+<td class="hits">920</td>
 <td class="source"><code>	    case SubEl of</code></td>
 </tr>
 <tr>
@@ -3593,7 +3593,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L698"><a href="#L698">698</a></td>
-<td class="hits">184</td>
+<td class="hits">920</td>
 <td class="source"><code>		    case parse_query(SubEl, Lang) of</code></td>
 </tr>
 <tr>
@@ -3603,12 +3603,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L700"><a href="#L700">700</a></td>
-<td class="hits">184</td>
+<td class="hits">920</td>
 <td class="source"><code>			    NewRSM = limit_max(RSM, NS),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L701"><a href="#L701">701</a></td>
-<td class="hits">184</td>
+<td class="hits">920</td>
 <td class="source"><code>			    select_and_send(LServer, Query, NewRSM, FlipPage, IQ, MsgType);</code></td>
 </tr>
 <tr>
@@ -3668,7 +3668,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L713"><a href="#L713">713</a></td>
-<td class="hits">1109</td>
+<td class="hits">5093</td>
 <td class="source"><code>    false;</code></td>
 </tr>
 <tr>
@@ -3678,7 +3678,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L715"><a href="#L715">715</a></td>
-<td class="hits">1091</td>
+<td class="hits">4403</td>
 <td class="source"><code>    false;</code></td>
 </tr>
 <tr>
@@ -3688,7 +3688,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L717"><a href="#L717">717</a></td>
-<td class="hits">314</td>
+<td class="hits">1570</td>
 <td class="source"><code>    false;</code></td>
 </tr>
 <tr>
@@ -3703,7 +3703,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L720"><a href="#L720">720</a></td>
-<td class="hits">3083</td>
+<td class="hits">14655</td>
 <td class="source"><code>    case is_archived(Pkt, LServer) of</code></td>
 </tr>
 <tr>
@@ -3723,7 +3723,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L724"><a href="#L724">724</a></td>
-<td class="hits">3083</td>
+<td class="hits">14655</td>
 <td class="source"><code>	    case check_store_hint(Pkt) of</code></td>
 </tr>
 <tr>
@@ -3733,7 +3733,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L726"><a href="#L726">726</a></td>
-<td class="hits">240</td>
+<td class="hits">1200</td>
 <td class="source"><code>		    true;</code></td>
 </tr>
 <tr>
@@ -3743,7 +3743,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L728"><a href="#L728">728</a></td>
-<td class="hits">285</td>
+<td class="hits">1425</td>
 <td class="source"><code>		    false;</code></td>
 </tr>
 <tr>
@@ -3753,7 +3753,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L730"><a href="#L730">730</a></td>
-<td class="hits">528</td>
+<td class="hits">2524</td>
 <td class="source"><code>		    false;</code></td>
 </tr>
 <tr>
@@ -3763,12 +3763,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L732"><a href="#L732">732</a></td>
-<td class="hits">2030</td>
+<td class="hits">9506</td>
 <td class="source"><code>		    case xmpp:get_text(Body) /= &lt;&lt;&gt;&gt; orelse</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L733"><a href="#L733">733</a></td>
-<td class="hits">1508</td>
+<td class="hits">7238</td>
 <td class="source"><code>			 xmpp:get_text(Subject) /= &lt;&lt;&gt;&gt; of</code></td>
 </tr>
 <tr>
@@ -3778,7 +3778,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L735"><a href="#L735">735</a></td>
-<td class="hits">682</td>
+<td class="hits">3068</td>
 <td class="source"><code>			    true;</code></td>
 </tr>
 <tr>
@@ -3788,7 +3788,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L737"><a href="#L737">737</a></td>
-<td class="hits">1348</td>
+<td class="hits">6438</td>
 <td class="source"><code>			    case misc:unwrap_mucsub_message(Pkt) of</code></td>
 </tr>
 <tr>
@@ -3798,7 +3798,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L739"><a href="#L739">739</a></td>
-<td class="hits">18</td>
+<td class="hits">90</td>
 <td class="source"><code>				    should_archive(Msg#message{type = chat}, LServer);</code></td>
 </tr>
 <tr>
@@ -3818,7 +3818,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L743"><a href="#L743">743</a></td>
-<td class="hits">1330</td>
+<td class="hits">6348</td>
 <td class="source"><code>				    false</code></td>
 </tr>
 <tr>
@@ -3868,12 +3868,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L753"><a href="#L753">753</a></td>
-<td class="hits">7260</td>
+<td class="hits">33668</td>
 <td class="source"><code>    Els = xmpp:get_els(Pkt),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L754"><a href="#L754">754</a></td>
-<td class="hits">7260</td>
+<td class="hits">33668</td>
 <td class="source"><code>    NewEls = lists:filter(</code></td>
 </tr>
 <tr>
@@ -3883,17 +3883,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L756"><a href="#L756">756</a></td>
-<td class="hits">7236</td>
+<td class="hits">34956</td>
 <td class="source"><code>		       Name = xmpp:get_name(El),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L757"><a href="#L757">757</a></td>
-<td class="hits">7236</td>
+<td class="hits">34956</td>
 <td class="source"><code>		       NS = xmpp:get_ns(El),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L758"><a href="#L758">758</a></td>
-<td class="hits">7236</td>
+<td class="hits">34956</td>
 <td class="source"><code>		       if (Name == &lt;&lt;"archived"&gt;&gt; andalso NS == ?NS_MAM_TMP);</code></td>
 </tr>
 <tr>
@@ -3903,7 +3903,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L760"><a href="#L760">760</a></td>
-<td class="hits">64</td>
+<td class="hits">320</td>
 <td class="source"><code>			       try xmpp:decode(El) of</code></td>
 </tr>
 <tr>
@@ -3913,7 +3913,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L762"><a href="#L762">762</a></td>
-<td class="hits">32</td>
+<td class="hits">160</td>
 <td class="source"><code>				       By#jid.lserver /= LServer;</code></td>
 </tr>
 <tr>
@@ -3923,7 +3923,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L764"><a href="#L764">764</a></td>
-<td class="hits">32</td>
+<td class="hits">160</td>
 <td class="source"><code>				       By#jid.lserver /= LServer</code></td>
 </tr>
 <tr>
@@ -3948,7 +3948,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L769"><a href="#L769">769</a></td>
-<td class="hits">7172</td>
+<td class="hits">34636</td>
 <td class="source"><code>			       true</code></td>
 </tr>
 <tr>
@@ -3963,7 +3963,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L772"><a href="#L772">772</a></td>
-<td class="hits">7260</td>
+<td class="hits">33668</td>
 <td class="source"><code>    xmpp:set_els(Pkt, NewEls).</code></td>
 </tr>
 <tr>
@@ -3983,12 +3983,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L776"><a href="#L776">776</a></td>
-<td class="hits">23</td>
+<td class="hits">115</td>
 <td class="source"><code>    Els = xmpp:get_els(Pkt),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L777"><a href="#L777">777</a></td>
-<td class="hits">23</td>
+<td class="hits">115</td>
 <td class="source"><code>    NewEls = lists:filter(</code></td>
 </tr>
 <tr>
@@ -3998,7 +3998,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L779"><a href="#L779">779</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>		       case xmpp:get_name(El) of</code></td>
 </tr>
 <tr>
@@ -4103,7 +4103,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L800"><a href="#L800">800</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>			       true</code></td>
 </tr>
 <tr>
@@ -4118,7 +4118,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L803"><a href="#L803">803</a></td>
-<td class="hits">23</td>
+<td class="hits">115</td>
 <td class="source"><code>    xmpp:set_els(Pkt, NewEls).</code></td>
 </tr>
 <tr>
@@ -4163,12 +4163,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L812"><a href="#L812">812</a></td>
-<td class="hits">922</td>
+<td class="hits">4268</td>
 <td class="source"><code>    LPeer = jid:remove_resource(jid:tolower(Peer)),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L813"><a href="#L813">813</a></td>
-<td class="hits">922</td>
+<td class="hits">4268</td>
 <td class="source"><code>    case lists:member(LPeer, Always) of</code></td>
 </tr>
 <tr>
@@ -4188,7 +4188,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L817"><a href="#L817">817</a></td>
-<td class="hits">922</td>
+<td class="hits">4268</td>
 <td class="source"><code>	    case lists:member(LPeer, Never) of</code></td>
 </tr>
 <tr>
@@ -4208,17 +4208,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L821"><a href="#L821">821</a></td>
-<td class="hits">922</td>
+<td class="hits">4268</td>
 <td class="source"><code>		    case Default of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L822"><a href="#L822">822</a></td>
-<td class="hits">253</td>
+<td class="hits">1265</td>
 <td class="source"><code>			always -&gt; true;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L823"><a href="#L823">823</a></td>
-<td class="hits">669</td>
+<td class="hits">3003</td>
 <td class="source"><code>			never -&gt; false;</code></td>
 </tr>
 <tr>
@@ -4288,7 +4288,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L837"><a href="#L837">837</a></td>
-<td class="hits">23</td>
+<td class="hits">115</td>
 <td class="source"><code>    case check_store_hint(Pkt) of</code></td>
 </tr>
 <tr>
@@ -4308,7 +4308,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L841"><a href="#L841">841</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    false;</code></td>
 </tr>
 <tr>
@@ -4318,7 +4318,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L843"><a href="#L843">843</a></td>
-<td class="hits">22</td>
+<td class="hits">110</td>
 <td class="source"><code>	    case xmpp:get_text(Body) of</code></td>
 </tr>
 <tr>
@@ -4363,7 +4363,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L852"><a href="#L852">852</a></td>
-<td class="hits">22</td>
+<td class="hits">110</td>
 <td class="source"><code>		    true</code></td>
 </tr>
 <tr>
@@ -4403,7 +4403,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L860"><a href="#L860">860</a></td>
-<td class="hits">3106</td>
+<td class="hits">14770</td>
 <td class="source"><code>    case has_store_hint(Pkt) of</code></td>
 </tr>
 <tr>
@@ -4413,7 +4413,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L862"><a href="#L862">862</a></td>
-<td class="hits">240</td>
+<td class="hits">1200</td>
 <td class="source"><code>	    store;</code></td>
 </tr>
 <tr>
@@ -4423,7 +4423,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L864"><a href="#L864">864</a></td>
-<td class="hits">2866</td>
+<td class="hits">13570</td>
 <td class="source"><code>	    case has_no_store_hint(Pkt) of</code></td>
 </tr>
 <tr>
@@ -4433,7 +4433,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L866"><a href="#L866">866</a></td>
-<td class="hits">286</td>
+<td class="hits">1430</td>
 <td class="source"><code>		    no_store;</code></td>
 </tr>
 <tr>
@@ -4443,7 +4443,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L868"><a href="#L868">868</a></td>
-<td class="hits">2580</td>
+<td class="hits">12140</td>
 <td class="source"><code>		    none</code></td>
 </tr>
 <tr>
@@ -4473,7 +4473,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L874"><a href="#L874">874</a></td>
-<td class="hits">3106</td>
+<td class="hits">14770</td>
 <td class="source"><code>    xmpp:has_subtag(Message, #hint{type = 'store'}).</code></td>
 </tr>
 <tr>
@@ -4493,22 +4493,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L878"><a href="#L878">878</a></td>
-<td class="hits">2866</td>
+<td class="hits">13570</td>
 <td class="source"><code>    xmpp:has_subtag(Message, #hint{type = 'no-store'}) orelse</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L879"><a href="#L879">879</a></td>
-<td class="hits">2580</td>
+<td class="hits">12140</td>
 <td class="source"><code>    xmpp:has_subtag(Message, #hint{type = 'no-storage'}) orelse</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L880"><a href="#L880">880</a></td>
-<td class="hits">2580</td>
+<td class="hits">12140</td>
 <td class="source"><code>    xmpp:has_subtag(Message, #hint{type = 'no-permanent-store'}) orelse</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L881"><a href="#L881">881</a></td>
-<td class="hits">2580</td>
+<td class="hits">12140</td>
 <td class="source"><code>    xmpp:has_subtag(Message, #hint{type = 'no-permanent-storage'}).</code></td>
 </tr>
 <tr>
@@ -4528,7 +4528,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L885"><a href="#L885">885</a></td>
-<td class="hits">3083</td>
+<td class="hits">14655</td>
 <td class="source"><code>    case xmpp:get_subtag(Pkt, #stanza_id{by = #jid{}}) of</code></td>
 </tr>
 <tr>
@@ -4548,7 +4548,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L889"><a href="#L889">889</a></td>
-<td class="hits">3083</td>
+<td class="hits">14655</td>
 <td class="source"><code>	    false</code></td>
 </tr>
 <tr>
@@ -4578,7 +4578,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L895"><a href="#L895">895</a></td>
-<td class="hits">5</td>
+<td class="hits">25</td>
 <td class="source"><code>    mod_muc_room:get_affiliation(From, MUCState) /= outcast;</code></td>
 </tr>
 <tr>
@@ -4613,7 +4613,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L902"><a href="#L902">902</a></td>
-<td class="hits">922</td>
+<td class="hits">4268</td>
 <td class="source"><code>    case get_prefs(LUser, LServer) of</code></td>
 </tr>
 <tr>
@@ -4623,17 +4623,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L904"><a href="#L904">904</a></td>
-<td class="hits">922</td>
+<td class="hits">4268</td>
 <td class="source"><code>	    UseMucArchive = mod_mam_opt:user_mucsub_from_muc_archive(LServer),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L905"><a href="#L905">905</a></td>
-<td class="hits">922</td>
+<td class="hits">4268</td>
 <td class="source"><code>	    StoredInMucMam = UseMucArchive andalso xmpp:get_meta(Pkt, in_muc_mam, false),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L906"><a href="#L906">906</a></td>
-<td class="hits">922</td>
+<td class="hits">4268</td>
 <td class="source"><code>	    case {should_archive_peer(LUser, LServer, Prefs, Peer), Pkt, StoredInMucMam} of</code></td>
 </tr>
 <tr>
@@ -4653,7 +4653,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L910"><a href="#L910">910</a></td>
-<td class="hits">12</td>
+<td class="hits">60</td>
 <td class="source"><code>		    ok; % Stored in muc archive.</code></td>
 </tr>
 <tr>
@@ -4663,7 +4663,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L912"><a href="#L912">912</a></td>
-<td class="hits">241</td>
+<td class="hits">1205</td>
 <td class="source"><code>		    case ejabberd_hooks:run_fold(store_mam_message, LServer, Pkt,</code></td>
 </tr>
 <tr>
@@ -4673,7 +4673,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L914"><a href="#L914">914</a></td>
-<td class="hits">241</td>
+<td class="hits">1205</td>
 <td class="source"><code>			#message{} -&gt; ok;</code></td>
 </tr>
 <tr class="miss">
@@ -4693,7 +4693,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L918"><a href="#L918">918</a></td>
-<td class="hits">669</td>
+<td class="hits">3003</td>
 <td class="source"><code>		    pass</code></td>
 </tr>
 <tr>
@@ -4738,7 +4738,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L927"><a href="#L927">927</a></td>
-<td class="hits">23</td>
+<td class="hits">115</td>
 <td class="source"><code>    case should_archive_muc(Pkt) of</code></td>
 </tr>
 <tr>
@@ -4748,17 +4748,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L929"><a href="#L929">929</a></td>
-<td class="hits">22</td>
+<td class="hits">110</td>
 <td class="source"><code>	    {U, S, _} = jid:tolower(RoomJID),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L930"><a href="#L930">930</a></td>
-<td class="hits">22</td>
+<td class="hits">110</td>
 <td class="source"><code>	    LServer = MUCState#state.server_host,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L931"><a href="#L931">931</a></td>
-<td class="hits">22</td>
+<td class="hits">110</td>
 <td class="source"><code>	    case ejabberd_hooks:run_fold(store_mam_message, LServer, Pkt,</code></td>
 </tr>
 <tr>
@@ -4768,7 +4768,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L933"><a href="#L933">933</a></td>
-<td class="hits">22</td>
+<td class="hits">110</td>
 <td class="source"><code>		#message{} -&gt; ok;</code></td>
 </tr>
 <tr class="miss">
@@ -4788,7 +4788,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L937"><a href="#L937">937</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    pass</code></td>
 </tr>
 <tr>
@@ -4808,37 +4808,37 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L941"><a href="#L941">941</a></td>
-<td class="hits">263</td>
+<td class="hits">1315</td>
 <td class="source"><code>    LServer = ejabberd_router:host_of_route(S),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L942"><a href="#L942">942</a></td>
-<td class="hits">263</td>
+<td class="hits">1315</td>
 <td class="source"><code>    US = {U, S},</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L943"><a href="#L943">943</a></td>
-<td class="hits">263</td>
+<td class="hits">1315</td>
 <td class="source"><code>    ID = get_stanza_id(Pkt),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L944"><a href="#L944">944</a></td>
-<td class="hits">263</td>
+<td class="hits">1315</td>
 <td class="source"><code>    El = xmpp:encode(Pkt),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L945"><a href="#L945">945</a></td>
-<td class="hits">263</td>
+<td class="hits">1315</td>
 <td class="source"><code>    Mod = gen_mod:db_mod(LServer, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L946"><a href="#L946">946</a></td>
-<td class="hits">263</td>
+<td class="hits">1315</td>
 <td class="source"><code>    Mod:store(El, LServer, US, Type, Peer, Nick, Dir, ID),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L947"><a href="#L947">947</a></td>
-<td class="hits">263</td>
+<td class="hits">1315</td>
 <td class="source"><code>    Pkt.</code></td>
 </tr>
 <tr>
@@ -4853,7 +4853,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L950"><a href="#L950">950</a></td>
-<td class="hits">161</td>
+<td class="hits">805</td>
 <td class="source"><code>    Prefs = #archive_prefs{us = {LUser, LServer},</code></td>
 </tr>
 <tr>
@@ -4873,12 +4873,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L954"><a href="#L954">954</a></td>
-<td class="hits">161</td>
+<td class="hits">805</td>
 <td class="source"><code>    Mod = gen_mod:db_mod(Host, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L955"><a href="#L955">955</a></td>
-<td class="hits">161</td>
+<td class="hits">805</td>
 <td class="source"><code>    case Mod:write_prefs(LUser, LServer, Prefs, Host) of</code></td>
 </tr>
 <tr>
@@ -4888,7 +4888,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L957"><a href="#L957">957</a></td>
-<td class="hits">161</td>
+<td class="hits">805</td>
 <td class="source"><code>	    case use_cache(Mod, LServer) of</code></td>
 </tr>
 <tr>
@@ -4898,7 +4898,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L959"><a href="#L959">959</a></td>
-<td class="hits">161</td>
+<td class="hits">805</td>
 <td class="source"><code>		    ets_cache:delete(archive_prefs_cache, {LUser, LServer},</code></td>
 </tr>
 <tr>
@@ -4948,12 +4948,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L969"><a href="#L969">969</a></td>
-<td class="hits">1018</td>
+<td class="hits">4748</td>
 <td class="source"><code>    Mod = gen_mod:db_mod(LServer, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L970"><a href="#L970">970</a></td>
-<td class="hits">1018</td>
+<td class="hits">4748</td>
 <td class="source"><code>    Res = case use_cache(Mod, LServer) of</code></td>
 </tr>
 <tr>
@@ -4963,12 +4963,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L972"><a href="#L972">972</a></td>
-<td class="hits">1018</td>
+<td class="hits">4748</td>
 <td class="source"><code>		  ets_cache:lookup(archive_prefs_cache, {LUser, LServer},</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L973"><a href="#L973">973</a></td>
-<td class="hits">123</td>
+<td class="hits">603</td>
 <td class="source"><code>				   fun() -&gt; Mod:get_prefs(LUser, LServer) end);</code></td>
 </tr>
 <tr>
@@ -4988,7 +4988,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L977"><a href="#L977">977</a></td>
-<td class="hits">1018</td>
+<td class="hits">4748</td>
 <td class="source"><code>    case Res of</code></td>
 </tr>
 <tr>
@@ -4998,7 +4998,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L979"><a href="#L979">979</a></td>
-<td class="hits">349</td>
+<td class="hits">1745</td>
 <td class="source"><code>	    {ok, Prefs};</code></td>
 </tr>
 <tr>
@@ -5018,12 +5018,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L983"><a href="#L983">983</a></td>
-<td class="hits">669</td>
+<td class="hits">3003</td>
 <td class="source"><code>	    ActivateOpt = mod_mam_opt:request_activates_archiving(LServer),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L984"><a href="#L984">984</a></td>
-<td class="hits">669</td>
+<td class="hits">3003</td>
 <td class="source"><code>	    case ActivateOpt of</code></td>
 </tr>
 <tr>
@@ -5043,12 +5043,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L988"><a href="#L988">988</a></td>
-<td class="hits">669</td>
+<td class="hits">3003</td>
 <td class="source"><code>		    Default = mod_mam_opt:default(LServer),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L989"><a href="#L989">989</a></td>
-<td class="hits">669</td>
+<td class="hits">3003</td>
 <td class="source"><code>		    {ok, #archive_prefs{us = {LUser, LServer}, default = Default}}</code></td>
 </tr>
 <tr>
@@ -5073,17 +5073,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L994"><a href="#L994">994</a></td>
-<td class="hits">257</td>
+<td class="hits">1285</td>
 <td class="source"><code>    #mam_prefs{default = Default,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L995"><a href="#L995">995</a></td>
-<td class="hits">96</td>
+<td class="hits">480</td>
 <td class="source"><code>	       always = [jid:make(LJ) || LJ &lt;- Always],</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L996"><a href="#L996">996</a></td>
-<td class="hits">96</td>
+<td class="hits">480</td>
 <td class="source"><code>	       never = [jid:make(LJ) || LJ &lt;- Never],</code></td>
 </tr>
 <tr>
@@ -5103,12 +5103,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1000"><a href="#L1000">1000</a></td>
-<td class="hits">179</td>
+<td class="hits">895</td>
 <td class="source"><code>    ActivateOpt = mod_mam_opt:request_activates_archiving(LServer),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1001"><a href="#L1001">1001</a></td>
-<td class="hits">179</td>
+<td class="hits">895</td>
 <td class="source"><code>    case ActivateOpt of</code></td>
 </tr>
 <tr>
@@ -5223,7 +5223,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1024"><a href="#L1024">1024</a></td>
-<td class="hits">179</td>
+<td class="hits">895</td>
 <td class="source"><code>	    ok</code></td>
 </tr>
 <tr>
@@ -5243,7 +5243,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1028"><a href="#L1028">1028</a></td>
-<td class="hits">184</td>
+<td class="hits">920</td>
 <td class="source"><code>    Ret = case MsgType of</code></td>
 </tr>
 <tr>
@@ -5253,7 +5253,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1030"><a href="#L1030">1030</a></td>
-<td class="hits">179</td>
+<td class="hits">895</td>
 <td class="source"><code>		  select(LServer, From, From, Query, RSM, MsgType);</code></td>
 </tr>
 <tr>
@@ -5263,7 +5263,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1032"><a href="#L1032">1032</a></td>
-<td class="hits">5</td>
+<td class="hits">25</td>
 <td class="source"><code>		  select(LServer, From, To, Query, RSM, MsgType)</code></td>
 </tr>
 <tr>
@@ -5273,7 +5273,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1034"><a href="#L1034">1034</a></td>
-<td class="hits">184</td>
+<td class="hits">920</td>
 <td class="source"><code>    case Ret of</code></td>
 </tr>
 <tr>
@@ -5283,12 +5283,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1036"><a href="#L1036">1036</a></td>
-<td class="hits">184</td>
+<td class="hits">920</td>
 <td class="source"><code>	    SortedMsgs = lists:keysort(2, Msgs),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1037"><a href="#L1037">1037</a></td>
-<td class="hits">184</td>
+<td class="hits">920</td>
 <td class="source"><code>	    SortedMsgs2 = case FlipPage of</code></td>
 </tr>
 <tr class="miss">
@@ -5298,7 +5298,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1039"><a href="#L1039">1039</a></td>
-<td class="hits">184</td>
+<td class="hits">920</td>
 <td class="source"><code>	                       false -&gt; SortedMsgs</code></td>
 </tr>
 <tr>
@@ -5308,7 +5308,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1041"><a href="#L1041">1041</a></td>
-<td class="hits">184</td>
+<td class="hits">920</td>
 <td class="source"><code>	    send(SortedMsgs2, Count, IsComplete, IQ);</code></td>
 </tr>
 <tr>
@@ -5348,7 +5348,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1049"><a href="#L1049">1049</a></td>
-<td class="hits">187</td>
+<td class="hits">926</td>
 <td class="source"><code>    select(LServer, JidRequestor, JidArchive, Query, RSM, MsgType, all).</code></td>
 </tr>
 <tr>
@@ -5373,27 +5373,27 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1054"><a href="#L1054">1054</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    Start = proplists:get_value(start, Query),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1055"><a href="#L1055">1055</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    End = proplists:get_value('end', Query),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1056"><a href="#L1056">1056</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    #lqueue{queue = Q} = History,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1057"><a href="#L1057">1057</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    L = p1_queue:len(Q),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1058"><a href="#L1058">1058</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    Msgs =</code></td>
 </tr>
 <tr>
@@ -5408,12 +5408,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1061"><a href="#L1061">1061</a></td>
-<td class="hits">20</td>
+<td class="hits">100</td>
 <td class="source"><code>		  TS = misc:now_to_usec(Now),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1062"><a href="#L1062">1062</a></td>
-<td class="hits">20</td>
+<td class="hits">100</td>
 <td class="source"><code>		  case match_interval(Now, Start, End) and</code></td>
 </tr>
 <tr>
@@ -5428,7 +5428,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1065"><a href="#L1065">1065</a></td>
-<td class="hits">20</td>
+<td class="hits">100</td>
 <td class="source"><code>			  case msg_to_el(#archive_msg{</code></td>
 </tr>
 <tr>
@@ -5473,7 +5473,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1074"><a href="#L1074">1074</a></td>
-<td class="hits">20</td>
+<td class="hits">100</td>
 <td class="source"><code>				  [{integer_to_binary(TS), TS, Msg}];</code></td>
 </tr>
 <tr>
@@ -5513,7 +5513,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1082"><a href="#L1082">1082</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    case RSM of</code></td>
 </tr>
 <tr>
@@ -5538,12 +5538,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1087"><a href="#L1087">1087</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    {NewMsgs, IsComplete} = filter_by_max(Msgs, Max),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1088"><a href="#L1088">1088</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    {NewMsgs, IsComplete, L};</code></td>
 </tr>
 <tr>
@@ -5568,7 +5568,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1093"><a href="#L1093">1093</a></td>
-<td class="hits">188</td>
+<td class="hits">931</td>
 <td class="source"><code>    case might_expose_jid(Query, MsgType) of</code></td>
 </tr>
 <tr>
@@ -5588,7 +5588,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1097"><a href="#L1097">1097</a></td>
-<td class="hits">188</td>
+<td class="hits">931</td>
 <td class="source"><code>	    case {MsgType, mod_mam_opt:user_mucsub_from_muc_archive(LServer)} of</code></td>
 </tr>
 <tr>
@@ -5598,7 +5598,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1099"><a href="#L1099">1099</a></td>
-<td class="hits">3</td>
+<td class="hits">15</td>
 <td class="source"><code>		    select_with_mucsub(LServer, JidRequestor, JidArchive, Query, RSM, Flags);</code></td>
 </tr>
 <tr>
@@ -5608,7 +5608,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1101"><a href="#L1101">1101</a></td>
-<td class="hits">185</td>
+<td class="hits">916</td>
 <td class="source"><code>		    db_select(LServer, JidRequestor, JidArchive, Query, RSM, MsgType, Flags)</code></td>
 </tr>
 <tr>
@@ -5633,17 +5633,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1106"><a href="#L1106">1106</a></td>
-<td class="hits">3</td>
+<td class="hits">15</td>
 <td class="source"><code>    MucHosts = mod_muc_admin:find_hosts(LServer),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1107"><a href="#L1107">1107</a></td>
-<td class="hits">3</td>
+<td class="hits">15</td>
 <td class="source"><code>    Mod = gen_mod:db_mod(LServer, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1108"><a href="#L1108">1108</a></td>
-<td class="hits">3</td>
+<td class="hits">15</td>
 <td class="source"><code>    case proplists:get_value(with, Query) of</code></td>
 </tr>
 <tr>
@@ -5693,7 +5693,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1118"><a href="#L1118">1118</a></td>
-<td class="hits">3</td>
+<td class="hits">15</td>
 <td class="source"><code>	    case erlang:function_exported(Mod, select_with_mucsub, 6) of</code></td>
 </tr>
 <tr>
@@ -5701,9 +5701,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		true -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1120"><a href="#L1120">1120</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>		    Mod:select_with_mucsub(LServer, JidRequestor, JidArchive, Query, RSM, Flags);</code></td>
 </tr>
 <tr>
@@ -5713,7 +5713,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1122"><a href="#L1122">1122</a></td>
-<td class="hits">3</td>
+<td class="hits">6</td>
 <td class="source"><code>		    select_with_mucsub_fallback(LServer, JidRequestor, JidArchive, Query, RSM, Flags)</code></td>
 </tr>
 <tr>
@@ -5738,7 +5738,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1127"><a href="#L1127">1127</a></td>
-<td class="hits">3</td>
+<td class="hits">6</td>
 <td class="source"><code>    case db_select(LServer, JidRequestor, JidArchive, Query, RSM, chat, Flags) of</code></td>
 </tr>
 <tr>
@@ -5758,7 +5758,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1131"><a href="#L1131">1131</a></td>
-<td class="hits">3</td>
+<td class="hits">6</td>
 <td class="source"><code>	    {Dir, Max} = case RSM of</code></td>
 </tr>
 <tr>
@@ -5768,7 +5768,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1133"><a href="#L1133">1133</a></td>
-<td class="hits">1</td>
+<td class="hits">2</td>
 <td class="source"><code>				 {desc, M};</code></td>
 </tr>
 <tr>
@@ -5778,7 +5778,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1135"><a href="#L1135">1135</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>				 {asc, M};</code></td>
 </tr>
 <tr>
@@ -5798,7 +5798,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1139"><a href="#L1139">1139</a></td>
-<td class="hits">3</td>
+<td class="hits">6</td>
 <td class="source"><code>	    SubRooms = case mod_muc_admin:find_hosts(LServer) of</code></td>
 </tr>
 <tr>
@@ -5808,12 +5808,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1141"><a href="#L1141">1141</a></td>
-<td class="hits">3</td>
+<td class="hits">6</td>
 <td class="source"><code>			       case mod_muc:get_subscribed_rooms(First, JidRequestor) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1142"><a href="#L1142">1142</a></td>
-<td class="hits">3</td>
+<td class="hits">6</td>
 <td class="source"><code>				   {ok, L} -&gt; L;</code></td>
 </tr>
 <tr class="miss">
@@ -5843,12 +5843,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1148"><a href="#L1148">1148</a></td>
-<td class="hits">3</td>
+<td class="hits">6</td>
 <td class="source"><code>	    SubRoomJids = [Jid || {Jid, _, _} &lt;- SubRooms],</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1149"><a href="#L1149">1149</a></td>
-<td class="hits">3</td>
+<td class="hits">6</td>
 <td class="source"><code>	    {E2, A2, C2} =</code></td>
 </tr>
 <tr>
@@ -5863,7 +5863,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1152"><a href="#L1152">1152</a></td>
-<td class="hits">3</td>
+<td class="hits">6</td>
 <td class="source"><code>			  case select(LServer, JidRequestor, MucJid, Query, RSM,</code></td>
 </tr>
 <tr>
@@ -5888,12 +5888,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1157"><a href="#L1157">1157</a></td>
-<td class="hits">3</td>
+<td class="hits">6</td>
 <td class="source"><code>				  {lists:keymerge(2, E0, wrap_as_mucsub(E, JidRequestor)),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1158"><a href="#L1158">1158</a></td>
-<td class="hits">3</td>
+<td class="hits">6</td>
 <td class="source"><code>				   A0 andalso A, C0 + C}</code></td>
 </tr>
 <tr>
@@ -5908,7 +5908,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1161"><a href="#L1161">1161</a></td>
-<td class="hits">3</td>
+<td class="hits">6</td>
 <td class="source"><code>	    case {Dir, Max} of</code></td>
 </tr>
 <tr>
@@ -5918,7 +5918,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1163"><a href="#L1163">1163</a></td>
-<td class="hits">1</td>
+<td class="hits">2</td>
 <td class="source"><code>		    {E2, A2, C2};</code></td>
 </tr>
 <tr>
@@ -5963,12 +5963,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1172"><a href="#L1172">1172</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>		    Sub = lists:sublist(E2, 1, Max),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1173"><a href="#L1173">1173</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>		    {Sub, if Sub == E2 -&gt; A2; true -&gt; false end, C2}</code></td>
 </tr>
 <tr>
@@ -5993,12 +5993,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1178"><a href="#L1178">1178</a></td>
-<td class="hits">188</td>
+<td class="hits">922</td>
 <td class="source"><code>    Mod = gen_mod:db_mod(LServer, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1179"><a href="#L1179">1179</a></td>
-<td class="hits">188</td>
+<td class="hits">922</td>
 <td class="source"><code>    case erlang:function_exported(Mod, select, 7) of</code></td>
 </tr>
 <tr>
@@ -6006,9 +6006,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	true -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1181"><a href="#L1181">1181</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">546</td>
 <td class="source"><code>	    Mod:select(LServer, JidRequestor, JidArchive, Query, RSM, MsgType, Flags);</code></td>
 </tr>
 <tr>
@@ -6018,7 +6018,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1183"><a href="#L1183">1183</a></td>
-<td class="hits">188</td>
+<td class="hits">376</td>
 <td class="source"><code>	Mod:select(LServer, JidRequestor, JidArchive, Query, RSM, MsgType)</code></td>
 </tr>
 <tr>
@@ -6038,17 +6038,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1187"><a href="#L1187">1187</a></td>
-<td class="hits">3</td>
+<td class="hits">39</td>
 <td class="source"><code>    ReqBare = jid:remove_resource(Requester),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1188"><a href="#L1188">1188</a></td>
-<td class="hits">3</td>
+<td class="hits">39</td>
 <td class="source"><code>    ReqServer = jid:make(&lt;&lt;&gt;&gt;, LServer, &lt;&lt;&gt;&gt;),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1189"><a href="#L1189">1189</a></td>
-<td class="hits">3</td>
+<td class="hits">39</td>
 <td class="source"><code>    [{T1, T2, wrap_as_mucsub(M, ReqBare, ReqServer)} || {T1, T2, M} &lt;- Messages].</code></td>
 </tr>
 <tr>
@@ -6063,7 +6063,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1192"><a href="#L1192">1192</a></td>
-<td class="hits">11</td>
+<td class="hits">55</td>
 <td class="source"><code>    case Message of</code></td>
 </tr>
 <tr>
@@ -6078,7 +6078,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1195"><a href="#L1195">1195</a></td>
-<td class="hits">11</td>
+<td class="hits">55</td>
 <td class="source"><code>	    {L1, SubEls2} = case lists:keytake(mam_archived, 1, SubEls) of</code></td>
 </tr>
 <tr>
@@ -6088,7 +6088,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1197"><a href="#L1197">1197</a></td>
-<td class="hits">11</td>
+<td class="hits">55</td>
 <td class="source"><code>				    {[Arch#mam_archived{by = Requester}], Rest};</code></td>
 </tr>
 <tr>
@@ -6108,7 +6108,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1201"><a href="#L1201">1201</a></td>
-<td class="hits">11</td>
+<td class="hits">55</td>
 <td class="source"><code>	    {Sid, L2, SubEls3} = case lists:keytake(stanza_id, 1, SubEls2) of</code></td>
 </tr>
 <tr>
@@ -6118,7 +6118,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1203"><a href="#L1203">1203</a></td>
-<td class="hits">11</td>
+<td class="hits">55</td>
 <td class="source"><code>				    {Sid0, [SID#stanza_id{by = Requester} | L1], Rest2};</code></td>
 </tr>
 <tr>
@@ -6138,12 +6138,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1207"><a href="#L1207">1207</a></td>
-<td class="hits">11</td>
+<td class="hits">55</td>
 <td class="source"><code>	    Msg2 = Msg#message{to = Requester, sub_els = SubEls3},</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1208"><a href="#L1208">1208</a></td>
-<td class="hits">11</td>
+<td class="hits">55</td>
 <td class="source"><code>	    Node = case Subject of</code></td>
 </tr>
 <tr>
@@ -6153,7 +6153,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1210"><a href="#L1210">1210</a></td>
-<td class="hits">11</td>
+<td class="hits">55</td>
 <td class="source"><code>			   ?NS_MUCSUB_NODES_MESSAGES;</code></td>
 </tr>
 <tr>
@@ -6173,7 +6173,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1214"><a href="#L1214">1214</a></td>
-<td class="hits">11</td>
+<td class="hits">55</td>
 <td class="source"><code>	    #forwarded{delay = #delay{stamp = Stamp, desc = Desc, from = ReqServer},</code></td>
 </tr>
 <tr>
@@ -6268,12 +6268,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1233"><a href="#L1233">1233</a></td>
-<td class="hits">755</td>
+<td class="hits">3775</td>
 <td class="source"><code>    CodecOpts = ejabberd_config:codec_options(),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1234"><a href="#L1234">1234</a></td>
-<td class="hits">755</td>
+<td class="hits">3775</td>
 <td class="source"><code>    try xmpp:decode(El, ?NS_CLIENT, CodecOpts) of</code></td>
 </tr>
 <tr>
@@ -6283,17 +6283,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1236"><a href="#L1236">1236</a></td>
-<td class="hits">755</td>
+<td class="hits">3775</td>
 <td class="source"><code>	    Pkt2 = case MsgType of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1237"><a href="#L1237">1237</a></td>
-<td class="hits">704</td>
+<td class="hits">3520</td>
 <td class="source"><code>		       chat -&gt; set_stanza_id(Pkt1, JidArchive, ID);</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1238"><a href="#L1238">1238</a></td>
-<td class="hits">51</td>
+<td class="hits">255</td>
 <td class="source"><code>		       {groupchat, _, _} -&gt; set_stanza_id(Pkt1, JidArchive, ID);</code></td>
 </tr>
 <tr class="miss">
@@ -6308,7 +6308,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1241"><a href="#L1241">1241</a></td>
-<td class="hits">755</td>
+<td class="hits">3775</td>
 <td class="source"><code>	    Pkt3 = maybe_update_from_to(</code></td>
 </tr>
 <tr>
@@ -6318,12 +6318,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1243"><a href="#L1243">1243</a></td>
-<td class="hits">755</td>
+<td class="hits">3775</td>
 <td class="source"><code>	    Delay = #delay{stamp = TS, from = jid:make(LServer)},</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1244"><a href="#L1244">1244</a></td>
-<td class="hits">755</td>
+<td class="hits">3775</td>
 <td class="source"><code>	    {ok, #forwarded{sub_els = [Pkt3], delay = Delay}}</code></td>
 </tr>
 <tr>
@@ -6383,7 +6383,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1256"><a href="#L1256">1256</a></td>
-<td class="hits">51</td>
+<td class="hits">255</td>
 <td class="source"><code>    ExposeJID = case {Peer, JidRequestor} of</code></td>
 </tr>
 <tr>
@@ -6393,7 +6393,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1258"><a href="#L1258">1258</a></td>
-<td class="hits">20</td>
+<td class="hits">100</td>
 <td class="source"><code>			false;</code></td>
 </tr>
 <tr>
@@ -6403,7 +6403,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1260"><a href="#L1260">1260</a></td>
-<td class="hits">20</td>
+<td class="hits">100</td>
 <td class="source"><code>			true;</code></td>
 </tr>
 <tr>
@@ -6423,7 +6423,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1264"><a href="#L1264">1264</a></td>
-<td class="hits">11</td>
+<td class="hits">55</td>
 <td class="source"><code>			false</code></td>
 </tr>
 <tr>
@@ -6433,7 +6433,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1266"><a href="#L1266">1266</a></td>
-<td class="hits">51</td>
+<td class="hits">255</td>
 <td class="source"><code>    Items = case ExposeJID of</code></td>
 </tr>
 <tr>
@@ -6443,7 +6443,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1268"><a href="#L1268">1268</a></td>
-<td class="hits">20</td>
+<td class="hits">100</td>
 <td class="source"><code>		    [#muc_user{items = [#muc_item{jid = Peer}]}];</code></td>
 </tr>
 <tr>
@@ -6453,7 +6453,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1270"><a href="#L1270">1270</a></td>
-<td class="hits">31</td>
+<td class="hits">155</td>
 <td class="source"><code>		    []</code></td>
 </tr>
 <tr>
@@ -6463,7 +6463,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1272"><a href="#L1272">1272</a></td>
-<td class="hits">51</td>
+<td class="hits">255</td>
 <td class="source"><code>    Pkt#message{from = jid:replace_resource(JidArchive, Nick),</code></td>
 </tr>
 <tr>
@@ -6483,7 +6483,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1276"><a href="#L1276">1276</a></td>
-<td class="hits">704</td>
+<td class="hits">3520</td>
 <td class="source"><code>    Pkt.</code></td>
 </tr>
 <tr>
@@ -6518,12 +6518,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1283"><a href="#L1283">1283</a></td>
-<td class="hits">184</td>
+<td class="hits">920</td>
 <td class="source"><code>    Hint = #hint{type = 'no-store'},</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1284"><a href="#L1284">1284</a></td>
-<td class="hits">184</td>
+<td class="hits">920</td>
 <td class="source"><code>    Els = lists:map(</code></td>
 </tr>
 <tr>
@@ -6533,7 +6533,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1286"><a href="#L1286">1286</a></td>
-<td class="hits">575</td>
+<td class="hits">2875</td>
 <td class="source"><code>		    #message{from = To,</code></td>
 </tr>
 <tr>
@@ -6568,17 +6568,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1293"><a href="#L1293">1293</a></td>
-<td class="hits">184</td>
+<td class="hits">920</td>
 <td class="source"><code>    RSMOut = make_rsm_out(Msgs, Count),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1294"><a href="#L1294">1294</a></td>
-<td class="hits">184</td>
+<td class="hits">920</td>
 <td class="source"><code>    Result = if NS == ?NS_MAM_TMP -&gt;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1295"><a href="#L1295">1295</a></td>
-<td class="hits">44</td>
+<td class="hits">220</td>
 <td class="source"><code>		     #mam_query{xmlns = NS, id = QID, rsm = RSMOut};</code></td>
 </tr>
 <tr>
@@ -6588,7 +6588,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1297"><a href="#L1297">1297</a></td>
-<td class="hits">44</td>
+<td class="hits">220</td>
 <td class="source"><code>		     #mam_fin{xmlns = NS, id = QID, rsm = RSMOut,</code></td>
 </tr>
 <tr>
@@ -6603,7 +6603,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1300"><a href="#L1300">1300</a></td>
-<td class="hits">96</td>
+<td class="hits">480</td>
 <td class="source"><code>		     #mam_fin{xmlns = NS, rsm = RSMOut, complete = IsComplete}</code></td>
 </tr>
 <tr>
@@ -6613,12 +6613,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1302"><a href="#L1302">1302</a></td>
-<td class="hits">184</td>
+<td class="hits">920</td>
 <td class="source"><code>    if NS /= ?NS_MAM_0 -&gt;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1303"><a href="#L1303">1303</a></td>
-<td class="hits">140</td>
+<td class="hits">700</td>
 <td class="source"><code>	    lists:foreach(</code></td>
 </tr>
 <tr>
@@ -6628,7 +6628,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1305"><a href="#L1305">1305</a></td>
-<td class="hits">445</td>
+<td class="hits">2225</td>
 <td class="source"><code>		      ejabberd_router:route(El)</code></td>
 </tr>
 <tr>
@@ -6638,7 +6638,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1307"><a href="#L1307">1307</a></td>
-<td class="hits">140</td>
+<td class="hits">700</td>
 <td class="source"><code>	    xmpp:make_iq_result(IQ, Result);</code></td>
 </tr>
 <tr>
@@ -6648,12 +6648,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1309"><a href="#L1309">1309</a></td>
-<td class="hits">44</td>
+<td class="hits">220</td>
 <td class="source"><code>	    ejabberd_router:route(xmpp:make_iq_result(IQ)),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1310"><a href="#L1310">1310</a></td>
-<td class="hits">44</td>
+<td class="hits">220</td>
 <td class="source"><code>	    lists:foreach(</code></td>
 </tr>
 <tr>
@@ -6663,7 +6663,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1312"><a href="#L1312">1312</a></td>
-<td class="hits">130</td>
+<td class="hits">650</td>
 <td class="source"><code>		      ejabberd_router:route(El)</code></td>
 </tr>
 <tr>
@@ -6673,7 +6673,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1314"><a href="#L1314">1314</a></td>
-<td class="hits">44</td>
+<td class="hits">220</td>
 <td class="source"><code>	    ejabberd_router:route(</code></td>
 </tr>
 <tr>
@@ -6683,7 +6683,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1316"><a href="#L1316">1316</a></td>
-<td class="hits">44</td>
+<td class="hits">220</td>
 <td class="source"><code>	    ignore</code></td>
 </tr>
 <tr>
@@ -6708,7 +6708,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1321"><a href="#L1321">1321</a></td>
-<td class="hits">24</td>
+<td class="hits">120</td>
 <td class="source"><code>    #rsm_set{count = Count};</code></td>
 </tr>
 <tr>
@@ -6718,12 +6718,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1323"><a href="#L1323">1323</a></td>
-<td class="hits">160</td>
+<td class="hits">800</td>
 <td class="source"><code>    {LastID, _, _} = lists:last(Msgs),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1324"><a href="#L1324">1324</a></td>
-<td class="hits">160</td>
+<td class="hits">800</td>
 <td class="source"><code>    #rsm_set{first = #rsm_first{data = FirstID}, last = LastID, count = Count}.</code></td>
 </tr>
 <tr>
@@ -6748,7 +6748,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1329"><a href="#L1329">1329</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    {lists:sublist(Msgs, Len), length(Msgs) =&lt; Len};</code></td>
 </tr>
 <tr>
@@ -6778,7 +6778,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1335"><a href="#L1335">1335</a></td>
-<td class="hits">44</td>
+<td class="hits">220</td>
 <td class="source"><code>    RSM; % XEP-0313 v0.2 doesn't require clients to support RSM.</code></td>
 </tr>
 <tr>
@@ -6788,7 +6788,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1337"><a href="#L1337">1337</a></td>
-<td class="hits">26</td>
+<td class="hits">130</td>
 <td class="source"><code>    #rsm_set{max = ?DEF_PAGE_SIZE};</code></td>
 </tr>
 <tr>
@@ -6798,7 +6798,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1339"><a href="#L1339">1339</a></td>
-<td class="hits">72</td>
+<td class="hits">360</td>
 <td class="source"><code>    RSM#rsm_set{max = ?DEF_PAGE_SIZE};</code></td>
 </tr>
 <tr>
@@ -6818,7 +6818,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1343"><a href="#L1343">1343</a></td>
-<td class="hits">42</td>
+<td class="hits">210</td>
 <td class="source"><code>    RSM.</code></td>
 </tr>
 <tr>
@@ -6833,7 +6833,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1346"><a href="#L1346">1346</a></td>
-<td class="hits">20</td>
+<td class="hits">100</td>
 <td class="source"><code>    Now &gt;= Start;</code></td>
 </tr>
 <tr>
@@ -6888,7 +6888,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1357"><a href="#L1357">1357</a></td>
-<td class="hits">20</td>
+<td class="hits">100</td>
 <td class="source"><code>    true.</code></td>
 </tr>
 <tr>
@@ -6913,7 +6913,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1362"><a href="#L1362">1362</a></td>
-<td class="hits">3</td>
+<td class="hits">6</td>
 <td class="source"><code>    proplists:is_defined(with, Query);</code></td>
 </tr>
 <tr>
@@ -6923,7 +6923,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1364"><a href="#L1364">1364</a></td>
-<td class="hits">185</td>
+<td class="hits">925</td>
 <td class="source"><code>    false.</code></td>
 </tr>
 <tr>
@@ -6938,7 +6938,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1367"><a href="#L1367">1367</a></td>
-<td class="hits">130</td>
+<td class="hits">650</td>
 <td class="source"><code>    [];</code></td>
 </tr>
 <tr>
@@ -6948,7 +6948,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1369"><a href="#L1369">1369</a></td>
-<td class="hits">192</td>
+<td class="hits">960</td>
 <td class="source"><code>    [jid:tolower(jid:remove_resource(J)) || J &lt;- Js].</code></td>
 </tr>
 <tr>
@@ -6963,7 +6963,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1372"><a href="#L1372">1372</a></td>
-<td class="hits">10</td>
+<td class="hits">9</td>
 <td class="source"><code>    [#ejabberd_commands{name = delete_old_mam_messages, tags = [purge],</code></td>
 </tr>
 <tr>
@@ -7128,7 +7128,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1405"><a href="#L1405">1405</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:bool();</code></td>
 </tr>
 <tr>
@@ -7138,7 +7138,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1407"><a href="#L1407">1407</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:bool();</code></td>
 </tr>
 <tr>
@@ -7148,7 +7148,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1409"><a href="#L1409">1409</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:enum([always, never, roster]);</code></td>
 </tr>
 <tr>
@@ -7158,7 +7158,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1411"><a href="#L1411">1411</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:bool();</code></td>
 </tr>
 <tr>
@@ -7168,7 +7168,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1413"><a href="#L1413">1413</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:bool();</code></td>
 </tr>
 <tr>
@@ -7178,7 +7178,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1415"><a href="#L1415">1415</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:bool();</code></td>
 </tr>
 <tr>
@@ -7188,7 +7188,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1417"><a href="#L1417">1417</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:acl();</code></td>
 </tr>
 <tr>
@@ -7198,7 +7198,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1419"><a href="#L1419">1419</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:db_type(?MODULE);</code></td>
 </tr>
 <tr>
@@ -7208,7 +7208,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1421"><a href="#L1421">1421</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:bool();</code></td>
 </tr>
 <tr>
@@ -7218,7 +7218,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1423"><a href="#L1423">1423</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:pos_int(infinity);</code></td>
 </tr>
 <tr>
@@ -7228,7 +7228,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1425"><a href="#L1425">1425</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:bool();</code></td>
 </tr>
 <tr>
@@ -7238,7 +7238,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1427"><a href="#L1427">1427</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:timeout(second, infinity).</code></td>
 </tr>
 <tr>
@@ -7253,7 +7253,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1430"><a href="#L1430">1430</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    [{assume_mam_usage, false},</code></td>
 </tr>
 <tr>

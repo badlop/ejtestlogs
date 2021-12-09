@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/ct/ejabberd_auth_external.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_auth_external.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:06</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_auth_external.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:35</p></footer>
 <table>
 <tbody>
 <tr>
@@ -311,9 +311,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>start(Host) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L42"><a href="#L42">42</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    extauth:start(Host).</code></td>
 </tr>
 <tr>
@@ -361,9 +361,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L52"><a href="#L52">52</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8</td>
 <td class="source"><code>store_type(_) -&gt; external.</code></td>
 </tr>
 <tr>
@@ -376,9 +376,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>check_password(User, AuthzId, Server, Password) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L55"><a href="#L55">55</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>    if AuthzId /= &lt;&lt;&gt;&gt; andalso AuthzId /= User -&gt;</code></td>
 </tr>
 <tr class="miss">
@@ -391,9 +391,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>       true -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L58"><a href="#L58">58</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>	    check_password_extauth(User, AuthzId, Server, Password)</code></td>
 </tr>
 <tr>
@@ -506,9 +506,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>remove_user(User, Server) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L81"><a href="#L81">81</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    case extauth:remove_user(User, Server) of</code></td>
 </tr>
 <tr class="miss">
@@ -516,9 +516,9 @@ td.source {
 <td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>	false -&gt; {error, not_allowed};</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L83"><a href="#L83">83</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>	true -&gt; ok;</code></td>
 </tr>
 <tr>
@@ -551,19 +551,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>check_password_extauth(User, _AuthzId, Server, Password) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L90"><a href="#L90">90</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>    if Password /= &lt;&lt;""&gt;&gt; -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L91"><a href="#L91">91</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>	    case extauth:check_password(User, Server, Password) of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L92"><a href="#L92">92</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>		Res when is_boolean(Res) -&gt; {cache, Res};</code></td>
 </tr>
 <tr>

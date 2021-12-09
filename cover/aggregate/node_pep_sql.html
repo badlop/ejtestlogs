@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/node_pep_sql.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/node_pep_sql.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:03</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/node_pep_sql.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:31</p></footer>
 <table>
 <tbody>
 <tr>
@@ -371,9 +371,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>depends(_Host, _ServerHost, _Opts) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L54"><a href="#L54">54</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    [{mod_caps, hard}].</code></td>
 </tr>
 <tr>
@@ -386,14 +386,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>init(Host, ServerHost, Opts) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L57"><a href="#L57">57</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    node_flat_sql:init(Host, ServerHost, Opts),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L58"><a href="#L58">58</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    ok.</code></td>
 </tr>
 <tr>
@@ -406,14 +406,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>terminate(Host, ServerHost) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L61"><a href="#L61">61</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    node_flat_sql:terminate(Host, ServerHost),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L62"><a href="#L62">62</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    ok.</code></td>
 </tr>
 <tr>
@@ -426,9 +426,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>options() -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L65"><a href="#L65">65</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">27</td>
 <td class="source"><code>    [{sql, true}, {rsm, true} | node_pep:options()].</code></td>
 </tr>
 <tr>
@@ -441,9 +441,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>features() -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L68"><a href="#L68">68</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2049</td>
 <td class="source"><code>    [&lt;&lt;"rsm"&gt;&gt; | node_pep:features()].</code></td>
 </tr>
 <tr>
@@ -456,9 +456,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>create_node_permission(Host, ServerHost, Node, ParentNode, Owner, Access) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L71"><a href="#L71">71</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    node_pep:create_node_permission(Host, ServerHost, Node, ParentNode, Owner, Access).</code></td>
 </tr>
 <tr>
@@ -471,14 +471,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>create_node(Nidx, Owner) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L74"><a href="#L74">74</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    node_flat_sql:create_node(Nidx, Owner),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L75"><a href="#L75">75</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    {result, {default, broadcast}}.</code></td>
 </tr>
 <tr>
@@ -491,9 +491,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>delete_node(Nodes) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L78"><a href="#L78">78</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    node_flat_sql:delete_node(Nodes).</code></td>
 </tr>
 <tr>
@@ -566,9 +566,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>publish_item(Nidx, Publisher, Model, MaxItems, ItemId, Payload, PubOpts) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L93"><a href="#L93">93</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    node_flat_sql:publish_item(Nidx, Publisher, Model, MaxItems, ItemId,</code></td>
 </tr>
 <tr>
@@ -661,14 +661,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_entity_affiliations(_Host, Owner) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L112"><a href="#L112">112</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">669</td>
 <td class="source"><code>    OwnerKey = jid:tolower(jid:remove_resource(Owner)),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L113"><a href="#L113">113</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">669</td>
 <td class="source"><code>    node_flat_sql:get_entity_affiliations(OwnerKey, Owner).</code></td>
 </tr>
 <tr>
@@ -681,9 +681,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_node_affiliations(Nidx) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L116"><a href="#L116">116</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    node_flat_sql:get_node_affiliations(Nidx).</code></td>
 </tr>
 <tr>
@@ -696,9 +696,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_affiliation(Nidx, Owner) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L119"><a href="#L119">119</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    node_flat_sql:get_affiliation(Nidx, Owner).</code></td>
 </tr>
 <tr>
@@ -726,29 +726,29 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_entity_subscriptions(_Host, Owner) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L125"><a href="#L125">125</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">291</td>
 <td class="source"><code>    SubKey = jid:tolower(Owner),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L126"><a href="#L126">126</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">291</td>
 <td class="source"><code>    GenKey = jid:remove_resource(SubKey),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L127"><a href="#L127">127</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">291</td>
 <td class="source"><code>    HLike = &lt;&lt;"%@", (node_flat_sql:encode_host_like(element(2, SubKey)))/binary&gt;&gt;,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L128"><a href="#L128">128</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">291</td>
 <td class="source"><code>    GJ = node_flat_sql:encode_jid(GenKey),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L129"><a href="#L129">129</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">291</td>
 <td class="source"><code>    Query = case SubKey of</code></td>
 </tr>
 <tr>
@@ -756,14 +756,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	      GenKey -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L131"><a href="#L131">131</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">204</td>
 <td class="source"><code>		GJLike = &lt;&lt;(node_flat_sql:encode_jid_like(GenKey))/binary, "/%"&gt;&gt;,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L132"><a href="#L132">132</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">204</td>
 <td class="source"><code>		?SQL("select @(host)s, @(node)s, @(plugin)s, @(i.nodeid)d, @(jid)s, @(subscriptions)s "</code></td>
 </tr>
 <tr>
@@ -786,14 +786,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	      _ -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L137"><a href="#L137">137</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">87</td>
 <td class="source"><code>		SJ = node_flat_sql:encode_jid(SubKey),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L138"><a href="#L138">138</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">87</td>
 <td class="source"><code>		?SQL("select @(host)s, @(node)s, @(plugin)s, @(i.nodeid)d, @(jid)s, @(subscriptions)s "</code></td>
 </tr>
 <tr>
@@ -816,9 +816,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	    end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L143"><a href="#L143">143</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">291</td>
 <td class="source"><code>    {result,</code></td>
 </tr>
 <tr>
@@ -831,9 +831,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	 {selected, RItems} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L146"><a href="#L146">146</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">291</td>
 <td class="source"><code>	     lists:foldl(</code></td>
 </tr>
 <tr>
@@ -1096,9 +1096,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_node_subscriptions(Nidx) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L199"><a href="#L199">199</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>    node_flat_sql:get_node_subscriptions(Nidx).</code></td>
 </tr>
 <tr>
@@ -1216,9 +1216,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_items(Nidx, JID, AccessModel, PresenceSubscription, RosterGroup, SubId, RSM) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L223"><a href="#L223">223</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    node_flat_sql:get_items(Nidx, JID, AccessModel,</code></td>
 </tr>
 <tr>
@@ -1331,9 +1331,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>node_to_path(Node) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L246"><a href="#L246">246</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    node_flat_sql:node_to_path(Node).</code></td>
 </tr>
 <tr>

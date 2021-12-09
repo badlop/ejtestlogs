@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/ct/mod_register.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_register.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:05</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_register.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:34</p></footer>
 <table>
 <tbody>
 <tr>
@@ -493,7 +493,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L78"><a href="#L78">78</a></td>
-<td class="hits">371</td>
+<td class="hits">1269</td>
 <td class="source"><code>    case {mod_register_opt:access(Host),</code></td>
 </tr>
 <tr>
@@ -518,7 +518,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L83"><a href="#L83">83</a></td>
-<td class="hits">371</td>
+<td class="hits">1269</td>
 <td class="source"><code>	{_, _, _} -&gt; [#feature_register{}|Acc]</code></td>
 </tr>
 <tr>
@@ -548,7 +548,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L89"><a href="#L89">89</a></td>
-<td class="hits">3</td>
+<td class="hits">11</td>
 <td class="source"><code>    try xmpp:try_subtag(IQ, #register{}) of</code></td>
 </tr>
 <tr>
@@ -558,32 +558,32 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L91"><a href="#L91">91</a></td>
-<td class="hits">2</td>
+<td class="hits">10</td>
 <td class="source"><code>	    {Address, _} = IP,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L92"><a href="#L92">92</a></td>
-<td class="hits">2</td>
+<td class="hits">10</td>
 <td class="source"><code>	    IQ1 = xmpp:set_els(IQ, [Register]),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L93"><a href="#L93">93</a></td>
-<td class="hits">2</td>
+<td class="hits">10</td>
 <td class="source"><code>	    IQ2 = xmpp:set_from_to(IQ1, jid:make(&lt;&lt;&gt;&gt;), jid:make(Server)),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L94"><a href="#L94">94</a></td>
-<td class="hits">2</td>
+<td class="hits">10</td>
 <td class="source"><code>	    ResIQ = process_iq(IQ2, Address),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L95"><a href="#L95">95</a></td>
-<td class="hits">2</td>
+<td class="hits">10</td>
 <td class="source"><code>	    ResIQ1 = xmpp:set_from_to(ResIQ, jid:make(Server), undefined),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L96"><a href="#L96">96</a></td>
-<td class="hits">2</td>
+<td class="hits">10</td>
 <td class="source"><code>	    {stop, ejabberd_c2s:send(State, ResIQ1)};</code></td>
 </tr>
 <tr>
@@ -648,7 +648,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L109"><a href="#L109">109</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    process_iq(IQ, jid:tolower(From)).</code></td>
 </tr>
 <tr>
@@ -663,7 +663,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L112"><a href="#L112">112</a></td>
-<td class="hits">3</td>
+<td class="hits">16</td>
 <td class="source"><code>    IsCaptchaEnabled =</code></td>
 </tr>
 <tr>
@@ -678,7 +678,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L115"><a href="#L115">115</a></td>
-<td class="hits">3</td>
+<td class="hits">16</td>
 <td class="source"><code>	    false -&gt; false</code></td>
 </tr>
 <tr>
@@ -688,17 +688,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L117"><a href="#L117">117</a></td>
-<td class="hits">3</td>
+<td class="hits">16</td>
 <td class="source"><code>    Server = To#jid.lserver,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L118"><a href="#L118">118</a></td>
-<td class="hits">3</td>
+<td class="hits">16</td>
 <td class="source"><code>    Access = mod_register_opt:access_remove(Server),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L119"><a href="#L119">119</a></td>
-<td class="hits">3</td>
+<td class="hits">16</td>
 <td class="source"><code>    Remove = case {acl:match_rule(Server, Access, From), From#jid.lserver} of</code></td>
 </tr>
 <tr>
@@ -708,7 +708,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L121"><a href="#L121">121</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>		     allow;</code></td>
 </tr>
 <tr>
@@ -718,7 +718,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L123"><a href="#L123">123</a></td>
-<td class="hits">2</td>
+<td class="hits">10</td>
 <td class="source"><code>		     deny</code></td>
 </tr>
 <tr>
@@ -728,7 +728,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L125"><a href="#L125">125</a></td>
-<td class="hits">3</td>
+<td class="hits">16</td>
 <td class="source"><code>    process_iq(IQ, Source, IsCaptchaEnabled, Remove == allow).</code></td>
 </tr>
 <tr>
@@ -788,12 +788,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L137"><a href="#L137">137</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    Server = To#jid.lserver,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L138"><a href="#L138">138</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    if is_binary(User) -&gt;</code></td>
 </tr>
 <tr class="miss">
@@ -928,7 +928,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L165"><a href="#L165">165</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>	    case From of</code></td>
 </tr>
 <tr>
@@ -938,22 +938,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L167"><a href="#L167">167</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>		    ResIQ = xmpp:make_iq_result(IQ),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L168"><a href="#L168">168</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>		    ejabberd_router:route(xmpp:set_from_to(ResIQ, From, From)),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L169"><a href="#L169">169</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>		    ejabberd_auth:remove_user(LUser, Server),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L170"><a href="#L170">170</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>		    ignore;</code></td>
 </tr>
 <tr>
@@ -1008,12 +1008,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L181"><a href="#L181">181</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    Server = To#jid.lserver,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L182"><a href="#L182">182</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    try_register_or_set_password(</code></td>
 </tr>
 <tr>
@@ -1173,12 +1173,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L214"><a href="#L214">214</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    Server = To#jid.lserver,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L215"><a href="#L215">215</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    {IsRegistered, Username} =</code></td>
 </tr>
 <tr>
@@ -1228,7 +1228,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L225"><a href="#L225">225</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>		{false, &lt;&lt;""&gt;&gt;}</code></td>
 </tr>
 <tr>
@@ -1238,7 +1238,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L227"><a href="#L227">227</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    Instr = translate:translate(</code></td>
 </tr>
 <tr>
@@ -1253,12 +1253,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L230"><a href="#L230">230</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    URL = mod_register_opt:redirect_url(Server),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L231"><a href="#L231">231</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    if (URL /= undefined) and not IsRegistered -&gt;</code></td>
 </tr>
 <tr class="miss">
@@ -1458,7 +1458,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L271"><a href="#L271">271</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    xmpp:make_iq_result(</code></td>
 </tr>
 <tr>
@@ -1513,7 +1513,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L282"><a href="#L282">282</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    case From of</code></td>
 </tr>
 <tr>
@@ -1533,7 +1533,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L286"><a href="#L286">286</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    case check_from(From, Server) of</code></td>
 </tr>
 <tr>
@@ -1543,7 +1543,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L288"><a href="#L288">288</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>		    case try_register(User, Server, Password, Source, ?MODULE, Lang) of</code></td>
 </tr>
 <tr>
@@ -1553,7 +1553,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L290"><a href="#L290">290</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>			    xmpp:make_iq_result(IQ);</code></td>
 </tr>
 <tr>
@@ -1773,17 +1773,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L334"><a href="#L334">334</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    Modules = mod_register_opt:allow_modules(Server),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L335"><a href="#L335">335</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    case (Modules == all) orelse lists:member(Module, Modules) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L336"><a href="#L336">336</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>        true -&gt; try_register(User, Server, Password, SourceRaw);</code></td>
 </tr>
 <tr class="miss">
@@ -1808,7 +1808,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L341"><a href="#L341">341</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    case jid:is_nodename(User) of</code></td>
 </tr>
 <tr>
@@ -1828,7 +1828,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L345"><a href="#L345">345</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    case check_access(User, Server, SourceRaw) of</code></td>
 </tr>
 <tr>
@@ -1848,12 +1848,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L349"><a href="#L349">349</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>		    Source = may_remove_resource(SourceRaw),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L350"><a href="#L350">350</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>		    case check_timeout(Source) of</code></td>
 </tr>
 <tr>
@@ -1863,7 +1863,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L352"><a href="#L352">352</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>			    case is_strong_password(Server, Password) of</code></td>
 </tr>
 <tr>
@@ -1873,7 +1873,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L354"><a href="#L354">354</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>				    case ejabberd_auth:try_register(</code></td>
 </tr>
 <tr>
@@ -1888,7 +1888,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L357"><a href="#L357">357</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>					    ok;</code></td>
 </tr>
 <tr>
@@ -1983,7 +1983,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L376"><a href="#L376">376</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    case try_register(User, Server, Password, SourceRaw, Module) of</code></td>
 </tr>
 <tr>
@@ -1993,17 +1993,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L378"><a href="#L378">378</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    JID = jid:make(User, Server),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L379"><a href="#L379">379</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    Source = may_remove_resource(SourceRaw),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L380"><a href="#L380">380</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    ?INFO_MSG("The account ~ts was registered from IP address ~ts",</code></td>
 </tr>
 <tr>
@@ -2013,17 +2013,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L382"><a href="#L382">382</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>		       ejabberd_config:may_hide_data(ip_to_string(Source))]),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L383"><a href="#L383">383</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    send_welcome_message(JID),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L384"><a href="#L384">384</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    send_registration_notifications(?MODULE, JID, Source);</code></td>
 </tr>
 <tr>
@@ -2218,12 +2218,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L423"><a href="#L423">423</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    Host = JID#jid.lserver,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L424"><a href="#L424">424</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    case mod_register_opt:welcome_message(Host) of</code></td>
 </tr>
 <tr class="miss">
@@ -2238,7 +2238,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L427"><a href="#L427">427</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	  ejabberd_router:route(</code></td>
 </tr>
 <tr>
@@ -2278,17 +2278,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L435"><a href="#L435">435</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    Host = UJID#jid.lserver,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L436"><a href="#L436">436</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    case mod_register_opt:registration_watchers(Host) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L437"><a href="#L437">437</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>        [] -&gt; ok;</code></td>
 </tr>
 <tr>
@@ -2398,7 +2398,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L459"><a href="#L459">459</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    allow;</code></td>
 </tr>
 <tr>
@@ -2433,12 +2433,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L466"><a href="#L466">466</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    Timeout = ejabberd_option:registration_timeout(),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L467"><a href="#L467">467</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    if is_integer(Timeout) -&gt;</code></td>
 </tr>
 <tr class="miss">
@@ -2573,7 +2573,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L494"><a href="#L494">494</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>       true -&gt; true</code></td>
 </tr>
 <tr>
@@ -2783,7 +2783,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L536"><a href="#L536">536</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    misc:ip_to_list(Source);</code></td>
 </tr>
 <tr class="miss">
@@ -2878,7 +2878,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L555"><a href="#L555">555</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    case jid:resourceprep(Password) of</code></td>
 </tr>
 <tr>
@@ -2888,7 +2888,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L557"><a href="#L557">557</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    is_strong_password2(Server, Password);</code></td>
 </tr>
 <tr>
@@ -2918,12 +2918,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L563"><a href="#L563">563</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    LServer = jid:nameprep(Server),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L564"><a href="#L564">564</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    case mod_register_opt:password_strength(LServer) of</code></td>
 </tr>
 <tr>
@@ -2933,7 +2933,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L566"><a href="#L566">566</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>            true;</code></td>
 </tr>
 <tr>
@@ -2988,7 +2988,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L577"><a href="#L577">577</a></td>
-<td class="hits">2</td>
+<td class="hits">10</td>
 <td class="source"><code>may_remove_resource(From) -&gt; From.</code></td>
 </tr>
 <tr>
@@ -3003,7 +3003,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L580"><a href="#L580">580</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    mod_register_opt:ip_access(Host).</code></td>
 </tr>
 <tr>
@@ -3063,7 +3063,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L592"><a href="#L592">592</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    acl:match_rule(global, IPAccess, IPAddress).</code></td>
 </tr>
 <tr>
@@ -3078,27 +3078,27 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L595"><a href="#L595">595</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    JID = jid:make(User, Server),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L596"><a href="#L596">596</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    Access = mod_register_opt:access(Server),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L597"><a href="#L597">597</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    IPAccess = get_ip_access(Server),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L598"><a href="#L598">598</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    case acl:match_rule(Server, Access, JID) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L599"><a href="#L599">599</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	allow -&gt; check_ip_access(Source, IPAccess);</code></td>
 </tr>
 <tr class="miss">

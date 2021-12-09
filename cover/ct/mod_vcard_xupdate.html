@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/ct/mod_vcard_xupdate.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_vcard_xupdate.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:08</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_vcard_xupdate.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:36</p></footer>
 <table>
 <tbody>
 <tr>
@@ -353,12 +353,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L50"><a href="#L50">50</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    init_cache(Host, Opts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L51"><a href="#L51">51</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    ejabberd_hooks:add(c2s_self_presence, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -368,7 +368,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L53"><a href="#L53">53</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    ejabberd_hooks:add(user_send_packet, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -378,7 +378,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L55"><a href="#L55">55</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    ejabberd_hooks:add(vcard_iq_set, Host, ?MODULE, vcard_set,</code></td>
 </tr>
 <tr>
@@ -388,7 +388,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L57"><a href="#L57">57</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    ejabberd_hooks:add(remove_user, Host, ?MODULE, remove_user, 50).</code></td>
 </tr>
 <tr>
@@ -403,7 +403,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L60"><a href="#L60">60</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    ejabberd_hooks:delete(c2s_self_presence, Host,</code></td>
 </tr>
 <tr>
@@ -413,7 +413,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L62"><a href="#L62">62</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    ejabberd_hooks:delete(user_send_packet, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -423,7 +423,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L64"><a href="#L64">64</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    ejabberd_hooks:delete(vcard_iq_set, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -433,7 +433,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L66"><a href="#L66">66</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    ejabberd_hooks:delete(remove_user, Host, ?MODULE, remove_user, 50).</code></td>
 </tr>
 <tr>
@@ -463,7 +463,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L72"><a href="#L72">72</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    [{mod_vcard, hard}].</code></td>
 </tr>
 <tr>
@@ -508,7 +508,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L81"><a href="#L81">81</a></td>
-<td class="hits">212</td>
+<td class="hits">1057</td>
 <td class="source"><code>    case xmpp:get_subtag(Pres, #vcard_xupdate{}) of</code></td>
 </tr>
 <tr>
@@ -538,7 +538,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L87"><a href="#L87">87</a></td>
-<td class="hits">212</td>
+<td class="hits">1057</td>
 <td class="source"><code>	    Pres1 = case get_xupdate(LUser, LServer) of</code></td>
 </tr>
 <tr class="miss">
@@ -548,7 +548,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L89"><a href="#L89">89</a></td>
-<td class="hits">212</td>
+<td class="hits">1057</td>
 <td class="source"><code>			XUpdate -&gt; xmpp:set_subtag(Pres, XUpdate)</code></td>
 </tr>
 <tr>
@@ -558,7 +558,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L91"><a href="#L91">91</a></td>
-<td class="hits">212</td>
+<td class="hits">1057</td>
 <td class="source"><code>	    {Pres1, State}</code></td>
 </tr>
 <tr>
@@ -573,7 +573,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L94"><a href="#L94">94</a></td>
-<td class="hits">5015</td>
+<td class="hits">25042</td>
 <td class="source"><code>    Acc.</code></td>
 </tr>
 <tr>
@@ -623,7 +623,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L104"><a href="#L104">104</a></td>
-<td class="hits">29</td>
+<td class="hits">145</td>
 <td class="source"><code>    Acc;</code></td>
 </tr>
 <tr>
@@ -633,7 +633,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L106"><a href="#L106">106</a></td>
-<td class="hits">5195</td>
+<td class="hits">25939</td>
 <td class="source"><code>    update_presence(Acc).</code></td>
 </tr>
 <tr>
@@ -653,17 +653,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L110"><a href="#L110">110</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    ets_cache:delete(?VCARD_XUPDATE_CACHE, {LUser, LServer}),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L111"><a href="#L111">111</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    ejabberd_sm:force_update_presence({LUser, LServer}),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L112"><a href="#L112">112</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    IQ;</code></td>
 </tr>
 <tr>
@@ -693,17 +693,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L118"><a href="#L118">118</a></td>
-<td class="hits">2</td>
+<td class="hits">10</td>
 <td class="source"><code>    LUser = jid:nodeprep(User),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L119"><a href="#L119">119</a></td>
-<td class="hits">2</td>
+<td class="hits">10</td>
 <td class="source"><code>    LServer = jid:nameprep(Server),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L120"><a href="#L120">120</a></td>
-<td class="hits">2</td>
+<td class="hits">10</td>
 <td class="source"><code>    ets_cache:delete(?VCARD_XUPDATE_CACHE, {LUser, LServer}).</code></td>
 </tr>
 <tr>
@@ -738,7 +738,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L127"><a href="#L127">127</a></td>
-<td class="hits">212</td>
+<td class="hits">1057</td>
 <td class="source"><code>    Result = case use_cache(LServer) of</code></td>
 </tr>
 <tr>
@@ -748,7 +748,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L129"><a href="#L129">129</a></td>
-<td class="hits">212</td>
+<td class="hits">1057</td>
 <td class="source"><code>		     ets_cache:lookup(</code></td>
 </tr>
 <tr>
@@ -758,7 +758,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L131"><a href="#L131">131</a></td>
-<td class="hits">4</td>
+<td class="hits">20</td>
 <td class="source"><code>		       fun() -&gt; db_get_xupdate(LUser, LServer) end);</code></td>
 </tr>
 <tr>
@@ -778,7 +778,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L135"><a href="#L135">135</a></td>
-<td class="hits">212</td>
+<td class="hits">1057</td>
 <td class="source"><code>    case Result of</code></td>
 </tr>
 <tr class="miss">
@@ -788,12 +788,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L137"><a href="#L137">137</a></td>
-<td class="hits">13</td>
+<td class="hits">65</td>
 <td class="source"><code>	{ok, Hash} -&gt; #vcard_xupdate{hash = Hash};</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L138"><a href="#L138">138</a></td>
-<td class="hits">199</td>
+<td class="hits">992</td>
 <td class="source"><code>	error -&gt; #vcard_xupdate{}</code></td>
 </tr>
 <tr>
@@ -818,7 +818,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L143"><a href="#L143">143</a></td>
-<td class="hits">4</td>
+<td class="hits">20</td>
 <td class="source"><code>    case mod_vcard:get_vcard(LUser, LServer) of</code></td>
 </tr>
 <tr>
@@ -828,7 +828,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L145"><a href="#L145">145</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    {ok, compute_hash(VCard)};</code></td>
 </tr>
 <tr>
@@ -838,7 +838,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L147"><a href="#L147">147</a></td>
-<td class="hits">3</td>
+<td class="hits">15</td>
 <td class="source"><code>	    error</code></td>
 </tr>
 <tr>
@@ -863,7 +863,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L152"><a href="#L152">152</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    case use_cache(Host) of</code></td>
 </tr>
 <tr>
@@ -873,12 +873,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L154"><a href="#L154">154</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    CacheOpts = cache_opts(Opts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L155"><a href="#L155">155</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    ets_cache:new(?VCARD_XUPDATE_CACHE, CacheOpts);</code></td>
 </tr>
 <tr>
@@ -913,22 +913,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L162"><a href="#L162">162</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    MaxSize = mod_vcard_xupdate_opt:cache_size(Opts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L163"><a href="#L163">163</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    CacheMissed = mod_vcard_xupdate_opt:cache_missed(Opts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L164"><a href="#L164">164</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    LifeTime = mod_vcard_xupdate_opt:cache_life_time(Opts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L165"><a href="#L165">165</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    [{max_size, MaxSize}, {cache_missed, CacheMissed}, {life_time, LifeTime}].</code></td>
 </tr>
 <tr>
@@ -948,7 +948,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L169"><a href="#L169">169</a></td>
-<td class="hits">213</td>
+<td class="hits">1062</td>
 <td class="source"><code>    mod_vcard_xupdate_opt:use_cache(Host).</code></td>
 </tr>
 <tr>
@@ -968,7 +968,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L173"><a href="#L173">173</a></td>
-<td class="hits">3</td>
+<td class="hits">11</td>
 <td class="source"><code>    case fxml:get_subtag(VCard, &lt;&lt;"PHOTO"&gt;&gt;) of</code></td>
 </tr>
 <tr>
@@ -978,7 +978,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L175"><a href="#L175">175</a></td>
-<td class="hits">3</td>
+<td class="hits">11</td>
 <td class="source"><code>	    &lt;&lt;&gt;&gt;;</code></td>
 </tr>
 <tr>
@@ -1068,7 +1068,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L193"><a href="#L193">193</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    econf:bool();</code></td>
 </tr>
 <tr>
@@ -1078,7 +1078,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L195"><a href="#L195">195</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    econf:pos_int(infinity);</code></td>
 </tr>
 <tr>
@@ -1088,7 +1088,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L197"><a href="#L197">197</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    econf:bool();</code></td>
 </tr>
 <tr>
@@ -1098,7 +1098,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L199"><a href="#L199">199</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    econf:timeout(second, infinity).</code></td>
 </tr>
 <tr>
@@ -1113,7 +1113,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L202"><a href="#L202">202</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    [{use_cache, ejabberd_option:use_cache(Host)},</code></td>
 </tr>
 <tr>

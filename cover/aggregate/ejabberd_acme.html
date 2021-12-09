@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/ejabberd_acme.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_acme.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:02</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_acme.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:30</p></footer>
 <table>
 <tbody>
 <tr>
@@ -2923,7 +2923,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L564"><a href="#L564">564</a></td>
-<td class="hits">36</td>
+<td class="hits">34</td>
 <td class="source"><code>	      not is_ip_or_localhost(Host)</code></td>
 </tr>
 <tr>
@@ -3033,12 +3033,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L586"><a href="#L586">586</a></td>
-<td class="hits">24</td>
+<td class="hits">22</td>
 <td class="source"><code>				   not (have_cert_for_domain(Host)</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L587"><a href="#L587">587</a></td>
-<td class="hits">24</td>
+<td class="hits">22</td>
 <td class="source"><code>					orelse is_ip_or_localhost(Host))</code></td>
 </tr>
 <tr>
@@ -3168,7 +3168,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L613"><a href="#L613">613</a></td>
-<td class="hits">24</td>
+<td class="hits">22</td>
 <td class="source"><code>    ejabberd_pkix:get_certfile_no_default(Host) /= error.</code></td>
 </tr>
 <tr>
@@ -3188,17 +3188,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L617"><a href="#L617">617</a></td>
-<td class="hits">60</td>
+<td class="hits">56</td>
 <td class="source"><code>    Parts = binary:split(Host, &lt;&lt;"."&gt;&gt;),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L618"><a href="#L618">618</a></td>
-<td class="hits">60</td>
+<td class="hits">56</td>
 <td class="source"><code>    TLD = binary_to_list(lists:last(Parts)),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L619"><a href="#L619">619</a></td>
-<td class="hits">60</td>
+<td class="hits">56</td>
 <td class="source"><code>    case inet:parse_address(TLD) of</code></td>
 </tr>
 <tr class="miss">
@@ -3208,7 +3208,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L621"><a href="#L621">621</a></td>
-<td class="hits">60</td>
+<td class="hits">56</td>
 <td class="source"><code>	_ -&gt; TLD == "localhost"</code></td>
 </tr>
 <tr>

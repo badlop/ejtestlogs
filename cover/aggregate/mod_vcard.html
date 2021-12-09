@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/mod_vcard.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_vcard.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:03</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_vcard.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:31</p></footer>
 <table>
 <tbody>
 <tr>
@@ -488,7 +488,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L77"><a href="#L77">77</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    gen_mod:start_child(?MODULE, Host, Opts).</code></td>
 </tr>
 <tr>
@@ -503,7 +503,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L80"><a href="#L80">80</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    gen_mod:stop_child(?MODULE, Host).</code></td>
 </tr>
 <tr>
@@ -533,32 +533,32 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L86"><a href="#L86">86</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    process_flag(trap_exit, true),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L87"><a href="#L87">87</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    Opts = gen_mod:get_module_opts(Host, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L88"><a href="#L88">88</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    Mod = gen_mod:db_mod(Opts, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L89"><a href="#L89">89</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    Mod:init(Host, Opts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L90"><a href="#L90">90</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    init_cache(Mod, Host, Opts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L91"><a href="#L91">91</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    ejabberd_hooks:add(remove_user, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -568,7 +568,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L93"><a href="#L93">93</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    gen_iq_handler:add_iq_handler(ejabberd_local, Host,</code></td>
 </tr>
 <tr>
@@ -578,7 +578,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L95"><a href="#L95">95</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    gen_iq_handler:add_iq_handler(ejabberd_sm, Host,</code></td>
 </tr>
 <tr>
@@ -588,7 +588,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L97"><a href="#L97">97</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    ejabberd_hooks:add(disco_sm_features, Host, ?MODULE,</code></td>
 </tr>
 <tr>
@@ -598,22 +598,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L99"><a href="#L99">99</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    ejabberd_hooks:add(vcard_iq_set, Host, ?MODULE, vcard_iq_set, 50),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L100"><a href="#L100">100</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    MyHosts = gen_mod:get_opt_hosts(Opts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L101"><a href="#L101">101</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    Search = mod_vcard_opt:search(Opts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L102"><a href="#L102">102</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    if Search -&gt;</code></td>
 </tr>
 <tr class="miss">
@@ -763,7 +763,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L132"><a href="#L132">132</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>	    ok</code></td>
 </tr>
 <tr>
@@ -773,7 +773,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L134"><a href="#L134">134</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    {ok, #state{hosts = MyHosts, server_host = Host}}.</code></td>
 </tr>
 <tr>
@@ -893,42 +893,42 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L158"><a href="#L158">158</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    ejabberd_hooks:delete(remove_user, Host, ?MODULE, remove_user, 50),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L159"><a href="#L159">159</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    gen_iq_handler:remove_iq_handler(ejabberd_local, Host, ?NS_VCARD),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L160"><a href="#L160">160</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    gen_iq_handler:remove_iq_handler(ejabberd_sm, Host, ?NS_VCARD),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L161"><a href="#L161">161</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    ejabberd_hooks:delete(disco_sm_features, Host, ?MODULE, get_sm_features, 50),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L162"><a href="#L162">162</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    ejabberd_hooks:delete(vcard_iq_set, Host, ?MODULE, vcard_iq_set, 50),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L163"><a href="#L163">163</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    Mod = gen_mod:db_mod(Host, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L164"><a href="#L164">164</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    Mod:stop(Host),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L165"><a href="#L165">165</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    lists:foreach(</code></td>
 </tr>
 <tr>
@@ -938,42 +938,42 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L167"><a href="#L167">167</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>	      ejabberd_router:unregister_route(MyHost),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L168"><a href="#L168">168</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>	      ejabberd_hooks:delete(disco_local_items, MyHost, ?MODULE, disco_items, 100),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L169"><a href="#L169">169</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>	      ejabberd_hooks:delete(disco_local_features, MyHost, ?MODULE, disco_features, 100),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L170"><a href="#L170">170</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>	      ejabberd_hooks:delete(disco_local_identity, MyHost, ?MODULE, disco_identity, 100),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L171"><a href="#L171">171</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>	      gen_iq_handler:remove_iq_handler(ejabberd_local, MyHost, ?NS_SEARCH),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L172"><a href="#L172">172</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>	      gen_iq_handler:remove_iq_handler(ejabberd_local, MyHost, ?NS_VCARD),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L173"><a href="#L173">173</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>	      gen_iq_handler:remove_iq_handler(ejabberd_local, MyHost, ?NS_DISCO_ITEMS),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L174"><a href="#L174">174</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>	      gen_iq_handler:remove_iq_handler(ejabberd_local, MyHost, ?NS_DISCO_INFO)</code></td>
 </tr>
 <tr>
@@ -1068,7 +1068,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L193"><a href="#L193">193</a></td>
-<td class="hits">7</td>
+<td class="hits">35</td>
 <td class="source"><code>    case Node of</code></td>
 </tr>
 <tr>
@@ -1078,7 +1078,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L195"><a href="#L195">195</a></td>
-<td class="hits">4</td>
+<td class="hits">20</td>
 <td class="source"><code>	  case Acc of</code></td>
 </tr>
 <tr>
@@ -1088,7 +1088,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L197"><a href="#L197">197</a></td>
-<td class="hits">4</td>
+<td class="hits">20</td>
 <td class="source"><code>		{result, [?NS_VCARD | Features]};</code></td>
 </tr>
 <tr class="miss">
@@ -1103,7 +1103,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L200"><a href="#L200">200</a></td>
-<td class="hits">3</td>
+<td class="hits">15</td>
 <td class="source"><code>      _ -&gt; Acc</code></td>
 </tr>
 <tr>
@@ -1143,12 +1143,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L208"><a href="#L208">208</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    ServerHost = ejabberd_router:host_of_route(To#jid.lserver),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L209"><a href="#L209">209</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    VCard = case mod_vcard_opt:vcard(ServerHost) of</code></td>
 </tr>
 <tr>
@@ -1183,7 +1183,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L216"><a href="#L216">216</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>		    V</code></td>
 </tr>
 <tr>
@@ -1193,7 +1193,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L218"><a href="#L218">218</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    xmpp:make_iq_result(IQ, VCard).</code></td>
 </tr>
 <tr>
@@ -1213,12 +1213,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L222"><a href="#L222">222</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    #jid{lserver = LServer} = From,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L223"><a href="#L223">223</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    case lists:member(LServer, ejabberd_option:hosts()) of</code></td>
 </tr>
 <tr>
@@ -1228,7 +1228,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L225"><a href="#L225">225</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    case ejabberd_hooks:run_fold(vcard_iq_set, LServer, IQ, []) of</code></td>
 </tr>
 <tr class="miss">
@@ -1243,7 +1243,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L228"><a href="#L228">228</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>		_ -&gt; xmpp:make_iq_result(IQ)</code></td>
 </tr>
 <tr>
@@ -1278,12 +1278,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L235"><a href="#L235">235</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    #jid{luser = LUser, lserver = LServer} = To,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L236"><a href="#L236">236</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    case get_vcard(LUser, LServer) of</code></td>
 </tr>
 <tr>
@@ -1318,7 +1318,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L243"><a href="#L243">243</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>	    IQ#iq{type = result, to = From, from = To, sub_els = Els}</code></td>
 </tr>
 <tr>
@@ -1658,12 +1658,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L311"><a href="#L311">311</a></td>
-<td class="hits">5</td>
+<td class="hits">26</td>
 <td class="source"><code>    Mod = gen_mod:db_mod(LServer, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L312"><a href="#L312">312</a></td>
-<td class="hits">5</td>
+<td class="hits">26</td>
 <td class="source"><code>    Result = case use_cache(Mod, LServer) of</code></td>
 </tr>
 <tr>
@@ -1673,7 +1673,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L314"><a href="#L314">314</a></td>
-<td class="hits">5</td>
+<td class="hits">26</td>
 <td class="source"><code>		     ets_cache:lookup(</code></td>
 </tr>
 <tr>
@@ -1683,7 +1683,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L316"><a href="#L316">316</a></td>
-<td class="hits">4</td>
+<td class="hits">21</td>
 <td class="source"><code>		       fun() -&gt; Mod:get_vcard(LUser, LServer) end);</code></td>
 </tr>
 <tr>
@@ -1703,12 +1703,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L320"><a href="#L320">320</a></td>
-<td class="hits">5</td>
+<td class="hits">26</td>
 <td class="source"><code>    case Result of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L321"><a href="#L321">321</a></td>
-<td class="hits">5</td>
+<td class="hits">26</td>
 <td class="source"><code>	{ok, Els} -&gt; Els;</code></td>
 </tr>
 <tr class="miss">
@@ -1738,12 +1738,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L327"><a href="#L327">327</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    FN = fxml:get_path_s(VCARD, [{elem, &lt;&lt;"FN"&gt;&gt;}, cdata]),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L328"><a href="#L328">328</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    Family = fxml:get_path_s(VCARD,</code></td>
 </tr>
 <tr>
@@ -1753,7 +1753,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L330"><a href="#L330">330</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    Given = fxml:get_path_s(VCARD,</code></td>
 </tr>
 <tr>
@@ -1763,7 +1763,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L332"><a href="#L332">332</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    Middle = fxml:get_path_s(VCARD,</code></td>
 </tr>
 <tr>
@@ -1773,7 +1773,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L334"><a href="#L334">334</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    Nickname = fxml:get_path_s(VCARD,</code></td>
 </tr>
 <tr>
@@ -1783,7 +1783,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L336"><a href="#L336">336</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    BDay = fxml:get_path_s(VCARD,</code></td>
 </tr>
 <tr>
@@ -1793,7 +1793,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L338"><a href="#L338">338</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    CTRY = fxml:get_path_s(VCARD,</code></td>
 </tr>
 <tr>
@@ -1803,7 +1803,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L340"><a href="#L340">340</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    Locality = fxml:get_path_s(VCARD,</code></td>
 </tr>
 <tr>
@@ -1818,7 +1818,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L343"><a href="#L343">343</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    EMail1 = fxml:get_path_s(VCARD,</code></td>
 </tr>
 <tr>
@@ -1828,7 +1828,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L345"><a href="#L345">345</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    EMail2 = fxml:get_path_s(VCARD,</code></td>
 </tr>
 <tr>
@@ -1838,7 +1838,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L347"><a href="#L347">347</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    OrgName = fxml:get_path_s(VCARD,</code></td>
 </tr>
 <tr>
@@ -1848,7 +1848,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L349"><a href="#L349">349</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    OrgUnit = fxml:get_path_s(VCARD,</code></td>
 </tr>
 <tr>
@@ -1858,7 +1858,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L351"><a href="#L351">351</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    EMail = case EMail1 of</code></td>
 </tr>
 <tr class="miss">
@@ -1868,7 +1868,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L353"><a href="#L353">353</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	      _ -&gt; EMail1</code></td>
 </tr>
 <tr>
@@ -1878,67 +1878,67 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L355"><a href="#L355">355</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    LFN = string2lower(FN),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L356"><a href="#L356">356</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    LFamily = string2lower(Family),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L357"><a href="#L357">357</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    LGiven = string2lower(Given),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L358"><a href="#L358">358</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    LMiddle = string2lower(Middle),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L359"><a href="#L359">359</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    LNickname = string2lower(Nickname),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L360"><a href="#L360">360</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    LBDay = string2lower(BDay),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L361"><a href="#L361">361</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    LCTRY = string2lower(CTRY),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L362"><a href="#L362">362</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    LLocality = string2lower(Locality),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L363"><a href="#L363">363</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    LEMail = string2lower(EMail),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L364"><a href="#L364">364</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    LOrgName = string2lower(OrgName),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L365"><a href="#L365">365</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    LOrgUnit = string2lower(OrgUnit),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L366"><a href="#L366">366</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    US = {LUser, LServer},</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L367"><a href="#L367">367</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    #vcard_search{us = US,</code></td>
 </tr>
 <tr>
@@ -2073,12 +2073,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L394"><a href="#L394">394</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    #jid{user = User, lserver = LServer} = From,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L395"><a href="#L395">395</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    case set_vcard(User, LServer, VCard) of</code></td>
 </tr>
 <tr>
@@ -2108,7 +2108,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L401"><a href="#L401">401</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    IQ</code></td>
 </tr>
 <tr>
@@ -2143,7 +2143,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L408"><a href="#L408">408</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    case jid:nodeprep(User) of</code></td>
 </tr>
 <tr>
@@ -2163,22 +2163,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L412"><a href="#L412">412</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    VCardEl = xmpp:encode(VCARD),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L413"><a href="#L413">413</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    VCardSearch = make_vcard_search(User, LUser, LServer, VCardEl),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L414"><a href="#L414">414</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	    Mod = gen_mod:db_mod(LServer, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L415"><a href="#L415">415</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>            case Mod:set_vcard(LUser, LServer, VCardEl, VCardSearch) of</code></td>
 </tr>
 <tr>
@@ -2188,7 +2188,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L417"><a href="#L417">417</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	            ets_cache:delete(?VCARD_CACHE, {LUser, LServer},</code></td>
 </tr>
 <tr>
@@ -2198,7 +2198,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L419"><a href="#L419">419</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>                    ok;</code></td>
 </tr>
 <tr>
@@ -2238,12 +2238,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L427"><a href="#L427">427</a></td>
-<td class="hits">11</td>
+<td class="hits">55</td>
 <td class="source"><code>    case stringprep:tolower_nofilter(String) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L428"><a href="#L428">428</a></td>
-<td class="hits">11</td>
+<td class="hits">55</td>
 <td class="source"><code>      Lower when is_binary(Lower) -&gt; Lower;</code></td>
 </tr>
 <tr class="miss">
@@ -2603,27 +2603,27 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L500"><a href="#L500">500</a></td>
-<td class="hits">2</td>
+<td class="hits">10</td>
 <td class="source"><code>    LUser = jid:nodeprep(User),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L501"><a href="#L501">501</a></td>
-<td class="hits">2</td>
+<td class="hits">10</td>
 <td class="source"><code>    LServer = jid:nameprep(Server),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L502"><a href="#L502">502</a></td>
-<td class="hits">2</td>
+<td class="hits">10</td>
 <td class="source"><code>    Mod = gen_mod:db_mod(LServer, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L503"><a href="#L503">503</a></td>
-<td class="hits">2</td>
+<td class="hits">10</td>
 <td class="source"><code>    Mod:remove_user(LUser, LServer),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L504"><a href="#L504">504</a></td>
-<td class="hits">2</td>
+<td class="hits">10</td>
 <td class="source"><code>    ets_cache:delete(?VCARD_CACHE, {LUser, LServer}, cache_nodes(Mod, LServer)).</code></td>
 </tr>
 <tr>
@@ -2643,7 +2643,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L508"><a href="#L508">508</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    case use_cache(Mod, Host) of</code></td>
 </tr>
 <tr>
@@ -2653,12 +2653,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L510"><a href="#L510">510</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>	    CacheOpts = cache_opts(Host, Opts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L511"><a href="#L511">511</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>	    ets_cache:new(?VCARD_CACHE, CacheOpts);</code></td>
 </tr>
 <tr>
@@ -2693,22 +2693,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L518"><a href="#L518">518</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    MaxSize = mod_vcard_opt:cache_size(Opts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L519"><a href="#L519">519</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    CacheMissed = mod_vcard_opt:cache_missed(Opts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L520"><a href="#L520">520</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    LifeTime = mod_vcard_opt:cache_life_time(Opts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L521"><a href="#L521">521</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    [{max_size, MaxSize}, {cache_missed, CacheMissed}, {life_time, LifeTime}].</code></td>
 </tr>
 <tr>
@@ -2728,7 +2728,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L525"><a href="#L525">525</a></td>
-<td class="hits">6</td>
+<td class="hits">32</td>
 <td class="source"><code>    case erlang:function_exported(Mod, use_cache, 1) of</code></td>
 </tr>
 <tr class="miss">
@@ -2738,7 +2738,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L527"><a href="#L527">527</a></td>
-<td class="hits">6</td>
+<td class="hits">32</td>
 <td class="source"><code>	false -&gt; mod_vcard_opt:use_cache(Host)</code></td>
 </tr>
 <tr>
@@ -2763,7 +2763,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L532"><a href="#L532">532</a></td>
-<td class="hits">3</td>
+<td class="hits">15</td>
 <td class="source"><code>    case erlang:function_exported(Mod, cache_nodes, 1) of</code></td>
 </tr>
 <tr class="miss">
@@ -2773,7 +2773,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L534"><a href="#L534">534</a></td>
-<td class="hits">3</td>
+<td class="hits">15</td>
 <td class="source"><code>	false -&gt; ejabberd_cluster:get_nodes()</code></td>
 </tr>
 <tr>
@@ -2868,7 +2868,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L553"><a href="#L553">553</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    [].</code></td>
 </tr>
 <tr>
@@ -2883,7 +2883,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L556"><a href="#L556">556</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    econf:bool();</code></td>
 </tr>
 <tr>
@@ -2893,7 +2893,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L558"><a href="#L558">558</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    econf:binary();</code></td>
 </tr>
 <tr>
@@ -2903,7 +2903,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L560"><a href="#L560">560</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    econf:pos_int(infinity);</code></td>
 </tr>
 <tr>
@@ -2913,7 +2913,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L562"><a href="#L562">562</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    econf:bool();</code></td>
 </tr>
 <tr>
@@ -2923,7 +2923,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L564"><a href="#L564">564</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    econf:host();</code></td>
 </tr>
 <tr>
@@ -2933,7 +2933,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L566"><a href="#L566">566</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    econf:hosts();</code></td>
 </tr>
 <tr>
@@ -2943,7 +2943,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L568"><a href="#L568">568</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    econf:db_type(?MODULE);</code></td>
 </tr>
 <tr>
@@ -2953,7 +2953,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L570"><a href="#L570">570</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    econf:bool();</code></td>
 </tr>
 <tr>
@@ -2963,7 +2963,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L572"><a href="#L572">572</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    econf:pos_int(infinity);</code></td>
 </tr>
 <tr>
@@ -2973,7 +2973,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L574"><a href="#L574">574</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    econf:bool();</code></td>
 </tr>
 <tr>
@@ -2983,7 +2983,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L576"><a href="#L576">576</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    econf:timeout(second, infinity);</code></td>
 </tr>
 <tr>
@@ -2993,7 +2993,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L578"><a href="#L578">578</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    econf:vcard_temp().</code></td>
 </tr>
 <tr>
@@ -3008,7 +3008,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L581"><a href="#L581">581</a></td>
-<td class="hits">1</td>
+<td class="hits">6</td>
 <td class="source"><code>    [{allow_return_all, false},</code></td>
 </tr>
 <tr>

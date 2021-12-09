@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/ejabberd_auth_sql.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_auth_sql.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:03</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_auth_sql.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:31</p></footer>
 <table>
 <tbody>
 <tr>
@@ -341,9 +341,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>%%%----------------------------------------------------------------------</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L48"><a href="#L48">48</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>start(_Host) -&gt; ok.</code></td>
 </tr>
 <tr>
@@ -366,9 +366,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>plain_password_required(Server) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L53"><a href="#L53">53</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">15</td>
 <td class="source"><code>    store_type(Server) == scram.</code></td>
 </tr>
 <tr>
@@ -381,9 +381,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>store_type(Server) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L56"><a href="#L56">56</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1383</td>
 <td class="source"><code>    ejabberd_auth:password_format(Server).</code></td>
 </tr>
 <tr>
@@ -396,9 +396,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>set_password(User, Server, Password) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L59"><a href="#L59">59</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    F =</code></td>
 </tr>
 <tr>
@@ -406,9 +406,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>    fun() -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L61"><a href="#L61">61</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>	case Password of</code></td>
 </tr>
 <tr>
@@ -446,9 +446,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	    _ -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L69"><a href="#L69">69</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>		set_password_t(User, Server, Password)</code></td>
 </tr>
 <tr>
@@ -461,9 +461,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>    end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L72"><a href="#L72">72</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    case ejabberd_sql:sql_transaction(Server, F) of</code></td>
 </tr>
 <tr>
@@ -471,9 +471,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{atomic, _} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L74"><a href="#L74">74</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>	    {cache, {ok, Password}};</code></td>
 </tr>
 <tr>
@@ -501,9 +501,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>try_register(User, Server, Password) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L80"><a href="#L80">80</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">15</td>
 <td class="source"><code>    Res =</code></td>
 </tr>
 <tr>
@@ -546,9 +546,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	_ -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L89"><a href="#L89">89</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">15</td>
 <td class="source"><code>	    add_user(Server, User, Password)</code></td>
 </tr>
 <tr>
@@ -556,14 +556,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>    end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L91"><a href="#L91">91</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">15</td>
 <td class="source"><code>    case Res of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L92"><a href="#L92">92</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">15</td>
 <td class="source"><code>	{updated, 1} -&gt; {cache, {ok, Password}};</code></td>
 </tr>
 <tr class="miss">
@@ -586,9 +586,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_users(Server, Opts) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L97"><a href="#L97">97</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    case list_users(Server, Opts) of</code></td>
 </tr>
 <tr>
@@ -596,9 +596,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{selected, Res} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L99"><a href="#L99">99</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>	    [{U, Server} || {U} &lt;- Res];</code></td>
 </tr>
 <tr class="miss">
@@ -621,9 +621,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>count_users(Server, Opts) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L104"><a href="#L104">104</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    case users_number(Server, Opts) of</code></td>
 </tr>
 <tr>
@@ -631,9 +631,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{selected, [{Res}]} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L106"><a href="#L106">106</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>	    Res;</code></td>
 </tr>
 <tr class="miss">
@@ -656,9 +656,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_password(User, Server) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L111"><a href="#L111">111</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">24</td>
 <td class="source"><code>    case get_password_scram(Server, User) of</code></td>
 </tr>
 <tr>
@@ -731,9 +731,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{selected, []} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L126"><a href="#L126">126</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">24</td>
 <td class="source"><code>	    {cache, error};</code></td>
 </tr>
 <tr>
@@ -761,9 +761,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>remove_user(User, Server) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L132"><a href="#L132">132</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    case del_user(Server, User) of</code></td>
 </tr>
 <tr>
@@ -771,9 +771,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{updated, _} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L134"><a href="#L134">134</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>	    ok;</code></td>
 </tr>
 <tr>
@@ -901,9 +901,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>set_password_t(LUser, LServer, Password) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L160"><a href="#L160">160</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    ?SQL_UPSERT_T(</code></td>
 </tr>
 <tr>
@@ -936,9 +936,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_password_scram(LServer, LUser) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L167"><a href="#L167">167</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">24</td>
 <td class="source"><code>    ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -946,9 +946,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      LServer,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L169"><a href="#L169">169</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">24</td>
 <td class="source"><code>      ?SQL("select @(password)s, @(serverkey)s, @(salt)s, @(iterationcount)d"</code></td>
 </tr>
 <tr>
@@ -1036,9 +1036,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>add_user(LServer, LUser, Password) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L187"><a href="#L187">187</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">15</td>
 <td class="source"><code>    ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -1046,9 +1046,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      LServer,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L189"><a href="#L189">189</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">15</td>
 <td class="source"><code>      ?SQL_INSERT(</code></td>
 </tr>
 <tr>
@@ -1081,9 +1081,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>del_user(LServer, LUser) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L196"><a href="#L196">196</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -1091,9 +1091,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      LServer,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L198"><a href="#L198">198</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>      ?SQL("delete from users where username=%(LUser)s and %(LServer)H")).</code></td>
 </tr>
 <tr>
@@ -1106,9 +1106,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>list_users(LServer, []) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L201"><a href="#L201">201</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -1116,9 +1116,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      LServer,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L203"><a href="#L203">203</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>      ?SQL("select @(username)s from users where %(LServer)H"));</code></td>
 </tr>
 <tr>
@@ -1286,9 +1286,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>users_number(LServer) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L237"><a href="#L237">237</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -1301,9 +1301,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      fun(pgsql, _) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L240"><a href="#L240">240</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>              case</code></td>
 </tr>
 <tr>
@@ -1336,14 +1336,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                  _ -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L247"><a href="#L247">247</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>                      ejabberd_sql:sql_query_t(</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L248"><a href="#L248">248</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>                        ?SQL("select @(count(*))d from users where %(LServer)H"))</code></td>
 </tr>
 <tr>
@@ -1356,14 +1356,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>         (_Type, _) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L251"><a href="#L251">251</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>              ejabberd_sql:sql_query_t(</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L252"><a href="#L252">252</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>                ?SQL("select @(count(*))d from users where %(LServer)H"))</code></td>
 </tr>
 <tr>
@@ -1421,9 +1421,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>users_number(LServer, []) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L264"><a href="#L264">264</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    users_number(LServer).</code></td>
 </tr>
 <tr>

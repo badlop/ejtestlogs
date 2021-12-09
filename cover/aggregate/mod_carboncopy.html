@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/mod_carboncopy.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_carboncopy.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:02</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_carboncopy.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:30</p></footer>
 <table>
 <tbody>
 <tr>
@@ -363,7 +363,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L52"><a href="#L52">52</a></td>
-<td class="hits">8</td>
+<td class="hits">3</td>
 <td class="source"><code>    ejabberd_hooks:add(disco_local_features, Host, ?MODULE, disco_features, 50),</code></td>
 </tr>
 <tr>
@@ -373,32 +373,32 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L54"><a href="#L54">54</a></td>
-<td class="hits">8</td>
+<td class="hits">3</td>
 <td class="source"><code>    ejabberd_hooks:add(user_send_packet,Host, ?MODULE, user_send_packet, 89),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L55"><a href="#L55">55</a></td>
-<td class="hits">8</td>
+<td class="hits">3</td>
 <td class="source"><code>    ejabberd_hooks:add(user_receive_packet,Host, ?MODULE, user_receive_packet, 89),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L56"><a href="#L56">56</a></td>
-<td class="hits">8</td>
+<td class="hits">3</td>
 <td class="source"><code>    ejabberd_hooks:add(c2s_copy_session, Host, ?MODULE, c2s_copy_session, 50),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L57"><a href="#L57">57</a></td>
-<td class="hits">8</td>
+<td class="hits">3</td>
 <td class="source"><code>    ejabberd_hooks:add(c2s_session_resumed, Host, ?MODULE, c2s_session_resumed, 50),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L58"><a href="#L58">58</a></td>
-<td class="hits">8</td>
+<td class="hits">3</td>
 <td class="source"><code>    ejabberd_hooks:add(c2s_session_opened, Host, ?MODULE, c2s_session_opened, 50),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L59"><a href="#L59">59</a></td>
-<td class="hits">8</td>
+<td class="hits">3</td>
 <td class="source"><code>    gen_iq_handler:add_iq_handler(ejabberd_sm, Host, ?NS_CARBONS_2, ?MODULE, iq_handler).</code></td>
 </tr>
 <tr>
@@ -413,12 +413,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L62"><a href="#L62">62</a></td>
-<td class="hits">8</td>
+<td class="hits">3</td>
 <td class="source"><code>    gen_iq_handler:remove_iq_handler(ejabberd_sm, Host, ?NS_CARBONS_2),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L63"><a href="#L63">63</a></td>
-<td class="hits">8</td>
+<td class="hits">3</td>
 <td class="source"><code>    ejabberd_hooks:delete(disco_local_features, Host, ?MODULE, disco_features, 50),</code></td>
 </tr>
 <tr>
@@ -428,27 +428,27 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L65"><a href="#L65">65</a></td>
-<td class="hits">8</td>
+<td class="hits">3</td>
 <td class="source"><code>    ejabberd_hooks:delete(user_send_packet,Host, ?MODULE, user_send_packet, 89),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L66"><a href="#L66">66</a></td>
-<td class="hits">8</td>
+<td class="hits">3</td>
 <td class="source"><code>    ejabberd_hooks:delete(user_receive_packet,Host, ?MODULE, user_receive_packet, 89),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L67"><a href="#L67">67</a></td>
-<td class="hits">8</td>
+<td class="hits">3</td>
 <td class="source"><code>    ejabberd_hooks:delete(c2s_copy_session, Host, ?MODULE, c2s_copy_session, 50),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L68"><a href="#L68">68</a></td>
-<td class="hits">8</td>
+<td class="hits">3</td>
 <td class="source"><code>    ejabberd_hooks:delete(c2s_session_resumed, Host, ?MODULE, c2s_session_resumed, 50),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L69"><a href="#L69">69</a></td>
-<td class="hits">8</td>
+<td class="hits">3</td>
 <td class="source"><code>    ejabberd_hooks:delete(c2s_session_opened, Host, ?MODULE, c2s_session_opened, 50).</code></td>
 </tr>
 <tr>
@@ -493,7 +493,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L78"><a href="#L78">78</a></td>
-<td class="hits">8</td>
+<td class="hits">9</td>
 <td class="source"><code>    disco_features({result, []}, From, To, &lt;&lt;""&gt;&gt;, Lang);</code></td>
 </tr>
 <tr>
@@ -503,7 +503,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L80"><a href="#L80">80</a></td>
-<td class="hits">8</td>
+<td class="hits">9</td>
 <td class="source"><code>    {result, [?NS_CARBONS_2,?NS_CARBONS_RULES_0|Feats]};</code></td>
 </tr>
 <tr>
@@ -683,7 +683,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L116"><a href="#L116">116</a></td>
-<td class="hits">372</td>
+<td class="hits">374</td>
 <td class="source"><code>    Acc.</code></td>
 </tr>
 <tr>
@@ -738,7 +738,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L127"><a href="#L127">127</a></td>
-<td class="hits">674</td>
+<td class="hits">676</td>
 <td class="source"><code>    Acc.</code></td>
 </tr>
 <tr>
@@ -853,7 +853,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L150"><a href="#L150">150</a></td>
-<td class="hits">120</td>
+<td class="hits">121</td>
 <td class="source"><code>    maps:remove(carboncopy, State).</code></td>
 </tr>
 <tr>
@@ -1588,7 +1588,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L297"><a href="#L297">297</a></td>
-<td class="hits">8</td>
+<td class="hits">3</td>
 <td class="source"><code>    [].</code></td>
 </tr>
 <tr>
@@ -1603,7 +1603,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L300"><a href="#L300">300</a></td>
-<td class="hits">8</td>
+<td class="hits">3</td>
 <td class="source"><code>    [].</code></td>
 </tr>
 <tr>

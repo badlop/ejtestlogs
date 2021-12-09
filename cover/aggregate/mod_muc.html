@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/mod_muc.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_muc.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:04</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_muc.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:31</p></footer>
 <table>
 <tbody>
 <tr>
@@ -718,7 +718,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L123"><a href="#L123">123</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    case mod_muc_sup:start(Host) of</code></td>
 </tr>
 <tr>
@@ -728,32 +728,32 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L125"><a href="#L125">125</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	    MyHosts = gen_mod:get_opt_hosts(Opts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L126"><a href="#L126">126</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	    Mod = gen_mod:db_mod(Opts, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L127"><a href="#L127">127</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	    RMod = gen_mod:ram_db_mod(Opts, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L128"><a href="#L128">128</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	    Mod:init(Host, gen_mod:set_opt(hosts, MyHosts, Opts)),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L129"><a href="#L129">129</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	    RMod:init(Host, gen_mod:set_opt(hosts, MyHosts, Opts)),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L130"><a href="#L130">130</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	    load_permanent_rooms(MyHosts, Host, Opts);</code></td>
 </tr>
 <tr>
@@ -783,17 +783,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L136"><a href="#L136">136</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    Proc = mod_muc_sup:procname(Host),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L137"><a href="#L137">137</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    supervisor:terminate_child(ejabberd_gen_mod_sup, Proc),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L138"><a href="#L138">138</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    supervisor:delete_child(ejabberd_gen_mod_sup, Proc).</code></td>
 </tr>
 <tr>
@@ -993,7 +993,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L178"><a href="#L178">178</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    [{mod_mam, soft}].</code></td>
 </tr>
 <tr>
@@ -1008,12 +1008,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L181"><a href="#L181">181</a></td>
-<td class="hits">18</td>
+<td class="hits">16</td>
 <td class="source"><code>    Proc = procname(Host, I),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L182"><a href="#L182">182</a></td>
-<td class="hits">18</td>
+<td class="hits">16</td>
 <td class="source"><code>    ?GEN_SERVER:start_link({local, Proc}, ?MODULE, [Host, I],</code></td>
 </tr>
 <tr>
@@ -1038,7 +1038,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L187"><a href="#L187">187</a></td>
-<td class="hits">127</td>
+<td class="hits">313</td>
 <td class="source"><code>    binary_to_atom(</code></td>
 </tr>
 <tr>
@@ -1058,17 +1058,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L191"><a href="#L191">191</a></td>
-<td class="hits">91</td>
+<td class="hits">281</td>
 <td class="source"><code>    Cores = erlang:system_info(logical_processors),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L192"><a href="#L192">192</a></td>
-<td class="hits">91</td>
+<td class="hits">281</td>
 <td class="source"><code>    I = erlang:phash2(RoomHost, Cores) + 1,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L193"><a href="#L193">193</a></td>
-<td class="hits">91</td>
+<td class="hits">281</td>
 <td class="source"><code>    procname(Host, I).</code></td>
 </tr>
 <tr>
@@ -1088,17 +1088,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L197"><a href="#L197">197</a></td>
-<td class="hits">919</td>
+<td class="hits">3091</td>
 <td class="source"><code>    To = xmpp:get_to(Pkt),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L198"><a href="#L198">198</a></td>
-<td class="hits">919</td>
+<td class="hits">3091</td>
 <td class="source"><code>    ServerHost = ejabberd_router:host_of_route(To#jid.lserver),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L199"><a href="#L199">199</a></td>
-<td class="hits">919</td>
+<td class="hits">3091</td>
 <td class="source"><code>    route(Pkt, ServerHost).</code></td>
 </tr>
 <tr>
@@ -1118,27 +1118,27 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L203"><a href="#L203">203</a></td>
-<td class="hits">919</td>
+<td class="hits">3091</td>
 <td class="source"><code>    From = xmpp:get_from(Pkt),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L204"><a href="#L204">204</a></td>
-<td class="hits">919</td>
+<td class="hits">3091</td>
 <td class="source"><code>    To = xmpp:get_to(Pkt),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L205"><a href="#L205">205</a></td>
-<td class="hits">919</td>
+<td class="hits">3091</td>
 <td class="source"><code>    Host = To#jid.lserver,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L206"><a href="#L206">206</a></td>
-<td class="hits">919</td>
+<td class="hits">3091</td>
 <td class="source"><code>    Access = mod_muc_opt:access(ServerHost),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L207"><a href="#L207">207</a></td>
-<td class="hits">919</td>
+<td class="hits">3091</td>
 <td class="source"><code>    case acl:match_rule(ServerHost, Access, From) of</code></td>
 </tr>
 <tr>
@@ -1148,7 +1148,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L209"><a href="#L209">209</a></td>
-<td class="hits">919</td>
+<td class="hits">3091</td>
 <td class="source"><code>	    route(Pkt, Host, ServerHost);</code></td>
 </tr>
 <tr>
@@ -1198,7 +1198,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L219"><a href="#L219">219</a></td>
-<td class="hits">100</td>
+<td class="hits">300</td>
 <td class="source"><code>    ejabberd_router:process_iq(IQ);</code></td>
 </tr>
 <tr>
@@ -1218,12 +1218,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L223"><a href="#L223">223</a></td>
-<td class="hits">10</td>
+<td class="hits">30</td>
 <td class="source"><code>    if Type == error -&gt;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L224"><a href="#L224">224</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>            ok;</code></td>
 </tr>
 <tr>
@@ -1233,12 +1233,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L226"><a href="#L226">226</a></td>
-<td class="hits">8</td>
+<td class="hits">24</td>
 <td class="source"><code>	    AccessAdmin = mod_muc_opt:access_admin(ServerHost),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L227"><a href="#L227">227</a></td>
-<td class="hits">8</td>
+<td class="hits">24</td>
 <td class="source"><code>            case acl:match_rule(ServerHost, AccessAdmin, From) of</code></td>
 </tr>
 <tr>
@@ -1263,7 +1263,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L232"><a href="#L232">232</a></td>
-<td class="hits">8</td>
+<td class="hits">24</td>
 <td class="source"><code>                    ErrText = ?T("Only service administrators are allowed "</code></td>
 </tr>
 <tr>
@@ -1273,12 +1273,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L234"><a href="#L234">234</a></td>
-<td class="hits">8</td>
+<td class="hits">24</td>
 <td class="source"><code>                    Err = xmpp:err_forbidden(ErrText, Lang),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L235"><a href="#L235">235</a></td>
-<td class="hits">8</td>
+<td class="hits">24</td>
 <td class="source"><code>                    ejabberd_router:route_error(Pkt, Err)</code></td>
 </tr>
 <tr>
@@ -1298,12 +1298,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L239"><a href="#L239">239</a></td>
-<td class="hits">809</td>
+<td class="hits">2761</td>
 <td class="source"><code>    {Room, _, _} = jid:tolower(xmpp:get_to(Pkt)),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L240"><a href="#L240">240</a></td>
-<td class="hits">809</td>
+<td class="hits">2761</td>
 <td class="source"><code>    case Room of</code></td>
 </tr>
 <tr>
@@ -1313,17 +1313,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L242"><a href="#L242">242</a></td>
-<td class="hits">30</td>
+<td class="hits">90</td>
 <td class="source"><code>	    Txt = ?T("No module is handling this query"),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L243"><a href="#L243">243</a></td>
-<td class="hits">30</td>
+<td class="hits">90</td>
 <td class="source"><code>	    Err = xmpp:err_service_unavailable(Txt, xmpp:get_lang(Pkt)),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L244"><a href="#L244">244</a></td>
-<td class="hits">30</td>
+<td class="hits">90</td>
 <td class="source"><code>	    ejabberd_router:route_error(Pkt, Err);</code></td>
 </tr>
 <tr>
@@ -1333,12 +1333,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L246"><a href="#L246">246</a></td>
-<td class="hits">779</td>
+<td class="hits">2671</td>
 <td class="source"><code>	    RMod = gen_mod:ram_db_mod(ServerHost, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L247"><a href="#L247">247</a></td>
-<td class="hits">779</td>
+<td class="hits">2671</td>
 <td class="source"><code>	    case RMod:find_online_room(ServerHost, Room, Host) of</code></td>
 </tr>
 <tr>
@@ -1348,12 +1348,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L249"><a href="#L249">249</a></td>
-<td class="hits">91</td>
+<td class="hits">281</td>
 <td class="source"><code>		    Proc = procname(ServerHost, {Room, Host}),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L250"><a href="#L250">250</a></td>
-<td class="hits">91</td>
+<td class="hits">281</td>
 <td class="source"><code>		    case whereis(Proc) of</code></td>
 </tr>
 <tr>
@@ -1373,12 +1373,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L254"><a href="#L254">254</a></td>
-<td class="hits">91</td>
+<td class="hits">281</td>
 <td class="source"><code>			    ?DEBUG("Routing to MUC worker ~p:~n~ts", [Proc, xmpp:pp(Pkt)]),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L255"><a href="#L255">255</a></td>
-<td class="hits">91</td>
+<td class="hits">281</td>
 <td class="source"><code>			    ?GEN_SERVER:cast(Pid, {route_to_room, Pkt});</code></td>
 </tr>
 <tr>
@@ -1413,7 +1413,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L262"><a href="#L262">262</a></td>
-<td class="hits">688</td>
+<td class="hits">2390</td>
 <td class="source"><code>		    mod_muc_room:route(Pid, Pkt)</code></td>
 </tr>
 <tr>
@@ -1443,17 +1443,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L268"><a href="#L268">268</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    RMod = gen_mod:ram_db_mod(ServerHost, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L269"><a href="#L269">269</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    Hosts = gen_mod:get_module_opt_hosts(ServerHost, mod_muc),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L270"><a href="#L270">270</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    shutdown_rooms(ServerHost, Hosts, RMod).</code></td>
 </tr>
 <tr>
@@ -1473,17 +1473,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L274"><a href="#L274">274</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    Rooms = [RMod:get_online_rooms(ServerHost, Host, undefined)</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L275"><a href="#L275">275</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>	     || Host &lt;- Hosts],</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L276"><a href="#L276">276</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>    lists:flatmap(</code></td>
 </tr>
 <tr>
@@ -1678,17 +1678,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L315"><a href="#L315">315</a></td>
-<td class="hits">113</td>
+<td class="hits">517</td>
 <td class="source"><code>    LServer = jid:nameprep(ServerHost),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L316"><a href="#L316">316</a></td>
-<td class="hits">113</td>
+<td class="hits">517</td>
 <td class="source"><code>    Mod = gen_mod:db_mod(LServer, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L317"><a href="#L317">317</a></td>
-<td class="hits">113</td>
+<td class="hits">517</td>
 <td class="source"><code>    Mod:store_room(LServer, Host, Name, Opts, ChangesHints).</code></td>
 </tr>
 <tr>
@@ -1701,19 +1701,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>store_changes(ServerHost, Host, Name, ChangesHints) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L320"><a href="#L320">320</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">54</td>
 <td class="source"><code>    LServer = jid:nameprep(ServerHost),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L321"><a href="#L321">321</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">54</td>
 <td class="source"><code>    Mod = gen_mod:db_mod(LServer, ?MODULE),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L322"><a href="#L322">322</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">54</td>
 <td class="source"><code>    Mod:store_changes(LServer, Host, Name, ChangesHints).</code></td>
 </tr>
 <tr>
@@ -1728,17 +1728,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L325"><a href="#L325">325</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>    LServer = jid:nameprep(ServerHost),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L326"><a href="#L326">326</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>    Mod = gen_mod:db_mod(LServer, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L327"><a href="#L327">327</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>    Mod:restore_room(LServer, Host, Name).</code></td>
 </tr>
 <tr>
@@ -1753,22 +1753,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L330"><a href="#L330">330</a></td>
-<td class="hits">129</td>
+<td class="hits">481</td>
 <td class="source"><code>    LServer = jid:nameprep(ServerHost),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L331"><a href="#L331">331</a></td>
-<td class="hits">129</td>
+<td class="hits">481</td>
 <td class="source"><code>    ejabberd_hooks:run(remove_room, LServer, [LServer, Name, Host]),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L332"><a href="#L332">332</a></td>
-<td class="hits">129</td>
+<td class="hits">481</td>
 <td class="source"><code>    Mod = gen_mod:db_mod(LServer, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L333"><a href="#L333">333</a></td>
-<td class="hits">129</td>
+<td class="hits">481</td>
 <td class="source"><code>    Mod:forget_room(LServer, Host, Name).</code></td>
 </tr>
 <tr>
@@ -1788,17 +1788,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L337"><a href="#L337">337</a></td>
-<td class="hits">169</td>
+<td class="hits">525</td>
 <td class="source"><code>    LServer = jid:nameprep(ServerHost),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L338"><a href="#L338">338</a></td>
-<td class="hits">169</td>
+<td class="hits">525</td>
 <td class="source"><code>    Mod = gen_mod:db_mod(LServer, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L339"><a href="#L339">339</a></td>
-<td class="hits">169</td>
+<td class="hits">525</td>
 <td class="source"><code>    Mod:can_use_nick(LServer, Host, JID, Nick).</code></td>
 </tr>
 <tr>
@@ -1928,12 +1928,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L365"><a href="#L365">365</a></td>
-<td class="hits">143</td>
+<td class="hits">439</td>
 <td class="source"><code>    RMod = gen_mod:ram_db_mod(ServerHost, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L366"><a href="#L366">366</a></td>
-<td class="hits">143</td>
+<td class="hits">439</td>
 <td class="source"><code>    RMod:register_online_user(ServerHost, LJID, Name, Host).</code></td>
 </tr>
 <tr>
@@ -1953,12 +1953,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L370"><a href="#L370">370</a></td>
-<td class="hits">143</td>
+<td class="hits">439</td>
 <td class="source"><code>    RMod = gen_mod:ram_db_mod(ServerHost, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L371"><a href="#L371">371</a></td>
-<td class="hits">143</td>
+<td class="hits">439</td>
 <td class="source"><code>    RMod:unregister_online_user(ServerHost, LJID, Name, Host).</code></td>
 </tr>
 <tr>
@@ -1978,12 +1978,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L375"><a href="#L375">375</a></td>
-<td class="hits">165</td>
+<td class="hits">513</td>
 <td class="source"><code>    RMod = gen_mod:ram_db_mod(ServerHost, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L376"><a href="#L376">376</a></td>
-<td class="hits">165</td>
+<td class="hits">513</td>
 <td class="source"><code>    RMod:count_online_rooms_by_user(ServerHost, LUser, LServer).</code></td>
 </tr>
 <tr>
@@ -2043,32 +2043,32 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L388"><a href="#L388">388</a></td>
-<td class="hits">18</td>
+<td class="hits">16</td>
 <td class="source"><code>    process_flag(trap_exit, true),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L389"><a href="#L389">389</a></td>
-<td class="hits">18</td>
+<td class="hits">16</td>
 <td class="source"><code>    Opts = gen_mod:get_module_opts(Host, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L390"><a href="#L390">390</a></td>
-<td class="hits">18</td>
+<td class="hits">16</td>
 <td class="source"><code>    MyHosts = gen_mod:get_opt_hosts(Opts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L391"><a href="#L391">391</a></td>
-<td class="hits">18</td>
+<td class="hits">16</td>
 <td class="source"><code>    register_routes(Host, MyHosts, Worker),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L392"><a href="#L392">392</a></td>
-<td class="hits">18</td>
+<td class="hits">16</td>
 <td class="source"><code>    register_iq_handlers(MyHosts, Worker),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L393"><a href="#L393">393</a></td>
-<td class="hits">18</td>
+<td class="hits">16</td>
 <td class="source"><code>    {ok, #{server_host =&gt; Host, hosts =&gt; MyHosts, worker =&gt; Worker}}.</code></td>
 </tr>
 <tr>
@@ -2288,7 +2288,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L437"><a href="#L437">437</a></td>
-<td class="hits">91</td>
+<td class="hits">281</td>
 <td class="source"><code>    try route_to_room(Packet, ServerHost)</code></td>
 </tr>
 <tr>
@@ -2323,7 +2323,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L444"><a href="#L444">444</a></td>
-<td class="hits">91</td>
+<td class="hits">281</td>
 <td class="source"><code>    {noreply, State};</code></td>
 </tr>
 <tr>
@@ -2338,17 +2338,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L447"><a href="#L447">447</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>    RMod = gen_mod:ram_db_mod(ServerHost, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L448"><a href="#L448">448</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>    RMod:unregister_online_room(ServerHost, Room, Host, Pid),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L449"><a href="#L449">449</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>    {noreply, State};</code></td>
 </tr>
 <tr>
@@ -2498,12 +2498,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L479"><a href="#L479">479</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>    RMod = gen_mod:ram_db_mod(ServerHost, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L480"><a href="#L480">480</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>    case RMod:find_online_room_by_pid(ServerHost, Pid) of</code></td>
 </tr>
 <tr>
@@ -2513,7 +2513,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L482"><a href="#L482">482</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>	    handle_cast({room_destroyed, {Room, Host}, Pid}, State);</code></td>
 </tr>
 <tr>
@@ -2563,12 +2563,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L492"><a href="#L492">492</a></td>
-<td class="hits">18</td>
+<td class="hits">16</td>
 <td class="source"><code>    unregister_routes(Hosts, Worker),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L493"><a href="#L493">493</a></td>
-<td class="hits">18</td>
+<td class="hits">16</td>
 <td class="source"><code>    unregister_iq_handlers(Hosts, Worker).</code></td>
 </tr>
 <tr>
@@ -2623,7 +2623,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L504"><a href="#L504">504</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    lists:foreach(</code></td>
 </tr>
 <tr>
@@ -2633,7 +2633,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L506"><a href="#L506">506</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	      gen_iq_handler:add_iq_handler(ejabberd_local, Host, ?NS_REGISTER,</code></td>
 </tr>
 <tr>
@@ -2643,7 +2643,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L508"><a href="#L508">508</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	      gen_iq_handler:add_iq_handler(ejabberd_local, Host, ?NS_VCARD,</code></td>
 </tr>
 <tr>
@@ -2653,7 +2653,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L510"><a href="#L510">510</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	      gen_iq_handler:add_iq_handler(ejabberd_local, Host, ?NS_MUCSUB,</code></td>
 </tr>
 <tr>
@@ -2663,7 +2663,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L512"><a href="#L512">512</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	      gen_iq_handler:add_iq_handler(ejabberd_local, Host, ?NS_MUC_UNIQUE,</code></td>
 </tr>
 <tr>
@@ -2673,7 +2673,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L514"><a href="#L514">514</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	      gen_iq_handler:add_iq_handler(ejabberd_local, Host, ?NS_DISCO_INFO,</code></td>
 </tr>
 <tr>
@@ -2683,7 +2683,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L516"><a href="#L516">516</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	      gen_iq_handler:add_iq_handler(ejabberd_local, Host, ?NS_DISCO_ITEMS,</code></td>
 </tr>
 <tr>
@@ -2703,7 +2703,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L520"><a href="#L520">520</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    ok.</code></td>
 </tr>
 <tr>
@@ -2728,7 +2728,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L525"><a href="#L525">525</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    lists:foreach(</code></td>
 </tr>
 <tr>
@@ -2738,32 +2738,32 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L527"><a href="#L527">527</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	      gen_iq_handler:remove_iq_handler(ejabberd_local, Host, ?NS_REGISTER),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L528"><a href="#L528">528</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	      gen_iq_handler:remove_iq_handler(ejabberd_local, Host, ?NS_VCARD),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L529"><a href="#L529">529</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	      gen_iq_handler:remove_iq_handler(ejabberd_local, Host, ?NS_MUCSUB),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L530"><a href="#L530">530</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	      gen_iq_handler:remove_iq_handler(ejabberd_local, Host, ?NS_MUC_UNIQUE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L531"><a href="#L531">531</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	      gen_iq_handler:remove_iq_handler(ejabberd_local, Host, ?NS_DISCO_INFO),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L532"><a href="#L532">532</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	      gen_iq_handler:remove_iq_handler(ejabberd_local, Host, ?NS_DISCO_ITEMS)</code></td>
 </tr>
 <tr>
@@ -2778,7 +2778,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L535"><a href="#L535">535</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    ok.</code></td>
 </tr>
 <tr>
@@ -2803,7 +2803,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L540"><a href="#L540">540</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    lists:foreach(</code></td>
 </tr>
 <tr>
@@ -2813,7 +2813,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L542"><a href="#L542">542</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	      ejabberd_router:register_route(</code></td>
 </tr>
 <tr>
@@ -2833,7 +2833,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L546"><a href="#L546">546</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    ok.</code></td>
 </tr>
 <tr>
@@ -2858,7 +2858,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L551"><a href="#L551">551</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    lists:foreach(</code></td>
 </tr>
 <tr>
@@ -2868,7 +2868,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L553"><a href="#L553">553</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	      ejabberd_router:unregister_route(Host)</code></td>
 </tr>
 <tr>
@@ -2883,7 +2883,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L556"><a href="#L556">556</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    ok.</code></td>
 </tr>
 <tr>
@@ -2908,7 +2908,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L561"><a href="#L561">561</a></td>
-<td class="hits">83</td>
+<td class="hits">259</td>
 <td class="source"><code>    case xmpp:get_subtag(Pres, #muc{}) of</code></td>
 </tr>
 <tr>
@@ -2928,7 +2928,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L565"><a href="#L565">565</a></td>
-<td class="hits">83</td>
+<td class="hits">259</td>
 <td class="source"><code>            false</code></td>
 </tr>
 <tr>
@@ -2943,7 +2943,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L568"><a href="#L568">568</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>    case xmpp:get_subtag(IQ, #muc_subscribe{}) of</code></td>
 </tr>
 <tr>
@@ -2963,7 +2963,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L572"><a href="#L572">572</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>            false</code></td>
 </tr>
 <tr>
@@ -2988,12 +2988,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L577"><a href="#L577">577</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    RMod = gen_mod:ram_db_mod(ServerHost, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L578"><a href="#L578">578</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    case RMod:find_online_room(ServerHost, Room, Host) of</code></td>
 </tr>
 <tr>
@@ -3028,7 +3028,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L585"><a href="#L585">585</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>	{ok, _} = R2 -&gt; R2</code></td>
 </tr>
 <tr>
@@ -3053,27 +3053,27 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L590"><a href="#L590">590</a></td>
-<td class="hits">91</td>
+<td class="hits">281</td>
 <td class="source"><code>    From = xmpp:get_from(Packet),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L591"><a href="#L591">591</a></td>
-<td class="hits">91</td>
+<td class="hits">281</td>
 <td class="source"><code>    To = xmpp:get_to(Packet),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L592"><a href="#L592">592</a></td>
-<td class="hits">91</td>
+<td class="hits">281</td>
 <td class="source"><code>    {Room, Host, Nick} = jid:tolower(To),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L593"><a href="#L593">593</a></td>
-<td class="hits">91</td>
+<td class="hits">281</td>
 <td class="source"><code>    RMod = gen_mod:ram_db_mod(ServerHost, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L594"><a href="#L594">594</a></td>
-<td class="hits">91</td>
+<td class="hits">281</td>
 <td class="source"><code>    case RMod:find_online_room(ServerHost, Room, Host) of</code></td>
 </tr>
 <tr>
@@ -3083,7 +3083,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L596"><a href="#L596">596</a></td>
-<td class="hits">91</td>
+<td class="hits">281</td>
 <td class="source"><code>	    case should_start_room(Packet) of</code></td>
 </tr>
 <tr>
@@ -3093,22 +3093,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L598"><a href="#L598">598</a></td>
-<td class="hits">4</td>
+<td class="hits">10</td>
 <td class="source"><code>		    Lang = xmpp:get_lang(Packet),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L599"><a href="#L599">599</a></td>
-<td class="hits">4</td>
+<td class="hits">10</td>
 <td class="source"><code>		    ErrText = ?T("Conference room does not exist"),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L600"><a href="#L600">600</a></td>
-<td class="hits">4</td>
+<td class="hits">10</td>
 <td class="source"><code>		    Err = xmpp:err_item_not_found(ErrText, Lang),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L601"><a href="#L601">601</a></td>
-<td class="hits">4</td>
+<td class="hits">10</td>
 <td class="source"><code>		    ejabberd_router:route_error(Packet, Err);</code></td>
 </tr>
 <tr>
@@ -3118,7 +3118,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L603"><a href="#L603">603</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>		    case load_room(RMod, Host, ServerHost, Room) of</code></td>
 </tr>
 <tr>
@@ -3128,7 +3128,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L605"><a href="#L605">605</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>			    case check_create_room(ServerHost, Host, Room, From) of</code></td>
 </tr>
 <tr>
@@ -3138,12 +3138,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L607"><a href="#L607">607</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>				    Pass = extract_password(Packet),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L608"><a href="#L608">608</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>				    case start_new_room(RMod, Host, ServerHost, Room, Pass, From, Nick) of</code></td>
 </tr>
 <tr>
@@ -3153,7 +3153,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L610"><a href="#L610">610</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>					    mod_muc_room:route(Pid, Packet);</code></td>
 </tr>
 <tr>
@@ -3298,12 +3298,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L639"><a href="#L639">639</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    ServerHost = ejabberd_router:host_of_route(To#jid.lserver),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L640"><a href="#L640">640</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    VCard = case mod_muc_opt:vcard(ServerHost) of</code></td>
 </tr>
 <tr>
@@ -3333,7 +3333,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L646"><a href="#L646">646</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>		    V</code></td>
 </tr>
 <tr>
@@ -3343,7 +3343,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L648"><a href="#L648">648</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    xmpp:make_iq_result(IQ, VCard);</code></td>
 </tr>
 <tr>
@@ -3353,12 +3353,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L650"><a href="#L650">650</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>    Txt = ?T("Value 'set' of 'type' attribute is not allowed"),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L651"><a href="#L651">651</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>    xmpp:make_error(IQ, xmpp:err_not_allowed(Txt, Lang));</code></td>
 </tr>
 <tr>
@@ -3368,12 +3368,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L653"><a href="#L653">653</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    Txt = ?T("No module is handling this query"),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L654"><a href="#L654">654</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    xmpp:make_error(IQ, xmpp:err_service_unavailable(Txt, Lang)).</code></td>
 </tr>
 <tr>
@@ -3398,22 +3398,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L659"><a href="#L659">659</a></td>
-<td class="hits">28</td>
+<td class="hits">84</td>
 <td class="source"><code>    Host = To#jid.lserver,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L660"><a href="#L660">660</a></td>
-<td class="hits">28</td>
+<td class="hits">84</td>
 <td class="source"><code>    ServerHost = ejabberd_router:host_of_route(Host),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L661"><a href="#L661">661</a></td>
-<td class="hits">28</td>
+<td class="hits">84</td>
 <td class="source"><code>    AccessRegister = mod_muc_opt:access_register(ServerHost),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L662"><a href="#L662">662</a></td>
-<td class="hits">28</td>
+<td class="hits">84</td>
 <td class="source"><code>    case acl:match_rule(ServerHost, AccessRegister, From) of</code></td>
 </tr>
 <tr>
@@ -3423,7 +3423,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L664"><a href="#L664">664</a></td>
-<td class="hits">28</td>
+<td class="hits">84</td>
 <td class="source"><code>	    case Type of</code></td>
 </tr>
 <tr>
@@ -3433,7 +3433,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L666"><a href="#L666">666</a></td>
-<td class="hits">16</td>
+<td class="hits">48</td>
 <td class="source"><code>		    xmpp:make_iq_result(</code></td>
 </tr>
 <tr>
@@ -3448,7 +3448,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L669"><a href="#L669">669</a></td>
-<td class="hits">12</td>
+<td class="hits">36</td>
 <td class="source"><code>		    case process_iq_register_set(ServerHost, Host, From, El, Lang) of</code></td>
 </tr>
 <tr>
@@ -3458,7 +3458,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L671"><a href="#L671">671</a></td>
-<td class="hits">10</td>
+<td class="hits">30</td>
 <td class="source"><code>			    xmpp:make_iq_result(IQ, Result);</code></td>
 </tr>
 <tr>
@@ -3468,7 +3468,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L673"><a href="#L673">673</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>			    xmpp:make_error(IQ, Err)</code></td>
 </tr>
 <tr>
@@ -3523,12 +3523,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L684"><a href="#L684">684</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>    Txt = ?T("Value 'set' of 'type' attribute is not allowed"),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L685"><a href="#L685">685</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>    xmpp:make_error(IQ, xmpp:err_not_allowed(Txt, Lang));</code></td>
 </tr>
 <tr>
@@ -3543,22 +3543,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L688"><a href="#L688">688</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>    ServerHost = ejabberd_router:host_of_route(To#jid.lserver),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L689"><a href="#L689">689</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>    RMod = gen_mod:ram_db_mod(ServerHost, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L690"><a href="#L690">690</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>    AccessRegister = mod_muc_opt:access_register(ServerHost),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L691"><a href="#L691">691</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>    X = ejabberd_hooks:run_fold(disco_info, ServerHost, [],</code></td>
 </tr>
 <tr>
@@ -3568,12 +3568,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L693"><a href="#L693">693</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>    MAMFeatures = case gen_mod:is_loaded(ServerHost, mod_mam) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L694"><a href="#L694">694</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>		      true -&gt; [?NS_MAM_TMP, ?NS_MAM_0, ?NS_MAM_1, ?NS_MAM_2];</code></td>
 </tr>
 <tr class="miss">
@@ -3588,17 +3588,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L697"><a href="#L697">697</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>    RSMFeatures = case RMod:rsm_supported() of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L698"><a href="#L698">698</a></td>
-<td class="hits">4</td>
+<td class="hits">6</td>
 <td class="source"><code>		      true -&gt; [?NS_RSM];</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L699"><a href="#L699">699</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>		      false -&gt; []</code></td>
 </tr>
 <tr>
@@ -3608,12 +3608,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L701"><a href="#L701">701</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>    RegisterFeatures = case acl:match_rule(ServerHost, AccessRegister, From) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L702"><a href="#L702">702</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>			   allow -&gt; [?NS_REGISTER];</code></td>
 </tr>
 <tr class="miss">
@@ -3628,7 +3628,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L705"><a href="#L705">705</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>    Features = [?NS_DISCO_INFO, ?NS_DISCO_ITEMS,</code></td>
 </tr>
 <tr>
@@ -3643,12 +3643,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L708"><a href="#L708">708</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>    Name = mod_muc_opt:name(ServerHost),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L709"><a href="#L709">709</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>    Identity = #identity{category = &lt;&lt;"conference"&gt;&gt;,</code></td>
 </tr>
 <tr>
@@ -3663,7 +3663,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L712"><a href="#L712">712</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>    xmpp:make_iq_result(</code></td>
 </tr>
 <tr>
@@ -3693,7 +3693,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L718"><a href="#L718">718</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    xmpp:make_error(IQ, xmpp:err_item_not_found(?T("Node not found"), Lang));</code></td>
 </tr>
 <tr>
@@ -3703,12 +3703,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L720"><a href="#L720">720</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    Txt = ?T("No module is handling this query"),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L721"><a href="#L721">721</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    xmpp:make_error(IQ, xmpp:err_service_unavailable(Txt, Lang)).</code></td>
 </tr>
 <tr>
@@ -3728,12 +3728,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L725"><a href="#L725">725</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>    Txt = ?T("Value 'set' of 'type' attribute is not allowed"),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L726"><a href="#L726">726</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>    xmpp:make_error(IQ, xmpp:err_not_allowed(Txt, Lang));</code></td>
 </tr>
 <tr>
@@ -3748,22 +3748,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L729"><a href="#L729">729</a></td>
-<td class="hits">8</td>
+<td class="hits">24</td>
 <td class="source"><code>    Host = To#jid.lserver,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L730"><a href="#L730">730</a></td>
-<td class="hits">8</td>
+<td class="hits">24</td>
 <td class="source"><code>    ServerHost = ejabberd_router:host_of_route(Host),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L731"><a href="#L731">731</a></td>
-<td class="hits">8</td>
+<td class="hits">24</td>
 <td class="source"><code>    MaxRoomsDiscoItems = mod_muc_opt:max_rooms_discoitems(ServerHost),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L732"><a href="#L732">732</a></td>
-<td class="hits">8</td>
+<td class="hits">24</td>
 <td class="source"><code>    case iq_disco_items(ServerHost, Host, From, Lang,</code></td>
 </tr>
 <tr>
@@ -3788,7 +3788,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L737"><a href="#L737">737</a></td>
-<td class="hits">8</td>
+<td class="hits">24</td>
 <td class="source"><code>	    xmpp:make_iq_result(IQ, Result)</code></td>
 </tr>
 <tr>
@@ -3803,12 +3803,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L740"><a href="#L740">740</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    Txt = ?T("No module is handling this query"),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L741"><a href="#L741">741</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    xmpp:make_error(IQ, xmpp:err_service_unavailable(Txt, Lang)).</code></td>
 </tr>
 <tr>
@@ -3828,12 +3828,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L745"><a href="#L745">745</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    Txt = ?T("Value 'set' of 'type' attribute is not allowed"),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L746"><a href="#L746">746</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    xmpp:make_error(IQ, xmpp:err_not_allowed(Txt, Lang));</code></td>
 </tr>
 <tr>
@@ -3848,7 +3848,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L749"><a href="#L749">749</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    Name = str:sha(term_to_binary([From, erlang:timestamp(),</code></td>
 </tr>
 <tr>
@@ -3858,7 +3858,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L751"><a href="#L751">751</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    xmpp:make_iq_result(IQ, #muc_unique{name = Name}).</code></td>
 </tr>
 <tr>
@@ -3878,12 +3878,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L755"><a href="#L755">755</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>    Txt = ?T("Value 'set' of 'type' attribute is not allowed"),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L756"><a href="#L756">756</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>    xmpp:make_error(IQ, xmpp:err_not_allowed(Txt, Lang));</code></td>
 </tr>
 <tr>
@@ -3898,17 +3898,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L759"><a href="#L759">759</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    Host = To#jid.lserver,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L760"><a href="#L760">760</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    ServerHost = ejabberd_router:host_of_route(Host),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L761"><a href="#L761">761</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    case get_subscribed_rooms(ServerHost, Host, From) of</code></td>
 </tr>
 <tr>
@@ -3918,17 +3918,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L763"><a href="#L763">763</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>	    List = [#muc_subscription{jid = JID, nick = Nick, events = Nodes}</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L764"><a href="#L764">764</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>		    || {JID, Nick, Nodes} &lt;- Subs],</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L765"><a href="#L765">765</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>	    xmpp:make_iq_result(IQ, #muc_subscriptions{list = List});</code></td>
 </tr>
 <tr>
@@ -3958,12 +3958,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L771"><a href="#L771">771</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    Txt = ?T("No module is handling this query"),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L772"><a href="#L772">772</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    xmpp:make_error(IQ, xmpp:err_service_unavailable(Txt, Lang)).</code></td>
 </tr>
 <tr>
@@ -3983,7 +3983,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L776"><a href="#L776">776</a></td>
-<td class="hits">83</td>
+<td class="hits">259</td>
 <td class="source"><code>    start;</code></td>
 </tr>
 <tr>
@@ -3993,12 +3993,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L778"><a href="#L778">778</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>    case xmpp:has_subtag(IQ, #muc_subscribe{}) orelse</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L779"><a href="#L779">779</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>	 xmpp:has_subtag(IQ, #muc_owner{}) of</code></td>
 </tr>
 <tr>
@@ -4008,7 +4008,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L781"><a href="#L781">781</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>	    start;</code></td>
 </tr>
 <tr>
@@ -4063,7 +4063,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L792"><a href="#L792">792</a></td>
-<td class="hits">4</td>
+<td class="hits">10</td>
 <td class="source"><code>    false.</code></td>
 </tr>
 <tr>
@@ -4083,12 +4083,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L796"><a href="#L796">796</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>    AccessCreate = mod_muc_opt:access_create(ServerHost),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L797"><a href="#L797">797</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>    case acl:match_rule(ServerHost, AccessCreate, From) of</code></td>
 </tr>
 <tr>
@@ -4098,7 +4098,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L799"><a href="#L799">799</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>	    case mod_muc_opt:max_room_id(ServerHost) of</code></td>
 </tr>
 <tr>
@@ -4108,12 +4108,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L801"><a href="#L801">801</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>		    Regexp = mod_muc_opt:regexp_room_id(ServerHost),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L802"><a href="#L802">802</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>		    case re:run(Room, Regexp, [{capture, none}]) of</code></td>
 </tr>
 <tr>
@@ -4123,12 +4123,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L804"><a href="#L804">804</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>			    AccessAdmin = mod_muc_opt:access_admin(ServerHost),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L805"><a href="#L805">805</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>			    case acl:match_rule(ServerHost, AccessAdmin, From) of</code></td>
 </tr>
 <tr>
@@ -4148,7 +4148,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L809"><a href="#L809">809</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>				    ejabberd_hooks:run_fold(</code></td>
 </tr>
 <tr>
@@ -4228,32 +4228,32 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L825"><a href="#L825">825</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>    Access = mod_muc_opt:access(ServerHost),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L826"><a href="#L826">826</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>    AccessCreate = mod_muc_opt:access_create(ServerHost),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L827"><a href="#L827">827</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>    AccessAdmin = mod_muc_opt:access_admin(ServerHost),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L828"><a href="#L828">828</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>    AccessPersistent = mod_muc_opt:access_persistent(ServerHost),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L829"><a href="#L829">829</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>    AccessMam = mod_muc_opt:access_mam(ServerHost),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L830"><a href="#L830">830</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>    {Access, AccessCreate, AccessAdmin, AccessPersistent, AccessMam}.</code></td>
 </tr>
 <tr>
@@ -4273,12 +4273,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L834"><a href="#L834">834</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    Mod = gen_mod:db_mod(ServerHost, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L835"><a href="#L835">835</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    Mod:get_rooms(ServerHost, Host).</code></td>
 </tr>
 <tr>
@@ -4298,7 +4298,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L839"><a href="#L839">839</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    case mod_muc_opt:preload_rooms(Opts) of</code></td>
 </tr>
 <tr>
@@ -4308,7 +4308,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L841"><a href="#L841">841</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>	    lists:foreach(</code></td>
 </tr>
 <tr>
@@ -4318,12 +4318,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L843"><a href="#L843">843</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>		    ?DEBUG("Loading rooms at ~ts", [Host]),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L844"><a href="#L844">844</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>		    lists:foreach(</code></td>
 </tr>
 <tr>
@@ -4388,7 +4388,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L857"><a href="#L857">857</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>    case restore_room(ServerHost, Host, Room) of</code></td>
 </tr>
 <tr>
@@ -4398,7 +4398,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L859"><a href="#L859">859</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>	    {error, notfound};</code></td>
 </tr>
 <tr>
@@ -4503,22 +4503,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L880"><a href="#L880">880</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>    ?DEBUG("Open new room: ~ts", [Room]),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L881"><a href="#L881">881</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>    DefRoomOpts = mod_muc_opt:default_room_options(ServerHost),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L882"><a href="#L882">882</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>    DefRoomOpts2 = add_password_options(Pass, DefRoomOpts),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L883"><a href="#L883">883</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>    start_room(RMod, Host, ServerHost, Room, DefRoomOpts2, From, Nick).</code></td>
 </tr>
 <tr>
@@ -4533,7 +4533,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L886"><a href="#L886">886</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>    DefRoomOpts;</code></td>
 </tr>
 <tr>
@@ -4613,27 +4613,27 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L902"><a href="#L902">902</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>    Access = get_access(ServerHost),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L903"><a href="#L903">903</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>    HistorySize = mod_muc_opt:history_size(ServerHost),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L904"><a href="#L904">904</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>    QueueType = mod_muc_opt:queue_type(ServerHost),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L905"><a href="#L905">905</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>    RoomShaper = mod_muc_opt:room_shaper(ServerHost),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L906"><a href="#L906">906</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>    start_room(Mod, Host, ServerHost, Access, Room,</code></td>
 </tr>
 <tr>
@@ -4723,7 +4723,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L924"><a href="#L924">924</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>    case mod_muc_room:start(Host, ServerHost, Access, Room,</code></td>
 </tr>
 <tr>
@@ -4743,17 +4743,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L928"><a href="#L928">928</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>	    erlang:monitor(process, Pid),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L929"><a href="#L929">929</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>	    Mod:register_online_room(ServerHost, Room, Host, Pid),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L930"><a href="#L930">930</a></td>
-<td class="hits">87</td>
+<td class="hits">271</td>
 <td class="source"><code>	    {ok, Pid};</code></td>
 </tr>
 <tr>
@@ -4803,12 +4803,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L940"><a href="#L940">940</a></td>
-<td class="hits">8</td>
+<td class="hits">24</td>
 <td class="source"><code>    Count = count_online_rooms(ServerHost, Host),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L941"><a href="#L941">941</a></td>
-<td class="hits">8</td>
+<td class="hits">24</td>
 <td class="source"><code>    Query = if Node == &lt;&lt;""&gt;&gt;, RSM == undefined, Count &gt; MaxRoomsDiscoItems -&gt;</code></td>
 </tr>
 <tr class="miss">
@@ -4843,7 +4843,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L948"><a href="#L948">948</a></td>
-<td class="hits">8</td>
+<td class="hits">24</td>
 <td class="source"><code>		    {all, From, Lang}</code></td>
 </tr>
 <tr>
@@ -4853,7 +4853,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L950"><a href="#L950">950</a></td>
-<td class="hits">8</td>
+<td class="hits">24</td>
 <td class="source"><code>    MaxItems = case RSM of</code></td>
 </tr>
 <tr>
@@ -4863,7 +4863,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L952"><a href="#L952">952</a></td>
-<td class="hits">8</td>
+<td class="hits">24</td>
 <td class="source"><code>		       MaxRoomsDiscoItems;</code></td>
 </tr>
 <tr>
@@ -4903,7 +4903,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L960"><a href="#L960">960</a></td>
-<td class="hits">8</td>
+<td class="hits">24</td>
 <td class="source"><code>    {Items, HitMax} = lists:foldr(</code></td>
 </tr>
 <tr>
@@ -4923,17 +4923,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L964"><a href="#L964">964</a></td>
-<td class="hits">14</td>
+<td class="hits">46</td>
 <td class="source"><code>	    case get_room_disco_item(R, Query) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L965"><a href="#L965">965</a></td>
-<td class="hits">12</td>
+<td class="hits">36</td>
 <td class="source"><code>		{ok, Item} -&gt; {[Item | Acc], false};</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L966"><a href="#L966">966</a></td>
-<td class="hits">2</td>
+<td class="hits">10</td>
 <td class="source"><code>		{error, _} -&gt; {Acc, false}</code></td>
 </tr>
 <tr>
@@ -4948,7 +4948,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L969"><a href="#L969">969</a></td>
-<td class="hits">8</td>
+<td class="hits">24</td>
 <td class="source"><code>    ResRSM = case Items of</code></td>
 </tr>
 <tr>
@@ -4998,7 +4998,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L979"><a href="#L979">979</a></td>
-<td class="hits">8</td>
+<td class="hits">24</td>
 <td class="source"><code>		     undefined</code></td>
 </tr>
 <tr>
@@ -5008,7 +5008,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L981"><a href="#L981">981</a></td>
-<td class="hits">8</td>
+<td class="hits">24</td>
 <td class="source"><code>    {result, #disco_items{node = Node, items = Items, rsm = ResRSM}};</code></td>
 </tr>
 <tr>
@@ -5053,7 +5053,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L990"><a href="#L990">990</a></td>
-<td class="hits">14</td>
+<td class="hits">46</td>
 <td class="source"><code>    case mod_muc_room:get_disco_item(Pid, Filter, JID, Lang) of</code></td>
 </tr>
 <tr>
@@ -5063,12 +5063,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L992"><a href="#L992">992</a></td>
-<td class="hits">12</td>
+<td class="hits">36</td>
 <td class="source"><code>	    RoomJID = jid:make(Name, Host),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L993"><a href="#L993">993</a></td>
-<td class="hits">12</td>
+<td class="hits">36</td>
 <td class="source"><code>	    {ok, #disco_item{jid = RoomJID, name = Desc}};</code></td>
 </tr>
 <tr>
@@ -5078,7 +5078,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L995"><a href="#L995">995</a></td>
-<td class="hits">2</td>
+<td class="hits">10</td>
 <td class="source"><code>	    Err</code></td>
 </tr>
 <tr>
@@ -5103,12 +5103,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1000"><a href="#L1000">1000</a></td>
-<td class="hits">3</td>
+<td class="hits">6</td>
 <td class="source"><code>    ServerHost = ejabberd_router:host_of_route(Host),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1001"><a href="#L1001">1001</a></td>
-<td class="hits">3</td>
+<td class="hits">6</td>
 <td class="source"><code>    get_subscribed_rooms(ServerHost, Host, User).</code></td>
 </tr>
 <tr>
@@ -5133,22 +5133,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1006"><a href="#L1006">1006</a></td>
-<td class="hits">5</td>
+<td class="hits">12</td>
 <td class="source"><code>    LServer = jid:nameprep(ServerHost),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1007"><a href="#L1007">1007</a></td>
-<td class="hits">5</td>
+<td class="hits">12</td>
 <td class="source"><code>    Mod = gen_mod:db_mod(LServer, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1008"><a href="#L1008">1008</a></td>
-<td class="hits">5</td>
+<td class="hits">12</td>
 <td class="source"><code>    BareFrom = jid:remove_resource(From),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1009"><a href="#L1009">1009</a></td>
-<td class="hits">5</td>
+<td class="hits">12</td>
 <td class="source"><code>    case erlang:function_exported(Mod, get_subscribed_rooms, 3) of</code></td>
 </tr>
 <tr>
@@ -5158,12 +5158,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1011"><a href="#L1011">1011</a></td>
-<td class="hits">5</td>
+<td class="hits">9</td>
 <td class="source"><code>	    Rooms = get_online_rooms(ServerHost, Host),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1012"><a href="#L1012">1012</a></td>
-<td class="hits">5</td>
+<td class="hits">9</td>
 <td class="source"><code>	    {ok, lists:flatmap(</code></td>
 </tr>
 <tr>
@@ -5213,7 +5213,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1022"><a href="#L1022">1022</a></td>
-<td class="hits">13</td>
+<td class="hits">21</td>
 <td class="source"><code>			   case mod_muc_room:is_subscribed(Pid, BareFrom) of</code></td>
 </tr>
 <tr>
@@ -5223,7 +5223,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1024"><a href="#L1024">1024</a></td>
-<td class="hits">13</td>
+<td class="hits">21</td>
 <td class="source"><code>				   [{jid:make(Name, Host), Nick, Nodes}];</code></td>
 </tr>
 <tr class="miss">
@@ -5256,9 +5256,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	true -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L1031"><a href="#L1031">1031</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>	    Mod:get_subscribed_rooms(LServer, Host, BareFrom)</code></td>
 </tr>
 <tr>
@@ -5278,17 +5278,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1035"><a href="#L1035">1035</a></td>
-<td class="hits">16</td>
+<td class="hits">48</td>
 <td class="source"><code>    LServer = jid:nameprep(ServerHost),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1036"><a href="#L1036">1036</a></td>
-<td class="hits">16</td>
+<td class="hits">48</td>
 <td class="source"><code>    Mod = gen_mod:db_mod(LServer, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1037"><a href="#L1037">1037</a></td>
-<td class="hits">16</td>
+<td class="hits">48</td>
 <td class="source"><code>    Mod:get_nick(LServer, Host, From).</code></td>
 </tr>
 <tr>
@@ -5303,17 +5303,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1040"><a href="#L1040">1040</a></td>
-<td class="hits">16</td>
+<td class="hits">48</td>
 <td class="source"><code>    {Nick, Registered} = case get_nick(ServerHost, Host, From) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1041"><a href="#L1041">1041</a></td>
-<td class="hits">6</td>
+<td class="hits">18</td>
 <td class="source"><code>			     error -&gt; {&lt;&lt;""&gt;&gt;, false};</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1042"><a href="#L1042">1042</a></td>
-<td class="hits">10</td>
+<td class="hits">30</td>
 <td class="source"><code>			     N -&gt; {N, true}</code></td>
 </tr>
 <tr>
@@ -5323,7 +5323,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1044"><a href="#L1044">1044</a></td>
-<td class="hits">16</td>
+<td class="hits">48</td>
 <td class="source"><code>    Title = &lt;&lt;(translate:translate(</code></td>
 </tr>
 <tr>
@@ -5333,17 +5333,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1046"><a href="#L1046">1046</a></td>
-<td class="hits">16</td>
+<td class="hits">48</td>
 <td class="source"><code>    Inst = translate:translate(Lang, ?T("Enter nickname you want to register")),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1047"><a href="#L1047">1047</a></td>
-<td class="hits">16</td>
+<td class="hits">48</td>
 <td class="source"><code>    Fields = muc_register:encode([{roomnick, Nick}], Lang),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1048"><a href="#L1048">1048</a></td>
-<td class="hits">16</td>
+<td class="hits">48</td>
 <td class="source"><code>    X = #xdata{type = form, title = Title,</code></td>
 </tr>
 <tr>
@@ -5353,7 +5353,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1050"><a href="#L1050">1050</a></td>
-<td class="hits">16</td>
+<td class="hits">48</td>
 <td class="source"><code>    #register{nick = Nick,</code></td>
 </tr>
 <tr>
@@ -5398,17 +5398,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1059"><a href="#L1059">1059</a></td>
-<td class="hits">12</td>
+<td class="hits">36</td>
 <td class="source"><code>    LServer = jid:nameprep(ServerHost),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1060"><a href="#L1060">1060</a></td>
-<td class="hits">12</td>
+<td class="hits">36</td>
 <td class="source"><code>    Mod = gen_mod:db_mod(LServer, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1061"><a href="#L1061">1061</a></td>
-<td class="hits">12</td>
+<td class="hits">36</td>
 <td class="source"><code>    Mod:set_nick(LServer, Host, From, Nick).</code></td>
 </tr>
 <tr>
@@ -5428,12 +5428,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1065"><a href="#L1065">1065</a></td>
-<td class="hits">12</td>
+<td class="hits">36</td>
 <td class="source"><code>    case set_nick(ServerHost, Host, From, Nick) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1066"><a href="#L1066">1066</a></td>
-<td class="hits">10</td>
+<td class="hits">30</td>
 <td class="source"><code>      {atomic, ok} -&gt; {result, undefined};</code></td>
 </tr>
 <tr>
@@ -5443,12 +5443,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1068"><a href="#L1068">1068</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>	  ErrText = ?T("That nickname is registered by another person"),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1069"><a href="#L1069">1069</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>	  {error, xmpp:err_conflict(ErrText, Lang)};</code></td>
 </tr>
 <tr>
@@ -5488,7 +5488,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1077"><a href="#L1077">1077</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    iq_set_register_info(ServerHost, Host, From, &lt;&lt;""&gt;&gt;, Lang);</code></td>
 </tr>
 <tr>
@@ -5518,7 +5518,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1083"><a href="#L1083">1083</a></td>
-<td class="hits">10</td>
+<td class="hits">30</td>
 <td class="source"><code>    case XData of</code></td>
 </tr>
 <tr>
@@ -5528,22 +5528,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1085"><a href="#L1085">1085</a></td>
-<td class="hits">10</td>
+<td class="hits">30</td>
 <td class="source"><code>	    try</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1086"><a href="#L1086">1086</a></td>
-<td class="hits">10</td>
+<td class="hits">30</td>
 <td class="source"><code>		Options = muc_register:decode(Fs),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1087"><a href="#L1087">1087</a></td>
-<td class="hits">10</td>
+<td class="hits">30</td>
 <td class="source"><code>		N = proplists:get_value(roomnick, Options),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1088"><a href="#L1088">1088</a></td>
-<td class="hits">10</td>
+<td class="hits">30</td>
 <td class="source"><code>		iq_set_register_info(ServerHost, Host, From, N, Lang)</code></td>
 </tr>
 <tr>
@@ -5663,7 +5663,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1112"><a href="#L1112">1112</a></td>
-<td class="hits">5</td>
+<td class="hits">9</td>
 <td class="source"><code>    get_online_rooms(ServerHost, Host, undefined).</code></td>
 </tr>
 <tr>
@@ -5688,12 +5688,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1117"><a href="#L1117">1117</a></td>
-<td class="hits">13</td>
+<td class="hits">33</td>
 <td class="source"><code>    RMod = gen_mod:ram_db_mod(ServerHost, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1118"><a href="#L1118">1118</a></td>
-<td class="hits">13</td>
+<td class="hits">33</td>
 <td class="source"><code>    RMod:get_online_rooms(ServerHost, Host, RSM).</code></td>
 </tr>
 <tr>
@@ -5713,12 +5713,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1122"><a href="#L1122">1122</a></td>
-<td class="hits">8</td>
+<td class="hits">24</td>
 <td class="source"><code>    RMod = gen_mod:ram_db_mod(ServerHost, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1123"><a href="#L1123">1123</a></td>
-<td class="hits">8</td>
+<td class="hits">24</td>
 <td class="source"><code>    RMod:count_online_rooms(ServerHost, Host).</code></td>
 </tr>
 <tr>
@@ -5998,7 +5998,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1179"><a href="#L1179">1179</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:acl();</code></td>
 </tr>
 <tr>
@@ -6008,7 +6008,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1181"><a href="#L1181">1181</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:acl();</code></td>
 </tr>
 <tr>
@@ -6018,7 +6018,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1183"><a href="#L1183">1183</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:acl();</code></td>
 </tr>
 <tr>
@@ -6028,7 +6028,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1185"><a href="#L1185">1185</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:acl();</code></td>
 </tr>
 <tr>
@@ -6038,7 +6038,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1187"><a href="#L1187">1187</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:acl();</code></td>
 </tr>
 <tr>
@@ -6048,7 +6048,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1189"><a href="#L1189">1189</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:acl();</code></td>
 </tr>
 <tr>
@@ -6058,7 +6058,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1191"><a href="#L1191">1191</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:non_neg_int();</code></td>
 </tr>
 <tr>
@@ -6068,7 +6068,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1193"><a href="#L1193">1193</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:binary();</code></td>
 </tr>
 <tr>
@@ -6078,7 +6078,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1195"><a href="#L1195">1195</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:pos_int(infinity);</code></td>
 </tr>
 <tr>
@@ -6088,7 +6088,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1197"><a href="#L1197">1197</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:pos_int(infinity);</code></td>
 </tr>
 <tr>
@@ -6098,7 +6098,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1199"><a href="#L1199">1199</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:non_neg_int();</code></td>
 </tr>
 <tr>
@@ -6108,7 +6108,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1201"><a href="#L1201">1201</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:re([unicode]);</code></td>
 </tr>
 <tr>
@@ -6118,7 +6118,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1203"><a href="#L1203">1203</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:pos_int(infinity);</code></td>
 </tr>
 <tr>
@@ -6128,7 +6128,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1205"><a href="#L1205">1205</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:pos_int(infinity);</code></td>
 </tr>
 <tr>
@@ -6138,7 +6138,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1207"><a href="#L1207">1207</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:pos_int(infinity);</code></td>
 </tr>
 <tr>
@@ -6148,7 +6148,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1209"><a href="#L1209">1209</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:pos_int();</code></td>
 </tr>
 <tr>
@@ -6158,7 +6158,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1211"><a href="#L1211">1211</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:pos_int();</code></td>
 </tr>
 <tr>
@@ -6168,7 +6168,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1213"><a href="#L1213">1213</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:pos_int();</code></td>
 </tr>
 <tr>
@@ -6178,7 +6178,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1215"><a href="#L1215">1215</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:int();</code></td>
 </tr>
 <tr>
@@ -6188,7 +6188,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1217"><a href="#L1217">1217</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:number(0);</code></td>
 </tr>
 <tr>
@@ -6198,7 +6198,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1219"><a href="#L1219">1219</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:number(0);</code></td>
 </tr>
 <tr>
@@ -6208,7 +6208,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1221"><a href="#L1221">1221</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:bool();</code></td>
 </tr>
 <tr>
@@ -6218,7 +6218,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1223"><a href="#L1223">1223</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:atom();</code></td>
 </tr>
 <tr>
@@ -6228,7 +6228,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1225"><a href="#L1225">1225</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:atom();</code></td>
 </tr>
 <tr>
@@ -6238,7 +6238,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1227"><a href="#L1227">1227</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:atom();</code></td>
 </tr>
 <tr>
@@ -6248,7 +6248,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1229"><a href="#L1229">1229</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:options(</code></td>
 </tr>
 <tr>
@@ -6393,7 +6393,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1258"><a href="#L1258">1258</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:db_type(?MODULE);</code></td>
 </tr>
 <tr>
@@ -6403,7 +6403,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1260"><a href="#L1260">1260</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:db_type(?MODULE);</code></td>
 </tr>
 <tr>
@@ -6413,7 +6413,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1262"><a href="#L1262">1262</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:host();</code></td>
 </tr>
 <tr>
@@ -6423,7 +6423,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1264"><a href="#L1264">1264</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:hosts();</code></td>
 </tr>
 <tr>
@@ -6433,7 +6433,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1266"><a href="#L1266">1266</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:queue_type();</code></td>
 </tr>
 <tr>
@@ -6443,7 +6443,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1268"><a href="#L1268">1268</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:timeout(second, infinity);</code></td>
 </tr>
 <tr>
@@ -6453,7 +6453,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1270"><a href="#L1270">1270</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    econf:vcard_temp().</code></td>
 </tr>
 <tr>
@@ -6468,7 +6468,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1273"><a href="#L1273">1273</a></td>
-<td class="hits">9</td>
+<td class="hits">8</td>
 <td class="source"><code>    [{access, all},</code></td>
 </tr>
 <tr>

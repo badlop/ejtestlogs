@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/ct/extauth.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/extauth.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:06</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/extauth.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:34</p></footer>
 <table>
 <tbody>
 <tr>
@@ -351,9 +351,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>start(Host) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L50"><a href="#L50">50</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    extauth_sup:start(Host).</code></td>
 </tr>
 <tr>
@@ -396,9 +396,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>start_link(Name, Prog) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L59"><a href="#L59">59</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>    ?GEN_SERVER:start_link({local, Name}, ?MODULE, [Prog], []).</code></td>
 </tr>
 <tr>
@@ -411,9 +411,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>check_password(User, Server, Password) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L62"><a href="#L62">62</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>    call_port(Server, [&lt;&lt;"auth"&gt;&gt;, User, Server, Password]).</code></td>
 </tr>
 <tr>
@@ -486,9 +486,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>remove_user(User, Server) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L77"><a href="#L77">77</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    call_port(Server, [&lt;&lt;"removeuser"&gt;&gt;, User, Server]).</code></td>
 </tr>
 <tr>
@@ -521,9 +521,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>prog_name(Host) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L84"><a href="#L84">84</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>    ejabberd_option:extauth_program(Host).</code></td>
 </tr>
 <tr>
@@ -541,9 +541,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>pool_name(Host) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L88"><a href="#L88">88</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    case ejabberd_option:extauth_pool_name(Host) of</code></td>
 </tr>
 <tr>
@@ -551,9 +551,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	undefined -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L90"><a href="#L90">90</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>	    list_to_atom("extauth_pool_" ++ binary_to_list(Host));</code></td>
 </tr>
 <tr>
@@ -586,9 +586,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>worker_name(Pool, N) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L97"><a href="#L97">97</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>    list_to_atom(atom_to_list(Pool) ++ "_" ++ integer_to_list(N)).</code></td>
 </tr>
 <tr>
@@ -606,9 +606,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>pool_size(Host) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L101"><a href="#L101">101</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>    case ejabberd_option:extauth_pool_size(Host) of</code></td>
 </tr>
 <tr>
@@ -616,9 +616,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	undefined -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L103"><a href="#L103">103</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">4</td>
 <td class="source"><code>	    try erlang:system_info(logical_processors)</code></td>
 </tr>
 <tr class="miss">
@@ -671,24 +671,24 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>init([Prog]) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L114"><a href="#L114">114</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>    process_flag(trap_exit, true),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L115"><a href="#L115">115</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>    {Port, OSPid} = start_port(Prog),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L116"><a href="#L116">116</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>    Time = curr_time(),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L117"><a href="#L117">117</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>    {ok, #state{port = Port, start_time = Time,</code></td>
 </tr>
 <tr>
@@ -706,29 +706,29 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>handle_call({cmd, Cmd, EndTime}, _From, State) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L121"><a href="#L121">121</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    Timeout = EndTime - curr_time(),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L122"><a href="#L122">122</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    if Timeout &gt; 0 -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L123"><a href="#L123">123</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>	    Port = State#state.port,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L124"><a href="#L124">124</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>	    port_command(Port, Cmd),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L125"><a href="#L125">125</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>	    receive</code></td>
 </tr>
 <tr>
@@ -736,19 +736,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		{Port, {data, [0, N] = Data}} when N == 0; N == 1 -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L127"><a href="#L127">127</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>		    ?DEBUG("Received response from external authentication "</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L128"><a href="#L128">128</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>			   "program: ~p", [Data]),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L129"><a href="#L129">129</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>		    {reply, decode_bool(N), State};</code></td>
 </tr>
 <tr>
@@ -931,14 +931,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>terminate(_Reason, State) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L166"><a href="#L166">166</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>    catch port_close(State#state.port),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L167"><a href="#L167">167</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>    ok.</code></td>
 </tr>
 <tr>
@@ -986,9 +986,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>curr_time() -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L177"><a href="#L177">177</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">5</td>
 <td class="source"><code>    erlang:monotonic_time(millisecond).</code></td>
 </tr>
 <tr>
@@ -1006,19 +1006,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>start_port(Path) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L181"><a href="#L181">181</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>    Port = open_port({spawn, Path}, [{packet, 2}]),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L182"><a href="#L182">182</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>    link(Port),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L183"><a href="#L183">183</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>    case erlang:port_info(Port, os_pid) of</code></td>
 </tr>
 <tr>
@@ -1026,9 +1026,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{os_pid, OSPid} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L185"><a href="#L185">185</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>	    {Port, OSPid};</code></td>
 </tr>
 <tr>
@@ -1056,9 +1056,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>call_port(Server, Args) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L191"><a href="#L191">191</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    call_port(Server, Args, ?CALL_TIMEOUT).</code></td>
 </tr>
 <tr>
@@ -1071,34 +1071,34 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>call_port(Server, Args, Timeout) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L194"><a href="#L194">194</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    StartTime = erlang:monotonic_time(millisecond),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L195"><a href="#L195">195</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    Pool = pool_name(Server),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L196"><a href="#L196">196</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    PoolSize = pool_size(Server),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L197"><a href="#L197">197</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    I = p1_rand:round_robin(PoolSize),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L198"><a href="#L198">198</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    Cmd = str:join(Args, &lt;&lt;":"&gt;&gt;),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L199"><a href="#L199">199</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    do_call(Cmd, I, I + PoolSize, Pool, PoolSize,</code></td>
 </tr>
 <tr>
@@ -1126,24 +1126,24 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>do_call(Cmd, I, Max, Pool, PoolSize, EndTime, CurrTime) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L205"><a href="#L205">205</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    Timeout = EndTime - CurrTime,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L206"><a href="#L206">206</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    if Timeout &gt; 0 -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L207"><a href="#L207">207</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>	    Proc = worker_name(Pool, (I rem PoolSize) + 1),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L208"><a href="#L208">208</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>	    try ?GEN_SERVER:call(Proc, {cmd, Cmd, EndTime}, Timeout)</code></td>
 </tr>
 <tr>
@@ -1191,14 +1191,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L218"><a href="#L218">218</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>decode_bool(0) -&gt; false;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L219"><a href="#L219">219</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>decode_bool(1) -&gt; true.</code></td>
 </tr>
 </tbody>

@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/ct/ejabberd_commands.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_commands.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:07</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_commands.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:35</p></footer>
 <table>
 <tbody>
 <tr>
@@ -838,7 +838,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L147"><a href="#L147">147</a></td>
-<td class="hits">27</td>
+<td class="hits">33</td>
 <td class="source"><code>    lists:foreach(</code></td>
 </tr>
 <tr>
@@ -853,7 +853,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L150"><a href="#L150">150</a></td>
-<td class="hits">309</td>
+<td class="hits">192</td>
 <td class="source"><code>              mnesia:dirty_write(Command#ejabberd_commands{definer = Definer})</code></td>
 </tr>
 <tr>
@@ -873,12 +873,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L154"><a href="#L154">154</a></td>
-<td class="hits">27</td>
+<td class="hits">33</td>
 <td class="source"><code>    ejabberd_access_permissions:invalidate(),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L155"><a href="#L155">155</a></td>
-<td class="hits">27</td>
+<td class="hits">33</td>
 <td class="source"><code>    ok.</code></td>
 </tr>
 <tr>
@@ -1058,12 +1058,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L191"><a href="#L191">191</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>    Admin = is_admin(Name, Auth, #{}),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L192"><a href="#L192">192</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>    #ejabberd_commands{args = Args,</code></td>
 </tr>
 <tr>
@@ -1088,7 +1088,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L197"><a href="#L197">197</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>    case Policy of</code></td>
 </tr>
 <tr>
@@ -1113,7 +1113,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L202"><a href="#L202">202</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>            {Args, Rename, Result}</code></td>
 </tr>
 <tr>
@@ -1168,7 +1168,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L213"><a href="#L213">213</a></td>
-<td class="hits">6</td>
+<td class="hits">18</td>
 <td class="source"><code>    case lists:reverse(</code></td>
 </tr>
 <tr>
@@ -1213,7 +1213,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L222"><a href="#L222">222</a></td>
-<td class="hits">6</td>
+<td class="hits">18</td>
 <td class="source"><code>        [{_, Command} | _ ] -&gt; Command;</code></td>
 </tr>
 <tr class="miss">
@@ -1368,12 +1368,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L253"><a href="#L253">253</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    Command = get_command_definition(Name, Version),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L254"><a href="#L254">254</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    case ejabberd_access_permissions:can_access(Name, CallerInfo) of</code></td>
 </tr>
 <tr>
@@ -1383,7 +1383,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L256"><a href="#L256">256</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>	    do_execute_command(Command, Arguments);</code></td>
 </tr>
 <tr>
@@ -1418,27 +1418,27 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L263"><a href="#L263">263</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    Module = Command#ejabberd_commands.module,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L264"><a href="#L264">264</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    Function = Command#ejabberd_commands.function,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L265"><a href="#L265">265</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    ?DEBUG("Executing command ~p:~p with Args=~p", [Module, Function, Arguments]),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L266"><a href="#L266">266</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    ejabberd_hooks:run(api_call, [Module, Function, Arguments]),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L267"><a href="#L267">267</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    apply(Module, Function, Arguments).</code></td>
 </tr>
 <tr>
@@ -1648,7 +1648,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L309"><a href="#L309">309</a></td>
-<td class="hits">4</td>
+<td class="hits">12</td>
 <td class="source"><code>    true;</code></td>
 </tr>
 <tr>

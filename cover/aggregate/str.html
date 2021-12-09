@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/str.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/str.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:03</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/str.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:31</p></footer>
 <table>
 <tbody>
 <tr>
@@ -496,9 +496,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>len(B) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L79"><a href="#L79">79</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1036</td>
 <td class="source"><code>    byte_size(B).</code></td>
 </tr>
 <tr>
@@ -596,14 +596,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>str(B1, B2) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L99"><a href="#L99">99</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    case binary:match(B1, B2) of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L100"><a href="#L100">100</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>	{R, _Len} -&gt; R+1;</code></td>
 </tr>
 <tr class="miss">
@@ -713,7 +713,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L122"><a href="#L122">122</a></td>
-<td class="hits">46379</td>
+<td class="hits">200630</td>
 <td class="source"><code>    binary:copy(B, N).</code></td>
 </tr>
 <tr>
@@ -1061,9 +1061,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>sub_string(B, S, E) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L192"><a href="#L192">192</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    iolist_to_binary(string:sub_string(binary_to_list(B), S, E)).</code></td>
 </tr>
 <tr>
@@ -1128,7 +1128,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L205"><a href="#L205">205</a></td>
-<td class="hits">7533</td>
+<td class="hits">29353</td>
 <td class="source"><code>    iolist_to_binary(join_s(L, Sep)).</code></td>
 </tr>
 <tr>
@@ -1278,7 +1278,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L235"><a href="#L235">235</a></td>
-<td class="hits">136</td>
+<td class="hits">3603</td>
 <td class="source"><code>    iolist_to_binary(string:strip(binary_to_list(B), D, C)).</code></td>
 </tr>
 <tr>
@@ -1308,7 +1308,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L241"><a href="#L241">241</a></td>
-<td class="hits">3</td>
+<td class="hits">1726</td>
 <td class="source"><code>    iolist_to_binary(string:to_lower(binary_to_list(B)));</code></td>
 </tr>
 <tr>
@@ -1343,12 +1343,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L248"><a href="#L248">248</a></td>
-<td class="hits">8479</td>
+<td class="hits">35669</td>
 <td class="source"><code>    [iolist_to_binary(T) ||</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L249"><a href="#L249">249</a></td>
-<td class="hits">8479</td>
+<td class="hits">35669</td>
 <td class="source"><code>        T &lt;- string:tokens(binary_to_list(B1), binary_to_list(B2))].</code></td>
 </tr>
 <tr>
@@ -1528,7 +1528,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L285"><a href="#L285">285</a></td>
-<td class="hits">135</td>
+<td class="hits">119</td>
 <td class="source"><code>    lists:suffix(binary_to_list(B1), binary_to_list(B2)).</code></td>
 </tr>
 <tr>
@@ -1553,7 +1553,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L290"><a href="#L290">290</a></td>
-<td class="hits">34</td>
+<td class="hits">158</td>
 <td class="source"><code>    unicode:characters_to_binary(io_lib:format(Format, Args)).</code></td>
 </tr>
 <tr>
@@ -1578,7 +1578,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L295"><a href="#L295">295</a></td>
-<td class="hits">12</td>
+<td class="hits">52</td>
 <td class="source"><code>    format(unicode:characters_to_list(translate:translate(Lang, Format)), Args).</code></td>
 </tr>
 <tr>
@@ -1608,12 +1608,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L301"><a href="#L301">301</a></td>
-<td class="hits">205</td>
+<td class="hits">930</td>
 <td class="source"><code>    Bin = crypto:hash(sha, Text),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L302"><a href="#L302">302</a></td>
-<td class="hits">205</td>
+<td class="hits">930</td>
 <td class="source"><code>    to_hexlist(Bin).</code></td>
 </tr>
 <tr>
@@ -1648,7 +1648,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L309"><a href="#L309">309</a></td>
-<td class="hits">244</td>
+<td class="hits">959</td>
 <td class="source"><code>    &lt;&lt; &lt;&lt;(digit_to_xchar(N div 16)), (digit_to_xchar(N rem 16))&gt;&gt; || &lt;&lt;N&gt;&gt; &lt;= Bin &gt;&gt;.</code></td>
 </tr>
 <tr>
@@ -1676,9 +1676,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>join_s([], _Sep) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L315"><a href="#L315">315</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">93</td>
 <td class="source"><code>    [];</code></td>
 </tr>
 <tr>
@@ -1688,7 +1688,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L317"><a href="#L317">317</a></td>
-<td class="hits">7533</td>
+<td class="hits">29260</td>
 <td class="source"><code>    [H, [[Sep, X] || X &lt;- T]].</code></td>
 </tr>
 <tr>
@@ -1698,12 +1698,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L319"><a href="#L319">319</a></td>
-<td class="hits">5670</td>
+<td class="hits">23704</td>
 <td class="source"><code>digit_to_xchar(D) when (D &gt;= 0) and (D &lt; 10) -&gt; D + $0;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L320"><a href="#L320">320</a></td>
-<td class="hits">3290</td>
+<td class="hits">14176</td>
 <td class="source"><code>digit_to_xchar(D) -&gt; D + $a - 10.</code></td>
 </tr>
 </tbody>

@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/ejabberd_iq.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_iq.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:02</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_iq.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:30</p></footer>
 <table>
 <tbody>
 <tr>
@@ -363,32 +363,32 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L52"><a href="#L52">52</a></td>
-<td class="hits">10</td>
+<td class="hits">46</td>
 <td class="source"><code>    Expire = current_time() + Timeout,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L53"><a href="#L53">53</a></td>
-<td class="hits">10</td>
+<td class="hits">46</td>
 <td class="source"><code>    Rnd = p1_rand:get_string(),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L54"><a href="#L54">54</a></td>
-<td class="hits">10</td>
+<td class="hits">46</td>
 <td class="source"><code>    ID = encode_id(Expire, Rnd),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L55"><a href="#L55">55</a></td>
-<td class="hits">10</td>
+<td class="hits">46</td>
 <td class="source"><code>    ets:insert(?MODULE, {{Expire, Rnd}, Proc, Ctx}),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L56"><a href="#L56">56</a></td>
-<td class="hits">10</td>
+<td class="hits">46</td>
 <td class="source"><code>    gen_server:cast(?MODULE, {restart_timer, Expire}),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L57"><a href="#L57">57</a></td>
-<td class="hits">10</td>
+<td class="hits">46</td>
 <td class="source"><code>    ejabberd_router:route(IQ#iq{id = ID}).</code></td>
 </tr>
 <tr>
@@ -408,7 +408,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L61"><a href="#L61">61</a></td>
-<td class="hits">2545</td>
+<td class="hits">11848</td>
 <td class="source"><code>    case decode_id(ID) of</code></td>
 </tr>
 <tr>
@@ -418,7 +418,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L63"><a href="#L63">63</a></td>
-<td class="hits">10</td>
+<td class="hits">46</td>
 <td class="source"><code>	    ejabberd_cluster:send({?MODULE, Node}, {route, IQ, {Expire, Rnd}});</code></td>
 </tr>
 <tr>
@@ -428,7 +428,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L65"><a href="#L65">65</a></td>
-<td class="hits">2535</td>
+<td class="hits">11802</td>
 <td class="source"><code>	    false</code></td>
 </tr>
 <tr>
@@ -443,7 +443,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L68"><a href="#L68">68</a></td>
-<td class="hits">8936</td>
+<td class="hits">38693</td>
 <td class="source"><code>    false.</code></td>
 </tr>
 <tr>
@@ -513,12 +513,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L82"><a href="#L82">82</a></td>
-<td class="hits">10</td>
+<td class="hits">46</td>
 <td class="source"><code>    State1 = State#state{expire = min(Expire, State#state.expire)},</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L83"><a href="#L83">83</a></td>
-<td class="hits">10</td>
+<td class="hits">46</td>
 <td class="source"><code>    noreply(State1);</code></td>
 </tr>
 <tr>
@@ -548,7 +548,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L89"><a href="#L89">89</a></td>
-<td class="hits">10</td>
+<td class="hits">46</td>
 <td class="source"><code>    case ets:lookup(?MODULE, Key) of</code></td>
 </tr>
 <tr>
@@ -558,12 +558,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L91"><a href="#L91">91</a></td>
-<td class="hits">10</td>
+<td class="hits">46</td>
 <td class="source"><code>	    callback(Proc, IQ, Ctx),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L92"><a href="#L92">92</a></td>
-<td class="hits">10</td>
+<td class="hits">46</td>
 <td class="source"><code>	    ets:delete(?MODULE, Key);</code></td>
 </tr>
 <tr>
@@ -583,7 +583,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L96"><a href="#L96">96</a></td>
-<td class="hits">10</td>
+<td class="hits">46</td>
 <td class="source"><code>    noreply(State);</code></td>
 </tr>
 <tr>
@@ -593,12 +593,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L98"><a href="#L98">98</a></td>
-<td class="hits">2</td>
+<td class="hits">10</td>
 <td class="source"><code>    Expire = clean(ets:first(?MODULE)),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L99"><a href="#L99">99</a></td>
-<td class="hits">2</td>
+<td class="hits">10</td>
 <td class="source"><code>    noreply(State#state{expire = Expire});</code></td>
 </tr>
 <tr>
@@ -678,7 +678,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L115"><a href="#L115">115</a></td>
-<td class="hits">30</td>
+<td class="hits">138</td>
 <td class="source"><code>    erlang:system_time(millisecond).</code></td>
 </tr>
 <tr>
@@ -773,7 +773,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L134"><a href="#L134">134</a></td>
-<td class="hits">2</td>
+<td class="hits">10</td>
 <td class="source"><code>    infinity.</code></td>
 </tr>
 <tr>
@@ -793,7 +793,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L138"><a href="#L138">138</a></td>
-<td class="hits">22</td>
+<td class="hits">102</td>
 <td class="source"><code>    case Expire of</code></td>
 </tr>
 <tr>
@@ -803,7 +803,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L140"><a href="#L140">140</a></td>
-<td class="hits">2</td>
+<td class="hits">10</td>
 <td class="source"><code>	    {noreply, State};</code></td>
 </tr>
 <tr>
@@ -813,12 +813,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L142"><a href="#L142">142</a></td>
-<td class="hits">20</td>
+<td class="hits">92</td>
 <td class="source"><code>	    Timeout = max(0, Expire - current_time()),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L143"><a href="#L143">143</a></td>
-<td class="hits">20</td>
+<td class="hits">92</td>
 <td class="source"><code>	    {noreply, State, Timeout}</code></td>
 </tr>
 <tr>
@@ -843,22 +843,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L148"><a href="#L148">148</a></td>
-<td class="hits">10</td>
+<td class="hits">46</td>
 <td class="source"><code>    ExpireBin = integer_to_binary(Expire),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L149"><a href="#L149">149</a></td>
-<td class="hits">10</td>
+<td class="hits">46</td>
 <td class="source"><code>    Node = ejabberd_cluster:node_id(),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L150"><a href="#L150">150</a></td>
-<td class="hits">10</td>
+<td class="hits">46</td>
 <td class="source"><code>    CheckSum = calc_checksum(&lt;&lt;ExpireBin/binary, Rnd/binary, Node/binary&gt;&gt;),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L151"><a href="#L151">151</a></td>
-<td class="hits">10</td>
+<td class="hits">46</td>
 <td class="source"><code>    &lt;&lt;"rr-", ExpireBin/binary, $-, Rnd/binary, $-, CheckSum/binary, $-, Node/binary&gt;&gt;.</code></td>
 </tr>
 <tr>
@@ -878,42 +878,42 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L155"><a href="#L155">155</a></td>
-<td class="hits">10</td>
+<td class="hits">46</td>
 <td class="source"><code>    try</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L156"><a href="#L156">156</a></td>
-<td class="hits">10</td>
+<td class="hits">46</td>
 <td class="source"><code>	[ExpireBin, Tail] = binary:split(ID, &lt;&lt;"-"&gt;&gt;),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L157"><a href="#L157">157</a></td>
-<td class="hits">10</td>
+<td class="hits">46</td>
 <td class="source"><code>	[Rnd, Rest] = binary:split(Tail, &lt;&lt;"-"&gt;&gt;),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L158"><a href="#L158">158</a></td>
-<td class="hits">10</td>
+<td class="hits">46</td>
 <td class="source"><code>	[CheckSum, NodeBin] = binary:split(Rest, &lt;&lt;"-"&gt;&gt;),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L159"><a href="#L159">159</a></td>
-<td class="hits">10</td>
+<td class="hits">46</td>
 <td class="source"><code>	CheckSum = calc_checksum(&lt;&lt;ExpireBin/binary, Rnd/binary, NodeBin/binary&gt;&gt;),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L160"><a href="#L160">160</a></td>
-<td class="hits">10</td>
+<td class="hits">46</td>
 <td class="source"><code>	Node = ejabberd_cluster:get_node_by_id(NodeBin),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L161"><a href="#L161">161</a></td>
-<td class="hits">10</td>
+<td class="hits">46</td>
 <td class="source"><code>	Expire = binary_to_integer(ExpireBin),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L162"><a href="#L162">162</a></td>
-<td class="hits">10</td>
+<td class="hits">46</td>
 <td class="source"><code>	{ok, Expire, Rnd, Node}</code></td>
 </tr>
 <tr>
@@ -938,7 +938,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L167"><a href="#L167">167</a></td>
-<td class="hits">2535</td>
+<td class="hits">11802</td>
 <td class="source"><code>    error.</code></td>
 </tr>
 <tr>
@@ -958,12 +958,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L171"><a href="#L171">171</a></td>
-<td class="hits">20</td>
+<td class="hits">92</td>
 <td class="source"><code>    Key = ejabberd_config:get_shared_key(),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L172"><a href="#L172">172</a></td>
-<td class="hits">20</td>
+<td class="hits">92</td>
 <td class="source"><code>    base64:encode(crypto:hash(sha, &lt;&lt;Data/binary, Key/binary&gt;&gt;)).</code></td>
 </tr>
 <tr>
@@ -983,7 +983,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L176"><a href="#L176">176</a></td>
-<td class="hits">7</td>
+<td class="hits">35</td>
 <td class="source"><code>    try Fun(IQRes)</code></td>
 </tr>
 <tr>
@@ -1023,12 +1023,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L184"><a href="#L184">184</a></td>
-<td class="hits">3</td>
+<td class="hits">11</td>
 <td class="source"><code>    try</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L185"><a href="#L185">185</a></td>
-<td class="hits">3</td>
+<td class="hits">11</td>
 <td class="source"><code>        Proc ! {iq_reply, IQRes, Ctx}</code></td>
 </tr>
 <tr>

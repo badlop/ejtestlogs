@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/ct/ejabberd_auth_mnesia.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_auth_mnesia.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:07</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_auth_mnesia.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:35</p></footer>
 <table>
 <tbody>
 <tr>
@@ -353,17 +353,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L50"><a href="#L50">50</a></td>
-<td class="hits">9</td>
+<td class="hits">4</td>
 <td class="source"><code>    init_db(),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L51"><a href="#L51">51</a></td>
-<td class="hits">9</td>
+<td class="hits">4</td>
 <td class="source"><code>    update_reg_users_counter_table(Host),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L52"><a href="#L52">52</a></td>
-<td class="hits">9</td>
+<td class="hits">4</td>
 <td class="source"><code>    ok.</code></td>
 </tr>
 <tr>
@@ -393,7 +393,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L58"><a href="#L58">58</a></td>
-<td class="hits">9</td>
+<td class="hits">4</td>
 <td class="source"><code>    ejabberd_mnesia:create(?MODULE, passwd,</code></td>
 </tr>
 <tr>
@@ -408,7 +408,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L61"><a href="#L61">61</a></td>
-<td class="hits">9</td>
+<td class="hits">4</td>
 <td class="source"><code>    ejabberd_mnesia:create(?MODULE, reg_users_counter,</code></td>
 </tr>
 <tr>
@@ -433,27 +433,27 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L66"><a href="#L66">66</a></td>
-<td class="hits">9</td>
+<td class="hits">4</td>
 <td class="source"><code>    Set = get_users(Server, []),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L67"><a href="#L67">67</a></td>
-<td class="hits">9</td>
+<td class="hits">4</td>
 <td class="source"><code>    Size = length(Set),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L68"><a href="#L68">68</a></td>
-<td class="hits">9</td>
+<td class="hits">4</td>
 <td class="source"><code>    LServer = jid:nameprep(Server),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L69"><a href="#L69">69</a></td>
-<td class="hits">9</td>
+<td class="hits">4</td>
 <td class="source"><code>    F = fun () -&gt;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L70"><a href="#L70">70</a></td>
-<td class="hits">9</td>
+<td class="hits">4</td>
 <td class="source"><code>		mnesia:write(#reg_users_counter{vhost = LServer,</code></td>
 </tr>
 <tr>
@@ -468,7 +468,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L73"><a href="#L73">73</a></td>
-<td class="hits">9</td>
+<td class="hits">4</td>
 <td class="source"><code>    mnesia:sync_dirty(F).</code></td>
 </tr>
 <tr>
@@ -483,7 +483,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L76"><a href="#L76">76</a></td>
-<td class="hits">1595</td>
+<td class="hits">2915</td>
 <td class="source"><code>    case mnesia:table_info(passwd, storage_type) of</code></td>
 </tr>
 <tr>
@@ -493,7 +493,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L78"><a href="#L78">78</a></td>
-<td class="hits">1595</td>
+<td class="hits">2915</td>
 <td class="source"><code>	    ejabberd_option:auth_use_cache(Host);</code></td>
 </tr>
 <tr>
@@ -523,7 +523,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L84"><a href="#L84">84</a></td>
-<td class="hits">5</td>
+<td class="hits">10</td>
 <td class="source"><code>    store_type(Server) == scram.</code></td>
 </tr>
 <tr>
@@ -538,7 +538,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L87"><a href="#L87">87</a></td>
-<td class="hits">789</td>
+<td class="hits">1256</td>
 <td class="source"><code>    ejabberd_auth:password_format(Server).</code></td>
 </tr>
 <tr>
@@ -553,17 +553,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L90"><a href="#L90">90</a></td>
-<td class="hits">1</td>
+<td class="hits">2</td>
 <td class="source"><code>    US = {User, Server},</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L91"><a href="#L91">91</a></td>
-<td class="hits">1</td>
+<td class="hits">2</td>
 <td class="source"><code>    F = fun () -&gt;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L92"><a href="#L92">92</a></td>
-<td class="hits">1</td>
+<td class="hits">2</td>
 <td class="source"><code>		mnesia:write(#passwd{us = US, password = Password})</code></td>
 </tr>
 <tr>
@@ -573,7 +573,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L94"><a href="#L94">94</a></td>
-<td class="hits">1</td>
+<td class="hits">2</td>
 <td class="source"><code>    case mnesia:transaction(F) of</code></td>
 </tr>
 <tr>
@@ -583,7 +583,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L96"><a href="#L96">96</a></td>
-<td class="hits">1</td>
+<td class="hits">2</td>
 <td class="source"><code>	    {cache, {ok, Password}};</code></td>
 </tr>
 <tr>
@@ -618,17 +618,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L103"><a href="#L103">103</a></td>
-<td class="hits">8</td>
+<td class="hits">13</td>
 <td class="source"><code>    US = {User, Server},</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L104"><a href="#L104">104</a></td>
-<td class="hits">8</td>
+<td class="hits">13</td>
 <td class="source"><code>    F = fun () -&gt;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L105"><a href="#L105">105</a></td>
-<td class="hits">8</td>
+<td class="hits">13</td>
 <td class="source"><code>		case mnesia:read({passwd, US}) of</code></td>
 </tr>
 <tr>
@@ -638,17 +638,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L107"><a href="#L107">107</a></td>
-<td class="hits">8</td>
+<td class="hits">13</td>
 <td class="source"><code>			mnesia:write(#passwd{us = US, password = Password}),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L108"><a href="#L108">108</a></td>
-<td class="hits">8</td>
+<td class="hits">13</td>
 <td class="source"><code>			mnesia:dirty_update_counter(reg_users_counter, Server, 1),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L109"><a href="#L109">109</a></td>
-<td class="hits">8</td>
+<td class="hits">13</td>
 <td class="source"><code>			{ok, Password};</code></td>
 </tr>
 <tr>
@@ -673,7 +673,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L114"><a href="#L114">114</a></td>
-<td class="hits">8</td>
+<td class="hits">13</td>
 <td class="source"><code>    case mnesia:transaction(F) of</code></td>
 </tr>
 <tr>
@@ -683,7 +683,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L116"><a href="#L116">116</a></td>
-<td class="hits">8</td>
+<td class="hits">13</td>
 <td class="source"><code>	    {cache, Res};</code></td>
 </tr>
 <tr>
@@ -718,7 +718,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L123"><a href="#L123">123</a></td>
-<td class="hits">10</td>
+<td class="hits">6</td>
 <td class="source"><code>    mnesia:dirty_select(passwd,</code></td>
 </tr>
 <tr>
@@ -943,7 +943,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L168"><a href="#L168">168</a></td>
-<td class="hits">10</td>
+<td class="hits">5</td>
 <td class="source"><code>    case mnesia:dirty_select(</code></td>
 </tr>
 <tr>
@@ -963,7 +963,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L172"><a href="#L172">172</a></td>
-<td class="hits">10</td>
+<td class="hits">5</td>
 <td class="source"><code>	[Count] -&gt; Count;</code></td>
 </tr>
 <tr class="miss">
@@ -1013,7 +1013,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L182"><a href="#L182">182</a></td>
-<td class="hits">14</td>
+<td class="hits">22</td>
 <td class="source"><code>    case mnesia:dirty_read(passwd, {User, Server}) of</code></td>
 </tr>
 <tr>
@@ -1048,7 +1048,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L189"><a href="#L189">189</a></td>
-<td class="hits">14</td>
+<td class="hits">22</td>
 <td class="source"><code>	    {cache, error}</code></td>
 </tr>
 <tr>
@@ -1068,27 +1068,27 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L193"><a href="#L193">193</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>    US = {User, Server},</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L194"><a href="#L194">194</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>    F = fun () -&gt;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L195"><a href="#L195">195</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>		mnesia:delete({passwd, US}),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L196"><a href="#L196">196</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>		mnesia:dirty_update_counter(reg_users_counter, Server, -1),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L197"><a href="#L197">197</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>		ok</code></td>
 </tr>
 <tr>
@@ -1098,7 +1098,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L199"><a href="#L199">199</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>    case mnesia:transaction(F) of</code></td>
 </tr>
 <tr>
@@ -1108,7 +1108,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L201"><a href="#L201">201</a></td>
-<td class="hits">2</td>
+<td class="hits">4</td>
 <td class="source"><code>	    ok;</code></td>
 </tr>
 <tr>

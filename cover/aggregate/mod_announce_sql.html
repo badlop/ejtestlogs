@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/mod_announce_sql.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_announce_sql.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:01</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_announce_sql.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:30</p></footer>
 <table>
 <tbody>
 <tr>
@@ -321,9 +321,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>init(_Host, _Opts) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L44"><a href="#L44">44</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    ok.</code></td>
 </tr>
 <tr>
@@ -336,14 +336,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>set_motd_users(LServer, USRs) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L47"><a href="#L47">47</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    F = fun() -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L48"><a href="#L48">48</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>		lists:foreach(</code></td>
 </tr>
 <tr>
@@ -351,9 +351,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		  fun({U, _S, _R}) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L50"><a href="#L50">50</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>                          ?SQL_UPSERT_T(</code></td>
 </tr>
 <tr>
@@ -386,9 +386,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L57"><a href="#L57">57</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    transaction(LServer, F).</code></td>
 </tr>
 <tr>
@@ -401,19 +401,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>set_motd(LServer, Packet) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L60"><a href="#L60">60</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    XML = fxml:element_to_binary(Packet),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L61"><a href="#L61">61</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    F = fun() -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L62"><a href="#L62">62</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>                ?SQL_UPSERT_T(</code></td>
 </tr>
 <tr>
@@ -441,9 +441,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L68"><a href="#L68">68</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    transaction(LServer, F).</code></td>
 </tr>
 <tr>
@@ -456,19 +456,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>delete_motd(LServer) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L71"><a href="#L71">71</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    F = fun() -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L72"><a href="#L72">72</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>                ejabberd_sql:sql_query_t(</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L73"><a href="#L73">73</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>                  ?SQL("delete from motd where %(LServer)H"))</code></td>
 </tr>
 <tr>
@@ -476,9 +476,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L75"><a href="#L75">75</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    transaction(LServer, F).</code></td>
 </tr>
 <tr>
@@ -491,9 +491,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_motd(LServer) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L78"><a href="#L78">78</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    case catch ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -501,9 +501,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                 LServer,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L80"><a href="#L80">80</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>                 ?SQL("select @(xml)s from motd"</code></td>
 </tr>
 <tr>
@@ -526,9 +526,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{selected, []} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L85"><a href="#L85">85</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>	    error;</code></td>
 </tr>
 <tr>
@@ -556,9 +556,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>is_motd_user(LUser, LServer) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L91"><a href="#L91">91</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    case catch ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -566,9 +566,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                 LServer,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L93"><a href="#L93">93</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>                 ?SQL("select @(username)s from motd"</code></td>
 </tr>
 <tr>
@@ -581,9 +581,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>        {selected, [_|_]} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L96"><a href="#L96">96</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>	    {ok, true};</code></td>
 </tr>
 <tr>
@@ -836,14 +836,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>transaction(LServer, F) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L147"><a href="#L147">147</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>    case ejabberd_sql:sql_transaction(LServer, F) of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L148"><a href="#L148">148</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>	{atomic, _} -&gt; ok;</code></td>
 </tr>
 <tr class="miss">

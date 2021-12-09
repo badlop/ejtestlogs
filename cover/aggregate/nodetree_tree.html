@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/nodetree_tree.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/nodetree_tree.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:03</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/nodetree_tree.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:31</p></footer>
 <table>
 <tbody>
 <tr>
@@ -378,7 +378,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L55"><a href="#L55">55</a></td>
-<td class="hits">1</td>
+<td class="hits">2</td>
 <td class="source"><code>    ejabberd_mnesia:create(?MODULE, pubsub_node,</code></td>
 </tr>
 <tr>
@@ -403,7 +403,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L60"><a href="#L60">60</a></td>
-<td class="hits">1</td>
+<td class="hits">2</td>
 <td class="source"><code>    ok.</code></td>
 </tr>
 <tr>
@@ -418,7 +418,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L63"><a href="#L63">63</a></td>
-<td class="hits">1</td>
+<td class="hits">2</td>
 <td class="source"><code>    ok.</code></td>
 </tr>
 <tr>
@@ -448,7 +448,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L69"><a href="#L69">69</a></td>
-<td class="hits">4</td>
+<td class="hits">8</td>
 <td class="source"><code>    mnesia:write(Node).</code></td>
 </tr>
 <tr>
@@ -478,17 +478,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L75"><a href="#L75">75</a></td>
-<td class="hits">223</td>
+<td class="hits">446</td>
 <td class="source"><code>    case mnesia:read({pubsub_node, {Host, Node}}) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L76"><a href="#L76">76</a></td>
-<td class="hits">213</td>
+<td class="hits">426</td>
 <td class="source"><code>	[Record] when is_record(Record, pubsub_node) -&gt; Record;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L77"><a href="#L77">77</a></td>
-<td class="hits">10</td>
+<td class="hits">20</td>
 <td class="source"><code>	_ -&gt; {error, xmpp:err_item_not_found(?T("Node not found"), ejabberd_option:language())}</code></td>
 </tr>
 <tr>
@@ -508,12 +508,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L81"><a href="#L81">81</a></td>
-<td class="hits">50</td>
+<td class="hits">100</td>
 <td class="source"><code>    case mnesia:index_read(pubsub_node, Nidx, #pubsub_node.id) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L82"><a href="#L82">82</a></td>
-<td class="hits">50</td>
+<td class="hits">100</td>
 <td class="source"><code>	[Record] when is_record(Record, pubsub_node) -&gt; Record;</code></td>
 </tr>
 <tr class="miss">
@@ -553,7 +553,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L90"><a href="#L90">90</a></td>
-<td class="hits">50</td>
+<td class="hits">100</td>
 <td class="source"><code>    mnesia:match_object(#pubsub_node{nodeid = {Host, '_'}, _ = '_'});</code></td>
 </tr>
 <tr>
@@ -698,7 +698,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L119"><a href="#L119">119</a></td>
-<td class="hits">96</td>
+<td class="hits">192</td>
 <td class="source"><code>    get_parentnodes_tree(Host, Node, 0, []).</code></td>
 </tr>
 <tr>
@@ -708,7 +708,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L121"><a href="#L121">121</a></td>
-<td class="hits">96</td>
+<td class="hits">192</td>
 <td class="source"><code>    case catch mnesia:read({pubsub_node, {Host, Node}}) of</code></td>
 </tr>
 <tr>
@@ -718,12 +718,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L123"><a href="#L123">123</a></td>
-<td class="hits">96</td>
+<td class="hits">192</td>
 <td class="source"><code>	    Tree = [{Level, [Record]}|Acc],</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L124"><a href="#L124">124</a></td>
-<td class="hits">96</td>
+<td class="hits">192</td>
 <td class="source"><code>	    case Record#pubsub_node.parents of</code></td>
 </tr>
 <tr class="miss">
@@ -733,7 +733,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L126"><a href="#L126">126</a></td>
-<td class="hits">96</td>
+<td class="hits">192</td>
 <td class="source"><code>		_ -&gt; Tree</code></td>
 </tr>
 <tr>
@@ -958,7 +958,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L171"><a href="#L171">171</a></td>
-<td class="hits">31</td>
+<td class="hits">62</td>
 <td class="source"><code>    case get_node(Host, Node) of</code></td>
 </tr>
 <tr>
@@ -978,7 +978,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L175"><a href="#L175">175</a></td>
-<td class="hits">31</td>
+<td class="hits">62</td>
 <td class="source"><code>	    BasePlugin = misc:binary_to_atom(&lt;&lt;"node_",</code></td>
 </tr>
 <tr>
@@ -988,17 +988,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L177"><a href="#L177">177</a></td>
-<td class="hits">31</td>
+<td class="hits">62</td>
 <td class="source"><code>	    {result, BasePath} = BasePlugin:node_to_path(Node),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L178"><a href="#L178">178</a></td>
-<td class="hits">31</td>
+<td class="hits">62</td>
 <td class="source"><code>	    mnesia:foldl(fun (#pubsub_node{nodeid = {H, N}} = R, Acc) -&gt;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L179"><a href="#L179">179</a></td>
-<td class="hits">51</td>
+<td class="hits">102</td>
 <td class="source"><code>			Plugin = misc:binary_to_atom(&lt;&lt;"node_",</code></td>
 </tr>
 <tr>
@@ -1008,22 +1008,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L181"><a href="#L181">181</a></td>
-<td class="hits">51</td>
+<td class="hits">102</td>
 <td class="source"><code>			{result, Path} = Plugin:node_to_path(N),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L182"><a href="#L182">182</a></td>
-<td class="hits">51</td>
+<td class="hits">102</td>
 <td class="source"><code>			case lists:prefix(BasePath, Path) and (H == Host) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L183"><a href="#L183">183</a></td>
-<td class="hits">31</td>
+<td class="hits">62</td>
 <td class="source"><code>			    true -&gt; [R | Acc];</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L184"><a href="#L184">184</a></td>
-<td class="hits">20</td>
+<td class="hits">40</td>
 <td class="source"><code>			    false -&gt; Acc</code></td>
 </tr>
 <tr>
@@ -1058,12 +1058,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L191"><a href="#L191">191</a></td>
-<td class="hits">31</td>
+<td class="hits">62</td>
 <td class="source"><code>    BJID = jid:tolower(jid:remove_resource(Owner)),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L192"><a href="#L192">192</a></td>
-<td class="hits">31</td>
+<td class="hits">62</td>
 <td class="source"><code>    case mnesia:read({pubsub_node, {Host, Node}}) of</code></td>
 </tr>
 <tr>
@@ -1073,7 +1073,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L194"><a href="#L194">194</a></td>
-<td class="hits">31</td>
+<td class="hits">62</td>
 <td class="source"><code>	    ParentExists = case Host of</code></td>
 </tr>
 <tr>
@@ -1093,7 +1093,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L198"><a href="#L198">198</a></td>
-<td class="hits">1</td>
+<td class="hits">2</td>
 <td class="source"><code>		    true;</code></td>
 </tr>
 <tr>
@@ -1103,7 +1103,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L200"><a href="#L200">200</a></td>
-<td class="hits">30</td>
+<td class="hits">60</td>
 <td class="source"><code>		    case Parents of</code></td>
 </tr>
 <tr>
@@ -1113,7 +1113,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L202"><a href="#L202">202</a></td>
-<td class="hits">30</td>
+<td class="hits">60</td>
 <td class="source"><code>			    true;</code></td>
 </tr>
 <tr>
@@ -1183,7 +1183,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L216"><a href="#L216">216</a></td>
-<td class="hits">31</td>
+<td class="hits">62</td>
 <td class="source"><code>	    case ParentExists of</code></td>
 </tr>
 <tr>
@@ -1193,12 +1193,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L218"><a href="#L218">218</a></td>
-<td class="hits">31</td>
+<td class="hits">62</td>
 <td class="source"><code>		    Nidx = pubsub_index:new(node),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L219"><a href="#L219">219</a></td>
-<td class="hits">31</td>
+<td class="hits">62</td>
 <td class="source"><code>		    mnesia:write(#pubsub_node{nodeid = {Host, Node},</code></td>
 </tr>
 <tr>
@@ -1218,7 +1218,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L223"><a href="#L223">223</a></td>
-<td class="hits">31</td>
+<td class="hits">62</td>
 <td class="source"><code>		    {ok, Nidx};</code></td>
 </tr>
 <tr>
@@ -1263,22 +1263,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L232"><a href="#L232">232</a></td>
-<td class="hits">31</td>
+<td class="hits">62</td>
 <td class="source"><code>    Removed = get_subnodes_tree(Host, Node),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L233"><a href="#L233">233</a></td>
-<td class="hits">31</td>
+<td class="hits">62</td>
 <td class="source"><code>    lists:foreach(fun (#pubsub_node{nodeid = {_, SubNode}, id = SubNidx}) -&gt;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L234"><a href="#L234">234</a></td>
-<td class="hits">31</td>
+<td class="hits">62</td>
 <td class="source"><code>		pubsub_index:free(node, SubNidx),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L235"><a href="#L235">235</a></td>
-<td class="hits">31</td>
+<td class="hits">62</td>
 <td class="source"><code>		mnesia:delete({pubsub_node, {Host, SubNode}})</code></td>
 </tr>
 <tr>
@@ -1293,7 +1293,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L238"><a href="#L238">238</a></td>
-<td class="hits">31</td>
+<td class="hits">62</td>
 <td class="source"><code>    Removed.</code></td>
 </tr>
 </tbody>

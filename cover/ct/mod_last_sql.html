@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/ct/mod_last_sql.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_last_sql.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:07</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_last_sql.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:35</p></footer>
 <table>
 <tbody>
 <tr>
@@ -311,9 +311,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>init(_Host, _Opts) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L42"><a href="#L42">42</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    ok.</code></td>
 </tr>
 <tr>
@@ -326,9 +326,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_last(LUser, LServer) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L45"><a href="#L45">45</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    case ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -336,9 +336,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	   LServer,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L47"><a href="#L47">47</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>	   ?SQL("select @(seconds)d, @(state)s from last"</code></td>
 </tr>
 <tr>
@@ -351,9 +351,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>        {selected, []} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L50"><a href="#L50">50</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>	    error;</code></td>
 </tr>
 <tr>
@@ -391,14 +391,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>store_last_info(LUser, LServer, TimeStamp, Status) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L58"><a href="#L58">58</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">69</td>
 <td class="source"><code>    TS = integer_to_binary(TimeStamp),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L59"><a href="#L59">59</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">69</td>
 <td class="source"><code>    case ?SQL_UPSERT(LServer, "last",</code></td>
 </tr>
 <tr>
@@ -426,9 +426,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	ok -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L65"><a href="#L65">65</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">69</td>
 <td class="source"><code>	    ok;</code></td>
 </tr>
 <tr>
@@ -456,9 +456,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>remove_user(LUser, LServer) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L71"><a href="#L71">71</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>    ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -466,9 +466,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      LServer,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L73"><a href="#L73">73</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>      ?SQL("delete from last where username=%(LUser)s and %(LServer)H")).</code></td>
 </tr>
 <tr>

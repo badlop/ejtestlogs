@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/ct/eldap_filter.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/eldap_filter.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:06</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/eldap_filter.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:34</p></footer>
 <table>
 <tbody>
 <tr>
@@ -366,9 +366,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>parse(L) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L53"><a href="#L53">53</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8</td>
 <td class="source"><code>    parse(L, []).</code></td>
 </tr>
 <tr>
@@ -536,9 +536,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>parse(L, SList) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L87"><a href="#L87">87</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code>    case catch eldap_filter_yecc:parse(scan(binary_to_list(L), SList)) of</code></td>
 </tr>
 <tr>
@@ -566,9 +566,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{ok, Result} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L93"><a href="#L93">93</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code>	    {ok, Result};</code></td>
 </tr>
 <tr>
@@ -621,9 +621,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>scan(L, SList) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L104"><a href="#L104">104</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code>    scan(L, &lt;&lt;""&gt;&gt;, [], undefined, SList).</code></td>
 </tr>
 <tr>
@@ -636,9 +636,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>scan("=*)" ++ Rest, Buf, Result, '(', S) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L107"><a href="#L107">107</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>    scan(Rest, &lt;&lt;&gt;&gt;, [{')', 1}, {'=*', 1} | check(Buf, S) ++ Result], ')', S);</code></td>
 </tr>
 <tr class="miss">
@@ -676,9 +676,9 @@ td.source {
 <td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>scan("&lt;=" ++ Rest, Buf, Result, '(', S) -&gt; ?do_scan('&lt;=');</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L115"><a href="#L115">115</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code>scan("="  ++ Rest, Buf, Result, '(', S) -&gt; ?do_scan('=');</code></td>
 </tr>
 <tr class="miss">
@@ -691,9 +691,9 @@ td.source {
 <td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>scan(":"  ++ Rest, Buf, Result, ':dn', S) -&gt; ?do_scan(':');</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L118"><a href="#L118">118</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2</td>
 <td class="source"><code>scan("&amp;"  ++ Rest, Buf, Result, '(', S) when Buf==&lt;&lt;""&gt;&gt; -&gt; ?do_scan('&amp;');</code></td>
 </tr>
 <tr class="miss">
@@ -716,14 +716,14 @@ td.source {
 <td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>scan("*"  ++ Rest, Buf, Result, '=', S) -&gt; ?do_scan('*');</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L123"><a href="#L123">123</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">15</td>
 <td class="source"><code>scan("("  ++ Rest, Buf, Result, _, S) -&gt; ?do_scan('(');</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L124"><a href="#L124">124</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">13</td>
 <td class="source"><code>scan(")"  ++ Rest, Buf, Result, _, S) -&gt; ?do_scan(')');</code></td>
 </tr>
 <tr>
@@ -731,9 +731,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>scan([Letter | Rest], Buf, Result, PreviosAtom, S) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L126"><a href="#L126">126</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">130</td>
 <td class="source"><code>    scan(Rest, &lt;&lt;Buf/binary, Letter&gt;&gt;, Result, PreviosAtom, S);</code></td>
 </tr>
 <tr>
@@ -741,9 +741,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>scan([], Buf, Result, _, S) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L128"><a href="#L128">128</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">11</td>
 <td class="source"><code>    lists:reverse(check(Buf, S) ++ Result).</code></td>
 </tr>
 <tr>
@@ -756,9 +756,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>check(&lt;&lt;&gt;&gt;, _) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L131"><a href="#L131">131</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">30</td>
 <td class="source"><code>    [];</code></td>
 </tr>
 <tr>
@@ -766,9 +766,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>check(Buf, S) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L133"><a href="#L133">133</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">24</td>
 <td class="source"><code>    [{str, 1, binary_to_list(do_sub(Buf, S))}].</code></td>
 </tr>
 <tr>
@@ -806,9 +806,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>do_sub(S, []) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L141"><a href="#L141">141</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">51</td>
 <td class="source"><code>    S;</code></td>
 </tr>
 <tr>
@@ -826,14 +826,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>do_sub(S, [{RegExp, New} | T]) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L145"><a href="#L145">145</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">53</td>
 <td class="source"><code>    Result = do_sub(S, {RegExp, replace_amps(New)}, 1),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L146"><a href="#L146">146</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">53</td>
 <td class="source"><code>    do_sub(Result, T);</code></td>
 </tr>
 <tr>
@@ -841,14 +841,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>do_sub(S, [{RegExp, New, Times} | T]) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L148"><a href="#L148">148</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">19</td>
 <td class="source"><code>    Result = do_sub(S, {RegExp, replace_amps(New), Times}, 1),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L149"><a href="#L149">149</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">19</td>
 <td class="source"><code>    do_sub(Result, T).</code></td>
 </tr>
 <tr>
@@ -861,9 +861,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>do_sub(S, {RegExp, New}, Iter) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L152"><a href="#L152">152</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">61</td>
 <td class="source"><code>    case ejabberd_regexp:run(S, RegExp) of</code></td>
 </tr>
 <tr>
@@ -871,9 +871,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>        match -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L154"><a href="#L154">154</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8</td>
 <td class="source"><code>            case ejabberd_regexp:replace(S, RegExp, New) of</code></td>
 </tr>
 <tr>
@@ -881,9 +881,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                NewS when Iter =&lt; ?MAX_RECURSION -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L156"><a href="#L156">156</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">8</td>
 <td class="source"><code>                    do_sub(NewS, {RegExp, New}, Iter+1);</code></td>
 </tr>
 <tr>
@@ -906,9 +906,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>        nomatch -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L161"><a href="#L161">161</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">53</td>
 <td class="source"><code>            S;</code></td>
 </tr>
 <tr>
@@ -951,9 +951,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>do_sub(S, {RegExp, New, Times}, Iter) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L170"><a href="#L170">170</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">19</td>
 <td class="source"><code>    case ejabberd_regexp:run(S, RegExp) of</code></td>
 </tr>
 <tr>
@@ -961,9 +961,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>        match -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L172"><a href="#L172">172</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">19</td>
 <td class="source"><code>            case ejabberd_regexp:replace(S, RegExp, New) of</code></td>
 </tr>
 <tr>
@@ -981,9 +981,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>                NewS -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L176"><a href="#L176">176</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">19</td>
 <td class="source"><code>                    NewS</code></td>
 </tr>
 <tr>
@@ -1026,9 +1026,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>replace_amps(Bin) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L185"><a href="#L185">185</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">72</td>
 <td class="source"><code>    list_to_binary(</code></td>
 </tr>
 <tr>
@@ -1041,14 +1041,14 @@ td.source {
 <td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>        fun($&amp;) -&gt; "\\&amp;";</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L188"><a href="#L188">188</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">26</td>
 <td class="source"><code>           ($\\) -&gt; "\\\\";</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L189"><a href="#L189">189</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1149</td>
 <td class="source"><code>           (Chr) -&gt; [Chr]</code></td>
 </tr>
 <tr>

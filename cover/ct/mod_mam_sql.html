@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/ct/mod_mam_sql.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_mam_sql.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:06</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_mam_sql.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:34</p></footer>
 <table>
 <tbody>
 <tr>
@@ -331,9 +331,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>init(_Host, _Opts) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L46"><a href="#L46">46</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>    ok.</code></td>
 </tr>
 <tr>
@@ -346,9 +346,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>remove_user(LUser, LServer) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L49"><a href="#L49">49</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">354</td>
 <td class="source"><code>    ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -356,14 +356,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      LServer,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L51"><a href="#L51">51</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">354</td>
 <td class="source"><code>      ?SQL("delete from archive where username=%(LUser)s and %(LServer)H")),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L52"><a href="#L52">52</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">354</td>
 <td class="source"><code>    ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -371,9 +371,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>      LServer,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L54"><a href="#L54">54</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">354</td>
 <td class="source"><code>      ?SQL("delete from archive_prefs where username=%(LUser)s and %(LServer)H")).</code></td>
 </tr>
 <tr>
@@ -386,14 +386,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>remove_room(LServer, LName, LHost) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L57"><a href="#L57">57</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">264</td>
 <td class="source"><code>    LUser = jid:encode({LName, LHost, &lt;&lt;&gt;&gt;}),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L58"><a href="#L58">58</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">264</td>
 <td class="source"><code>    remove_user(LUser, LServer).</code></td>
 </tr>
 <tr>
@@ -571,9 +571,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>extended_fields() -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L94"><a href="#L94">94</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">18</td>
 <td class="source"><code>    [{withtext, &lt;&lt;""&gt;&gt;}].</code></td>
 </tr>
 <tr>
@@ -586,19 +586,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>store(Pkt, LServer, {LUser, LHost}, Type, Peer, Nick, _Dir, TS) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L97"><a href="#L97">97</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">789</td>
 <td class="source"><code>    SUser = case Type of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L98"><a href="#L98">98</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">723</td>
 <td class="source"><code>		chat -&gt; LUser;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L99"><a href="#L99">99</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">66</td>
 <td class="source"><code>		groupchat -&gt; jid:encode({LUser, LHost, &lt;&lt;&gt;&gt;})</code></td>
 </tr>
 <tr>
@@ -606,9 +606,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	    end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L101"><a href="#L101">101</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">789</td>
 <td class="source"><code>    BarePeer = jid:encode(</code></td>
 </tr>
 <tr>
@@ -621,9 +621,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		   jid:remove_resource(Peer))),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L104"><a href="#L104">104</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">789</td>
 <td class="source"><code>    LPeer = jid:encode(</code></td>
 </tr>
 <tr>
@@ -631,24 +631,24 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	      jid:tolower(Peer)),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L106"><a href="#L106">106</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">789</td>
 <td class="source"><code>    Body = fxml:get_subtag_cdata(Pkt, &lt;&lt;"body"&gt;&gt;),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L107"><a href="#L107">107</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">789</td>
 <td class="source"><code>    SType = misc:atom_to_binary(Type),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L108"><a href="#L108">108</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">789</td>
 <td class="source"><code>    SqlType = ejabberd_option:sql_type(LServer),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L109"><a href="#L109">109</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">789</td>
 <td class="source"><code>    XML = case mod_mam_opt:compress_xml(LServer) of</code></td>
 </tr>
 <tr>
@@ -686,9 +686,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	      _ -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L117"><a href="#L117">117</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">789</td>
 <td class="source"><code>		  fxml:element_to_binary(Pkt)</code></td>
 </tr>
 <tr>
@@ -696,9 +696,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	  end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L119"><a href="#L119">119</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">789</td>
 <td class="source"><code>	case SqlType of</code></td>
 </tr>
 <tr class="miss">
@@ -791,9 +791,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	    end;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L138"><a href="#L138">138</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">789</td>
 <td class="source"><code>	    _ -&gt; case ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -801,9 +801,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	           LServer,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L140"><a href="#L140">140</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">789</td>
 <td class="source"><code>	           ?SQL_INSERT(</code></td>
 </tr>
 <tr>
@@ -861,9 +861,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		{updated, _} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L152"><a href="#L152">152</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">789</td>
 <td class="source"><code>		    ok;</code></td>
 </tr>
 <tr>
@@ -911,29 +911,29 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	    ServerHost) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L162"><a href="#L162">162</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">483</td>
 <td class="source"><code>    SDefault = erlang:atom_to_binary(Default, utf8),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L163"><a href="#L163">163</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">483</td>
 <td class="source"><code>    SAlways = misc:term_to_expr(Always),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L164"><a href="#L164">164</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">483</td>
 <td class="source"><code>    SNever = misc:term_to_expr(Never),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L165"><a href="#L165">165</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">483</td>
 <td class="source"><code>    case ?SQL_UPSERT(</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L166"><a href="#L166">166</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">483</td>
 <td class="source"><code>            ServerHost,</code></td>
 </tr>
 <tr>
@@ -971,9 +971,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	ok -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L174"><a href="#L174">174</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">483</td>
 <td class="source"><code>	    ok;</code></td>
 </tr>
 <tr>
@@ -1001,9 +1001,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_prefs(LUser, LServer) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L180"><a href="#L180">180</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">360</td>
 <td class="source"><code>    case ejabberd_sql:sql_query(</code></td>
 </tr>
 <tr>
@@ -1011,9 +1011,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	   LServer,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L182"><a href="#L182">182</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">360</td>
 <td class="source"><code>	   ?SQL("select @(def)s, @(always)s, @(never)s from archive_prefs"</code></td>
 </tr>
 <tr>
@@ -1026,24 +1026,24 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{selected, [{SDefault, SAlways, SNever}]} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L185"><a href="#L185">185</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">339</td>
 <td class="source"><code>	    Default = erlang:binary_to_existing_atom(SDefault, utf8),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L186"><a href="#L186">186</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">339</td>
 <td class="source"><code>	    Always = ejabberd_sql:decode_term(SAlways),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L187"><a href="#L187">187</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">339</td>
 <td class="source"><code>	    Never = ejabberd_sql:decode_term(SNever),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L188"><a href="#L188">188</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">339</td>
 <td class="source"><code>	    {ok, #archive_prefs{us = {LUser, LServer},</code></td>
 </tr>
 <tr>
@@ -1066,9 +1066,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	_ -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L193"><a href="#L193">193</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">21</td>
 <td class="source"><code>	    error</code></td>
 </tr>
 <tr>
@@ -1091,19 +1091,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>       MAMQuery, RSM, MsgType, Flags) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L198"><a href="#L198">198</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">546</td>
 <td class="source"><code>    User = case MsgType of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L199"><a href="#L199">199</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">534</td>
 <td class="source"><code>	       chat -&gt; LUser;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L200"><a href="#L200">200</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">12</td>
 <td class="source"><code>	       _ -&gt; jid:encode(JidArchive)</code></td>
 </tr>
 <tr>
@@ -1111,14 +1111,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	   end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L202"><a href="#L202">202</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">546</td>
 <td class="source"><code>    {Query, CountQuery} = make_sql_query(User, LServer, MAMQuery, RSM, none),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L203"><a href="#L203">203</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">546</td>
 <td class="source"><code>    do_select_query(LServer, JidRequestor, JidArchive, RSM, MsgType, Query, CountQuery, Flags).</code></td>
 </tr>
 <tr>
@@ -1156,9 +1156,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		   MAMQuery, RSM, Flags) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L211"><a href="#L211">211</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>    Extra = case gen_mod:db_mod(LServer, mod_muc) of</code></td>
 </tr>
 <tr>
@@ -1166,9 +1166,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		mod_muc_sql -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L213"><a href="#L213">213</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>		    subscribers_table;</code></td>
 </tr>
 <tr>
@@ -1231,14 +1231,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	    end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L226"><a href="#L226">226</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>    {Query, CountQuery} = make_sql_query(LUser, LServer, MAMQuery, RSM, Extra),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L227"><a href="#L227">227</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>    do_select_query(LServer, JidRequestor, JidArchive, RSM, chat, Query, CountQuery, Flags).</code></td>
 </tr>
 <tr>
@@ -1286,9 +1286,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>    % for v0.2 requests, but we do limit #rsm_in.max for v0.3 and newer.</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L237"><a href="#L237">237</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">555</td>
 <td class="source"><code>    QRes = case Flags of</code></td>
 </tr>
 <tr>
@@ -1296,9 +1296,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		   all -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L239"><a href="#L239">239</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">549</td>
 <td class="source"><code>		       {ejabberd_sql:sql_query(LServer, Query), ejabberd_sql:sql_query(LServer, CountQuery)};</code></td>
 </tr>
 <tr>
@@ -1306,9 +1306,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		   only_messages -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L241"><a href="#L241">241</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>		       {ejabberd_sql:sql_query(LServer, Query), {selected, ok, [[&lt;&lt;"0"&gt;&gt;]]}};</code></td>
 </tr>
 <tr>
@@ -1326,9 +1326,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	       end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L245"><a href="#L245">245</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">555</td>
 <td class="source"><code>    case QRes of</code></td>
 </tr>
 <tr>
@@ -1336,14 +1336,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	{{selected, _, Res}, {selected, _, [[Count]]}} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L247"><a href="#L247">247</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">555</td>
 <td class="source"><code>	    {Max, Direction, _} = get_max_direction_id(RSM),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L248"><a href="#L248">248</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">555</td>
 <td class="source"><code>	    {Res1, IsComplete} =</code></td>
 </tr>
 <tr>
@@ -1351,9 +1351,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	    if Max &gt;= 0 andalso Max /= undefined andalso length(Res) &gt; Max -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L250"><a href="#L250">250</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">120</td>
 <td class="source"><code>		if Direction == before -&gt;</code></td>
 </tr>
 <tr class="miss">
@@ -1366,9 +1366,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		    true -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L253"><a href="#L253">253</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">120</td>
 <td class="source"><code>			{lists:sublist(Res, Max), false}</code></td>
 </tr>
 <tr>
@@ -1381,9 +1381,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		true -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L256"><a href="#L256">256</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">435</td>
 <td class="source"><code>		    {Res, true}</code></td>
 </tr>
 <tr>
@@ -1391,19 +1391,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	    end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L258"><a href="#L258">258</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">555</td>
 <td class="source"><code>	    MucState = #state{config = #config{anonymous = true}},</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L259"><a href="#L259">259</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">555</td>
 <td class="source"><code>	    JidArchiveS = jid:encode(jid:remove_resource(JidArchive)),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L260"><a href="#L260">260</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">555</td>
 <td class="source"><code>	    {lists:flatmap(</code></td>
 </tr>
 <tr>
@@ -1411,9 +1411,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		fun([TS, XML, PeerBin, Kind, Nick]) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L262"><a href="#L262">262</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2172</td>
 <td class="source"><code>		    case make_archive_el(JidArchiveS, TS, XML, PeerBin, Kind, Nick,</code></td>
 </tr>
 <tr>
@@ -1426,9 +1426,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>			{ok, El} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L265"><a href="#L265">265</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2172</td>
 <td class="source"><code>			    [{TS, binary_to_integer(TS), El}];</code></td>
 </tr>
 <tr>
@@ -1491,9 +1491,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		   ([User, TS, XML, PeerBin, Kind, Nick]) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L278"><a href="#L278">278</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>		       case make_archive_el(User, TS, XML, PeerBin, Kind, Nick,</code></td>
 </tr>
 <tr>
@@ -1511,9 +1511,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>			   {ok, El} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L282"><a href="#L282">282</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">33</td>
 <td class="source"><code>			       mod_mam:wrap_as_mucsub([{TS, binary_to_integer(TS), El}],</code></td>
 </tr>
 <tr>
@@ -1981,49 +1981,49 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>make_sql_query(User, LServer, MAMQuery, RSM, ExtraUsernames) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L376"><a href="#L376">376</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">555</td>
 <td class="source"><code>    Start = proplists:get_value(start, MAMQuery),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L377"><a href="#L377">377</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">555</td>
 <td class="source"><code>    End = proplists:get_value('end', MAMQuery),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L378"><a href="#L378">378</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">555</td>
 <td class="source"><code>    With = proplists:get_value(with, MAMQuery),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L379"><a href="#L379">379</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">555</td>
 <td class="source"><code>    WithText = proplists:get_value(withtext, MAMQuery),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L380"><a href="#L380">380</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">555</td>
 <td class="source"><code>    {Max, Direction, ID} = get_max_direction_id(RSM),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L381"><a href="#L381">381</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">555</td>
 <td class="source"><code>    ODBCType = ejabberd_option:sql_type(LServer),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L382"><a href="#L382">382</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">555</td>
 <td class="source"><code>    ToString = fun(S) -&gt; ejabberd_sql:to_string_literal(ODBCType, S) end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L383"><a href="#L383">383</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">555</td>
 <td class="source"><code>    LimitClause = if is_integer(Max), Max &gt;= 0, ODBCType /= mssql -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L384"><a href="#L384">384</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">459</td>
 <td class="source"><code>			  [&lt;&lt;" limit "&gt;&gt;, integer_to_binary(Max+1)];</code></td>
 </tr>
 <tr>
@@ -2031,9 +2031,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		     true -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L386"><a href="#L386">386</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">96</td>
 <td class="source"><code>			  []</code></td>
 </tr>
 <tr>
@@ -2041,9 +2041,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		  end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L388"><a href="#L388">388</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">555</td>
 <td class="source"><code>    TopClause = if is_integer(Max), Max &gt;= 0, ODBCType == mssql -&gt;</code></td>
 </tr>
 <tr class="miss">
@@ -2056,9 +2056,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		     true -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L391"><a href="#L391">391</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">555</td>
 <td class="source"><code>			  []</code></td>
 </tr>
 <tr>
@@ -2066,9 +2066,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		  end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L393"><a href="#L393">393</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">555</td>
 <td class="source"><code>    WithTextClause = if is_binary(WithText), WithText /= &lt;&lt;&gt;&gt; -&gt;</code></td>
 </tr>
 <tr class="miss">
@@ -2086,9 +2086,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>			true -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L397"><a href="#L397">397</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">555</td>
 <td class="source"><code>			     []</code></td>
 </tr>
 <tr>
@@ -2096,9 +2096,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		     end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L399"><a href="#L399">399</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">555</td>
 <td class="source"><code>    WithClause = case catch jid:tolower(With) of</code></td>
 </tr>
 <tr>
@@ -2106,9 +2106,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		     {_, _, &lt;&lt;&gt;&gt;} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L401"><a href="#L401">401</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">24</td>
 <td class="source"><code>			 [&lt;&lt;" and bare_peer="&gt;&gt;,</code></td>
 </tr>
 <tr>
@@ -2121,9 +2121,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		     {_, _, _} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L404"><a href="#L404">404</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">24</td>
 <td class="source"><code>			 [&lt;&lt;" and peer="&gt;&gt;,</code></td>
 </tr>
 <tr>
@@ -2136,9 +2136,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		     _ -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L407"><a href="#L407">407</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">507</td>
 <td class="source"><code>			 []</code></td>
 </tr>
 <tr>
@@ -2146,9 +2146,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		 end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L409"><a href="#L409">409</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">555</td>
 <td class="source"><code>    PageClause = case catch binary_to_integer(ID) of</code></td>
 </tr>
 <tr>
@@ -2156,9 +2156,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		     I when is_integer(I), I &gt;= 0 -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L411"><a href="#L411">411</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">246</td>
 <td class="source"><code>			 case Direction of</code></td>
 </tr>
 <tr>
@@ -2166,9 +2166,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>			     before -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L413"><a href="#L413">413</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">126</td>
 <td class="source"><code>				 [&lt;&lt;" AND timestamp &lt; "&gt;&gt;, ID];</code></td>
 </tr>
 <tr>
@@ -2176,9 +2176,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>			     'after' -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L415"><a href="#L415">415</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">120</td>
 <td class="source"><code>				 [&lt;&lt;" AND timestamp &gt; "&gt;&gt;, ID];</code></td>
 </tr>
 <tr>
@@ -2201,9 +2201,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		     _ -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L420"><a href="#L420">420</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">309</td>
 <td class="source"><code>			 []</code></td>
 </tr>
 <tr>
@@ -2211,9 +2211,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		 end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L422"><a href="#L422">422</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">555</td>
 <td class="source"><code>    StartClause = case Start of</code></td>
 </tr>
 <tr>
@@ -2221,9 +2221,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		      {_, _, _} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L424"><a href="#L424">424</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>			  [&lt;&lt;" and timestamp &gt;= "&gt;&gt;,</code></td>
 </tr>
 <tr>
@@ -2236,9 +2236,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		      _ -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L427"><a href="#L427">427</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">549</td>
 <td class="source"><code>			  []</code></td>
 </tr>
 <tr>
@@ -2246,9 +2246,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		  end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L429"><a href="#L429">429</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">555</td>
 <td class="source"><code>    EndClause = case End of</code></td>
 </tr>
 <tr>
@@ -2271,9 +2271,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		    _ -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L434"><a href="#L434">434</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">555</td>
 <td class="source"><code>			[]</code></td>
 </tr>
 <tr>
@@ -2281,14 +2281,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L436"><a href="#L436">436</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">555</td>
 <td class="source"><code>    SUser = ToString(User),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L437"><a href="#L437">437</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">555</td>
 <td class="source"><code>    SServer = ToString(LServer),</code></td>
 </tr>
 <tr>
@@ -2296,9 +2296,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L439"><a href="#L439">439</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">555</td>
 <td class="source"><code>    HostMatch = case ejabberd_sql:use_new_schema() of</code></td>
 </tr>
 <tr>
@@ -2316,9 +2316,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		    _ -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L443"><a href="#L443">443</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">555</td>
 <td class="source"><code>			&lt;&lt;""&gt;&gt;</code></td>
 </tr>
 <tr>
@@ -2331,9 +2331,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L446"><a href="#L446">446</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">555</td>
 <td class="source"><code>    {UserSel, UserWhere} = case ExtraUsernames of</code></td>
 </tr>
 <tr>
@@ -2361,14 +2361,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>			       subscribers_table -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L452"><a href="#L452">452</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>				   SJid = ToString(jid:encode({User, LServer, &lt;&lt;&gt;&gt;})),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L453"><a href="#L453">453</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>				   RoomName = case ODBCType of</code></td>
 </tr>
 <tr>
@@ -2376,9 +2376,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>						  sqlite -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L455"><a href="#L455">455</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">3</td>
 <td class="source"><code>						      &lt;&lt;"room || '@' || host"&gt;&gt;;</code></td>
 </tr>
 <tr>
@@ -2386,9 +2386,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>						  _ -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L457"><a href="#L457">457</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">6</td>
 <td class="source"><code>						      &lt;&lt;"concat(room, '@', host)"&gt;&gt;</code></td>
 </tr>
 <tr>
@@ -2396,9 +2396,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>					      end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L459"><a href="#L459">459</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">9</td>
 <td class="source"><code>				   {&lt;&lt;" username,"&gt;&gt;,</code></td>
 </tr>
 <tr>
@@ -2421,9 +2421,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>			       _ -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L464"><a href="#L464">464</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">546</td>
 <td class="source"><code>				   {&lt;&lt;&gt;&gt;, [&lt;&lt;" username="&gt;&gt;, SUser]}</code></td>
 </tr>
 <tr>
@@ -2436,9 +2436,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L467"><a href="#L467">467</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">555</td>
 <td class="source"><code>    Query = [&lt;&lt;"SELECT "&gt;&gt;, TopClause, UserSel,</code></td>
 </tr>
 <tr>
@@ -2466,9 +2466,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code></code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L473"><a href="#L473">473</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">555</td>
 <td class="source"><code>    QueryPage =</code></td>
 </tr>
 <tr>
@@ -2496,9 +2496,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		% 2.5 Requesting the Last Page in a Result Set</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L479"><a href="#L479">479</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">150</td>
 <td class="source"><code>		[&lt;&lt;"SELECT"&gt;&gt;, UserSel, &lt;&lt;" timestamp, xml, peer, kind, nick FROM ("&gt;&gt;,</code></td>
 </tr>
 <tr>
@@ -2516,9 +2516,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	    _ -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L483"><a href="#L483">483</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">405</td>
 <td class="source"><code>		[Query, &lt;&lt;" ORDER BY timestamp ASC "&gt;&gt;,</code></td>
 </tr>
 <tr>
@@ -2531,9 +2531,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L486"><a href="#L486">486</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">555</td>
 <td class="source"><code>    {QueryPage,</code></td>
 </tr>
 <tr>
@@ -2581,9 +2581,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>get_max_direction_id(RSM) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L496"><a href="#L496">496</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1110</td>
 <td class="source"><code>    case RSM of</code></td>
 </tr>
 <tr>
@@ -2591,9 +2591,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	#rsm_set{max = Max, before = Before} when is_binary(Before) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L498"><a href="#L498">498</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">300</td>
 <td class="source"><code>	    {Max, before, Before};</code></td>
 </tr>
 <tr>
@@ -2601,9 +2601,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	#rsm_set{max = Max, 'after' = After} when is_binary(After) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L500"><a href="#L500">500</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">240</td>
 <td class="source"><code>	    {Max, 'after', After};</code></td>
 </tr>
 <tr>
@@ -2611,9 +2611,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	#rsm_set{max = Max} -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L502"><a href="#L502">502</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">534</td>
 <td class="source"><code>	    {Max, undefined, &lt;&lt;&gt;&gt;};</code></td>
 </tr>
 <tr>
@@ -2621,9 +2621,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	_ -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L504"><a href="#L504">504</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">36</td>
 <td class="source"><code>	    {undefined, undefined, &lt;&lt;&gt;&gt;}</code></td>
 </tr>
 <tr>
@@ -2666,9 +2666,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>make_archive_el(User, TS, XML, Peer, Kind, Nick, MsgType, JidRequestor, JidArchive) -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L513"><a href="#L513">513</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2205</td>
 <td class="source"><code>    case xml_compress:decode(XML, User, Peer) of</code></td>
 </tr>
 <tr>
@@ -2676,9 +2676,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	#xmlel{} = El -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L515"><a href="#L515">515</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2205</td>
 <td class="source"><code>	    try binary_to_integer(TS) of</code></td>
 </tr>
 <tr>
@@ -2686,9 +2686,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>		TSInt -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L517"><a href="#L517">517</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2205</td>
 <td class="source"><code>		    try jid:decode(Peer) of</code></td>
 </tr>
 <tr>
@@ -2696,19 +2696,19 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>			PeerJID -&gt;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L519"><a href="#L519">519</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2205</td>
 <td class="source"><code>			    Now = misc:usec_to_now(TSInt),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L520"><a href="#L520">520</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2205</td>
 <td class="source"><code>			    PeerLJID = jid:tolower(PeerJID),</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L521"><a href="#L521">521</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2205</td>
 <td class="source"><code>			    T = case Kind of</code></td>
 </tr>
 <tr class="miss">
@@ -2721,9 +2721,9 @@ td.source {
 <td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>				    null -&gt; chat;</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L524"><a href="#L524">524</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2205</td>
 <td class="source"><code>				    _ -&gt; misc:binary_to_atom(Kind)</code></td>
 </tr>
 <tr>
@@ -2731,9 +2731,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>				end,</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L526"><a href="#L526">526</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">2205</td>
 <td class="source"><code>			    mod_mam:msg_to_el(</code></td>
 </tr>
 <tr>

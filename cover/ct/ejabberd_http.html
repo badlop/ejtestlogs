@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/ct/ejabberd_http.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_http.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 20:53:07</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_http.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 21:42:35</p></footer>
 <table>
 <tbody>
 <tr>
@@ -816,9 +816,9 @@ td.source {
 <td class="hits">2</td>
 <td class="source"><code>    try receive_headers(State) of</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L143"><a href="#L143">143</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>        V -&gt; V</code></td>
 </tr>
 <tr>
@@ -873,12 +873,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L154"><a href="#L154">154</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>    case (State#state.sockmod):send(State#state.socket, Text) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L155"><a href="#L155">155</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>	ok -&gt; ok;</code></td>
 </tr>
 <tr>
@@ -1063,22 +1063,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L192"><a href="#L192">192</a></td>
-<td class="hits">16</td>
+<td class="hits">44</td>
 <td class="source"><code>    SockMod = State#state.sockmod,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L193"><a href="#L193">193</a></td>
-<td class="hits">16</td>
+<td class="hits">44</td>
 <td class="source"><code>    Socket = State#state.socket,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L194"><a href="#L194">194</a></td>
-<td class="hits">16</td>
+<td class="hits">44</td>
 <td class="source"><code>    Data = SockMod:recv(Socket, 0, 300000),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L195"><a href="#L195">195</a></td>
-<td class="hits">14</td>
+<td class="hits">43</td>
 <td class="source"><code>    case Data of</code></td>
 </tr>
 <tr>
@@ -1091,9 +1091,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	    % socket closed without receiving anything in it</code></td>
 </tr>
-<tr class="miss">
+<tr class="hit">
 <td class="line" id="L198"><a href="#L198">198</a></td>
-<td class="hits"><pre style="display: inline;">:-(</pre></td>
+<td class="hits">1</td>
 <td class="source"><code>	    ok;</code></td>
 </tr>
 <tr>
@@ -1123,7 +1123,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L204"><a href="#L204">204</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>            parse_headers(State#state{trail = &lt;&lt;Trail/binary, D/binary&gt;&gt;})</code></td>
 </tr>
 <tr>
@@ -1143,7 +1143,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L208"><a href="#L208">208</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>    receive_headers(State);</code></td>
 </tr>
 <tr>
@@ -1163,17 +1163,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L212"><a href="#L212">212</a></td>
-<td class="hits">99</td>
+<td class="hits">307</td>
 <td class="source"><code>    PktType = case Method of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L213"><a href="#L213">213</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>		undefined -&gt; http_bin;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L214"><a href="#L214">214</a></td>
-<td class="hits">85</td>
+<td class="hits">265</td>
 <td class="source"><code>		_ -&gt; httph_bin</code></td>
 </tr>
 <tr>
@@ -1183,7 +1183,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L216"><a href="#L216">216</a></td>
-<td class="hits">99</td>
+<td class="hits">307</td>
 <td class="source"><code>    case erlang:decode_packet(PktType, Data, []) of</code></td>
 </tr>
 <tr>
@@ -1193,12 +1193,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L218"><a href="#L218">218</a></td>
-<td class="hits">99</td>
+<td class="hits">307</td>
 <td class="source"><code>	    NewState = process_header(State#state{trail = Rest}, {ok, Pkt}),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L219"><a href="#L219">219</a></td>
-<td class="hits">99</td>
+<td class="hits">307</td>
 <td class="source"><code>	    case NewState#state.end_of_request of</code></td>
 </tr>
 <tr class="miss">
@@ -1208,7 +1208,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L221"><a href="#L221">221</a></td>
-<td class="hits">99</td>
+<td class="hits">307</td>
 <td class="source"><code>		_ -&gt; parse_headers(NewState)</code></td>
 </tr>
 <tr>
@@ -1253,17 +1253,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L230"><a href="#L230">230</a></td>
-<td class="hits">99</td>
+<td class="hits">307</td>
 <td class="source"><code>    SockMod = State#state.sockmod,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L231"><a href="#L231">231</a></td>
-<td class="hits">99</td>
+<td class="hits">307</td>
 <td class="source"><code>    Socket = State#state.socket,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L232"><a href="#L232">232</a></td>
-<td class="hits">99</td>
+<td class="hits">307</td>
 <td class="source"><code>    case Data of</code></td>
 </tr>
 <tr>
@@ -1273,12 +1273,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L234"><a href="#L234">234</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>	  KeepAlive = case Version of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L235"><a href="#L235">235</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>			{1, 1} -&gt; true;</code></td>
 </tr>
 <tr class="miss">
@@ -1293,7 +1293,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L238"><a href="#L238">238</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>	  Path = case Uri of</code></td>
 </tr>
 <tr>
@@ -1313,7 +1313,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L242"><a href="#L242">242</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>		       {abs_path, P};</code></td>
 </tr>
 <tr class="miss">
@@ -1328,7 +1328,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L245"><a href="#L245">245</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>	  State#state{request_method = Method,</code></td>
 </tr>
 <tr>
@@ -1348,12 +1348,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L249"><a href="#L249">249</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>	  KeepAlive1 = case misc:tolower(Conn) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L250"><a href="#L250">250</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>			 &lt;&lt;"keep-alive"&gt;&gt; -&gt; true;</code></td>
 </tr>
 <tr class="miss">
@@ -1373,7 +1373,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L254"><a href="#L254">254</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>	  State#state{request_keepalive = KeepAlive1,</code></td>
 </tr>
 <tr>
@@ -1393,7 +1393,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L258"><a href="#L258">258</a></td>
-<td class="hits">5</td>
+<td class="hits">25</td>
 <td class="source"><code>	  State#state{request_auth = parse_auth(Auth),</code></td>
 </tr>
 <tr>
@@ -1413,7 +1413,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L262"><a href="#L262">262</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>	  case catch binary_to_integer(SLen) of</code></td>
 </tr>
 <tr>
@@ -1423,7 +1423,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L264"><a href="#L264">264</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>		State#state{request_content_length = Len,</code></td>
 </tr>
 <tr>
@@ -1468,12 +1468,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L273"><a href="#L273">273</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>	  {Host, Port, TP} = get_transfer_protocol(State#state.addr_re, SockMod, Value),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L274"><a href="#L274">274</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>	  State#state{request_host = Host,</code></td>
 </tr>
 <tr>
@@ -1498,7 +1498,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L279"><a href="#L279">279</a></td>
-<td class="hits">16</td>
+<td class="hits">48</td>
 <td class="source"><code>	  State#state{request_headers =</code></td>
 </tr>
 <tr>
@@ -1513,7 +1513,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L282"><a href="#L282">282</a></td>
-<td class="hits">8</td>
+<td class="hits">24</td>
 <td class="source"><code>	  State#state{request_headers =</code></td>
 </tr>
 <tr>
@@ -1553,7 +1553,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L290"><a href="#L290">290</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>	    ?DEBUG("(~w) http query: ~w ~p~n",</code></td>
 </tr>
 <tr>
@@ -1563,22 +1563,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L292"><a href="#L292">292</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>		    element(2, State#state.request_path)]),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L293"><a href="#L293">293</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>	    {State3, Out} = process_request(State),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L294"><a href="#L294">294</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>	    send_text(State3, Out),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L295"><a href="#L295">295</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>	    case State3#state.request_keepalive of</code></td>
 </tr>
 <tr>
@@ -1588,7 +1588,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L297"><a href="#L297">297</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>		    #state{sockmod = SockMod, socket = Socket,</code></td>
 </tr>
 <tr>
@@ -1718,7 +1718,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L323"><a href="#L323">323</a></td>
-<td class="hits">71</td>
+<td class="hits">223</td>
 <td class="source"><code>    [{Name, Value} | State#state.request_headers].</code></td>
 </tr>
 <tr>
@@ -1733,12 +1733,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L326"><a href="#L326">326</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>    {Proto, DefPort} = case SockMod of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L327"><a href="#L327">327</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>			   gen_tcp -&gt; {http, 80};</code></td>
 </tr>
 <tr class="miss">
@@ -1753,7 +1753,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L330"><a href="#L330">330</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>    {Host, Port} = case re:run(HostPort, RE, [{capture,[1,2,3],binary}]) of</code></td>
 </tr>
 <tr>
@@ -1793,7 +1793,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L338"><a href="#L338">338</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>			   {jid:nameprep(H), binary_to_integer(PortStr)};</code></td>
 </tr>
 <tr>
@@ -1818,7 +1818,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L343"><a href="#L343">343</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>    {Host, Port, Proto}.</code></td>
 </tr>
 <tr>
@@ -1858,7 +1858,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L351"><a href="#L351">351</a></td>
-<td class="hits">28</td>
+<td class="hits">60</td>
 <td class="source"><code>    {HandlerPathPrefix, HandlerModule, HandlerOpts, HandlersLeft} =</code></td>
 </tr>
 <tr>
@@ -1873,7 +1873,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L354"><a href="#L354">354</a></td>
-<td class="hits">28</td>
+<td class="hits">60</td>
 <td class="source"><code>                {Pfx, Mod, [], Tail};</code></td>
 </tr>
 <tr>
@@ -1898,7 +1898,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L359"><a href="#L359">359</a></td>
-<td class="hits">28</td>
+<td class="hits">60</td>
 <td class="source"><code>    case (lists:prefix(HandlerPathPrefix, Request#request.path) or</code></td>
 </tr>
 <tr>
@@ -1913,7 +1913,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L362"><a href="#L362">362</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>            ?DEBUG("~p matches ~p", [Request#request.path, HandlerPathPrefix]),</code></td>
 </tr>
 <tr>
@@ -1938,12 +1938,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L367"><a href="#L367">367</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>            LocalPath = lists:nthtail(length(HandlerPathPrefix), Request#request.path),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L368"><a href="#L368">368</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>	    R = case erlang:function_exported(HandlerModule, socket_handoff, 3) of</code></td>
 </tr>
 <tr>
@@ -1968,7 +1968,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L373"><a href="#L373">373</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>			HandlerModule:process(LocalPath, Request)</code></td>
 </tr>
 <tr>
@@ -1978,12 +1978,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L375"><a href="#L375">375</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>            ejabberd_hooks:run(http_request_debug, [{LocalPath, Request}]),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L376"><a href="#L376">376</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>            R;</code></td>
 </tr>
 <tr>
@@ -1993,7 +1993,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L378"><a href="#L378">378</a></td>
-<td class="hits">14</td>
+<td class="hits">18</td>
 <td class="source"><code>	    process(HandlersLeft, Request)</code></td>
 </tr>
 <tr>
@@ -2033,7 +2033,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L386"><a href="#L386">386</a></td>
-<td class="hits">6</td>
+<td class="hits">18</td>
 <td class="source"><code>    case catch url_decode_q_split_normalize(Path) of</code></td>
 </tr>
 <tr>
@@ -2058,7 +2058,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L391"><a href="#L391">391</a></td>
-<td class="hits">6</td>
+<td class="hits">18</td>
 <td class="source"><code>	    LQuery = case catch parse_urlencoded(Query) of</code></td>
 </tr>
 <tr class="miss">
@@ -2068,7 +2068,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L393"><a href="#L393">393</a></td>
-<td class="hits">6</td>
+<td class="hits">18</td>
 <td class="source"><code>			 LQ -&gt; LQ</code></td>
 </tr>
 <tr>
@@ -2078,7 +2078,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L395"><a href="#L395">395</a></td>
-<td class="hits">6</td>
+<td class="hits">18</td>
 <td class="source"><code>	    {State, {LPath, LQuery, &lt;&lt;""&gt;&gt;, Path}}</code></td>
 </tr>
 <tr>
@@ -2123,7 +2123,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L404"><a href="#L404">404</a></td>
-<td class="hits">8</td>
+<td class="hits">24</td>
 <td class="source"><code>    case catch url_decode_q_split_normalize(Path) of</code></td>
 </tr>
 <tr>
@@ -2148,7 +2148,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L409"><a href="#L409">409</a></td>
-<td class="hits">8</td>
+<td class="hits">24</td>
 <td class="source"><code>	    case Method of</code></td>
 </tr>
 <tr>
@@ -2168,7 +2168,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L413"><a href="#L413">413</a></td>
-<td class="hits">5</td>
+<td class="hits">21</td>
 <td class="source"><code>		    case recv_data(State) of</code></td>
 </tr>
 <tr>
@@ -2178,17 +2178,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L415"><a href="#L415">415</a></td>
-<td class="hits">5</td>
+<td class="hits">21</td>
 <td class="source"><code>			    LQuery = case catch parse_urlencoded(Data) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L416"><a href="#L416">416</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>					 {'EXIT', _Reason} -&gt; [];</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L417"><a href="#L417">417</a></td>
-<td class="hits">3</td>
+<td class="hits">15</td>
 <td class="source"><code>					 LQ -&gt; LQ</code></td>
 </tr>
 <tr>
@@ -2198,7 +2198,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L419"><a href="#L419">419</a></td>
-<td class="hits">5</td>
+<td class="hits">21</td>
 <td class="source"><code>			    {State, {LPath, LQuery, Data, Path}};</code></td>
 </tr>
 <tr>
@@ -2358,7 +2358,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L451"><a href="#L451">451</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>    case proplists:get_value(&lt;&lt;"Expect"&gt;&gt;, RequestHeaders, &lt;&lt;&gt;&gt;) of</code></td>
 </tr>
 <tr>
@@ -2378,7 +2378,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L455"><a href="#L455">455</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>	    ok</code></td>
 </tr>
 <tr>
@@ -2388,7 +2388,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L457"><a href="#L457">457</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>    case extract_path_query(State) of</code></td>
 </tr>
 <tr>
@@ -2408,7 +2408,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L461"><a href="#L461">461</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>	    PeerName = case SockPeer of</code></td>
 </tr>
 <tr>
@@ -2418,7 +2418,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L463"><a href="#L463">463</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>			       case SockMod of</code></td>
 </tr>
 <tr>
@@ -2428,7 +2428,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L465"><a href="#L465">465</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>				       inet:peername(Socket);</code></td>
 </tr>
 <tr>
@@ -2463,12 +2463,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L472"><a href="#L472">472</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>            IPHere = case PeerName of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L473"><a href="#L473">473</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>                         {ok, V} -&gt; V;</code></td>
 </tr>
 <tr class="miss">
@@ -2483,17 +2483,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L476"><a href="#L476">476</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>	    XFF = proplists:get_value('X-Forwarded-For', RequestHeaders, []),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L477"><a href="#L477">477</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>	    IP = analyze_ip_xff(IPHere, XFF),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L478"><a href="#L478">478</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>            Request = #request{method = Method,</code></td>
 </tr>
 <tr>
@@ -2573,7 +2573,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L494"><a href="#L494">494</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>	    RequestHandlers1 = ejabberd_hooks:run_fold(</code></td>
 </tr>
 <tr>
@@ -2583,7 +2583,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L496"><a href="#L496">496</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>	    Res = case process(RequestHandlers1, Request) of</code></td>
 </tr>
 <tr>
@@ -2608,7 +2608,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L501"><a href="#L501">501</a></td>
-<td class="hits">6</td>
+<td class="hits">30</td>
 <td class="source"><code>			  make_xhtml_output(State, Status,</code></td>
 </tr>
 <tr>
@@ -2638,7 +2638,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L507"><a href="#L507">507</a></td>
-<td class="hits">5</td>
+<td class="hits">9</td>
 <td class="source"><code>			  make_text_output(State, Status,</code></td>
 </tr>
 <tr>
@@ -2693,7 +2693,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L518"><a href="#L518">518</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>	    {State2#state{trail = &lt;&lt;&gt;&gt;}, Res}</code></td>
 </tr>
 <tr>
@@ -2748,7 +2748,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L529"><a href="#L529">529</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>analyze_ip_xff(IP, []) -&gt; IP;</code></td>
 </tr>
 <tr>
@@ -2943,12 +2943,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L568"><a href="#L568">568</a></td>
-<td class="hits">5</td>
+<td class="hits">21</td>
 <td class="source"><code>    NewLen = Len - byte_size(Trail),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L569"><a href="#L569">569</a></td>
-<td class="hits">5</td>
+<td class="hits">21</td>
 <td class="source"><code>    if NewLen &gt; 0 -&gt;</code></td>
 </tr>
 <tr class="miss">
@@ -2978,7 +2978,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L575"><a href="#L575">575</a></td>
-<td class="hits">5</td>
+<td class="hits">21</td>
 <td class="source"><code>	    {ok, Trail}</code></td>
 </tr>
 <tr>
@@ -3183,12 +3183,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L616"><a href="#L616">616</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>    Len = if is_integer(Data) -&gt; Data;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L617"><a href="#L617">617</a></td>
-<td class="hits">11</td>
+<td class="hits">39</td>
 <td class="source"><code>	     true -&gt; iolist_size(Data)</code></td>
 </tr>
 <tr>
@@ -3198,12 +3198,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L619"><a href="#L619">619</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>    Headers1 = [{&lt;&lt;"Content-Length"&gt;&gt;, integer_to_binary(Len)} | Headers],</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L620"><a href="#L620">620</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>    Headers2 = case lists:keyfind(&lt;&lt;"Content-Type"&gt;&gt;, 1, Headers) of</code></td>
 </tr>
 <tr>
@@ -3213,7 +3213,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L622"><a href="#L622">622</a></td>
-<td class="hits">8</td>
+<td class="hits">12</td>
 <td class="source"><code>		       Headers1;</code></td>
 </tr>
 <tr>
@@ -3223,7 +3223,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L624"><a href="#L624">624</a></td>
-<td class="hits">6</td>
+<td class="hits">30</td>
 <td class="source"><code>		       [{&lt;&lt;"Content-Type"&gt;&gt;, &lt;&lt;"text/html; charset=utf-8"&gt;&gt;}</code></td>
 </tr>
 <tr>
@@ -3238,7 +3238,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L627"><a href="#L627">627</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>    HeadersOut = case {State#state.request_version,</code></td>
 </tr>
 <tr>
@@ -3248,7 +3248,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L629"><a href="#L629">629</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>		     {{1, 1}, true} -&gt; Headers2;</code></td>
 </tr>
 <tr>
@@ -3278,12 +3278,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L635"><a href="#L635">635</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>    Version = case State#state.request_version of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L636"><a href="#L636">636</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>		  {1, 1} -&gt; &lt;&lt;"HTTP/1.1 "&gt;&gt;;</code></td>
 </tr>
 <tr class="miss">
@@ -3298,17 +3298,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L639"><a href="#L639">639</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>    H = [[Attr, &lt;&lt;": "&gt;&gt;, Val, &lt;&lt;"\r\n"&gt;&gt;] || {Attr, Val} &lt;- HeadersOut],</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L640"><a href="#L640">640</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>    NewReason = case Reason of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L641"><a href="#L641">641</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>		  &lt;&lt;""&gt;&gt; -&gt; code_to_phrase(Status);</code></td>
 </tr>
 <tr class="miss">
@@ -3323,7 +3323,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L644"><a href="#L644">644</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>    SL = [Version,</code></td>
 </tr>
 <tr>
@@ -3338,7 +3338,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L647"><a href="#L647">647</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>    [SL, H, &lt;&lt;"\r\n"&gt;&gt;].</code></td>
 </tr>
 <tr>
@@ -3353,7 +3353,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L650"><a href="#L650">650</a></td>
-<td class="hits">6</td>
+<td class="hits">30</td>
 <td class="source"><code>    Data = case State#state.request_method of</code></td>
 </tr>
 <tr class="miss">
@@ -3368,17 +3368,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L653"><a href="#L653">653</a></td>
-<td class="hits">6</td>
+<td class="hits">30</td>
 <td class="source"><code>		   DocType = case lists:member(html, Headers) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L654"><a href="#L654">654</a></td>
-<td class="hits">5</td>
+<td class="hits">25</td>
 <td class="source"><code>				 true -&gt; ?HTML_DOCTYPE;</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L655"><a href="#L655">655</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>				 false -&gt; ?XHTML_DOCTYPE</code></td>
 </tr>
 <tr>
@@ -3388,7 +3388,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L657"><a href="#L657">657</a></td>
-<td class="hits">6</td>
+<td class="hits">30</td>
 <td class="source"><code>		   iolist_to_binary([DocType, fxml:element_to_binary(XHTML)])</code></td>
 </tr>
 <tr>
@@ -3398,12 +3398,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L659"><a href="#L659">659</a></td>
-<td class="hits">6</td>
+<td class="hits">30</td>
 <td class="source"><code>    EncodedHdrs = make_headers(State, Status, &lt;&lt;""&gt;&gt;, Headers, Data),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L660"><a href="#L660">660</a></td>
-<td class="hits">6</td>
+<td class="hits">30</td>
 <td class="source"><code>    [EncodedHdrs, Data].</code></td>
 </tr>
 <tr>
@@ -3418,7 +3418,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L663"><a href="#L663">663</a></td>
-<td class="hits">5</td>
+<td class="hits">9</td>
 <td class="source"><code>    make_text_output(State, Status, &lt;&lt;""&gt;&gt;, Headers, Text).</code></td>
 </tr>
 <tr>
@@ -3433,12 +3433,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L666"><a href="#L666">666</a></td>
-<td class="hits">5</td>
+<td class="hits">9</td>
 <td class="source"><code>    Data = iolist_to_binary(Text),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L667"><a href="#L667">667</a></td>
-<td class="hits">5</td>
+<td class="hits">9</td>
 <td class="source"><code>    Data2 = case State#state.request_method of</code></td>
 </tr>
 <tr class="miss">
@@ -3448,7 +3448,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L669"><a href="#L669">669</a></td>
-<td class="hits">5</td>
+<td class="hits">9</td>
 <td class="source"><code>		_ -&gt; Data</code></td>
 </tr>
 <tr>
@@ -3458,12 +3458,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L671"><a href="#L671">671</a></td>
-<td class="hits">5</td>
+<td class="hits">9</td>
 <td class="source"><code>    EncodedHdrs = make_headers(State, Status, Reason, Headers, Data2),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L672"><a href="#L672">672</a></td>
-<td class="hits">5</td>
+<td class="hits">9</td>
 <td class="source"><code>    [EncodedHdrs, Data2].</code></td>
 </tr>
 <tr>
@@ -3653,22 +3653,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L710"><a href="#L710">710</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>    {NPath, Query} = url_decode_q_split(Path),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L711"><a href="#L711">711</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>    LPath = normalize_path([NPE</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L712"><a href="#L712">712</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>		    || NPE &lt;- str:tokens(path_decode(NPath), &lt;&lt;"/"&gt;&gt;)]),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L713"><a href="#L713">713</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>    {LPath, Query}.</code></td>
 </tr>
 <tr>
@@ -3753,7 +3753,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L730"><a href="#L730">730</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>    url_decode_q_split(Path, &lt;&lt;&gt;&gt;).</code></td>
 </tr>
 <tr>
@@ -3783,7 +3783,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L736"><a href="#L736">736</a></td>
-<td class="hits">1061</td>
+<td class="hits">2463</td>
 <td class="source"><code>    url_decode_q_split(T, &lt;&lt;H, Acc/binary&gt;&gt;);</code></td>
 </tr>
 <tr>
@@ -3793,7 +3793,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L738"><a href="#L738">738</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>    {path_norm_reverse(Ack), &lt;&lt;&gt;&gt;}.</code></td>
 </tr>
 <tr>
@@ -3808,7 +3808,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L741"><a href="#L741">741</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>path_decode(Path) -&gt; path_decode(Path, &lt;&lt;&gt;&gt;).</code></td>
 </tr>
 <tr>
@@ -3823,17 +3823,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L744"><a href="#L744">744</a></td>
-<td class="hits">36</td>
+<td class="hits">180</td>
 <td class="source"><code>    Hex = list_to_integer([Hi, Lo], 16),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L745"><a href="#L745">745</a></td>
-<td class="hits">36</td>
+<td class="hits">180</td>
 <td class="source"><code>    if Hex == 0 -&gt; exit(badurl);</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L746"><a href="#L746">746</a></td>
-<td class="hits">36</td>
+<td class="hits">180</td>
 <td class="source"><code>       true -&gt; ok</code></td>
 </tr>
 <tr>
@@ -3843,7 +3843,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L748"><a href="#L748">748</a></td>
-<td class="hits">36</td>
+<td class="hits">180</td>
 <td class="source"><code>    path_decode(Tail, &lt;&lt;Acc/binary, Hex&gt;&gt;);</code></td>
 </tr>
 <tr>
@@ -3853,12 +3853,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L750"><a href="#L750">750</a></td>
-<td class="hits">953</td>
+<td class="hits">1923</td>
 <td class="source"><code>    path_decode(T, &lt;&lt;Acc/binary, H&gt;&gt;);</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L751"><a href="#L751">751</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>path_decode(&lt;&lt;&gt;&gt;, Acc) -&gt; Acc.</code></td>
 </tr>
 <tr>
@@ -3868,12 +3868,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L753"><a href="#L753">753</a></td>
-<td class="hits">6</td>
+<td class="hits">30</td>
 <td class="source"><code>path_norm_reverse(&lt;&lt;"/", T/binary&gt;&gt;) -&gt; start_dir(0, &lt;&lt;"/"&gt;&gt;, T);</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L754"><a href="#L754">754</a></td>
-<td class="hits">8</td>
+<td class="hits">12</td>
 <td class="source"><code>path_norm_reverse(T) -&gt; start_dir(0, &lt;&lt;""&gt;&gt;, T).</code></td>
 </tr>
 <tr>
@@ -3908,7 +3908,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L761"><a href="#L761">761</a></td>
-<td class="hits">63</td>
+<td class="hits">183</td>
 <td class="source"><code>start_dir(N, Path, T) -&gt; rest_dir(N, Path, T).</code></td>
 </tr>
 <tr>
@@ -3923,7 +3923,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L764"><a href="#L764">764</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>    case Path of</code></td>
 </tr>
 <tr class="miss">
@@ -3933,7 +3933,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L766"><a href="#L766">766</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>      _ -&gt; Path</code></td>
 </tr>
 <tr>
@@ -3948,7 +3948,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L769"><a href="#L769">769</a></td>
-<td class="hits">49</td>
+<td class="hits">141</td>
 <td class="source"><code>    start_dir(0, &lt;&lt;$/, Path/binary&gt;&gt;, T);</code></td>
 </tr>
 <tr>
@@ -3968,7 +3968,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L773"><a href="#L773">773</a></td>
-<td class="hits">1006</td>
+<td class="hits">2292</td>
 <td class="source"><code>    rest_dir(0, &lt;&lt;H, Path/binary&gt;&gt;, T);</code></td>
 </tr>
 <tr class="miss">
@@ -3993,7 +3993,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L778"><a href="#L778">778</a></td>
-<td class="hits">10</td>
+<td class="hits">34</td>
 <td class="source"><code>code_to_phrase(200) -&gt; &lt;&lt;"OK"&gt;&gt;;</code></td>
 </tr>
 <tr class="hit">
@@ -4078,7 +4078,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L795"><a href="#L795">795</a></td>
-<td class="hits">1</td>
+<td class="hits">5</td>
 <td class="source"><code>code_to_phrase(401) -&gt; &lt;&lt;"Unauthorized"&gt;&gt;;</code></td>
 </tr>
 <tr class="miss">
@@ -4218,7 +4218,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L823"><a href="#L823">823</a></td>
-<td class="hits">5</td>
+<td class="hits">25</td>
 <td class="source"><code>    try base64:decode(Auth64) of</code></td>
 </tr>
 <tr>
@@ -4228,7 +4228,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L825"><a href="#L825">825</a></td>
-<td class="hits">5</td>
+<td class="hits">25</td>
 <td class="source"><code>	    case binary:split(Auth, &lt;&lt;":"&gt;&gt;) of</code></td>
 </tr>
 <tr>
@@ -4238,12 +4238,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L827"><a href="#L827">827</a></td>
-<td class="hits">5</td>
+<td class="hits">25</td>
 <td class="source"><code>		    PassUtf8 = unicode:characters_to_binary(Pass, utf8),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L828"><a href="#L828">828</a></td>
-<td class="hits">5</td>
+<td class="hits">25</td>
 <td class="source"><code>		    {User, PassUtf8};</code></td>
 </tr>
 <tr>
@@ -4313,7 +4313,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L842"><a href="#L842">842</a></td>
-<td class="hits">11</td>
+<td class="hits">39</td>
 <td class="source"><code>    parse_urlencoded(S, nokey, &lt;&lt;&gt;&gt;, key).</code></td>
 </tr>
 <tr>
@@ -4333,12 +4333,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L846"><a href="#L846">846</a></td>
-<td class="hits">71</td>
+<td class="hits">351</td>
 <td class="source"><code>    Hex = list_to_integer([Hi, Lo], 16),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L847"><a href="#L847">847</a></td>
-<td class="hits">69</td>
+<td class="hits">345</td>
 <td class="source"><code>    parse_urlencoded(Tail, Last, &lt;&lt;Cur/binary, Hex&gt;&gt;, State);</code></td>
 </tr>
 <tr>
@@ -4368,12 +4368,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L853"><a href="#L853">853</a></td>
-<td class="hits">4</td>
+<td class="hits">20</td>
 <td class="source"><code>    V = {Last, Cur},</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L854"><a href="#L854">854</a></td>
-<td class="hits">4</td>
+<td class="hits">20</td>
 <td class="source"><code>    [V | parse_urlencoded(Tail, nokey, &lt;&lt;&gt;&gt;, key)];</code></td>
 </tr>
 <tr>
@@ -4383,7 +4383,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L856"><a href="#L856">856</a></td>
-<td class="hits">3</td>
+<td class="hits">15</td>
 <td class="source"><code>    parse_urlencoded(Tail, Last, &lt;&lt;Cur/binary, $\s&gt;&gt;, State);</code></td>
 </tr>
 <tr>
@@ -4393,7 +4393,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L858"><a href="#L858">858</a></td>
-<td class="hits">7</td>
+<td class="hits">35</td>
 <td class="source"><code>    parse_urlencoded(Tail, Cur, &lt;&lt;&gt;&gt;,</code></td>
 </tr>
 <tr>
@@ -4408,7 +4408,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L861"><a href="#L861">861</a></td>
-<td class="hits">340</td>
+<td class="hits">1361</td>
 <td class="source"><code>    parse_urlencoded(Tail, Last, &lt;&lt;Cur/binary, H&gt;&gt;, State);</code></td>
 </tr>
 <tr>
@@ -4418,7 +4418,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L863"><a href="#L863">863</a></td>
-<td class="hits">9</td>
+<td class="hits">33</td>
 <td class="source"><code>    [{Last, Cur}];</code></td>
 </tr>
 <tr class="miss">
@@ -4438,17 +4438,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L867"><a href="#L867">867</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>    {Doctype, Headers2} = case Headers -- [html] of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L868"><a href="#L868">868</a></td>
-<td class="hits">9</td>
+<td class="hits">17</td>
 <td class="source"><code>	Headers -&gt; {[], Headers};</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L869"><a href="#L869">869</a></td>
-<td class="hits">5</td>
+<td class="hits">25</td>
 <td class="source"><code>	Other -&gt; {[html], Other}</code></td>
 </tr>
 <tr>
@@ -4458,7 +4458,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L871"><a href="#L871">871</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>    M = maps:merge(maps:from_list(Headers2),</code></td>
 </tr>
 <tr>
@@ -4468,7 +4468,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L873"><a href="#L873">873</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>    Doctype ++ maps:to_list(M).</code></td>
 </tr>
 <tr>
@@ -4493,7 +4493,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L878"><a href="#L878">878</a></td>
-<td class="hits">18</td>
+<td class="hits">54</td>
 <td class="source"><code>toupper(C) -&gt; C.</code></td>
 </tr>
 <tr>
@@ -4508,7 +4508,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L881"><a href="#L881">881</a></td>
-<td class="hits">22</td>
+<td class="hits">66</td>
 <td class="source"><code>tolower(C) -&gt; C.</code></td>
 </tr>
 <tr>
@@ -4523,7 +4523,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L884"><a href="#L884">884</a></td>
-<td class="hits">16</td>
+<td class="hits">48</td>
 <td class="source"><code>    normalize_header_name(Name, [], true).</code></td>
 </tr>
 <tr>
@@ -4538,7 +4538,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L887"><a href="#L887">887</a></td>
-<td class="hits">16</td>
+<td class="hits">48</td>
 <td class="source"><code>    iolist_to_binary(Acc);</code></td>
 </tr>
 <tr>
@@ -4548,7 +4548,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L889"><a href="#L889">889</a></td>
-<td class="hits">2</td>
+<td class="hits">6</td>
 <td class="source"><code>    normalize_header_name(Rest, [Acc, "-"], true);</code></td>
 </tr>
 <tr>
@@ -4558,7 +4558,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L891"><a href="#L891">891</a></td>
-<td class="hits">18</td>
+<td class="hits">54</td>
 <td class="source"><code>    normalize_header_name(Rest, [Acc, toupper(C)], false);</code></td>
 </tr>
 <tr>
@@ -4568,7 +4568,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L893"><a href="#L893">893</a></td>
-<td class="hits">22</td>
+<td class="hits">66</td>
 <td class="source"><code>    normalize_header_name(Rest, [Acc, tolower(C)], false).</code></td>
 </tr>
 <tr>
@@ -4583,7 +4583,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L896"><a href="#L896">896</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>    normalize_path(Path, []).</code></td>
 </tr>
 <tr>
@@ -4593,7 +4593,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L898"><a href="#L898">898</a></td>
-<td class="hits">14</td>
+<td class="hits">42</td>
 <td class="source"><code>normalize_path([], Norm) -&gt; lists:reverse(Norm);</code></td>
 </tr>
 <tr>
@@ -4623,7 +4623,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L904"><a href="#L904">904</a></td>
-<td class="hits">49</td>
+<td class="hits">141</td>
 <td class="source"><code>    normalize_path(Path, [Part|Norm]).</code></td>
 </tr>
 <tr>
