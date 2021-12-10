@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/translate.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/translate.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-10 at 16:58:49</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/translate.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-10 at 17:46:50</p></footer>
 <table>
 <tbody>
 <tr>
@@ -963,12 +963,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L172"><a href="#L172">172</a></td>
-<td class="hits">7042</td>
+<td class="hits">7039</td>
 <td class="source"><code>    LLang = ascii_tolower(Lang),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L173"><a href="#L173">173</a></td>
-<td class="hits">7042</td>
+<td class="hits">7039</td>
 <td class="source"><code>    case ets:lookup(translations, {LLang, Msg}) of</code></td>
 </tr>
 <tr class="miss">
@@ -983,12 +983,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L176"><a href="#L176">176</a></td>
-<td class="hits">7042</td>
+<td class="hits">7039</td>
 <td class="source"><code>	  ShortLang = case str:tokens(LLang, &lt;&lt;"-"&gt;&gt;) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L177"><a href="#L177">177</a></td>
-<td class="hits">933</td>
+<td class="hits">930</td>
 <td class="source"><code>			[] -&gt; LLang;</code></td>
 </tr>
 <tr class="hit">
@@ -1003,7 +1003,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L180"><a href="#L180">180</a></td>
-<td class="hits">7042</td>
+<td class="hits">7039</td>
 <td class="source"><code>	  case ShortLang of</code></td>
 </tr>
 <tr class="hit">
@@ -1013,7 +1013,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L182"><a href="#L182">182</a></td>
-<td class="hits">934</td>
+<td class="hits">931</td>
 <td class="source"><code>	    LLang -&gt; translate(Msg);</code></td>
 </tr>
 <tr>
@@ -1068,12 +1068,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L193"><a href="#L193">193</a></td>
-<td class="hits">934</td>
+<td class="hits">931</td>
 <td class="source"><code>    case ejabberd_option:language() of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L194"><a href="#L194">194</a></td>
-<td class="hits">934</td>
+<td class="hits">931</td>
 <td class="source"><code>      &lt;&lt;"en"&gt;&gt; -&gt; Msg;</code></td>
 </tr>
 <tr>
@@ -1193,7 +1193,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L218"><a href="#L218">218</a></td>
-<td class="hits">7098</td>
+<td class="hits">7095</td>
 <td class="source"><code>    &lt;&lt; &lt;&lt;(if X &gt;= $A, X =&lt; $Z -&gt;</code></td>
 </tr>
 <tr class="miss">
@@ -1213,7 +1213,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L222"><a href="#L222">222</a></td>
-<td class="hits">7098</td>
+<td class="hits">7095</td>
 <td class="source"><code>          end)&gt;&gt; || &lt;&lt;X&gt;&gt; &lt;= B &gt;&gt;;</code></td>
 </tr>
 <tr>
