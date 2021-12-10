@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/ejabberd_sm.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_sm.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-10 at 21:30:25</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_sm.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-10 at 21:43:47</p></footer>
 <table>
 <tbody>
 <tr>
@@ -808,12 +808,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L141"><a href="#L141">141</a></td>
-<td class="hits">10149</td>
+<td class="hits">10150</td>
 <td class="source"><code>    #jid{lserver = LServer} = xmpp:get_to(Packet),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L142"><a href="#L142">142</a></td>
-<td class="hits">10149</td>
+<td class="hits">10150</td>
 <td class="source"><code>    case ejabberd_hooks:run_fold(sm_receive_packet, LServer, Packet, []) of</code></td>
 </tr>
 <tr>
@@ -833,12 +833,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L146"><a href="#L146">146</a></td>
-<td class="hits">10149</td>
+<td class="hits">10150</td>
 <td class="source"><code>	    do_route(Packet1),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L147"><a href="#L147">147</a></td>
-<td class="hits">10149</td>
+<td class="hits">10150</td>
 <td class="source"><code>	    ok</code></td>
 </tr>
 <tr>
@@ -938,32 +938,32 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L167"><a href="#L167">167</a></td>
-<td class="hits">340</td>
+<td class="hits">341</td>
 <td class="source"><code>    LUser = jid:nodeprep(User),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L168"><a href="#L168">168</a></td>
-<td class="hits">340</td>
+<td class="hits">341</td>
 <td class="source"><code>    LServer = jid:nameprep(Server),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L169"><a href="#L169">169</a></td>
-<td class="hits">340</td>
+<td class="hits">341</td>
 <td class="source"><code>    LResource = jid:resourceprep(Resource),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L170"><a href="#L170">170</a></td>
-<td class="hits">340</td>
+<td class="hits">341</td>
 <td class="source"><code>    Mod = get_sm_backend(LServer),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L171"><a href="#L171">171</a></td>
-<td class="hits">340</td>
+<td class="hits">341</td>
 <td class="source"><code>    Sessions = get_sessions(Mod, LUser, LServer, LResource),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L172"><a href="#L172">172</a></td>
-<td class="hits">340</td>
+<td class="hits">341</td>
 <td class="source"><code>    Info = case lists:keyfind(SID, #session.sid, Sessions) of</code></td>
 </tr>
 <tr>
@@ -973,12 +973,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L174"><a href="#L174">174</a></td>
-<td class="hits">340</td>
+<td class="hits">341</td>
 <td class="source"><code>		   delete_session(Mod, Session),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L175"><a href="#L175">175</a></td>
-<td class="hits">340</td>
+<td class="hits">341</td>
 <td class="source"><code>		   I;</code></td>
 </tr>
 <tr>
@@ -998,12 +998,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L179"><a href="#L179">179</a></td>
-<td class="hits">340</td>
+<td class="hits">341</td>
 <td class="source"><code>    JID = jid:make(User, Server, Resource),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L180"><a href="#L180">180</a></td>
-<td class="hits">340</td>
+<td class="hits">341</td>
 <td class="source"><code>    ejabberd_hooks:run(sm_remove_connection_hook,</code></td>
 </tr>
 <tr>
@@ -1233,22 +1233,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L226"><a href="#L226">226</a></td>
-<td class="hits">1610</td>
+<td class="hits">1611</td>
 <td class="source"><code>    Mod = get_sm_backend(LServer),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L227"><a href="#L227">227</a></td>
-<td class="hits">1610</td>
+<td class="hits">1611</td>
 <td class="source"><code>    Ss = get_sessions(Mod, LUser, LServer),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L228"><a href="#L228">228</a></td>
-<td class="hits">1610</td>
+<td class="hits">1611</td>
 <td class="source"><code>    [{S#session.priority, element(3, S#session.usr)}</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L229"><a href="#L229">229</a></td>
-<td class="hits">1610</td>
+<td class="hits">1611</td>
 <td class="source"><code>     || S &lt;- clean_session_list(Ss), is_integer(S#session.priority)].</code></td>
 </tr>
 <tr>
@@ -2128,32 +2128,32 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L405"><a href="#L405">405</a></td>
-<td class="hits">340</td>
+<td class="hits">341</td>
 <td class="source"><code>    LUser = jid:nodeprep(User),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L406"><a href="#L406">406</a></td>
-<td class="hits">340</td>
+<td class="hits">341</td>
 <td class="source"><code>    LServer = jid:nameprep(Server),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L407"><a href="#L407">407</a></td>
-<td class="hits">340</td>
+<td class="hits">341</td>
 <td class="source"><code>    LResource = jid:resourceprep(Resource),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L408"><a href="#L408">408</a></td>
-<td class="hits">340</td>
+<td class="hits">341</td>
 <td class="source"><code>    Mod = get_sm_backend(LServer),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L409"><a href="#L409">409</a></td>
-<td class="hits">340</td>
+<td class="hits">341</td>
 <td class="source"><code>    Sessions = get_sessions(Mod, LUser, LServer, LResource),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L410"><a href="#L410">410</a></td>
-<td class="hits">340</td>
+<td class="hits">341</td>
 <td class="source"><code>    [SID || #session{sid = SID} &lt;- Sessions].</code></td>
 </tr>
 <tr>
@@ -3078,7 +3078,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L595"><a href="#L595">595</a></td>
-<td class="hits">10906</td>
+<td class="hits">10909</td>
 <td class="source"><code>    case use_cache(Mod, LServer) of</code></td>
 </tr>
 <tr>
@@ -3168,12 +3168,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L613"><a href="#L613">613</a></td>
-<td class="hits">10906</td>
+<td class="hits">10909</td>
 <td class="source"><code>	    case Mod:get_sessions(LUser, LServer) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L614"><a href="#L614">614</a></td>
-<td class="hits">10906</td>
+<td class="hits">10909</td>
 <td class="source"><code>		{ok, Ss} -&gt; delete_dead(Mod, Ss);</code></td>
 </tr>
 <tr class="miss">
@@ -3208,12 +3208,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L621"><a href="#L621">621</a></td>
-<td class="hits">8538</td>
+<td class="hits">8540</td>
 <td class="source"><code>    Sessions = get_sessions(Mod, LUser, LServer),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L622"><a href="#L622">622</a></td>
-<td class="hits">8538</td>
+<td class="hits">8540</td>
 <td class="source"><code>    [S || S &lt;- Sessions, element(3, S#session.usr) == LResource].</code></td>
 </tr>
 <tr>
@@ -3233,12 +3233,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L626"><a href="#L626">626</a></td>
-<td class="hits">343</td>
+<td class="hits">344</td>
 <td class="source"><code>    Mod:delete_session(Session),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L627"><a href="#L627">627</a></td>
-<td class="hits">343</td>
+<td class="hits">344</td>
 <td class="source"><code>    case use_cache(Mod, LServer) of</code></td>
 </tr>
 <tr>
@@ -3263,7 +3263,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L632"><a href="#L632">632</a></td>
-<td class="hits">343</td>
+<td class="hits">344</td>
 <td class="source"><code>	    ok</code></td>
 </tr>
 <tr>
@@ -3288,7 +3288,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L637"><a href="#L637">637</a></td>
-<td class="hits">10920</td>
+<td class="hits">10923</td>
 <td class="source"><code>    lists:filter(</code></td>
 </tr>
 <tr>
@@ -3298,12 +3298,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L639"><a href="#L639">639</a></td>
-<td class="hits">9994</td>
+<td class="hits">9995</td>
 <td class="source"><code>	      case is_process_alive(Pid) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L640"><a href="#L640">640</a></td>
-<td class="hits">9991</td>
+<td class="hits">9992</td>
 <td class="source"><code>		  true -&gt; true;</code></td>
 </tr>
 <tr>
@@ -3583,17 +3583,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L696"><a href="#L696">696</a></td>
-<td class="hits">444</td>
+<td class="hits">445</td>
 <td class="source"><code>    ?DEBUG("Processing presence to bare JID:~n~ts", [xmpp:pp(Packet)]),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L697"><a href="#L697">697</a></td>
-<td class="hits">444</td>
+<td class="hits">445</td>
 <td class="source"><code>    {LUser, LServer, _} = jid:tolower(To),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L698"><a href="#L698">698</a></td>
-<td class="hits">444</td>
+<td class="hits">445</td>
 <td class="source"><code>    lists:foreach(</code></td>
 </tr>
 <tr>
@@ -4163,7 +4163,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L812"><a href="#L812">812</a></td>
-<td class="hits">1972</td>
+<td class="hits">1973</td>
 <td class="source"><code>    clean_session_list(lists:keysort(#session.usr, Ss), []).</code></td>
 </tr>
 <tr>
@@ -4178,7 +4178,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L815"><a href="#L815">815</a></td>
-<td class="hits">425</td>
+<td class="hits">426</td>
 <td class="source"><code>clean_session_list([], Res) -&gt; Res;</code></td>
 </tr>
 <tr class="hit">
@@ -4618,12 +4618,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L903"><a href="#L903">903</a></td>
-<td class="hits">11335</td>
+<td class="hits">11338</td>
 <td class="source"><code>    DBType = ejabberd_option:sm_db_type(Host),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L904"><a href="#L904">904</a></td>
-<td class="hits">11335</td>
+<td class="hits">11338</td>
 <td class="source"><code>    list_to_existing_atom("ejabberd_sm_" ++ atom_to_list(DBType)).</code></td>
 </tr>
 <tr>
@@ -4888,12 +4888,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L957"><a href="#L957">957</a></td>
-<td class="hits">11647</td>
+<td class="hits">11651</td>
 <td class="source"><code>    case erlang:function_exported(Mod, use_cache, 1) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L958"><a href="#L958">958</a></td>
-<td class="hits">11647</td>
+<td class="hits">11651</td>
 <td class="source"><code>	true -&gt; Mod:use_cache(LServer);</code></td>
 </tr>
 <tr class="miss">
