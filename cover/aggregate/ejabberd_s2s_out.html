@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/ejabberd_s2s_out.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_s2s_out.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-10 at 16:45:02</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_s2s_out.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-10 at 16:58:49</p></footer>
 <table>
 <tbody>
 <tr>
@@ -523,7 +523,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L84"><a href="#L84">84</a></td>
-<td class="hits">5</td>
+<td class="hits">4</td>
 <td class="source"><code>    xmpp_stream_out:stop_async(Pid).</code></td>
 </tr>
 <tr>
@@ -851,24 +851,24 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	       Reason) -&gt;</code></td>
 </tr>
-<tr class="hit">
+<tr class="miss">
 <td class="line" id="L150"><a href="#L150">150</a></td>
-<td class="hits">1</td>
+<td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>    ?INFO_MSG("Closing outbound s2s connection ~ts -&gt; ~ts: ~ts",</code></td>
 </tr>
-<tr class="hit">
+<tr class="miss">
 <td class="line" id="L151"><a href="#L151">151</a></td>
-<td class="hits">1</td>
+<td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>	      [LServer, RServer, format_error(Reason)]),</code></td>
 </tr>
-<tr class="hit">
+<tr class="miss">
 <td class="line" id="L152"><a href="#L152">152</a></td>
-<td class="hits">1</td>
+<td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>    stop_async(self()),</code></td>
 </tr>
-<tr class="hit">
+<tr class="miss">
 <td class="line" id="L153"><a href="#L153">153</a></td>
-<td class="hits">1</td>
+<td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>    State;</code></td>
 </tr>
 <tr>
@@ -1316,14 +1316,14 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>handle_stream_end(Reason, #{server_host := ServerHost} = State) -&gt;</code></td>
 </tr>
-<tr class="hit">
+<tr class="miss">
 <td class="line" id="L243"><a href="#L243">243</a></td>
-<td class="hits">1</td>
+<td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>    State1 = State#{stop_reason =&gt; Reason},</code></td>
 </tr>
-<tr class="hit">
+<tr class="miss">
 <td class="line" id="L244"><a href="#L244">244</a></td>
-<td class="hits">1</td>
+<td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>    ejabberd_hooks:run_fold(s2s_out_closed, ServerHost, State1, [Reason]).</code></td>
 </tr>
 <tr>
@@ -2181,9 +2181,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>format_error(Reason) -&gt;</code></td>
 </tr>
-<tr class="hit">
+<tr class="miss">
 <td class="line" id="L416"><a href="#L416">416</a></td>
-<td class="hits">1</td>
+<td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>    xmpp_stream_out:format_error(Reason).</code></td>
 </tr>
 </tbody>

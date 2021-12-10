@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/ct/mod_muc.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_muc.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-10 at 16:45:05</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_muc.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-10 at 16:58:52</p></footer>
 <table>
 <tbody>
 <tr>
@@ -1038,7 +1038,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L187"><a href="#L187">187</a></td>
-<td class="hits">127</td>
+<td class="hits">129</td>
 <td class="source"><code>    binary_to_atom(</code></td>
 </tr>
 <tr>
@@ -1058,17 +1058,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L191"><a href="#L191">191</a></td>
-<td class="hits">91</td>
+<td class="hits">93</td>
 <td class="source"><code>    Cores = erlang:system_info(logical_processors),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L192"><a href="#L192">192</a></td>
-<td class="hits">91</td>
+<td class="hits">93</td>
 <td class="source"><code>    I = erlang:phash2(RoomHost, Cores) + 1,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L193"><a href="#L193">193</a></td>
-<td class="hits">91</td>
+<td class="hits">93</td>
 <td class="source"><code>    procname(Host, I).</code></td>
 </tr>
 <tr>
@@ -1348,12 +1348,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L249"><a href="#L249">249</a></td>
-<td class="hits">91</td>
+<td class="hits">93</td>
 <td class="source"><code>		    Proc = procname(ServerHost, {Room, Host}),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L250"><a href="#L250">250</a></td>
-<td class="hits">91</td>
+<td class="hits">93</td>
 <td class="source"><code>		    case whereis(Proc) of</code></td>
 </tr>
 <tr>
@@ -1373,12 +1373,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L254"><a href="#L254">254</a></td>
-<td class="hits">91</td>
+<td class="hits">93</td>
 <td class="source"><code>			    ?DEBUG("Routing to MUC worker ~p:~n~ts", [Proc, xmpp:pp(Pkt)]),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L255"><a href="#L255">255</a></td>
-<td class="hits">91</td>
+<td class="hits">93</td>
 <td class="source"><code>			    ?GEN_SERVER:cast(Pid, {route_to_room, Pkt});</code></td>
 </tr>
 <tr>
@@ -1413,7 +1413,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L262"><a href="#L262">262</a></td>
-<td class="hits">688</td>
+<td class="hits">686</td>
 <td class="source"><code>		    mod_muc_room:route(Pid, Pkt)</code></td>
 </tr>
 <tr>
@@ -2288,7 +2288,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L437"><a href="#L437">437</a></td>
-<td class="hits">91</td>
+<td class="hits">93</td>
 <td class="source"><code>    try route_to_room(Packet, ServerHost)</code></td>
 </tr>
 <tr>
@@ -2323,7 +2323,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L444"><a href="#L444">444</a></td>
-<td class="hits">91</td>
+<td class="hits">93</td>
 <td class="source"><code>    {noreply, State};</code></td>
 </tr>
 <tr>
@@ -3053,27 +3053,27 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L590"><a href="#L590">590</a></td>
-<td class="hits">91</td>
+<td class="hits">93</td>
 <td class="source"><code>    From = xmpp:get_from(Packet),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L591"><a href="#L591">591</a></td>
-<td class="hits">91</td>
+<td class="hits">93</td>
 <td class="source"><code>    To = xmpp:get_to(Packet),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L592"><a href="#L592">592</a></td>
-<td class="hits">91</td>
+<td class="hits">93</td>
 <td class="source"><code>    {Room, Host, Nick} = jid:tolower(To),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L593"><a href="#L593">593</a></td>
-<td class="hits">91</td>
+<td class="hits">93</td>
 <td class="source"><code>    RMod = gen_mod:ram_db_mod(ServerHost, ?MODULE),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L594"><a href="#L594">594</a></td>
-<td class="hits">91</td>
+<td class="hits">93</td>
 <td class="source"><code>    case RMod:find_online_room(ServerHost, Room, Host) of</code></td>
 </tr>
 <tr>
@@ -3083,7 +3083,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L596"><a href="#L596">596</a></td>
-<td class="hits">91</td>
+<td class="hits">93</td>
 <td class="source"><code>	    case should_start_room(Packet) of</code></td>
 </tr>
 <tr>
@@ -3093,22 +3093,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L598"><a href="#L598">598</a></td>
-<td class="hits">4</td>
+<td class="hits">6</td>
 <td class="source"><code>		    Lang = xmpp:get_lang(Packet),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L599"><a href="#L599">599</a></td>
-<td class="hits">4</td>
+<td class="hits">6</td>
 <td class="source"><code>		    ErrText = ?T("Conference room does not exist"),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L600"><a href="#L600">600</a></td>
-<td class="hits">4</td>
+<td class="hits">6</td>
 <td class="source"><code>		    Err = xmpp:err_item_not_found(ErrText, Lang),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L601"><a href="#L601">601</a></td>
-<td class="hits">4</td>
+<td class="hits">6</td>
 <td class="source"><code>		    ejabberd_router:route_error(Packet, Err);</code></td>
 </tr>
 <tr>
@@ -4063,7 +4063,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L792"><a href="#L792">792</a></td>
-<td class="hits">4</td>
+<td class="hits">6</td>
 <td class="source"><code>    false.</code></td>
 </tr>
 <tr>
