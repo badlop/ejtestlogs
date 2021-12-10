@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/ejabberd_c2s.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_c2s.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-10 at 00:07:59</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_c2s.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-10 at 00:25:56</p></footer>
 <table>
 <tbody>
 <tr>
@@ -678,7 +678,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L115"><a href="#L115">115</a></td>
-<td class="hits">375</td>
+<td class="hits">376</td>
 <td class="source"><code>    xmpp_stream_in:stop_async(Pid).</code></td>
 </tr>
 <tr>
@@ -1528,12 +1528,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L285"><a href="#L285">285</a></td>
-<td class="hits">370</td>
+<td class="hits">371</td>
 <td class="source"><code>    stop_async(self()),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L286"><a href="#L286">286</a></td>
-<td class="hits">370</td>
+<td class="hits">371</td>
 <td class="source"><code>    State#{stop_reason =&gt; Reason}.</code></td>
 </tr>
 <tr>
@@ -1558,22 +1558,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L291"><a href="#L291">291</a></td>
-<td class="hits">339</td>
+<td class="hits">340</td>
 <td class="source"><code>    Status = format_reason(State, Reason),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L292"><a href="#L292">292</a></td>
-<td class="hits">339</td>
+<td class="hits">340</td>
 <td class="source"><code>    ?INFO_MSG("(~ts) Closing c2s session for ~ts: ~ts",</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L293"><a href="#L293">293</a></td>
-<td class="hits">339</td>
+<td class="hits">340</td>
 <td class="source"><code>	      [xmpp_socket:pp(Socket), jid:encode(JID), Status]),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L294"><a href="#L294">294</a></td>
-<td class="hits">339</td>
+<td class="hits">340</td>
 <td class="source"><code>    Pres = #presence{type = unavailable,</code></td>
 </tr>
 <tr>
@@ -1588,7 +1588,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L297"><a href="#L297">297</a></td>
-<td class="hits">339</td>
+<td class="hits">340</td>
 <td class="source"><code>    State1 = case maps:is_key(pres_last, State) of</code></td>
 </tr>
 <tr>
@@ -1618,12 +1618,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L303"><a href="#L303">303</a></td>
-<td class="hits">306</td>
+<td class="hits">307</td>
 <td class="source"><code>		     ejabberd_sm:close_session(SID, U, S, R),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L304"><a href="#L304">304</a></td>
-<td class="hits">306</td>
+<td class="hits">307</td>
 <td class="source"><code>		     broadcast_presence_unavailable(State, Pres, false)</code></td>
 </tr>
 <tr>
@@ -1633,7 +1633,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L306"><a href="#L306">306</a></td>
-<td class="hits">339</td>
+<td class="hits">340</td>
 <td class="source"><code>    bounce_message_queue(SID, JID),</code></td>
 </tr>
 <tr class="hit">
@@ -3948,17 +3948,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L769"><a href="#L769">769</a></td>
-<td class="hits">342</td>
+<td class="hits">343</td>
 <td class="source"><code>    #jid{luser = LUser, lserver = LServer} = JID,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L770"><a href="#L770">770</a></td>
-<td class="hits">342</td>
+<td class="hits">343</td>
 <td class="source"><code>    BareJID = jid:tolower(jid:remove_resource(JID)),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L771"><a href="#L771">771</a></td>
-<td class="hits">342</td>
+<td class="hits">343</td>
 <td class="source"><code>    Items1 = case BroadcastToRoster of</code></td>
 </tr>
 <tr>
@@ -4018,7 +4018,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L783"><a href="#L783">783</a></td>
-<td class="hits">306</td>
+<td class="hits">307</td>
 <td class="source"><code>		    #{BareJID =&gt; 1}</code></td>
 </tr>
 <tr>
@@ -4028,7 +4028,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L785"><a href="#L785">785</a></td>
-<td class="hits">342</td>
+<td class="hits">343</td>
 <td class="source"><code>    Items2 = ?SETS:fold(</code></td>
 </tr>
 <tr>
@@ -4053,7 +4053,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L790"><a href="#L790">790</a></td>
-<td class="hits">342</td>
+<td class="hits">343</td>
 <td class="source"><code>    JIDs = lists:filtermap(</code></td>
 </tr>
 <tr>
@@ -4063,22 +4063,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L792"><a href="#L792">792</a></td>
-<td class="hits">358</td>
+<td class="hits">359</td>
 <td class="source"><code>	    To = jid:make(LJid),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L793"><a href="#L793">793</a></td>
-<td class="hits">358</td>
+<td class="hits">359</td>
 <td class="source"><code>	    P = xmpp:set_to(Pres, To),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L794"><a href="#L794">794</a></td>
-<td class="hits">358</td>
+<td class="hits">359</td>
 <td class="source"><code>	    case privacy_check_packet(State, P, out) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L795"><a href="#L795">795</a></td>
-<td class="hits">358</td>
+<td class="hits">359</td>
 <td class="source"><code>		allow -&gt; {true, To};</code></td>
 </tr>
 <tr class="miss">
@@ -4098,12 +4098,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L799"><a href="#L799">799</a></td>
-<td class="hits">342</td>
+<td class="hits">343</td>
 <td class="source"><code>    route_multiple(State, JIDs, Pres),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L800"><a href="#L800">800</a></td>
-<td class="hits">342</td>
+<td class="hits">343</td>
 <td class="source"><code>    State#{pres_a =&gt; ?SETS:new()}.</code></td>
 </tr>
 <tr>
@@ -4458,7 +4458,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L871"><a href="#L871">871</a></td>
-<td class="hits">13149</td>
+<td class="hits">13150</td>
 <td class="source"><code>    ejabberd_hooks:run_fold(privacy_check_packet, LServer, allow, [State, Pkt, Dir]).</code></td>
 </tr>
 <tr>
@@ -4513,12 +4513,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L882"><a href="#L882">882</a></td>
-<td class="hits">416</td>
+<td class="hits">417</td>
 <td class="source"><code>    From = xmpp:get_from(Pkt),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L883"><a href="#L883">883</a></td>
-<td class="hits">416</td>
+<td class="hits">417</td>
 <td class="source"><code>    ejabberd_router_multicast:route_multicast(From, LServer, JIDs, Pkt, false).</code></td>
 </tr>
 <tr>
@@ -4683,17 +4683,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L916"><a href="#L916">916</a></td>
-<td class="hits">340</td>
+<td class="hits">341</td>
 <td class="source"><code>    {U, S, R} = jid:tolower(JID),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L917"><a href="#L917">917</a></td>
-<td class="hits">340</td>
+<td class="hits">341</td>
 <td class="source"><code>    SIDs = ejabberd_sm:get_session_sids(U, S, R),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L918"><a href="#L918">918</a></td>
-<td class="hits">340</td>
+<td class="hits">341</td>
 <td class="source"><code>    case lists:member(SID, SIDs) of</code></td>
 </tr>
 <tr>
@@ -4728,7 +4728,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L925"><a href="#L925">925</a></td>
-<td class="hits">340</td>
+<td class="hits">341</td>
 <td class="source"><code>	    receive {route, Pkt} -&gt;</code></td>
 </tr>
 <tr class="miss">
@@ -5013,7 +5013,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L982"><a href="#L982">982</a></td>
-<td class="hits">343</td>
+<td class="hits">344</td>
 <td class="source"><code>    xmpp_stream_in:format_error(Reason);</code></td>
 </tr>
 <tr>
