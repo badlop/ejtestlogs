@@ -3,7 +3,7 @@ Common Test starting (cwd is /home/runner/work/ejabberd/ejabberd)
 
 
 
-CWD set to: "/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.8d063cc@ctlogs.2021-12-10_01.44.25"
+CWD set to: "/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.3520adc@ct-logs_3.2021-12-10_12.21.31"
 
 TEST INFO: 1 test(s), 1586 case(s) in 1 suite(s)
 
@@ -11,2058 +11,2058 @@ Testing lib.ejabberd: Starting test, 1586 test cases
 Testing lib.ejabberd: *** SKIPPED {ejabberd_SUITE,init_per_group} ***
 
 ----------------------------------------------------
-2021-12-10 01:44:28.613
-Testcase 'test_connect_bad_lang' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:28.634
-Testcase 'test_connect_bad_xml' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:28.638
-Testcase 'test_connect_unexpected_xml' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:28.746
-Testcase 'test_connect_unknown_ns' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:28.746
-Testcase 'test_connect_bad_ns_stream' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:28.746
+2021-12-10 12:21:34.488
 Testcase 'test_connect_bad_xmlns' starting
 
 
 ----------------------------------------------------
-2021-12-10 01:44:28.746
-Testcase 'test_connect_bad_to' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:28.746
-Testcase 'bad_nonza' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:28.746
-Testcase 'unsupported_query' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:28.746
-Testcase 'test_connect_missing_to' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:28.746
-Testcase 'invalid_from' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:28.778
-Testcase 'unauthenticated_iq' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:28.813
-Testcase 'test_auth' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:28.813
-Testcase 'codec_failure' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:28.813
-Testcase 'test_zlib' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:28.813
-Testcase 'test_bind' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:28.813
-Testcase 'test_connect' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:28.813
-Testcase 'unauthenticated_message' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:28.813
-Testcase 'unauthenticated_presence' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:28.813
-Testcase 'test_starttls' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:28.813
+2021-12-10 12:21:34.583
 Testcase 'test_open_session' starting
 
 
 ----------------------------------------------------
-2021-12-10 01:44:28.834
-Testcase 'time' starting
+2021-12-10 12:21:34.583
+Testcase 'unauthenticated_iq' starting
 
 
 ----------------------------------------------------
-2021-12-10 01:44:28.834
-Testcase 'stats' starting
+2021-12-10 12:21:34.583
+Testcase 'test_bind' starting
 
 
 ----------------------------------------------------
-2021-12-10 01:44:28.835
-Testcase 'disco' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:28.835
-Testcase 'ping' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:28.835
-Testcase 'version' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:29.706
-Testcase 'test_auth_fail' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:29.780
-Testcase 'presence' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:29.926
-Testcase 's2s_dialback' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:30.234
-Testcase 's2s_optional' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:30.458
-Testcase 's2s_required' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:30.701
-Testcase 'auth_external' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:30.750
-Testcase 'auth_external_no_jid' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:30.803
-Testcase 'auth_external_no_user' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:30.851
-Testcase 'auth_external_malformed_jid' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:30.894
-Testcase 'auth_external_wrong_jid' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:30.939
-Testcase 'auth_external_wrong_server' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:30.981
-Testcase 'auth_external_invalid_cert' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:31.051
-Testcase 'jidprep_feature_enabled' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:31.189
-Testcase 'jidprep_normalize_jid' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:31.424
-Testcase 'sm_feature_enabled' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:31.564
-Testcase 'sm_enable' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:31.664
-Testcase 'sm_resume' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:31.767
-Testcase 'sm_resume_failed' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:36.891
-Testcase 'sm_queue_limit_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:36.892
-Testcase 'sm_queue_limit_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:37.203
-Testcase 'sm_queue_limit_detached_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:37.205
-Testcase 'sm_queue_limit_detached_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:37.440
-Testcase 'muc_service_presence_error' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:37.583
-Testcase 'muc_service_message_error' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:37.742
-Testcase 'muc_service_unknown_ns_iq_error' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:37.881
-Testcase 'muc_service_iq_set_error' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:38.080
-Testcase 'muc_service_improper_iq_error' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:38.222
-Testcase 'muc_service_features' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:38.363
-Testcase 'muc_service_disco_info_node_error' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:38.502
-Testcase 'muc_service_disco_items' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:38.668
-Testcase 'muc_service_unique' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:38.805
-Testcase 'muc_service_vcard' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:38.942
-Testcase 'muc_configure_non_existent' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:39.091
-Testcase 'muc_cancel_configure_non_existent' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:39.228
-Testcase 'muc_service_subscriptions' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:39.408
-Testcase 'muc_set_room_affiliation' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:39.638
-Testcase 'muc_register_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:39.639
-Testcase 'muc_register_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:39.859
-Testcase 'muc_groupchat_msg_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:39.861
-Testcase 'muc_groupchat_msg_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:40.077
-Testcase 'muc_private_msg_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:40.078
-Testcase 'muc_private_msg_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:40.287
-Testcase 'muc_set_subject_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:40.289
-Testcase 'muc_set_subject_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:40.502
-Testcase 'muc_history_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:40.502
-Testcase 'muc_history_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:40.752
-Testcase 'muc_invite_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:40.754
-Testcase 'muc_invite_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:40.957
-Testcase 'muc_invite_members_only_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:40.958
-Testcase 'muc_invite_members_only_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:41.161
-Testcase 'muc_invite_password_protected_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:41.162
-Testcase 'muc_invite_password_protected_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:41.416
-Testcase 'muc_voice_request_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:41.417
-Testcase 'muc_voice_request_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:41.630
-Testcase 'muc_change_role_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:41.632
-Testcase 'muc_change_role_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:41.845
-Testcase 'muc_kick_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:41.847
-Testcase 'muc_kick_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:42.055
-Testcase 'muc_change_affiliation_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:42.057
-Testcase 'muc_change_affiliation_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:42.274
-Testcase 'muc_destroy_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:42.276
-Testcase 'muc_destroy_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:42.478
-Testcase 'muc_vcard_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:42.479
-Testcase 'muc_vcard_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:42.699
-Testcase 'muc_nick_change_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:42.701
-Testcase 'muc_nick_change_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:42.907
-Testcase 'muc_config_title_desc_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:42.909
-Testcase 'muc_config_title_desc_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:43.116
-Testcase 'muc_config_public_list_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:43.118
-Testcase 'muc_config_public_list_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:43.325
-Testcase 'muc_config_password_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:43.327
-Testcase 'muc_config_password_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:43.540
-Testcase 'muc_config_whois_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:43.542
-Testcase 'muc_config_whois_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:43.753
-Testcase 'muc_config_members_only_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:43.755
-Testcase 'muc_config_members_only_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:43.964
-Testcase 'muc_config_moderated_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:43.965
-Testcase 'muc_config_moderated_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:44.175
-Testcase 'muc_config_private_messages_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:44.176
-Testcase 'muc_config_private_messages_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:44.396
-Testcase 'muc_config_query_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:44.398
-Testcase 'muc_config_query_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:44.606
-Testcase 'muc_config_allow_invites_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:44.608
-Testcase 'muc_config_allow_invites_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:44.815
-Testcase 'muc_config_visitor_status_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:44.818
-Testcase 'muc_config_visitor_status_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:45.025
-Testcase 'muc_config_allow_voice_requests_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:45.027
-Testcase 'muc_config_allow_voice_requests_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:45.236
-Testcase 'muc_config_voice_request_interval_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:45.237
-Testcase 'muc_config_voice_request_interval_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:50.492
-Testcase 'muc_config_visitor_nickchange_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:50.494
-Testcase 'muc_config_visitor_nickchange_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:50.698
-Testcase 'muc_join_conflict_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:50.700
-Testcase 'muc_join_conflict_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:50.925
-Testcase 'proxy65_feature_enabled' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:51.060
-Testcase 'proxy65_service_vcard' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:51.279
-Testcase 'proxy65_all_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:51.282
-Testcase 'proxy65_all_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:51.520
-Testcase 'stundisco_feature_enabled' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:51.658
-Testcase 'stundisco_stun_service' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:51.805
-Testcase 'stundisco_turn_service' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:51.942
-Testcase 'stundisco_turns_service' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:52.080
-Testcase 'stundisco_turn_credentials' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:52.219
-Testcase 'stundisco_turns_credentials' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:52.443
-Testcase 'replaced_conflict_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:52.445
-Testcase 'replaced_conflict_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:52.664
-Testcase 'upload_feature_enabled' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:52.802
-Testcase 'upload_service_vcard' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:52.940
-Testcase 'upload_get_max_size' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:53.080
-Testcase 'upload_slot_request' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:53.229
-Testcase 'upload_put_get_request' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:53.378
-Testcase 'upload_max_size_exceed' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:53.573
-Testcase 'carbons_feature_enabled' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:53.710
-Testcase 'carbons_unsupported_iq' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:53.939
-Testcase 'carbons_send_recv_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:53.940
-Testcase 'carbons_send_recv_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:54.177
-Testcase 'carbons_enable_disable_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:54.180
-Testcase 'carbons_enable_disable_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:54.494
-Testcase 'test_register' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:54.586
-Testcase 'test_legacy_auth_feature' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:54.588
-Testcase 'test_legacy_auth_no_resource' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:54.589
-Testcase 'test_legacy_auth_digest' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:54.590
-Testcase 'test_legacy_auth_fail' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:54.592
-Testcase 'test_legacy_auth_bad_jid' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:54.594
-Testcase 'test_legacy_auth' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:54.763
-Testcase 'auth_plain' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:54.812
-Testcase 'auth_md5' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:54.861
-Testcase 'presence_broadcast' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:55.101
-Testcase 'last' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:55.270
-Testcase 'webadmin_login_page' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:55.299
-Testcase 'webadmin_welcome_page' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:55.330
-Testcase 'webadmin_user_page' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:55.361
-Testcase 'webadmin_adduser' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:55.392
-Testcase 'webadmin_changepassword' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:55.423
-Testcase 'webadmin_removeuser' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:55.511
-Testcase 'roster_feature_enabled' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:55.652
-Testcase 'roster_iq_set_many_items' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:55.789
-Testcase 'roster_iq_set_duplicated_groups' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:55.928
-Testcase 'roster_iq_get_item' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:56.064
-Testcase 'roster_iq_unexpected_element' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:56.203
-Testcase 'roster_iq_set_ask' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:56.340
-Testcase 'roster_set_item' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:56.533
-Testcase 'roster_version' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:56.734
-Testcase 'private_test_features' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:56.876
-Testcase 'private_test_no_namespace' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:57.019
-Testcase 'private_test_set_get' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:57.172
-Testcase 'private_test_published' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:57.376
-Testcase 'privacy_feature_enabled' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:57.514
-Testcase 'privacy_set_get_list' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:57.658
-Testcase 'privacy_get_list_non_existent' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:57.795
-Testcase 'privacy_get_empty_lists' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:57.932
-Testcase 'privacy_set_default' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:58.074
-Testcase 'privacy_del_default' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:58.219
-Testcase 'privacy_set_default_non_existent' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:58.356
-Testcase 'privacy_set_active' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:58.498
-Testcase 'privacy_del_active' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:58.640
-Testcase 'privacy_set_active_non_existent' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:58.776
-Testcase 'privacy_remove_list' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:58.916
-Testcase 'privacy_remove_default_list' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:59.058
-Testcase 'privacy_remove_active_list' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:59.199
-Testcase 'privacy_remove_list_non_existent' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:59.336
-Testcase 'privacy_allow_local_server' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:59.486
-Testcase 'privacy_malformed_iq_query' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:59.625
-Testcase 'privacy_malformed_get' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:59.773
-Testcase 'privacy_malformed_set' starting
-
-
-----------------------------------------------------
-2021-12-10 01:44:59.917
-Testcase 'privacy_malformed_type_value' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:00.062
-Testcase 'privacy_set_get_block' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:00.268
-Testcase 'vcard_feature_enabled' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:00.406
-Testcase 'vcard_get_set' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:00.544
-Testcase 'vcard_service_vcard' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:00.737
-Testcase 'pubsub_test_features' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:00.877
-Testcase 'pubsub_test_vcard' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:01.013
-Testcase 'pubsub_test_create' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:01.150
-Testcase 'pubsub_test_configure' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:01.304
-Testcase 'pubsub_test_delete' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:01.442
-Testcase 'pubsub_test_get_affiliations' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:01.589
-Testcase 'pubsub_test_get_subscriptions' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:01.743
-Testcase 'pubsub_test_create_instant' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:01.882
-Testcase 'pubsub_test_default' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:02.020
-Testcase 'pubsub_test_create_configure' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:02.165
-Testcase 'pubsub_test_publish' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:02.306
-Testcase 'pubsub_test_auto_create' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:02.445
-Testcase 'pubsub_test_get_items' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:02.593
-Testcase 'pubsub_test_delete_item' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:02.738
-Testcase 'pubsub_test_purge' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:02.889
-Testcase 'pubsub_test_subscribe' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:03.032
-Testcase 'pubsub_test_subscribe_max_item_1' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:03.187
-Testcase 'pubsub_test_unsubscribe' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:03.387
-Testcase 'muc_service_presence_error' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:03.528
-Testcase 'muc_service_message_error' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:03.672
-Testcase 'muc_service_unknown_ns_iq_error' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:03.813
-Testcase 'muc_service_iq_set_error' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:03.957
-Testcase 'muc_service_improper_iq_error' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:04.104
-Testcase 'muc_service_features' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:04.252
-Testcase 'muc_service_disco_info_node_error' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:04.390
-Testcase 'muc_service_disco_items' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:04.572
-Testcase 'muc_service_unique' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:04.722
-Testcase 'muc_service_vcard' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:04.863
-Testcase 'muc_configure_non_existent' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:05.005
-Testcase 'muc_cancel_configure_non_existent' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:05.144
-Testcase 'muc_service_subscriptions' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:05.339
-Testcase 'muc_set_room_affiliation' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:05.546
-Testcase 'offline_feature_enabled' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:05.688
-Testcase 'offline_check_identity' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:05.831
-Testcase 'offline_send_non_existent' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:05.970
-Testcase 'offline_view_non_existent' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:06.107
-Testcase 'offline_remove_non_existent' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:06.243
-Testcase 'offline_view_non_integer' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:06.382
-Testcase 'offline_remove_non_integer' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:06.520
-Testcase 'offline_malformed_iq' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:06.667
-Testcase 'offline_wrong_user' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:06.817
-Testcase 'offline_unsupported_iq' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:07.022
-Testcase 'mam_feature_enabled' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:07.166
-Testcase 'mam_get_set_prefs' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:09.097
-Testcase 'mam_get_form' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:09.247
-Testcase 'mam_fake_by' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:09.443
-Testcase 'csi_feature_enabled' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:09.638
-Testcase 'push_feature_enabled' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:09.776
-Testcase 'push_unsupported_iq' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:09.957
-Testcase 'test_unregister' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:10.077
-Testcase 'muc_register_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:10.078
-Testcase 'muc_register_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:10.288
-Testcase 'muc_groupchat_msg_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:10.290
-Testcase 'muc_groupchat_msg_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:10.500
-Testcase 'muc_private_msg_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:10.501
-Testcase 'muc_private_msg_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:10.710
-Testcase 'muc_set_subject_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:10.712
-Testcase 'muc_set_subject_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:10.923
-Testcase 'muc_history_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:10.924
-Testcase 'muc_history_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:11.169
-Testcase 'muc_invite_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:11.171
-Testcase 'muc_invite_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:11.373
-Testcase 'muc_invite_members_only_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:11.374
-Testcase 'muc_invite_members_only_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:11.579
-Testcase 'muc_invite_password_protected_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:11.581
-Testcase 'muc_invite_password_protected_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:11.788
-Testcase 'muc_voice_request_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:11.789
-Testcase 'muc_voice_request_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:11.999
-Testcase 'muc_change_role_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:12.000
-Testcase 'muc_change_role_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:12.216
-Testcase 'muc_kick_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:12.218
-Testcase 'muc_kick_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:12.428
-Testcase 'muc_change_affiliation_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:12.428
-Testcase 'muc_change_affiliation_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:12.650
-Testcase 'muc_destroy_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:12.652
-Testcase 'muc_destroy_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:12.856
-Testcase 'muc_vcard_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:12.857
-Testcase 'muc_vcard_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:13.071
-Testcase 'muc_nick_change_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:13.073
-Testcase 'muc_nick_change_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:13.278
-Testcase 'muc_config_title_desc_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:13.281
-Testcase 'muc_config_title_desc_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:13.486
-Testcase 'muc_config_public_list_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:13.488
-Testcase 'muc_config_public_list_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:13.697
-Testcase 'muc_config_password_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:13.700
-Testcase 'muc_config_password_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:13.916
-Testcase 'muc_config_whois_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:13.917
-Testcase 'muc_config_whois_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:14.133
-Testcase 'muc_config_members_only_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:14.135
-Testcase 'muc_config_members_only_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:14.348
-Testcase 'muc_config_moderated_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:14.351
-Testcase 'muc_config_moderated_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:14.565
-Testcase 'muc_config_private_messages_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:14.566
-Testcase 'muc_config_private_messages_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:14.788
-Testcase 'muc_config_query_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:14.790
-Testcase 'muc_config_query_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:14.999
-Testcase 'muc_config_allow_invites_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:15.000
-Testcase 'muc_config_allow_invites_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:15.234
-Testcase 'muc_config_visitor_status_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:15.237
-Testcase 'muc_config_visitor_status_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:15.449
-Testcase 'muc_config_allow_voice_requests_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:15.450
-Testcase 'muc_config_allow_voice_requests_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:15.659
-Testcase 'muc_config_voice_request_interval_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:15.661
-Testcase 'muc_config_voice_request_interval_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:20.915
-Testcase 'muc_config_visitor_nickchange_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:20.917
-Testcase 'muc_config_visitor_nickchange_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:21.126
-Testcase 'muc_join_conflict_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:21.129
-Testcase 'muc_join_conflict_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:21.385
-Testcase 'privacy_deny_bare_jid_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:21.387
-Testcase 'privacy_deny_bare_jid_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:21.993
-Testcase 'privacy_deny_full_jid_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:21.995
-Testcase 'privacy_deny_full_jid_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:22.632
-Testcase 'privacy_deny_server_bare_jid_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:22.636
-Testcase 'privacy_deny_server_bare_jid_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:23.229
-Testcase 'privacy_deny_server_full_jid_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:23.232
-Testcase 'privacy_deny_server_full_jid_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:23.851
-Testcase 'privacy_deny_group_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:23.853
-Testcase 'privacy_deny_group_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:24.440
-Testcase 'privacy_deny_sub_both_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:24.441
-Testcase 'privacy_deny_sub_both_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:25.049
-Testcase 'privacy_deny_sub_from_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:25.050
-Testcase 'privacy_deny_sub_from_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:25.633
-Testcase 'privacy_deny_sub_to_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:25.635
-Testcase 'privacy_deny_sub_to_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:26.216
-Testcase 'privacy_deny_sub_none_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:26.218
-Testcase 'privacy_deny_sub_none_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:26.804
-Testcase 'privacy_deny_all_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:26.805
-Testcase 'privacy_deny_all_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:27.411
-Testcase 'privacy_deny_offline_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:27.413
-Testcase 'privacy_deny_offline_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:27.717
-Testcase 'privacy_block_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:27.718
-Testcase 'privacy_block_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:27.983
-Testcase 'privacy_unblock_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:27.985
-Testcase 'privacy_unblock_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:28.194
-Testcase 'privacy_unblock_all_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:28.197
-Testcase 'privacy_unblock_all_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:28.454
-Testcase 'pubsub_publish_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:28.455
-Testcase 'pubsub_publish_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:28.654
-Testcase 'pubsub_subscriptions_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:28.656
-Testcase 'pubsub_subscriptions_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:28.867
-Testcase 'pubsub_affiliations_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:28.869
-Testcase 'pubsub_affiliations_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:30.692
-Testcase 'pubsub_authorize_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:30.694
-Testcase 'pubsub_authorize_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:30.954
-Testcase 'roster_subscribe_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:30.955
-Testcase 'roster_subscribe_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:40.110
-Testcase 'offline_flex_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:40.112
-Testcase 'offline_flex_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:40.530
-Testcase 'offline_send_all_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:40.532
-Testcase 'offline_send_all_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:54.551
-Testcase 'offline_from_mam_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:45:54.552
-Testcase 'offline_from_mam_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:08.729
-Testcase 'offline_mucsub_mam_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:08.731
-Testcase 'offline_mucsub_mam_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:09.108
-Testcase 'mam_archived_and_stanza_id_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:09.109
-Testcase 'mam_archived_and_stanza_id_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:09.309
-Testcase 'mam_query_all_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:09.311
-Testcase 'mam_query_all_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:09.552
-Testcase 'mam_query_with_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:09.554
-Testcase 'mam_query_with_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:09.842
-Testcase 'mam_query_rsm_max_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:09.843
-Testcase 'mam_query_rsm_max_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:10.140
-Testcase 'mam_query_rsm_after_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:10.142
-Testcase 'mam_query_rsm_after_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:10.426
-Testcase 'mam_query_rsm_before_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:10.429
-Testcase 'mam_query_rsm_before_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:10.713
-Testcase 'mam_muc_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:10.714
-Testcase 'mam_muc_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:10.963
-Testcase 'mam_mucsub_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:10.964
-Testcase 'mam_mucsub_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:11.197
-Testcase 'mam_mucsub_from_muc_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:11.198
-Testcase 'mam_mucsub_from_muc_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:11.427
-Testcase 'mam_mucsub_from_muc_non_persistent_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:11.428
-Testcase 'mam_mucsub_from_muc_non_persistent_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:11.704
-Testcase 'announce_set_motd_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:11.707
-Testcase 'announce_set_motd_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:11.957
-Testcase 'csi_all_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:11.958
-Testcase 'csi_all_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:12.221
-Testcase 'push_sm_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:12.221
-Testcase 'push_sm_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:20.425
-Testcase 'push_offline_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:20.428
-Testcase 'push_offline_master' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:20.731
-Testcase 'push_mam_slave' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:20.732
-Testcase 'push_mam_master' starting
-
-Testing lib.ejabberd: *** SKIPPED {ejabberd_SUITE,init_per_group} ***
-Testing lib.ejabberd: *** SKIPPED {ejabberd_SUITE,init_per_group} ***
-Testing lib.ejabberd: *** SKIPPED {ejabberd_SUITE,init_per_group} ***
-Testing lib.ejabberd: *** SKIPPED {ejabberd_SUITE,init_per_group} ***
-Testing lib.ejabberd: *** SKIPPED {ejabberd_SUITE,init_per_group} ***
-Testing lib.ejabberd: *** SKIPPED {ejabberd_SUITE,init_per_group} ***
-
-----------------------------------------------------
-2021-12-10 01:46:23.330
+2021-12-10 12:21:34.583
 Testcase 'test_connect_unexpected_xml' starting
 
 
 ----------------------------------------------------
-2021-12-10 01:46:23.337
-Testcase 'test_connect' starting
+2021-12-10 12:21:34.583
+Testcase 'test_zlib' starting
 
 
 ----------------------------------------------------
-2021-12-10 01:46:23.340
-Testcase 'test_connect_bad_xml' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:23.344
-Testcase 'test_connect_unknown_ns' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:23.346
-Testcase 'test_connect_bad_xmlns' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:23.347
+2021-12-10 12:21:34.583
 Testcase 'test_connect_bad_ns_stream' starting
 
 
 ----------------------------------------------------
-2021-12-10 01:46:23.348
-Testcase 'test_connect_missing_to' starting
+2021-12-10 12:21:34.583
+Testcase 'test_connect_unknown_ns' starting
 
 
 ----------------------------------------------------
-2021-12-10 01:46:23.349
-Testcase 'test_auth' starting
+2021-12-10 12:21:34.583
+Testcase 'test_connect' starting
 
 
 ----------------------------------------------------
-2021-12-10 01:46:23.351
-Testcase 'test_auth_fail' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:23.474
-Testcase 'test_missing_from' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:23.508
-Testcase 'test_missing_to' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:23.542
-Testcase 'test_invalid_from' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:23.576
-Testcase 'test_component_send' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:23.609
-Testcase 'bad_nonza' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:23.643
+2021-12-10 12:21:34.583
 Testcase 'codec_failure' starting
 
 
 ----------------------------------------------------
-2021-12-10 01:46:23.807
-Testcase 'test_connect_unexpected_xml' starting
+2021-12-10 12:21:34.583
+Testcase 'test_connect_bad_to' starting
 
 
 ----------------------------------------------------
-2021-12-10 01:46:23.815
-Testcase 'test_connect_bad_xml' starting
+2021-12-10 12:21:34.583
+Testcase 'unauthenticated_message' starting
 
 
 ----------------------------------------------------
-2021-12-10 01:46:23.816
-Testcase 'test_connect_bad_xmlns' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:23.817
-Testcase 'test_auth_starttls' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:23.819
-Testcase 'test_connect_s2s_unauthenticated_iq' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:23.820
-Testcase 'test_connect' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:23.820
-Testcase 'test_starttls' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:23.822
-Testcase 'test_connect_bad_ns_stream' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:23.825
-Testcase 'test_connect_unknown_ns' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:23.826
-Testcase 'test_connect_s2s_starttls_required' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:23.945
-Testcase 'test_missing_from' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:23.983
-Testcase 'test_missing_to' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:24.021
-Testcase 'test_invalid_from' starting
-
-
-----------------------------------------------------
-2021-12-10 01:46:24.059
+2021-12-10 12:21:34.583
 Testcase 'bad_nonza' starting
 
 
 ----------------------------------------------------
-2021-12-10 01:46:24.099
+2021-12-10 12:21:34.583
+Testcase 'invalid_from' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:34.583
+Testcase 'test_connect_bad_xml' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:34.612
+Testcase 'test_connect_bad_lang' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:34.612
+Testcase 'unsupported_query' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:34.612
+Testcase 'test_starttls' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:34.619
+Testcase 'stats' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:34.619
+Testcase 'ping' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:34.619
+Testcase 'version' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:34.619
+Testcase 'test_auth' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:34.619
+Testcase 'unauthenticated_presence' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:34.619
+Testcase 'time' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:34.619
+Testcase 'test_connect_missing_to' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:34.642
+Testcase 'disco' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:35.964
+Testcase 'test_auth_fail' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:36.028
+Testcase 'presence' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:36.177
+Testcase 's2s_dialback' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:36.451
+Testcase 's2s_optional' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:36.683
+Testcase 's2s_required' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:36.920
+Testcase 'auth_external' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:36.974
+Testcase 'auth_external_no_jid' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:37.016
+Testcase 'auth_external_no_user' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:37.066
+Testcase 'auth_external_malformed_jid' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:37.109
+Testcase 'auth_external_wrong_jid' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:37.164
+Testcase 'auth_external_wrong_server' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:37.210
+Testcase 'auth_external_invalid_cert' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:37.289
+Testcase 'jidprep_feature_enabled' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:37.436
+Testcase 'jidprep_normalize_jid' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:37.658
+Testcase 'sm_feature_enabled' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:37.793
+Testcase 'sm_enable' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:37.854
+Testcase 'sm_resume' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:37.930
+Testcase 'sm_resume_failed' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:43.055
+Testcase 'sm_queue_limit_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:43.057
+Testcase 'sm_queue_limit_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:43.371
+Testcase 'sm_queue_limit_detached_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:43.372
+Testcase 'sm_queue_limit_detached_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:43.610
+Testcase 'muc_service_presence_error' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:43.751
+Testcase 'muc_service_message_error' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:43.961
+Testcase 'muc_service_unknown_ns_iq_error' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:44.101
+Testcase 'muc_service_iq_set_error' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:44.262
+Testcase 'muc_service_improper_iq_error' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:44.404
+Testcase 'muc_service_features' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:44.544
+Testcase 'muc_service_disco_info_node_error' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:44.680
+Testcase 'muc_service_disco_items' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:44.845
+Testcase 'muc_service_unique' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:44.983
+Testcase 'muc_service_vcard' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:45.120
+Testcase 'muc_configure_non_existent' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:45.270
+Testcase 'muc_cancel_configure_non_existent' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:45.412
+Testcase 'muc_service_subscriptions' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:45.590
+Testcase 'muc_set_room_affiliation' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:45.824
+Testcase 'muc_register_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:45.826
+Testcase 'muc_register_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:46.049
+Testcase 'muc_groupchat_msg_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:46.052
+Testcase 'muc_groupchat_msg_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:46.279
+Testcase 'muc_private_msg_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:46.280
+Testcase 'muc_private_msg_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:46.488
+Testcase 'muc_set_subject_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:46.490
+Testcase 'muc_set_subject_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:46.697
+Testcase 'muc_history_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:46.698
+Testcase 'muc_history_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:46.944
+Testcase 'muc_invite_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:46.946
+Testcase 'muc_invite_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:47.146
+Testcase 'muc_invite_members_only_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:47.148
+Testcase 'muc_invite_members_only_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:47.350
+Testcase 'muc_invite_password_protected_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:47.351
+Testcase 'muc_invite_password_protected_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:47.557
+Testcase 'muc_voice_request_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:47.558
+Testcase 'muc_voice_request_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:47.780
+Testcase 'muc_change_role_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:47.782
+Testcase 'muc_change_role_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:47.994
+Testcase 'muc_kick_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:47.997
+Testcase 'muc_kick_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:48.202
+Testcase 'muc_change_affiliation_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:48.204
+Testcase 'muc_change_affiliation_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:48.428
+Testcase 'muc_destroy_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:48.430
+Testcase 'muc_destroy_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:48.635
+Testcase 'muc_vcard_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:48.637
+Testcase 'muc_vcard_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:48.858
+Testcase 'muc_nick_change_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:48.860
+Testcase 'muc_nick_change_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:49.073
+Testcase 'muc_config_title_desc_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:49.074
+Testcase 'muc_config_title_desc_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:49.279
+Testcase 'muc_config_public_list_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:49.281
+Testcase 'muc_config_public_list_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:49.493
+Testcase 'muc_config_password_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:49.495
+Testcase 'muc_config_password_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:49.706
+Testcase 'muc_config_whois_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:49.707
+Testcase 'muc_config_whois_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:49.928
+Testcase 'muc_config_members_only_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:49.930
+Testcase 'muc_config_members_only_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:50.140
+Testcase 'muc_config_moderated_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:50.142
+Testcase 'muc_config_moderated_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:50.352
+Testcase 'muc_config_private_messages_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:50.354
+Testcase 'muc_config_private_messages_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:50.570
+Testcase 'muc_config_query_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:50.573
+Testcase 'muc_config_query_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:50.793
+Testcase 'muc_config_allow_invites_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:50.796
+Testcase 'muc_config_allow_invites_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:51.012
+Testcase 'muc_config_visitor_status_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:51.012
+Testcase 'muc_config_visitor_status_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:51.234
+Testcase 'muc_config_allow_voice_requests_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:51.236
+Testcase 'muc_config_allow_voice_requests_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:51.446
+Testcase 'muc_config_voice_request_interval_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:51.448
+Testcase 'muc_config_voice_request_interval_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:56.697
+Testcase 'muc_config_visitor_nickchange_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:56.699
+Testcase 'muc_config_visitor_nickchange_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:56.910
+Testcase 'muc_join_conflict_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:56.912
+Testcase 'muc_join_conflict_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:57.142
+Testcase 'proxy65_feature_enabled' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:57.281
+Testcase 'proxy65_service_vcard' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:57.510
+Testcase 'proxy65_all_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:57.511
+Testcase 'proxy65_all_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:57.750
+Testcase 'stundisco_feature_enabled' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:57.887
+Testcase 'stundisco_stun_service' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:58.033
+Testcase 'stundisco_turn_service' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:58.172
+Testcase 'stundisco_turns_service' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:58.314
+Testcase 'stundisco_turn_credentials' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:58.452
+Testcase 'stundisco_turns_credentials' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:58.675
+Testcase 'replaced_conflict_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:58.677
+Testcase 'replaced_conflict_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:58.897
+Testcase 'upload_feature_enabled' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:59.036
+Testcase 'upload_service_vcard' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:59.174
+Testcase 'upload_get_max_size' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:59.316
+Testcase 'upload_slot_request' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:59.468
+Testcase 'upload_put_get_request' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:59.614
+Testcase 'upload_max_size_exceed' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:59.810
+Testcase 'carbons_feature_enabled' starting
+
+
+----------------------------------------------------
+2021-12-10 12:21:59.949
+Testcase 'carbons_unsupported_iq' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:00.191
+Testcase 'carbons_send_recv_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:00.194
+Testcase 'carbons_send_recv_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:00.426
+Testcase 'carbons_enable_disable_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:00.426
+Testcase 'carbons_enable_disable_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:00.740
+Testcase 'test_register' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:00.828
+Testcase 'test_legacy_auth_no_resource' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:00.830
+Testcase 'test_legacy_auth' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:00.831
+Testcase 'test_legacy_auth_fail' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:00.834
+Testcase 'test_legacy_auth_bad_jid' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:00.836
+Testcase 'test_legacy_auth_digest' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:00.838
+Testcase 'test_legacy_auth_feature' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:01.008
+Testcase 'auth_plain' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:01.050
+Testcase 'auth_md5' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:01.095
+Testcase 'presence_broadcast' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:01.337
+Testcase 'last' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:01.502
+Testcase 'webadmin_login_page' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:01.531
+Testcase 'webadmin_welcome_page' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:01.562
+Testcase 'webadmin_user_page' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:01.592
+Testcase 'webadmin_adduser' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:01.623
+Testcase 'webadmin_changepassword' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:01.654
+Testcase 'webadmin_removeuser' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:01.749
+Testcase 'roster_feature_enabled' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:01.888
+Testcase 'roster_iq_set_many_items' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:02.027
+Testcase 'roster_iq_set_duplicated_groups' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:02.165
+Testcase 'roster_iq_get_item' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:02.302
+Testcase 'roster_iq_unexpected_element' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:02.440
+Testcase 'roster_iq_set_ask' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:02.578
+Testcase 'roster_set_item' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:02.727
+Testcase 'roster_version' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:02.921
+Testcase 'private_test_features' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:03.060
+Testcase 'private_test_no_namespace' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:03.205
+Testcase 'private_test_set_get' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:03.358
+Testcase 'private_test_published' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:03.553
+Testcase 'privacy_feature_enabled' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:03.691
+Testcase 'privacy_set_get_list' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:03.831
+Testcase 'privacy_get_list_non_existent' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:03.978
+Testcase 'privacy_get_empty_lists' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:04.116
+Testcase 'privacy_set_default' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:04.258
+Testcase 'privacy_del_default' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:04.401
+Testcase 'privacy_set_default_non_existent' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:04.540
+Testcase 'privacy_set_active' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:04.680
+Testcase 'privacy_del_active' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:04.821
+Testcase 'privacy_set_active_non_existent' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:04.966
+Testcase 'privacy_remove_list' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:05.112
+Testcase 'privacy_remove_default_list' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:05.256
+Testcase 'privacy_remove_active_list' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:05.396
+Testcase 'privacy_remove_list_non_existent' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:05.537
+Testcase 'privacy_allow_local_server' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:05.682
+Testcase 'privacy_malformed_iq_query' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:05.823
+Testcase 'privacy_malformed_get' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:05.972
+Testcase 'privacy_malformed_set' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:06.113
+Testcase 'privacy_malformed_type_value' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:06.255
+Testcase 'privacy_set_get_block' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:06.454
+Testcase 'vcard_feature_enabled' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:06.595
+Testcase 'vcard_get_set' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:06.734
+Testcase 'vcard_service_vcard' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:06.929
+Testcase 'pubsub_test_features' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:07.068
+Testcase 'pubsub_test_vcard' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:07.206
+Testcase 'pubsub_test_create' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:07.351
+Testcase 'pubsub_test_configure' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:07.518
+Testcase 'pubsub_test_delete' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:07.659
+Testcase 'pubsub_test_get_affiliations' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:07.812
+Testcase 'pubsub_test_get_subscriptions' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:07.973
+Testcase 'pubsub_test_create_instant' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:08.112
+Testcase 'pubsub_test_default' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:08.253
+Testcase 'pubsub_test_create_configure' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:08.400
+Testcase 'pubsub_test_publish' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:08.545
+Testcase 'pubsub_test_auto_create' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:08.686
+Testcase 'pubsub_test_get_items' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:08.851
+Testcase 'pubsub_test_delete_item' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:08.994
+Testcase 'pubsub_test_purge' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:09.145
+Testcase 'pubsub_test_subscribe' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:09.288
+Testcase 'pubsub_test_subscribe_max_item_1' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:09.437
+Testcase 'pubsub_test_unsubscribe' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:09.638
+Testcase 'muc_service_presence_error' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:09.785
+Testcase 'muc_service_message_error' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:09.940
+Testcase 'muc_service_unknown_ns_iq_error' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:10.082
+Testcase 'muc_service_iq_set_error' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:10.232
+Testcase 'muc_service_improper_iq_error' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:10.377
+Testcase 'muc_service_features' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:10.514
+Testcase 'muc_service_disco_info_node_error' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:10.652
+Testcase 'muc_service_disco_items' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:10.833
+Testcase 'muc_service_unique' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:10.972
+Testcase 'muc_service_vcard' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:11.113
+Testcase 'muc_configure_non_existent' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:11.255
+Testcase 'muc_cancel_configure_non_existent' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:11.395
+Testcase 'muc_service_subscriptions' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:11.590
+Testcase 'muc_set_room_affiliation' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:11.794
+Testcase 'offline_feature_enabled' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:11.937
+Testcase 'offline_check_identity' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:12.088
+Testcase 'offline_send_non_existent' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:12.226
+Testcase 'offline_view_non_existent' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:12.365
+Testcase 'offline_remove_non_existent' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:12.506
+Testcase 'offline_view_non_integer' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:12.648
+Testcase 'offline_remove_non_integer' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:12.791
+Testcase 'offline_malformed_iq' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:12.935
+Testcase 'offline_wrong_user' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:13.085
+Testcase 'offline_unsupported_iq' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:13.280
+Testcase 'mam_feature_enabled' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:13.422
+Testcase 'mam_get_set_prefs' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:15.358
+Testcase 'mam_get_form' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:15.508
+Testcase 'mam_fake_by' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:15.703
+Testcase 'csi_feature_enabled' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:15.899
+Testcase 'push_feature_enabled' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:16.037
+Testcase 'push_unsupported_iq' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:16.211
+Testcase 'test_unregister' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:16.337
+Testcase 'muc_register_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:16.338
+Testcase 'muc_register_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:16.558
+Testcase 'muc_groupchat_msg_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:16.561
+Testcase 'muc_groupchat_msg_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:16.780
+Testcase 'muc_private_msg_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:16.781
+Testcase 'muc_private_msg_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:16.995
+Testcase 'muc_set_subject_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:16.995
+Testcase 'muc_set_subject_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:17.218
+Testcase 'muc_history_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:17.220
+Testcase 'muc_history_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:17.478
+Testcase 'muc_invite_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:17.478
+Testcase 'muc_invite_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:17.687
+Testcase 'muc_invite_members_only_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:17.689
+Testcase 'muc_invite_members_only_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:17.900
+Testcase 'muc_invite_password_protected_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:17.900
+Testcase 'muc_invite_password_protected_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:18.111
+Testcase 'muc_voice_request_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:18.113
+Testcase 'muc_voice_request_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:18.327
+Testcase 'muc_change_role_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:18.328
+Testcase 'muc_change_role_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:18.549
+Testcase 'muc_kick_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:18.551
+Testcase 'muc_kick_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:18.760
+Testcase 'muc_change_affiliation_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:18.761
+Testcase 'muc_change_affiliation_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:18.992
+Testcase 'muc_destroy_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:18.993
+Testcase 'muc_destroy_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:19.206
+Testcase 'muc_vcard_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:19.207
+Testcase 'muc_vcard_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:19.421
+Testcase 'muc_nick_change_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:19.422
+Testcase 'muc_nick_change_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:19.632
+Testcase 'muc_config_title_desc_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:19.634
+Testcase 'muc_config_title_desc_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:19.846
+Testcase 'muc_config_public_list_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:19.848
+Testcase 'muc_config_public_list_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:20.061
+Testcase 'muc_config_password_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:20.062
+Testcase 'muc_config_password_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:20.277
+Testcase 'muc_config_whois_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:20.278
+Testcase 'muc_config_whois_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:20.495
+Testcase 'muc_config_members_only_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:20.497
+Testcase 'muc_config_members_only_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:20.714
+Testcase 'muc_config_moderated_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:20.715
+Testcase 'muc_config_moderated_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:20.928
+Testcase 'muc_config_private_messages_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:20.930
+Testcase 'muc_config_private_messages_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:21.151
+Testcase 'muc_config_query_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:21.152
+Testcase 'muc_config_query_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:21.366
+Testcase 'muc_config_allow_invites_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:21.368
+Testcase 'muc_config_allow_invites_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:21.579
+Testcase 'muc_config_visitor_status_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:21.584
+Testcase 'muc_config_visitor_status_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:21.798
+Testcase 'muc_config_allow_voice_requests_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:21.799
+Testcase 'muc_config_allow_voice_requests_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:22.012
+Testcase 'muc_config_voice_request_interval_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:22.014
+Testcase 'muc_config_voice_request_interval_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:27.234
+Testcase 'muc_config_visitor_nickchange_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:27.237
+Testcase 'muc_config_visitor_nickchange_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:27.450
+Testcase 'muc_join_conflict_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:27.452
+Testcase 'muc_join_conflict_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:27.719
+Testcase 'privacy_deny_bare_jid_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:27.720
+Testcase 'privacy_deny_bare_jid_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:28.345
+Testcase 'privacy_deny_full_jid_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:28.346
+Testcase 'privacy_deny_full_jid_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:28.988
+Testcase 'privacy_deny_server_bare_jid_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:28.989
+Testcase 'privacy_deny_server_bare_jid_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:29.595
+Testcase 'privacy_deny_server_full_jid_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:29.597
+Testcase 'privacy_deny_server_full_jid_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:30.218
+Testcase 'privacy_deny_group_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:30.220
+Testcase 'privacy_deny_group_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:30.830
+Testcase 'privacy_deny_sub_both_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:30.831
+Testcase 'privacy_deny_sub_both_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:31.426
+Testcase 'privacy_deny_sub_from_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:31.427
+Testcase 'privacy_deny_sub_from_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:32.019
+Testcase 'privacy_deny_sub_to_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:32.021
+Testcase 'privacy_deny_sub_to_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:32.608
+Testcase 'privacy_deny_sub_none_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:32.611
+Testcase 'privacy_deny_sub_none_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:33.199
+Testcase 'privacy_deny_all_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:33.201
+Testcase 'privacy_deny_all_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:33.775
+Testcase 'privacy_deny_offline_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:33.777
+Testcase 'privacy_deny_offline_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:34.091
+Testcase 'privacy_block_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:34.092
+Testcase 'privacy_block_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:34.375
+Testcase 'privacy_unblock_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:34.376
+Testcase 'privacy_unblock_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:34.588
+Testcase 'privacy_unblock_all_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:34.589
+Testcase 'privacy_unblock_all_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:34.860
+Testcase 'pubsub_publish_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:34.862
+Testcase 'pubsub_publish_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:35.066
+Testcase 'pubsub_subscriptions_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:35.067
+Testcase 'pubsub_subscriptions_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:35.291
+Testcase 'pubsub_affiliations_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:35.291
+Testcase 'pubsub_affiliations_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:37.127
+Testcase 'pubsub_authorize_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:37.129
+Testcase 'pubsub_authorize_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:37.401
+Testcase 'roster_subscribe_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:37.403
+Testcase 'roster_subscribe_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:46.558
+Testcase 'offline_flex_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:46.560
+Testcase 'offline_flex_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:46.989
+Testcase 'offline_send_all_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:22:46.992
+Testcase 'offline_send_all_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:01.019
+Testcase 'offline_from_mam_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:01.020
+Testcase 'offline_from_mam_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:15.148
+Testcase 'offline_mucsub_mam_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:15.150
+Testcase 'offline_mucsub_mam_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:15.530
+Testcase 'mam_archived_and_stanza_id_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:15.532
+Testcase 'mam_archived_and_stanza_id_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:15.739
+Testcase 'mam_query_all_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:15.741
+Testcase 'mam_query_all_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:16.020
+Testcase 'mam_query_with_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:16.022
+Testcase 'mam_query_with_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:16.275
+Testcase 'mam_query_rsm_max_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:16.276
+Testcase 'mam_query_rsm_max_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:16.598
+Testcase 'mam_query_rsm_after_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:16.599
+Testcase 'mam_query_rsm_after_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:16.891
+Testcase 'mam_query_rsm_before_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:16.893
+Testcase 'mam_query_rsm_before_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:17.179
+Testcase 'mam_muc_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:17.181
+Testcase 'mam_muc_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:17.433
+Testcase 'mam_mucsub_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:17.435
+Testcase 'mam_mucsub_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:17.671
+Testcase 'mam_mucsub_from_muc_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:17.673
+Testcase 'mam_mucsub_from_muc_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:17.908
+Testcase 'mam_mucsub_from_muc_non_persistent_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:17.909
+Testcase 'mam_mucsub_from_muc_non_persistent_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:18.194
+Testcase 'announce_set_motd_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:18.195
+Testcase 'announce_set_motd_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:18.453
+Testcase 'csi_all_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:18.456
+Testcase 'csi_all_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:18.722
+Testcase 'push_sm_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:18.724
+Testcase 'push_sm_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:26.935
+Testcase 'push_offline_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:26.937
+Testcase 'push_offline_slave' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:27.243
+Testcase 'push_mam_master' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:27.244
+Testcase 'push_mam_slave' starting
+
+Testing lib.ejabberd: *** SKIPPED {ejabberd_SUITE,init_per_group} ***
+Testing lib.ejabberd: *** SKIPPED {ejabberd_SUITE,init_per_group} ***
+Testing lib.ejabberd: *** SKIPPED {ejabberd_SUITE,init_per_group} ***
+Testing lib.ejabberd: *** SKIPPED {ejabberd_SUITE,init_per_group} ***
+Testing lib.ejabberd: *** SKIPPED {ejabberd_SUITE,init_per_group} ***
+Testing lib.ejabberd: *** SKIPPED {ejabberd_SUITE,init_per_group} ***
+
+----------------------------------------------------
+2021-12-10 12:23:29.962
+Testcase 'test_connect_unexpected_xml' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:29.965
+Testcase 'test_connect_unknown_ns' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:29.967
+Testcase 'test_connect_bad_ns_stream' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:29.968
+Testcase 'test_connect' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:29.970
+Testcase 'test_connect_bad_xml' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:29.971
+Testcase 'test_auth_fail' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:29.972
+Testcase 'test_connect_bad_xmlns' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:29.976
+Testcase 'test_connect_missing_to' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:29.977
+Testcase 'test_auth' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:30.103
+Testcase 'test_missing_from' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:30.147
+Testcase 'test_missing_to' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:30.181
+Testcase 'test_invalid_from' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:30.214
+Testcase 'test_component_send' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:30.247
+Testcase 'bad_nonza' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:30.280
+Testcase 'codec_failure' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:30.452
+Testcase 'test_connect_s2s_unauthenticated_iq' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:30.453
+Testcase 'test_connect' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:30.454
+Testcase 'test_connect_bad_xml' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:30.456
+Testcase 'test_auth_starttls' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:30.458
+Testcase 'test_connect_s2s_starttls_required' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:30.459
+Testcase 'test_connect_unexpected_xml' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:30.460
+Testcase 'test_connect_bad_xmlns' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:30.462
+Testcase 'test_connect_unknown_ns' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:30.465
+Testcase 'test_starttls' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:30.465
+Testcase 'test_connect_bad_ns_stream' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:30.595
+Testcase 'test_missing_from' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:30.638
+Testcase 'test_missing_to' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:30.677
+Testcase 'test_invalid_from' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:30.718
+Testcase 'bad_nonza' starting
+
+
+----------------------------------------------------
+2021-12-10 12:23:30.757
 Testcase 'codec_failure' starting
 
 Testing lib.ejabberd: TEST COMPLETE, 411 ok, 0 failed, 1175 skipped of 1586 test cases
