@@ -1,0 +1,4446 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test ejabberd_SUITE:muc_service_subscriptions result</title>
+<meta http-equiv="cache-control" content="no-cache"></meta>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+<link rel="stylesheet" href="../../ct_default.css" type="text/css"></link>
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="ejabberd_suite.src.html#muc_service_subscriptions-1">ejabberd_SUITE:muc_service_subscriptions/1</a> (click for source code)
+
+=== Config value:
+
+    [{event_relay,&lt;0.32609.0&gt;},
+     {watchdog,&lt;0.32608.0&gt;},
+     {server,&lt;&lt;"mnesia.localhost"&gt;&gt;},
+     {server_port,5222},
+     {server_host,"localhost"},
+     {component_port,5270},
+     {s2s_port,5269},
+     {user,&lt;&lt;"test_single!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;},
+     {nick,&lt;&lt;"nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {master_nick,&lt;&lt;"master_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {slave_nick,&lt;&lt;"slave_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {room_subject,&lt;&lt;"hello, world!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {certfile,"/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/test/ejabberd_SUITE_data/cert.pem"},
+     {persistent_room,true},
+     {anonymous,false},
+     {type,client},
+     {xmlns,&lt;&lt;"jabber:client"&gt;&gt;},
+     {ns_stream,&lt;&lt;"http://etherx.jabber.org/streams"&gt;&gt;},
+     {stream_version,{1,0}},
+     {stream_id,&lt;&lt;&gt;&gt;},
+     {stream_from,&lt;&lt;&gt;&gt;},
+     {db_xmlns,&lt;&lt;&gt;&gt;},
+     {mechs,[]},
+     {rosterver,false},
+     {lang,&lt;&lt;"en"&gt;&gt;},
+     {base_dir,"/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd"},
+     {receiver,undefined},
+     {pubsub_node,&lt;&lt;"node!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {pubsub_node_title,&lt;&lt;"title!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {resource,&lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {master_resource,&lt;&lt;"master_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {slave_resource,&lt;&lt;"slave_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {password,&lt;&lt;"password!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {backends,[mnesia]},
+     {tc_logfile,"/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.09.24/lib.ejabberd.logs/run.2021-12-09_17.09.25/ejabberd_suite.muc_service_subscriptions.6915.html"},
+     {tc_group_properties,[{name,muc_single},sequence]},
+     {tc_group_path,[[{name,single_user},sequence],[{name,mnesia},sequence]]},
+     {data_dir,"/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/test/ejabberd_SUITE_data/"},
+     {priv_dir,"/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.09.24/lib.ejabberd.logs/run.2021-12-09_17.09.25/log_private/"}]
+
+=== Current directory is "/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.09.24"
+
+=== Started at 2021-12-09 17:10:04
+
+<br />
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.813 ***</b>
+SENT:
+<stream:stream version='1.0'
+               xml:lang='en'
+               xmlns:stream='http://etherx.jabber.org/streams'
+               to='mnesia.localhost'
+               xmlns='jabber:client'/>
+
+#stream_start{from = undefined,
+              to = #jid{user = <<>>,server = <<"mnesia.localhost">>,
+                        resource = <<>>,luser = <<>>,
+                        lserver = <<"mnesia.localhost">>,lresource = <<>>},
+              id = <<>>,
+              version = {1,0},
+              xmlns = <<"jabber:client">>,
+              stream_xmlns = <<"http://etherx.jabber.org/streams">>,
+              db_xmlns = <<>>,lang = <<"en">>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:10:04.813 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:10:04.813547 ===
+(&lt;0.32750.0&gt;) Accepted connection 127.0.0.1:36602 -&gt; 127.0.0.1:5222
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.814 ***</b>
+RECV:
+<stream:stream xmlns:stream='http://etherx.jabber.org/streams'
+               xmlns='jabber:client'
+               id='17185187077726994024'
+               version='1.0'
+               xml:lang='en'
+               from='mnesia.localhost'/>
+
+#stream_start{from = #jid{user = <<>>,server = <<"mnesia.localhost">>,
+                          resource = <<>>,luser = <<>>,
+                          lserver = <<"mnesia.localhost">>,lresource = <<>>},
+              to = undefined,id = <<"17185187077726994024">>,
+              version = {1,0},
+              xmlns = <<"jabber:client">>,
+              stream_xmlns = <<"http://etherx.jabber.org/streams">>,
+              db_xmlns = <<>>,lang = <<"en">>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.814 ***</b>
+RECV:
+<stream:features>
+  <mechanisms xmlns='urn:ietf:params:xml:ns:xmpp-sasl'>
+    <mechanism>DIGEST-MD5</mechanism>
+    <mechanism>PLAIN</mechanism>
+    <mechanism>SCRAM-SHA-512</mechanism>
+    <mechanism>SCRAM-SHA-256</mechanism>
+    <mechanism>SCRAM-SHA-1</mechanism>
+    <mechanism>X-OAUTH2</mechanism>
+  </mechanisms>
+  <starttls xmlns='urn:ietf:params:xml:ns:xmpp-tls'/>
+  <register xmlns='http://jabber.org/features/iq-register'/>
+  <auth xmlns='http://jabber.org/features/iq-auth'/>
+</stream:features>
+
+#stream_features{
+    sub_els =
+        [#sasl_mechanisms{
+             list =
+                 [<<"DIGEST-MD5">>,<<"PLAIN">>,<<"SCRAM-SHA-512">>,
+                  <<"SCRAM-SHA-256">>,<<"SCRAM-SHA-1">>,<<"X-OAUTH2">>]},
+         #starttls{required = false},
+         #feature_register{},
+         #legacy_auth_feature{}]}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.815 ***</b>
+SENT:
+<auth mechanism='PLAIN'
+      xmlns='urn:ietf:params:xml:ns:xmpp-sasl'>dGVzdF9zaW5nbGUhIyQlXiooKWB+Ky07Xz1bXXt9fFxAbW5lc2lhLmxvY2FsaG9zdAB0ZXN0X3NpbmdsZSEjJCVeKigpYH4rLTtfPVtde318XABwYXNzd29yZCFAIyQlXiYqKCknImB+PD4rLS87Ol89W117fXxc</auth>
+
+#sasl_auth{mechanism = <<"PLAIN">>,
+           text = <<116,101,115,116,95,115,105,110,103,108,101,33,35,36,37,94,
+                    42,40,41,96,126,43,45,59,95,61,91,93,123,125,124,92,64,
+                    109,110,101,115,105,97,46,108,111,99,97,108,104,111,115,
+                    116,0,116,101,115,116,95,115,105,110,103,108,101,33,35,36,
+                    37,94,42,40,41,96,126,43,45,59,95,61,91,93,123,125,124,92,
+                    0,112,97,115,115,119,111,114,100,33,64,35,36,37,94,38,42,
+                    40,41,39,34,96,126,60,62,43,45,47,59,58,95,61,91,93,123,
+                    125,124,92>>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.815 ***</b>
+RECV:
+<success xmlns='urn:ietf:params:xml:ns:xmpp-sasl'/>
+
+#sasl_success{text = <<>>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:10:04.815 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:10:04.815530 ===
+(tcp|&lt;0.32750.0&gt;) Accepted c2s PLAIN authentication for test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost by mnesia backend from 127.0.0.1
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.816 ***</b>
+SENT:
+<stream:stream version='1.0'
+               xml:lang='en'
+               xmlns:stream='http://etherx.jabber.org/streams'
+               to='mnesia.localhost'
+               xmlns='jabber:client'/>
+
+#stream_start{from = undefined,
+              to = #jid{user = <<>>,server = <<"mnesia.localhost">>,
+                        resource = <<>>,luser = <<>>,
+                        lserver = <<"mnesia.localhost">>,lresource = <<>>},
+              id = <<>>,
+              version = {1,0},
+              xmlns = <<"jabber:client">>,
+              stream_xmlns = <<"http://etherx.jabber.org/streams">>,
+              db_xmlns = <<>>,lang = <<"en">>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.817 ***</b>
+RECV:
+<stream:stream xmlns:stream='http://etherx.jabber.org/streams'
+               xmlns='jabber:client'
+               id='14929445309626839019'
+               version='1.0'
+               xml:lang='en'
+               from='mnesia.localhost'/>
+
+#stream_start{from = #jid{user = <<>>,server = <<"mnesia.localhost">>,
+                          resource = <<>>,luser = <<>>,
+                          lserver = <<"mnesia.localhost">>,lresource = <<>>},
+              to = undefined,id = <<"14929445309626839019">>,
+              version = {1,0},
+              xmlns = <<"jabber:client">>,
+              stream_xmlns = <<"http://etherx.jabber.org/streams">>,
+              db_xmlns = <<>>,lang = <<"en">>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.817 ***</b>
+RECV:
+<stream:features>
+  <compression xmlns='http://jabber.org/features/compress'>
+    <method>zlib</method>
+  </compression>
+  <bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'/>
+  <session xmlns='urn:ietf:params:xml:ns:xmpp-session'>
+    <optional/>
+  </session>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='9dw1fKaE0crSfkc9KTtBadLPkJA='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+  <sm xmlns='urn:xmpp:sm:2'/>
+  <sm xmlns='urn:xmpp:sm:3'/>
+  <ver xmlns='urn:xmpp:features:rosterver'/>
+  <csi xmlns='urn:xmpp:csi:0'/>
+</stream:features>
+
+#stream_features{
+    sub_els =
+        [#compression{methods = [<<"zlib">>]},
+         #bind{jid = undefined,resource = <<>>},
+         #xmpp_session{optional = true},
+         #caps{
+             node = <<"http://www.process-one.net/en/ejabberd/">>,
+             version = <<"9dw1fKaE0crSfkc9KTtBadLPkJA=">>,hash = <<"sha-1">>,
+             exts = []},
+         #feature_sm{xmlns = <<"urn:xmpp:sm:2">>},
+         #feature_sm{xmlns = <<"urn:xmpp:sm:3">>},
+         #rosterver_feature{},
+         #feature_csi{}]}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.817 ***</b>
+SENT:
+<iq type='set'
+    id='14481709824894963749'
+    xmlns='jabber:client'>
+  <bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'>
+    <resource>resource!@#$%^&*()'"`~<>+-/;:_=[]{}|\</resource>
+  </bind>
+</iq>
+
+#iq{id = <<"14481709824894963749">>,type = set,lang = <<>>,from = undefined,
+    to = undefined,
+    sub_els = [#bind{jid = undefined,
+                     resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:10:04.818 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:10:04.818027 ===
+(tcp|&lt;0.32750.0&gt;) Opened c2s session for test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()'"`~&lt;&gt;+-/;:_=[]{}|\
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.818 ***</b>
+RECV:
+<iq type='result'
+    id='14481709824894963749'>
+  <bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'>
+    <jid>test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&*()'"`~<>+-/;:_=[]{}|\</jid>
+  </bind>
+</iq>
+
+#iq{id = <<"14481709824894963749">>,type = result,lang = <<>>,
+    from = undefined,to = undefined,
+    sub_els =
+        [#bind{
+             jid =
+                 #jid{
+                     user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                     server = <<"mnesia.localhost">>,
+                     resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                     lserver = <<"mnesia.localhost">>,
+                     lresource =
+                         <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+             resource = <<>>}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.819 ***</b>
+SENT:
+<presence to='1@conference.mnesia.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='330990944466458704'
+          xmlns='jabber:client'>
+  <x xmlns='http://jabber.org/protocol/muc'/>
+</presence>
+
+#presence{id = <<"330990944466458704">>,type = available,lang = <<>>,
+          from = undefined,
+          to = #jid{user = <<"1">>,server = <<"conference.mnesia.localhost">>,
+                    resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"1">>,
+                    lserver = <<"conference.mnesia.localhost">>,
+                    lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#muc{history = undefined,password = undefined}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:10:04.820 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:10:04.820326 ===
+Created MUC room 1@conference.mnesia.localhost by test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()'"`~&lt;&gt;+-/;:_=[]{}|\
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.821 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='1@conference.mnesia.localhost'
+          id='10700863105478596239'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='sBcxm+YVx0VXfn6k9QZimWgspjA='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"10700863105478596239">>,type = available,lang = <<>>,
+          from = #jid{user = <<"1">>,
+                      server = <<"conference.mnesia.localhost">>,
+                      resource = <<>>,luser = <<"1">>,
+                      lserver = <<"conference.mnesia.localhost">>,
+                      lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"mnesia.localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"mnesia.localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"sBcxm+YVx0VXfn6k9QZimWgspjA=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.822 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='1@conference.mnesia.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='330990944466458704'>
+  <x xmlns='vcard-temp:x:update'>
+    <photo/>
+  </x>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <item jid='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          role='moderator'
+          affiliation='owner'/>
+    <status code='201'/>
+    <status code='110'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"330990944466458704">>,type = available,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"1">>,server = <<"conference.mnesia.localhost">>,
+            resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"1">>,lserver = <<"conference.mnesia.localhost">>,
+            lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#vcard_xupdate{hash = <<>>},
+         #muc_user{
+             decline = undefined,destroy = undefined,invites = [],
+             items =
+                 [#muc_item{
+                      actor = undefined,continue = undefined,reason = <<>>,
+                      affiliation = owner,role = moderator,
+                      jid =
+                          #jid{
+                              user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              server = <<"mnesia.localhost">>,
+                              resource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              lserver = <<"mnesia.localhost">>,
+                              lresource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+                      nick = <<>>}],
+             status_codes = "Én",password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.822 ***</b>
+RECV:
+<message to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='1@conference.mnesia.localhost'
+         type='groupchat'>
+  <subject/>
+</message>
+
+#message{id = <<>>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"1">>,
+                     server = <<"conference.mnesia.localhost">>,
+                     resource = <<>>,luser = <<"1">>,
+                     lserver = <<"conference.mnesia.localhost">>,
+                     lresource = <<>>},
+         to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"mnesia.localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"mnesia.localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [#text{lang = <<>>,data = <<>>}],
+         body = [],thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.822 ***</b>
+SENT:
+<iq to='1@conference.mnesia.localhost'
+    type='set'
+    id='15087705384833595664'
+    xmlns='jabber:client'>
+  <query xmlns='http://jabber.org/protocol/muc#owner'>
+    <x type='submit'
+       xmlns='jabber:x:data'>
+      <field var='FORM_TYPE'
+             type='hidden'>
+        <value>http://jabber.org/protocol/muc#roomconfig</value>
+      </field>
+      <field var='muc#roomconfig_persistentroom'
+             type='boolean'
+             label='Make room persistent'>
+        <value>1</value>
+      </field>
+    </x>
+  </query>
+</iq>
+
+#iq{id = <<"15087705384833595664">>,type = set,lang = <<>>,from = undefined,
+    to =
+        #jid{
+            user = <<"1">>,server = <<"conference.mnesia.localhost">>,
+            resource = <<>>,luser = <<"1">>,
+            lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    sub_els =
+        [#muc_owner{
+             destroy = undefined,
+             config =
+                 #xdata{
+                     type = submit,instructions = [],title = undefined,
+                     reported = undefined,items = [],
+                     fields =
+                         [#xdata_field{
+                              label = <<>>,type = hidden,
+                              var = <<"FORM_TYPE">>,required = false,
+                              desc = <<>>,
+                              values =
+                                  [<<"http://jabber.org/protocol/muc#roomconfig">>],
+                              options = [],sub_els = []},
+                          #xdata_field{
+                              label = <<"Make room persistent">>,
+                              type = boolean,
+                              var = <<"muc#roomconfig_persistentroom">>,
+                              required = false,desc = <<>>,
+                              values = [<<"1">>],
+                              options = [],sub_els = []}]},
+             items = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.823 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='1@conference.mnesia.localhost'
+          id='13205760141045263325'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='bE1N4cD/NmqR+hD6al2WwO+auxQ='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"13205760141045263325">>,type = available,lang = <<>>,
+          from = #jid{user = <<"1">>,
+                      server = <<"conference.mnesia.localhost">>,
+                      resource = <<>>,luser = <<"1">>,
+                      lserver = <<"conference.mnesia.localhost">>,
+                      lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"mnesia.localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"mnesia.localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"bE1N4cD/NmqR+hD6al2WwO+auxQ=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.824 ***</b>
+RECV:
+<message to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='1@conference.mnesia.localhost'
+         type='groupchat'
+         id='12735657054911106995'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <status code='104'/>
+  </x>
+</message>
+
+#message{id = <<"12735657054911106995">>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"1">>,
+                     server = <<"conference.mnesia.localhost">>,
+                     resource = <<>>,luser = <<"1">>,
+                     lserver = <<"conference.mnesia.localhost">>,
+                     lresource = <<>>},
+         to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"mnesia.localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"mnesia.localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#muc_user{decline = undefined,destroy = undefined,
+                              invites = [],items = [],status_codes = "h",
+                              password = undefined}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.824 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='1@conference.mnesia.localhost'
+    type='result'
+    id='15087705384833595664'/>
+
+#iq{id = <<"15087705384833595664">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"1">>,server = <<"conference.mnesia.localhost">>,
+                resource = <<>>,luser = <<"1">>,
+                lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.824 ***</b>
+SENT:
+<iq to='1@conference.mnesia.localhost'
+    type='set'
+    id='4819237969578280636'
+    xmlns='jabber:client'>
+  <query xmlns='http://jabber.org/protocol/muc#owner'>
+    <x type='submit'
+       xmlns='jabber:x:data'>
+      <field var='FORM_TYPE'
+             type='hidden'>
+        <value>http://jabber.org/protocol/muc#roomconfig</value>
+      </field>
+      <field var='allow_subscription'
+             type='boolean'
+             label='Allow subscription'>
+        <value>1</value>
+      </field>
+    </x>
+  </query>
+</iq>
+
+#iq{id = <<"4819237969578280636">>,type = set,lang = <<>>,from = undefined,
+    to =
+        #jid{
+            user = <<"1">>,server = <<"conference.mnesia.localhost">>,
+            resource = <<>>,luser = <<"1">>,
+            lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    sub_els =
+        [#muc_owner{
+             destroy = undefined,
+             config =
+                 #xdata{
+                     type = submit,instructions = [],title = undefined,
+                     reported = undefined,items = [],
+                     fields =
+                         [#xdata_field{
+                              label = <<>>,type = hidden,
+                              var = <<"FORM_TYPE">>,required = false,
+                              desc = <<>>,
+                              values =
+                                  [<<"http://jabber.org/protocol/muc#roomconfig">>],
+                              options = [],sub_els = []},
+                          #xdata_field{
+                              label = <<"Allow subscription">>,type = boolean,
+                              var = <<"allow_subscription">>,required = false,
+                              desc = <<>>,
+                              values = [<<"1">>],
+                              options = [],sub_els = []}]},
+             items = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.825 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='1@conference.mnesia.localhost'
+          id='21360242905295351'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='yNsSz2bcGtC0YP3IY4b2dd/nynM='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"21360242905295351">>,type = available,lang = <<>>,
+          from = #jid{user = <<"1">>,
+                      server = <<"conference.mnesia.localhost">>,
+                      resource = <<>>,luser = <<"1">>,
+                      lserver = <<"conference.mnesia.localhost">>,
+                      lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"mnesia.localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"mnesia.localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"yNsSz2bcGtC0YP3IY4b2dd/nynM=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.826 ***</b>
+RECV:
+<message to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='1@conference.mnesia.localhost'
+         type='groupchat'
+         id='13153527219667572547'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <status code='104'/>
+  </x>
+</message>
+
+#message{id = <<"13153527219667572547">>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"1">>,
+                     server = <<"conference.mnesia.localhost">>,
+                     resource = <<>>,luser = <<"1">>,
+                     lserver = <<"conference.mnesia.localhost">>,
+                     lresource = <<>>},
+         to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"mnesia.localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"mnesia.localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#muc_user{decline = undefined,destroy = undefined,
+                              invites = [],items = [],status_codes = "h",
+                              password = undefined}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.826 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='1@conference.mnesia.localhost'
+    type='result'
+    id='4819237969578280636'/>
+
+#iq{id = <<"4819237969578280636">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"1">>,server = <<"conference.mnesia.localhost">>,
+                resource = <<>>,luser = <<"1">>,
+                lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.827 ***</b>
+SENT:
+<iq to='1@conference.mnesia.localhost'
+    type='set'
+    id='9055620426447484027'
+    xmlns='jabber:client'>
+  <subscribe nick='nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+             xmlns='urn:xmpp:mucsub:0'/>
+</iq>
+
+#iq{id = <<"9055620426447484027">>,type = set,lang = <<>>,from = undefined,
+    to = #jid{user = <<"1">>,server = <<"conference.mnesia.localhost">>,
+              resource = <<>>,luser = <<"1">>,
+              lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    sub_els = [#muc_subscribe{nick = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              password = <<>>,jid = undefined,events = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.828 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='1@conference.mnesia.localhost'
+    type='result'
+    id='9055620426447484027'>
+  <subscribe xmlns='urn:xmpp:mucsub:0'
+             nick='nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'/>
+</iq>
+
+#iq{id = <<"9055620426447484027">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"1">>,server = <<"conference.mnesia.localhost">>,
+                resource = <<>>,luser = <<"1">>,
+                lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [#muc_subscribe{nick = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              password = <<>>,jid = undefined,events = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.828 ***</b>
+SENT:
+<presence to='2@conference.mnesia.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='1231860666080074625'
+          xmlns='jabber:client'>
+  <x xmlns='http://jabber.org/protocol/muc'/>
+</presence>
+
+#presence{id = <<"1231860666080074625">>,type = available,lang = <<>>,
+          from = undefined,
+          to = #jid{user = <<"2">>,server = <<"conference.mnesia.localhost">>,
+                    resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"2">>,
+                    lserver = <<"conference.mnesia.localhost">>,
+                    lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#muc{history = undefined,password = undefined}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:10:04.828 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:10:04.828833 ===
+Created MUC room 2@conference.mnesia.localhost by test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()'"`~&lt;&gt;+-/;:_=[]{}|\
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.829 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='2@conference.mnesia.localhost'
+          id='8728608368385151145'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='sBcxm+YVx0VXfn6k9QZimWgspjA='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"8728608368385151145">>,type = available,lang = <<>>,
+          from = #jid{user = <<"2">>,
+                      server = <<"conference.mnesia.localhost">>,
+                      resource = <<>>,luser = <<"2">>,
+                      lserver = <<"conference.mnesia.localhost">>,
+                      lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"mnesia.localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"mnesia.localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"sBcxm+YVx0VXfn6k9QZimWgspjA=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.830 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='2@conference.mnesia.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='1231860666080074625'>
+  <x xmlns='vcard-temp:x:update'>
+    <photo/>
+  </x>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <item jid='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          role='moderator'
+          affiliation='owner'/>
+    <status code='201'/>
+    <status code='110'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"1231860666080074625">>,type = available,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"2">>,server = <<"conference.mnesia.localhost">>,
+            resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"2">>,lserver = <<"conference.mnesia.localhost">>,
+            lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#vcard_xupdate{hash = <<>>},
+         #muc_user{
+             decline = undefined,destroy = undefined,invites = [],
+             items =
+                 [#muc_item{
+                      actor = undefined,continue = undefined,reason = <<>>,
+                      affiliation = owner,role = moderator,
+                      jid =
+                          #jid{
+                              user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              server = <<"mnesia.localhost">>,
+                              resource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              lserver = <<"mnesia.localhost">>,
+                              lresource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+                      nick = <<>>}],
+             status_codes = "Én",password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.830 ***</b>
+RECV:
+<message to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='2@conference.mnesia.localhost'
+         type='groupchat'>
+  <subject/>
+</message>
+
+#message{id = <<>>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"2">>,
+                     server = <<"conference.mnesia.localhost">>,
+                     resource = <<>>,luser = <<"2">>,
+                     lserver = <<"conference.mnesia.localhost">>,
+                     lresource = <<>>},
+         to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"mnesia.localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"mnesia.localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [#text{lang = <<>>,data = <<>>}],
+         body = [],thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.830 ***</b>
+SENT:
+<iq to='2@conference.mnesia.localhost'
+    type='set'
+    id='11537560751085418936'
+    xmlns='jabber:client'>
+  <query xmlns='http://jabber.org/protocol/muc#owner'>
+    <x type='submit'
+       xmlns='jabber:x:data'>
+      <field var='FORM_TYPE'
+             type='hidden'>
+        <value>http://jabber.org/protocol/muc#roomconfig</value>
+      </field>
+      <field var='muc#roomconfig_persistentroom'
+             type='boolean'
+             label='Make room persistent'>
+        <value>1</value>
+      </field>
+    </x>
+  </query>
+</iq>
+
+#iq{id = <<"11537560751085418936">>,type = set,lang = <<>>,from = undefined,
+    to =
+        #jid{
+            user = <<"2">>,server = <<"conference.mnesia.localhost">>,
+            resource = <<>>,luser = <<"2">>,
+            lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    sub_els =
+        [#muc_owner{
+             destroy = undefined,
+             config =
+                 #xdata{
+                     type = submit,instructions = [],title = undefined,
+                     reported = undefined,items = [],
+                     fields =
+                         [#xdata_field{
+                              label = <<>>,type = hidden,
+                              var = <<"FORM_TYPE">>,required = false,
+                              desc = <<>>,
+                              values =
+                                  [<<"http://jabber.org/protocol/muc#roomconfig">>],
+                              options = [],sub_els = []},
+                          #xdata_field{
+                              label = <<"Make room persistent">>,
+                              type = boolean,
+                              var = <<"muc#roomconfig_persistentroom">>,
+                              required = false,desc = <<>>,
+                              values = [<<"1">>],
+                              options = [],sub_els = []}]},
+             items = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.831 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='2@conference.mnesia.localhost'
+          id='14403005367918222415'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='bE1N4cD/NmqR+hD6al2WwO+auxQ='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"14403005367918222415">>,type = available,lang = <<>>,
+          from = #jid{user = <<"2">>,
+                      server = <<"conference.mnesia.localhost">>,
+                      resource = <<>>,luser = <<"2">>,
+                      lserver = <<"conference.mnesia.localhost">>,
+                      lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"mnesia.localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"mnesia.localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"bE1N4cD/NmqR+hD6al2WwO+auxQ=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.832 ***</b>
+RECV:
+<message to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='2@conference.mnesia.localhost'
+         type='groupchat'
+         id='14800632983848397582'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <status code='104'/>
+  </x>
+</message>
+
+#message{id = <<"14800632983848397582">>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"2">>,
+                     server = <<"conference.mnesia.localhost">>,
+                     resource = <<>>,luser = <<"2">>,
+                     lserver = <<"conference.mnesia.localhost">>,
+                     lresource = <<>>},
+         to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"mnesia.localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"mnesia.localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#muc_user{decline = undefined,destroy = undefined,
+                              invites = [],items = [],status_codes = "h",
+                              password = undefined}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.832 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='2@conference.mnesia.localhost'
+    type='result'
+    id='11537560751085418936'/>
+
+#iq{id = <<"11537560751085418936">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"2">>,server = <<"conference.mnesia.localhost">>,
+                resource = <<>>,luser = <<"2">>,
+                lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.832 ***</b>
+SENT:
+<iq to='2@conference.mnesia.localhost'
+    type='set'
+    id='14900682367107175086'
+    xmlns='jabber:client'>
+  <query xmlns='http://jabber.org/protocol/muc#owner'>
+    <x type='submit'
+       xmlns='jabber:x:data'>
+      <field var='FORM_TYPE'
+             type='hidden'>
+        <value>http://jabber.org/protocol/muc#roomconfig</value>
+      </field>
+      <field var='allow_subscription'
+             type='boolean'
+             label='Allow subscription'>
+        <value>1</value>
+      </field>
+    </x>
+  </query>
+</iq>
+
+#iq{id = <<"14900682367107175086">>,type = set,lang = <<>>,from = undefined,
+    to =
+        #jid{
+            user = <<"2">>,server = <<"conference.mnesia.localhost">>,
+            resource = <<>>,luser = <<"2">>,
+            lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    sub_els =
+        [#muc_owner{
+             destroy = undefined,
+             config =
+                 #xdata{
+                     type = submit,instructions = [],title = undefined,
+                     reported = undefined,items = [],
+                     fields =
+                         [#xdata_field{
+                              label = <<>>,type = hidden,
+                              var = <<"FORM_TYPE">>,required = false,
+                              desc = <<>>,
+                              values =
+                                  [<<"http://jabber.org/protocol/muc#roomconfig">>],
+                              options = [],sub_els = []},
+                          #xdata_field{
+                              label = <<"Allow subscription">>,type = boolean,
+                              var = <<"allow_subscription">>,required = false,
+                              desc = <<>>,
+                              values = [<<"1">>],
+                              options = [],sub_els = []}]},
+             items = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.834 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='2@conference.mnesia.localhost'
+          id='6441076766643868461'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='yNsSz2bcGtC0YP3IY4b2dd/nynM='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"6441076766643868461">>,type = available,lang = <<>>,
+          from = #jid{user = <<"2">>,
+                      server = <<"conference.mnesia.localhost">>,
+                      resource = <<>>,luser = <<"2">>,
+                      lserver = <<"conference.mnesia.localhost">>,
+                      lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"mnesia.localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"mnesia.localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"yNsSz2bcGtC0YP3IY4b2dd/nynM=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.834 ***</b>
+RECV:
+<message to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='2@conference.mnesia.localhost'
+         type='groupchat'
+         id='2832907982779668116'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <status code='104'/>
+  </x>
+</message>
+
+#message{id = <<"2832907982779668116">>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"2">>,
+                     server = <<"conference.mnesia.localhost">>,
+                     resource = <<>>,luser = <<"2">>,
+                     lserver = <<"conference.mnesia.localhost">>,
+                     lresource = <<>>},
+         to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"mnesia.localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"mnesia.localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#muc_user{decline = undefined,destroy = undefined,
+                              invites = [],items = [],status_codes = "h",
+                              password = undefined}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.834 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='2@conference.mnesia.localhost'
+    type='result'
+    id='14900682367107175086'/>
+
+#iq{id = <<"14900682367107175086">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"2">>,server = <<"conference.mnesia.localhost">>,
+                resource = <<>>,luser = <<"2">>,
+                lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.834 ***</b>
+SENT:
+<iq to='2@conference.mnesia.localhost'
+    type='set'
+    id='6434296514436415627'
+    xmlns='jabber:client'>
+  <subscribe nick='nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+             xmlns='urn:xmpp:mucsub:0'/>
+</iq>
+
+#iq{id = <<"6434296514436415627">>,type = set,lang = <<>>,from = undefined,
+    to = #jid{user = <<"2">>,server = <<"conference.mnesia.localhost">>,
+              resource = <<>>,luser = <<"2">>,
+              lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    sub_els = [#muc_subscribe{nick = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              password = <<>>,jid = undefined,events = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.835 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='2@conference.mnesia.localhost'
+    type='result'
+    id='6434296514436415627'>
+  <subscribe xmlns='urn:xmpp:mucsub:0'
+             nick='nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'/>
+</iq>
+
+#iq{id = <<"6434296514436415627">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"2">>,server = <<"conference.mnesia.localhost">>,
+                resource = <<>>,luser = <<"2">>,
+                lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [#muc_subscribe{nick = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              password = <<>>,jid = undefined,events = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.836 ***</b>
+SENT:
+<presence to='3@conference.mnesia.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='17820094612374636927'
+          xmlns='jabber:client'>
+  <x xmlns='http://jabber.org/protocol/muc'/>
+</presence>
+
+#presence{id = <<"17820094612374636927">>,type = available,lang = <<>>,
+          from = undefined,
+          to = #jid{user = <<"3">>,server = <<"conference.mnesia.localhost">>,
+                    resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"3">>,
+                    lserver = <<"conference.mnesia.localhost">>,
+                    lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#muc{history = undefined,password = undefined}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:10:04.836 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:10:04.836504 ===
+Created MUC room 3@conference.mnesia.localhost by test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()'"`~&lt;&gt;+-/;:_=[]{}|\
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.837 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='3@conference.mnesia.localhost'
+          id='12901027822171028248'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='sBcxm+YVx0VXfn6k9QZimWgspjA='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"12901027822171028248">>,type = available,lang = <<>>,
+          from = #jid{user = <<"3">>,
+                      server = <<"conference.mnesia.localhost">>,
+                      resource = <<>>,luser = <<"3">>,
+                      lserver = <<"conference.mnesia.localhost">>,
+                      lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"mnesia.localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"mnesia.localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"sBcxm+YVx0VXfn6k9QZimWgspjA=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.838 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='3@conference.mnesia.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='17820094612374636927'>
+  <x xmlns='vcard-temp:x:update'>
+    <photo/>
+  </x>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <item jid='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          role='moderator'
+          affiliation='owner'/>
+    <status code='201'/>
+    <status code='110'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"17820094612374636927">>,type = available,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"3">>,server = <<"conference.mnesia.localhost">>,
+            resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"3">>,lserver = <<"conference.mnesia.localhost">>,
+            lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#vcard_xupdate{hash = <<>>},
+         #muc_user{
+             decline = undefined,destroy = undefined,invites = [],
+             items =
+                 [#muc_item{
+                      actor = undefined,continue = undefined,reason = <<>>,
+                      affiliation = owner,role = moderator,
+                      jid =
+                          #jid{
+                              user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              server = <<"mnesia.localhost">>,
+                              resource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              lserver = <<"mnesia.localhost">>,
+                              lresource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+                      nick = <<>>}],
+             status_codes = "Én",password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.838 ***</b>
+RECV:
+<message to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='3@conference.mnesia.localhost'
+         type='groupchat'>
+  <subject/>
+</message>
+
+#message{id = <<>>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"3">>,
+                     server = <<"conference.mnesia.localhost">>,
+                     resource = <<>>,luser = <<"3">>,
+                     lserver = <<"conference.mnesia.localhost">>,
+                     lresource = <<>>},
+         to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"mnesia.localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"mnesia.localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [#text{lang = <<>>,data = <<>>}],
+         body = [],thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.838 ***</b>
+SENT:
+<iq to='3@conference.mnesia.localhost'
+    type='set'
+    id='3835444083787726318'
+    xmlns='jabber:client'>
+  <query xmlns='http://jabber.org/protocol/muc#owner'>
+    <x type='submit'
+       xmlns='jabber:x:data'>
+      <field var='FORM_TYPE'
+             type='hidden'>
+        <value>http://jabber.org/protocol/muc#roomconfig</value>
+      </field>
+      <field var='muc#roomconfig_persistentroom'
+             type='boolean'
+             label='Make room persistent'>
+        <value>1</value>
+      </field>
+    </x>
+  </query>
+</iq>
+
+#iq{id = <<"3835444083787726318">>,type = set,lang = <<>>,from = undefined,
+    to =
+        #jid{
+            user = <<"3">>,server = <<"conference.mnesia.localhost">>,
+            resource = <<>>,luser = <<"3">>,
+            lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    sub_els =
+        [#muc_owner{
+             destroy = undefined,
+             config =
+                 #xdata{
+                     type = submit,instructions = [],title = undefined,
+                     reported = undefined,items = [],
+                     fields =
+                         [#xdata_field{
+                              label = <<>>,type = hidden,
+                              var = <<"FORM_TYPE">>,required = false,
+                              desc = <<>>,
+                              values =
+                                  [<<"http://jabber.org/protocol/muc#roomconfig">>],
+                              options = [],sub_els = []},
+                          #xdata_field{
+                              label = <<"Make room persistent">>,
+                              type = boolean,
+                              var = <<"muc#roomconfig_persistentroom">>,
+                              required = false,desc = <<>>,
+                              values = [<<"1">>],
+                              options = [],sub_els = []}]},
+             items = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.839 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='3@conference.mnesia.localhost'
+          id='3576925942894838882'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='bE1N4cD/NmqR+hD6al2WwO+auxQ='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"3576925942894838882">>,type = available,lang = <<>>,
+          from = #jid{user = <<"3">>,
+                      server = <<"conference.mnesia.localhost">>,
+                      resource = <<>>,luser = <<"3">>,
+                      lserver = <<"conference.mnesia.localhost">>,
+                      lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"mnesia.localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"mnesia.localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"bE1N4cD/NmqR+hD6al2WwO+auxQ=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.839 ***</b>
+RECV:
+<message to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='3@conference.mnesia.localhost'
+         type='groupchat'
+         id='16755497118328666859'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <status code='104'/>
+  </x>
+</message>
+
+#message{id = <<"16755497118328666859">>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"3">>,
+                     server = <<"conference.mnesia.localhost">>,
+                     resource = <<>>,luser = <<"3">>,
+                     lserver = <<"conference.mnesia.localhost">>,
+                     lresource = <<>>},
+         to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"mnesia.localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"mnesia.localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#muc_user{decline = undefined,destroy = undefined,
+                              invites = [],items = [],status_codes = "h",
+                              password = undefined}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.839 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='3@conference.mnesia.localhost'
+    type='result'
+    id='3835444083787726318'/>
+
+#iq{id = <<"3835444083787726318">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"3">>,server = <<"conference.mnesia.localhost">>,
+                resource = <<>>,luser = <<"3">>,
+                lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.840 ***</b>
+SENT:
+<iq to='3@conference.mnesia.localhost'
+    type='set'
+    id='514730577441395198'
+    xmlns='jabber:client'>
+  <query xmlns='http://jabber.org/protocol/muc#owner'>
+    <x type='submit'
+       xmlns='jabber:x:data'>
+      <field var='FORM_TYPE'
+             type='hidden'>
+        <value>http://jabber.org/protocol/muc#roomconfig</value>
+      </field>
+      <field var='allow_subscription'
+             type='boolean'
+             label='Allow subscription'>
+        <value>1</value>
+      </field>
+    </x>
+  </query>
+</iq>
+
+#iq{id = <<"514730577441395198">>,type = set,lang = <<>>,from = undefined,
+    to =
+        #jid{
+            user = <<"3">>,server = <<"conference.mnesia.localhost">>,
+            resource = <<>>,luser = <<"3">>,
+            lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    sub_els =
+        [#muc_owner{
+             destroy = undefined,
+             config =
+                 #xdata{
+                     type = submit,instructions = [],title = undefined,
+                     reported = undefined,items = [],
+                     fields =
+                         [#xdata_field{
+                              label = <<>>,type = hidden,
+                              var = <<"FORM_TYPE">>,required = false,
+                              desc = <<>>,
+                              values =
+                                  [<<"http://jabber.org/protocol/muc#roomconfig">>],
+                              options = [],sub_els = []},
+                          #xdata_field{
+                              label = <<"Allow subscription">>,type = boolean,
+                              var = <<"allow_subscription">>,required = false,
+                              desc = <<>>,
+                              values = [<<"1">>],
+                              options = [],sub_els = []}]},
+             items = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.841 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='3@conference.mnesia.localhost'
+          id='12231690454960726440'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='yNsSz2bcGtC0YP3IY4b2dd/nynM='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"12231690454960726440">>,type = available,lang = <<>>,
+          from = #jid{user = <<"3">>,
+                      server = <<"conference.mnesia.localhost">>,
+                      resource = <<>>,luser = <<"3">>,
+                      lserver = <<"conference.mnesia.localhost">>,
+                      lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"mnesia.localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"mnesia.localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"yNsSz2bcGtC0YP3IY4b2dd/nynM=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.841 ***</b>
+RECV:
+<message to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='3@conference.mnesia.localhost'
+         type='groupchat'
+         id='9254738767447942923'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <status code='104'/>
+  </x>
+</message>
+
+#message{id = <<"9254738767447942923">>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"3">>,
+                     server = <<"conference.mnesia.localhost">>,
+                     resource = <<>>,luser = <<"3">>,
+                     lserver = <<"conference.mnesia.localhost">>,
+                     lresource = <<>>},
+         to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"mnesia.localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"mnesia.localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#muc_user{decline = undefined,destroy = undefined,
+                              invites = [],items = [],status_codes = "h",
+                              password = undefined}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.841 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='3@conference.mnesia.localhost'
+    type='result'
+    id='514730577441395198'/>
+
+#iq{id = <<"514730577441395198">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"3">>,server = <<"conference.mnesia.localhost">>,
+                resource = <<>>,luser = <<"3">>,
+                lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.842 ***</b>
+SENT:
+<iq to='3@conference.mnesia.localhost'
+    type='set'
+    id='17065753481674675473'
+    xmlns='jabber:client'>
+  <subscribe nick='nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+             xmlns='urn:xmpp:mucsub:0'/>
+</iq>
+
+#iq{id = <<"17065753481674675473">>,type = set,lang = <<>>,from = undefined,
+    to = #jid{user = <<"3">>,server = <<"conference.mnesia.localhost">>,
+              resource = <<>>,luser = <<"3">>,
+              lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    sub_els = [#muc_subscribe{nick = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              password = <<>>,jid = undefined,events = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.842 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='3@conference.mnesia.localhost'
+    type='result'
+    id='17065753481674675473'>
+  <subscribe xmlns='urn:xmpp:mucsub:0'
+             nick='nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'/>
+</iq>
+
+#iq{id = <<"17065753481674675473">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"3">>,server = <<"conference.mnesia.localhost">>,
+                resource = <<>>,luser = <<"3">>,
+                lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [#muc_subscribe{nick = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              password = <<>>,jid = undefined,events = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.843 ***</b>
+SENT:
+<presence to='4@conference.mnesia.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='5165850178930237469'
+          xmlns='jabber:client'>
+  <x xmlns='http://jabber.org/protocol/muc'/>
+</presence>
+
+#presence{id = <<"5165850178930237469">>,type = available,lang = <<>>,
+          from = undefined,
+          to = #jid{user = <<"4">>,server = <<"conference.mnesia.localhost">>,
+                    resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"4">>,
+                    lserver = <<"conference.mnesia.localhost">>,
+                    lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#muc{history = undefined,password = undefined}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:10:04.843 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:10:04.843766 ===
+Created MUC room 4@conference.mnesia.localhost by test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()'"`~&lt;&gt;+-/;:_=[]{}|\
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.844 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='4@conference.mnesia.localhost'
+          id='11926736292111164389'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='sBcxm+YVx0VXfn6k9QZimWgspjA='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"11926736292111164389">>,type = available,lang = <<>>,
+          from = #jid{user = <<"4">>,
+                      server = <<"conference.mnesia.localhost">>,
+                      resource = <<>>,luser = <<"4">>,
+                      lserver = <<"conference.mnesia.localhost">>,
+                      lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"mnesia.localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"mnesia.localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"sBcxm+YVx0VXfn6k9QZimWgspjA=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.845 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='4@conference.mnesia.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='5165850178930237469'>
+  <x xmlns='vcard-temp:x:update'>
+    <photo/>
+  </x>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <item jid='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          role='moderator'
+          affiliation='owner'/>
+    <status code='201'/>
+    <status code='110'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"5165850178930237469">>,type = available,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"4">>,server = <<"conference.mnesia.localhost">>,
+            resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"4">>,lserver = <<"conference.mnesia.localhost">>,
+            lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#vcard_xupdate{hash = <<>>},
+         #muc_user{
+             decline = undefined,destroy = undefined,invites = [],
+             items =
+                 [#muc_item{
+                      actor = undefined,continue = undefined,reason = <<>>,
+                      affiliation = owner,role = moderator,
+                      jid =
+                          #jid{
+                              user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              server = <<"mnesia.localhost">>,
+                              resource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              lserver = <<"mnesia.localhost">>,
+                              lresource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+                      nick = <<>>}],
+             status_codes = "Én",password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.845 ***</b>
+RECV:
+<message to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='4@conference.mnesia.localhost'
+         type='groupchat'>
+  <subject/>
+</message>
+
+#message{id = <<>>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"4">>,
+                     server = <<"conference.mnesia.localhost">>,
+                     resource = <<>>,luser = <<"4">>,
+                     lserver = <<"conference.mnesia.localhost">>,
+                     lresource = <<>>},
+         to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"mnesia.localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"mnesia.localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [#text{lang = <<>>,data = <<>>}],
+         body = [],thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.845 ***</b>
+SENT:
+<iq to='4@conference.mnesia.localhost'
+    type='set'
+    id='17358139744325858009'
+    xmlns='jabber:client'>
+  <query xmlns='http://jabber.org/protocol/muc#owner'>
+    <x type='submit'
+       xmlns='jabber:x:data'>
+      <field var='FORM_TYPE'
+             type='hidden'>
+        <value>http://jabber.org/protocol/muc#roomconfig</value>
+      </field>
+      <field var='muc#roomconfig_persistentroom'
+             type='boolean'
+             label='Make room persistent'>
+        <value>1</value>
+      </field>
+    </x>
+  </query>
+</iq>
+
+#iq{id = <<"17358139744325858009">>,type = set,lang = <<>>,from = undefined,
+    to =
+        #jid{
+            user = <<"4">>,server = <<"conference.mnesia.localhost">>,
+            resource = <<>>,luser = <<"4">>,
+            lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    sub_els =
+        [#muc_owner{
+             destroy = undefined,
+             config =
+                 #xdata{
+                     type = submit,instructions = [],title = undefined,
+                     reported = undefined,items = [],
+                     fields =
+                         [#xdata_field{
+                              label = <<>>,type = hidden,
+                              var = <<"FORM_TYPE">>,required = false,
+                              desc = <<>>,
+                              values =
+                                  [<<"http://jabber.org/protocol/muc#roomconfig">>],
+                              options = [],sub_els = []},
+                          #xdata_field{
+                              label = <<"Make room persistent">>,
+                              type = boolean,
+                              var = <<"muc#roomconfig_persistentroom">>,
+                              required = false,desc = <<>>,
+                              values = [<<"1">>],
+                              options = [],sub_els = []}]},
+             items = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.847 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='4@conference.mnesia.localhost'
+          id='9757368893403798475'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='bE1N4cD/NmqR+hD6al2WwO+auxQ='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"9757368893403798475">>,type = available,lang = <<>>,
+          from = #jid{user = <<"4">>,
+                      server = <<"conference.mnesia.localhost">>,
+                      resource = <<>>,luser = <<"4">>,
+                      lserver = <<"conference.mnesia.localhost">>,
+                      lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"mnesia.localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"mnesia.localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"bE1N4cD/NmqR+hD6al2WwO+auxQ=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.847 ***</b>
+RECV:
+<message to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='4@conference.mnesia.localhost'
+         type='groupchat'
+         id='7668998242257414340'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <status code='104'/>
+  </x>
+</message>
+
+#message{id = <<"7668998242257414340">>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"4">>,
+                     server = <<"conference.mnesia.localhost">>,
+                     resource = <<>>,luser = <<"4">>,
+                     lserver = <<"conference.mnesia.localhost">>,
+                     lresource = <<>>},
+         to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"mnesia.localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"mnesia.localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#muc_user{decline = undefined,destroy = undefined,
+                              invites = [],items = [],status_codes = "h",
+                              password = undefined}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.847 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='4@conference.mnesia.localhost'
+    type='result'
+    id='17358139744325858009'/>
+
+#iq{id = <<"17358139744325858009">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"4">>,server = <<"conference.mnesia.localhost">>,
+                resource = <<>>,luser = <<"4">>,
+                lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.848 ***</b>
+SENT:
+<iq to='4@conference.mnesia.localhost'
+    type='set'
+    id='14417636971755187821'
+    xmlns='jabber:client'>
+  <query xmlns='http://jabber.org/protocol/muc#owner'>
+    <x type='submit'
+       xmlns='jabber:x:data'>
+      <field var='FORM_TYPE'
+             type='hidden'>
+        <value>http://jabber.org/protocol/muc#roomconfig</value>
+      </field>
+      <field var='allow_subscription'
+             type='boolean'
+             label='Allow subscription'>
+        <value>1</value>
+      </field>
+    </x>
+  </query>
+</iq>
+
+#iq{id = <<"14417636971755187821">>,type = set,lang = <<>>,from = undefined,
+    to =
+        #jid{
+            user = <<"4">>,server = <<"conference.mnesia.localhost">>,
+            resource = <<>>,luser = <<"4">>,
+            lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    sub_els =
+        [#muc_owner{
+             destroy = undefined,
+             config =
+                 #xdata{
+                     type = submit,instructions = [],title = undefined,
+                     reported = undefined,items = [],
+                     fields =
+                         [#xdata_field{
+                              label = <<>>,type = hidden,
+                              var = <<"FORM_TYPE">>,required = false,
+                              desc = <<>>,
+                              values =
+                                  [<<"http://jabber.org/protocol/muc#roomconfig">>],
+                              options = [],sub_els = []},
+                          #xdata_field{
+                              label = <<"Allow subscription">>,type = boolean,
+                              var = <<"allow_subscription">>,required = false,
+                              desc = <<>>,
+                              values = [<<"1">>],
+                              options = [],sub_els = []}]},
+             items = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.850 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='4@conference.mnesia.localhost'
+          id='16022514422266197130'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='yNsSz2bcGtC0YP3IY4b2dd/nynM='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"16022514422266197130">>,type = available,lang = <<>>,
+          from = #jid{user = <<"4">>,
+                      server = <<"conference.mnesia.localhost">>,
+                      resource = <<>>,luser = <<"4">>,
+                      lserver = <<"conference.mnesia.localhost">>,
+                      lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"mnesia.localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"mnesia.localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"yNsSz2bcGtC0YP3IY4b2dd/nynM=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.850 ***</b>
+RECV:
+<message to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='4@conference.mnesia.localhost'
+         type='groupchat'
+         id='11817025026976565203'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <status code='104'/>
+  </x>
+</message>
+
+#message{id = <<"11817025026976565203">>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"4">>,
+                     server = <<"conference.mnesia.localhost">>,
+                     resource = <<>>,luser = <<"4">>,
+                     lserver = <<"conference.mnesia.localhost">>,
+                     lresource = <<>>},
+         to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"mnesia.localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"mnesia.localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#muc_user{decline = undefined,destroy = undefined,
+                              invites = [],items = [],status_codes = "h",
+                              password = undefined}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.851 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='4@conference.mnesia.localhost'
+    type='result'
+    id='14417636971755187821'/>
+
+#iq{id = <<"14417636971755187821">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"4">>,server = <<"conference.mnesia.localhost">>,
+                resource = <<>>,luser = <<"4">>,
+                lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.851 ***</b>
+SENT:
+<iq to='4@conference.mnesia.localhost'
+    type='set'
+    id='9401876666312668186'
+    xmlns='jabber:client'>
+  <subscribe nick='nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+             xmlns='urn:xmpp:mucsub:0'/>
+</iq>
+
+#iq{id = <<"9401876666312668186">>,type = set,lang = <<>>,from = undefined,
+    to = #jid{user = <<"4">>,server = <<"conference.mnesia.localhost">>,
+              resource = <<>>,luser = <<"4">>,
+              lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    sub_els = [#muc_subscribe{nick = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              password = <<>>,jid = undefined,events = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.852 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='4@conference.mnesia.localhost'
+    type='result'
+    id='9401876666312668186'>
+  <subscribe xmlns='urn:xmpp:mucsub:0'
+             nick='nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'/>
+</iq>
+
+#iq{id = <<"9401876666312668186">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"4">>,server = <<"conference.mnesia.localhost">>,
+                resource = <<>>,luser = <<"4">>,
+                lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [#muc_subscribe{nick = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              password = <<>>,jid = undefined,events = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.852 ***</b>
+SENT:
+<presence to='5@conference.mnesia.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='12319834754537097682'
+          xmlns='jabber:client'>
+  <x xmlns='http://jabber.org/protocol/muc'/>
+</presence>
+
+#presence{id = <<"12319834754537097682">>,type = available,lang = <<>>,
+          from = undefined,
+          to = #jid{user = <<"5">>,server = <<"conference.mnesia.localhost">>,
+                    resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"5">>,
+                    lserver = <<"conference.mnesia.localhost">>,
+                    lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#muc{history = undefined,password = undefined}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:10:04.853 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:10:04.853019 ===
+Created MUC room 5@conference.mnesia.localhost by test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()'"`~&lt;&gt;+-/;:_=[]{}|\
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.854 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='5@conference.mnesia.localhost'
+          id='323734844353459931'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='sBcxm+YVx0VXfn6k9QZimWgspjA='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"323734844353459931">>,type = available,lang = <<>>,
+          from = #jid{user = <<"5">>,
+                      server = <<"conference.mnesia.localhost">>,
+                      resource = <<>>,luser = <<"5">>,
+                      lserver = <<"conference.mnesia.localhost">>,
+                      lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"mnesia.localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"mnesia.localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"sBcxm+YVx0VXfn6k9QZimWgspjA=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.854 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='5@conference.mnesia.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='12319834754537097682'>
+  <x xmlns='vcard-temp:x:update'>
+    <photo/>
+  </x>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <item jid='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          role='moderator'
+          affiliation='owner'/>
+    <status code='201'/>
+    <status code='110'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"12319834754537097682">>,type = available,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"5">>,server = <<"conference.mnesia.localhost">>,
+            resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"5">>,lserver = <<"conference.mnesia.localhost">>,
+            lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#vcard_xupdate{hash = <<>>},
+         #muc_user{
+             decline = undefined,destroy = undefined,invites = [],
+             items =
+                 [#muc_item{
+                      actor = undefined,continue = undefined,reason = <<>>,
+                      affiliation = owner,role = moderator,
+                      jid =
+                          #jid{
+                              user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              server = <<"mnesia.localhost">>,
+                              resource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              lserver = <<"mnesia.localhost">>,
+                              lresource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+                      nick = <<>>}],
+             status_codes = "Én",password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.854 ***</b>
+RECV:
+<message to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='5@conference.mnesia.localhost'
+         type='groupchat'>
+  <subject/>
+</message>
+
+#message{id = <<>>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"5">>,
+                     server = <<"conference.mnesia.localhost">>,
+                     resource = <<>>,luser = <<"5">>,
+                     lserver = <<"conference.mnesia.localhost">>,
+                     lresource = <<>>},
+         to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"mnesia.localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"mnesia.localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [#text{lang = <<>>,data = <<>>}],
+         body = [],thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.855 ***</b>
+SENT:
+<iq to='5@conference.mnesia.localhost'
+    type='set'
+    id='15837239429061561526'
+    xmlns='jabber:client'>
+  <query xmlns='http://jabber.org/protocol/muc#owner'>
+    <x type='submit'
+       xmlns='jabber:x:data'>
+      <field var='FORM_TYPE'
+             type='hidden'>
+        <value>http://jabber.org/protocol/muc#roomconfig</value>
+      </field>
+      <field var='muc#roomconfig_persistentroom'
+             type='boolean'
+             label='Make room persistent'>
+        <value>1</value>
+      </field>
+    </x>
+  </query>
+</iq>
+
+#iq{id = <<"15837239429061561526">>,type = set,lang = <<>>,from = undefined,
+    to =
+        #jid{
+            user = <<"5">>,server = <<"conference.mnesia.localhost">>,
+            resource = <<>>,luser = <<"5">>,
+            lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    sub_els =
+        [#muc_owner{
+             destroy = undefined,
+             config =
+                 #xdata{
+                     type = submit,instructions = [],title = undefined,
+                     reported = undefined,items = [],
+                     fields =
+                         [#xdata_field{
+                              label = <<>>,type = hidden,
+                              var = <<"FORM_TYPE">>,required = false,
+                              desc = <<>>,
+                              values =
+                                  [<<"http://jabber.org/protocol/muc#roomconfig">>],
+                              options = [],sub_els = []},
+                          #xdata_field{
+                              label = <<"Make room persistent">>,
+                              type = boolean,
+                              var = <<"muc#roomconfig_persistentroom">>,
+                              required = false,desc = <<>>,
+                              values = [<<"1">>],
+                              options = [],sub_els = []}]},
+             items = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.856 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='5@conference.mnesia.localhost'
+          id='9033601524733689397'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='bE1N4cD/NmqR+hD6al2WwO+auxQ='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"9033601524733689397">>,type = available,lang = <<>>,
+          from = #jid{user = <<"5">>,
+                      server = <<"conference.mnesia.localhost">>,
+                      resource = <<>>,luser = <<"5">>,
+                      lserver = <<"conference.mnesia.localhost">>,
+                      lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"mnesia.localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"mnesia.localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"bE1N4cD/NmqR+hD6al2WwO+auxQ=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.856 ***</b>
+RECV:
+<message to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='5@conference.mnesia.localhost'
+         type='groupchat'
+         id='9755138317837841961'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <status code='104'/>
+  </x>
+</message>
+
+#message{id = <<"9755138317837841961">>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"5">>,
+                     server = <<"conference.mnesia.localhost">>,
+                     resource = <<>>,luser = <<"5">>,
+                     lserver = <<"conference.mnesia.localhost">>,
+                     lresource = <<>>},
+         to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"mnesia.localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"mnesia.localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#muc_user{decline = undefined,destroy = undefined,
+                              invites = [],items = [],status_codes = "h",
+                              password = undefined}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.857 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='5@conference.mnesia.localhost'
+    type='result'
+    id='15837239429061561526'/>
+
+#iq{id = <<"15837239429061561526">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"5">>,server = <<"conference.mnesia.localhost">>,
+                resource = <<>>,luser = <<"5">>,
+                lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.857 ***</b>
+SENT:
+<iq to='5@conference.mnesia.localhost'
+    type='set'
+    id='16482293532555870878'
+    xmlns='jabber:client'>
+  <query xmlns='http://jabber.org/protocol/muc#owner'>
+    <x type='submit'
+       xmlns='jabber:x:data'>
+      <field var='FORM_TYPE'
+             type='hidden'>
+        <value>http://jabber.org/protocol/muc#roomconfig</value>
+      </field>
+      <field var='allow_subscription'
+             type='boolean'
+             label='Allow subscription'>
+        <value>1</value>
+      </field>
+    </x>
+  </query>
+</iq>
+
+#iq{id = <<"16482293532555870878">>,type = set,lang = <<>>,from = undefined,
+    to =
+        #jid{
+            user = <<"5">>,server = <<"conference.mnesia.localhost">>,
+            resource = <<>>,luser = <<"5">>,
+            lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    sub_els =
+        [#muc_owner{
+             destroy = undefined,
+             config =
+                 #xdata{
+                     type = submit,instructions = [],title = undefined,
+                     reported = undefined,items = [],
+                     fields =
+                         [#xdata_field{
+                              label = <<>>,type = hidden,
+                              var = <<"FORM_TYPE">>,required = false,
+                              desc = <<>>,
+                              values =
+                                  [<<"http://jabber.org/protocol/muc#roomconfig">>],
+                              options = [],sub_els = []},
+                          #xdata_field{
+                              label = <<"Allow subscription">>,type = boolean,
+                              var = <<"allow_subscription">>,required = false,
+                              desc = <<>>,
+                              values = [<<"1">>],
+                              options = [],sub_els = []}]},
+             items = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.858 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='5@conference.mnesia.localhost'
+          id='16954467174689431876'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='yNsSz2bcGtC0YP3IY4b2dd/nynM='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"16954467174689431876">>,type = available,lang = <<>>,
+          from = #jid{user = <<"5">>,
+                      server = <<"conference.mnesia.localhost">>,
+                      resource = <<>>,luser = <<"5">>,
+                      lserver = <<"conference.mnesia.localhost">>,
+                      lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"mnesia.localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"mnesia.localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"yNsSz2bcGtC0YP3IY4b2dd/nynM=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.858 ***</b>
+RECV:
+<message to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='5@conference.mnesia.localhost'
+         type='groupchat'
+         id='849543942130229169'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <status code='104'/>
+  </x>
+</message>
+
+#message{id = <<"849543942130229169">>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"5">>,
+                     server = <<"conference.mnesia.localhost">>,
+                     resource = <<>>,luser = <<"5">>,
+                     lserver = <<"conference.mnesia.localhost">>,
+                     lresource = <<>>},
+         to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"mnesia.localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"mnesia.localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#muc_user{decline = undefined,destroy = undefined,
+                              invites = [],items = [],status_codes = "h",
+                              password = undefined}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.858 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='5@conference.mnesia.localhost'
+    type='result'
+    id='16482293532555870878'/>
+
+#iq{id = <<"16482293532555870878">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"5">>,server = <<"conference.mnesia.localhost">>,
+                resource = <<>>,luser = <<"5">>,
+                lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.859 ***</b>
+SENT:
+<iq to='5@conference.mnesia.localhost'
+    type='set'
+    id='18168125132257721631'
+    xmlns='jabber:client'>
+  <subscribe nick='nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+             xmlns='urn:xmpp:mucsub:0'/>
+</iq>
+
+#iq{id = <<"18168125132257721631">>,type = set,lang = <<>>,from = undefined,
+    to = #jid{user = <<"5">>,server = <<"conference.mnesia.localhost">>,
+              resource = <<>>,luser = <<"5">>,
+              lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    sub_els = [#muc_subscribe{nick = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              password = <<>>,jid = undefined,events = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.859 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='5@conference.mnesia.localhost'
+    type='result'
+    id='18168125132257721631'>
+  <subscribe xmlns='urn:xmpp:mucsub:0'
+             nick='nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'/>
+</iq>
+
+#iq{id = <<"18168125132257721631">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"5">>,server = <<"conference.mnesia.localhost">>,
+                resource = <<>>,luser = <<"5">>,
+                lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [#muc_subscribe{nick = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              password = <<>>,jid = undefined,events = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.860 ***</b>
+SENT:
+<iq to='conference.mnesia.localhost'
+    type='get'
+    id='7010209760156290566'
+    xmlns='jabber:client'>
+  <subscriptions xmlns='urn:xmpp:mucsub:0'/>
+</iq>
+
+#iq{id = <<"7010209760156290566">>,type = get,lang = <<>>,from = undefined,
+    to = #jid{user = <<>>,server = <<"conference.mnesia.localhost">>,
+              resource = <<>>,luser = <<>>,
+              lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    sub_els = [#muc_subscriptions{list = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.860 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='conference.mnesia.localhost'
+    type='result'
+    id='7010209760156290566'>
+  <subscriptions xmlns='urn:xmpp:mucsub:0'>
+    <subscription nick='nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+                  jid='1@conference.mnesia.localhost'/>
+    <subscription nick='nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+                  jid='2@conference.mnesia.localhost'/>
+    <subscription nick='nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+                  jid='3@conference.mnesia.localhost'/>
+    <subscription nick='nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+                  jid='4@conference.mnesia.localhost'/>
+    <subscription nick='nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+                  jid='5@conference.mnesia.localhost'/>
+  </subscriptions>
+</iq>
+
+#iq{id = <<"7010209760156290566">>,type = result,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<>>,server = <<"conference.mnesia.localhost">>,
+            resource = <<>>,luser = <<>>,
+            lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    to =
+        #jid{
+            user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els =
+        [#muc_subscriptions{
+             list =
+                 [#muc_subscription{
+                      jid =
+                          #jid{
+                              user = <<"1">>,
+                              server = <<"conference.mnesia.localhost">>,
+                              resource = <<>>,luser = <<"1">>,
+                              lserver = <<"conference.mnesia.localhost">>,
+                              lresource = <<>>},
+                      nick = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                      events = []},
+                  #muc_subscription{
+                      jid =
+                          #jid{
+                              user = <<"2">>,
+                              server = <<"conference.mnesia.localhost">>,
+                              resource = <<>>,luser = <<"2">>,
+                              lserver = <<"conference.mnesia.localhost">>,
+                              lresource = <<>>},
+                      nick = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                      events = []},
+                  #muc_subscription{
+                      jid =
+                          #jid{
+                              user = <<"3">>,
+                              server = <<"conference.mnesia.localhost">>,
+                              resource = <<>>,luser = <<"3">>,
+                              lserver = <<"conference.mnesia.localhost">>,
+                              lresource = <<>>},
+                      nick = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                      events = []},
+                  #muc_subscription{
+                      jid =
+                          #jid{
+                              user = <<"4">>,
+                              server = <<"conference.mnesia.localhost">>,
+                              resource = <<>>,luser = <<"4">>,
+                              lserver = <<"conference.mnesia.localhost">>,
+                              lresource = <<>>},
+                      nick = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                      events = []},
+                  #muc_subscription{
+                      jid =
+                          #jid{
+                              user = <<"5">>,
+                              server = <<"conference.mnesia.localhost">>,
+                              resource = <<>>,luser = <<"5">>,
+                              lserver = <<"conference.mnesia.localhost">>,
+                              lresource = <<>>},
+                      nick = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                      events = []}]}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.860 ***</b>
+SENT:
+<iq to='1@conference.mnesia.localhost'
+    type='set'
+    id='10320757761638369448'
+    xmlns='jabber:client'>
+  <unsubscribe xmlns='urn:xmpp:mucsub:0'/>
+</iq>
+
+#iq{id = <<"10320757761638369448">>,type = set,lang = <<>>,from = undefined,
+    to = #jid{user = <<"1">>,server = <<"conference.mnesia.localhost">>,
+              resource = <<>>,luser = <<"1">>,
+              lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    sub_els = [#muc_unsubscribe{nick = <<>>,jid = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.861 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='1@conference.mnesia.localhost'
+    type='result'
+    id='10320757761638369448'/>
+
+#iq{id = <<"10320757761638369448">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"1">>,server = <<"conference.mnesia.localhost">>,
+                resource = <<>>,luser = <<"1">>,
+                lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.861 ***</b>
+SENT:
+<iq to='1@conference.mnesia.localhost'
+    type='set'
+    id='13632019393832329937'
+    xmlns='jabber:client'>
+  <query xmlns='http://jabber.org/protocol/muc#owner'>
+    <x type='submit'
+       xmlns='jabber:x:data'>
+      <field var='FORM_TYPE'
+             type='hidden'>
+        <value>http://jabber.org/protocol/muc#roomconfig</value>
+      </field>
+      <field var='muc#roomconfig_persistentroom'
+             type='boolean'
+             label='Make room persistent'>
+        <value>0</value>
+      </field>
+    </x>
+  </query>
+</iq>
+
+#iq{id = <<"13632019393832329937">>,type = set,lang = <<>>,from = undefined,
+    to =
+        #jid{
+            user = <<"1">>,server = <<"conference.mnesia.localhost">>,
+            resource = <<>>,luser = <<"1">>,
+            lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    sub_els =
+        [#muc_owner{
+             destroy = undefined,
+             config =
+                 #xdata{
+                     type = submit,instructions = [],title = undefined,
+                     reported = undefined,items = [],
+                     fields =
+                         [#xdata_field{
+                              label = <<>>,type = hidden,
+                              var = <<"FORM_TYPE">>,required = false,
+                              desc = <<>>,
+                              values =
+                                  [<<"http://jabber.org/protocol/muc#roomconfig">>],
+                              options = [],sub_els = []},
+                          #xdata_field{
+                              label = <<"Make room persistent">>,
+                              type = boolean,
+                              var = <<"muc#roomconfig_persistentroom">>,
+                              required = false,desc = <<>>,
+                              values = [<<"0">>],
+                              options = [],sub_els = []}]},
+             items = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.862 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='1@conference.mnesia.localhost'
+          id='3568047789117798834'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='FOnz9Mk9aWertt3mEGMIGctRwJ4='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"3568047789117798834">>,type = available,lang = <<>>,
+          from = #jid{user = <<"1">>,
+                      server = <<"conference.mnesia.localhost">>,
+                      resource = <<>>,luser = <<"1">>,
+                      lserver = <<"conference.mnesia.localhost">>,
+                      lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"mnesia.localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"mnesia.localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"FOnz9Mk9aWertt3mEGMIGctRwJ4=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.862 ***</b>
+RECV:
+<message to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='1@conference.mnesia.localhost'
+         type='groupchat'
+         id='11315792209803381031'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <status code='104'/>
+  </x>
+</message>
+
+#message{id = <<"11315792209803381031">>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"1">>,
+                     server = <<"conference.mnesia.localhost">>,
+                     resource = <<>>,luser = <<"1">>,
+                     lserver = <<"conference.mnesia.localhost">>,
+                     lresource = <<>>},
+         to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"mnesia.localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"mnesia.localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#muc_user{decline = undefined,destroy = undefined,
+                              invites = [],items = [],status_codes = "h",
+                              password = undefined}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.863 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='1@conference.mnesia.localhost'
+    type='result'
+    id='13632019393832329937'/>
+
+#iq{id = <<"13632019393832329937">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"1">>,server = <<"conference.mnesia.localhost">>,
+                resource = <<>>,luser = <<"1">>,
+                lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.863 ***</b>
+SENT:
+<presence to='1@conference.mnesia.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          type='unavailable'
+          id='10669824780100511076'
+          xmlns='jabber:client'/>
+
+#presence{id = <<"10669824780100511076">>,type = unavailable,lang = <<>>,
+          from = undefined,
+          to = #jid{user = <<"1">>,server = <<"conference.mnesia.localhost">>,
+                    resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"1">>,
+                    lserver = <<"conference.mnesia.localhost">>,
+                    lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,sub_els = [],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:10:04.864 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:10:04.863678 ===
+Destroyed MUC room 1@conference.mnesia.localhost because it's temporary and empty
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.864 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='1@conference.mnesia.localhost'
+          type='unavailable'
+          id='3754703836513787972'/>
+
+#presence{id = <<"3754703836513787972">>,type = unavailable,lang = <<>>,
+          from = #jid{user = <<"1">>,
+                      server = <<"conference.mnesia.localhost">>,
+                      resource = <<>>,luser = <<"1">>,
+                      lserver = <<"conference.mnesia.localhost">>,
+                      lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"mnesia.localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"mnesia.localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,sub_els = [],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.864 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='1@conference.mnesia.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          type='unavailable'
+          id='10669824780100511076'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <item jid='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          role='none'
+          affiliation='owner'/>
+    <status code='110'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"10669824780100511076">>,type = unavailable,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"1">>,server = <<"conference.mnesia.localhost">>,
+            resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"1">>,lserver = <<"conference.mnesia.localhost">>,
+            lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#muc_user{
+             decline = undefined,destroy = undefined,invites = [],
+             items =
+                 [#muc_item{
+                      actor = undefined,continue = undefined,reason = <<>>,
+                      affiliation = owner,role = none,
+                      jid =
+                          #jid{
+                              user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              server = <<"mnesia.localhost">>,
+                              resource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              lserver = <<"mnesia.localhost">>,
+                              lresource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+                      nick = <<>>}],
+             status_codes = "n",password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.864 ***</b>
+SENT:
+<iq to='2@conference.mnesia.localhost'
+    type='set'
+    id='14166352824292436962'
+    xmlns='jabber:client'>
+  <unsubscribe xmlns='urn:xmpp:mucsub:0'/>
+</iq>
+
+#iq{id = <<"14166352824292436962">>,type = set,lang = <<>>,from = undefined,
+    to = #jid{user = <<"2">>,server = <<"conference.mnesia.localhost">>,
+              resource = <<>>,luser = <<"2">>,
+              lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    sub_els = [#muc_unsubscribe{nick = <<>>,jid = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:10:04.865 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:10:04.865110 ===
+Stopping MUC room 1@conference.mnesia.localhost
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.865 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='2@conference.mnesia.localhost'
+    type='result'
+    id='14166352824292436962'/>
+
+#iq{id = <<"14166352824292436962">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"2">>,server = <<"conference.mnesia.localhost">>,
+                resource = <<>>,luser = <<"2">>,
+                lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.866 ***</b>
+SENT:
+<iq to='2@conference.mnesia.localhost'
+    type='set'
+    id='14842189835385882506'
+    xmlns='jabber:client'>
+  <query xmlns='http://jabber.org/protocol/muc#owner'>
+    <x type='submit'
+       xmlns='jabber:x:data'>
+      <field var='FORM_TYPE'
+             type='hidden'>
+        <value>http://jabber.org/protocol/muc#roomconfig</value>
+      </field>
+      <field var='muc#roomconfig_persistentroom'
+             type='boolean'
+             label='Make room persistent'>
+        <value>0</value>
+      </field>
+    </x>
+  </query>
+</iq>
+
+#iq{id = <<"14842189835385882506">>,type = set,lang = <<>>,from = undefined,
+    to =
+        #jid{
+            user = <<"2">>,server = <<"conference.mnesia.localhost">>,
+            resource = <<>>,luser = <<"2">>,
+            lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    sub_els =
+        [#muc_owner{
+             destroy = undefined,
+             config =
+                 #xdata{
+                     type = submit,instructions = [],title = undefined,
+                     reported = undefined,items = [],
+                     fields =
+                         [#xdata_field{
+                              label = <<>>,type = hidden,
+                              var = <<"FORM_TYPE">>,required = false,
+                              desc = <<>>,
+                              values =
+                                  [<<"http://jabber.org/protocol/muc#roomconfig">>],
+                              options = [],sub_els = []},
+                          #xdata_field{
+                              label = <<"Make room persistent">>,
+                              type = boolean,
+                              var = <<"muc#roomconfig_persistentroom">>,
+                              required = false,desc = <<>>,
+                              values = [<<"0">>],
+                              options = [],sub_els = []}]},
+             items = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.867 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='2@conference.mnesia.localhost'
+          id='1937140719772196613'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='FOnz9Mk9aWertt3mEGMIGctRwJ4='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"1937140719772196613">>,type = available,lang = <<>>,
+          from = #jid{user = <<"2">>,
+                      server = <<"conference.mnesia.localhost">>,
+                      resource = <<>>,luser = <<"2">>,
+                      lserver = <<"conference.mnesia.localhost">>,
+                      lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"mnesia.localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"mnesia.localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"FOnz9Mk9aWertt3mEGMIGctRwJ4=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.867 ***</b>
+RECV:
+<message to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='2@conference.mnesia.localhost'
+         type='groupchat'
+         id='2409095640694062224'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <status code='104'/>
+  </x>
+</message>
+
+#message{id = <<"2409095640694062224">>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"2">>,
+                     server = <<"conference.mnesia.localhost">>,
+                     resource = <<>>,luser = <<"2">>,
+                     lserver = <<"conference.mnesia.localhost">>,
+                     lresource = <<>>},
+         to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"mnesia.localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"mnesia.localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#muc_user{decline = undefined,destroy = undefined,
+                              invites = [],items = [],status_codes = "h",
+                              password = undefined}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.867 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='2@conference.mnesia.localhost'
+    type='result'
+    id='14842189835385882506'/>
+
+#iq{id = <<"14842189835385882506">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"2">>,server = <<"conference.mnesia.localhost">>,
+                resource = <<>>,luser = <<"2">>,
+                lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.867 ***</b>
+SENT:
+<presence to='2@conference.mnesia.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          type='unavailable'
+          id='8648642173341597127'
+          xmlns='jabber:client'/>
+
+#presence{id = <<"8648642173341597127">>,type = unavailable,lang = <<>>,
+          from = undefined,
+          to = #jid{user = <<"2">>,server = <<"conference.mnesia.localhost">>,
+                    resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"2">>,
+                    lserver = <<"conference.mnesia.localhost">>,
+                    lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,sub_els = [],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:10:04.868 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:10:04.868084 ===
+Destroyed MUC room 2@conference.mnesia.localhost because it's temporary and empty
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.868 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='2@conference.mnesia.localhost'
+          type='unavailable'
+          id='16145757977979599686'/>
+
+#presence{id = <<"16145757977979599686">>,type = unavailable,lang = <<>>,
+          from = #jid{user = <<"2">>,
+                      server = <<"conference.mnesia.localhost">>,
+                      resource = <<>>,luser = <<"2">>,
+                      lserver = <<"conference.mnesia.localhost">>,
+                      lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"mnesia.localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"mnesia.localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,sub_els = [],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:10:04.868 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:10:04.868679 ===
+Stopping MUC room 2@conference.mnesia.localhost
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.869 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='2@conference.mnesia.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          type='unavailable'
+          id='8648642173341597127'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <item jid='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          role='none'
+          affiliation='owner'/>
+    <status code='110'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"8648642173341597127">>,type = unavailable,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"2">>,server = <<"conference.mnesia.localhost">>,
+            resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"2">>,lserver = <<"conference.mnesia.localhost">>,
+            lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#muc_user{
+             decline = undefined,destroy = undefined,invites = [],
+             items =
+                 [#muc_item{
+                      actor = undefined,continue = undefined,reason = <<>>,
+                      affiliation = owner,role = none,
+                      jid =
+                          #jid{
+                              user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              server = <<"mnesia.localhost">>,
+                              resource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              lserver = <<"mnesia.localhost">>,
+                              lresource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+                      nick = <<>>}],
+             status_codes = "n",password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.869 ***</b>
+SENT:
+<iq to='3@conference.mnesia.localhost'
+    type='set'
+    id='12468820666458794651'
+    xmlns='jabber:client'>
+  <unsubscribe xmlns='urn:xmpp:mucsub:0'/>
+</iq>
+
+#iq{id = <<"12468820666458794651">>,type = set,lang = <<>>,from = undefined,
+    to = #jid{user = <<"3">>,server = <<"conference.mnesia.localhost">>,
+              resource = <<>>,luser = <<"3">>,
+              lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    sub_els = [#muc_unsubscribe{nick = <<>>,jid = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.870 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='3@conference.mnesia.localhost'
+    type='result'
+    id='12468820666458794651'/>
+
+#iq{id = <<"12468820666458794651">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"3">>,server = <<"conference.mnesia.localhost">>,
+                resource = <<>>,luser = <<"3">>,
+                lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.871 ***</b>
+SENT:
+<iq to='3@conference.mnesia.localhost'
+    type='set'
+    id='16597944687091165067'
+    xmlns='jabber:client'>
+  <query xmlns='http://jabber.org/protocol/muc#owner'>
+    <x type='submit'
+       xmlns='jabber:x:data'>
+      <field var='FORM_TYPE'
+             type='hidden'>
+        <value>http://jabber.org/protocol/muc#roomconfig</value>
+      </field>
+      <field var='muc#roomconfig_persistentroom'
+             type='boolean'
+             label='Make room persistent'>
+        <value>0</value>
+      </field>
+    </x>
+  </query>
+</iq>
+
+#iq{id = <<"16597944687091165067">>,type = set,lang = <<>>,from = undefined,
+    to =
+        #jid{
+            user = <<"3">>,server = <<"conference.mnesia.localhost">>,
+            resource = <<>>,luser = <<"3">>,
+            lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    sub_els =
+        [#muc_owner{
+             destroy = undefined,
+             config =
+                 #xdata{
+                     type = submit,instructions = [],title = undefined,
+                     reported = undefined,items = [],
+                     fields =
+                         [#xdata_field{
+                              label = <<>>,type = hidden,
+                              var = <<"FORM_TYPE">>,required = false,
+                              desc = <<>>,
+                              values =
+                                  [<<"http://jabber.org/protocol/muc#roomconfig">>],
+                              options = [],sub_els = []},
+                          #xdata_field{
+                              label = <<"Make room persistent">>,
+                              type = boolean,
+                              var = <<"muc#roomconfig_persistentroom">>,
+                              required = false,desc = <<>>,
+                              values = [<<"0">>],
+                              options = [],sub_els = []}]},
+             items = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.872 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='3@conference.mnesia.localhost'
+          id='2244369852779587176'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='FOnz9Mk9aWertt3mEGMIGctRwJ4='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"2244369852779587176">>,type = available,lang = <<>>,
+          from = #jid{user = <<"3">>,
+                      server = <<"conference.mnesia.localhost">>,
+                      resource = <<>>,luser = <<"3">>,
+                      lserver = <<"conference.mnesia.localhost">>,
+                      lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"mnesia.localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"mnesia.localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"FOnz9Mk9aWertt3mEGMIGctRwJ4=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.872 ***</b>
+RECV:
+<message to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='3@conference.mnesia.localhost'
+         type='groupchat'
+         id='7704953629601392494'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <status code='104'/>
+  </x>
+</message>
+
+#message{id = <<"7704953629601392494">>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"3">>,
+                     server = <<"conference.mnesia.localhost">>,
+                     resource = <<>>,luser = <<"3">>,
+                     lserver = <<"conference.mnesia.localhost">>,
+                     lresource = <<>>},
+         to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"mnesia.localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"mnesia.localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#muc_user{decline = undefined,destroy = undefined,
+                              invites = [],items = [],status_codes = "h",
+                              password = undefined}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.872 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='3@conference.mnesia.localhost'
+    type='result'
+    id='16597944687091165067'/>
+
+#iq{id = <<"16597944687091165067">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"3">>,server = <<"conference.mnesia.localhost">>,
+                resource = <<>>,luser = <<"3">>,
+                lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.872 ***</b>
+SENT:
+<presence to='3@conference.mnesia.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          type='unavailable'
+          id='9239116146804029302'
+          xmlns='jabber:client'/>
+
+#presence{id = <<"9239116146804029302">>,type = unavailable,lang = <<>>,
+          from = undefined,
+          to = #jid{user = <<"3">>,server = <<"conference.mnesia.localhost">>,
+                    resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"3">>,
+                    lserver = <<"conference.mnesia.localhost">>,
+                    lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,sub_els = [],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:10:04.873 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:10:04.873374 ===
+Destroyed MUC room 3@conference.mnesia.localhost because it's temporary and empty
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.873 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='3@conference.mnesia.localhost'
+          type='unavailable'
+          id='6901105468997269664'/>
+
+#presence{id = <<"6901105468997269664">>,type = unavailable,lang = <<>>,
+          from = #jid{user = <<"3">>,
+                      server = <<"conference.mnesia.localhost">>,
+                      resource = <<>>,luser = <<"3">>,
+                      lserver = <<"conference.mnesia.localhost">>,
+                      lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"mnesia.localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"mnesia.localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,sub_els = [],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:10:04.873 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:10:04.873709 ===
+Stopping MUC room 3@conference.mnesia.localhost
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.874 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='3@conference.mnesia.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          type='unavailable'
+          id='9239116146804029302'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <item jid='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          role='none'
+          affiliation='owner'/>
+    <status code='110'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"9239116146804029302">>,type = unavailable,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"3">>,server = <<"conference.mnesia.localhost">>,
+            resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"3">>,lserver = <<"conference.mnesia.localhost">>,
+            lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#muc_user{
+             decline = undefined,destroy = undefined,invites = [],
+             items =
+                 [#muc_item{
+                      actor = undefined,continue = undefined,reason = <<>>,
+                      affiliation = owner,role = none,
+                      jid =
+                          #jid{
+                              user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              server = <<"mnesia.localhost">>,
+                              resource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              lserver = <<"mnesia.localhost">>,
+                              lresource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+                      nick = <<>>}],
+             status_codes = "n",password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.874 ***</b>
+SENT:
+<iq to='4@conference.mnesia.localhost'
+    type='set'
+    id='13221607746988387770'
+    xmlns='jabber:client'>
+  <unsubscribe xmlns='urn:xmpp:mucsub:0'/>
+</iq>
+
+#iq{id = <<"13221607746988387770">>,type = set,lang = <<>>,from = undefined,
+    to = #jid{user = <<"4">>,server = <<"conference.mnesia.localhost">>,
+              resource = <<>>,luser = <<"4">>,
+              lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    sub_els = [#muc_unsubscribe{nick = <<>>,jid = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.875 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='4@conference.mnesia.localhost'
+    type='result'
+    id='13221607746988387770'/>
+
+#iq{id = <<"13221607746988387770">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"4">>,server = <<"conference.mnesia.localhost">>,
+                resource = <<>>,luser = <<"4">>,
+                lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.875 ***</b>
+SENT:
+<iq to='4@conference.mnesia.localhost'
+    type='set'
+    id='18358244620310106805'
+    xmlns='jabber:client'>
+  <query xmlns='http://jabber.org/protocol/muc#owner'>
+    <x type='submit'
+       xmlns='jabber:x:data'>
+      <field var='FORM_TYPE'
+             type='hidden'>
+        <value>http://jabber.org/protocol/muc#roomconfig</value>
+      </field>
+      <field var='muc#roomconfig_persistentroom'
+             type='boolean'
+             label='Make room persistent'>
+        <value>0</value>
+      </field>
+    </x>
+  </query>
+</iq>
+
+#iq{id = <<"18358244620310106805">>,type = set,lang = <<>>,from = undefined,
+    to =
+        #jid{
+            user = <<"4">>,server = <<"conference.mnesia.localhost">>,
+            resource = <<>>,luser = <<"4">>,
+            lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    sub_els =
+        [#muc_owner{
+             destroy = undefined,
+             config =
+                 #xdata{
+                     type = submit,instructions = [],title = undefined,
+                     reported = undefined,items = [],
+                     fields =
+                         [#xdata_field{
+                              label = <<>>,type = hidden,
+                              var = <<"FORM_TYPE">>,required = false,
+                              desc = <<>>,
+                              values =
+                                  [<<"http://jabber.org/protocol/muc#roomconfig">>],
+                              options = [],sub_els = []},
+                          #xdata_field{
+                              label = <<"Make room persistent">>,
+                              type = boolean,
+                              var = <<"muc#roomconfig_persistentroom">>,
+                              required = false,desc = <<>>,
+                              values = [<<"0">>],
+                              options = [],sub_els = []}]},
+             items = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.877 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='4@conference.mnesia.localhost'
+          id='13292904108089475061'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='FOnz9Mk9aWertt3mEGMIGctRwJ4='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"13292904108089475061">>,type = available,lang = <<>>,
+          from = #jid{user = <<"4">>,
+                      server = <<"conference.mnesia.localhost">>,
+                      resource = <<>>,luser = <<"4">>,
+                      lserver = <<"conference.mnesia.localhost">>,
+                      lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"mnesia.localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"mnesia.localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"FOnz9Mk9aWertt3mEGMIGctRwJ4=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.877 ***</b>
+RECV:
+<message to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='4@conference.mnesia.localhost'
+         type='groupchat'
+         id='17957162737030916470'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <status code='104'/>
+  </x>
+</message>
+
+#message{id = <<"17957162737030916470">>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"4">>,
+                     server = <<"conference.mnesia.localhost">>,
+                     resource = <<>>,luser = <<"4">>,
+                     lserver = <<"conference.mnesia.localhost">>,
+                     lresource = <<>>},
+         to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"mnesia.localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"mnesia.localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#muc_user{decline = undefined,destroy = undefined,
+                              invites = [],items = [],status_codes = "h",
+                              password = undefined}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.877 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='4@conference.mnesia.localhost'
+    type='result'
+    id='18358244620310106805'/>
+
+#iq{id = <<"18358244620310106805">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"4">>,server = <<"conference.mnesia.localhost">>,
+                resource = <<>>,luser = <<"4">>,
+                lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.877 ***</b>
+SENT:
+<presence to='4@conference.mnesia.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          type='unavailable'
+          id='8695871438174852056'
+          xmlns='jabber:client'/>
+
+#presence{id = <<"8695871438174852056">>,type = unavailable,lang = <<>>,
+          from = undefined,
+          to = #jid{user = <<"4">>,server = <<"conference.mnesia.localhost">>,
+                    resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"4">>,
+                    lserver = <<"conference.mnesia.localhost">>,
+                    lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,sub_els = [],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:10:04.878 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:10:04.878530 ===
+Destroyed MUC room 4@conference.mnesia.localhost because it's temporary and empty
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.878 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='4@conference.mnesia.localhost'
+          type='unavailable'
+          id='4799141582295689571'/>
+
+#presence{id = <<"4799141582295689571">>,type = unavailable,lang = <<>>,
+          from = #jid{user = <<"4">>,
+                      server = <<"conference.mnesia.localhost">>,
+                      resource = <<>>,luser = <<"4">>,
+                      lserver = <<"conference.mnesia.localhost">>,
+                      lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"mnesia.localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"mnesia.localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,sub_els = [],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.881 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='4@conference.mnesia.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          type='unavailable'
+          id='8695871438174852056'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <item jid='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          role='none'
+          affiliation='owner'/>
+    <status code='110'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"8695871438174852056">>,type = unavailable,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"4">>,server = <<"conference.mnesia.localhost">>,
+            resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"4">>,lserver = <<"conference.mnesia.localhost">>,
+            lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#muc_user{
+             decline = undefined,destroy = undefined,invites = [],
+             items =
+                 [#muc_item{
+                      actor = undefined,continue = undefined,reason = <<>>,
+                      affiliation = owner,role = none,
+                      jid =
+                          #jid{
+                              user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              server = <<"mnesia.localhost">>,
+                              resource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              lserver = <<"mnesia.localhost">>,
+                              lresource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+                      nick = <<>>}],
+             status_codes = "n",password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.881 ***</b>
+SENT:
+<iq to='5@conference.mnesia.localhost'
+    type='set'
+    id='4491294419836860621'
+    xmlns='jabber:client'>
+  <unsubscribe xmlns='urn:xmpp:mucsub:0'/>
+</iq>
+
+#iq{id = <<"4491294419836860621">>,type = set,lang = <<>>,from = undefined,
+    to = #jid{user = <<"5">>,server = <<"conference.mnesia.localhost">>,
+              resource = <<>>,luser = <<"5">>,
+              lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    sub_els = [#muc_unsubscribe{nick = <<>>,jid = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:10:04.881 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:10:04.881606 ===
+Stopping MUC room 4@conference.mnesia.localhost
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.882 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='5@conference.mnesia.localhost'
+    type='result'
+    id='4491294419836860621'/>
+
+#iq{id = <<"4491294419836860621">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"5">>,server = <<"conference.mnesia.localhost">>,
+                resource = <<>>,luser = <<"5">>,
+                lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.883 ***</b>
+SENT:
+<iq to='5@conference.mnesia.localhost'
+    type='set'
+    id='16329321724213951749'
+    xmlns='jabber:client'>
+  <query xmlns='http://jabber.org/protocol/muc#owner'>
+    <x type='submit'
+       xmlns='jabber:x:data'>
+      <field var='FORM_TYPE'
+             type='hidden'>
+        <value>http://jabber.org/protocol/muc#roomconfig</value>
+      </field>
+      <field var='muc#roomconfig_persistentroom'
+             type='boolean'
+             label='Make room persistent'>
+        <value>0</value>
+      </field>
+    </x>
+  </query>
+</iq>
+
+#iq{id = <<"16329321724213951749">>,type = set,lang = <<>>,from = undefined,
+    to =
+        #jid{
+            user = <<"5">>,server = <<"conference.mnesia.localhost">>,
+            resource = <<>>,luser = <<"5">>,
+            lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    sub_els =
+        [#muc_owner{
+             destroy = undefined,
+             config =
+                 #xdata{
+                     type = submit,instructions = [],title = undefined,
+                     reported = undefined,items = [],
+                     fields =
+                         [#xdata_field{
+                              label = <<>>,type = hidden,
+                              var = <<"FORM_TYPE">>,required = false,
+                              desc = <<>>,
+                              values =
+                                  [<<"http://jabber.org/protocol/muc#roomconfig">>],
+                              options = [],sub_els = []},
+                          #xdata_field{
+                              label = <<"Make room persistent">>,
+                              type = boolean,
+                              var = <<"muc#roomconfig_persistentroom">>,
+                              required = false,desc = <<>>,
+                              values = [<<"0">>],
+                              options = [],sub_els = []}]},
+             items = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.884 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='5@conference.mnesia.localhost'
+          id='14007191677023569204'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='FOnz9Mk9aWertt3mEGMIGctRwJ4='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"14007191677023569204">>,type = available,lang = <<>>,
+          from = #jid{user = <<"5">>,
+                      server = <<"conference.mnesia.localhost">>,
+                      resource = <<>>,luser = <<"5">>,
+                      lserver = <<"conference.mnesia.localhost">>,
+                      lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"mnesia.localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"mnesia.localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"FOnz9Mk9aWertt3mEGMIGctRwJ4=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.884 ***</b>
+RECV:
+<message to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='5@conference.mnesia.localhost'
+         type='groupchat'
+         id='2949051515952959160'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <status code='104'/>
+  </x>
+</message>
+
+#message{id = <<"2949051515952959160">>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"5">>,
+                     server = <<"conference.mnesia.localhost">>,
+                     resource = <<>>,luser = <<"5">>,
+                     lserver = <<"conference.mnesia.localhost">>,
+                     lresource = <<>>},
+         to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"mnesia.localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"mnesia.localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#muc_user{decline = undefined,destroy = undefined,
+                              invites = [],items = [],status_codes = "h",
+                              password = undefined}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.884 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+    from='5@conference.mnesia.localhost'
+    type='result'
+    id='16329321724213951749'/>
+
+#iq{id = <<"16329321724213951749">>,type = result,lang = <<"en">>,
+    from = #jid{user = <<"5">>,server = <<"conference.mnesia.localhost">>,
+                resource = <<>>,luser = <<"5">>,
+                lserver = <<"conference.mnesia.localhost">>,lresource = <<>>},
+    to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              server = <<"mnesia.localhost">>,
+              resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+              lserver = <<"mnesia.localhost">>,
+              lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.885 ***</b>
+SENT:
+<presence to='5@conference.mnesia.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          type='unavailable'
+          id='18069263982448155329'
+          xmlns='jabber:client'/>
+
+#presence{id = <<"18069263982448155329">>,type = unavailable,lang = <<>>,
+          from = undefined,
+          to = #jid{user = <<"5">>,server = <<"conference.mnesia.localhost">>,
+                    resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"5">>,
+                    lserver = <<"conference.mnesia.localhost">>,
+                    lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,sub_els = [],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:10:04.885 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:10:04.885641 ===
+Destroyed MUC room 5@conference.mnesia.localhost because it's temporary and empty
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.886 ***</b>
+RECV:
+<presence to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='5@conference.mnesia.localhost'
+          type='unavailable'
+          id='13875437945455574622'/>
+
+#presence{id = <<"13875437945455574622">>,type = unavailable,lang = <<>>,
+          from = #jid{user = <<"5">>,
+                      server = <<"conference.mnesia.localhost">>,
+                      resource = <<>>,luser = <<"5">>,
+                      lserver = <<"conference.mnesia.localhost">>,
+                      lresource = <<>>},
+          to = #jid{user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"mnesia.localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"mnesia.localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,sub_els = [],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:10:04.886 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:10:04.886374 ===
+Stopping MUC room 5@conference.mnesia.localhost
+
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:10:04.886 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='5@conference.mnesia.localhost/nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          type='unavailable'
+          id='18069263982448155329'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <item jid='test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          role='none'
+          affiliation='owner'/>
+    <status code='110'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"18069263982448155329">>,type = unavailable,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"5">>,server = <<"conference.mnesia.localhost">>,
+            resource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"5">>,lserver = <<"conference.mnesia.localhost">>,
+            lresource = <<"nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"mnesia.localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"mnesia.localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#muc_user{
+             decline = undefined,destroy = undefined,invites = [],
+             items =
+                 [#muc_item{
+                      actor = undefined,continue = undefined,reason = <<>>,
+                      affiliation = owner,role = none,
+                      jid =
+                          #jid{
+                              user = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              server = <<"mnesia.localhost">>,
+                              resource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              luser = <<"test_single!#$%^*()`~+-;_=[]{}|\\">>,
+                              lserver = <<"mnesia.localhost">>,
+                              lresource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+                      nick = <<>>}],
+             status_codes = "n",password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="sasl"><pre><b>*** System report during ejabberd_SUITE:muc_service_subscriptions/1 in muc_single 2021-12-09 17:10:04.887 ***</b>
+=INFO REPORT==== 9-Dec-2021::17:10:04.887326 ===
+(tcp|&lt;0.32750.0&gt;) Closing c2s session for test_single!#$%^*()`~+-;_=[]{}|\@mnesia.localhost/resource!@#$%^&amp;*()'"`~&lt;&gt;+-/;:_=[]{}|\: Stream reset by peer
+
+</pre></div>
+<pre>
+<a name="end"></a>
+
+
+=== Ended at 2021-12-09 17:10:05
+=== successfully completed test case
+=== === Returned value: [{receiver,undefined},
+                     {csi,true},
+                     {rosterver,true},
+                     {sm,true},
+                     {compression,[&lt;&lt;"zlib"&gt;&gt;]},
+                     {stream_id,&lt;&lt;"14929445309626839019"&gt;&gt;},
+                     {sasl,#Fun&lt;suite.6.40689848&gt;},
+                     {legacy_auth,true},
+                     {register,true},
+                     {starttls,true},
+                     {mechs,
+                         [&lt;&lt;"DIGEST-MD5"&gt;&gt;,&lt;&lt;"PLAIN"&gt;&gt;,&lt;&lt;"SCRAM-SHA-512"&gt;&gt;,
+                          &lt;&lt;"SCRAM-SHA-256"&gt;&gt;,&lt;&lt;"SCRAM-SHA-1"&gt;&gt;,
+                          &lt;&lt;"X-OAUTH2"&gt;&gt;]},
+                     {user,&lt;&lt;"test_single!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;},
+                     {slave,
+                         {jid,&lt;&lt;"test_slave!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"mnesia.localhost"&gt;&gt;,
+                             &lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"test_slave!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"mnesia.localhost"&gt;&gt;,
+                             &lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;}},
+                     {master,
+                         {jid,&lt;&lt;"test_master!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"mnesia.localhost"&gt;&gt;,
+                             &lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"test_master!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"mnesia.localhost"&gt;&gt;,
+                             &lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;}},
+                     {resource,&lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {nick,&lt;&lt;"nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {mode,single},
+                     {watchdog,&lt;0.32748.0&gt;},
+                     {event_relay,&lt;0.32609.0&gt;},
+                     {server,&lt;&lt;"mnesia.localhost"&gt;&gt;},
+                     {server_port,5222},
+                     {server_host,"localhost"},
+                     {component_port,5270},
+                     {s2s_port,5269},
+                     {master_nick,
+                         &lt;&lt;"master_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {slave_nick,
+                         &lt;&lt;"slave_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {room_subject,
+                         &lt;&lt;"hello, world!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {certfile,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/test/ejabberd_SUITE_data/cert.pem"},
+                     {persistent_room,true},
+                     {anonymous,false},
+                     {type,client},
+                     {xmlns,&lt;&lt;"jabber:client"&gt;&gt;},
+                     {ns_stream,&lt;&lt;"http://etherx.jabber.org/streams"&gt;&gt;},
+                     {stream_version,{1,0}},
+                     {stream_from,&lt;&lt;&gt;&gt;},
+                     {db_xmlns,&lt;&lt;&gt;&gt;},
+                     {lang,&lt;&lt;"en"&gt;&gt;},
+                     {base_dir,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd"},
+                     {pubsub_node,&lt;&lt;"node!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {pubsub_node_title,
+                         &lt;&lt;"title!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {master_resource,
+                         &lt;&lt;"master_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {slave_resource,
+                         &lt;&lt;"slave_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {password,&lt;&lt;"password!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {backends,[mnesia]},
+                     {tc_logfile,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.09.24/lib.ejabberd.logs/run.2021-12-09_17.09.25/ejabberd_suite.muc_service_subscriptions.6915.html"},
+                     {tc_group_properties,[{name,muc_single},sequence]},
+                     {tc_group_path,
+                         [[{name,single_user},sequence],
+                          [{name,mnesia},sequence]]},
+                     {data_dir,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/test/ejabberd_SUITE_data/"},
+                     {priv_dir,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.09.24/lib.ejabberd.logs/run.2021-12-09_17.09.25/log_private/"}]
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>  |  <a href="../../../suite.log.latest.html">Latest test result</a>
+</p>
+<div class="copyright">Copyright &copy; 2021 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!--date-->Thu Dec 09 2021 17:10:04<!--/date--><br />
+</div>
+</center>
+</body>
+</html>

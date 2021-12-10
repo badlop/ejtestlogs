@@ -1,0 +1,2696 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test ejabberd_SUITE:carbons_enable_disable_master result</title>
+<meta http-equiv="cache-control" content="no-cache"></meta>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+<link rel="stylesheet" href="../../ct_default.css" type="text/css"></link>
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="ejabberd_suite.src.html#carbons_enable_disable_master-1">ejabberd_SUITE:carbons_enable_disable_master/1</a> (click for source code)
+
+=== Config value:
+
+    [{event_relay,&lt;0.31946.0&gt;},
+     {watchdog,&lt;0.31945.0&gt;},
+     {persistent_room,false},
+     {server_port,5222},
+     {server_host,"localhost"},
+     {component_port,5270},
+     {s2s_port,5269},
+     {server,&lt;&lt;"localhost"&gt;&gt;},
+     {user,&lt;&lt;"test_single!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;},
+     {nick,&lt;&lt;"nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {master_nick,&lt;&lt;"master_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {slave_nick,&lt;&lt;"slave_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {room_subject,&lt;&lt;"hello, world!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {certfile,"/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/test/ejabberd_SUITE_data/cert.pem"},
+     {anonymous,false},
+     {type,client},
+     {xmlns,&lt;&lt;"jabber:client"&gt;&gt;},
+     {ns_stream,&lt;&lt;"http://etherx.jabber.org/streams"&gt;&gt;},
+     {stream_version,{1,0}},
+     {stream_id,&lt;&lt;&gt;&gt;},
+     {stream_from,&lt;&lt;&gt;&gt;},
+     {db_xmlns,&lt;&lt;&gt;&gt;},
+     {mechs,[]},
+     {rosterver,false},
+     {lang,&lt;&lt;"en"&gt;&gt;},
+     {base_dir,"/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd"},
+     {receiver,undefined},
+     {pubsub_node,&lt;&lt;"node!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {pubsub_node_title,&lt;&lt;"title!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {resource,&lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {master_resource,&lt;&lt;"master_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {slave_resource,&lt;&lt;"slave_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {password,&lt;&lt;"password!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {backends,[mnesia]},
+     {tc_logfile,"/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.09.24/lib.ejabberd.logs/run.2021-12-09_17.09.25/ejabberd_suite.carbons_enable_disable_master.5330.html"},
+     {tc_group_properties,[{name,carbons_enable_disable},parallel]},
+     {tc_group_path,[[{name,carbons_master_slave},sequence],
+                     [{name,no_db},sequence]]},
+     {data_dir,"/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/test/ejabberd_SUITE_data/"},
+     {priv_dir,"/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.09.24/lib.ejabberd.logs/run.2021-12-09_17.09.25/log_private/"}]
+
+=== Current directory is "/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.09.24"
+
+=== Started at 2021-12-09 17:09:53
+
+<br />
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.588 ***</b>
+SENT:
+<stream:stream version='1.0'
+               xml:lang='en'
+               xmlns:stream='http://etherx.jabber.org/streams'
+               to='localhost'
+               xmlns='jabber:client'/>
+
+#stream_start{from = undefined,
+              to = #jid{user = <<>>,server = <<"localhost">>,resource = <<>>,
+                        luser = <<>>,lserver = <<"localhost">>,
+                        lresource = <<>>},
+              id = <<>>,
+              version = {1,0},
+              xmlns = <<"jabber:client">>,
+              stream_xmlns = <<"http://etherx.jabber.org/streams">>,
+              db_xmlns = <<>>,lang = <<"en">>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.589 ***</b>
+RECV:
+<stream:stream xmlns:stream='http://etherx.jabber.org/streams'
+               xmlns='jabber:client'
+               id='361961819072574872'
+               version='1.0'
+               xml:lang='en'
+               from='localhost'/>
+
+#stream_start{from = #jid{user = <<>>,server = <<"localhost">>,
+                          resource = <<>>,luser = <<>>,
+                          lserver = <<"localhost">>,lresource = <<>>},
+              to = undefined,id = <<"361961819072574872">>,
+              version = {1,0},
+              xmlns = <<"jabber:client">>,
+              stream_xmlns = <<"http://etherx.jabber.org/streams">>,
+              db_xmlns = <<>>,lang = <<"en">>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.589 ***</b>
+RECV:
+<stream:features>
+  <mechanisms xmlns='urn:ietf:params:xml:ns:xmpp-sasl'>
+    <mechanism>ANONYMOUS</mechanism>
+    <mechanism>DIGEST-MD5</mechanism>
+    <mechanism>PLAIN</mechanism>
+    <mechanism>SCRAM-SHA-512</mechanism>
+    <mechanism>SCRAM-SHA-256</mechanism>
+    <mechanism>SCRAM-SHA-1</mechanism>
+    <mechanism>X-OAUTH2</mechanism>
+  </mechanisms>
+  <starttls xmlns='urn:ietf:params:xml:ns:xmpp-tls'/>
+  <register xmlns='http://jabber.org/features/iq-register'/>
+  <auth xmlns='http://jabber.org/features/iq-auth'/>
+</stream:features>
+
+#stream_features{
+    sub_els =
+        [#sasl_mechanisms{
+             list =
+                 [<<"ANONYMOUS">>,<<"DIGEST-MD5">>,<<"PLAIN">>,
+                  <<"SCRAM-SHA-512">>,<<"SCRAM-SHA-256">>,<<"SCRAM-SHA-1">>,
+                  <<"X-OAUTH2">>]},
+         #starttls{required = false},
+         #feature_register{},
+         #legacy_auth_feature{}]}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.590 ***</b>
+SENT:
+<auth mechanism='PLAIN'
+      xmlns='urn:ietf:params:xml:ns:xmpp-sasl'>dGVzdF9tYXN0ZXIhIyQlXiooKWB+Ky07Xz1bXXt9fFxAbG9jYWxob3N0AHRlc3RfbWFzdGVyISMkJV4qKClgfistO189W117fXxcAHBhc3N3b3JkIUAjJCVeJiooKSciYH48PistLzs6Xz1bXXt9fFw=</auth>
+
+#sasl_auth{mechanism = <<"PLAIN">>,
+           text = <<116,101,115,116,95,109,97,115,116,101,114,33,35,36,37,94,
+                    42,40,41,96,126,43,45,59,95,61,91,93,123,125,124,92,64,
+                    108,111,99,97,108,104,111,115,116,0,116,101,115,116,95,
+                    109,97,115,116,101,114,33,35,36,37,94,42,40,41,96,126,43,
+                    45,59,95,61,91,93,123,125,124,92,0,112,97,115,115,119,111,
+                    114,100,33,64,35,36,37,94,38,42,40,41,39,34,96,126,60,62,
+                    43,45,47,59,58,95,61,91,93,123,125,124,92>>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.591 ***</b>
+RECV:
+<success xmlns='urn:ietf:params:xml:ns:xmpp-sasl'/>
+
+#sasl_success{text = <<>>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.591 ***</b>
+SENT:
+<stream:stream version='1.0'
+               xml:lang='en'
+               xmlns:stream='http://etherx.jabber.org/streams'
+               to='localhost'
+               xmlns='jabber:client'/>
+
+#stream_start{from = undefined,
+              to = #jid{user = <<>>,server = <<"localhost">>,resource = <<>>,
+                        luser = <<>>,lserver = <<"localhost">>,
+                        lresource = <<>>},
+              id = <<>>,
+              version = {1,0},
+              xmlns = <<"jabber:client">>,
+              stream_xmlns = <<"http://etherx.jabber.org/streams">>,
+              db_xmlns = <<>>,lang = <<"en">>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.592 ***</b>
+RECV:
+<stream:stream xmlns:stream='http://etherx.jabber.org/streams'
+               xmlns='jabber:client'
+               id='2577205816599238560'
+               version='1.0'
+               xml:lang='en'
+               from='localhost'/>
+
+#stream_start{from = #jid{user = <<>>,server = <<"localhost">>,
+                          resource = <<>>,luser = <<>>,
+                          lserver = <<"localhost">>,lresource = <<>>},
+              to = undefined,id = <<"2577205816599238560">>,
+              version = {1,0},
+              xmlns = <<"jabber:client">>,
+              stream_xmlns = <<"http://etherx.jabber.org/streams">>,
+              db_xmlns = <<>>,lang = <<"en">>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.592 ***</b>
+RECV:
+<stream:features>
+  <compression xmlns='http://jabber.org/features/compress'>
+    <method>zlib</method>
+  </compression>
+  <bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'/>
+  <session xmlns='urn:ietf:params:xml:ns:xmpp-session'>
+    <optional/>
+  </session>
+  <sm xmlns='urn:xmpp:sm:2'/>
+  <sm xmlns='urn:xmpp:sm:3'/>
+</stream:features>
+
+#stream_features{sub_els = [#compression{methods = [<<"zlib">>]},
+                            #bind{jid = undefined,resource = <<>>},
+                            #xmpp_session{optional = true},
+                            #feature_sm{xmlns = <<"urn:xmpp:sm:2">>},
+                            #feature_sm{xmlns = <<"urn:xmpp:sm:3">>}]}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.592 ***</b>
+SENT:
+<iq type='set'
+    id='8062636308674076720'
+    xmlns='jabber:client'>
+  <bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'>
+    <resource>master_resource!@#$%^&*()'"`~<>+-/;:_=[]{}|\</resource>
+  </bind>
+</iq>
+
+#iq{id = <<"8062636308674076720">>,type = set,lang = <<>>,from = undefined,
+    to = undefined,
+    sub_els = [#bind{jid = undefined,
+                     resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.593 ***</b>
+RECV:
+<iq type='result'
+    id='8062636308674076720'>
+  <bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'>
+    <jid>test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&*()'"`~<>+-/;:_=[]{}|\</jid>
+  </bind>
+</iq>
+
+#iq{id = <<"8062636308674076720">>,type = result,lang = <<>>,from = undefined,
+    to = undefined,
+    sub_els =
+        [#bind{
+             jid =
+                 #jid{
+                     user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                     server = <<"localhost">>,
+                     resource =
+                         <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                     lserver = <<"localhost">>,
+                     lresource =
+                         <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+             resource = <<>>}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.595 ***</b>
+SENT:
+<presence id='702859304181845190'
+          xmlns='jabber:client'>
+  <priority>10</priority>
+</presence>
+
+#presence{id = <<"702859304181845190">>,type = available,lang = <<>>,
+          from = undefined,to = undefined,show = undefined,status = [],
+          priority = 10,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.595 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='702859304181845190'>
+  <priority>10</priority>
+</presence>
+
+#presence{id = <<"702859304181845190">>,type = available,lang = <<"en">>,
+          from = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                      server = <<"localhost">>,
+                      resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                      luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                      lserver = <<"localhost">>,
+                      lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"localhost">>,
+                    resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"localhost">>,
+                    lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = 10,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.600 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='test_master!#$%^*()`~+-;_=[]{}|\@localhost/slave_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='16105705584987405056'>
+  <priority>5</priority>
+</presence>
+
+#presence{id = <<"16105705584987405056">>,type = available,lang = <<"en">>,
+          from = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                      server = <<"localhost">>,
+                      resource = <<"slave_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                      luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                      lserver = <<"localhost">>,
+                      lresource = <<"slave_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"localhost">>,
+                    resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"localhost">>,
+                    lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = 5,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.604 ***</b>
+SENT:
+<message to='575981684385522692@localhost'
+         type='error'
+         id='1381373183924809510'
+         xmlns='jabber:client'/>
+
+#message{id = <<"1381373183924809510">>,type = error,lang = <<>>,
+         from = undefined,
+         to = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                   resource = <<>>,luser = <<"575981684385522692">>,
+                   lserver = <<"localhost">>,lresource = <<>>},
+         subject = [],body = [],thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.604 ***</b>
+SENT:
+<message to='575981684385522692@localhost'
+         type='error'
+         id='6167887509266731991'
+         xmlns='jabber:client'>
+  <no-copy xmlns='urn:xmpp:hints'/>
+</message>
+
+#message{id = <<"6167887509266731991">>,type = error,lang = <<>>,
+         from = undefined,
+         to = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                   resource = <<>>,luser = <<"575981684385522692">>,
+                   lserver = <<"localhost">>,lresource = <<>>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#hint{type = 'no-copy'}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.604 ***</b>
+SENT:
+<message to='575981684385522692@localhost'
+         type='error'
+         id='9959112890801970387'
+         xmlns='jabber:client'>
+  <private xmlns='urn:xmpp:carbons:2'/>
+</message>
+
+#message{id = <<"9959112890801970387">>,type = error,lang = <<>>,
+         from = undefined,
+         to = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                   resource = <<>>,luser = <<"575981684385522692">>,
+                   lserver = <<"localhost">>,lresource = <<>>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#carbons_private{}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.604 ***</b>
+SENT:
+<message to='575981684385522692@localhost'
+         type='error'
+         id='16401739078061774031'
+         xmlns='jabber:client'>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<"16401739078061774031">>,type = error,lang = <<>>,
+         from = undefined,
+         to = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                   resource = <<>>,luser = <<"575981684385522692">>,
+                   lserver = <<"localhost">>,lresource = <<>>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.605 ***</b>
+SENT:
+<message to='575981684385522692@localhost'
+         type='error'
+         id='14368289964321126095'
+         xmlns='jabber:client'>
+  <no-copy xmlns='urn:xmpp:hints'/>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<"14368289964321126095">>,type = error,lang = <<>>,
+         from = undefined,
+         to = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                   resource = <<>>,luser = <<"575981684385522692">>,
+                   lserver = <<"localhost">>,lresource = <<>>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,
+         sub_els = [#hint{type = 'no-copy'}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.605 ***</b>
+SENT:
+<message to='575981684385522692@localhost'
+         type='error'
+         id='765124426433846290'
+         xmlns='jabber:client'>
+  <private xmlns='urn:xmpp:carbons:2'/>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<"765124426433846290">>,type = error,lang = <<>>,
+         from = undefined,
+         to = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                   resource = <<>>,luser = <<"575981684385522692">>,
+                   lserver = <<"localhost">>,lresource = <<>>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,
+         sub_els = [#carbons_private{}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.605 ***</b>
+SENT:
+<message to='575981684385522692@localhost'
+         type='chat'
+         id='6937081054220875452'
+         xmlns='jabber:client'/>
+
+#message{id = <<"6937081054220875452">>,type = chat,lang = <<>>,
+         from = undefined,
+         to = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                   resource = <<>>,luser = <<"575981684385522692">>,
+                   lserver = <<"localhost">>,lresource = <<>>},
+         subject = [],body = [],thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.606 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='error'
+         id='6937081054220875452'>
+  <error type='cancel'>
+    <service-unavailable xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/>
+  </error>
+</message>
+
+#message{id = <<"6937081054220875452">>,type = error,lang = <<"en">>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#stanza_error{type = cancel,by = undefined,
+                                  reason = 'service-unavailable',text = [],
+                                  sub_els = []}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.606 ***</b>
+SENT:
+<message to='575981684385522692@localhost'
+         type='chat'
+         id='8122068401336986285'
+         xmlns='jabber:client'>
+  <no-copy xmlns='urn:xmpp:hints'/>
+</message>
+
+#message{id = <<"8122068401336986285">>,type = chat,lang = <<>>,
+         from = undefined,
+         to = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                   resource = <<>>,luser = <<"575981684385522692">>,
+                   lserver = <<"localhost">>,lresource = <<>>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#hint{type = 'no-copy'}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.607 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='error'
+         id='8122068401336986285'>
+  <no-copy xmlns='urn:xmpp:hints'/>
+  <error type='cancel'>
+    <service-unavailable xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/>
+  </error>
+</message>
+
+#message{id = <<"8122068401336986285">>,type = error,lang = <<"en">>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#hint{type = 'no-copy'},
+                    #stanza_error{type = cancel,by = undefined,
+                                  reason = 'service-unavailable',text = [],
+                                  sub_els = []}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.607 ***</b>
+SENT:
+<message to='575981684385522692@localhost'
+         type='chat'
+         id='13199953634558498481'
+         xmlns='jabber:client'>
+  <private xmlns='urn:xmpp:carbons:2'/>
+</message>
+
+#message{id = <<"13199953634558498481">>,type = chat,lang = <<>>,
+         from = undefined,
+         to = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                   resource = <<>>,luser = <<"575981684385522692">>,
+                   lserver = <<"localhost">>,lresource = <<>>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#carbons_private{}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.608 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='error'
+         id='13199953634558498481'>
+  <private xmlns='urn:xmpp:carbons:2'/>
+  <error type='cancel'>
+    <service-unavailable xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/>
+  </error>
+</message>
+
+#message{id = <<"13199953634558498481">>,type = error,lang = <<"en">>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#carbons_private{},
+                    #stanza_error{type = cancel,by = undefined,
+                                  reason = 'service-unavailable',text = [],
+                                  sub_els = []}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.608 ***</b>
+SENT:
+<message to='575981684385522692@localhost'
+         type='chat'
+         id='4855394434584232018'
+         xmlns='jabber:client'>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<"4855394434584232018">>,type = chat,lang = <<>>,
+         from = undefined,
+         to = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                   resource = <<>>,luser = <<"575981684385522692">>,
+                   lserver = <<"localhost">>,lresource = <<>>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.609 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='error'
+         id='4855394434584232018'>
+  <error type='cancel'>
+    <service-unavailable xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/>
+  </error>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<"4855394434584232018">>,type = error,lang = <<"en">>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,
+         sub_els = [#stanza_error{type = cancel,by = undefined,
+                                  reason = 'service-unavailable',text = [],
+                                  sub_els = []}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.609 ***</b>
+SENT:
+<message to='575981684385522692@localhost'
+         type='chat'
+         id='14740984758013391869'
+         xmlns='jabber:client'>
+  <no-copy xmlns='urn:xmpp:hints'/>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<"14740984758013391869">>,type = chat,lang = <<>>,
+         from = undefined,
+         to = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                   resource = <<>>,luser = <<"575981684385522692">>,
+                   lserver = <<"localhost">>,lresource = <<>>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,
+         sub_els = [#hint{type = 'no-copy'}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.609 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='error'
+         id='14740984758013391869'>
+  <no-copy xmlns='urn:xmpp:hints'/>
+  <error type='cancel'>
+    <service-unavailable xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/>
+  </error>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<"14740984758013391869">>,type = error,lang = <<"en">>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,
+         sub_els = [#hint{type = 'no-copy'},
+                    #stanza_error{type = cancel,by = undefined,
+                                  reason = 'service-unavailable',text = [],
+                                  sub_els = []}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.610 ***</b>
+SENT:
+<message to='575981684385522692@localhost'
+         type='chat'
+         id='6236676107262077737'
+         xmlns='jabber:client'>
+  <private xmlns='urn:xmpp:carbons:2'/>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<"6236676107262077737">>,type = chat,lang = <<>>,
+         from = undefined,
+         to = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                   resource = <<>>,luser = <<"575981684385522692">>,
+                   lserver = <<"localhost">>,lresource = <<>>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,
+         sub_els = [#carbons_private{}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.610 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='error'
+         id='6236676107262077737'>
+  <private xmlns='urn:xmpp:carbons:2'/>
+  <error type='cancel'>
+    <service-unavailable xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/>
+  </error>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<"6236676107262077737">>,type = error,lang = <<"en">>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,
+         sub_els = [#carbons_private{},
+                    #stanza_error{type = cancel,by = undefined,
+                                  reason = 'service-unavailable',text = [],
+                                  sub_els = []}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.610 ***</b>
+SENT:
+<message to='575981684385522692@localhost'
+         id='7482692661753342528'
+         xmlns='jabber:client'/>
+
+#message{id = <<"7482692661753342528">>,type = normal,lang = <<>>,
+         from = undefined,
+         to = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                   resource = <<>>,luser = <<"575981684385522692">>,
+                   lserver = <<"localhost">>,lresource = <<>>},
+         subject = [],body = [],thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.611 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='error'
+         id='7482692661753342528'>
+  <error type='cancel'>
+    <service-unavailable xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/>
+  </error>
+</message>
+
+#message{id = <<"7482692661753342528">>,type = error,lang = <<"en">>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#stanza_error{type = cancel,by = undefined,
+                                  reason = 'service-unavailable',text = [],
+                                  sub_els = []}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.611 ***</b>
+SENT:
+<message to='575981684385522692@localhost'
+         id='6107948311157270711'
+         xmlns='jabber:client'>
+  <no-copy xmlns='urn:xmpp:hints'/>
+</message>
+
+#message{id = <<"6107948311157270711">>,type = normal,lang = <<>>,
+         from = undefined,
+         to = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                   resource = <<>>,luser = <<"575981684385522692">>,
+                   lserver = <<"localhost">>,lresource = <<>>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#hint{type = 'no-copy'}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.612 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='error'
+         id='6107948311157270711'>
+  <no-copy xmlns='urn:xmpp:hints'/>
+  <error type='cancel'>
+    <service-unavailable xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/>
+  </error>
+</message>
+
+#message{id = <<"6107948311157270711">>,type = error,lang = <<"en">>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#hint{type = 'no-copy'},
+                    #stanza_error{type = cancel,by = undefined,
+                                  reason = 'service-unavailable',text = [],
+                                  sub_els = []}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.612 ***</b>
+SENT:
+<message to='575981684385522692@localhost'
+         id='4735710043232144792'
+         xmlns='jabber:client'>
+  <private xmlns='urn:xmpp:carbons:2'/>
+</message>
+
+#message{id = <<"4735710043232144792">>,type = normal,lang = <<>>,
+         from = undefined,
+         to = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                   resource = <<>>,luser = <<"575981684385522692">>,
+                   lserver = <<"localhost">>,lresource = <<>>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#carbons_private{}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.612 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='error'
+         id='4735710043232144792'>
+  <private xmlns='urn:xmpp:carbons:2'/>
+  <error type='cancel'>
+    <service-unavailable xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/>
+  </error>
+</message>
+
+#message{id = <<"4735710043232144792">>,type = error,lang = <<"en">>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#carbons_private{},
+                    #stanza_error{type = cancel,by = undefined,
+                                  reason = 'service-unavailable',text = [],
+                                  sub_els = []}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.613 ***</b>
+SENT:
+<message to='575981684385522692@localhost'
+         id='8248534171522827057'
+         xmlns='jabber:client'>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<"8248534171522827057">>,type = normal,lang = <<>>,
+         from = undefined,
+         to = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                   resource = <<>>,luser = <<"575981684385522692">>,
+                   lserver = <<"localhost">>,lresource = <<>>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.613 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='error'
+         id='8248534171522827057'>
+  <error type='cancel'>
+    <service-unavailable xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/>
+  </error>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<"8248534171522827057">>,type = error,lang = <<"en">>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,
+         sub_els = [#stanza_error{type = cancel,by = undefined,
+                                  reason = 'service-unavailable',text = [],
+                                  sub_els = []}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.613 ***</b>
+SENT:
+<message to='575981684385522692@localhost'
+         id='15396731737318924436'
+         xmlns='jabber:client'>
+  <no-copy xmlns='urn:xmpp:hints'/>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<"15396731737318924436">>,type = normal,lang = <<>>,
+         from = undefined,
+         to = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                   resource = <<>>,luser = <<"575981684385522692">>,
+                   lserver = <<"localhost">>,lresource = <<>>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,
+         sub_els = [#hint{type = 'no-copy'}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.614 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='error'
+         id='15396731737318924436'>
+  <no-copy xmlns='urn:xmpp:hints'/>
+  <error type='cancel'>
+    <service-unavailable xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/>
+  </error>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<"15396731737318924436">>,type = error,lang = <<"en">>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,
+         sub_els = [#hint{type = 'no-copy'},
+                    #stanza_error{type = cancel,by = undefined,
+                                  reason = 'service-unavailable',text = [],
+                                  sub_els = []}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.614 ***</b>
+SENT:
+<message to='575981684385522692@localhost'
+         id='2658271494644206112'
+         xmlns='jabber:client'>
+  <private xmlns='urn:xmpp:carbons:2'/>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<"2658271494644206112">>,type = normal,lang = <<>>,
+         from = undefined,
+         to = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                   resource = <<>>,luser = <<"575981684385522692">>,
+                   lserver = <<"localhost">>,lresource = <<>>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,
+         sub_els = [#carbons_private{}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.616 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='error'
+         id='2658271494644206112'>
+  <private xmlns='urn:xmpp:carbons:2'/>
+  <error type='cancel'>
+    <service-unavailable xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/>
+  </error>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<"2658271494644206112">>,type = error,lang = <<"en">>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,
+         sub_els = [#carbons_private{},
+                    #stanza_error{type = cancel,by = undefined,
+                                  reason = 'service-unavailable',text = [],
+                                  sub_els = []}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.617 ***</b>
+SENT:
+<message to='575981684385522692@localhost'
+         type='groupchat'
+         id='2765899803947712862'
+         xmlns='jabber:client'/>
+
+#message{id = <<"2765899803947712862">>,type = groupchat,lang = <<>>,
+         from = undefined,
+         to = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                   resource = <<>>,luser = <<"575981684385522692">>,
+                   lserver = <<"localhost">>,lresource = <<>>},
+         subject = [],body = [],thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.617 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='error'
+         id='2765899803947712862'>
+  <error type='cancel'>
+    <service-unavailable xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/>
+    <text xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'
+          xml:lang='en'>User session not found</text>
+  </error>
+</message>
+
+#message{
+    id = <<"2765899803947712862">>,type = error,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"575981684385522692">>,server = <<"localhost">>,
+            resource = <<>>,luser = <<"575981684385522692">>,
+            lserver = <<"localhost">>,lresource = <<>>},
+    to =
+        #jid{
+            user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"localhost">>,
+            resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"localhost">>,
+            lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    subject = [],body = [],thread = undefined,
+    sub_els =
+        [#stanza_error{
+             type = cancel,by = undefined,reason = 'service-unavailable',
+             text =
+                 [#text{lang = <<"en">>,data = <<"User session not found">>}],
+             sub_els = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.617 ***</b>
+SENT:
+<message to='575981684385522692@localhost'
+         type='groupchat'
+         id='8947732321969778707'
+         xmlns='jabber:client'>
+  <no-copy xmlns='urn:xmpp:hints'/>
+</message>
+
+#message{id = <<"8947732321969778707">>,type = groupchat,lang = <<>>,
+         from = undefined,
+         to = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                   resource = <<>>,luser = <<"575981684385522692">>,
+                   lserver = <<"localhost">>,lresource = <<>>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#hint{type = 'no-copy'}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.618 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='error'
+         id='8947732321969778707'>
+  <no-copy xmlns='urn:xmpp:hints'/>
+  <error type='cancel'>
+    <service-unavailable xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/>
+    <text xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'
+          xml:lang='en'>User session not found</text>
+  </error>
+</message>
+
+#message{
+    id = <<"8947732321969778707">>,type = error,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"575981684385522692">>,server = <<"localhost">>,
+            resource = <<>>,luser = <<"575981684385522692">>,
+            lserver = <<"localhost">>,lresource = <<>>},
+    to =
+        #jid{
+            user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"localhost">>,
+            resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"localhost">>,
+            lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    subject = [],body = [],thread = undefined,
+    sub_els =
+        [#hint{type = 'no-copy'},
+         #stanza_error{
+             type = cancel,by = undefined,reason = 'service-unavailable',
+             text =
+                 [#text{lang = <<"en">>,data = <<"User session not found">>}],
+             sub_els = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.618 ***</b>
+SENT:
+<message to='575981684385522692@localhost'
+         type='groupchat'
+         id='11890884806800486667'
+         xmlns='jabber:client'>
+  <private xmlns='urn:xmpp:carbons:2'/>
+</message>
+
+#message{id = <<"11890884806800486667">>,type = groupchat,lang = <<>>,
+         from = undefined,
+         to = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                   resource = <<>>,luser = <<"575981684385522692">>,
+                   lserver = <<"localhost">>,lresource = <<>>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#carbons_private{}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.619 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='error'
+         id='11890884806800486667'>
+  <private xmlns='urn:xmpp:carbons:2'/>
+  <error type='cancel'>
+    <service-unavailable xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/>
+    <text xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'
+          xml:lang='en'>User session not found</text>
+  </error>
+</message>
+
+#message{
+    id = <<"11890884806800486667">>,type = error,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"575981684385522692">>,server = <<"localhost">>,
+            resource = <<>>,luser = <<"575981684385522692">>,
+            lserver = <<"localhost">>,lresource = <<>>},
+    to =
+        #jid{
+            user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"localhost">>,
+            resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"localhost">>,
+            lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    subject = [],body = [],thread = undefined,
+    sub_els =
+        [#carbons_private{},
+         #stanza_error{
+             type = cancel,by = undefined,reason = 'service-unavailable',
+             text =
+                 [#text{lang = <<"en">>,data = <<"User session not found">>}],
+             sub_els = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.619 ***</b>
+SENT:
+<message to='575981684385522692@localhost'
+         type='groupchat'
+         id='7766889094824537975'
+         xmlns='jabber:client'>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<"7766889094824537975">>,type = groupchat,lang = <<>>,
+         from = undefined,
+         to = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                   resource = <<>>,luser = <<"575981684385522692">>,
+                   lserver = <<"localhost">>,lresource = <<>>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.619 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='error'
+         id='7766889094824537975'>
+  <error type='cancel'>
+    <service-unavailable xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/>
+    <text xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'
+          xml:lang='en'>User session not found</text>
+  </error>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{
+    id = <<"7766889094824537975">>,type = error,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"575981684385522692">>,server = <<"localhost">>,
+            resource = <<>>,luser = <<"575981684385522692">>,
+            lserver = <<"localhost">>,lresource = <<>>},
+    to =
+        #jid{
+            user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"localhost">>,
+            resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"localhost">>,
+            lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    subject = [],
+    body = [#text{lang = <<"en">>,data = <<"body">>}],
+    thread = undefined,
+    sub_els =
+        [#stanza_error{
+             type = cancel,by = undefined,reason = 'service-unavailable',
+             text =
+                 [#text{lang = <<"en">>,data = <<"User session not found">>}],
+             sub_els = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.620 ***</b>
+SENT:
+<message to='575981684385522692@localhost'
+         type='groupchat'
+         id='10243827293751535248'
+         xmlns='jabber:client'>
+  <no-copy xmlns='urn:xmpp:hints'/>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<"10243827293751535248">>,type = groupchat,lang = <<>>,
+         from = undefined,
+         to = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                   resource = <<>>,luser = <<"575981684385522692">>,
+                   lserver = <<"localhost">>,lresource = <<>>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,
+         sub_els = [#hint{type = 'no-copy'}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.620 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='error'
+         id='10243827293751535248'>
+  <no-copy xmlns='urn:xmpp:hints'/>
+  <error type='cancel'>
+    <service-unavailable xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/>
+    <text xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'
+          xml:lang='en'>User session not found</text>
+  </error>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{
+    id = <<"10243827293751535248">>,type = error,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"575981684385522692">>,server = <<"localhost">>,
+            resource = <<>>,luser = <<"575981684385522692">>,
+            lserver = <<"localhost">>,lresource = <<>>},
+    to =
+        #jid{
+            user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"localhost">>,
+            resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"localhost">>,
+            lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    subject = [],
+    body = [#text{lang = <<"en">>,data = <<"body">>}],
+    thread = undefined,
+    sub_els =
+        [#hint{type = 'no-copy'},
+         #stanza_error{
+             type = cancel,by = undefined,reason = 'service-unavailable',
+             text =
+                 [#text{lang = <<"en">>,data = <<"User session not found">>}],
+             sub_els = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.620 ***</b>
+SENT:
+<message to='575981684385522692@localhost'
+         type='groupchat'
+         id='13661378945500165733'
+         xmlns='jabber:client'>
+  <private xmlns='urn:xmpp:carbons:2'/>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<"13661378945500165733">>,type = groupchat,lang = <<>>,
+         from = undefined,
+         to = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                   resource = <<>>,luser = <<"575981684385522692">>,
+                   lserver = <<"localhost">>,lresource = <<>>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,
+         sub_els = [#carbons_private{}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.621 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='error'
+         id='13661378945500165733'>
+  <private xmlns='urn:xmpp:carbons:2'/>
+  <error type='cancel'>
+    <service-unavailable xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/>
+    <text xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'
+          xml:lang='en'>User session not found</text>
+  </error>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{
+    id = <<"13661378945500165733">>,type = error,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"575981684385522692">>,server = <<"localhost">>,
+            resource = <<>>,luser = <<"575981684385522692">>,
+            lserver = <<"localhost">>,lresource = <<>>},
+    to =
+        #jid{
+            user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"localhost">>,
+            resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"localhost">>,
+            lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    subject = [],
+    body = [#text{lang = <<"en">>,data = <<"body">>}],
+    thread = undefined,
+    sub_els =
+        [#carbons_private{},
+         #stanza_error{
+             type = cancel,by = undefined,reason = 'service-unavailable',
+             text =
+                 [#text{lang = <<"en">>,data = <<"User session not found">>}],
+             sub_els = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.621 ***</b>
+SENT:
+<message to='575981684385522692@localhost'
+         type='headline'
+         id='18412289196065198486'
+         xmlns='jabber:client'/>
+
+#message{id = <<"18412289196065198486">>,type = headline,lang = <<>>,
+         from = undefined,
+         to = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                   resource = <<>>,luser = <<"575981684385522692">>,
+                   lserver = <<"localhost">>,lresource = <<>>},
+         subject = [],body = [],thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.622 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='error'
+         id='18412289196065198486'>
+  <error type='cancel'>
+    <service-unavailable xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/>
+  </error>
+</message>
+
+#message{id = <<"18412289196065198486">>,type = error,lang = <<"en">>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#stanza_error{type = cancel,by = undefined,
+                                  reason = 'service-unavailable',text = [],
+                                  sub_els = []}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.622 ***</b>
+SENT:
+<message to='575981684385522692@localhost'
+         type='headline'
+         id='2072572110159332281'
+         xmlns='jabber:client'>
+  <no-copy xmlns='urn:xmpp:hints'/>
+</message>
+
+#message{id = <<"2072572110159332281">>,type = headline,lang = <<>>,
+         from = undefined,
+         to = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                   resource = <<>>,luser = <<"575981684385522692">>,
+                   lserver = <<"localhost">>,lresource = <<>>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#hint{type = 'no-copy'}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.623 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='error'
+         id='2072572110159332281'>
+  <no-copy xmlns='urn:xmpp:hints'/>
+  <error type='cancel'>
+    <service-unavailable xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/>
+  </error>
+</message>
+
+#message{id = <<"2072572110159332281">>,type = error,lang = <<"en">>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#hint{type = 'no-copy'},
+                    #stanza_error{type = cancel,by = undefined,
+                                  reason = 'service-unavailable',text = [],
+                                  sub_els = []}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.623 ***</b>
+SENT:
+<message to='575981684385522692@localhost'
+         type='headline'
+         id='12369007773321654186'
+         xmlns='jabber:client'>
+  <private xmlns='urn:xmpp:carbons:2'/>
+</message>
+
+#message{id = <<"12369007773321654186">>,type = headline,lang = <<>>,
+         from = undefined,
+         to = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                   resource = <<>>,luser = <<"575981684385522692">>,
+                   lserver = <<"localhost">>,lresource = <<>>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#carbons_private{}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.623 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='error'
+         id='12369007773321654186'>
+  <private xmlns='urn:xmpp:carbons:2'/>
+  <error type='cancel'>
+    <service-unavailable xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/>
+  </error>
+</message>
+
+#message{id = <<"12369007773321654186">>,type = error,lang = <<"en">>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#carbons_private{},
+                    #stanza_error{type = cancel,by = undefined,
+                                  reason = 'service-unavailable',text = [],
+                                  sub_els = []}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.623 ***</b>
+SENT:
+<message to='575981684385522692@localhost'
+         type='headline'
+         id='16612260885628367554'
+         xmlns='jabber:client'>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<"16612260885628367554">>,type = headline,lang = <<>>,
+         from = undefined,
+         to = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                   resource = <<>>,luser = <<"575981684385522692">>,
+                   lserver = <<"localhost">>,lresource = <<>>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.624 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='error'
+         id='16612260885628367554'>
+  <error type='cancel'>
+    <service-unavailable xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/>
+  </error>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<"16612260885628367554">>,type = error,lang = <<"en">>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,
+         sub_els = [#stanza_error{type = cancel,by = undefined,
+                                  reason = 'service-unavailable',text = [],
+                                  sub_els = []}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.625 ***</b>
+SENT:
+<message to='575981684385522692@localhost'
+         type='headline'
+         id='16138504261674356784'
+         xmlns='jabber:client'>
+  <no-copy xmlns='urn:xmpp:hints'/>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<"16138504261674356784">>,type = headline,lang = <<>>,
+         from = undefined,
+         to = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                   resource = <<>>,luser = <<"575981684385522692">>,
+                   lserver = <<"localhost">>,lresource = <<>>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,
+         sub_els = [#hint{type = 'no-copy'}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.625 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='error'
+         id='16138504261674356784'>
+  <no-copy xmlns='urn:xmpp:hints'/>
+  <error type='cancel'>
+    <service-unavailable xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/>
+  </error>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<"16138504261674356784">>,type = error,lang = <<"en">>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,
+         sub_els = [#hint{type = 'no-copy'},
+                    #stanza_error{type = cancel,by = undefined,
+                                  reason = 'service-unavailable',text = [],
+                                  sub_els = []}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.626 ***</b>
+SENT:
+<message to='575981684385522692@localhost'
+         type='headline'
+         id='7773938052928404936'
+         xmlns='jabber:client'>
+  <private xmlns='urn:xmpp:carbons:2'/>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<"7773938052928404936">>,type = headline,lang = <<>>,
+         from = undefined,
+         to = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                   resource = <<>>,luser = <<"575981684385522692">>,
+                   lserver = <<"localhost">>,lresource = <<>>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,
+         sub_els = [#carbons_private{}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.626 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='error'
+         id='7773938052928404936'>
+  <private xmlns='urn:xmpp:carbons:2'/>
+  <error type='cancel'>
+    <service-unavailable xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/>
+  </error>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<"7773938052928404936">>,type = error,lang = <<"en">>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,
+         sub_els = [#carbons_private{},
+                    #stanza_error{type = cancel,by = undefined,
+                                  reason = 'service-unavailable',text = [],
+                                  sub_els = []}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.627 ***</b>
+RECV:
+<message to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='error'/>
+
+#message{id = <<>>,type = error,lang = <<>>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.627 ***</b>
+RECV:
+<message to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='error'>
+  <no-copy xmlns='urn:xmpp:hints'/>
+</message>
+
+#message{id = <<>>,type = error,lang = <<>>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#hint{type = 'no-copy'}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.627 ***</b>
+RECV:
+<message to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='error'>
+  <private xmlns='urn:xmpp:carbons:2'/>
+</message>
+
+#message{id = <<>>,type = error,lang = <<>>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#carbons_private{}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.628 ***</b>
+RECV:
+<message to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='error'>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<>>,type = error,lang = <<>>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.628 ***</b>
+RECV:
+<message to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='error'>
+  <no-copy xmlns='urn:xmpp:hints'/>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<>>,type = error,lang = <<>>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,
+         sub_els = [#hint{type = 'no-copy'}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.629 ***</b>
+RECV:
+<message to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='error'>
+  <private xmlns='urn:xmpp:carbons:2'/>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<>>,type = error,lang = <<>>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,
+         sub_els = [#carbons_private{}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.629 ***</b>
+RECV:
+<message to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='chat'/>
+
+#message{id = <<>>,type = chat,lang = <<>>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.630 ***</b>
+RECV:
+<message to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='chat'>
+  <no-copy xmlns='urn:xmpp:hints'/>
+</message>
+
+#message{id = <<>>,type = chat,lang = <<>>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#hint{type = 'no-copy'}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.630 ***</b>
+RECV:
+<message to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='chat'>
+  <private xmlns='urn:xmpp:carbons:2'/>
+</message>
+
+#message{id = <<>>,type = chat,lang = <<>>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#carbons_private{}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.630 ***</b>
+RECV:
+<message to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='chat'>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<>>,type = chat,lang = <<>>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.631 ***</b>
+RECV:
+<message to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='chat'>
+  <no-copy xmlns='urn:xmpp:hints'/>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<>>,type = chat,lang = <<>>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,
+         sub_els = [#hint{type = 'no-copy'}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.632 ***</b>
+RECV:
+<message to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='chat'>
+  <private xmlns='urn:xmpp:carbons:2'/>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<>>,type = chat,lang = <<>>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,
+         sub_els = [#carbons_private{}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.632 ***</b>
+RECV:
+<message to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'/>
+
+#message{id = <<>>,type = normal,lang = <<>>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.633 ***</b>
+RECV:
+<message to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'>
+  <no-copy xmlns='urn:xmpp:hints'/>
+</message>
+
+#message{id = <<>>,type = normal,lang = <<>>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#hint{type = 'no-copy'}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.633 ***</b>
+RECV:
+<message to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'>
+  <private xmlns='urn:xmpp:carbons:2'/>
+</message>
+
+#message{id = <<>>,type = normal,lang = <<>>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#carbons_private{}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.633 ***</b>
+RECV:
+<message to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<>>,type = normal,lang = <<>>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.634 ***</b>
+RECV:
+<message to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'>
+  <no-copy xmlns='urn:xmpp:hints'/>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<>>,type = normal,lang = <<>>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,
+         sub_els = [#hint{type = 'no-copy'}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.634 ***</b>
+RECV:
+<message to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'>
+  <private xmlns='urn:xmpp:carbons:2'/>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<>>,type = normal,lang = <<>>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,
+         sub_els = [#carbons_private{}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.635 ***</b>
+RECV:
+<message to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='groupchat'/>
+
+#message{id = <<>>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.635 ***</b>
+RECV:
+<message to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='groupchat'>
+  <no-copy xmlns='urn:xmpp:hints'/>
+</message>
+
+#message{id = <<>>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#hint{type = 'no-copy'}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.636 ***</b>
+RECV:
+<message to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='groupchat'>
+  <private xmlns='urn:xmpp:carbons:2'/>
+</message>
+
+#message{id = <<>>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#carbons_private{}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.636 ***</b>
+RECV:
+<message to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='groupchat'>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<>>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.636 ***</b>
+RECV:
+<message to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='groupchat'>
+  <no-copy xmlns='urn:xmpp:hints'/>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<>>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,
+         sub_els = [#hint{type = 'no-copy'}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.638 ***</b>
+RECV:
+<message to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='groupchat'>
+  <private xmlns='urn:xmpp:carbons:2'/>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<>>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,
+         sub_els = [#carbons_private{}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.638 ***</b>
+RECV:
+<message to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='headline'/>
+
+#message{id = <<>>,type = headline,lang = <<>>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.639 ***</b>
+RECV:
+<message to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='headline'>
+  <no-copy xmlns='urn:xmpp:hints'/>
+</message>
+
+#message{id = <<>>,type = headline,lang = <<>>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#hint{type = 'no-copy'}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.639 ***</b>
+RECV:
+<message to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='headline'>
+  <private xmlns='urn:xmpp:carbons:2'/>
+</message>
+
+#message{id = <<>>,type = headline,lang = <<>>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],body = [],thread = undefined,
+         sub_els = [#carbons_private{}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.640 ***</b>
+RECV:
+<message to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='headline'>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<>>,type = headline,lang = <<>>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.640 ***</b>
+RECV:
+<message to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='headline'>
+  <no-copy xmlns='urn:xmpp:hints'/>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<>>,type = headline,lang = <<>>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,
+         sub_els = [#hint{type = 'no-copy'}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:09:53.641 ***</b>
+RECV:
+<message to='test_master!#$%^*()`~+-;_=[]{}|\@localhost/master_resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='575981684385522692@localhost'
+         type='headline'>
+  <private xmlns='urn:xmpp:carbons:2'/>
+  <body xml:lang='en'>body</body>
+</message>
+
+#message{id = <<>>,type = headline,lang = <<>>,
+         from = #jid{user = <<"575981684385522692">>,server = <<"localhost">>,
+                     resource = <<>>,luser = <<"575981684385522692">>,
+                     lserver = <<"localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_master!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"master_resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"body">>}],
+         thread = undefined,
+         sub_els = [#carbons_private{}],
+         meta = #{}}
+</pre></div>
+<pre>
+<a name="end"></a>
+
+
+=== Ended at 2021-12-09 17:09:53
+=== successfully completed test case
+=== === Returned value: [{receiver,undefined},
+                     {sm,true},
+                     {compression,[&lt;&lt;"zlib"&gt;&gt;]},
+                     {stream_id,&lt;&lt;"2577205816599238560"&gt;&gt;},
+                     {sasl,#Fun&lt;suite.6.40689848&gt;},
+                     {legacy_auth,true},
+                     {register,true},
+                     {starttls,true},
+                     {mechs,
+                         [&lt;&lt;"ANONYMOUS"&gt;&gt;,&lt;&lt;"DIGEST-MD5"&gt;&gt;,&lt;&lt;"PLAIN"&gt;&gt;,
+                          &lt;&lt;"SCRAM-SHA-512"&gt;&gt;,&lt;&lt;"SCRAM-SHA-256"&gt;&gt;,
+                          &lt;&lt;"SCRAM-SHA-1"&gt;&gt;,&lt;&lt;"X-OAUTH2"&gt;&gt;]},
+                     {peer,
+                         {jid,&lt;&lt;"test_master!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"localhost"&gt;&gt;,
+                             &lt;&lt;"slave_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"test_master!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"localhost"&gt;&gt;,
+                             &lt;&lt;"slave_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;}},
+                     {peer_nick,
+                         &lt;&lt;"slave_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {user,&lt;&lt;"test_master!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;},
+                     {slave,
+                         {jid,&lt;&lt;"test_master!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"localhost"&gt;&gt;,
+                             &lt;&lt;"slave_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"test_master!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"localhost"&gt;&gt;,
+                             &lt;&lt;"slave_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;}},
+                     {master,
+                         {jid,&lt;&lt;"test_master!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"localhost"&gt;&gt;,
+                             &lt;&lt;"master_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"test_master!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"localhost"&gt;&gt;,
+                             &lt;&lt;"master_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;}},
+                     {resource,
+                         &lt;&lt;"master_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {nick,&lt;&lt;"master_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {mode,master},
+                     {watchdog,&lt;0.31954.0&gt;},
+                     {event_relay,&lt;0.31946.0&gt;},
+                     {persistent_room,false},
+                     {server_port,5222},
+                     {server_host,"localhost"},
+                     {component_port,5270},
+                     {s2s_port,5269},
+                     {server,&lt;&lt;"localhost"&gt;&gt;},
+                     {master_nick,
+                         &lt;&lt;"master_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {slave_nick,
+                         &lt;&lt;"slave_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {room_subject,
+                         &lt;&lt;"hello, world!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {certfile,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/test/ejabberd_SUITE_data/cert.pem"},
+                     {anonymous,false},
+                     {type,client},
+                     {xmlns,&lt;&lt;"jabber:client"&gt;&gt;},
+                     {ns_stream,&lt;&lt;"http://etherx.jabber.org/streams"&gt;&gt;},
+                     {stream_version,{1,0}},
+                     {stream_from,&lt;&lt;&gt;&gt;},
+                     {db_xmlns,&lt;&lt;&gt;&gt;},
+                     {rosterver,false},
+                     {lang,&lt;&lt;"en"&gt;&gt;},
+                     {base_dir,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd"},
+                     {pubsub_node,&lt;&lt;"node!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {pubsub_node_title,
+                         &lt;&lt;"title!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {master_resource,
+                         &lt;&lt;"master_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {slave_resource,
+                         &lt;&lt;"slave_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {password,&lt;&lt;"password!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {backends,[mnesia]},
+                     {tc_logfile,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.09.24/lib.ejabberd.logs/run.2021-12-09_17.09.25/ejabberd_suite.carbons_enable_disable_master.5330.html"},
+                     {tc_group_properties,
+                         [{name,carbons_enable_disable},parallel]},
+                     {tc_group_path,
+                         [[{name,carbons_master_slave},sequence],
+                          [{name,no_db},sequence]]},
+                     {data_dir,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/test/ejabberd_SUITE_data/"},
+                     {priv_dir,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.09.24/lib.ejabberd.logs/run.2021-12-09_17.09.25/log_private/"}]

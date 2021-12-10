@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/ct/mod_muc_room.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_muc_room.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-10 at 00:45:50</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_muc_room.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-10 at 01:04:31</p></footer>
 <table>
 <tbody>
 <tr>
@@ -2623,17 +2623,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L504"><a href="#L504">504</a></td>
-<td class="hits">299</td>
+<td class="hits">300</td>
 <td class="source"><code>    Activity = get_user_activity(From, StateData),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L505"><a href="#L505">505</a></td>
-<td class="hits">299</td>
+<td class="hits">300</td>
 <td class="source"><code>    Now = erlang:system_time(microsecond),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L506"><a href="#L506">506</a></td>
-<td class="hits">299</td>
+<td class="hits">300</td>
 <td class="source"><code>    MinPresenceInterval =</code></td>
 </tr>
 <tr>
@@ -2643,7 +2643,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L508"><a href="#L508">508</a></td>
-<td class="hits">299</td>
+<td class="hits">300</td>
 <td class="source"><code>    if (Now &gt;= Activity#activity.presence_time + MinPresenceInterval)</code></td>
 </tr>
 <tr>
@@ -2653,12 +2653,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L510"><a href="#L510">510</a></td>
-<td class="hits">299</td>
+<td class="hits">300</td>
 <td class="source"><code>	    NewActivity = Activity#activity{presence_time = Now},</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L511"><a href="#L511">511</a></td>
-<td class="hits">299</td>
+<td class="hits">300</td>
 <td class="source"><code>	    StateData1 = store_user_activity(From, NewActivity,</code></td>
 </tr>
 <tr>
@@ -2668,7 +2668,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L513"><a href="#L513">513</a></td>
-<td class="hits">299</td>
+<td class="hits">300</td>
 <td class="source"><code>	    process_presence(Nick, Packet, StateData1);</code></td>
 </tr>
 <tr>
@@ -6228,12 +6228,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1225"><a href="#L1225">1225</a></td>
-<td class="hits">299</td>
+<td class="hits">300</td>
 <td class="source"><code>    IsOnline = is_user_online(From, StateData),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1226"><a href="#L1226">1226</a></td>
-<td class="hits">299</td>
+<td class="hits">300</td>
 <td class="source"><code>    if Type0 == available;</code></td>
 </tr>
 <tr>
@@ -6298,7 +6298,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1239"><a href="#L1239">1239</a></td>
-<td class="hits">7</td>
+<td class="hits">8</td>
 <td class="source"><code>	    {next_state, normal_state, StateData}</code></td>
 </tr>
 <tr>
@@ -7088,12 +7088,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1397"><a href="#L1397">1397</a></td>
-<td class="hits">730</td>
+<td class="hits">731</td>
 <td class="source"><code>    LJID = jid:tolower(JID),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1398"><a href="#L1398">1398</a></td>
-<td class="hits">730</td>
+<td class="hits">731</td>
 <td class="source"><code>    maps:is_key(LJID, StateData#state.users).</code></td>
 </tr>
 <tr>
@@ -8913,7 +8913,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1762"><a href="#L1762">1762</a></td>
-<td class="hits">407</td>
+<td class="hits">408</td>
 <td class="source"><code>    case treap:lookup(jid:tolower(JID),</code></td>
 </tr>
 <tr>
@@ -8938,7 +8938,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1767"><a href="#L1767">1767</a></td>
-<td class="hits">407</td>
+<td class="hits">408</td>
 <td class="source"><code>	  MessageShaper =</code></td>
 </tr>
 <tr>
@@ -8948,7 +8948,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1769"><a href="#L1769">1769</a></td>
-<td class="hits">407</td>
+<td class="hits">408</td>
 <td class="source"><code>	  PresenceShaper =</code></td>
 </tr>
 <tr>
@@ -8958,7 +8958,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1771"><a href="#L1771">1771</a></td>
-<td class="hits">407</td>
+<td class="hits">408</td>
 <td class="source"><code>	  #activity{message_shaper = MessageShaper,</code></td>
 </tr>
 <tr>
@@ -8988,7 +8988,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1777"><a href="#L1777">1777</a></td>
-<td class="hits">407</td>
+<td class="hits">408</td>
 <td class="source"><code>    MinMessageInterval =</code></td>
 </tr>
 <tr>
@@ -8998,7 +8998,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1779"><a href="#L1779">1779</a></td>
-<td class="hits">407</td>
+<td class="hits">408</td>
 <td class="source"><code>    MinPresenceInterval =</code></td>
 </tr>
 <tr>
@@ -9008,17 +9008,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1781"><a href="#L1781">1781</a></td>
-<td class="hits">407</td>
+<td class="hits">408</td>
 <td class="source"><code>    Key = jid:tolower(JID),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1782"><a href="#L1782">1782</a></td>
-<td class="hits">407</td>
+<td class="hits">408</td>
 <td class="source"><code>    Now = erlang:system_time(microsecond),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1783"><a href="#L1783">1783</a></td>
-<td class="hits">407</td>
+<td class="hits">408</td>
 <td class="source"><code>    Activity1 = clean_treap(StateData#state.activity,</code></td>
 </tr>
 <tr>
@@ -9028,7 +9028,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1785"><a href="#L1785">1785</a></td>
-<td class="hits">407</td>
+<td class="hits">408</td>
 <td class="source"><code>    Activity = case treap:lookup(Key, Activity1) of</code></td>
 </tr>
 <tr class="miss">
@@ -9038,7 +9038,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1787"><a href="#L1787">1787</a></td>
-<td class="hits">407</td>
+<td class="hits">408</td>
 <td class="source"><code>		 error -&gt; Activity1</code></td>
 </tr>
 <tr>
@@ -9048,22 +9048,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1789"><a href="#L1789">1789</a></td>
-<td class="hits">407</td>
+<td class="hits">408</td>
 <td class="source"><code>    StateData1 = case MinMessageInterval == 0 andalso</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1790"><a href="#L1790">1790</a></td>
-<td class="hits">407</td>
+<td class="hits">408</td>
 <td class="source"><code>			MinPresenceInterval == 0 andalso</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1791"><a href="#L1791">1791</a></td>
-<td class="hits">407</td>
+<td class="hits">408</td>
 <td class="source"><code>			  UserActivity#activity.message_shaper == none andalso</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1792"><a href="#L1792">1792</a></td>
-<td class="hits">407</td>
+<td class="hits">408</td>
 <td class="source"><code>			    UserActivity#activity.presence_shaper == none</code></td>
 </tr>
 <tr>
@@ -9073,12 +9073,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1794"><a href="#L1794">1794</a></td>
-<td class="hits">407</td>
+<td class="hits">408</td>
 <td class="source"><code>			      UserActivity#activity.message == undefined andalso</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1795"><a href="#L1795">1795</a></td>
-<td class="hits">407</td>
+<td class="hits">408</td>
 <td class="source"><code>				UserActivity#activity.presence == undefined</code></td>
 </tr>
 <tr>
@@ -9088,7 +9088,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1797"><a href="#L1797">1797</a></td>
-<td class="hits">407</td>
+<td class="hits">408</td>
 <td class="source"><code>		   true -&gt; StateData#state{activity = Activity};</code></td>
 </tr>
 <tr>
@@ -9238,7 +9238,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1827"><a href="#L1827">1827</a></td>
-<td class="hits">407</td>
+<td class="hits">408</td>
 <td class="source"><code>    reset_hibernate_timer(StateData1).</code></td>
 </tr>
 <tr>
@@ -9258,12 +9258,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L1831"><a href="#L1831">1831</a></td>
-<td class="hits">417</td>
+<td class="hits">418</td>
 <td class="source"><code>    case treap:is_empty(Treap) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L1832"><a href="#L1832">1832</a></td>
-<td class="hits">413</td>
+<td class="hits">414</td>
 <td class="source"><code>      true -&gt; Treap;</code></td>
 </tr>
 <tr>
@@ -26848,7 +26848,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L5349"><a href="#L5349">5349</a></td>
-<td class="hits">768</td>
+<td class="hits">769</td>
 <td class="source"><code>    case State#state.hibernate_timer of</code></td>
 </tr>
 <tr>
@@ -26868,12 +26868,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L5353"><a href="#L5353">5353</a></td>
-<td class="hits">768</td>
+<td class="hits">769</td>
 <td class="source"><code>	    disable_hibernate_timer(State),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L5354"><a href="#L5354">5354</a></td>
-<td class="hits">768</td>
+<td class="hits">769</td>
 <td class="source"><code>	    NewTimer = case {mod_muc_opt:hibernation_timeout(State#state.server_host),</code></td>
 </tr>
 <tr>
@@ -26888,7 +26888,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L5357"><a href="#L5357">5357</a></td>
-<td class="hits">768</td>
+<td class="hits">769</td>
 <td class="source"><code>			       none;</code></td>
 </tr>
 <tr>
@@ -26918,7 +26918,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L5363"><a href="#L5363">5363</a></td>
-<td class="hits">768</td>
+<td class="hits">769</td>
 <td class="source"><code>	    State#state{hibernate_timer = NewTimer}</code></td>
 </tr>
 <tr>
@@ -26948,7 +26948,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L5369"><a href="#L5369">5369</a></td>
-<td class="hits">855</td>
+<td class="hits">856</td>
 <td class="source"><code>    case State#state.hibernate_timer of</code></td>
 </tr>
 <tr>
@@ -26973,7 +26973,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L5374"><a href="#L5374">5374</a></td>
-<td class="hits">855</td>
+<td class="hits">856</td>
 <td class="source"><code>	    ok</code></td>
 </tr>
 <tr>

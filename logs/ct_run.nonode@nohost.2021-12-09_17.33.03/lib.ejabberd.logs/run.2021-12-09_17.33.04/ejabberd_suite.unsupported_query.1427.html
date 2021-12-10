@@ -1,0 +1,510 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test ejabberd_SUITE:unsupported_query result</title>
+<meta http-equiv="cache-control" content="no-cache"></meta>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+<link rel="stylesheet" href="../../ct_default.css" type="text/css"></link>
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="ejabberd_suite.src.html#unsupported_query-1">ejabberd_SUITE:unsupported_query/1</a> (click for source code)
+
+=== Config value:
+
+    [{anonymous,true},
+     {event_relay,&lt;0.30426.0&gt;},
+     {watchdog,&lt;0.30425.0&gt;},
+     {persistent_room,false},
+     {server_port,5222},
+     {server_host,"localhost"},
+     {component_port,5270},
+     {s2s_port,5269},
+     {server,&lt;&lt;"localhost"&gt;&gt;},
+     {user,&lt;&lt;"test_single!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;},
+     {nick,&lt;&lt;"nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {master_nick,&lt;&lt;"master_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {slave_nick,&lt;&lt;"slave_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {room_subject,&lt;&lt;"hello, world!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {certfile,"/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/test/ejabberd_SUITE_data/cert.pem"},
+     {type,client},
+     {xmlns,&lt;&lt;"jabber:client"&gt;&gt;},
+     {ns_stream,&lt;&lt;"http://etherx.jabber.org/streams"&gt;&gt;},
+     {stream_version,{1,0}},
+     {stream_id,&lt;&lt;&gt;&gt;},
+     {stream_from,&lt;&lt;&gt;&gt;},
+     {db_xmlns,&lt;&lt;&gt;&gt;},
+     {mechs,[]},
+     {rosterver,false},
+     {lang,&lt;&lt;"en"&gt;&gt;},
+     {base_dir,"/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd"},
+     {receiver,undefined},
+     {pubsub_node,&lt;&lt;"node!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {pubsub_node_title,&lt;&lt;"title!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {resource,&lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {master_resource,&lt;&lt;"master_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {slave_resource,&lt;&lt;"slave_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {password,&lt;&lt;"password!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {backends,[mnesia]},
+     {tc_logfile,"/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.33.03/lib.ejabberd.logs/run.2021-12-09_17.33.04/ejabberd_suite.unsupported_query.1427.html"},
+     {tc_group_properties,[{name,anonymous},parallel]},
+     {tc_group_path,[[{name,no_db},sequence]]},
+     {data_dir,"/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/test/ejabberd_SUITE_data/"},
+     {priv_dir,"/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.33.03/lib.ejabberd.logs/run.2021-12-09_17.33.04/log_private/"}]
+
+=== Current directory is "/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.33.03"
+
+=== Started at 2021-12-09 17:33:06
+
+<br />
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:06.312 ***</b>
+SENT:
+<stream:stream version='1.0'
+               xml:lang='en'
+               xmlns:stream='http://etherx.jabber.org/streams'
+               to='localhost'
+               xmlns='jabber:client'/>
+
+#stream_start{from = undefined,
+              to = #jid{user = <<>>,server = <<"localhost">>,resource = <<>>,
+                        luser = <<>>,lserver = <<"localhost">>,
+                        lresource = <<>>},
+              id = <<>>,
+              version = {1,0},
+              xmlns = <<"jabber:client">>,
+              stream_xmlns = <<"http://etherx.jabber.org/streams">>,
+              db_xmlns = <<>>,lang = <<"en">>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:07.188 ***</b>
+RECV:
+<stream:stream xmlns:stream='http://etherx.jabber.org/streams'
+               xmlns='jabber:client'
+               id='12012061299876762188'
+               version='1.0'
+               xml:lang='en'
+               from='localhost'/>
+
+#stream_start{from = #jid{user = <<>>,server = <<"localhost">>,
+                          resource = <<>>,luser = <<>>,
+                          lserver = <<"localhost">>,lresource = <<>>},
+              to = undefined,id = <<"12012061299876762188">>,
+              version = {1,0},
+              xmlns = <<"jabber:client">>,
+              stream_xmlns = <<"http://etherx.jabber.org/streams">>,
+              db_xmlns = <<>>,lang = <<"en">>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:07.190 ***</b>
+RECV:
+<stream:features>
+  <mechanisms xmlns='urn:ietf:params:xml:ns:xmpp-sasl'>
+    <mechanism>ANONYMOUS</mechanism>
+    <mechanism>DIGEST-MD5</mechanism>
+    <mechanism>PLAIN</mechanism>
+    <mechanism>SCRAM-SHA-512</mechanism>
+    <mechanism>SCRAM-SHA-256</mechanism>
+    <mechanism>SCRAM-SHA-1</mechanism>
+    <mechanism>X-OAUTH2</mechanism>
+  </mechanisms>
+  <starttls xmlns='urn:ietf:params:xml:ns:xmpp-tls'/>
+  <register xmlns='http://jabber.org/features/iq-register'/>
+  <auth xmlns='http://jabber.org/features/iq-auth'/>
+</stream:features>
+
+#stream_features{
+    sub_els =
+        [#sasl_mechanisms{
+             list =
+                 [<<"ANONYMOUS">>,<<"DIGEST-MD5">>,<<"PLAIN">>,
+                  <<"SCRAM-SHA-512">>,<<"SCRAM-SHA-256">>,<<"SCRAM-SHA-1">>,
+                  <<"X-OAUTH2">>]},
+         #starttls{required = false},
+         #feature_register{},
+         #legacy_auth_feature{}]}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:07.191 ***</b>
+SENT:
+<auth mechanism='ANONYMOUS'
+      xmlns='urn:ietf:params:xml:ns:xmpp-sasl'/>
+
+#sasl_auth{mechanism = <<"ANONYMOUS">>,text = <<>>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:07.196 ***</b>
+RECV:
+<success xmlns='urn:ietf:params:xml:ns:xmpp-sasl'/>
+
+#sasl_success{text = <<>>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:07.203 ***</b>
+SENT:
+<stream:stream version='1.0'
+               xml:lang='en'
+               xmlns:stream='http://etherx.jabber.org/streams'
+               to='localhost'
+               xmlns='jabber:client'/>
+
+#stream_start{from = undefined,
+              to = #jid{user = <<>>,server = <<"localhost">>,resource = <<>>,
+                        luser = <<>>,lserver = <<"localhost">>,
+                        lresource = <<>>},
+              id = <<>>,
+              version = {1,0},
+              xmlns = <<"jabber:client">>,
+              stream_xmlns = <<"http://etherx.jabber.org/streams">>,
+              db_xmlns = <<>>,lang = <<"en">>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:07.213 ***</b>
+RECV:
+<stream:stream xmlns:stream='http://etherx.jabber.org/streams'
+               xmlns='jabber:client'
+               id='10476052666455701541'
+               version='1.0'
+               xml:lang='en'
+               from='localhost'/>
+
+#stream_start{from = #jid{user = <<>>,server = <<"localhost">>,
+                          resource = <<>>,luser = <<>>,
+                          lserver = <<"localhost">>,lresource = <<>>},
+              to = undefined,id = <<"10476052666455701541">>,
+              version = {1,0},
+              xmlns = <<"jabber:client">>,
+              stream_xmlns = <<"http://etherx.jabber.org/streams">>,
+              db_xmlns = <<>>,lang = <<"en">>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:07.214 ***</b>
+RECV:
+<stream:features>
+  <compression xmlns='http://jabber.org/features/compress'>
+    <method>zlib</method>
+  </compression>
+  <bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'/>
+  <session xmlns='urn:ietf:params:xml:ns:xmpp-session'>
+    <optional/>
+  </session>
+  <sm xmlns='urn:xmpp:sm:2'/>
+  <sm xmlns='urn:xmpp:sm:3'/>
+</stream:features>
+
+#stream_features{sub_els = [#compression{methods = [<<"zlib">>]},
+                            #bind{jid = undefined,resource = <<>>},
+                            #xmpp_session{optional = true},
+                            #feature_sm{xmlns = <<"urn:xmpp:sm:2">>},
+                            #feature_sm{xmlns = <<"urn:xmpp:sm:3">>}]}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:07.215 ***</b>
+SENT:
+<iq type='set'
+    id='11272003632108069816'
+    xmlns='jabber:client'>
+  <bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'/>
+</iq>
+
+#iq{id = <<"11272003632108069816">>,type = set,lang = <<>>,from = undefined,
+    to = undefined,
+    sub_els = [#bind{jid = undefined,resource = <<>>}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:07.217 ***</b>
+RECV:
+<iq type='result'
+    id='11272003632108069816'>
+  <bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'>
+    <jid>31364751644361246862019@localhost/139206876368151490802163</jid>
+  </bind>
+</iq>
+
+#iq{id = <<"11272003632108069816">>,type = result,lang = <<>>,
+    from = undefined,to = undefined,
+    sub_els = [#bind{jid = #jid{user = <<"31364751644361246862019">>,
+                                server = <<"localhost">>,
+                                resource = <<"139206876368151490802163">>,
+                                luser = <<"31364751644361246862019">>,
+                                lserver = <<"localhost">>,
+                                lresource = <<"139206876368151490802163">>},
+                     resource = <<>>}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:07.260 ***</b>
+SENT:
+<iq to='localhost'
+    type='get'
+    id='5009016219725715868'
+    xmlns='jabber:client'/>
+
+#iq{id = <<"5009016219725715868">>,type = get,lang = <<>>,from = undefined,
+    to = #jid{user = <<>>,server = <<"localhost">>,resource = <<>>,
+              luser = <<>>,lserver = <<"localhost">>,lresource = <<>>},
+    sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:07.263 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='31364751644361246862019@localhost/139206876368151490802163'
+    from='localhost'
+    type='error'
+    id='5009016219725715868'>
+  <error type='modify'>
+    <bad-request xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/>
+    <text xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'
+          xml:lang='en'>No child elements found</text>
+  </error>
+</iq>
+
+#iq{id = <<"5009016219725715868">>,type = error,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<>>,server = <<"localhost">>,resource = <<>>,luser = <<>>,
+            lserver = <<"localhost">>,lresource = <<>>},
+    to =
+        #jid{
+            user = <<"31364751644361246862019">>,server = <<"localhost">>,
+            resource = <<"139206876368151490802163">>,
+            luser = <<"31364751644361246862019">>,lserver = <<"localhost">>,
+            lresource = <<"139206876368151490802163">>},
+    sub_els =
+        [#stanza_error{
+             type = modify,by = undefined,reason = 'bad-request',
+             text =
+                 [#text{lang = <<"en">>,data = <<"No child elements found">>}],
+             sub_els = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:07.265 ***</b>
+SENT:
+<iq to='localhost'
+    type='get'
+    id='3046122449525857461'
+    xmlns='jabber:client'>
+  <c xmlns='http://jabber.org/protocol/caps'/>
+</iq>
+
+#iq{id = <<"3046122449525857461">>,type = get,lang = <<>>,from = undefined,
+    to = #jid{user = <<>>,server = <<"localhost">>,resource = <<>>,
+              luser = <<>>,lserver = <<"localhost">>,lresource = <<>>},
+    sub_els = [#caps{node = <<>>,version = <<>>,hash = <<>>,exts = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:07.266 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='31364751644361246862019@localhost/139206876368151490802163'
+    from='localhost'
+    type='error'
+    id='3046122449525857461'>
+  <c xmlns='http://jabber.org/protocol/caps'/>
+  <error type='cancel'>
+    <service-unavailable xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/>
+    <text xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'
+          xml:lang='en'>No module is handling this query</text>
+  </error>
+</iq>
+
+#iq{id = <<"3046122449525857461">>,type = error,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<>>,server = <<"localhost">>,resource = <<>>,luser = <<>>,
+            lserver = <<"localhost">>,lresource = <<>>},
+    to =
+        #jid{
+            user = <<"31364751644361246862019">>,server = <<"localhost">>,
+            resource = <<"139206876368151490802163">>,
+            luser = <<"31364751644361246862019">>,lserver = <<"localhost">>,
+            lresource = <<"139206876368151490802163">>},
+    sub_els =
+        [#caps{node = <<>>,version = <<>>,hash = <<>>,exts = []},
+         #stanza_error{
+             type = cancel,by = undefined,reason = 'service-unavailable',
+             text =
+                 [#text{
+                      lang = <<"en">>,
+                      data = <<"No module is handling this query">>}],
+             sub_els = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:07.326 ***</b>
+SENT:
+<iq to='localhost'
+    type='get'
+    id='7751945128079685771'
+    xmlns='jabber:client'>
+  <query xmlns='jabber:iq:roster'/>
+  <query xmlns='http://jabber.org/protocol/disco#info'/>
+  <query xmlns='jabber:iq:privacy'/>
+</iq>
+
+#iq{id = <<"7751945128079685771">>,type = get,lang = <<>>,from = undefined,
+    to = #jid{user = <<>>,server = <<"localhost">>,resource = <<>>,
+              luser = <<>>,lserver = <<"localhost">>,lresource = <<>>},
+    sub_els = [#roster_query{items = [],ver = undefined,
+                             mix_annotate = undefined},
+               #disco_info{node = <<>>,identities = [],features = [],
+                           xdata = []},
+               #privacy_query{lists = [],default = undefined,
+                              active = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:07.328 ***</b>
+RECV:
+<iq xml:lang='en'
+    to='31364751644361246862019@localhost/139206876368151490802163'
+    from='localhost'
+    type='error'
+    id='7751945128079685771'>
+  <query xmlns='jabber:iq:roster'/>
+  <query xmlns='http://jabber.org/protocol/disco#info'/>
+  <query xmlns='jabber:iq:privacy'/>
+  <error type='modify'>
+    <bad-request xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/>
+    <text xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'
+          xml:lang='en'>Too many child elements</text>
+  </error>
+</iq>
+
+#iq{id = <<"7751945128079685771">>,type = error,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<>>,server = <<"localhost">>,resource = <<>>,luser = <<>>,
+            lserver = <<"localhost">>,lresource = <<>>},
+    to =
+        #jid{
+            user = <<"31364751644361246862019">>,server = <<"localhost">>,
+            resource = <<"139206876368151490802163">>,
+            luser = <<"31364751644361246862019">>,lserver = <<"localhost">>,
+            lresource = <<"139206876368151490802163">>},
+    sub_els =
+        [#roster_query{items = [],ver = undefined,mix_annotate = undefined},
+         #disco_info{node = <<>>,identities = [],features = [],xdata = []},
+         #privacy_query{lists = [],default = undefined,active = undefined},
+         #stanza_error{
+             type = modify,by = undefined,reason = 'bad-request',
+             text =
+                 [#text{lang = <<"en">>,data = <<"Too many child elements">>}],
+             sub_els = []}],
+    meta = #{}}
+</pre></div>
+<pre>
+<a name="end"></a>
+
+
+=== Ended at 2021-12-09 17:33:07
+=== successfully completed test case
+=== === Returned value: [{receiver,undefined},
+                     {user,&lt;&lt;"31364751644361246862019"&gt;&gt;},
+                     {resource,&lt;&lt;"139206876368151490802163"&gt;&gt;},
+                     {sm,true},
+                     {compression,[&lt;&lt;"zlib"&gt;&gt;]},
+                     {stream_id,&lt;&lt;"10476052666455701541"&gt;&gt;},
+                     {sasl,#Fun&lt;suite.9.40689848&gt;},
+                     {legacy_auth,true},
+                     {register,true},
+                     {starttls,true},
+                     {mechs,
+                         [&lt;&lt;"ANONYMOUS"&gt;&gt;,&lt;&lt;"DIGEST-MD5"&gt;&gt;,&lt;&lt;"PLAIN"&gt;&gt;,
+                          &lt;&lt;"SCRAM-SHA-512"&gt;&gt;,&lt;&lt;"SCRAM-SHA-256"&gt;&gt;,
+                          &lt;&lt;"SCRAM-SHA-1"&gt;&gt;,&lt;&lt;"X-OAUTH2"&gt;&gt;]},
+                     {slave,
+                         {jid,&lt;&lt;"test_slave!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"localhost"&gt;&gt;,&lt;&lt;&gt;&gt;,
+                             &lt;&lt;"test_slave!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"localhost"&gt;&gt;,&lt;&lt;&gt;&gt;}},
+                     {master,
+                         {jid,&lt;&lt;"test_master!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"localhost"&gt;&gt;,&lt;&lt;&gt;&gt;,
+                             &lt;&lt;"test_master!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"localhost"&gt;&gt;,&lt;&lt;&gt;&gt;}},
+                     {nick,&lt;&lt;"nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {mode,single},
+                     {watchdog,&lt;0.30551.0&gt;},
+                     {anonymous,true},
+                     {event_relay,&lt;0.30426.0&gt;},
+                     {persistent_room,false},
+                     {server_port,5222},
+                     {server_host,"localhost"},
+                     {component_port,5270},
+                     {s2s_port,5269},
+                     {server,&lt;&lt;"localhost"&gt;&gt;},
+                     {master_nick,
+                         &lt;&lt;"master_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {slave_nick,
+                         &lt;&lt;"slave_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {room_subject,
+                         &lt;&lt;"hello, world!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {certfile,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/test/ejabberd_SUITE_data/cert.pem"},
+                     {type,client},
+                     {xmlns,&lt;&lt;"jabber:client"&gt;&gt;},
+                     {ns_stream,&lt;&lt;"http://etherx.jabber.org/streams"&gt;&gt;},
+                     {stream_version,{1,0}},
+                     {stream_from,&lt;&lt;&gt;&gt;},
+                     {db_xmlns,&lt;&lt;&gt;&gt;},
+                     {rosterver,false},
+                     {lang,&lt;&lt;"en"&gt;&gt;},
+                     {base_dir,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd"},
+                     {pubsub_node,&lt;&lt;"node!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {pubsub_node_title,
+                         &lt;&lt;"title!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {master_resource,
+                         &lt;&lt;"master_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {slave_resource,
+                         &lt;&lt;"slave_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {password,&lt;&lt;"password!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {backends,[mnesia]},
+                     {tc_logfile,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.33.03/lib.ejabberd.logs/run.2021-12-09_17.33.04/ejabberd_suite.unsupported_query.1427.html"},
+                     {tc_group_properties,[{name,anonymous},parallel]},
+                     {tc_group_path,[[{name,no_db},sequence]]},
+                     {data_dir,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/test/ejabberd_SUITE_data/"},
+                     {priv_dir,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.33.03/lib.ejabberd.logs/run.2021-12-09_17.33.04/log_private/"}]

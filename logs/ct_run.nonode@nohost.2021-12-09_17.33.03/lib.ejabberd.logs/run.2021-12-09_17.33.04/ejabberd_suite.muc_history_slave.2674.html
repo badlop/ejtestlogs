@@ -1,0 +1,3394 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test ejabberd_SUITE:muc_history_slave result</title>
+<meta http-equiv="cache-control" content="no-cache"></meta>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+<link rel="stylesheet" href="../../ct_default.css" type="text/css"></link>
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="ejabberd_suite.src.html#muc_history_slave-1">ejabberd_SUITE:muc_history_slave/1</a> (click for source code)
+
+=== Config value:
+
+    [{event_relay,&lt;0.31177.0&gt;},
+     {watchdog,&lt;0.31176.0&gt;},
+     {persistent_room,false},
+     {server_port,5222},
+     {server_host,"localhost"},
+     {component_port,5270},
+     {s2s_port,5269},
+     {server,&lt;&lt;"localhost"&gt;&gt;},
+     {user,&lt;&lt;"test_single!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;},
+     {nick,&lt;&lt;"nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {master_nick,&lt;&lt;"master_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {slave_nick,&lt;&lt;"slave_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {room_subject,&lt;&lt;"hello, world!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {certfile,"/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/test/ejabberd_SUITE_data/cert.pem"},
+     {anonymous,false},
+     {type,client},
+     {xmlns,&lt;&lt;"jabber:client"&gt;&gt;},
+     {ns_stream,&lt;&lt;"http://etherx.jabber.org/streams"&gt;&gt;},
+     {stream_version,{1,0}},
+     {stream_id,&lt;&lt;&gt;&gt;},
+     {stream_from,&lt;&lt;&gt;&gt;},
+     {db_xmlns,&lt;&lt;&gt;&gt;},
+     {mechs,[]},
+     {rosterver,false},
+     {lang,&lt;&lt;"en"&gt;&gt;},
+     {base_dir,"/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd"},
+     {receiver,undefined},
+     {pubsub_node,&lt;&lt;"node!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {pubsub_node_title,&lt;&lt;"title!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {resource,&lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {master_resource,&lt;&lt;"master_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {slave_resource,&lt;&lt;"slave_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {password,&lt;&lt;"password!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+     {backends,[mnesia]},
+     {tc_logfile,"/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.33.03/lib.ejabberd.logs/run.2021-12-09_17.33.04/ejabberd_suite.muc_history_slave.2674.html"},
+     {tc_group_properties,[{name,muc_history},parallel]},
+     {tc_group_path,[[{name,muc_master_slave},sequence],
+                     [{name,no_db},sequence]]},
+     {data_dir,"/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/test/ejabberd_SUITE_data/"},
+     {priv_dir,"/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.33.03/lib.ejabberd.logs/run.2021-12-09_17.33.04/log_private/"}]
+
+=== Current directory is "/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.33.03"
+
+=== Started at 2021-12-09 17:33:18
+
+<br />
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.387 ***</b>
+SENT:
+<stream:stream version='1.0'
+               xml:lang='en'
+               xmlns:stream='http://etherx.jabber.org/streams'
+               to='localhost'
+               xmlns='jabber:client'/>
+
+#stream_start{from = undefined,
+              to = #jid{user = <<>>,server = <<"localhost">>,resource = <<>>,
+                        luser = <<>>,lserver = <<"localhost">>,
+                        lresource = <<>>},
+              id = <<>>,
+              version = {1,0},
+              xmlns = <<"jabber:client">>,
+              stream_xmlns = <<"http://etherx.jabber.org/streams">>,
+              db_xmlns = <<>>,lang = <<"en">>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.389 ***</b>
+RECV:
+<stream:stream xmlns:stream='http://etherx.jabber.org/streams'
+               xmlns='jabber:client'
+               id='11923515202855111690'
+               version='1.0'
+               xml:lang='en'
+               from='localhost'/>
+
+#stream_start{from = #jid{user = <<>>,server = <<"localhost">>,
+                          resource = <<>>,luser = <<>>,
+                          lserver = <<"localhost">>,lresource = <<>>},
+              to = undefined,id = <<"11923515202855111690">>,
+              version = {1,0},
+              xmlns = <<"jabber:client">>,
+              stream_xmlns = <<"http://etherx.jabber.org/streams">>,
+              db_xmlns = <<>>,lang = <<"en">>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.389 ***</b>
+RECV:
+<stream:features>
+  <mechanisms xmlns='urn:ietf:params:xml:ns:xmpp-sasl'>
+    <mechanism>ANONYMOUS</mechanism>
+    <mechanism>DIGEST-MD5</mechanism>
+    <mechanism>PLAIN</mechanism>
+    <mechanism>SCRAM-SHA-512</mechanism>
+    <mechanism>SCRAM-SHA-256</mechanism>
+    <mechanism>SCRAM-SHA-1</mechanism>
+    <mechanism>X-OAUTH2</mechanism>
+  </mechanisms>
+  <starttls xmlns='urn:ietf:params:xml:ns:xmpp-tls'/>
+  <register xmlns='http://jabber.org/features/iq-register'/>
+  <auth xmlns='http://jabber.org/features/iq-auth'/>
+</stream:features>
+
+#stream_features{
+    sub_els =
+        [#sasl_mechanisms{
+             list =
+                 [<<"ANONYMOUS">>,<<"DIGEST-MD5">>,<<"PLAIN">>,
+                  <<"SCRAM-SHA-512">>,<<"SCRAM-SHA-256">>,<<"SCRAM-SHA-1">>,
+                  <<"X-OAUTH2">>]},
+         #starttls{required = false},
+         #feature_register{},
+         #legacy_auth_feature{}]}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.389 ***</b>
+SENT:
+<auth mechanism='PLAIN'
+      xmlns='urn:ietf:params:xml:ns:xmpp-sasl'>dGVzdF9zbGF2ZSEjJCVeKigpYH4rLTtfPVtde318XEBsb2NhbGhvc3QAdGVzdF9zbGF2ZSEjJCVeKigpYH4rLTtfPVtde318XABwYXNzd29yZCFAIyQlXiYqKCknImB+PD4rLS87Ol89W117fXxc</auth>
+
+#sasl_auth{mechanism = <<"PLAIN">>,
+           text = <<116,101,115,116,95,115,108,97,118,101,33,35,36,37,94,42,
+                    40,41,96,126,43,45,59,95,61,91,93,123,125,124,92,64,108,
+                    111,99,97,108,104,111,115,116,0,116,101,115,116,95,115,
+                    108,97,118,101,33,35,36,37,94,42,40,41,96,126,43,45,59,95,
+                    61,91,93,123,125,124,92,0,112,97,115,115,119,111,114,100,
+                    33,64,35,36,37,94,38,42,40,41,39,34,96,126,60,62,43,45,47,
+                    59,58,95,61,91,93,123,125,124,92>>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.390 ***</b>
+RECV:
+<success xmlns='urn:ietf:params:xml:ns:xmpp-sasl'/>
+
+#sasl_success{text = <<>>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.391 ***</b>
+SENT:
+<stream:stream version='1.0'
+               xml:lang='en'
+               xmlns:stream='http://etherx.jabber.org/streams'
+               to='localhost'
+               xmlns='jabber:client'/>
+
+#stream_start{from = undefined,
+              to = #jid{user = <<>>,server = <<"localhost">>,resource = <<>>,
+                        luser = <<>>,lserver = <<"localhost">>,
+                        lresource = <<>>},
+              id = <<>>,
+              version = {1,0},
+              xmlns = <<"jabber:client">>,
+              stream_xmlns = <<"http://etherx.jabber.org/streams">>,
+              db_xmlns = <<>>,lang = <<"en">>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.391 ***</b>
+RECV:
+<stream:stream xmlns:stream='http://etherx.jabber.org/streams'
+               xmlns='jabber:client'
+               id='6862590463942107468'
+               version='1.0'
+               xml:lang='en'
+               from='localhost'/>
+
+#stream_start{from = #jid{user = <<>>,server = <<"localhost">>,
+                          resource = <<>>,luser = <<>>,
+                          lserver = <<"localhost">>,lresource = <<>>},
+              to = undefined,id = <<"6862590463942107468">>,
+              version = {1,0},
+              xmlns = <<"jabber:client">>,
+              stream_xmlns = <<"http://etherx.jabber.org/streams">>,
+              db_xmlns = <<>>,lang = <<"en">>}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.392 ***</b>
+RECV:
+<stream:features>
+  <compression xmlns='http://jabber.org/features/compress'>
+    <method>zlib</method>
+  </compression>
+  <bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'/>
+  <session xmlns='urn:ietf:params:xml:ns:xmpp-session'>
+    <optional/>
+  </session>
+  <sm xmlns='urn:xmpp:sm:2'/>
+  <sm xmlns='urn:xmpp:sm:3'/>
+</stream:features>
+
+#stream_features{sub_els = [#compression{methods = [<<"zlib">>]},
+                            #bind{jid = undefined,resource = <<>>},
+                            #xmpp_session{optional = true},
+                            #feature_sm{xmlns = <<"urn:xmpp:sm:2">>},
+                            #feature_sm{xmlns = <<"urn:xmpp:sm:3">>}]}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.392 ***</b>
+SENT:
+<iq type='set'
+    id='14319483886827093936'
+    xmlns='jabber:client'>
+  <bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'>
+    <resource>resource!@#$%^&*()'"`~<>+-/;:_=[]{}|\</resource>
+  </bind>
+</iq>
+
+#iq{id = <<"14319483886827093936">>,type = set,lang = <<>>,from = undefined,
+    to = undefined,
+    sub_els = [#bind{jid = undefined,
+                     resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.393 ***</b>
+RECV:
+<iq type='result'
+    id='14319483886827093936'>
+  <bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'>
+    <jid>test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&*()'"`~<>+-/;:_=[]{}|\</jid>
+  </bind>
+</iq>
+
+#iq{id = <<"14319483886827093936">>,type = result,lang = <<>>,
+    from = undefined,to = undefined,
+    sub_els =
+        [#bind{
+             jid =
+                 #jid{
+                     user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                     server = <<"localhost">>,
+                     resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                     lserver = <<"localhost">>,
+                     lresource =
+                         <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+             resource = <<>>}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.424 ***</b>
+SENT:
+<presence to='test@conference.localhost/slave_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='17184532103323875098'
+          xmlns='jabber:client'>
+  <x xmlns='http://jabber.org/protocol/muc'/>
+</presence>
+
+#presence{id = <<"17184532103323875098">>,type = available,lang = <<>>,
+          from = undefined,
+          to = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                    resource = <<"slave_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test">>,lserver = <<"conference.localhost">>,
+                    lresource = <<"slave_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#muc{history = undefined,password = undefined}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.426 ***</b>
+RECV:
+<presence to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='test@conference.localhost'
+          id='5292263393886032197'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='sBcxm+YVx0VXfn6k9QZimWgspjA='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"5292263393886032197">>,type = available,lang = <<>>,
+          from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                      resource = <<>>,luser = <<"test">>,
+                      lserver = <<"conference.localhost">>,lresource = <<>>},
+          to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"sBcxm+YVx0VXfn6k9QZimWgspjA=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.427 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='7722324772081073898'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <item role='moderator'
+          affiliation='owner'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"7722324772081073898">>,type = available,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"test">>,server = <<"conference.localhost">>,
+            resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test">>,lserver = <<"conference.localhost">>,
+            lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#muc_user{
+             decline = undefined,destroy = undefined,invites = [],
+             items =
+                 [#muc_item{
+                      actor = undefined,continue = undefined,reason = <<>>,
+                      affiliation = owner,role = moderator,jid = undefined,
+                      nick = <<>>}],
+             status_codes = [],password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.427 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='test@conference.localhost/slave_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='17184532103323875098'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <item jid='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          role='participant'
+          affiliation='none'/>
+    <status code='110'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"17184532103323875098">>,type = available,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"test">>,server = <<"conference.localhost">>,
+            resource = <<"slave_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test">>,lserver = <<"conference.localhost">>,
+            lresource = <<"slave_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#muc_user{
+             decline = undefined,destroy = undefined,invites = [],
+             items =
+                 [#muc_item{
+                      actor = undefined,continue = undefined,reason = <<>>,
+                      affiliation = none,role = participant,
+                      jid =
+                          #jid{
+                              user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                              server = <<"localhost">>,
+                              resource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                              lserver = <<"localhost">>,
+                              lresource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+                      nick = <<>>}],
+             status_codes = "n",password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.428 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='9194390221299523305'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.399872Z'/>
+  <body xml:lang='en'>1</body>
+</message>
+
+#message{id = <<"9194390221299523305">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"1">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,399872},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.429 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='10146397784725565871'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.401404Z'/>
+  <body xml:lang='en'>2</body>
+</message>
+
+#message{id = <<"10146397784725565871">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"2">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,401404},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.429 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='8220921082303941993'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.402650Z'/>
+  <body xml:lang='en'>3</body>
+</message>
+
+#message{id = <<"8220921082303941993">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"3">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,402650},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.429 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='12581607423728132301'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.404047Z'/>
+  <body xml:lang='en'>4</body>
+</message>
+
+#message{id = <<"12581607423728132301">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"4">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,404047},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.430 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='18073174201702319850'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.405088Z'/>
+  <body xml:lang='en'>5</body>
+</message>
+
+#message{id = <<"18073174201702319850">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"5">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,405088},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.430 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='1537414679469357462'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.406545Z'/>
+  <body xml:lang='en'>6</body>
+</message>
+
+#message{id = <<"1537414679469357462">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"6">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,406545},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.430 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='8015373091143554642'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.407958Z'/>
+  <body xml:lang='en'>7</body>
+</message>
+
+#message{id = <<"8015373091143554642">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"7">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,407958},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.431 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='11629172895998352748'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.409009Z'/>
+  <body xml:lang='en'>8</body>
+</message>
+
+#message{id = <<"11629172895998352748">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"8">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,409009},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.431 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='18329004868475429276'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.410188Z'/>
+  <body xml:lang='en'>9</body>
+</message>
+
+#message{id = <<"18329004868475429276">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"9">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,410188},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.432 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='7565862833152498491'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.411747Z'/>
+  <body xml:lang='en'>10</body>
+</message>
+
+#message{id = <<"7565862833152498491">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"10">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,411747},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.432 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='11114454772933986847'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.412792Z'/>
+  <body xml:lang='en'>11</body>
+</message>
+
+#message{id = <<"11114454772933986847">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"11">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,412792},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.432 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='5948391484122583296'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.413757Z'/>
+  <body xml:lang='en'>12</body>
+</message>
+
+#message{id = <<"5948391484122583296">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"12">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,413757},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.433 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='1578485290827929697'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.414628Z'/>
+  <body xml:lang='en'>13</body>
+</message>
+
+#message{id = <<"1578485290827929697">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"13">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,414628},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.433 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='10320712334713702396'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.415626Z'/>
+  <body xml:lang='en'>14</body>
+</message>
+
+#message{id = <<"10320712334713702396">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"14">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,415626},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.433 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='1367503595878000771'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.416573Z'/>
+  <body xml:lang='en'>15</body>
+</message>
+
+#message{id = <<"1367503595878000771">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"15">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,416573},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.433 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='12115654537248489782'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.417483Z'/>
+  <body xml:lang='en'>16</body>
+</message>
+
+#message{id = <<"12115654537248489782">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"16">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,417483},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.434 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='5588183908165492814'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.419528Z'/>
+  <body xml:lang='en'>17</body>
+</message>
+
+#message{id = <<"5588183908165492814">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"17">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,419528},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.434 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='13904498344675915107'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.420492Z'/>
+  <body xml:lang='en'>18</body>
+</message>
+
+#message{id = <<"13904498344675915107">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"18">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,420492},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.435 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='11733552304937842791'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.421414Z'/>
+  <body xml:lang='en'>19</body>
+</message>
+
+#message{id = <<"11733552304937842791">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"19">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,421414},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.435 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='14833340651910450036'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.422506Z'/>
+  <body xml:lang='en'>20</body>
+</message>
+
+#message{id = <<"14833340651910450036">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"20">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,422506},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.436 ***</b>
+RECV:
+<message to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost'
+         type='groupchat'>
+  <subject/>
+</message>
+
+#message{id = <<>>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<>>,luser = <<"test">>,
+                     lserver = <<"conference.localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [#text{lang = <<>>,data = <<>>}],
+         body = [],thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.436 ***</b>
+SENT:
+<presence to='test@conference.localhost/slave_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          type='unavailable'
+          id='5711967134962969830'
+          xmlns='jabber:client'/>
+
+#presence{id = <<"5711967134962969830">>,type = unavailable,lang = <<>>,
+          from = undefined,
+          to = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                    resource = <<"slave_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test">>,lserver = <<"conference.localhost">>,
+                    lresource = <<"slave_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,sub_els = [],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.437 ***</b>
+RECV:
+<presence to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='test@conference.localhost'
+          type='unavailable'
+          id='17818992754689853285'/>
+
+#presence{id = <<"17818992754689853285">>,type = unavailable,lang = <<>>,
+          from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                      resource = <<>>,luser = <<"test">>,
+                      lserver = <<"conference.localhost">>,lresource = <<>>},
+          to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,sub_els = [],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.438 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='test@conference.localhost/slave_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          type='unavailable'
+          id='5711967134962969830'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <item jid='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          role='none'
+          affiliation='none'/>
+    <status code='110'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"5711967134962969830">>,type = unavailable,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"test">>,server = <<"conference.localhost">>,
+            resource = <<"slave_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test">>,lserver = <<"conference.localhost">>,
+            lresource = <<"slave_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#muc_user{
+             decline = undefined,destroy = undefined,invites = [],
+             items =
+                 [#muc_item{
+                      actor = undefined,continue = undefined,reason = <<>>,
+                      affiliation = none,role = none,
+                      jid =
+                          #jid{
+                              user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                              server = <<"localhost">>,
+                              resource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                              lserver = <<"localhost">>,
+                              lresource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+                      nick = <<>>}],
+             status_codes = "n",password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.438 ***</b>
+SENT:
+<presence to='test@conference.localhost/slave_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='7731823481511277187'
+          xmlns='jabber:client'>
+  <x xmlns='http://jabber.org/protocol/muc'>
+    <history maxchars='0'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"7731823481511277187">>,type = available,lang = <<>>,
+    from = undefined,
+    to =
+        #jid{
+            user = <<"test">>,server = <<"conference.localhost">>,
+            resource = <<"slave_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test">>,lserver = <<"conference.localhost">>,
+            lresource = <<"slave_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#muc{
+             history =
+                 #muc_history{
+                     maxchars = 0,maxstanzas = undefined,seconds = undefined,
+                     since = undefined},
+             password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.440 ***</b>
+RECV:
+<presence to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='test@conference.localhost'
+          id='6487641379400999578'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='sBcxm+YVx0VXfn6k9QZimWgspjA='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"6487641379400999578">>,type = available,lang = <<>>,
+          from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                      resource = <<>>,luser = <<"test">>,
+                      lserver = <<"conference.localhost">>,lresource = <<>>},
+          to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"sBcxm+YVx0VXfn6k9QZimWgspjA=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.441 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='7722324772081073898'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <item role='moderator'
+          affiliation='owner'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"7722324772081073898">>,type = available,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"test">>,server = <<"conference.localhost">>,
+            resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test">>,lserver = <<"conference.localhost">>,
+            lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#muc_user{
+             decline = undefined,destroy = undefined,invites = [],
+             items =
+                 [#muc_item{
+                      actor = undefined,continue = undefined,reason = <<>>,
+                      affiliation = owner,role = moderator,jid = undefined,
+                      nick = <<>>}],
+             status_codes = [],password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.441 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='test@conference.localhost/slave_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='7731823481511277187'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <item jid='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          role='participant'
+          affiliation='none'/>
+    <status code='110'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"7731823481511277187">>,type = available,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"test">>,server = <<"conference.localhost">>,
+            resource = <<"slave_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test">>,lserver = <<"conference.localhost">>,
+            lresource = <<"slave_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#muc_user{
+             decline = undefined,destroy = undefined,invites = [],
+             items =
+                 [#muc_item{
+                      actor = undefined,continue = undefined,reason = <<>>,
+                      affiliation = none,role = participant,
+                      jid =
+                          #jid{
+                              user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                              server = <<"localhost">>,
+                              resource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                              lserver = <<"localhost">>,
+                              lresource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+                      nick = <<>>}],
+             status_codes = "n",password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.443 ***</b>
+RECV:
+<message to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost'
+         type='groupchat'>
+  <subject/>
+</message>
+
+#message{id = <<>>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<>>,luser = <<"test">>,
+                     lserver = <<"conference.localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [#text{lang = <<>>,data = <<>>}],
+         body = [],thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.444 ***</b>
+SENT:
+<presence to='test@conference.localhost/slave_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          type='unavailable'
+          id='7097873070897042112'
+          xmlns='jabber:client'/>
+
+#presence{id = <<"7097873070897042112">>,type = unavailable,lang = <<>>,
+          from = undefined,
+          to = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                    resource = <<"slave_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test">>,lserver = <<"conference.localhost">>,
+                    lresource = <<"slave_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,sub_els = [],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.446 ***</b>
+RECV:
+<presence to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='test@conference.localhost'
+          type='unavailable'
+          id='9268346849786592764'/>
+
+#presence{id = <<"9268346849786592764">>,type = unavailable,lang = <<>>,
+          from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                      resource = <<>>,luser = <<"test">>,
+                      lserver = <<"conference.localhost">>,lresource = <<>>},
+          to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,sub_els = [],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.446 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='test@conference.localhost/slave_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          type='unavailable'
+          id='7097873070897042112'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <item jid='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          role='none'
+          affiliation='none'/>
+    <status code='110'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"7097873070897042112">>,type = unavailable,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"test">>,server = <<"conference.localhost">>,
+            resource = <<"slave_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test">>,lserver = <<"conference.localhost">>,
+            lresource = <<"slave_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#muc_user{
+             decline = undefined,destroy = undefined,invites = [],
+             items =
+                 [#muc_item{
+                      actor = undefined,continue = undefined,reason = <<>>,
+                      affiliation = none,role = none,
+                      jid =
+                          #jid{
+                              user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                              server = <<"localhost">>,
+                              resource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                              lserver = <<"localhost">>,
+                              lresource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+                      nick = <<>>}],
+             status_codes = "n",password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.447 ***</b>
+SENT:
+<presence to='test@conference.localhost/slave_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='16031542880329935353'
+          xmlns='jabber:client'>
+  <x xmlns='http://jabber.org/protocol/muc'>
+    <history maxstanzas='10'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"16031542880329935353">>,type = available,lang = <<>>,
+    from = undefined,
+    to =
+        #jid{
+            user = <<"test">>,server = <<"conference.localhost">>,
+            resource = <<"slave_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test">>,lserver = <<"conference.localhost">>,
+            lresource = <<"slave_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#muc{
+             history =
+                 #muc_history{
+                     maxchars = undefined,maxstanzas = 10,seconds = undefined,
+                     since = undefined},
+             password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.449 ***</b>
+RECV:
+<presence to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='test@conference.localhost'
+          id='1211715437033856918'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='sBcxm+YVx0VXfn6k9QZimWgspjA='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"1211715437033856918">>,type = available,lang = <<>>,
+          from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                      resource = <<>>,luser = <<"test">>,
+                      lserver = <<"conference.localhost">>,lresource = <<>>},
+          to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"sBcxm+YVx0VXfn6k9QZimWgspjA=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.449 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='7722324772081073898'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <item role='moderator'
+          affiliation='owner'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"7722324772081073898">>,type = available,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"test">>,server = <<"conference.localhost">>,
+            resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test">>,lserver = <<"conference.localhost">>,
+            lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#muc_user{
+             decline = undefined,destroy = undefined,invites = [],
+             items =
+                 [#muc_item{
+                      actor = undefined,continue = undefined,reason = <<>>,
+                      affiliation = owner,role = moderator,jid = undefined,
+                      nick = <<>>}],
+             status_codes = [],password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.449 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='test@conference.localhost/slave_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='16031542880329935353'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <item jid='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          role='participant'
+          affiliation='none'/>
+    <status code='110'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"16031542880329935353">>,type = available,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"test">>,server = <<"conference.localhost">>,
+            resource = <<"slave_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test">>,lserver = <<"conference.localhost">>,
+            lresource = <<"slave_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#muc_user{
+             decline = undefined,destroy = undefined,invites = [],
+             items =
+                 [#muc_item{
+                      actor = undefined,continue = undefined,reason = <<>>,
+                      affiliation = none,role = participant,
+                      jid =
+                          #jid{
+                              user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                              server = <<"localhost">>,
+                              resource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                              lserver = <<"localhost">>,
+                              lresource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+                      nick = <<>>}],
+             status_codes = "n",password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.451 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='11114454772933986847'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.412792Z'/>
+  <body xml:lang='en'>11</body>
+</message>
+
+#message{id = <<"11114454772933986847">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"11">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,412792},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.452 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='5948391484122583296'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.413757Z'/>
+  <body xml:lang='en'>12</body>
+</message>
+
+#message{id = <<"5948391484122583296">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"12">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,413757},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.452 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='1578485290827929697'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.414628Z'/>
+  <body xml:lang='en'>13</body>
+</message>
+
+#message{id = <<"1578485290827929697">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"13">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,414628},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.452 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='10320712334713702396'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.415626Z'/>
+  <body xml:lang='en'>14</body>
+</message>
+
+#message{id = <<"10320712334713702396">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"14">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,415626},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.453 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='1367503595878000771'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.416573Z'/>
+  <body xml:lang='en'>15</body>
+</message>
+
+#message{id = <<"1367503595878000771">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"15">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,416573},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.453 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='12115654537248489782'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.417483Z'/>
+  <body xml:lang='en'>16</body>
+</message>
+
+#message{id = <<"12115654537248489782">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"16">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,417483},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.453 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='5588183908165492814'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.419528Z'/>
+  <body xml:lang='en'>17</body>
+</message>
+
+#message{id = <<"5588183908165492814">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"17">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,419528},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.454 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='13904498344675915107'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.420492Z'/>
+  <body xml:lang='en'>18</body>
+</message>
+
+#message{id = <<"13904498344675915107">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"18">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,420492},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.454 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='11733552304937842791'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.421414Z'/>
+  <body xml:lang='en'>19</body>
+</message>
+
+#message{id = <<"11733552304937842791">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"19">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,421414},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.454 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='14833340651910450036'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.422506Z'/>
+  <body xml:lang='en'>20</body>
+</message>
+
+#message{id = <<"14833340651910450036">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"20">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,422506},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.455 ***</b>
+RECV:
+<message to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost'
+         type='groupchat'>
+  <subject/>
+</message>
+
+#message{id = <<>>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<>>,luser = <<"test">>,
+                     lserver = <<"conference.localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [#text{lang = <<>>,data = <<>>}],
+         body = [],thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.455 ***</b>
+SENT:
+<presence to='test@conference.localhost/slave_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          type='unavailable'
+          id='418485159548635199'
+          xmlns='jabber:client'/>
+
+#presence{id = <<"418485159548635199">>,type = unavailable,lang = <<>>,
+          from = undefined,
+          to = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                    resource = <<"slave_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test">>,lserver = <<"conference.localhost">>,
+                    lresource = <<"slave_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,sub_els = [],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.456 ***</b>
+RECV:
+<presence to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='test@conference.localhost'
+          type='unavailable'
+          id='15486914440967122895'/>
+
+#presence{id = <<"15486914440967122895">>,type = unavailable,lang = <<>>,
+          from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                      resource = <<>>,luser = <<"test">>,
+                      lserver = <<"conference.localhost">>,lresource = <<>>},
+          to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,sub_els = [],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.457 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='test@conference.localhost/slave_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          type='unavailable'
+          id='418485159548635199'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <item jid='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          role='none'
+          affiliation='none'/>
+    <status code='110'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"418485159548635199">>,type = unavailable,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"test">>,server = <<"conference.localhost">>,
+            resource = <<"slave_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test">>,lserver = <<"conference.localhost">>,
+            lresource = <<"slave_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#muc_user{
+             decline = undefined,destroy = undefined,invites = [],
+             items =
+                 [#muc_item{
+                      actor = undefined,continue = undefined,reason = <<>>,
+                      affiliation = none,role = none,
+                      jid =
+                          #jid{
+                              user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                              server = <<"localhost">>,
+                              resource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                              lserver = <<"localhost">>,
+                              lresource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+                      nick = <<>>}],
+             status_codes = "n",password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.457 ***</b>
+SENT:
+<presence to='test@conference.localhost/slave_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='1768635152440573383'
+          xmlns='jabber:client'>
+  <x xmlns='http://jabber.org/protocol/muc'>
+    <history since='2021-12-09T17:33:18.399872Z'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"1768635152440573383">>,type = available,lang = <<>>,
+    from = undefined,
+    to =
+        #jid{
+            user = <<"test">>,server = <<"conference.localhost">>,
+            resource = <<"slave_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test">>,lserver = <<"conference.localhost">>,
+            lresource = <<"slave_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#muc{
+             history =
+                 #muc_history{
+                     maxchars = undefined,maxstanzas = undefined,
+                     seconds = undefined,
+                     since = {1639,71198,399872}},
+             password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.459 ***</b>
+RECV:
+<presence to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='test@conference.localhost'
+          id='17267317976210494036'>
+  <c xmlns='http://jabber.org/protocol/caps'
+     ver='sBcxm+YVx0VXfn6k9QZimWgspjA='
+     node='http://www.process-one.net/en/ejabberd/'
+     hash='sha-1'/>
+</presence>
+
+#presence{id = <<"17267317976210494036">>,type = available,lang = <<>>,
+          from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                      resource = <<>>,luser = <<"test">>,
+                      lserver = <<"conference.localhost">>,lresource = <<>>},
+          to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,
+          sub_els = [#caps{node = <<"http://www.process-one.net/en/ejabberd/">>,
+                           version = <<"sBcxm+YVx0VXfn6k9QZimWgspjA=">>,
+                           hash = <<"sha-1">>,exts = []}],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.459 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='7722324772081073898'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <item role='moderator'
+          affiliation='owner'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"7722324772081073898">>,type = available,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"test">>,server = <<"conference.localhost">>,
+            resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test">>,lserver = <<"conference.localhost">>,
+            lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#muc_user{
+             decline = undefined,destroy = undefined,invites = [],
+             items =
+                 [#muc_item{
+                      actor = undefined,continue = undefined,reason = <<>>,
+                      affiliation = owner,role = moderator,jid = undefined,
+                      nick = <<>>}],
+             status_codes = [],password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.460 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='test@conference.localhost/slave_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          id='1768635152440573383'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <item jid='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          role='participant'
+          affiliation='none'/>
+    <status code='110'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"1768635152440573383">>,type = available,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"test">>,server = <<"conference.localhost">>,
+            resource = <<"slave_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test">>,lserver = <<"conference.localhost">>,
+            lresource = <<"slave_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#muc_user{
+             decline = undefined,destroy = undefined,invites = [],
+             items =
+                 [#muc_item{
+                      actor = undefined,continue = undefined,reason = <<>>,
+                      affiliation = none,role = participant,
+                      jid =
+                          #jid{
+                              user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                              server = <<"localhost">>,
+                              resource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                              lserver = <<"localhost">>,
+                              lresource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+                      nick = <<>>}],
+             status_codes = "n",password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.462 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='10146397784725565871'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.401404Z'/>
+  <body xml:lang='en'>2</body>
+</message>
+
+#message{id = <<"10146397784725565871">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"2">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,401404},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.462 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='8220921082303941993'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.402650Z'/>
+  <body xml:lang='en'>3</body>
+</message>
+
+#message{id = <<"8220921082303941993">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"3">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,402650},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.463 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='12581607423728132301'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.404047Z'/>
+  <body xml:lang='en'>4</body>
+</message>
+
+#message{id = <<"12581607423728132301">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"4">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,404047},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.464 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='18073174201702319850'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.405088Z'/>
+  <body xml:lang='en'>5</body>
+</message>
+
+#message{id = <<"18073174201702319850">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"5">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,405088},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.465 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='1537414679469357462'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.406545Z'/>
+  <body xml:lang='en'>6</body>
+</message>
+
+#message{id = <<"1537414679469357462">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"6">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,406545},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.465 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='8015373091143554642'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.407958Z'/>
+  <body xml:lang='en'>7</body>
+</message>
+
+#message{id = <<"8015373091143554642">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"7">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,407958},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.466 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='11629172895998352748'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.409009Z'/>
+  <body xml:lang='en'>8</body>
+</message>
+
+#message{id = <<"11629172895998352748">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"8">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,409009},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.466 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='18329004868475429276'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.410188Z'/>
+  <body xml:lang='en'>9</body>
+</message>
+
+#message{id = <<"18329004868475429276">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"9">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,410188},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.467 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='7565862833152498491'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.411747Z'/>
+  <body xml:lang='en'>10</body>
+</message>
+
+#message{id = <<"7565862833152498491">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"10">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,411747},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.468 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='11114454772933986847'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.412792Z'/>
+  <body xml:lang='en'>11</body>
+</message>
+
+#message{id = <<"11114454772933986847">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"11">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,412792},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.468 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='5948391484122583296'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.413757Z'/>
+  <body xml:lang='en'>12</body>
+</message>
+
+#message{id = <<"5948391484122583296">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"12">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,413757},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.468 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='1578485290827929697'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.414628Z'/>
+  <body xml:lang='en'>13</body>
+</message>
+
+#message{id = <<"1578485290827929697">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"13">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,414628},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.469 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='10320712334713702396'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.415626Z'/>
+  <body xml:lang='en'>14</body>
+</message>
+
+#message{id = <<"10320712334713702396">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"14">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,415626},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.470 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='1367503595878000771'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.416573Z'/>
+  <body xml:lang='en'>15</body>
+</message>
+
+#message{id = <<"1367503595878000771">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"15">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,416573},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.470 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='12115654537248489782'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.417483Z'/>
+  <body xml:lang='en'>16</body>
+</message>
+
+#message{id = <<"12115654537248489782">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"16">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,417483},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.471 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='5588183908165492814'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.419528Z'/>
+  <body xml:lang='en'>17</body>
+</message>
+
+#message{id = <<"5588183908165492814">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"17">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,419528},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.471 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='13904498344675915107'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.420492Z'/>
+  <body xml:lang='en'>18</body>
+</message>
+
+#message{id = <<"13904498344675915107">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"18">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,420492},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.472 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='11733552304937842791'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.421414Z'/>
+  <body xml:lang='en'>19</body>
+</message>
+
+#message{id = <<"11733552304937842791">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"19">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,421414},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.472 ***</b>
+RECV:
+<message xml:lang='en'
+         to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost/master_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         type='groupchat'
+         id='14833340651910450036'>
+  <delay xmlns='urn:xmpp:delay'
+         from='test@conference.localhost'
+         stamp='2021-12-09T17:33:18.422506Z'/>
+  <body xml:lang='en'>20</body>
+</message>
+
+#message{id = <<"14833340651910450036">>,type = groupchat,lang = <<"en">>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                     luser = <<"test">>,lserver = <<"conference.localhost">>,
+                     lresource = <<"master_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [],
+         body = [#text{lang = <<"en">>,data = <<"20">>}],
+         thread = undefined,
+         sub_els = [#delay{stamp = {1639,71198,422506},
+                           from = #jid{user = <<"test">>,
+                                       server = <<"conference.localhost">>,
+                                       resource = <<>>,luser = <<"test">>,
+                                       lserver = <<"conference.localhost">>,
+                                       lresource = <<>>},
+                           desc = <<>>}],
+         meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.472 ***</b>
+RECV:
+<message to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+         from='test@conference.localhost'
+         type='groupchat'>
+  <subject/>
+</message>
+
+#message{id = <<>>,type = groupchat,lang = <<>>,
+         from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                     resource = <<>>,luser = <<"test">>,
+                     lserver = <<"conference.localhost">>,lresource = <<>>},
+         to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   server = <<"localhost">>,
+                   resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                   luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                   lserver = <<"localhost">>,
+                   lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+         subject = [#text{lang = <<>>,data = <<>>}],
+         body = [],thread = undefined,sub_els = [],meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.473 ***</b>
+SENT:
+<presence to='test@conference.localhost/slave_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          type='unavailable'
+          id='17330911954822031147'
+          xmlns='jabber:client'/>
+
+#presence{id = <<"17330911954822031147">>,type = unavailable,lang = <<>>,
+          from = undefined,
+          to = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                    resource = <<"slave_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test">>,lserver = <<"conference.localhost">>,
+                    lresource = <<"slave_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,sub_els = [],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.479 ***</b>
+RECV:
+<presence to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='test@conference.localhost'
+          type='unavailable'
+          id='2878863151683807642'/>
+
+#presence{id = <<"2878863151683807642">>,type = unavailable,lang = <<>>,
+          from = #jid{user = <<"test">>,server = <<"conference.localhost">>,
+                      resource = <<>>,luser = <<"test">>,
+                      lserver = <<"conference.localhost">>,lresource = <<>>},
+          to = #jid{user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                    server = <<"localhost">>,
+                    resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                    luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                    lserver = <<"localhost">>,
+                    lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+          show = undefined,status = [],priority = undefined,sub_els = [],
+          meta = #{}}
+</pre></div>
+<pre>
+
+</pre>
+<div class="default"><pre><b>*** User 2021-12-09 17:33:18.480 ***</b>
+RECV:
+<presence xml:lang='en'
+          to='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          from='test@conference.localhost/slave_nick!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          type='unavailable'
+          id='17330911954822031147'>
+  <x xmlns='http://jabber.org/protocol/muc#user'>
+    <item jid='test_slave!#$%^*()`~+-;_=[]{}|\@localhost/resource!@#$%^&amp;*()&apos;&quot;`~&lt;&gt;+-/;:_=[]{}|\'
+          role='none'
+          affiliation='none'/>
+    <status code='110'/>
+  </x>
+</presence>
+
+#presence{
+    id = <<"17330911954822031147">>,type = unavailable,lang = <<"en">>,
+    from =
+        #jid{
+            user = <<"test">>,server = <<"conference.localhost">>,
+            resource = <<"slave_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test">>,lserver = <<"conference.localhost">>,
+            lresource = <<"slave_nick!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    to =
+        #jid{
+            user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            server = <<"localhost">>,
+            resource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+            luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+            lserver = <<"localhost">>,
+            lresource = <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+    show = undefined,status = [],priority = undefined,
+    sub_els =
+        [#muc_user{
+             decline = undefined,destroy = undefined,invites = [],
+             items =
+                 [#muc_item{
+                      actor = undefined,continue = undefined,reason = <<>>,
+                      affiliation = none,role = none,
+                      jid =
+                          #jid{
+                              user = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                              server = <<"localhost">>,
+                              resource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>,
+                              luser = <<"test_slave!#$%^*()`~+-;_=[]{}|\\">>,
+                              lserver = <<"localhost">>,
+                              lresource =
+                                  <<"resource!@#$%^&*()'\"`~<>+-/;:_=[]{}|\\">>},
+                      nick = <<>>}],
+             status_codes = "n",password = undefined}],
+    meta = #{}}
+</pre></div>
+<pre>
+<a name="end"></a>
+
+
+=== Ended at 2021-12-09 17:33:18
+=== successfully completed test case
+=== === Returned value: [{receiver,undefined},
+                     {sm,true},
+                     {compression,[&lt;&lt;"zlib"&gt;&gt;]},
+                     {stream_id,&lt;&lt;"6862590463942107468"&gt;&gt;},
+                     {sasl,#Fun&lt;suite.6.40689848&gt;},
+                     {legacy_auth,true},
+                     {register,true},
+                     {starttls,true},
+                     {mechs,
+                         [&lt;&lt;"ANONYMOUS"&gt;&gt;,&lt;&lt;"DIGEST-MD5"&gt;&gt;,&lt;&lt;"PLAIN"&gt;&gt;,
+                          &lt;&lt;"SCRAM-SHA-512"&gt;&gt;,&lt;&lt;"SCRAM-SHA-256"&gt;&gt;,
+                          &lt;&lt;"SCRAM-SHA-1"&gt;&gt;,&lt;&lt;"X-OAUTH2"&gt;&gt;]},
+                     {peer,
+                         {jid,&lt;&lt;"test_master!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"localhost"&gt;&gt;,
+                             &lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"test_master!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"localhost"&gt;&gt;,
+                             &lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;}},
+                     {peer_nick,
+                         &lt;&lt;"master_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {user,&lt;&lt;"test_slave!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;},
+                     {slave,
+                         {jid,&lt;&lt;"test_slave!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"localhost"&gt;&gt;,
+                             &lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"test_slave!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"localhost"&gt;&gt;,
+                             &lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;}},
+                     {master,
+                         {jid,&lt;&lt;"test_master!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"localhost"&gt;&gt;,
+                             &lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"test_master!#$%^*()`~+-;_=[]{}|\\"&gt;&gt;,
+                             &lt;&lt;"localhost"&gt;&gt;,
+                             &lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;}},
+                     {resource,&lt;&lt;"resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {nick,&lt;&lt;"slave_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {mode,slave},
+                     {watchdog,&lt;0.31189.0&gt;},
+                     {event_relay,&lt;0.31177.0&gt;},
+                     {persistent_room,false},
+                     {server_port,5222},
+                     {server_host,"localhost"},
+                     {component_port,5270},
+                     {s2s_port,5269},
+                     {server,&lt;&lt;"localhost"&gt;&gt;},
+                     {master_nick,
+                         &lt;&lt;"master_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {slave_nick,
+                         &lt;&lt;"slave_nick!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {room_subject,
+                         &lt;&lt;"hello, world!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {certfile,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/test/ejabberd_SUITE_data/cert.pem"},
+                     {anonymous,false},
+                     {type,client},
+                     {xmlns,&lt;&lt;"jabber:client"&gt;&gt;},
+                     {ns_stream,&lt;&lt;"http://etherx.jabber.org/streams"&gt;&gt;},
+                     {stream_version,{1,0}},
+                     {stream_from,&lt;&lt;&gt;&gt;},
+                     {db_xmlns,&lt;&lt;&gt;&gt;},
+                     {rosterver,false},
+                     {lang,&lt;&lt;"en"&gt;&gt;},
+                     {base_dir,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd"},
+                     {pubsub_node,&lt;&lt;"node!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {pubsub_node_title,
+                         &lt;&lt;"title!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {master_resource,
+                         &lt;&lt;"master_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {slave_resource,
+                         &lt;&lt;"slave_resource!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {password,&lt;&lt;"password!@#$%^&amp;*()'\"`~&lt;&gt;+-/;:_=[]{}|\\"&gt;&gt;},
+                     {backends,[mnesia]},
+                     {tc_logfile,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.33.03/lib.ejabberd.logs/run.2021-12-09_17.33.04/ejabberd_suite.muc_history_slave.2674.html"},
+                     {tc_group_properties,[{name,muc_history},parallel]},
+                     {tc_group_path,
+                         [[{name,muc_master_slave},sequence],
+                          [{name,no_db},sequence]]},
+                     {data_dir,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/test/ejabberd_SUITE_data/"},
+                     {priv_dir,
+                         "/home/runner/work/ejabberd/ejabberd/_build/test/logs/ct_run.nonode@nohost.2021-12-09_17.33.03/lib.ejabberd.logs/run.2021-12-09_17.33.04/log_private/"}]
