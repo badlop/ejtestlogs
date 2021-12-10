@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/ct/ejabberd_router_multicast.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_router_multicast.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 23:54:03</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_router_multicast.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-10 at 00:08:02</p></footer>
 <table>
 <tbody>
 <tr>
@@ -418,7 +418,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L63"><a href="#L63">63</a></td>
-<td class="hits">697</td>
+<td class="hits">696</td>
 <td class="source"><code>    {From, Domain, Destinations, Packet, Wrapped} =</code></td>
 </tr>
 <tr>
@@ -428,7 +428,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L65"><a href="#L65">65</a></td>
-<td class="hits">697</td>
+<td class="hits">696</td>
 <td class="source"><code>    case catch do_route(Domain, Destinations, xmpp:set_from(Packet, From), Wrapped) of</code></td>
 </tr>
 <tr>
@@ -453,7 +453,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L70"><a href="#L70">70</a></td>
-<td class="hits">697</td>
+<td class="hits">696</td>
 <td class="source"><code>	    ok</code></td>
 </tr>
 <tr>
@@ -1323,7 +1323,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L244"><a href="#L244">244</a></td>
-<td class="hits">679</td>
+<td class="hits">678</td>
 <td class="source"><code>    ?DEBUG("Route multicast:~n~ts~nDomain: ~ts~nDestinations: ~ts~n",</code></td>
 </tr>
 <tr>
@@ -1333,7 +1333,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L246"><a href="#L246">246</a></td>
-<td class="hits">679</td>
+<td class="hits">678</td>
 <td class="source"><code>	    str:join([jid:encode(To) || To &lt;- Destinations], &lt;&lt;", "&gt;&gt;)]),</code></td>
 </tr>
 <tr>
@@ -1343,7 +1343,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L248"><a href="#L248">248</a></td>
-<td class="hits">679</td>
+<td class="hits">678</td>
 <td class="source"><code>    case mnesia:dirty_read(route_multicast, Domain) of</code></td>
 </tr>
 <tr>
@@ -1358,7 +1358,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L251"><a href="#L251">251</a></td>
-<td class="hits">679</td>
+<td class="hits">678</td>
 <td class="source"><code>	[] -&gt; do_route_normal(Destinations, Packet);</code></td>
 </tr>
 <tr>
@@ -1448,7 +1448,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L269"><a href="#L269">269</a></td>
-<td class="hits">679</td>
+<td class="hits">678</td>
 <td class="source"><code>    lists:foreach(</code></td>
 </tr>
 <tr>
@@ -1458,7 +1458,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L271"><a href="#L271">271</a></td>
-<td class="hits">747</td>
+<td class="hits">746</td>
 <td class="source"><code>	    ejabberd_router:route(xmpp:set_to(Packet, To))</code></td>
 </tr>
 <tr>

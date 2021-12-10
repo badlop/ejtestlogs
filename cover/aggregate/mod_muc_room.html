@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/mod_muc_room.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_muc_room.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-09 at 23:53:58</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/mod_muc_room.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-10 at 00:07:58</p></footer>
 <table>
 <tbody>
 <tr>
@@ -1383,22 +1383,22 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L256"><a href="#L256">256</a></td>
-<td class="hits">15</td>
+<td class="hits">14</td>
 <td class="source"><code>    Timeout = 100,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L257"><a href="#L257">257</a></td>
-<td class="hits">15</td>
+<td class="hits">14</td>
 <td class="source"><code>    Time = erlang:system_time(millisecond),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L258"><a href="#L258">258</a></td>
-<td class="hits">15</td>
+<td class="hits">14</td>
 <td class="source"><code>    Query = {get_disco_item, Filter, JID, Lang, Time+Timeout},</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L259"><a href="#L259">259</a></td>
-<td class="hits">15</td>
+<td class="hits">14</td>
 <td class="source"><code>    try p1_fsm:sync_send_all_state_event(Pid, Query, Timeout) of</code></td>
 </tr>
 <tr>
@@ -1436,9 +1436,9 @@ td.source {
 <td class="hits"></td>
 <td class="source"><code>	  _:{_, {p1_fsm, _, _}} -&gt;</code></td>
 </tr>
-<tr class="hit">
+<tr class="miss">
 <td class="line" id="L267"><a href="#L267">267</a></td>
-<td class="hits">1</td>
+<td class="hits"><pre style="display: inline;">:-(</pre></td>
 <td class="source"><code>	    {error, notfound}</code></td>
 </tr>
 <tr>
@@ -4813,17 +4813,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L942"><a href="#L942">942</a></td>
-<td class="hits">774</td>
+<td class="hits">773</td>
 <td class="source"><code>    ?DEBUG("Routing to MUC room ~p:~n~ts", [Pid, xmpp:pp(Packet)]),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L943"><a href="#L943">943</a></td>
-<td class="hits">774</td>
+<td class="hits">773</td>
 <td class="source"><code>    #jid{lresource = Nick} = xmpp:get_to(Packet),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L944"><a href="#L944">944</a></td>
-<td class="hits">774</td>
+<td class="hits">773</td>
 <td class="source"><code>    p1_fsm:send_event(Pid, {route, Nick, Packet}).</code></td>
 </tr>
 <tr>
