@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/ejabberd_router.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_router.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-10 at 21:12:18</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_router.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-10 at 21:30:23</p></footer>
 <table>
 <tbody>
 <tr>
@@ -563,7 +563,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L92"><a href="#L92">92</a></td>
-<td class="hits">11482</td>
+<td class="hits">11481</td>
 <td class="source"><code>    try do_route(Packet)</code></td>
 </tr>
 <tr>
@@ -1213,12 +1213,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L222"><a href="#L222">222</a></td>
-<td class="hits">18232</td>
+<td class="hits">18231</td>
 <td class="source"><code>    Mod = get_backend(),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L223"><a href="#L223">223</a></td>
-<td class="hits">18232</td>
+<td class="hits">18231</td>
 <td class="source"><code>    case use_cache(Mod) of</code></td>
 </tr>
 <tr>
@@ -1298,12 +1298,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L239"><a href="#L239">239</a></td>
-<td class="hits">18232</td>
+<td class="hits">18231</td>
 <td class="source"><code>	    case Mod:find_routes(Domain) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L240"><a href="#L240">240</a></td>
-<td class="hits">18232</td>
+<td class="hits">18231</td>
 <td class="source"><code>		{ok, Rs} -&gt; Rs;</code></td>
 </tr>
 <tr class="miss">
@@ -2023,12 +2023,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L384"><a href="#L384">384</a></td>
-<td class="hits">11482</td>
+<td class="hits">11481</td>
 <td class="source"><code>    ?DEBUG("Route:~n~ts", [xmpp:pp(OrigPacket)]),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L385"><a href="#L385">385</a></td>
-<td class="hits">11482</td>
+<td class="hits">11481</td>
 <td class="source"><code>    case ejabberd_hooks:run_fold(filter_packet, OrigPacket, []) of</code></td>
 </tr>
 <tr>
@@ -2048,7 +2048,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L389"><a href="#L389">389</a></td>
-<td class="hits">11482</td>
+<td class="hits">11481</td>
 <td class="source"><code>	    case ejabberd_iq:dispatch(Packet) of</code></td>
 </tr>
 <tr>
@@ -2068,17 +2068,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L393"><a href="#L393">393</a></td>
-<td class="hits">11472</td>
+<td class="hits">11471</td>
 <td class="source"><code>		    To = xmpp:get_to(Packet),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L394"><a href="#L394">394</a></td>
-<td class="hits">11472</td>
+<td class="hits">11471</td>
 <td class="source"><code>		    LDstDomain = To#jid.lserver,</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L395"><a href="#L395">395</a></td>
-<td class="hits">11472</td>
+<td class="hits">11471</td>
 <td class="source"><code>		    case find_routes(LDstDomain) of</code></td>
 </tr>
 <tr>
@@ -2098,7 +2098,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L399"><a href="#L399">399</a></td>
-<td class="hits">11472</td>
+<td class="hits">11471</td>
 <td class="source"><code>			    do_route(Packet, Route);</code></td>
 </tr>
 <tr>
@@ -2123,7 +2123,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L404"><a href="#L404">404</a></td>
-<td class="hits">11472</td>
+<td class="hits">11471</td>
 <td class="source"><code>		    ok</code></td>
 </tr>
 <tr>
@@ -2158,7 +2158,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L411"><a href="#L411">411</a></td>
-<td class="hits">11472</td>
+<td class="hits">11471</td>
 <td class="source"><code>    case LocalHint of</code></td>
 </tr>
 <tr>
@@ -2168,7 +2168,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L413"><a href="#L413">413</a></td>
-<td class="hits">11454</td>
+<td class="hits">11453</td>
 <td class="source"><code>	    Module:Function(Pkt);</code></td>
 </tr>
 <tr>
@@ -2488,12 +2488,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L477"><a href="#L477">477</a></td>
-<td class="hits">18323</td>
+<td class="hits">18322</td>
 <td class="source"><code>    DBType = ejabberd_option:router_db_type(),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L478"><a href="#L478">478</a></td>
-<td class="hits">18323</td>
+<td class="hits">18322</td>
 <td class="source"><code>    list_to_existing_atom("ejabberd_router_" ++ atom_to_list(DBType)).</code></td>
 </tr>
 <tr>
@@ -2548,12 +2548,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L489"><a href="#L489">489</a></td>
-<td class="hits">18323</td>
+<td class="hits">18322</td>
 <td class="source"><code>    case erlang:function_exported(Mod, use_cache, 0) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L490"><a href="#L490">490</a></td>
-<td class="hits">18323</td>
+<td class="hits">18322</td>
 <td class="source"><code>	true -&gt; Mod:use_cache();</code></td>
 </tr>
 <tr class="miss">
