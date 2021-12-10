@@ -103,7 +103,7 @@ td.source {
 </head>
 <body>
 <h1><code>/home/runner/work/ejabberd/ejabberd/_build/test/cover/aggregate/ejabberd_sm.html</code></h1>
-<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_sm.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-10 at 23:26:46</p></footer>
+<footer><p>File generated from <code>/home/runner/work/ejabberd/ejabberd/_build/test/lib/ejabberd/ebin/../src/ejabberd_sm.erl</code> by <a href="http://erlang.org/doc/man/cover.html">cover</a> at 2021-12-10 at 23:38:51</p></footer>
 <table>
 <tbody>
 <tr>
@@ -808,12 +808,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L141"><a href="#L141">141</a></td>
-<td class="hits">10149</td>
+<td class="hits">10151</td>
 <td class="source"><code>    #jid{lserver = LServer} = xmpp:get_to(Packet),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L142"><a href="#L142">142</a></td>
-<td class="hits">10149</td>
+<td class="hits">10151</td>
 <td class="source"><code>    case ejabberd_hooks:run_fold(sm_receive_packet, LServer, Packet, []) of</code></td>
 </tr>
 <tr>
@@ -833,12 +833,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L146"><a href="#L146">146</a></td>
-<td class="hits">10149</td>
+<td class="hits">10151</td>
 <td class="source"><code>	    do_route(Packet1),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L147"><a href="#L147">147</a></td>
-<td class="hits">10149</td>
+<td class="hits">10151</td>
 <td class="source"><code>	    ok</code></td>
 </tr>
 <tr>
@@ -1138,17 +1138,17 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L207"><a href="#L207">207</a></td>
-<td class="hits">217</td>
+<td class="hits">219</td>
 <td class="source"><code>    ?DEBUG("Dropping packet to unavailable resource:~n~ts",</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L208"><a href="#L208">208</a></td>
-<td class="hits">217</td>
+<td class="hits">219</td>
 <td class="source"><code>	   [xmpp:pp(Packet)]),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L209"><a href="#L209">209</a></td>
-<td class="hits">217</td>
+<td class="hits">219</td>
 <td class="source"><code>    Acc.</code></td>
 </tr>
 <tr>
@@ -3078,7 +3078,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L595"><a href="#L595">595</a></td>
-<td class="hits">10908</td>
+<td class="hits">10910</td>
 <td class="source"><code>    case use_cache(Mod, LServer) of</code></td>
 </tr>
 <tr>
@@ -3168,12 +3168,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L613"><a href="#L613">613</a></td>
-<td class="hits">10908</td>
+<td class="hits">10910</td>
 <td class="source"><code>	    case Mod:get_sessions(LUser, LServer) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L614"><a href="#L614">614</a></td>
-<td class="hits">10908</td>
+<td class="hits">10910</td>
 <td class="source"><code>		{ok, Ss} -&gt; delete_dead(Mod, Ss);</code></td>
 </tr>
 <tr class="miss">
@@ -3208,12 +3208,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L621"><a href="#L621">621</a></td>
-<td class="hits">8539</td>
+<td class="hits">8541</td>
 <td class="source"><code>    Sessions = get_sessions(Mod, LUser, LServer),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L622"><a href="#L622">622</a></td>
-<td class="hits">8539</td>
+<td class="hits">8541</td>
 <td class="source"><code>    [S || S &lt;- Sessions, element(3, S#session.usr) == LResource].</code></td>
 </tr>
 <tr>
@@ -3288,7 +3288,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L637"><a href="#L637">637</a></td>
-<td class="hits">10922</td>
+<td class="hits">10924</td>
 <td class="source"><code>    lists:filter(</code></td>
 </tr>
 <tr>
@@ -3298,12 +3298,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L639"><a href="#L639">639</a></td>
-<td class="hits">9989</td>
+<td class="hits">9993</td>
 <td class="source"><code>	      case is_process_alive(Pid) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L640"><a href="#L640">640</a></td>
-<td class="hits">9986</td>
+<td class="hits">9990</td>
 <td class="source"><code>		  true -&gt; true;</code></td>
 </tr>
 <tr>
@@ -3698,27 +3698,27 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L719"><a href="#L719">719</a></td>
-<td class="hits">6773</td>
+<td class="hits">6775</td>
 <td class="source"><code>    ?DEBUG("Processing packet to full JID:~n~ts", [xmpp:pp(Packet)]),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L720"><a href="#L720">720</a></td>
-<td class="hits">6773</td>
+<td class="hits">6775</td>
 <td class="source"><code>    To = xmpp:get_to(Packet),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L721"><a href="#L721">721</a></td>
-<td class="hits">6773</td>
+<td class="hits">6775</td>
 <td class="source"><code>    {LUser, LServer, LResource} = jid:tolower(To),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L722"><a href="#L722">722</a></td>
-<td class="hits">6773</td>
+<td class="hits">6775</td>
 <td class="source"><code>    Mod = get_sm_backend(LServer),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L723"><a href="#L723">723</a></td>
-<td class="hits">6773</td>
+<td class="hits">6775</td>
 <td class="source"><code>    case get_sessions(Mod, LUser, LServer, LResource) of</code></td>
 </tr>
 <tr>
@@ -3728,7 +3728,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L725"><a href="#L725">725</a></td>
-<td class="hits">14</td>
+<td class="hits">16</td>
 <td class="source"><code>	    case Packet of</code></td>
 </tr>
 <tr>
@@ -3763,7 +3763,7 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L732"><a href="#L732">732</a></td>
-<td class="hits">6</td>
+<td class="hits">8</td>
 <td class="source"><code>		    ejabberd_hooks:run_fold(bounce_sm_packet,</code></td>
 </tr>
 <tr>
@@ -4618,12 +4618,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L903"><a href="#L903">903</a></td>
-<td class="hits">11337</td>
+<td class="hits">11339</td>
 <td class="source"><code>    DBType = ejabberd_option:sm_db_type(Host),</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L904"><a href="#L904">904</a></td>
-<td class="hits">11337</td>
+<td class="hits">11339</td>
 <td class="source"><code>    list_to_existing_atom("ejabberd_sm_" ++ atom_to_list(DBType)).</code></td>
 </tr>
 <tr>
@@ -4888,12 +4888,12 @@ td.source {
 </tr>
 <tr class="hit">
 <td class="line" id="L957"><a href="#L957">957</a></td>
-<td class="hits">11650</td>
+<td class="hits">11652</td>
 <td class="source"><code>    case erlang:function_exported(Mod, use_cache, 1) of</code></td>
 </tr>
 <tr class="hit">
 <td class="line" id="L958"><a href="#L958">958</a></td>
-<td class="hits">11650</td>
+<td class="hits">11652</td>
 <td class="source"><code>	true -&gt; Mod:use_cache(LServer);</code></td>
 </tr>
 <tr class="miss">
